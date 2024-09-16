@@ -22,9 +22,51 @@
 
 package org.mases.jnet.generated.java.util.prefs;
 
-public final class NodeChangeListener extends org.mases.jcobridge.JCListener implements java.util.prefs.NodeChangeListener {
+public final class NodeChangeListener implements org.mases.jcobridge.IJCListener, java.util.prefs.NodeChangeListener {
+   final org.mases.jcobridge.JCListener _internalListener;
+
     public NodeChangeListener(String key) throws org.mases.jcobridge.JCNativeException {
-        super(key);
+        _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    public synchronized void release() {
+       _internalListener.release();
+    }
+    
+    public synchronized void raiseEvent(String eventName) {
+       _internalListener.raiseEvent(eventName);
+    }
+    
+    public synchronized void raiseEvent(String eventName, Object e) {
+       _internalListener.raiseEvent(eventName, e);
+    }
+    
+    public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventName, e, objects);
+    }
+    
+    public Object getEventData() {
+       return _internalListener.getEventData();
+    }
+    
+    public boolean hasExtraData() {
+       return _internalListener.hasExtraData();
+    }
+    
+    public int extraDataLength() {
+       return _internalListener.extraDataLength();
+    }
+    
+    public Object[] extraData() {
+       return _internalListener.extraData();
+    }
+    
+    public Object getReturnData() {
+       return _internalListener.getReturnData();
+    }
+    
+    public void setReturnData(Object retData) {
+       _internalListener.setReturnData(retData);
     }
 
     //@Override

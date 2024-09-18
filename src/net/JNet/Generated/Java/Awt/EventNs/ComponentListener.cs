@@ -155,10 +155,10 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("componentHidden", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentHiddenEventHandler));
-            AddEventHandler("componentMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentMovedEventHandler));
-            AddEventHandler("componentResized", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentResizedEventHandler));
-            AddEventHandler("componentShown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentShownEventHandler));
+            AddEventHandler("componentHidden", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ComponentHiddenEventHandler));
+            AddEventHandler("componentMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ComponentMovedEventHandler));
+            AddEventHandler("componentResized", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ComponentResizedEventHandler));
+            AddEventHandler("componentShown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ComponentShownEventHandler));
 
         }
 
@@ -168,10 +168,12 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnComponentHidden"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.ComponentEvent> OnComponentHidden { get; set; } = null;
 
-        void ComponentHiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>> data)
+        bool hasOverrideComponentHidden = true;
+        void ComponentHiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnComponentHidden != null) ? OnComponentHidden : ComponentHidden;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.ComponentEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideComponentHidden;
         }
 
         /// <summary>
@@ -180,7 +182,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public virtual void ComponentHidden(Java.Awt.EventNs.ComponentEvent arg0)
         {
-            
+            hasOverrideComponentHidden = false;
         }
 
         /// <summary>
@@ -189,10 +191,12 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnComponentMoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.ComponentEvent> OnComponentMoved { get; set; } = null;
 
-        void ComponentMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>> data)
+        bool hasOverrideComponentMoved = true;
+        void ComponentMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnComponentMoved != null) ? OnComponentMoved : ComponentMoved;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.ComponentEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideComponentMoved;
         }
 
         /// <summary>
@@ -201,7 +205,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public virtual void ComponentMoved(Java.Awt.EventNs.ComponentEvent arg0)
         {
-            
+            hasOverrideComponentMoved = false;
         }
 
         /// <summary>
@@ -210,10 +214,12 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnComponentResized"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.ComponentEvent> OnComponentResized { get; set; } = null;
 
-        void ComponentResizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>> data)
+        bool hasOverrideComponentResized = true;
+        void ComponentResizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnComponentResized != null) ? OnComponentResized : ComponentResized;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.ComponentEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideComponentResized;
         }
 
         /// <summary>
@@ -222,7 +228,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public virtual void ComponentResized(Java.Awt.EventNs.ComponentEvent arg0)
         {
-            
+            hasOverrideComponentResized = false;
         }
 
         /// <summary>
@@ -231,10 +237,12 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnComponentShown"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.ComponentEvent> OnComponentShown { get; set; } = null;
 
-        void ComponentShownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>> data)
+        bool hasOverrideComponentShown = true;
+        void ComponentShownEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnComponentShown != null) ? OnComponentShown : ComponentShown;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.ComponentEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideComponentShown;
         }
 
         /// <summary>
@@ -243,7 +251,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public virtual void ComponentShown(Java.Awt.EventNs.ComponentEvent arg0)
         {
-            
+            hasOverrideComponentShown = false;
         }
 
         #endregion

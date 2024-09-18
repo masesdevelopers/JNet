@@ -26,6 +26,7 @@ public final class VetoableChangeListener implements org.mases.jcobridge.IJCList
     final org.mases.jcobridge.JCListener _internalListener;
 
     public VetoableChangeListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class VetoableChangeListener implements org.mases.jcobridge.IJCList
 
     //@Override
     public void vetoableChange(java.beans.PropertyChangeEvent arg0) {
-        raiseEvent("vetoableChange", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("vetoableChange", eventDataExchange, arg0);
     }
 
 }

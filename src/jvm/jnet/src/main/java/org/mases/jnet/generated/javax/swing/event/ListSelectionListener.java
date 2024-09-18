@@ -26,6 +26,7 @@ public final class ListSelectionListener implements org.mases.jcobridge.IJCListe
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ListSelectionListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class ListSelectionListener implements org.mases.jcobridge.IJCListe
 
     //@Override
     public void valueChanged(javax.swing.event.ListSelectionEvent arg0) {
-        raiseEvent("valueChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("valueChanged", eventDataExchange, arg0);
     }
 
 }

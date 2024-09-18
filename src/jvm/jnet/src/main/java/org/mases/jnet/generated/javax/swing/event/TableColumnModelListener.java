@@ -26,6 +26,7 @@ public final class TableColumnModelListener implements org.mases.jcobridge.IJCLi
     final org.mases.jcobridge.JCListener _internalListener;
 
     public TableColumnModelListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,23 +72,28 @@ public final class TableColumnModelListener implements org.mases.jcobridge.IJCLi
 
     //@Override
     public void columnAdded(javax.swing.event.TableColumnModelEvent arg0) {
-        raiseEvent("columnAdded", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("columnAdded", eventDataExchange, arg0);
     }
     //@Override
     public void columnMarginChanged(javax.swing.event.ChangeEvent arg0) {
-        raiseEvent("columnMarginChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("columnMarginChanged", eventDataExchange, arg0);
     }
     //@Override
     public void columnMoved(javax.swing.event.TableColumnModelEvent arg0) {
-        raiseEvent("columnMoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("columnMoved", eventDataExchange, arg0);
     }
     //@Override
     public void columnRemoved(javax.swing.event.TableColumnModelEvent arg0) {
-        raiseEvent("columnRemoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("columnRemoved", eventDataExchange, arg0);
     }
     //@Override
     public void columnSelectionChanged(javax.swing.event.ListSelectionEvent arg0) {
-        raiseEvent("columnSelectionChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("columnSelectionChanged", eventDataExchange, arg0);
     }
 
 }

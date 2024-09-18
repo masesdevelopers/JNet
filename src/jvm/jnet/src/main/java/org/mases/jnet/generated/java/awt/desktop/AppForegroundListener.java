@@ -26,6 +26,7 @@ public final class AppForegroundListener implements org.mases.jcobridge.IJCListe
     final org.mases.jcobridge.JCListener _internalListener;
 
     public AppForegroundListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class AppForegroundListener implements org.mases.jcobridge.IJCListe
 
     //@Override
     public void appMovedToBackground(java.awt.desktop.AppForegroundEvent arg0) {
-        raiseEvent("appMovedToBackground", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("appMovedToBackground", eventDataExchange, arg0);
     }
     //@Override
     public void appRaisedToForeground(java.awt.desktop.AppForegroundEvent arg0) {
-        raiseEvent("appRaisedToForeground", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("appRaisedToForeground", eventDataExchange, arg0);
     }
 
 }

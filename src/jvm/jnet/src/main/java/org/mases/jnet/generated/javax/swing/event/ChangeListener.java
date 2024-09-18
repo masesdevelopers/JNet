@@ -26,6 +26,7 @@ public final class ChangeListener implements org.mases.jcobridge.IJCListener, ja
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ChangeListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class ChangeListener implements org.mases.jcobridge.IJCListener, ja
 
     //@Override
     public void stateChanged(javax.swing.event.ChangeEvent arg0) {
-        raiseEvent("stateChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("stateChanged", eventDataExchange, arg0);
     }
 
 }

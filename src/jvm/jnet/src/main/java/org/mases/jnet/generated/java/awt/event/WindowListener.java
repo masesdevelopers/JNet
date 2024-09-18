@@ -26,6 +26,7 @@ public final class WindowListener implements org.mases.jcobridge.IJCListener, ja
     final org.mases.jcobridge.JCListener _internalListener;
 
     public WindowListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,31 +72,38 @@ public final class WindowListener implements org.mases.jcobridge.IJCListener, ja
 
     //@Override
     public void windowActivated(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowActivated", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowActivated", eventDataExchange, arg0);
     }
     //@Override
     public void windowClosed(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowClosed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowClosed", eventDataExchange, arg0);
     }
     //@Override
     public void windowClosing(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowClosing", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowClosing", eventDataExchange, arg0);
     }
     //@Override
     public void windowDeactivated(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowDeactivated", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowDeactivated", eventDataExchange, arg0);
     }
     //@Override
     public void windowDeiconified(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowDeiconified", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowDeiconified", eventDataExchange, arg0);
     }
     //@Override
     public void windowIconified(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowIconified", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowIconified", eventDataExchange, arg0);
     }
     //@Override
     public void windowOpened(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowOpened", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowOpened", eventDataExchange, arg0);
     }
 
 }

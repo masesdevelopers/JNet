@@ -26,6 +26,7 @@ public final class ScreenSleepListener implements org.mases.jcobridge.IJCListene
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ScreenSleepListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class ScreenSleepListener implements org.mases.jcobridge.IJCListene
 
     //@Override
     public void screenAboutToSleep(java.awt.desktop.ScreenSleepEvent arg0) {
-        raiseEvent("screenAboutToSleep", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("screenAboutToSleep", eventDataExchange, arg0);
     }
     //@Override
     public void screenAwoke(java.awt.desktop.ScreenSleepEvent arg0) {
-        raiseEvent("screenAwoke", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("screenAwoke", eventDataExchange, arg0);
     }
 
 }

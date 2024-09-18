@@ -26,6 +26,7 @@ public final class DoubleBinaryOperator implements org.mases.jcobridge.IJCListen
     final org.mases.jcobridge.JCListener _internalListener;
 
     public DoubleBinaryOperator(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class DoubleBinaryOperator implements org.mases.jcobridge.IJCListen
 
     //@Override
     public double applyAsDouble(double arg0, double arg1) {
-        raiseEvent("applyAsDouble", arg0, arg1); Object retVal = getReturnData(); return (double)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("applyAsDouble", eventDataExchange, arg0, arg1); Object retVal = getReturnData(); return (double)retVal;
     }
 
 }

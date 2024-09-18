@@ -26,6 +26,7 @@ public final class SystemSleepListener implements org.mases.jcobridge.IJCListene
     final org.mases.jcobridge.JCListener _internalListener;
 
     public SystemSleepListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class SystemSleepListener implements org.mases.jcobridge.IJCListene
 
     //@Override
     public void systemAboutToSleep(java.awt.desktop.SystemSleepEvent arg0) {
-        raiseEvent("systemAboutToSleep", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("systemAboutToSleep", eventDataExchange, arg0);
     }
     //@Override
     public void systemAwoke(java.awt.desktop.SystemSleepEvent arg0) {
-        raiseEvent("systemAwoke", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("systemAwoke", eventDataExchange, arg0);
     }
 
 }

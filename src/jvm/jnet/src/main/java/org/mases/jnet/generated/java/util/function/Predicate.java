@@ -26,6 +26,7 @@ public final class Predicate implements org.mases.jcobridge.IJCListener, java.ut
     final org.mases.jcobridge.JCListener _internalListener;
 
     public Predicate(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,30 +72,37 @@ public final class Predicate implements org.mases.jcobridge.IJCListener, java.ut
 
     //@Override
     public boolean test(java.lang.Object arg0) {
-        raiseEvent("test", arg0); Object retVal = getReturnData(); return (boolean)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("test", eventDataExchange, arg0); Object retVal = getReturnData(); return (boolean)retVal;
     }
     //@Override
     public java.util.function.Predicate and(java.util.function.Predicate arg0) {
-        raiseEvent("and", arg0); Object retVal = getReturnData(); return (java.util.function.Predicate)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("and", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Predicate.super.and(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Predicate)retVal;
     }
     //@Override
     public java.util.function.Predicate andDefault(java.util.function.Predicate arg0) {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
         return java.util.function.Predicate.super.and(arg0);
     }
     //@Override
     public java.util.function.Predicate negate() {
-        raiseEvent("negate"); Object retVal = getReturnData(); return (java.util.function.Predicate)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("negate", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Predicate.super.negate(); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Predicate)retVal;
     }
     //@Override
     public java.util.function.Predicate negateDefault() {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
         return java.util.function.Predicate.super.negate();
     }
     //@Override
     public java.util.function.Predicate or(java.util.function.Predicate arg0) {
-        raiseEvent("or", arg0); Object retVal = getReturnData(); return (java.util.function.Predicate)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("or", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Predicate.super.or(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Predicate)retVal;
     }
     //@Override
     public java.util.function.Predicate orDefault(java.util.function.Predicate arg0) {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
         return java.util.function.Predicate.super.or(arg0);
     }
 

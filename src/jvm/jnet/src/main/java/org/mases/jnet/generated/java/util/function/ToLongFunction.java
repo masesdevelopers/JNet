@@ -26,6 +26,7 @@ public final class ToLongFunction implements org.mases.jcobridge.IJCListener, ja
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ToLongFunction(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class ToLongFunction implements org.mases.jcobridge.IJCListener, ja
 
     //@Override
     public long applyAsLong(java.lang.Object arg0) {
-        raiseEvent("applyAsLong", arg0); Object retVal = getReturnData(); return (long)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("applyAsLong", eventDataExchange, arg0); Object retVal = getReturnData(); return (long)retVal;
     }
 
 }

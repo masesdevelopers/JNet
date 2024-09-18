@@ -26,6 +26,7 @@ public final class ComponentListener implements org.mases.jcobridge.IJCListener,
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ComponentListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,19 +72,23 @@ public final class ComponentListener implements org.mases.jcobridge.IJCListener,
 
     //@Override
     public void componentHidden(java.awt.event.ComponentEvent arg0) {
-        raiseEvent("componentHidden", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("componentHidden", eventDataExchange, arg0);
     }
     //@Override
     public void componentMoved(java.awt.event.ComponentEvent arg0) {
-        raiseEvent("componentMoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("componentMoved", eventDataExchange, arg0);
     }
     //@Override
     public void componentResized(java.awt.event.ComponentEvent arg0) {
-        raiseEvent("componentResized", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("componentResized", eventDataExchange, arg0);
     }
     //@Override
     public void componentShown(java.awt.event.ComponentEvent arg0) {
-        raiseEvent("componentShown", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("componentShown", eventDataExchange, arg0);
     }
 
 }

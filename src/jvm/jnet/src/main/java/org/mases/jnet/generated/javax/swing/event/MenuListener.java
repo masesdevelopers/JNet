@@ -26,6 +26,7 @@ public final class MenuListener implements org.mases.jcobridge.IJCListener, java
     final org.mases.jcobridge.JCListener _internalListener;
 
     public MenuListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,15 +72,18 @@ public final class MenuListener implements org.mases.jcobridge.IJCListener, java
 
     //@Override
     public void menuCanceled(javax.swing.event.MenuEvent arg0) {
-        raiseEvent("menuCanceled", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("menuCanceled", eventDataExchange, arg0);
     }
     //@Override
     public void menuDeselected(javax.swing.event.MenuEvent arg0) {
-        raiseEvent("menuDeselected", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("menuDeselected", eventDataExchange, arg0);
     }
     //@Override
     public void menuSelected(javax.swing.event.MenuEvent arg0) {
-        raiseEvent("menuSelected", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("menuSelected", eventDataExchange, arg0);
     }
 
 }

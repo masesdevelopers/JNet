@@ -26,6 +26,7 @@ public final class DoubleToIntFunction implements org.mases.jcobridge.IJCListene
     final org.mases.jcobridge.JCListener _internalListener;
 
     public DoubleToIntFunction(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class DoubleToIntFunction implements org.mases.jcobridge.IJCListene
 
     //@Override
     public int applyAsInt(double arg0) {
-        raiseEvent("applyAsInt", arg0); Object retVal = getReturnData(); return (int)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("applyAsInt", eventDataExchange, arg0); Object retVal = getReturnData(); return (int)retVal;
     }
 
 }

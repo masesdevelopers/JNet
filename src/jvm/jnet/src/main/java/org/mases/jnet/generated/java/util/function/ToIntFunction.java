@@ -26,6 +26,7 @@ public final class ToIntFunction implements org.mases.jcobridge.IJCListener, jav
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ToIntFunction(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class ToIntFunction implements org.mases.jcobridge.IJCListener, jav
 
     //@Override
     public int applyAsInt(java.lang.Object arg0) {
-        raiseEvent("applyAsInt", arg0); Object retVal = getReturnData(); return (int)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("applyAsInt", eventDataExchange, arg0); Object retVal = getReturnData(); return (int)retVal;
     }
 
 }

@@ -26,6 +26,7 @@ public final class WindowStateListener implements org.mases.jcobridge.IJCListene
     final org.mases.jcobridge.JCListener _internalListener;
 
     public WindowStateListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class WindowStateListener implements org.mases.jcobridge.IJCListene
 
     //@Override
     public void windowStateChanged(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowStateChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowStateChanged", eventDataExchange, arg0);
     }
 
 }

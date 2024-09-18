@@ -26,6 +26,7 @@ public final class ErrorListener implements org.mases.jcobridge.IJCListener, jav
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ErrorListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,15 +72,18 @@ public final class ErrorListener implements org.mases.jcobridge.IJCListener, jav
 
     //@Override
     public void error(javax.xml.transform.TransformerException arg0) {
-        raiseEvent("error", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("error", eventDataExchange, arg0);
     }
     //@Override
     public void fatalError(javax.xml.transform.TransformerException arg0) {
-        raiseEvent("fatalError", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("fatalError", eventDataExchange, arg0);
     }
     //@Override
     public void warning(javax.xml.transform.TransformerException arg0) {
-        raiseEvent("warning", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("warning", eventDataExchange, arg0);
     }
 
 }

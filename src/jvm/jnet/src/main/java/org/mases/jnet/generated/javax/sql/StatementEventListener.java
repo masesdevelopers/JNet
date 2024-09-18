@@ -26,6 +26,7 @@ public final class StatementEventListener implements org.mases.jcobridge.IJCList
     final org.mases.jcobridge.JCListener _internalListener;
 
     public StatementEventListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,11 +72,13 @@ public final class StatementEventListener implements org.mases.jcobridge.IJCList
 
     //@Override
     public void statementClosed(javax.sql.StatementEvent arg0) {
-        raiseEvent("statementClosed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("statementClosed", eventDataExchange, arg0);
     }
     //@Override
     public void statementErrorOccurred(javax.sql.StatementEvent arg0) {
-        raiseEvent("statementErrorOccurred", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("statementErrorOccurred", eventDataExchange, arg0);
     }
 
 }

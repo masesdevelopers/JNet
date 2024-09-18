@@ -26,6 +26,7 @@ public final class BinaryOperator implements org.mases.jcobridge.IJCListener, ja
     final org.mases.jcobridge.JCListener _internalListener;
 
     public BinaryOperator(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,14 +72,17 @@ public final class BinaryOperator implements org.mases.jcobridge.IJCListener, ja
 
     //@Override
     public java.lang.Object apply(java.lang.Object arg0, java.lang.Object arg1) {
-        raiseEvent("apply", arg0, arg1); Object retVal = getReturnData(); return (java.lang.Object)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("apply", eventDataExchange, arg0, arg1); Object retVal = getReturnData(); return (java.lang.Object)retVal;
     }
     //@Override
     public java.util.function.BiFunction andThen(java.util.function.Function arg0) {
-        raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.BiFunction)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BinaryOperator.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiFunction)retVal;
     }
     //@Override
     public java.util.function.BiFunction andThenDefault(java.util.function.Function arg0) {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
         return java.util.function.BinaryOperator.super.andThen(arg0);
     }
 

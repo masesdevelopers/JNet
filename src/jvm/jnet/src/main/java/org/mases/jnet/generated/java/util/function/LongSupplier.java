@@ -26,6 +26,7 @@ public final class LongSupplier implements org.mases.jcobridge.IJCListener, java
     final org.mases.jcobridge.JCListener _internalListener;
 
     public LongSupplier(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class LongSupplier implements org.mases.jcobridge.IJCListener, java
 
     //@Override
     public long getAsLong() {
-        raiseEvent("getAsLong"); Object retVal = getReturnData(); return (long)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("getAsLong", eventDataExchange); Object retVal = getReturnData(); return (long)retVal;
     }
 
 }

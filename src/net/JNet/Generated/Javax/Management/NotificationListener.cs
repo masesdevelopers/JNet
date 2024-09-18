@@ -141,7 +141,7 @@ namespace Javax.Management
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("handleNotification", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(HandleNotificationEventHandler));
+            AddEventHandler("handleNotification", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(HandleNotificationEventHandler));
 
         }
 
@@ -151,10 +151,12 @@ namespace Javax.Management
         /// <remarks>If <see cref="OnHandleNotification"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Management.Notification, object> OnHandleNotification { get; set; } = null;
 
-        void HandleNotificationEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Management.Notification>> data)
+        bool hasOverrideHandleNotification = true;
+        void HandleNotificationEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnHandleNotification != null) ? OnHandleNotification : HandleNotification;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Management.Notification>(0), data.EventData.GetAt<object>(1));
+            data.Eventdata.TypedEventData.HasOverride = hasOverrideHandleNotification;
         }
 
         /// <summary>
@@ -164,7 +166,7 @@ namespace Javax.Management
         /// <param name="arg1"><see cref="object"/></param>
         public virtual void HandleNotification(Javax.Management.Notification arg0, object arg1)
         {
-            
+            hasOverrideHandleNotification = false;
         }
 
         #endregion

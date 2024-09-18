@@ -150,9 +150,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("menuCanceled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuCanceledEventHandler));
-            AddEventHandler("menuDeselected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuDeselectedEventHandler));
-            AddEventHandler("menuSelected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuSelectedEventHandler));
+            AddEventHandler("menuCanceled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MenuCanceledEventHandler));
+            AddEventHandler("menuDeselected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MenuDeselectedEventHandler));
+            AddEventHandler("menuSelected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MenuSelectedEventHandler));
 
         }
 
@@ -162,10 +162,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnMenuCanceled"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.MenuEvent> OnMenuCanceled { get; set; } = null;
 
-        void MenuCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>> data)
+        bool hasOverrideMenuCanceled = true;
+        void MenuCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnMenuCanceled != null) ? OnMenuCanceled : MenuCanceled;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.MenuEvent>(0));
+            data.Eventdata.TypedEventData.HasOverride = hasOverrideMenuCanceled;
         }
 
         /// <summary>
@@ -174,7 +176,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
         public virtual void MenuCanceled(Javax.Swing.Event.MenuEvent arg0)
         {
-            
+            hasOverrideMenuCanceled = false;
         }
 
         /// <summary>
@@ -183,10 +185,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnMenuDeselected"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.MenuEvent> OnMenuDeselected { get; set; } = null;
 
-        void MenuDeselectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>> data)
+        bool hasOverrideMenuDeselected = true;
+        void MenuDeselectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnMenuDeselected != null) ? OnMenuDeselected : MenuDeselected;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.MenuEvent>(0));
+            data.Eventdata.TypedEventData.HasOverride = hasOverrideMenuDeselected;
         }
 
         /// <summary>
@@ -195,7 +199,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
         public virtual void MenuDeselected(Javax.Swing.Event.MenuEvent arg0)
         {
-            
+            hasOverrideMenuDeselected = false;
         }
 
         /// <summary>
@@ -204,10 +208,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnMenuSelected"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.MenuEvent> OnMenuSelected { get; set; } = null;
 
-        void MenuSelectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>> data)
+        bool hasOverrideMenuSelected = true;
+        void MenuSelectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnMenuSelected != null) ? OnMenuSelected : MenuSelected;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.MenuEvent>(0));
+            data.Eventdata.TypedEventData.HasOverride = hasOverrideMenuSelected;
         }
 
         /// <summary>
@@ -216,7 +222,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
         public virtual void MenuSelected(Javax.Swing.Event.MenuEvent arg0)
         {
-            
+            hasOverrideMenuSelected = false;
         }
 
         #endregion

@@ -145,8 +145,8 @@ namespace Javax.Naming.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("namingExceptionThrown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler));
-            AddEventHandler("objectChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectChangedEventHandler));
+            AddEventHandler("namingExceptionThrown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(NamingExceptionThrownEventHandler));
+            AddEventHandler("objectChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ObjectChangedEventHandler));
 
         }
 
@@ -156,10 +156,12 @@ namespace Javax.Naming.Event
         /// <remarks>If <see cref="OnNamingExceptionThrown"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Naming.Event.NamingExceptionEvent> OnNamingExceptionThrown { get; set; } = null;
 
-        void NamingExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>> data)
+        bool hasOverrideNamingExceptionThrown = true;
+        void NamingExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnNamingExceptionThrown != null) ? OnNamingExceptionThrown : NamingExceptionThrown;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Naming.Event.NamingExceptionEvent>(0));
+            data.Eventdata.TypedEventData.HasOverride = hasOverrideNamingExceptionThrown;
         }
 
         /// <summary>
@@ -168,7 +170,7 @@ namespace Javax.Naming.Event
         /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
         public virtual void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
         {
-            
+            hasOverrideNamingExceptionThrown = false;
         }
 
         /// <summary>
@@ -177,10 +179,12 @@ namespace Javax.Naming.Event
         /// <remarks>If <see cref="OnObjectChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Naming.Event.NamingEvent> OnObjectChanged { get; set; } = null;
 
-        void ObjectChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>> data)
+        bool hasOverrideObjectChanged = true;
+        void ObjectChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnObjectChanged != null) ? OnObjectChanged : ObjectChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Naming.Event.NamingEvent>(0));
+            data.Eventdata.TypedEventData.HasOverride = hasOverrideObjectChanged;
         }
 
         /// <summary>
@@ -189,7 +193,7 @@ namespace Javax.Naming.Event
         /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
         public virtual void ObjectChanged(Javax.Naming.Event.NamingEvent arg0)
         {
-            
+            hasOverrideObjectChanged = false;
         }
 
         #endregion

@@ -26,6 +26,7 @@ public final class InternalFrameListener implements org.mases.jcobridge.IJCListe
     final org.mases.jcobridge.JCListener _internalListener;
 
     public InternalFrameListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,31 +72,38 @@ public final class InternalFrameListener implements org.mases.jcobridge.IJCListe
 
     //@Override
     public void internalFrameActivated(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameActivated", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("internalFrameActivated", eventDataExchange, arg0);
     }
     //@Override
     public void internalFrameClosed(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameClosed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("internalFrameClosed", eventDataExchange, arg0);
     }
     //@Override
     public void internalFrameClosing(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameClosing", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("internalFrameClosing", eventDataExchange, arg0);
     }
     //@Override
     public void internalFrameDeactivated(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameDeactivated", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("internalFrameDeactivated", eventDataExchange, arg0);
     }
     //@Override
     public void internalFrameDeiconified(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameDeiconified", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("internalFrameDeiconified", eventDataExchange, arg0);
     }
     //@Override
     public void internalFrameIconified(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameIconified", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("internalFrameIconified", eventDataExchange, arg0);
     }
     //@Override
     public void internalFrameOpened(javax.swing.event.InternalFrameEvent arg0) {
-        raiseEvent("internalFrameOpened", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("internalFrameOpened", eventDataExchange, arg0);
     }
 
 }

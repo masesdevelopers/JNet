@@ -26,6 +26,7 @@ public final class UndoableEditListener implements org.mases.jcobridge.IJCListen
     final org.mases.jcobridge.JCListener _internalListener;
 
     public UndoableEditListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class UndoableEditListener implements org.mases.jcobridge.IJCListen
 
     //@Override
     public void undoableEditHappened(javax.swing.event.UndoableEditEvent arg0) {
-        raiseEvent("undoableEditHappened", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("undoableEditHappened", eventDataExchange, arg0);
     }
 
 }

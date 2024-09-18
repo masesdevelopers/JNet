@@ -26,6 +26,7 @@ public final class ToDoubleFunction implements org.mases.jcobridge.IJCListener, 
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ToDoubleFunction(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,7 +72,8 @@ public final class ToDoubleFunction implements org.mases.jcobridge.IJCListener, 
 
     //@Override
     public double applyAsDouble(java.lang.Object arg0) {
-        raiseEvent("applyAsDouble", arg0); Object retVal = getReturnData(); return (double)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("applyAsDouble", eventDataExchange, arg0); Object retVal = getReturnData(); return (double)retVal;
     }
 
 }

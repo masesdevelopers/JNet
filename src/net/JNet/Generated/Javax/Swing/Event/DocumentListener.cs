@@ -150,9 +150,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("changedUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(ChangedUpdateEventHandler));
-            AddEventHandler("insertUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(InsertUpdateEventHandler));
-            AddEventHandler("removeUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(RemoveUpdateEventHandler));
+            AddEventHandler("changedUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ChangedUpdateEventHandler));
+            AddEventHandler("insertUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(InsertUpdateEventHandler));
+            AddEventHandler("removeUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(RemoveUpdateEventHandler));
 
         }
 
@@ -162,10 +162,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnChangedUpdate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.DocumentEvent> OnChangedUpdate { get; set; } = null;
 
-        void ChangedUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
+        bool hasOverrideChangedUpdate = true;
+        void ChangedUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnChangedUpdate != null) ? OnChangedUpdate : ChangedUpdate;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.DocumentEvent>(0));
+            data.Eventdata.TypedEventData.HasOverride = hasOverrideChangedUpdate;
         }
 
         /// <summary>
@@ -174,7 +176,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
         public virtual void ChangedUpdate(Javax.Swing.Event.DocumentEvent arg0)
         {
-            
+            hasOverrideChangedUpdate = false;
         }
 
         /// <summary>
@@ -183,10 +185,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnInsertUpdate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.DocumentEvent> OnInsertUpdate { get; set; } = null;
 
-        void InsertUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
+        bool hasOverrideInsertUpdate = true;
+        void InsertUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnInsertUpdate != null) ? OnInsertUpdate : InsertUpdate;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.DocumentEvent>(0));
+            data.Eventdata.TypedEventData.HasOverride = hasOverrideInsertUpdate;
         }
 
         /// <summary>
@@ -195,7 +199,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
         public virtual void InsertUpdate(Javax.Swing.Event.DocumentEvent arg0)
         {
-            
+            hasOverrideInsertUpdate = false;
         }
 
         /// <summary>
@@ -204,10 +208,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnRemoveUpdate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.DocumentEvent> OnRemoveUpdate { get; set; } = null;
 
-        void RemoveUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
+        bool hasOverrideRemoveUpdate = true;
+        void RemoveUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnRemoveUpdate != null) ? OnRemoveUpdate : RemoveUpdate;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.DocumentEvent>(0));
+            data.Eventdata.TypedEventData.HasOverride = hasOverrideRemoveUpdate;
         }
 
         /// <summary>
@@ -216,7 +222,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
         public virtual void RemoveUpdate(Javax.Swing.Event.DocumentEvent arg0)
         {
-            
+            hasOverrideRemoveUpdate = false;
         }
 
         #endregion

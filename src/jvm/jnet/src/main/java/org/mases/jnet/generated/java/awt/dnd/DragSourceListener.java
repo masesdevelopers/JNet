@@ -26,6 +26,7 @@ public final class DragSourceListener implements org.mases.jcobridge.IJCListener
     final org.mases.jcobridge.JCListener _internalListener;
 
     public DragSourceListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -70,24 +71,29 @@ public final class DragSourceListener implements org.mases.jcobridge.IJCListener
     }
 
     //@Override
-    public void dragDropEnd(java.awt.dnd.DragSourceDropEvent arg0) {
-        raiseEvent("dragDropEnd", arg0);
+    public void dragDropEnd(java.awt.dnd.DragSourceDropEvent arg0)java.awt.dnd.DragSourceDropEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("dragDropEnd", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void dragEnter(java.awt.dnd.DragSourceDragEvent arg0) {
-        raiseEvent("dragEnter", arg0);
+    public void dragEnter(java.awt.dnd.DragSourceDragEvent arg0)java.awt.dnd.DragSourceDragEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("dragEnter", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void dragExit(java.awt.dnd.DragSourceEvent arg0) {
-        raiseEvent("dragExit", arg0);
+    public void dragExit(java.awt.dnd.DragSourceEvent arg0)java.awt.dnd.DragSourceEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("dragExit", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void dragOver(java.awt.dnd.DragSourceDragEvent arg0) {
-        raiseEvent("dragOver", arg0);
+    public void dragOver(java.awt.dnd.DragSourceDragEvent arg0)java.awt.dnd.DragSourceDragEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("dragOver", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void dropActionChanged(java.awt.dnd.DragSourceDragEvent arg0) {
-        raiseEvent("dropActionChanged", arg0);
+    public void dropActionChanged(java.awt.dnd.DragSourceDragEvent arg0)java.awt.dnd.DragSourceDragEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("dropActionChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

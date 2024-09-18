@@ -26,6 +26,7 @@ public final class ScreenSleepListener implements org.mases.jcobridge.IJCListene
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ScreenSleepListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -70,12 +71,14 @@ public final class ScreenSleepListener implements org.mases.jcobridge.IJCListene
     }
 
     //@Override
-    public void screenAboutToSleep(java.awt.desktop.ScreenSleepEvent arg0) {
-        raiseEvent("screenAboutToSleep", arg0);
+    public void screenAboutToSleep(java.awt.desktop.ScreenSleepEvent arg0)java.awt.desktop.ScreenSleepEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("screenAboutToSleep", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void screenAwoke(java.awt.desktop.ScreenSleepEvent arg0) {
-        raiseEvent("screenAwoke", arg0);
+    public void screenAwoke(java.awt.desktop.ScreenSleepEvent arg0)java.awt.desktop.ScreenSleepEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("screenAwoke", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

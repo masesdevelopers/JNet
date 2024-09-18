@@ -26,6 +26,7 @@ public final class MenuListener implements org.mases.jcobridge.IJCListener, java
     final org.mases.jcobridge.JCListener _internalListener;
 
     public MenuListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -70,16 +71,19 @@ public final class MenuListener implements org.mases.jcobridge.IJCListener, java
     }
 
     //@Override
-    public void menuCanceled(javax.swing.event.MenuEvent arg0) {
-        raiseEvent("menuCanceled", arg0);
+    public void menuCanceled(javax.swing.event.MenuEvent arg0)javax.swing.event.MenuEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("menuCanceled", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void menuDeselected(javax.swing.event.MenuEvent arg0) {
-        raiseEvent("menuDeselected", arg0);
+    public void menuDeselected(javax.swing.event.MenuEvent arg0)javax.swing.event.MenuEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("menuDeselected", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void menuSelected(javax.swing.event.MenuEvent arg0) {
-        raiseEvent("menuSelected", arg0);
+    public void menuSelected(javax.swing.event.MenuEvent arg0)javax.swing.event.MenuEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("menuSelected", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

@@ -26,6 +26,7 @@ public final class Predicate implements org.mases.jcobridge.IJCListener, java.ut
     final org.mases.jcobridge.JCListener _internalListener;
 
     public Predicate(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -70,31 +71,38 @@ public final class Predicate implements org.mases.jcobridge.IJCListener, java.ut
     }
 
     //@Override
-    public boolean test(java.lang.Object arg0) {
-        raiseEvent("test", arg0); Object retVal = getReturnData(); return (boolean)retVal;
+    public boolean test(java.lang.Object arg0)java.lang.Object arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("test", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
-    public java.util.function.Predicate and(java.util.function.Predicate arg0) {
-        raiseEvent("and", arg0); Object retVal = getReturnData(); return (java.util.function.Predicate)retVal;
+    public java.util.function.Predicate and(java.util.function.Predicate arg0)java.util.function.Predicate arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("and", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Predicate.super.and(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Predicate)retVal;
     }
     //@Override
-    public java.util.function.Predicate andDefault(java.util.function.Predicate arg0) {
+    public java.util.function.Predicate andDefault(java.util.function.Predicate arg0)METHOD_STUB_EXTEND_EXCEPTIONS_PLACEHOLDER {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         return java.util.function.Predicate.super.and(arg0);
     }
     //@Override
     public java.util.function.Predicate negate() {
-        raiseEvent("negate"); Object retVal = getReturnData(); return (java.util.function.Predicate)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("negate", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Predicate.super.negate(); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Predicate)retVal;
     }
     //@Override
-    public java.util.function.Predicate negateDefault() {
+    public java.util.function.Predicate negateDefault()METHOD_STUB_EXTEND_EXCEPTIONS_PLACEHOLDER {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         return java.util.function.Predicate.super.negate();
     }
     //@Override
-    public java.util.function.Predicate or(java.util.function.Predicate arg0) {
-        raiseEvent("or", arg0); Object retVal = getReturnData(); return (java.util.function.Predicate)retVal;
+    public java.util.function.Predicate or(java.util.function.Predicate arg0)java.util.function.Predicate arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("or", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Predicate.super.or(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Predicate)retVal;
     }
     //@Override
-    public java.util.function.Predicate orDefault(java.util.function.Predicate arg0) {
+    public java.util.function.Predicate orDefault(java.util.function.Predicate arg0)METHOD_STUB_EXTEND_EXCEPTIONS_PLACEHOLDER {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         return java.util.function.Predicate.super.or(arg0);
     }
 

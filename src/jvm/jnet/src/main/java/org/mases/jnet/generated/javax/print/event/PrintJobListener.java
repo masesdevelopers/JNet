@@ -26,6 +26,7 @@ public final class PrintJobListener implements org.mases.jcobridge.IJCListener, 
     final org.mases.jcobridge.JCListener _internalListener;
 
     public PrintJobListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -70,28 +71,34 @@ public final class PrintJobListener implements org.mases.jcobridge.IJCListener, 
     }
 
     //@Override
-    public void printDataTransferCompleted(javax.print.event.PrintJobEvent arg0) {
-        raiseEvent("printDataTransferCompleted", arg0);
+    public void printDataTransferCompleted(javax.print.event.PrintJobEvent arg0)javax.print.event.PrintJobEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("printDataTransferCompleted", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void printJobCanceled(javax.print.event.PrintJobEvent arg0) {
-        raiseEvent("printJobCanceled", arg0);
+    public void printJobCanceled(javax.print.event.PrintJobEvent arg0)javax.print.event.PrintJobEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("printJobCanceled", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void printJobCompleted(javax.print.event.PrintJobEvent arg0) {
-        raiseEvent("printJobCompleted", arg0);
+    public void printJobCompleted(javax.print.event.PrintJobEvent arg0)javax.print.event.PrintJobEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("printJobCompleted", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void printJobFailed(javax.print.event.PrintJobEvent arg0) {
-        raiseEvent("printJobFailed", arg0);
+    public void printJobFailed(javax.print.event.PrintJobEvent arg0)javax.print.event.PrintJobEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("printJobFailed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void printJobNoMoreEvents(javax.print.event.PrintJobEvent arg0) {
-        raiseEvent("printJobNoMoreEvents", arg0);
+    public void printJobNoMoreEvents(javax.print.event.PrintJobEvent arg0)javax.print.event.PrintJobEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("printJobNoMoreEvents", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
-    public void printJobRequiresAttention(javax.print.event.PrintJobEvent arg0) {
-        raiseEvent("printJobRequiresAttention", arg0);
+    public void printJobRequiresAttention(javax.print.event.PrintJobEvent arg0)javax.print.event.PrintJobEvent arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("printJobRequiresAttention", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

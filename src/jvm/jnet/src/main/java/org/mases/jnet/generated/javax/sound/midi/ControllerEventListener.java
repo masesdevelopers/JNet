@@ -26,6 +26,7 @@ public final class ControllerEventListener implements org.mases.jcobridge.IJCLis
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ControllerEventListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -70,8 +71,9 @@ public final class ControllerEventListener implements org.mases.jcobridge.IJCLis
     }
 
     //@Override
-    public void controlChange(javax.sound.midi.ShortMessage arg0) {
-        raiseEvent("controlChange", arg0);
+    public void controlChange(javax.sound.midi.ShortMessage arg0)javax.sound.midi.ShortMessage arg0 {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("controlChange", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

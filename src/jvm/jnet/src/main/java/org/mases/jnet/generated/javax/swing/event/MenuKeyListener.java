@@ -26,7 +26,13 @@ public final class MenuKeyListener implements org.mases.jcobridge.IJCListener, j
     final org.mases.jcobridge.JCListener _internalListener;
 
     public MenuKeyListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,15 +77,18 @@ public final class MenuKeyListener implements org.mases.jcobridge.IJCListener, j
 
     //@Override
     public void menuKeyPressed(javax.swing.event.MenuKeyEvent arg0) {
-        raiseEvent("menuKeyPressed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("menuKeyPressed", eventDataExchange, arg0);
     }
     //@Override
     public void menuKeyReleased(javax.swing.event.MenuKeyEvent arg0) {
-        raiseEvent("menuKeyReleased", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("menuKeyReleased", eventDataExchange, arg0);
     }
     //@Override
     public void menuKeyTyped(javax.swing.event.MenuKeyEvent arg0) {
-        raiseEvent("menuKeyTyped", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("menuKeyTyped", eventDataExchange, arg0);
     }
 
 }

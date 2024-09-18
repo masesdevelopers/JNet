@@ -26,7 +26,13 @@ public final class AncestorListener implements org.mases.jcobridge.IJCListener, 
     final org.mases.jcobridge.JCListener _internalListener;
 
     public AncestorListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,15 +77,18 @@ public final class AncestorListener implements org.mases.jcobridge.IJCListener, 
 
     //@Override
     public void ancestorAdded(javax.swing.event.AncestorEvent arg0) {
-        raiseEvent("ancestorAdded", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("ancestorAdded", eventDataExchange, arg0);
     }
     //@Override
     public void ancestorMoved(javax.swing.event.AncestorEvent arg0) {
-        raiseEvent("ancestorMoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("ancestorMoved", eventDataExchange, arg0);
     }
     //@Override
     public void ancestorRemoved(javax.swing.event.AncestorEvent arg0) {
-        raiseEvent("ancestorRemoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("ancestorRemoved", eventDataExchange, arg0);
     }
 
 }

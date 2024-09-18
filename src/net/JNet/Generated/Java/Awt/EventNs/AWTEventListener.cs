@@ -140,7 +140,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("eventDispatched", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>>>(EventDispatchedEventHandler));
+            AddEventHandler("eventDispatched", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(EventDispatchedEventHandler));
 
         }
 
@@ -150,10 +150,12 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnEventDispatched"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.AWTEvent> OnEventDispatched { get; set; } = null;
 
-        void EventDispatchedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>> data)
+        bool hasOverrideEventDispatched = true;
+        void EventDispatchedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnEventDispatched != null) ? OnEventDispatched : EventDispatched;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.AWTEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideEventDispatched;
         }
 
         /// <summary>
@@ -162,7 +164,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
         public virtual void EventDispatched(Java.Awt.AWTEvent arg0)
         {
-            
+            hasOverrideEventDispatched = false;
         }
 
         #endregion

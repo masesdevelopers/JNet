@@ -26,7 +26,13 @@ public final class Consumer implements org.mases.jcobridge.IJCListener, java.uti
     final org.mases.jcobridge.JCListener _internalListener;
 
     public Consumer(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,15 +77,13 @@ public final class Consumer implements org.mases.jcobridge.IJCListener, java.uti
 
     //@Override
     public void accept(java.lang.Object arg0) {
-        raiseEvent("accept", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("accept", eventDataExchange, arg0);
     }
     //@Override
     public java.util.function.Consumer andThen(java.util.function.Consumer arg0) {
-        raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.Consumer)retVal;
-    }
-    //@Override
-    public java.util.function.Consumer andThenDefault(java.util.function.Consumer arg0) {
-        return java.util.function.Consumer.super.andThen(arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Consumer.super.andThen(, arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Consumer)retVal;
     }
 
 }

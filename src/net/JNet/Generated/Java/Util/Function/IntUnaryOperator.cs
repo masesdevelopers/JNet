@@ -162,9 +162,9 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsIntEventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntUnaryOperator>>>(AndThenEventHandler));
-            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntUnaryOperator>>>(ComposeEventHandler));
+            AddEventHandler("applyAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(ApplyAsIntEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(AndThenEventHandler));
+            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(ComposeEventHandler));
 
         }
 
@@ -174,11 +174,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApplyAsInt"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, int> OnApplyAsInt { get; set; } = null;
 
-        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+        bool hasOverrideApplyAsInt = true;
+        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnApplyAsInt != null) ? OnApplyAsInt : ApplyAsInt;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0));
+            data.TypedEventData.SetReturnValue(hasOverrideApplyAsInt, executionResult);
         }
 
         /// <summary>
@@ -188,17 +189,7 @@ namespace Java.Util.Function
         /// <returns><see cref="int"/></returns>
         public virtual int ApplyAsInt(int arg0)
         {
-            return default;
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
-        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.IntUnaryOperator AndThenDefault(Java.Util.Function.IntUnaryOperator arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.IntUnaryOperator>("andThenDefault", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;", arg0);
+            hasOverrideApplyAsInt = false; return default;
         }
 
         /// <summary>
@@ -207,11 +198,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.IntUnaryOperator, Java.Util.Function.IntUnaryOperator> OnAndThen { get; set; } = null;
 
-        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntUnaryOperator>> data)
+        bool hasOverrideAndThen = true;
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThen;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.IntUnaryOperator>(0));
+            data.TypedEventData.SetReturnValue(hasOverrideAndThen, executionResult);
         }
 
         /// <summary>
@@ -219,20 +211,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntUnaryOperator AndThen(Java.Util.Function.IntUnaryOperator arg0)
         {
-            return AndThenDefault(arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
-        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.IntUnaryOperator ComposeDefault(Java.Util.Function.IntUnaryOperator arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.IntUnaryOperator>("composeDefault", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;", arg0);
+            hasOverrideAndThen = false; return default;
         }
 
         /// <summary>
@@ -241,11 +222,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnCompose"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.IntUnaryOperator, Java.Util.Function.IntUnaryOperator> OnCompose { get; set; } = null;
 
-        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntUnaryOperator>> data)
+        bool hasOverrideCompose = true;
+        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnCompose != null) ? OnCompose : Compose;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.IntUnaryOperator>(0));
+            data.TypedEventData.SetReturnValue(hasOverrideCompose, executionResult);
         }
 
         /// <summary>
@@ -253,10 +235,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="ComposeDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntUnaryOperator Compose(Java.Util.Function.IntUnaryOperator arg0)
         {
-            return ComposeDefault(arg0);
+            hasOverrideCompose = false; return default;
         }
 
         #endregion

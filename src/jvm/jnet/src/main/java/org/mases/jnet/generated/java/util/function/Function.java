@@ -26,7 +26,13 @@ public final class Function implements org.mases.jcobridge.IJCListener, java.uti
     final org.mases.jcobridge.JCListener _internalListener;
 
     public Function(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,23 +77,18 @@ public final class Function implements org.mases.jcobridge.IJCListener, java.uti
 
     //@Override
     public java.lang.Object apply(java.lang.Object arg0) {
-        raiseEvent("apply", arg0); Object retVal = getReturnData(); return (java.lang.Object)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("apply", eventDataExchange, arg0); Object retVal = getReturnData(); return (java.lang.Object)retVal;
     }
     //@Override
     public java.util.function.Function andThen(java.util.function.Function arg0) {
-        raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.Function)retVal;
-    }
-    //@Override
-    public java.util.function.Function andThenDefault(java.util.function.Function arg0) {
-        return java.util.function.Function.super.andThen(arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Function.super.andThen(, arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Function)retVal;
     }
     //@Override
     public java.util.function.Function compose(java.util.function.Function arg0) {
-        raiseEvent("compose", arg0); Object retVal = getReturnData(); return (java.util.function.Function)retVal;
-    }
-    //@Override
-    public java.util.function.Function composeDefault(java.util.function.Function arg0) {
-        return java.util.function.Function.super.compose(arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("compose", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Function.super.compose(, arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Function)retVal;
     }
 
 }

@@ -147,8 +147,8 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("treeWillCollapse", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeWillCollapseEventHandler));
-            AddEventHandler("treeWillExpand", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeWillExpandEventHandler));
+            AddEventHandler("treeWillCollapse", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(TreeWillCollapseEventHandler));
+            AddEventHandler("treeWillExpand", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(TreeWillExpandEventHandler));
 
         }
 
@@ -158,10 +158,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnTreeWillCollapse"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeWillCollapse { get; set; } = null;
 
-        void TreeWillCollapseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>> data)
+        bool hasOverrideTreeWillCollapse = true;
+        void TreeWillCollapseEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnTreeWillCollapse != null) ? OnTreeWillCollapse : TreeWillCollapse;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.TreeExpansionEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideTreeWillCollapse;
         }
 
         /// <summary>
@@ -171,7 +173,7 @@ namespace Javax.Swing.Event
         /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
         public virtual void TreeWillCollapse(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
-            
+            hasOverrideTreeWillCollapse = false;
         }
 
         /// <summary>
@@ -180,10 +182,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnTreeWillExpand"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeWillExpand { get; set; } = null;
 
-        void TreeWillExpandEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>> data)
+        bool hasOverrideTreeWillExpand = true;
+        void TreeWillExpandEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnTreeWillExpand != null) ? OnTreeWillExpand : TreeWillExpand;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.TreeExpansionEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideTreeWillExpand;
         }
 
         /// <summary>
@@ -193,7 +197,7 @@ namespace Javax.Swing.Event
         /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
         public virtual void TreeWillExpand(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
-            
+            hasOverrideTreeWillExpand = false;
         }
 
         #endregion

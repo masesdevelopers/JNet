@@ -26,7 +26,13 @@ public final class EventListener implements org.mases.jcobridge.IJCListener, org
     final org.mases.jcobridge.JCListener _internalListener;
 
     public EventListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,7 +77,8 @@ public final class EventListener implements org.mases.jcobridge.IJCListener, org
 
     //@Override
     public void handleEvent(org.w3c.dom.events.Event arg0) {
-        raiseEvent("handleEvent", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("handleEvent", eventDataExchange, arg0);
     }
 
 }

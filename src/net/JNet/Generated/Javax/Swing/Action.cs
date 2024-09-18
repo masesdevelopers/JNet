@@ -178,14 +178,14 @@ namespace Javax.Swing
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("isEnabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEnabledEventHandler));
-            AddEventHandler("getValue", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetValueEventHandler));
-            AddEventHandler("actionPerformed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>>>(ActionPerformedEventHandler));
-            AddEventHandler("addPropertyChangeListener", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(AddPropertyChangeListenerEventHandler));
-            AddEventHandler("putValue", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(PutValueEventHandler));
-            AddEventHandler("removePropertyChangeListener", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(RemovePropertyChangeListenerEventHandler));
-            AddEventHandler("setEnabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(SetEnabledEventHandler));
-            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
+            AddEventHandler("isEnabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(IsEnabledEventHandler));
+            AddEventHandler("getValue", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(GetValueEventHandler));
+            AddEventHandler("actionPerformed", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(ActionPerformedEventHandler));
+            AddEventHandler("addPropertyChangeListener", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(AddPropertyChangeListenerEventHandler));
+            AddEventHandler("putValue", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(PutValueEventHandler));
+            AddEventHandler("removePropertyChangeListener", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(RemovePropertyChangeListenerEventHandler));
+            AddEventHandler("setEnabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(SetEnabledEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(AcceptEventHandler));
 
         }
 
@@ -195,11 +195,12 @@ namespace Javax.Swing
         /// <remarks>If <see cref="OnIsEnabled"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<bool> OnIsEnabled { get; set; } = null;
 
-        void IsEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideIsEnabled = true;
+        void IsEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnIsEnabled != null) ? OnIsEnabled : IsEnabled;
             var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
+            data.TypedEventData.SetReturnValue(hasOverrideIsEnabled, executionResult);
         }
 
         /// <summary>
@@ -208,7 +209,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public virtual bool IsEnabled()
         {
-            return default;
+            hasOverrideIsEnabled = false; return default;
         }
 
         /// <summary>
@@ -217,11 +218,12 @@ namespace Javax.Swing
         /// <remarks>If <see cref="OnGetValue"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Lang.String, object> OnGetValue { get; set; } = null;
 
-        void GetValueEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        bool hasOverrideGetValue = true;
+        void GetValueEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnGetValue != null) ? OnGetValue : GetValue;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0));
+            data.TypedEventData.SetReturnValue(hasOverrideGetValue, executionResult);
         }
 
         /// <summary>
@@ -231,7 +233,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public virtual object GetValue(Java.Lang.String arg0)
         {
-            return default;
+            hasOverrideGetValue = false; return default;
         }
 
         /// <summary>
@@ -240,10 +242,12 @@ namespace Javax.Swing
         /// <remarks>If <see cref="OnActionPerformed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.ActionEvent> OnActionPerformed { get; set; } = null;
 
-        void ActionPerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>> data)
+        bool hasOverrideActionPerformed = true;
+        void ActionPerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnActionPerformed != null) ? OnActionPerformed : ActionPerformed;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.ActionEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideActionPerformed;
         }
 
         /// <summary>
@@ -252,7 +256,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
         public virtual void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
         {
-            
+            hasOverrideActionPerformed = false;
         }
 
         /// <summary>
@@ -261,10 +265,12 @@ namespace Javax.Swing
         /// <remarks>If <see cref="OnAddPropertyChangeListener"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Beans.PropertyChangeListener> OnAddPropertyChangeListener { get; set; } = null;
 
-        void AddPropertyChangeListenerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>> data)
+        bool hasOverrideAddPropertyChangeListener = true;
+        void AddPropertyChangeListenerEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnAddPropertyChangeListener != null) ? OnAddPropertyChangeListener : AddPropertyChangeListener;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Beans.PropertyChangeListener>(0));
+            data.TypedEventData.HasOverride = hasOverrideAddPropertyChangeListener;
         }
 
         /// <summary>
@@ -273,7 +279,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public virtual void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            
+            hasOverrideAddPropertyChangeListener = false;
         }
 
         /// <summary>
@@ -282,10 +288,12 @@ namespace Javax.Swing
         /// <remarks>If <see cref="OnPutValue"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String, object> OnPutValue { get; set; } = null;
 
-        void PutValueEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        bool hasOverridePutValue = true;
+        void PutValueEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnPutValue != null) ? OnPutValue : PutValue;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<object>(1));
+            data.TypedEventData.HasOverride = hasOverridePutValue;
         }
 
         /// <summary>
@@ -295,7 +303,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="object"/></param>
         public virtual void PutValue(Java.Lang.String arg0, object arg1)
         {
-            
+            hasOverridePutValue = false;
         }
 
         /// <summary>
@@ -304,10 +312,12 @@ namespace Javax.Swing
         /// <remarks>If <see cref="OnRemovePropertyChangeListener"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Beans.PropertyChangeListener> OnRemovePropertyChangeListener { get; set; } = null;
 
-        void RemovePropertyChangeListenerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>> data)
+        bool hasOverrideRemovePropertyChangeListener = true;
+        void RemovePropertyChangeListenerEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnRemovePropertyChangeListener != null) ? OnRemovePropertyChangeListener : RemovePropertyChangeListener;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Beans.PropertyChangeListener>(0));
+            data.TypedEventData.HasOverride = hasOverrideRemovePropertyChangeListener;
         }
 
         /// <summary>
@@ -316,7 +326,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public virtual void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            
+            hasOverrideRemovePropertyChangeListener = false;
         }
 
         /// <summary>
@@ -325,10 +335,12 @@ namespace Javax.Swing
         /// <remarks>If <see cref="OnSetEnabled"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<bool> OnSetEnabled { get; set; } = null;
 
-        void SetEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
+        bool hasOverrideSetEnabled = true;
+        void SetEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnSetEnabled != null) ? OnSetEnabled : SetEnabled;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<bool>(0));
+            data.TypedEventData.HasOverride = hasOverrideSetEnabled;
         }
 
         /// <summary>
@@ -337,17 +349,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public virtual void SetEnabled(bool arg0)
         {
-            
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#accept(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public bool AcceptDefault(object arg0)
-        {
-            return IExecuteWithSignature<bool>("acceptDefault", "(Ljava/lang/Object;)Z", arg0);
+            hasOverrideSetEnabled = false;
         }
 
         /// <summary>
@@ -356,11 +358,12 @@ namespace Javax.Swing
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<object, bool> OnAccept { get; set; } = null;
 
-        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        bool hasOverrideAccept = true;
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnAccept != null) ? OnAccept : Accept;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<object>(0));
+            data.TypedEventData.SetReturnValue(hasOverrideAccept, executionResult);
         }
 
         /// <summary>
@@ -368,10 +371,9 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AcceptDefault"/>; override the method to implement a different behavior</remarks>
         public virtual bool Accept(object arg0)
         {
-            return AcceptDefault(arg0);
+            hasOverrideAccept = false; return default;
         }
 
         #endregion

@@ -158,10 +158,10 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(TestEventHandler));
-            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(AndEventHandler));
-            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(OrEventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(AndEventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(OrEventHandler));
 
         }
 
@@ -171,11 +171,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<long, bool> OnTest { get; set; } = null;
 
-        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+        bool hasOverrideTest = true;
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnTest != null) ? OnTest : Test;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<long>(0));
+            data.TypedEventData.SetReturnValue(hasOverrideTest, executionResult);
         }
 
         /// <summary>
@@ -185,17 +186,7 @@ namespace Java.Util.Function
         /// <returns><see cref="bool"/></returns>
         public virtual bool Test(long arg0)
         {
-            return default;
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.LongPredicate AndDefault(Java.Util.Function.LongPredicate arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.LongPredicate>("andDefault", "(Ljava/util/function/LongPredicate;)Ljava/util/function/LongPredicate;", arg0);
+            hasOverrideTest = false; return default;
         }
 
         /// <summary>
@@ -204,11 +195,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.LongPredicate, Java.Util.Function.LongPredicate> OnAnd { get; set; } = null;
 
-        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>> data)
+        bool hasOverrideAnd = true;
+        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnAnd != null) ? OnAnd : And;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.LongPredicate>(0));
+            data.TypedEventData.SetReturnValue(hasOverrideAnd, executionResult);
         }
 
         /// <summary>
@@ -216,19 +208,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.LongPredicate And(Java.Util.Function.LongPredicate arg0)
         {
-            return AndDefault(arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.LongPredicate NegateDefault()
-        {
-            return IExecuteWithSignature<Java.Util.Function.LongPredicate>("negateDefault", "()Ljava/util/function/LongPredicate;");
+            hasOverrideAnd = false; return default;
         }
 
         /// <summary>
@@ -237,31 +219,21 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.LongPredicate> OnNegate { get; set; } = null;
 
-        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideNegate = true;
+        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnNegate != null) ? OnNegate : Negate;
             var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
+            data.TypedEventData.SetReturnValue(hasOverrideNegate, executionResult);
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.LongPredicate Negate()
         {
-            return NegateDefault();
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.LongPredicate OrDefault(Java.Util.Function.LongPredicate arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.LongPredicate>("orDefault", "(Ljava/util/function/LongPredicate;)Ljava/util/function/LongPredicate;", arg0);
+            hasOverrideNegate = false; return default;
         }
 
         /// <summary>
@@ -270,11 +242,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.LongPredicate, Java.Util.Function.LongPredicate> OnOr { get; set; } = null;
 
-        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>> data)
+        bool hasOverrideOr = true;
+        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnOr != null) ? OnOr : Or;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.LongPredicate>(0));
+            data.TypedEventData.SetReturnValue(hasOverrideOr, executionResult);
         }
 
         /// <summary>
@@ -282,10 +255,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OrDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.LongPredicate Or(Java.Util.Function.LongPredicate arg0)
         {
-            return OrDefault(arg0);
+            hasOverrideOr = false; return default;
         }
 
         #endregion

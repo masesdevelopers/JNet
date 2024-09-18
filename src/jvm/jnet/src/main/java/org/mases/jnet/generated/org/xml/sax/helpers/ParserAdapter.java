@@ -26,7 +26,13 @@ public final class ParserAdapter extends org.xml.sax.helpers.ParserAdapter imple
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ParserAdapter(String key) throws org.mases.jcobridge.JCNativeException, org.xml.sax.SAXException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,91 +77,113 @@ public final class ParserAdapter extends org.xml.sax.helpers.ParserAdapter imple
 
     //@Override
     public boolean getFeature(java.lang.String arg0) {
-        raiseEvent("getFeature", arg0); Object retVal = getReturnData(); return (boolean)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("getFeature", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = org.xml.sax.helpers.ParserAdapter.super.getFeature(, arg0); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
     public java.lang.Object getProperty(java.lang.String arg0) {
-        raiseEvent("getProperty", arg0); Object retVal = getReturnData(); return (java.lang.Object)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("getProperty", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = org.xml.sax.helpers.ParserAdapter.super.getProperty(, arg0); else retVal = eventDataExchange.getReturnData(); return (java.lang.Object)retVal;
     }
     //@Override
     public org.xml.sax.ContentHandler getContentHandler() {
-        raiseEvent("getContentHandler"); Object retVal = getReturnData(); return (org.xml.sax.ContentHandler)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("getContentHandler", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = org.xml.sax.helpers.ParserAdapter.super.getContentHandler(); else retVal = eventDataExchange.getReturnData(); return (org.xml.sax.ContentHandler)retVal;
     }
     //@Override
     public org.xml.sax.DTDHandler getDTDHandler() {
-        raiseEvent("getDTDHandler"); Object retVal = getReturnData(); return (org.xml.sax.DTDHandler)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("getDTDHandler", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = org.xml.sax.helpers.ParserAdapter.super.getDTDHandler(); else retVal = eventDataExchange.getReturnData(); return (org.xml.sax.DTDHandler)retVal;
     }
     //@Override
     public org.xml.sax.EntityResolver getEntityResolver() {
-        raiseEvent("getEntityResolver"); Object retVal = getReturnData(); return (org.xml.sax.EntityResolver)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("getEntityResolver", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = org.xml.sax.helpers.ParserAdapter.super.getEntityResolver(); else retVal = eventDataExchange.getReturnData(); return (org.xml.sax.EntityResolver)retVal;
     }
     //@Override
     public org.xml.sax.ErrorHandler getErrorHandler() {
-        raiseEvent("getErrorHandler"); Object retVal = getReturnData(); return (org.xml.sax.ErrorHandler)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("getErrorHandler", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = org.xml.sax.helpers.ParserAdapter.super.getErrorHandler(); else retVal = eventDataExchange.getReturnData(); return (org.xml.sax.ErrorHandler)retVal;
     }
     //@Override
     public void characters(char[] arg0, int arg1, int arg2) {
-        raiseEvent("characters", arg0, arg1, arg2);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("characters", eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.characters(, arg0, arg1, arg2);
     }
     //@Override
     public void endDocument() {
-        raiseEvent("endDocument");
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("endDocument", eventDataExchange); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.endDocument();
     }
     //@Override
     public void endElement(java.lang.String arg0) {
-        raiseEvent("endElement", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("endElement", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.endElement(, arg0);
     }
     //@Override
     public void ignorableWhitespace(char[] arg0, int arg1, int arg2) {
-        raiseEvent("ignorableWhitespace", arg0, arg1, arg2);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("ignorableWhitespace", eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.ignorableWhitespace(, arg0, arg1, arg2);
     }
     //@Override
     public void parse(java.lang.String arg0) {
-        raiseEvent("parse", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("parse", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.parse(, arg0);
     }
     //@Override
     public void parse(org.xml.sax.InputSource arg0) {
-        raiseEvent("parse1", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("parse1", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.parse(, arg0);
     }
     //@Override
     public void processingInstruction(java.lang.String arg0, java.lang.String arg1) {
-        raiseEvent("processingInstruction", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("processingInstruction", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.processingInstruction(, arg0, arg1);
     }
     //@Override
     public void setContentHandler(org.xml.sax.ContentHandler arg0) {
-        raiseEvent("setContentHandler", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("setContentHandler", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.setContentHandler(, arg0);
     }
     //@Override
     public void setDocumentLocator(org.xml.sax.Locator arg0) {
-        raiseEvent("setDocumentLocator", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("setDocumentLocator", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.setDocumentLocator(, arg0);
     }
     //@Override
     public void setDTDHandler(org.xml.sax.DTDHandler arg0) {
-        raiseEvent("setDTDHandler", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("setDTDHandler", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.setDTDHandler(, arg0);
     }
     //@Override
     public void setEntityResolver(org.xml.sax.EntityResolver arg0) {
-        raiseEvent("setEntityResolver", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("setEntityResolver", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.setEntityResolver(, arg0);
     }
     //@Override
     public void setErrorHandler(org.xml.sax.ErrorHandler arg0) {
-        raiseEvent("setErrorHandler", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("setErrorHandler", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.setErrorHandler(, arg0);
     }
     //@Override
     public void setFeature(java.lang.String arg0, boolean arg1) {
-        raiseEvent("setFeature", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("setFeature", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.setFeature(, arg0, arg1);
     }
     //@Override
     public void setProperty(java.lang.String arg0, java.lang.Object arg1) {
-        raiseEvent("setProperty", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("setProperty", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.setProperty(, arg0, arg1);
     }
     //@Override
     public void startDocument() {
-        raiseEvent("startDocument");
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("startDocument", eventDataExchange); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.startDocument();
     }
     //@Override
     public void startElement(java.lang.String arg0, org.xml.sax.AttributeList arg1) {
-        raiseEvent("startElement", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("startElement", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) org.xml.sax.helpers.ParserAdapter.super.startElement(, arg0, arg1);
     }
 
 }

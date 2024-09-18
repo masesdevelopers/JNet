@@ -140,7 +140,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsBoolean", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsBooleanEventHandler));
+            AddEventHandler("getAsBoolean", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(GetAsBooleanEventHandler));
 
         }
 
@@ -150,11 +150,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnGetAsBoolean"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<bool> OnGetAsBoolean { get; set; } = null;
 
-        void GetAsBooleanEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        bool hasOverrideGetAsBoolean = true;
+        void GetAsBooleanEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnGetAsBoolean != null) ? OnGetAsBoolean : GetAsBoolean;
             var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
+            data.TypedEventData.SetReturnValue(hasOverrideGetAsBoolean, executionResult);
         }
 
         /// <summary>
@@ -163,7 +164,7 @@ namespace Java.Util.Function
         /// <returns><see cref="bool"/></returns>
         public virtual bool GetAsBoolean()
         {
-            return default;
+            hasOverrideGetAsBoolean = false; return default;
         }
 
         #endregion

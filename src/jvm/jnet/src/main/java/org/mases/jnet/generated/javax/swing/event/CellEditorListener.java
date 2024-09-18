@@ -26,7 +26,13 @@ public final class CellEditorListener implements org.mases.jcobridge.IJCListener
     final org.mases.jcobridge.JCListener _internalListener;
 
     public CellEditorListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,11 +77,13 @@ public final class CellEditorListener implements org.mases.jcobridge.IJCListener
 
     //@Override
     public void editingCanceled(javax.swing.event.ChangeEvent arg0) {
-        raiseEvent("editingCanceled", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("editingCanceled", eventDataExchange, arg0);
     }
     //@Override
     public void editingStopped(javax.swing.event.ChangeEvent arg0) {
-        raiseEvent("editingStopped", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("editingStopped", eventDataExchange, arg0);
     }
 
 }

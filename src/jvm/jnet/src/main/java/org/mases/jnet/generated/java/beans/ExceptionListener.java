@@ -26,7 +26,13 @@ public final class ExceptionListener implements org.mases.jcobridge.IJCListener,
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ExceptionListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,7 +77,8 @@ public final class ExceptionListener implements org.mases.jcobridge.IJCListener,
 
     //@Override
     public void exceptionThrown(java.lang.Exception arg0) {
-        raiseEvent("exceptionThrown", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("exceptionThrown", eventDataExchange, arg0);
     }
 
 }

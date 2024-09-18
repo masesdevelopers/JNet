@@ -26,7 +26,13 @@ public final class LongUnaryOperator implements org.mases.jcobridge.IJCListener,
     final org.mases.jcobridge.JCListener _internalListener;
 
     public LongUnaryOperator(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,23 +77,18 @@ public final class LongUnaryOperator implements org.mases.jcobridge.IJCListener,
 
     //@Override
     public long applyAsLong(long arg0) {
-        raiseEvent("applyAsLong", arg0); Object retVal = getReturnData(); return (long)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("applyAsLong", eventDataExchange, arg0); Object retVal = getReturnData(); return (long)retVal;
     }
     //@Override
     public java.util.function.LongUnaryOperator andThen(java.util.function.LongUnaryOperator arg0) {
-        raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.LongUnaryOperator)retVal;
-    }
-    //@Override
-    public java.util.function.LongUnaryOperator andThenDefault(java.util.function.LongUnaryOperator arg0) {
-        return java.util.function.LongUnaryOperator.super.andThen(arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.LongUnaryOperator.super.andThen(, arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.LongUnaryOperator)retVal;
     }
     //@Override
     public java.util.function.LongUnaryOperator compose(java.util.function.LongUnaryOperator arg0) {
-        raiseEvent("compose", arg0); Object retVal = getReturnData(); return (java.util.function.LongUnaryOperator)retVal;
-    }
-    //@Override
-    public java.util.function.LongUnaryOperator composeDefault(java.util.function.LongUnaryOperator arg0) {
-        return java.util.function.LongUnaryOperator.super.compose(arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("compose", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.LongUnaryOperator.super.compose(, arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.LongUnaryOperator)retVal;
     }
 
 }

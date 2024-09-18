@@ -26,7 +26,13 @@ public final class HyperlinkListener implements org.mases.jcobridge.IJCListener,
     final org.mases.jcobridge.JCListener _internalListener;
 
     public HyperlinkListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,7 +77,8 @@ public final class HyperlinkListener implements org.mases.jcobridge.IJCListener,
 
     //@Override
     public void hyperlinkUpdate(javax.swing.event.HyperlinkEvent arg0) {
-        raiseEvent("hyperlinkUpdate", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("hyperlinkUpdate", eventDataExchange, arg0);
     }
 
 }

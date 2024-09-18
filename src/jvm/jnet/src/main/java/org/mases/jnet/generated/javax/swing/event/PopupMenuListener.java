@@ -26,7 +26,13 @@ public final class PopupMenuListener implements org.mases.jcobridge.IJCListener,
     final org.mases.jcobridge.JCListener _internalListener;
 
     public PopupMenuListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,15 +77,18 @@ public final class PopupMenuListener implements org.mases.jcobridge.IJCListener,
 
     //@Override
     public void popupMenuCanceled(javax.swing.event.PopupMenuEvent arg0) {
-        raiseEvent("popupMenuCanceled", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("popupMenuCanceled", eventDataExchange, arg0);
     }
     //@Override
     public void popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent arg0) {
-        raiseEvent("popupMenuWillBecomeInvisible", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("popupMenuWillBecomeInvisible", eventDataExchange, arg0);
     }
     //@Override
     public void popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent arg0) {
-        raiseEvent("popupMenuWillBecomeVisible", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("popupMenuWillBecomeVisible", eventDataExchange, arg0);
     }
 
 }

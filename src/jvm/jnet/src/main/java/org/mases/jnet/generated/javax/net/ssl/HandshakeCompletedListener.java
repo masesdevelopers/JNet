@@ -26,7 +26,13 @@ public final class HandshakeCompletedListener implements org.mases.jcobridge.IJC
     final org.mases.jcobridge.JCListener _internalListener;
 
     public HandshakeCompletedListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,7 +77,8 @@ public final class HandshakeCompletedListener implements org.mases.jcobridge.IJC
 
     //@Override
     public void handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent arg0) {
-        raiseEvent("handshakeCompleted", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("handshakeCompleted", eventDataExchange, arg0);
     }
 
 }

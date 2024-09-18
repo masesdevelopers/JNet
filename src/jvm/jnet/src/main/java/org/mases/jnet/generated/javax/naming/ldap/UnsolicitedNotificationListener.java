@@ -26,7 +26,13 @@ public final class UnsolicitedNotificationListener implements org.mases.jcobridg
     final org.mases.jcobridge.JCListener _internalListener;
 
     public UnsolicitedNotificationListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,11 +77,13 @@ public final class UnsolicitedNotificationListener implements org.mases.jcobridg
 
     //@Override
     public void namingExceptionThrown(javax.naming.event.NamingExceptionEvent arg0) {
-        raiseEvent("namingExceptionThrown", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("namingExceptionThrown", eventDataExchange, arg0);
     }
     //@Override
     public void notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent arg0) {
-        raiseEvent("notificationReceived", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("notificationReceived", eventDataExchange, arg0);
     }
 
 }

@@ -205,8 +205,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(ApplyEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(AndThenEventHandler));
 
         }
 
@@ -216,11 +216,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<object, object, object> OnApply { get; set; } = null;
 
-        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        bool hasOverrideApply = true;
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnApply != null) ? OnApply : Apply;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<object>(0), data.EventData.GetAt<object>(1));
+            data.TypedEventData.SetReturnValue(hasOverrideApply, executionResult);
         }
 
         /// <summary>
@@ -231,17 +232,7 @@ namespace Java.Util.Function
         /// <returns><see cref="object"/></returns>
         public virtual object Apply(object arg0, object arg1)
         {
-            return default;
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.BiFunction AndThenDefault(Java.Util.Function.Function arg0)
-        {
-            return IExecute<Java.Util.Function.BiFunction>("andThenDefault", arg0);
+            hasOverrideApply = false; return default;
         }
 
         /// <summary>
@@ -250,11 +241,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Function, Java.Util.Function.BiFunction> OnAndThen { get; set; } = null;
 
-        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
+        bool hasOverrideAndThen = true;
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThen;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function>(0));
+            data.TypedEventData.SetReturnValue(hasOverrideAndThen, executionResult);
         }
 
         /// <summary>
@@ -262,10 +254,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiFunction AndThen(Java.Util.Function.Function arg0)
         {
-            return AndThenDefault(arg0);
+            hasOverrideAndThen = false; return default;
         }
 
         #endregion
@@ -413,8 +404,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(Apply<R, U>EventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(Apply<R, U>EventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler));
 
         }
 
@@ -424,11 +415,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApply<R, U>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<T, U, R> OnApply<R, U> { get; set; } = null;
 
-        void Apply<R, U>EventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        bool hasOverrideApply<R, U> = true;
+        void Apply<R, U>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnApply<R, U> != null) ? OnApply<R, U> : Apply<R, U>;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<T>(0), data.EventData.GetAt<U>(1));
+            data.TypedEventData.SetReturnValue(hasOverrideApply<R, U>, executionResult);
         }
 
         /// <summary>
@@ -441,22 +433,7 @@ namespace Java.Util.Function
         /// <returns><typeparamref name="R"/></returns>
         public virtual R Apply<R, U>(T arg0, U arg1)
         {
-            return default;
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="U"></typeparam>
-        /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
-        /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
-        {
-            return IExecute<Java.Util.Function.BiFunction<T, U, V>>("andThenDefault", arg0);
+            hasOverrideApply<R, U> = false; return default;
         }
 
         /// <summary>
@@ -465,11 +442,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.BiFunction<T, U, V>> OnAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> { get; set; } = null;
 
-        void AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>> data)
+        bool hasOverrideAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> = true;
+        void AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> != null) ? OnAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> : AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>(0));
+            data.TypedEventData.SetReturnValue(hasOverrideAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>, executionResult);
         }
 
         /// <summary>
@@ -482,10 +460,9 @@ namespace Java.Util.Function
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>Default"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>Default(arg0);
+            hasOverrideAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> = false; return default;
         }
 
         #endregion

@@ -26,7 +26,13 @@ public final class DoubleSupplier implements org.mases.jcobridge.IJCListener, ja
     final org.mases.jcobridge.JCListener _internalListener;
 
     public DoubleSupplier(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,7 +77,8 @@ public final class DoubleSupplier implements org.mases.jcobridge.IJCListener, ja
 
     //@Override
     public double getAsDouble() {
-        raiseEvent("getAsDouble"); Object retVal = getReturnData(); return (double)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("getAsDouble", eventDataExchange); Object retVal = getReturnData(); return (double)retVal;
     }
 
 }

@@ -140,7 +140,7 @@ namespace Java.Util.Prefs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("preferenceChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>>>(PreferenceChangeEventHandler));
+            AddEventHandler("preferenceChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(PreferenceChangeEventHandler));
 
         }
 
@@ -150,10 +150,12 @@ namespace Java.Util.Prefs
         /// <remarks>If <see cref="OnPreferenceChange"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Util.Prefs.PreferenceChangeEvent> OnPreferenceChange { get; set; } = null;
 
-        void PreferenceChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>> data)
+        bool hasOverridePreferenceChange = true;
+        void PreferenceChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnPreferenceChange != null) ? OnPreferenceChange : PreferenceChange;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Prefs.PreferenceChangeEvent>(0));
+            data.TypedEventData.HasOverride = hasOverridePreferenceChange;
         }
 
         /// <summary>
@@ -162,7 +164,7 @@ namespace Java.Util.Prefs
         /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeEvent"/></param>
         public virtual void PreferenceChange(Java.Util.Prefs.PreferenceChangeEvent arg0)
         {
-            
+            hasOverridePreferenceChange = false;
         }
 
         #endregion

@@ -471,26 +471,14 @@ namespace Java.Net.Http
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onBinary", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnBinaryEventHandler));
-                AddEventHandler("onClose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnCloseEventHandler));
-                AddEventHandler("onPing", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnPingEventHandler));
-                AddEventHandler("onPong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnPongEventHandler));
-                AddEventHandler("onText", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnTextEventHandler));
-                AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnErrorEventHandler));
-                AddEventHandler("onOpen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnOpenEventHandler));
+                AddEventHandler("onBinary", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(OnBinaryEventHandler));
+                AddEventHandler("onClose", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(OnCloseEventHandler));
+                AddEventHandler("onPing", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(OnPingEventHandler));
+                AddEventHandler("onPong", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(OnPongEventHandler));
+                AddEventHandler("onText", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(OnTextEventHandler));
+                AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(OnErrorEventHandler));
+                AddEventHandler("onOpen", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(OnOpenEventHandler));
 
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onBinary(java.net.http.WebSocket,java.nio.ByteBuffer,boolean)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <param name="arg2"><see cref="bool"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public Java.Util.Concurrent.CompletionStage<object> OnBinaryDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
-            {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onBinaryDefault", arg0, arg1, arg2);
             }
 
             /// <summary>
@@ -499,11 +487,12 @@ namespace Java.Net.Http
             /// <remarks>If <see cref="OnOnBinary"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, bool, Java.Util.Concurrent.CompletionStage<object>> OnOnBinary { get; set; } = null;
 
-            void OnBinaryEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            bool hasOverrideOnBinary = true;
+            void OnBinaryEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
                 var methodToExecute = (OnOnBinary != null) ? OnOnBinary : OnBinary;
-                var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Nio.ByteBuffer>(0), data.EventData.GetAt<bool>(1));
-                data.SetReturnValue(executionResult);
+                var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Net.Http.WebSocket>(0), data.EventData.GetAt<Java.Nio.ByteBuffer>(1), data.EventData.GetAt<bool>(2));
+                data.TypedEventData.SetReturnValue(hasOverrideOnBinary, executionResult);
             }
 
             /// <summary>
@@ -513,22 +502,9 @@ namespace Java.Net.Http
             /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
             /// <param name="arg2"><see cref="bool"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnBinaryDefault"/>; override the method to implement a different behavior</remarks>
             public virtual Java.Util.Concurrent.CompletionStage<object> OnBinary(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
             {
-                return OnBinaryDefault(arg0, arg1, arg2);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onClose(java.net.http.WebSocket,int,java.lang.String)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public Java.Util.Concurrent.CompletionStage<object> OnCloseDefault(Java.Net.Http.WebSocket arg0, int arg1, Java.Lang.String arg2)
-            {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onCloseDefault", arg0, arg1, arg2);
+                hasOverrideOnBinary = false; return default;
             }
 
             /// <summary>
@@ -537,11 +513,12 @@ namespace Java.Net.Http
             /// <remarks>If <see cref="OnOnClose"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Java.Net.Http.WebSocket, int, Java.Lang.String, Java.Util.Concurrent.CompletionStage<object>> OnOnClose { get; set; } = null;
 
-            void OnCloseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            bool hasOverrideOnClose = true;
+            void OnCloseEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
                 var methodToExecute = (OnOnClose != null) ? OnOnClose : OnClose;
-                var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Java.Lang.String>(1));
-                data.SetReturnValue(executionResult);
+                var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Net.Http.WebSocket>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<Java.Lang.String>(2));
+                data.TypedEventData.SetReturnValue(hasOverrideOnClose, executionResult);
             }
 
             /// <summary>
@@ -551,21 +528,9 @@ namespace Java.Net.Http
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCloseDefault"/>; override the method to implement a different behavior</remarks>
             public virtual Java.Util.Concurrent.CompletionStage<object> OnClose(Java.Net.Http.WebSocket arg0, int arg1, Java.Lang.String arg2)
             {
-                return OnCloseDefault(arg0, arg1, arg2);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPing(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public Java.Util.Concurrent.CompletionStage<object> OnPingDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
-            {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onPingDefault", arg0, arg1);
+                hasOverrideOnClose = false; return default;
             }
 
             /// <summary>
@@ -574,11 +539,12 @@ namespace Java.Net.Http
             /// <remarks>If <see cref="OnOnPing"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, Java.Util.Concurrent.CompletionStage<object>> OnOnPing { get; set; } = null;
 
-            void OnPingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            bool hasOverrideOnPing = true;
+            void OnPingEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
                 var methodToExecute = (OnOnPing != null) ? OnOnPing : OnPing;
-                var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Nio.ByteBuffer>(0));
-                data.SetReturnValue(executionResult);
+                var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Net.Http.WebSocket>(0), data.EventData.GetAt<Java.Nio.ByteBuffer>(1));
+                data.TypedEventData.SetReturnValue(hasOverrideOnPing, executionResult);
             }
 
             /// <summary>
@@ -587,21 +553,9 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPingDefault"/>; override the method to implement a different behavior</remarks>
             public virtual Java.Util.Concurrent.CompletionStage<object> OnPing(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
-                return OnPingDefault(arg0, arg1);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPong(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public Java.Util.Concurrent.CompletionStage<object> OnPongDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
-            {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onPongDefault", arg0, arg1);
+                hasOverrideOnPing = false; return default;
             }
 
             /// <summary>
@@ -610,11 +564,12 @@ namespace Java.Net.Http
             /// <remarks>If <see cref="OnOnPong"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, Java.Util.Concurrent.CompletionStage<object>> OnOnPong { get; set; } = null;
 
-            void OnPongEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            bool hasOverrideOnPong = true;
+            void OnPongEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
                 var methodToExecute = (OnOnPong != null) ? OnOnPong : OnPong;
-                var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Nio.ByteBuffer>(0));
-                data.SetReturnValue(executionResult);
+                var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Net.Http.WebSocket>(0), data.EventData.GetAt<Java.Nio.ByteBuffer>(1));
+                data.TypedEventData.SetReturnValue(hasOverrideOnPong, executionResult);
             }
 
             /// <summary>
@@ -623,22 +578,9 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPongDefault"/>; override the method to implement a different behavior</remarks>
             public virtual Java.Util.Concurrent.CompletionStage<object> OnPong(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
-                return OnPongDefault(arg0, arg1);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onText(java.net.http.WebSocket,java.lang.CharSequence,boolean)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-            /// <param name="arg2"><see cref="bool"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public Java.Util.Concurrent.CompletionStage<object> OnTextDefault(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
-            {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onTextDefault", arg0, arg1, arg2);
+                hasOverrideOnPong = false; return default;
             }
 
             /// <summary>
@@ -647,11 +589,12 @@ namespace Java.Net.Http
             /// <remarks>If <see cref="OnOnText"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Java.Net.Http.WebSocket, Java.Lang.CharSequence, bool, Java.Util.Concurrent.CompletionStage<object>> OnOnText { get; set; } = null;
 
-            void OnTextEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            bool hasOverrideOnText = true;
+            void OnTextEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
                 var methodToExecute = (OnOnText != null) ? OnOnText : OnText;
-                var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.CharSequence>(0), data.EventData.GetAt<bool>(1));
-                data.SetReturnValue(executionResult);
+                var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Net.Http.WebSocket>(0), data.EventData.GetAt<Java.Lang.CharSequence>(1), data.EventData.GetAt<bool>(2));
+                data.TypedEventData.SetReturnValue(hasOverrideOnText, executionResult);
             }
 
             /// <summary>
@@ -661,20 +604,9 @@ namespace Java.Net.Http
             /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
             /// <param name="arg2"><see cref="bool"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnTextDefault"/>; override the method to implement a different behavior</remarks>
             public virtual Java.Util.Concurrent.CompletionStage<object> OnText(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
             {
-                return OnTextDefault(arg0, arg1, arg2);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onError(java.net.http.WebSocket,java.lang.Throwable)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
-            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public void OnErrorDefault(Java.Net.Http.WebSocket arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
-            {
-                IExecute("onErrorDefault", arg0, arg1);
+                hasOverrideOnText = false; return default;
             }
 
             /// <summary>
@@ -683,10 +615,12 @@ namespace Java.Net.Http
             /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Net.Http.WebSocket, MASES.JCOBridge.C2JBridge.JVMBridgeException> OnOnError { get; set; } = null;
 
-            void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            bool hasOverrideOnError = true;
+            void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
                 var methodToExecute = (OnOnError != null) ? OnOnError : OnError;
-                methodToExecute.Invoke(data.EventData.TypedEventData, JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+                methodToExecute.Invoke(data.EventData.GetAt<Java.Net.Http.WebSocket>(0), JVMBridgeException.New(data.EventData.ExtraData.Get(1) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+                data.TypedEventData.HasOverride = hasOverrideOnError;
             }
 
             /// <summary>
@@ -694,19 +628,9 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
-            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnErrorDefault"/>; override the method to implement a different behavior</remarks>
             public virtual void OnError(Java.Net.Http.WebSocket arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
-                OnErrorDefault(arg0, arg1);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onOpen(java.net.http.WebSocket)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public void OnOpenDefault(Java.Net.Http.WebSocket arg0)
-            {
-                IExecuteWithSignature("onOpenDefault", "(Ljava/net/http/WebSocket;)V", arg0);
+                hasOverrideOnError = false;
             }
 
             /// <summary>
@@ -715,20 +639,21 @@ namespace Java.Net.Http
             /// <remarks>If <see cref="OnOnOpen"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Net.Http.WebSocket> OnOnOpen { get; set; } = null;
 
-            void OnOpenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            bool hasOverrideOnOpen = true;
+            void OnOpenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
                 var methodToExecute = (OnOnOpen != null) ? OnOnOpen : OnOpen;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
+                methodToExecute.Invoke(data.EventData.GetAt<Java.Net.Http.WebSocket>(0));
+                data.TypedEventData.HasOverride = hasOverrideOnOpen;
             }
 
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onOpen(java.net.http.WebSocket)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnOpenDefault"/>; override the method to implement a different behavior</remarks>
             public virtual void OnOpen(Java.Net.Http.WebSocket arg0)
             {
-                OnOpenDefault(arg0);
+                hasOverrideOnOpen = false;
             }
 
             #endregion

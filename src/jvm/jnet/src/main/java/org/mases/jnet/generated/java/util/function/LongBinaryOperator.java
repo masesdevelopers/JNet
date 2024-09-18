@@ -26,7 +26,13 @@ public final class LongBinaryOperator implements org.mases.jcobridge.IJCListener
     final org.mases.jcobridge.JCListener _internalListener;
 
     public LongBinaryOperator(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,7 +77,8 @@ public final class LongBinaryOperator implements org.mases.jcobridge.IJCListener
 
     //@Override
     public long applyAsLong(long arg0, long arg1) {
-        raiseEvent("applyAsLong", arg0, arg1); Object retVal = getReturnData(); return (long)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("applyAsLong", eventDataExchange, arg0, arg1); Object retVal = getReturnData(); return (long)retVal;
     }
 
 }

@@ -26,7 +26,13 @@ public final class DoubleUnaryOperator implements org.mases.jcobridge.IJCListene
     final org.mases.jcobridge.JCListener _internalListener;
 
     public DoubleUnaryOperator(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,23 +77,18 @@ public final class DoubleUnaryOperator implements org.mases.jcobridge.IJCListene
 
     //@Override
     public double applyAsDouble(double arg0) {
-        raiseEvent("applyAsDouble", arg0); Object retVal = getReturnData(); return (double)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("applyAsDouble", eventDataExchange, arg0); Object retVal = getReturnData(); return (double)retVal;
     }
     //@Override
     public java.util.function.DoubleUnaryOperator andThen(java.util.function.DoubleUnaryOperator arg0) {
-        raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.DoubleUnaryOperator)retVal;
-    }
-    //@Override
-    public java.util.function.DoubleUnaryOperator andThenDefault(java.util.function.DoubleUnaryOperator arg0) {
-        return java.util.function.DoubleUnaryOperator.super.andThen(arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.DoubleUnaryOperator.super.andThen(, arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.DoubleUnaryOperator)retVal;
     }
     //@Override
     public java.util.function.DoubleUnaryOperator compose(java.util.function.DoubleUnaryOperator arg0) {
-        raiseEvent("compose", arg0); Object retVal = getReturnData(); return (java.util.function.DoubleUnaryOperator)retVal;
-    }
-    //@Override
-    public java.util.function.DoubleUnaryOperator composeDefault(java.util.function.DoubleUnaryOperator arg0) {
-        return java.util.function.DoubleUnaryOperator.super.compose(arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("compose", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.DoubleUnaryOperator.super.compose(, arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.DoubleUnaryOperator)retVal;
     }
 
 }

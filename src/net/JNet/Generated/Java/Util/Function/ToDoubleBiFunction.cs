@@ -186,7 +186,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsDouble", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsDoubleEventHandler));
+            AddEventHandler("applyAsDouble", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(ApplyAsDoubleEventHandler));
 
         }
 
@@ -196,11 +196,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApplyAsDouble"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<object, object, double> OnApplyAsDouble { get; set; } = null;
 
-        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        bool hasOverrideApplyAsDouble = true;
+        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnApplyAsDouble != null) ? OnApplyAsDouble : ApplyAsDouble;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<object>(0), data.EventData.GetAt<object>(1));
+            data.TypedEventData.SetReturnValue(hasOverrideApplyAsDouble, executionResult);
         }
 
         /// <summary>
@@ -211,7 +212,7 @@ namespace Java.Util.Function
         /// <returns><see cref="double"/></returns>
         public virtual double ApplyAsDouble(object arg0, object arg1)
         {
-            return default;
+            hasOverrideApplyAsDouble = false; return default;
         }
 
         #endregion
@@ -315,7 +316,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsDouble", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsDoubleEventHandler));
+            AddEventHandler("applyAsDouble", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(ApplyAsDoubleEventHandler));
 
         }
 
@@ -325,11 +326,12 @@ namespace Java.Util.Function
         /// <remarks>If <see cref="OnApplyAsDouble"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<T, U, double> OnApplyAsDouble { get; set; } = null;
 
-        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        bool hasOverrideApplyAsDouble = true;
+        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnApplyAsDouble != null) ? OnApplyAsDouble : ApplyAsDouble;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
-            data.SetReturnValue(executionResult);
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<T>(0), data.EventData.GetAt<U>(1));
+            data.TypedEventData.SetReturnValue(hasOverrideApplyAsDouble, executionResult);
         }
 
         /// <summary>
@@ -340,7 +342,7 @@ namespace Java.Util.Function
         /// <returns><see cref="double"/></returns>
         public virtual double ApplyAsDouble(T arg0, U arg1)
         {
-            return default;
+            hasOverrideApplyAsDouble = false; return default;
         }
 
         #endregion

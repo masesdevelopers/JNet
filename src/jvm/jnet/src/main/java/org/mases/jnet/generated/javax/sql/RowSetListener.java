@@ -26,7 +26,13 @@ public final class RowSetListener implements org.mases.jcobridge.IJCListener, ja
     final org.mases.jcobridge.JCListener _internalListener;
 
     public RowSetListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,15 +77,18 @@ public final class RowSetListener implements org.mases.jcobridge.IJCListener, ja
 
     //@Override
     public void cursorMoved(javax.sql.RowSetEvent arg0) {
-        raiseEvent("cursorMoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("cursorMoved", eventDataExchange, arg0);
     }
     //@Override
     public void rowChanged(javax.sql.RowSetEvent arg0) {
-        raiseEvent("rowChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("rowChanged", eventDataExchange, arg0);
     }
     //@Override
     public void rowSetChanged(javax.sql.RowSetEvent arg0) {
-        raiseEvent("rowSetChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("rowSetChanged", eventDataExchange, arg0);
     }
 
 }

@@ -26,7 +26,13 @@ public final class NodeChangeListener implements org.mases.jcobridge.IJCListener
     final org.mases.jcobridge.JCListener _internalListener;
 
     public NodeChangeListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,11 +77,13 @@ public final class NodeChangeListener implements org.mases.jcobridge.IJCListener
 
     //@Override
     public void childAdded(java.util.prefs.NodeChangeEvent arg0) {
-        raiseEvent("childAdded", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("childAdded", eventDataExchange, arg0);
     }
     //@Override
     public void childRemoved(java.util.prefs.NodeChangeEvent arg0) {
-        raiseEvent("childRemoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("childRemoved", eventDataExchange, arg0);
     }
 
 }

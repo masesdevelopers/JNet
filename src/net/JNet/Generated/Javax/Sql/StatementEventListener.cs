@@ -145,8 +145,8 @@ namespace Javax.Sql
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("statementClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementClosedEventHandler));
-            AddEventHandler("statementErrorOccurred", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementErrorOccurredEventHandler));
+            AddEventHandler("statementClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(StatementClosedEventHandler));
+            AddEventHandler("statementErrorOccurred", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(StatementErrorOccurredEventHandler));
 
         }
 
@@ -156,10 +156,12 @@ namespace Javax.Sql
         /// <remarks>If <see cref="OnStatementClosed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sql.StatementEvent> OnStatementClosed { get; set; } = null;
 
-        void StatementClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>> data)
+        bool hasOverrideStatementClosed = true;
+        void StatementClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnStatementClosed != null) ? OnStatementClosed : StatementClosed;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Sql.StatementEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideStatementClosed;
         }
 
         /// <summary>
@@ -168,7 +170,7 @@ namespace Javax.Sql
         /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
         public virtual void StatementClosed(Javax.Sql.StatementEvent arg0)
         {
-            
+            hasOverrideStatementClosed = false;
         }
 
         /// <summary>
@@ -177,10 +179,12 @@ namespace Javax.Sql
         /// <remarks>If <see cref="OnStatementErrorOccurred"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Sql.StatementEvent> OnStatementErrorOccurred { get; set; } = null;
 
-        void StatementErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>> data)
+        bool hasOverrideStatementErrorOccurred = true;
+        void StatementErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnStatementErrorOccurred != null) ? OnStatementErrorOccurred : StatementErrorOccurred;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Sql.StatementEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideStatementErrorOccurred;
         }
 
         /// <summary>
@@ -189,7 +193,7 @@ namespace Javax.Sql
         /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
         public virtual void StatementErrorOccurred(Javax.Sql.StatementEvent arg0)
         {
-            
+            hasOverrideStatementErrorOccurred = false;
         }
 
         #endregion

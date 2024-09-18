@@ -26,7 +26,13 @@ public final class DoubleConsumer implements org.mases.jcobridge.IJCListener, ja
     final org.mases.jcobridge.JCListener _internalListener;
 
     public DoubleConsumer(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,15 +77,13 @@ public final class DoubleConsumer implements org.mases.jcobridge.IJCListener, ja
 
     //@Override
     public void accept(double arg0) {
-        raiseEvent("accept", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("accept", eventDataExchange, arg0);
     }
     //@Override
     public java.util.function.DoubleConsumer andThen(java.util.function.DoubleConsumer arg0) {
-        raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.DoubleConsumer)retVal;
-    }
-    //@Override
-    public java.util.function.DoubleConsumer andThenDefault(java.util.function.DoubleConsumer arg0) {
-        return java.util.function.DoubleConsumer.super.andThen(arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.DoubleConsumer.super.andThen(, arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.DoubleConsumer)retVal;
     }
 
 }

@@ -145,8 +145,8 @@ namespace Java.Beans.Beancontext
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("childrenAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenAddedEventHandler));
-            AddEventHandler("childrenRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenRemovedEventHandler));
+            AddEventHandler("childrenAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(ChildrenAddedEventHandler));
+            AddEventHandler("childrenRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(ChildrenRemovedEventHandler));
 
         }
 
@@ -156,10 +156,12 @@ namespace Java.Beans.Beancontext
         /// <remarks>If <see cref="OnChildrenAdded"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Beans.Beancontext.BeanContextMembershipEvent> OnChildrenAdded { get; set; } = null;
 
-        void ChildrenAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>> data)
+        bool hasOverrideChildrenAdded = true;
+        void ChildrenAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnChildrenAdded != null) ? OnChildrenAdded : ChildrenAdded;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Beans.Beancontext.BeanContextMembershipEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideChildrenAdded;
         }
 
         /// <summary>
@@ -168,7 +170,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
         public virtual void ChildrenAdded(Java.Beans.Beancontext.BeanContextMembershipEvent arg0)
         {
-            
+            hasOverrideChildrenAdded = false;
         }
 
         /// <summary>
@@ -177,10 +179,12 @@ namespace Java.Beans.Beancontext
         /// <remarks>If <see cref="OnChildrenRemoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Beans.Beancontext.BeanContextMembershipEvent> OnChildrenRemoved { get; set; } = null;
 
-        void ChildrenRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>> data)
+        bool hasOverrideChildrenRemoved = true;
+        void ChildrenRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnChildrenRemoved != null) ? OnChildrenRemoved : ChildrenRemoved;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Beans.Beancontext.BeanContextMembershipEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideChildrenRemoved;
         }
 
         /// <summary>
@@ -189,7 +193,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
         public virtual void ChildrenRemoved(Java.Beans.Beancontext.BeanContextMembershipEvent arg0)
         {
-            
+            hasOverrideChildrenRemoved = false;
         }
 
         #endregion

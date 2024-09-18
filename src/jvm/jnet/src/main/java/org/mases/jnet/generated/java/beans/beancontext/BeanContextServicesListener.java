@@ -26,7 +26,13 @@ public final class BeanContextServicesListener implements org.mases.jcobridge.IJ
     final org.mases.jcobridge.JCListener _internalListener;
 
     public BeanContextServicesListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,11 +77,13 @@ public final class BeanContextServicesListener implements org.mases.jcobridge.IJ
 
     //@Override
     public void serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent arg0) {
-        raiseEvent("serviceRevoked", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("serviceRevoked", eventDataExchange, arg0);
     }
     //@Override
     public void serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent arg0) {
-        raiseEvent("serviceAvailable", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("serviceAvailable", eventDataExchange, arg0);
     }
 
 }

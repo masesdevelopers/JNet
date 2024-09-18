@@ -145,8 +145,8 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("windowGainedFocus", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowGainedFocusEventHandler));
-            AddEventHandler("windowLostFocus", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowLostFocusEventHandler));
+            AddEventHandler("windowGainedFocus", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(WindowGainedFocusEventHandler));
+            AddEventHandler("windowLostFocus", new global::System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(WindowLostFocusEventHandler));
 
         }
 
@@ -156,10 +156,12 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnWindowGainedFocus"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.WindowEvent> OnWindowGainedFocus { get; set; } = null;
 
-        void WindowGainedFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        bool hasOverrideWindowGainedFocus = true;
+        void WindowGainedFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnWindowGainedFocus != null) ? OnWindowGainedFocus : WindowGainedFocus;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.WindowEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideWindowGainedFocus;
         }
 
         /// <summary>
@@ -168,7 +170,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public virtual void WindowGainedFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
-            
+            hasOverrideWindowGainedFocus = false;
         }
 
         /// <summary>
@@ -177,10 +179,12 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnWindowLostFocus"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.WindowEvent> OnWindowLostFocus { get; set; } = null;
 
-        void WindowLostFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        bool hasOverrideWindowLostFocus = true;
+        void WindowLostFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnWindowLostFocus != null) ? OnWindowLostFocus : WindowLostFocus;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.WindowEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideWindowLostFocus;
         }
 
         /// <summary>
@@ -189,7 +193,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public virtual void WindowLostFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
-            
+            hasOverrideWindowLostFocus = false;
         }
 
         #endregion

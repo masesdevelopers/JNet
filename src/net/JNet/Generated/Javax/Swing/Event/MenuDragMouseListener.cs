@@ -155,10 +155,10 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("menuDragMouseDragged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseDraggedEventHandler));
-            AddEventHandler("menuDragMouseEntered", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseEnteredEventHandler));
-            AddEventHandler("menuDragMouseExited", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseExitedEventHandler));
-            AddEventHandler("menuDragMouseReleased", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseReleasedEventHandler));
+            AddEventHandler("menuDragMouseDragged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MenuDragMouseDraggedEventHandler));
+            AddEventHandler("menuDragMouseEntered", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MenuDragMouseEnteredEventHandler));
+            AddEventHandler("menuDragMouseExited", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MenuDragMouseExitedEventHandler));
+            AddEventHandler("menuDragMouseReleased", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MenuDragMouseReleasedEventHandler));
 
         }
 
@@ -168,10 +168,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnMenuDragMouseDragged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseDragged { get; set; } = null;
 
-        void MenuDragMouseDraggedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
+        bool hasOverrideMenuDragMouseDragged = true;
+        void MenuDragMouseDraggedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnMenuDragMouseDragged != null) ? OnMenuDragMouseDragged : MenuDragMouseDragged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.MenuDragMouseEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideMenuDragMouseDragged;
         }
 
         /// <summary>
@@ -180,7 +182,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
         public virtual void MenuDragMouseDragged(Javax.Swing.Event.MenuDragMouseEvent arg0)
         {
-            
+            hasOverrideMenuDragMouseDragged = false;
         }
 
         /// <summary>
@@ -189,10 +191,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnMenuDragMouseEntered"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseEntered { get; set; } = null;
 
-        void MenuDragMouseEnteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
+        bool hasOverrideMenuDragMouseEntered = true;
+        void MenuDragMouseEnteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnMenuDragMouseEntered != null) ? OnMenuDragMouseEntered : MenuDragMouseEntered;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.MenuDragMouseEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideMenuDragMouseEntered;
         }
 
         /// <summary>
@@ -201,7 +205,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
         public virtual void MenuDragMouseEntered(Javax.Swing.Event.MenuDragMouseEvent arg0)
         {
-            
+            hasOverrideMenuDragMouseEntered = false;
         }
 
         /// <summary>
@@ -210,10 +214,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnMenuDragMouseExited"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseExited { get; set; } = null;
 
-        void MenuDragMouseExitedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
+        bool hasOverrideMenuDragMouseExited = true;
+        void MenuDragMouseExitedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnMenuDragMouseExited != null) ? OnMenuDragMouseExited : MenuDragMouseExited;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.MenuDragMouseEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideMenuDragMouseExited;
         }
 
         /// <summary>
@@ -222,7 +228,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
         public virtual void MenuDragMouseExited(Javax.Swing.Event.MenuDragMouseEvent arg0)
         {
-            
+            hasOverrideMenuDragMouseExited = false;
         }
 
         /// <summary>
@@ -231,10 +237,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnMenuDragMouseReleased"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseReleased { get; set; } = null;
 
-        void MenuDragMouseReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
+        bool hasOverrideMenuDragMouseReleased = true;
+        void MenuDragMouseReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnMenuDragMouseReleased != null) ? OnMenuDragMouseReleased : MenuDragMouseReleased;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.MenuDragMouseEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideMenuDragMouseReleased;
         }
 
         /// <summary>
@@ -243,7 +251,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
         public virtual void MenuDragMouseReleased(Javax.Swing.Event.MenuDragMouseEvent arg0)
         {
-            
+            hasOverrideMenuDragMouseReleased = false;
         }
 
         #endregion

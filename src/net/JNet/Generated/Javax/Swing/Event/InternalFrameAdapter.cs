@@ -117,13 +117,13 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("internalFrameActivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameActivatedEventHandler));
-            AddEventHandler("internalFrameClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameClosedEventHandler));
-            AddEventHandler("internalFrameClosing", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameClosingEventHandler));
-            AddEventHandler("internalFrameDeactivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameDeactivatedEventHandler));
-            AddEventHandler("internalFrameDeiconified", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameDeiconifiedEventHandler));
-            AddEventHandler("internalFrameIconified", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameIconifiedEventHandler));
-            AddEventHandler("internalFrameOpened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameOpenedEventHandler));
+            AddEventHandler("internalFrameActivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(InternalFrameActivatedEventHandler));
+            AddEventHandler("internalFrameClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(InternalFrameClosedEventHandler));
+            AddEventHandler("internalFrameClosing", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(InternalFrameClosingEventHandler));
+            AddEventHandler("internalFrameDeactivated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(InternalFrameDeactivatedEventHandler));
+            AddEventHandler("internalFrameDeiconified", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(InternalFrameDeiconifiedEventHandler));
+            AddEventHandler("internalFrameIconified", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(InternalFrameIconifiedEventHandler));
+            AddEventHandler("internalFrameOpened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(InternalFrameOpenedEventHandler));
 
         }
 
@@ -133,10 +133,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnInternalFrameActivated"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameActivated { get; set; } = null;
 
-        void InternalFrameActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
+        bool hasOverrideInternalFrameActivated = true;
+        void InternalFrameActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnInternalFrameActivated != null) ? OnInternalFrameActivated : InternalFrameActivated;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.InternalFrameEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideInternalFrameActivated;
         }
 
         /// <summary>
@@ -145,7 +147,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
         public virtual void InternalFrameActivated(Javax.Swing.Event.InternalFrameEvent arg0)
         {
-            
+            hasOverrideInternalFrameActivated = false;
         }
 
         /// <summary>
@@ -154,10 +156,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnInternalFrameClosed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameClosed { get; set; } = null;
 
-        void InternalFrameClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
+        bool hasOverrideInternalFrameClosed = true;
+        void InternalFrameClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnInternalFrameClosed != null) ? OnInternalFrameClosed : InternalFrameClosed;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.InternalFrameEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideInternalFrameClosed;
         }
 
         /// <summary>
@@ -166,7 +170,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
         public virtual void InternalFrameClosed(Javax.Swing.Event.InternalFrameEvent arg0)
         {
-            
+            hasOverrideInternalFrameClosed = false;
         }
 
         /// <summary>
@@ -175,10 +179,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnInternalFrameClosing"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameClosing { get; set; } = null;
 
-        void InternalFrameClosingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
+        bool hasOverrideInternalFrameClosing = true;
+        void InternalFrameClosingEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnInternalFrameClosing != null) ? OnInternalFrameClosing : InternalFrameClosing;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.InternalFrameEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideInternalFrameClosing;
         }
 
         /// <summary>
@@ -187,7 +193,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
         public virtual void InternalFrameClosing(Javax.Swing.Event.InternalFrameEvent arg0)
         {
-            
+            hasOverrideInternalFrameClosing = false;
         }
 
         /// <summary>
@@ -196,10 +202,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnInternalFrameDeactivated"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameDeactivated { get; set; } = null;
 
-        void InternalFrameDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
+        bool hasOverrideInternalFrameDeactivated = true;
+        void InternalFrameDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnInternalFrameDeactivated != null) ? OnInternalFrameDeactivated : InternalFrameDeactivated;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.InternalFrameEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideInternalFrameDeactivated;
         }
 
         /// <summary>
@@ -208,7 +216,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
         public virtual void InternalFrameDeactivated(Javax.Swing.Event.InternalFrameEvent arg0)
         {
-            
+            hasOverrideInternalFrameDeactivated = false;
         }
 
         /// <summary>
@@ -217,10 +225,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnInternalFrameDeiconified"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameDeiconified { get; set; } = null;
 
-        void InternalFrameDeiconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
+        bool hasOverrideInternalFrameDeiconified = true;
+        void InternalFrameDeiconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnInternalFrameDeiconified != null) ? OnInternalFrameDeiconified : InternalFrameDeiconified;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.InternalFrameEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideInternalFrameDeiconified;
         }
 
         /// <summary>
@@ -229,7 +239,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
         public virtual void InternalFrameDeiconified(Javax.Swing.Event.InternalFrameEvent arg0)
         {
-            
+            hasOverrideInternalFrameDeiconified = false;
         }
 
         /// <summary>
@@ -238,10 +248,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnInternalFrameIconified"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameIconified { get; set; } = null;
 
-        void InternalFrameIconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
+        bool hasOverrideInternalFrameIconified = true;
+        void InternalFrameIconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnInternalFrameIconified != null) ? OnInternalFrameIconified : InternalFrameIconified;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.InternalFrameEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideInternalFrameIconified;
         }
 
         /// <summary>
@@ -250,7 +262,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
         public virtual void InternalFrameIconified(Javax.Swing.Event.InternalFrameEvent arg0)
         {
-            
+            hasOverrideInternalFrameIconified = false;
         }
 
         /// <summary>
@@ -259,10 +271,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnInternalFrameOpened"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.InternalFrameEvent> OnInternalFrameOpened { get; set; } = null;
 
-        void InternalFrameOpenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
+        bool hasOverrideInternalFrameOpened = true;
+        void InternalFrameOpenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnInternalFrameOpened != null) ? OnInternalFrameOpened : InternalFrameOpened;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.InternalFrameEvent>(0));
+            data.EventData.TypedEventData.HasOverride = hasOverrideInternalFrameOpened;
         }
 
         /// <summary>
@@ -271,7 +285,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
         public virtual void InternalFrameOpened(Javax.Swing.Event.InternalFrameEvent arg0)
         {
-            
+            hasOverrideInternalFrameOpened = false;
         }
 
         #endregion

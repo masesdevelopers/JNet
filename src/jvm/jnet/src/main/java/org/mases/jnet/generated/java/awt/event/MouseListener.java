@@ -26,6 +26,7 @@ public final class MouseListener implements org.mases.jcobridge.IJCListener, jav
     final org.mases.jcobridge.JCListener _internalListener;
 
     public MouseListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
@@ -71,23 +72,28 @@ public final class MouseListener implements org.mases.jcobridge.IJCListener, jav
 
     //@Override
     public void mouseClicked(java.awt.event.MouseEvent arg0) {
-        raiseEvent("mouseClicked", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("mouseClicked", eventDataExchange, arg0);
     }
     //@Override
     public void mouseEntered(java.awt.event.MouseEvent arg0) {
-        raiseEvent("mouseEntered", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("mouseEntered", eventDataExchange, arg0);
     }
     //@Override
     public void mouseExited(java.awt.event.MouseEvent arg0) {
-        raiseEvent("mouseExited", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("mouseExited", eventDataExchange, arg0);
     }
     //@Override
     public void mousePressed(java.awt.event.MouseEvent arg0) {
-        raiseEvent("mousePressed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("mousePressed", eventDataExchange, arg0);
     }
     //@Override
     public void mouseReleased(java.awt.event.MouseEvent arg0) {
-        raiseEvent("mouseReleased", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
+        raiseEvent("mouseReleased", eventDataExchange, arg0);
     }
 
 }

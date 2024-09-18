@@ -150,9 +150,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("ancestorAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorAddedEventHandler));
-            AddEventHandler("ancestorMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorMovedEventHandler));
-            AddEventHandler("ancestorRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorRemovedEventHandler));
+            AddEventHandler("ancestorAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AncestorAddedEventHandler));
+            AddEventHandler("ancestorMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AncestorMovedEventHandler));
+            AddEventHandler("ancestorRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AncestorRemovedEventHandler));
 
         }
 
@@ -162,10 +162,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnAncestorAdded"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorAdded { get; set; } = null;
 
-        void AncestorAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
+        bool hasOverrideAncestorAdded = true;
+        void AncestorAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnAncestorAdded != null) ? OnAncestorAdded : AncestorAdded;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.AncestorEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideAncestorAdded;
         }
 
         /// <summary>
@@ -174,7 +176,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
         public virtual void AncestorAdded(Javax.Swing.Event.AncestorEvent arg0)
         {
-            
+            hasOverrideAncestorAdded = false;
         }
 
         /// <summary>
@@ -183,10 +185,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnAncestorMoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorMoved { get; set; } = null;
 
-        void AncestorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
+        bool hasOverrideAncestorMoved = true;
+        void AncestorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnAncestorMoved != null) ? OnAncestorMoved : AncestorMoved;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.AncestorEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideAncestorMoved;
         }
 
         /// <summary>
@@ -195,7 +199,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
         public virtual void AncestorMoved(Javax.Swing.Event.AncestorEvent arg0)
         {
-            
+            hasOverrideAncestorMoved = false;
         }
 
         /// <summary>
@@ -204,10 +208,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnAncestorRemoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorRemoved { get; set; } = null;
 
-        void AncestorRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
+        bool hasOverrideAncestorRemoved = true;
+        void AncestorRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnAncestorRemoved != null) ? OnAncestorRemoved : AncestorRemoved;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.AncestorEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideAncestorRemoved;
         }
 
         /// <summary>
@@ -216,7 +222,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
         public virtual void AncestorRemoved(Javax.Swing.Event.AncestorEvent arg0)
         {
-            
+            hasOverrideAncestorRemoved = false;
         }
 
         #endregion

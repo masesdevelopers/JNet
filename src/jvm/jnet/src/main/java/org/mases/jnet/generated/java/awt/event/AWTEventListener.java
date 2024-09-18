@@ -26,7 +26,13 @@ public final class AWTEventListener implements org.mases.jcobridge.IJCListener, 
     final org.mases.jcobridge.JCListener _internalListener;
 
     public AWTEventListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,7 +77,8 @@ public final class AWTEventListener implements org.mases.jcobridge.IJCListener, 
 
     //@Override
     public void eventDispatched(java.awt.AWTEvent arg0) {
-        raiseEvent("eventDispatched", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("eventDispatched", eventDataExchange, arg0);
     }
 
 }

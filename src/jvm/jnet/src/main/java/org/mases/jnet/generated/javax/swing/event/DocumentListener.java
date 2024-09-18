@@ -26,7 +26,13 @@ public final class DocumentListener implements org.mases.jcobridge.IJCListener, 
     final org.mases.jcobridge.JCListener _internalListener;
 
     public DocumentListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,15 +77,18 @@ public final class DocumentListener implements org.mases.jcobridge.IJCListener, 
 
     //@Override
     public void changedUpdate(javax.swing.event.DocumentEvent arg0) {
-        raiseEvent("changedUpdate", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("changedUpdate", eventDataExchange, arg0);
     }
     //@Override
     public void insertUpdate(javax.swing.event.DocumentEvent arg0) {
-        raiseEvent("insertUpdate", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("insertUpdate", eventDataExchange, arg0);
     }
     //@Override
     public void removeUpdate(javax.swing.event.DocumentEvent arg0) {
-        raiseEvent("removeUpdate", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("removeUpdate", eventDataExchange, arg0);
     }
 
 }

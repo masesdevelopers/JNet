@@ -150,9 +150,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("contentsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(ContentsChangedEventHandler));
-            AddEventHandler("intervalAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalAddedEventHandler));
-            AddEventHandler("intervalRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalRemovedEventHandler));
+            AddEventHandler("contentsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ContentsChangedEventHandler));
+            AddEventHandler("intervalAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(IntervalAddedEventHandler));
+            AddEventHandler("intervalRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(IntervalRemovedEventHandler));
 
         }
 
@@ -162,10 +162,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnContentsChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.ListDataEvent> OnContentsChanged { get; set; } = null;
 
-        void ContentsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>> data)
+        bool hasOverrideContentsChanged = true;
+        void ContentsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnContentsChanged != null) ? OnContentsChanged : ContentsChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.ListDataEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideContentsChanged;
         }
 
         /// <summary>
@@ -174,7 +176,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public virtual void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
         {
-            
+            hasOverrideContentsChanged = false;
         }
 
         /// <summary>
@@ -183,10 +185,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnIntervalAdded"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.ListDataEvent> OnIntervalAdded { get; set; } = null;
 
-        void IntervalAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>> data)
+        bool hasOverrideIntervalAdded = true;
+        void IntervalAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnIntervalAdded != null) ? OnIntervalAdded : IntervalAdded;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.ListDataEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideIntervalAdded;
         }
 
         /// <summary>
@@ -195,7 +199,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public virtual void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
         {
-            
+            hasOverrideIntervalAdded = false;
         }
 
         /// <summary>
@@ -204,10 +208,12 @@ namespace Javax.Swing.Event
         /// <remarks>If <see cref="OnIntervalRemoved"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Javax.Swing.Event.ListDataEvent> OnIntervalRemoved { get; set; } = null;
 
-        void IntervalRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>> data)
+        bool hasOverrideIntervalRemoved = true;
+        void IntervalRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnIntervalRemoved != null) ? OnIntervalRemoved : IntervalRemoved;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Javax.Swing.Event.ListDataEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideIntervalRemoved;
         }
 
         /// <summary>
@@ -216,7 +222,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public virtual void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
         {
-            
+            hasOverrideIntervalRemoved = false;
         }
 
         #endregion

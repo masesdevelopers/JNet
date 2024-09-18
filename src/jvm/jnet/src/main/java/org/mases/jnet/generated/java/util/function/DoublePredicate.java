@@ -26,7 +26,13 @@ public final class DoublePredicate implements org.mases.jcobridge.IJCListener, j
     final org.mases.jcobridge.JCListener _internalListener;
 
     public DoublePredicate(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,30 +77,37 @@ public final class DoublePredicate implements org.mases.jcobridge.IJCListener, j
 
     //@Override
     public boolean test(double arg0) {
-        raiseEvent("test", arg0); Object retVal = getReturnData(); return (boolean)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("test", eventDataExchange, arg0); Object retVal = getReturnData(); return (boolean)retVal;
     }
     //@Override
     public java.util.function.DoublePredicate and(java.util.function.DoublePredicate arg0) {
-        raiseEvent("and", arg0); Object retVal = getReturnData(); return (java.util.function.DoublePredicate)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("and", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.DoublePredicate.super.and(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.DoublePredicate)retVal;
     }
     //@Override
     public java.util.function.DoublePredicate andDefault(java.util.function.DoublePredicate arg0) {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
         return java.util.function.DoublePredicate.super.and(arg0);
     }
     //@Override
     public java.util.function.DoublePredicate negate() {
-        raiseEvent("negate"); Object retVal = getReturnData(); return (java.util.function.DoublePredicate)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("negate", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.DoublePredicate.super.negate(); else retVal = eventDataExchange.getReturnData(); return (java.util.function.DoublePredicate)retVal;
     }
     //@Override
     public java.util.function.DoublePredicate negateDefault() {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
         return java.util.function.DoublePredicate.super.negate();
     }
     //@Override
     public java.util.function.DoublePredicate or(java.util.function.DoublePredicate arg0) {
-        raiseEvent("or", arg0); Object retVal = getReturnData(); return (java.util.function.DoublePredicate)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("or", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.DoublePredicate.super.or(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.DoublePredicate)retVal;
     }
     //@Override
     public java.util.function.DoublePredicate orDefault(java.util.function.DoublePredicate arg0) {
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
         return java.util.function.DoublePredicate.super.or(arg0);
     }
 

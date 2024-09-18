@@ -26,7 +26,13 @@ public final class IIOReadProgressListener implements org.mases.jcobridge.IJCLis
     final org.mases.jcobridge.JCListener _internalListener;
 
     public IIOReadProgressListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,39 +77,48 @@ public final class IIOReadProgressListener implements org.mases.jcobridge.IJCLis
 
     //@Override
     public void imageComplete(javax.imageio.ImageReader arg0) {
-        raiseEvent("imageComplete", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("imageComplete", eventDataExchange, arg0);
     }
     //@Override
     public void imageProgress(javax.imageio.ImageReader arg0, float arg1) {
-        raiseEvent("imageProgress", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("imageProgress", eventDataExchange, arg0, arg1);
     }
     //@Override
     public void imageStarted(javax.imageio.ImageReader arg0, int arg1) {
-        raiseEvent("imageStarted", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("imageStarted", eventDataExchange, arg0, arg1);
     }
     //@Override
     public void readAborted(javax.imageio.ImageReader arg0) {
-        raiseEvent("readAborted", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("readAborted", eventDataExchange, arg0);
     }
     //@Override
     public void sequenceComplete(javax.imageio.ImageReader arg0) {
-        raiseEvent("sequenceComplete", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("sequenceComplete", eventDataExchange, arg0);
     }
     //@Override
     public void sequenceStarted(javax.imageio.ImageReader arg0, int arg1) {
-        raiseEvent("sequenceStarted", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("sequenceStarted", eventDataExchange, arg0, arg1);
     }
     //@Override
     public void thumbnailComplete(javax.imageio.ImageReader arg0) {
-        raiseEvent("thumbnailComplete", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("thumbnailComplete", eventDataExchange, arg0);
     }
     //@Override
     public void thumbnailProgress(javax.imageio.ImageReader arg0, float arg1) {
-        raiseEvent("thumbnailProgress", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("thumbnailProgress", eventDataExchange, arg0, arg1);
     }
     //@Override
     public void thumbnailStarted(javax.imageio.ImageReader arg0, int arg1, int arg2) {
-        raiseEvent("thumbnailStarted", arg0, arg1, arg2);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("thumbnailStarted", eventDataExchange, arg0, arg1, arg2);
     }
 
 }

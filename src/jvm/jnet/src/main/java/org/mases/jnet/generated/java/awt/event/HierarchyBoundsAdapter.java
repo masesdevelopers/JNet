@@ -26,7 +26,13 @@ public final class HierarchyBoundsAdapter extends java.awt.event.HierarchyBounds
     final org.mases.jcobridge.JCListener _internalListener;
 
     public HierarchyBoundsAdapter(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,11 +77,13 @@ public final class HierarchyBoundsAdapter extends java.awt.event.HierarchyBounds
 
     //@Override
     public void ancestorMoved(java.awt.event.HierarchyEvent arg0) {
-        raiseEvent("ancestorMoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("ancestorMoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.HierarchyBoundsAdapter.super.ancestorMoved(arg0);
     }
     //@Override
     public void ancestorResized(java.awt.event.HierarchyEvent arg0) {
-        raiseEvent("ancestorResized", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("ancestorResized", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.HierarchyBoundsAdapter.super.ancestorResized(arg0);
     }
 
 }

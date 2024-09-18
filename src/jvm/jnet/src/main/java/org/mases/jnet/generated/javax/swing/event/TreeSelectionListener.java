@@ -26,7 +26,13 @@ public final class TreeSelectionListener implements org.mases.jcobridge.IJCListe
     final org.mases.jcobridge.JCListener _internalListener;
 
     public TreeSelectionListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,7 +77,8 @@ public final class TreeSelectionListener implements org.mases.jcobridge.IJCListe
 
     //@Override
     public void valueChanged(javax.swing.event.TreeSelectionEvent arg0) {
-        raiseEvent("valueChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("valueChanged", eventDataExchange, arg0);
     }
 
 }

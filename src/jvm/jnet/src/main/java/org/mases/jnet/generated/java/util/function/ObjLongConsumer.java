@@ -26,7 +26,13 @@ public final class ObjLongConsumer implements org.mases.jcobridge.IJCListener, j
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ObjLongConsumer(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,7 +77,8 @@ public final class ObjLongConsumer implements org.mases.jcobridge.IJCListener, j
 
     //@Override
     public void accept(java.lang.Object arg0, long arg1) {
-        raiseEvent("accept", arg0, arg1);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("accept", eventDataExchange, arg0, arg1);
     }
 
 }

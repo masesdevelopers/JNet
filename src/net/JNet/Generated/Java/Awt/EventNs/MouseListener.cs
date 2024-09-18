@@ -160,11 +160,11 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("mouseClicked", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseClickedEventHandler));
-            AddEventHandler("mouseEntered", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseEnteredEventHandler));
-            AddEventHandler("mouseExited", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseExitedEventHandler));
-            AddEventHandler("mousePressed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MousePressedEventHandler));
-            AddEventHandler("mouseReleased", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseReleasedEventHandler));
+            AddEventHandler("mouseClicked", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MouseClickedEventHandler));
+            AddEventHandler("mouseEntered", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MouseEnteredEventHandler));
+            AddEventHandler("mouseExited", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MouseExitedEventHandler));
+            AddEventHandler("mousePressed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MousePressedEventHandler));
+            AddEventHandler("mouseReleased", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(MouseReleasedEventHandler));
 
         }
 
@@ -174,10 +174,12 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnMouseClicked"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.MouseEvent> OnMouseClicked { get; set; } = null;
 
-        void MouseClickedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        bool hasOverrideMouseClicked = true;
+        void MouseClickedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnMouseClicked != null) ? OnMouseClicked : MouseClicked;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.MouseEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideMouseClicked;
         }
 
         /// <summary>
@@ -186,7 +188,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public virtual void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
         {
-            
+            hasOverrideMouseClicked = false;
         }
 
         /// <summary>
@@ -195,10 +197,12 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnMouseEntered"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.MouseEvent> OnMouseEntered { get; set; } = null;
 
-        void MouseEnteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        bool hasOverrideMouseEntered = true;
+        void MouseEnteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnMouseEntered != null) ? OnMouseEntered : MouseEntered;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.MouseEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideMouseEntered;
         }
 
         /// <summary>
@@ -207,7 +211,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public virtual void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
         {
-            
+            hasOverrideMouseEntered = false;
         }
 
         /// <summary>
@@ -216,10 +220,12 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnMouseExited"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.MouseEvent> OnMouseExited { get; set; } = null;
 
-        void MouseExitedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        bool hasOverrideMouseExited = true;
+        void MouseExitedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnMouseExited != null) ? OnMouseExited : MouseExited;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.MouseEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideMouseExited;
         }
 
         /// <summary>
@@ -228,7 +234,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public virtual void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
         {
-            
+            hasOverrideMouseExited = false;
         }
 
         /// <summary>
@@ -237,10 +243,12 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnMousePressed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.MouseEvent> OnMousePressed { get; set; } = null;
 
-        void MousePressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        bool hasOverrideMousePressed = true;
+        void MousePressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnMousePressed != null) ? OnMousePressed : MousePressed;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.MouseEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideMousePressed;
         }
 
         /// <summary>
@@ -249,7 +257,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public virtual void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
         {
-            
+            hasOverrideMousePressed = false;
         }
 
         /// <summary>
@@ -258,10 +266,12 @@ namespace Java.Awt.EventNs
         /// <remarks>If <see cref="OnMouseReleased"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Awt.EventNs.MouseEvent> OnMouseReleased { get; set; } = null;
 
-        void MouseReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        bool hasOverrideMouseReleased = true;
+        void MouseReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
             var methodToExecute = (OnMouseReleased != null) ? OnMouseReleased : MouseReleased;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
+            methodToExecute.Invoke(data.EventData.GetAt<Java.Awt.EventNs.MouseEvent>(0));
+            data.TypedEventData.HasOverride = hasOverrideMouseReleased;
         }
 
         /// <summary>
@@ -270,7 +280,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public virtual void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
         {
-            
+            hasOverrideMouseReleased = false;
         }
 
         #endregion

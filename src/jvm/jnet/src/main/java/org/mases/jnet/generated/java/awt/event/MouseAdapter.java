@@ -26,7 +26,13 @@ public final class MouseAdapter extends java.awt.event.MouseAdapter implements o
     final org.mases.jcobridge.JCListener _internalListener;
 
     public MouseAdapter(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,35 +77,43 @@ public final class MouseAdapter extends java.awt.event.MouseAdapter implements o
 
     //@Override
     public void mouseClicked(java.awt.event.MouseEvent arg0) {
-        raiseEvent("mouseClicked", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("mouseClicked", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.MouseAdapter.super.mouseClicked(arg0);
     }
     //@Override
     public void mouseDragged(java.awt.event.MouseEvent arg0) {
-        raiseEvent("mouseDragged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("mouseDragged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.MouseAdapter.super.mouseDragged(arg0);
     }
     //@Override
     public void mouseEntered(java.awt.event.MouseEvent arg0) {
-        raiseEvent("mouseEntered", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("mouseEntered", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.MouseAdapter.super.mouseEntered(arg0);
     }
     //@Override
     public void mouseExited(java.awt.event.MouseEvent arg0) {
-        raiseEvent("mouseExited", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("mouseExited", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.MouseAdapter.super.mouseExited(arg0);
     }
     //@Override
     public void mouseMoved(java.awt.event.MouseEvent arg0) {
-        raiseEvent("mouseMoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("mouseMoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.MouseAdapter.super.mouseMoved(arg0);
     }
     //@Override
     public void mousePressed(java.awt.event.MouseEvent arg0) {
-        raiseEvent("mousePressed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("mousePressed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.MouseAdapter.super.mousePressed(arg0);
     }
     //@Override
     public void mouseReleased(java.awt.event.MouseEvent arg0) {
-        raiseEvent("mouseReleased", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("mouseReleased", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.MouseAdapter.super.mouseReleased(arg0);
     }
     //@Override
     public void mouseWheelMoved(java.awt.event.MouseWheelEvent arg0) {
-        raiseEvent("mouseWheelMoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("mouseWheelMoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.MouseAdapter.super.mouseWheelMoved(arg0);
     }
 
 }

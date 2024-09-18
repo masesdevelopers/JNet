@@ -26,7 +26,13 @@ public final class KeyAdapter extends java.awt.event.KeyAdapter implements org.m
     final org.mases.jcobridge.JCListener _internalListener;
 
     public KeyAdapter(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,15 +77,18 @@ public final class KeyAdapter extends java.awt.event.KeyAdapter implements org.m
 
     //@Override
     public void keyPressed(java.awt.event.KeyEvent arg0) {
-        raiseEvent("keyPressed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("keyPressed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.KeyAdapter.super.keyPressed(arg0);
     }
     //@Override
     public void keyReleased(java.awt.event.KeyEvent arg0) {
-        raiseEvent("keyReleased", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("keyReleased", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.KeyAdapter.super.keyReleased(arg0);
     }
     //@Override
     public void keyTyped(java.awt.event.KeyEvent arg0) {
-        raiseEvent("keyTyped", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("keyTyped", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.KeyAdapter.super.keyTyped(arg0);
     }
 
 }

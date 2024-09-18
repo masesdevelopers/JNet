@@ -26,7 +26,13 @@ public final class WindowAdapter extends java.awt.event.WindowAdapter implements
     final org.mases.jcobridge.JCListener _internalListener;
 
     public WindowAdapter(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,43 +77,53 @@ public final class WindowAdapter extends java.awt.event.WindowAdapter implements
 
     //@Override
     public void windowActivated(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowActivated", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowActivated", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.WindowAdapter.super.windowActivated(arg0);
     }
     //@Override
     public void windowClosed(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowClosed", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowClosed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.WindowAdapter.super.windowClosed(arg0);
     }
     //@Override
     public void windowClosing(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowClosing", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowClosing", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.WindowAdapter.super.windowClosing(arg0);
     }
     //@Override
     public void windowDeactivated(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowDeactivated", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowDeactivated", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.WindowAdapter.super.windowDeactivated(arg0);
     }
     //@Override
     public void windowDeiconified(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowDeiconified", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowDeiconified", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.WindowAdapter.super.windowDeiconified(arg0);
     }
     //@Override
     public void windowGainedFocus(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowGainedFocus", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowGainedFocus", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.WindowAdapter.super.windowGainedFocus(arg0);
     }
     //@Override
     public void windowIconified(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowIconified", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowIconified", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.WindowAdapter.super.windowIconified(arg0);
     }
     //@Override
     public void windowLostFocus(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowLostFocus", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowLostFocus", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.WindowAdapter.super.windowLostFocus(arg0);
     }
     //@Override
     public void windowOpened(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowOpened", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowOpened", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.WindowAdapter.super.windowOpened(arg0);
     }
     //@Override
     public void windowStateChanged(java.awt.event.WindowEvent arg0) {
-        raiseEvent("windowStateChanged", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("windowStateChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) java.awt.event.WindowAdapter.super.windowStateChanged(arg0);
     }
 
 }

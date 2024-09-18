@@ -26,7 +26,13 @@ public final class ToIntBiFunction implements org.mases.jcobridge.IJCListener, j
     final org.mases.jcobridge.JCListener _internalListener;
 
     public ToIntBiFunction(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,7 +77,8 @@ public final class ToIntBiFunction implements org.mases.jcobridge.IJCListener, j
 
     //@Override
     public int applyAsInt(java.lang.Object arg0, java.lang.Object arg1) {
-        raiseEvent("applyAsInt", arg0, arg1); Object retVal = getReturnData(); return (int)retVal;
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("applyAsInt", eventDataExchange, arg0, arg1); Object retVal = getReturnData(); return (int)retVal;
     }
 
 }

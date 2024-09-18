@@ -26,7 +26,13 @@ public final class PrintServiceAttributeListener implements org.mases.jcobridge.
     final org.mases.jcobridge.JCListener _internalListener;
 
     public PrintServiceAttributeListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,7 +77,8 @@ public final class PrintServiceAttributeListener implements org.mases.jcobridge.
 
     //@Override
     public void attributeUpdate(javax.print.event.PrintServiceAttributeEvent arg0) {
-        raiseEvent("attributeUpdate", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("attributeUpdate", eventDataExchange, arg0);
     }
 
 }

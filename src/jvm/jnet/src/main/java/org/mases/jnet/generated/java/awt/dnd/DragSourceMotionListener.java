@@ -26,7 +26,13 @@ public final class DragSourceMotionListener implements org.mases.jcobridge.IJCLi
     final org.mases.jcobridge.JCListener _internalListener;
 
     public DragSourceMotionListener(String key) throws org.mases.jcobridge.JCNativeException {
+        super();
         _internalListener = new org.mases.jcobridge.JCListener(key);
+    }
+
+    protected void finalize() throws Throwable {
+       super.finalize();
+       _internalListener.finalize();
     }
 
     public synchronized void release() {
@@ -71,7 +77,8 @@ public final class DragSourceMotionListener implements org.mases.jcobridge.IJCLi
 
     //@Override
     public void dragMouseMoved(java.awt.dnd.DragSourceDragEvent arg0) {
-        raiseEvent("dragMouseMoved", arg0);
+        org.mases.jnet.developed.JNetEventResult eventDataExchange;
+        raiseEvent("dragMouseMoved", eventDataExchange, arg0);
     }
 
 }

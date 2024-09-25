@@ -95,7 +95,7 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.InputMap Parent
         {
-            get { return IExecuteWithSignature<Javax.Swing.InputMap>("getParent", "()Ljavax/swing/InputMap;"); } set { IExecuteWithSignature("setParent", "(Ljavax/swing/InputMap;)V", value); }
+            get { return IExecute<Javax.Swing.InputMap>("getParent"); } set { IExecute("setParent", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#size()"/>
@@ -103,7 +103,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#get(javax.swing.KeyStroke)"/>
@@ -112,7 +112,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public object Get(Javax.Swing.KeyStroke arg0)
         {
-            return IExecuteWithSignature("get", "(Ljavax/swing/KeyStroke;)Ljava/lang/Object;", arg0);
+            return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#allKeys()"/>
@@ -120,7 +120,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public Javax.Swing.KeyStroke[] AllKeys()
         {
-            return IExecuteWithSignatureArray<Javax.Swing.KeyStroke>("allKeys", "()[Ljavax/swing/KeyStroke;");
+            return IExecuteArray<Javax.Swing.KeyStroke>("allKeys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#keys()"/>
@@ -128,14 +128,14 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public Javax.Swing.KeyStroke[] Keys()
         {
-            return IExecuteWithSignatureArray<Javax.Swing.KeyStroke>("keys", "()[Ljavax/swing/KeyStroke;");
+            return IExecuteArray<Javax.Swing.KeyStroke>("keys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#put(javax.swing.KeyStroke,java.lang.Object)"/>
@@ -152,7 +152,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
         public void Remove(Javax.Swing.KeyStroke arg0)
         {
-            IExecuteWithSignature("remove", "(Ljavax/swing/KeyStroke;)V", arg0);
+            IExecute("remove", arg0);
         }
 
         #endregion

@@ -97,28 +97,28 @@ namespace Javax.Imageio.Stream
         /// </summary>
         public int BitOffset
         {
-            get { return IExecuteWithSignature<int>("getBitOffset", "()I"); } set { IExecuteWithSignature("setBitOffset", "(I)V", value); }
+            get { return IExecute<int>("getBitOffset"); } set { IExecute("setBitOffset", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#getByteOrder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#setByteOrder(java.nio.ByteOrder)"/>
         /// </summary>
         public Java.Nio.ByteOrder ByteOrder
         {
-            get { return IExecuteWithSignature<Java.Nio.ByteOrder>("getByteOrder", "()Ljava/nio/ByteOrder;"); } set { IExecuteWithSignature("setByteOrder", "(Ljava/nio/ByteOrder;)V", value); }
+            get { return IExecute<Java.Nio.ByteOrder>("getByteOrder"); } set { IExecute("setByteOrder", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#getFlushedPosition()"/> 
         /// </summary>
         public long FlushedPosition
         {
-            get { return IExecuteWithSignature<long>("getFlushedPosition", "()J"); }
+            get { return IExecute<long>("getFlushedPosition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#getStreamPosition()"/> 
         /// </summary>
         public long StreamPosition
         {
-            get { return IExecuteWithSignature<long>("getStreamPosition", "()J"); }
+            get { return IExecute<long>("getStreamPosition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#read()"/>
@@ -127,7 +127,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public int Read()
         {
-            return IExecuteWithSignature<int>("read", "()I");
+            return IExecute<int>("read");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#read(byte[],int,int)"/>
@@ -147,7 +147,7 @@ namespace Javax.Imageio.Stream
         /// <returns><see cref="bool"/></returns>
         public bool IsCached()
         {
-            return IExecuteWithSignature<bool>("isCached", "()Z");
+            return IExecute<bool>("isCached");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#isCachedFile()"/>
@@ -155,7 +155,7 @@ namespace Javax.Imageio.Stream
         /// <returns><see cref="bool"/></returns>
         public bool IsCachedFile()
         {
-            return IExecuteWithSignature<bool>("isCachedFile", "()Z");
+            return IExecute<bool>("isCachedFile");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#isCachedMemory()"/>
@@ -163,7 +163,7 @@ namespace Javax.Imageio.Stream
         /// <returns><see cref="bool"/></returns>
         public bool IsCachedMemory()
         {
-            return IExecuteWithSignature<bool>("isCachedMemory", "()Z");
+            return IExecute<bool>("isCachedMemory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readBoolean()"/>
@@ -172,7 +172,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public bool ReadBoolean()
         {
-            return IExecuteWithSignature<bool>("readBoolean", "()Z");
+            return IExecute<bool>("readBoolean");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readByte()"/>
@@ -181,7 +181,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public byte ReadByte()
         {
-            return IExecuteWithSignature<byte>("readByte", "()B");
+            return IExecute<byte>("readByte");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readChar()"/>
@@ -190,7 +190,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public char ReadChar()
         {
-            return IExecuteWithSignature<char>("readChar", "()C");
+            return IExecute<char>("readChar");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readDouble()"/>
@@ -199,7 +199,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public double ReadDouble()
         {
-            return IExecuteWithSignature<double>("readDouble", "()D");
+            return IExecute<double>("readDouble");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readFloat()"/>
@@ -208,7 +208,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public float ReadFloat()
         {
-            return IExecuteWithSignature<float>("readFloat", "()F");
+            return IExecute<float>("readFloat");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#read(byte[])"/>
@@ -218,7 +218,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public int Read(byte[] arg0)
         {
-            return IExecuteWithSignature<int>("read", "([B)I", new object[] { arg0 });
+            return IExecute<int>("read", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readBit()"/>
@@ -227,7 +227,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public int ReadBit()
         {
-            return IExecuteWithSignature<int>("readBit", "()I");
+            return IExecute<int>("readBit");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readInt()"/>
@@ -236,7 +236,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public int ReadInt()
         {
-            return IExecuteWithSignature<int>("readInt", "()I");
+            return IExecute<int>("readInt");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readUnsignedByte()"/>
@@ -245,7 +245,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public int ReadUnsignedByte()
         {
-            return IExecuteWithSignature<int>("readUnsignedByte", "()I");
+            return IExecute<int>("readUnsignedByte");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readUnsignedShort()"/>
@@ -254,7 +254,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public int ReadUnsignedShort()
         {
-            return IExecuteWithSignature<int>("readUnsignedShort", "()I");
+            return IExecute<int>("readUnsignedShort");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#skipBytes(int)"/>
@@ -264,7 +264,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public int SkipBytes(int arg0)
         {
-            return IExecuteWithSignature<int>("skipBytes", "(I)I", arg0);
+            return IExecute<int>("skipBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readLine()"/>
@@ -273,7 +273,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String ReadLine()
         {
-            return IExecuteWithSignature<Java.Lang.String>("readLine", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("readLine");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readUTF()"/>
@@ -282,7 +282,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String ReadUTF()
         {
-            return IExecuteWithSignature<Java.Lang.String>("readUTF", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("readUTF");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#length()"/>
@@ -290,7 +290,7 @@ namespace Javax.Imageio.Stream
         /// <returns><see cref="long"/></returns>
         public long Length()
         {
-            return IExecuteWithSignature<long>("length", "()J");
+            return IExecute<long>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readBits(int)"/>
@@ -300,7 +300,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public long ReadBits(int arg0)
         {
-            return IExecuteWithSignature<long>("readBits", "(I)J", arg0);
+            return IExecute<long>("readBits", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readLong()"/>
@@ -309,7 +309,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public long ReadLong()
         {
-            return IExecuteWithSignature<long>("readLong", "()J");
+            return IExecute<long>("readLong");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readUnsignedInt()"/>
@@ -318,7 +318,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public long ReadUnsignedInt()
         {
-            return IExecuteWithSignature<long>("readUnsignedInt", "()J");
+            return IExecute<long>("readUnsignedInt");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#skipBytes(long)"/>
@@ -328,7 +328,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public long SkipBytes(long arg0)
         {
-            return IExecuteWithSignature<long>("skipBytes", "(J)J", arg0);
+            return IExecute<long>("skipBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readShort()"/>
@@ -337,7 +337,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public short ReadShort()
         {
-            return IExecuteWithSignature<short>("readShort", "()S");
+            return IExecute<short>("readShort");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#close()"/>
@@ -345,7 +345,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#flush()"/>
@@ -353,7 +353,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
-            IExecuteWithSignature("flush", "()V");
+            IExecute("flush");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#flushBefore(long)"/>
@@ -362,14 +362,14 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void FlushBefore(long arg0)
         {
-            IExecuteWithSignature("flushBefore", "(J)V", arg0);
+            IExecute("flushBefore", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#mark()"/>
         /// </summary>
         public void Mark()
         {
-            IExecuteWithSignature("mark", "()V");
+            IExecute("mark");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readBytes(javax.imageio.stream.IIOByteBuffer,int)"/>
@@ -399,7 +399,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0)
         {
-            IExecuteWithSignature("readFully", "([B)V", new object[] { arg0 });
+            IExecute("readFully", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readFully(char[],int,int)"/>
@@ -473,7 +473,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#seek(long)"/>
@@ -482,7 +482,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void Seek(long arg0)
         {
-            IExecuteWithSignature("seek", "(J)V", arg0);
+            IExecute("seek", arg0);
         }
 
         #endregion

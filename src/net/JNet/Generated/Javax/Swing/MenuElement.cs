@@ -142,14 +142,14 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.Component Component
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getComponent", "()Ljava/awt/Component;"); }
+            get { return IExecute<Java.Awt.Component>("getComponent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuElement.html#getSubElements()"/> 
         /// </summary>
         public Javax.Swing.MenuElement[] SubElements
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.MenuElement>("getSubElements", "()[Ljavax/swing/MenuElement;"); }
+            get { return IExecuteArray<Javax.Swing.MenuElement>("getSubElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuElement.html#menuSelectionChanged(boolean)"/>
@@ -157,7 +157,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void MenuSelectionChanged(bool arg0)
         {
-            IExecuteWithSignature("menuSelectionChanged", "(Z)V", arg0);
+            IExecute("menuSelectionChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuElement.html#processKeyEvent(java.awt.event.KeyEvent,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)"/>

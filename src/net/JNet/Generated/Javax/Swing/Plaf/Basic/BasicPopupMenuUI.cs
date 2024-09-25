@@ -95,7 +95,7 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public void InstallDefaults()
         {
-            IExecuteWithSignature("installDefaults", "()V");
+            IExecute("installDefaults");
         }
 
         #endregion

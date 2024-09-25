@@ -117,7 +117,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Crypto.SecretKeyFactory GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/crypto/SecretKeyFactory;", arg0);
+            return SExecute<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -128,14 +128,14 @@ namespace Javax.Crypto
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getKeySpec(javax.crypto.SecretKey,java.lang.Class)"/>
@@ -156,7 +156,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
         public Javax.Crypto.SecretKey GenerateSecret(Java.Security.Spec.KeySpec arg0)
         {
-            return IExecuteWithSignature<Javax.Crypto.SecretKey>("generateSecret", "(Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;", arg0);
+            return IExecute<Javax.Crypto.SecretKey>("generateSecret", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#translateKey(javax.crypto.SecretKey)"/>
@@ -166,7 +166,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public Javax.Crypto.SecretKey TranslateKey(Javax.Crypto.SecretKey arg0)
         {
-            return IExecuteWithSignature<Javax.Crypto.SecretKey>("translateKey", "(Ljavax/crypto/SecretKey;)Ljavax/crypto/SecretKey;", arg0);
+            return IExecute<Javax.Crypto.SecretKey>("translateKey", arg0);
         }
 
         #endregion

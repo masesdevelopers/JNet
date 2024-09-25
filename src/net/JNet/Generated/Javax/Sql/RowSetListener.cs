@@ -264,7 +264,7 @@ namespace Javax.Sql
         /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
         public override void CursorMoved(Javax.Sql.RowSetEvent arg0)
         {
-            IExecuteWithSignature("cursorMoved", "(Ljavax/sql/RowSetEvent;)V", arg0);
+            IExecute("cursorMoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
@@ -272,7 +272,7 @@ namespace Javax.Sql
         /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
         public override void RowChanged(Javax.Sql.RowSetEvent arg0)
         {
-            IExecuteWithSignature("rowChanged", "(Ljavax/sql/RowSetEvent;)V", arg0);
+            IExecute("rowChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
@@ -280,7 +280,7 @@ namespace Javax.Sql
         /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
         public override void RowSetChanged(Javax.Sql.RowSetEvent arg0)
         {
-            IExecuteWithSignature("rowSetChanged", "(Ljavax/sql/RowSetEvent;)V", arg0);
+            IExecute("rowSetChanged", arg0);
         }
 
         #endregion

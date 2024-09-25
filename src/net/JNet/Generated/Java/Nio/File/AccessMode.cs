@@ -111,7 +111,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.AccessMode"/></returns>
         public static Java.Nio.File.AccessMode ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Nio.File.AccessMode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/AccessMode;", arg0);
+            return SExecute<Java.Nio.File.AccessMode>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#values()"/>
@@ -119,7 +119,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.AccessMode"/></returns>
         public static Java.Nio.File.AccessMode[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Nio.File.AccessMode>(LocalBridgeClazz, "values", "()[Ljava/nio/file/AccessMode;");
+            return SExecuteArray<Java.Nio.File.AccessMode>(LocalBridgeClazz, "values");
         }
 
         #endregion

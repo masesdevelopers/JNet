@@ -133,7 +133,7 @@ namespace Javax.Management
         /// </summary>
         public Javax.Management.MBeanNotificationInfo[] NotificationInfo
         {
-            get { return IExecuteWithSignatureArray<Javax.Management.MBeanNotificationInfo>("getNotificationInfo", "()[Ljavax/management/MBeanNotificationInfo;"); }
+            get { return IExecuteArray<Javax.Management.MBeanNotificationInfo>("getNotificationInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcaster.html#addNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
@@ -153,7 +153,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0)
         {
-            IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/NotificationListener;)V", arg0);
+            IExecute("removeNotificationListener", arg0);
         }
 
         #endregion

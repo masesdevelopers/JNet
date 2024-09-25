@@ -148,35 +148,35 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Align
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlign", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#getCh()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#setCh(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Ch
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCh", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCh", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCh"); } set { IExecute("setCh", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#getChOff()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#setChOff(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String ChOff
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getChOff", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setChOff", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getChOff"); } set { IExecute("setChOff", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#getRows()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLCollection Rows
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLCollection>("getRows", "()Lorg/w3c/dom/html/HTMLCollection;"); }
+            get { return IExecute<Org.W3c.Dom.Html.HTMLCollection>("getRows"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#getVAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#setVAlign(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String VAlign
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setVAlign", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getVAlign"); } set { IExecute("setVAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#insertRow(int)"/>
@@ -186,7 +186,7 @@ namespace Org.W3c.Dom.Html
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Html.HTMLElement InsertRow(int arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLElement>("insertRow", "(I)Lorg/w3c/dom/html/HTMLElement;", arg0);
+            return IExecute<Org.W3c.Dom.Html.HTMLElement>("insertRow", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#deleteRow(int)"/>
@@ -195,7 +195,7 @@ namespace Org.W3c.Dom.Html
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteRow(int arg0)
         {
-            IExecuteWithSignature("deleteRow", "(I)V", arg0);
+            IExecute("deleteRow", arg0);
         }
 
         #endregion

@@ -123,70 +123,70 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.EventNs.AdjustmentListener[] AdjustmentListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.AdjustmentListener>("getAdjustmentListeners", "()[Ljava/awt/event/AdjustmentListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.AdjustmentListener>("getAdjustmentListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getBlockIncrement()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setBlockIncrement(int)"/>
         /// </summary>
         public int BlockIncrement
         {
-            get { return IExecuteWithSignature<int>("getBlockIncrement", "()I"); } set { IExecuteWithSignature("setBlockIncrement", "(I)V", value); }
+            get { return IExecute<int>("getBlockIncrement"); } set { IExecute("setBlockIncrement", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setMaximum(int)"/>
         /// </summary>
         public int Maximum
         {
-            get { return IExecuteWithSignature<int>("getMaximum", "()I"); } set { IExecuteWithSignature("setMaximum", "(I)V", value); }
+            get { return IExecute<int>("getMaximum"); } set { IExecute("setMaximum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setMinimum(int)"/>
         /// </summary>
         public int Minimum
         {
-            get { return IExecuteWithSignature<int>("getMinimum", "()I"); } set { IExecuteWithSignature("setMinimum", "(I)V", value); }
+            get { return IExecute<int>("getMinimum"); } set { IExecute("setMinimum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setModel(javax.swing.BoundedRangeModel)"/>
         /// </summary>
         public Javax.Swing.BoundedRangeModel Model
         {
-            get { return IExecuteWithSignature<Javax.Swing.BoundedRangeModel>("getModel", "()Ljavax/swing/BoundedRangeModel;"); } set { IExecuteWithSignature("setModel", "(Ljavax/swing/BoundedRangeModel;)V", value); }
+            get { return IExecute<Javax.Swing.BoundedRangeModel>("getModel"); } set { IExecute("setModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setOrientation(int)"/>
         /// </summary>
         public int Orientation
         {
-            get { return IExecuteWithSignature<int>("getOrientation", "()I"); } set { IExecuteWithSignature("setOrientation", "(I)V", value); }
+            get { return IExecute<int>("getOrientation"); } set { IExecute("setOrientation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getUnitIncrement()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setUnitIncrement(int)"/>
         /// </summary>
         public int UnitIncrement
         {
-            get { return IExecuteWithSignature<int>("getUnitIncrement", "()I"); } set { IExecuteWithSignature("setUnitIncrement", "(I)V", value); }
+            get { return IExecute<int>("getUnitIncrement"); } set { IExecute("setUnitIncrement", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setValue(int)"/>
         /// </summary>
         public int Value
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); } set { IExecuteWithSignature("setValue", "(I)V", value); }
+            get { return IExecute<int>("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getValueIsAdjusting()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setValueIsAdjusting(boolean)"/>
         /// </summary>
         public bool ValueIsAdjusting
         {
-            get { return IExecuteWithSignature<bool>("getValueIsAdjusting", "()Z"); } set { IExecuteWithSignature("setValueIsAdjusting", "(Z)V", value); }
+            get { return IExecute<bool>("getValueIsAdjusting"); } set { IExecute("setValueIsAdjusting", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getVisibleAmount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setVisibleAmount(int)"/>
         /// </summary>
         public int VisibleAmount
         {
-            get { return IExecuteWithSignature<int>("getVisibleAmount", "()I"); } set { IExecuteWithSignature("setVisibleAmount", "(I)V", value); }
+            get { return IExecute<int>("getVisibleAmount"); } set { IExecute("setVisibleAmount", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getBlockIncrement(int)"/>
@@ -195,7 +195,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetBlockIncrement(int arg0)
         {
-            return IExecuteWithSignature<int>("getBlockIncrement", "(I)I", arg0);
+            return IExecute<int>("getBlockIncrement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getUnitIncrement(int)"/>
@@ -204,7 +204,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetUnitIncrement(int arg0)
         {
-            return IExecuteWithSignature<int>("getUnitIncrement", "(I)I", arg0);
+            return IExecute<int>("getUnitIncrement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#addAdjustmentListener(java.awt.event.AdjustmentListener)"/>
@@ -212,7 +212,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
         public void AddAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0)
         {
-            IExecuteWithSignature("addAdjustmentListener", "(Ljava/awt/event/AdjustmentListener;)V", arg0);
+            IExecute("addAdjustmentListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#removeAdjustmentListener(java.awt.event.AdjustmentListener)"/>
@@ -220,7 +220,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
         public void RemoveAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0)
         {
-            IExecuteWithSignature("removeAdjustmentListener", "(Ljava/awt/event/AdjustmentListener;)V", arg0);
+            IExecute("removeAdjustmentListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setUI(javax.swing.plaf.ScrollBarUI)"/>
@@ -228,7 +228,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.ScrollBarUI"/></param>
         public void SetUI(Javax.Swing.Plaf.ScrollBarUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ScrollBarUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setValues(int,int,int,int)"/>

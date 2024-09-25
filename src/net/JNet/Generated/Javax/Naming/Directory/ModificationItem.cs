@@ -104,14 +104,14 @@ namespace Javax.Naming.Directory
         /// </summary>
         public Javax.Naming.Directory.Attribute Attribute
         {
-            get { return IExecuteWithSignature<Javax.Naming.Directory.Attribute>("getAttribute", "()Ljavax/naming/directory/Attribute;"); }
+            get { return IExecute<Javax.Naming.Directory.Attribute>("getAttribute"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/ModificationItem.html#getModificationOp()"/> 
         /// </summary>
         public int ModificationOp
         {
-            get { return IExecuteWithSignature<int>("getModificationOp", "()I"); }
+            get { return IExecute<int>("getModificationOp"); }
         }
 
         #endregion

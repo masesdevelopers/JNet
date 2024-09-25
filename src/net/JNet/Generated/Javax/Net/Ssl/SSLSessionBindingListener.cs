@@ -234,7 +234,7 @@ namespace Javax.Net.Ssl
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
         public override void ValueBound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
         {
-            IExecuteWithSignature("valueBound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V", arg0);
+            IExecute("valueBound", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
@@ -242,7 +242,7 @@ namespace Javax.Net.Ssl
         /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
         public override void ValueUnbound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
         {
-            IExecuteWithSignature("valueUnbound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V", arg0);
+            IExecute("valueUnbound", arg0);
         }
 
         #endregion

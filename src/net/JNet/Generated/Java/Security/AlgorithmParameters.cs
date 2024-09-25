@@ -117,7 +117,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.AlgorithmParameters GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Security.AlgorithmParameters>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/AlgorithmParameters;", arg0);
+            return SExecute<Java.Security.AlgorithmParameters>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -128,21 +128,21 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#getParameterSpec(java.lang.Class)"/>
@@ -163,7 +163,7 @@ namespace Java.Security
         /// <exception cref="Java.Io.IOException"/>
         public byte[] GetEncoded(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<byte>("getEncoded", "(Ljava/lang/String;)[B", arg0);
+            return IExecuteArray<byte>("getEncoded", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#init(byte[],java.lang.String)"/>
@@ -182,7 +182,7 @@ namespace Java.Security
         /// <exception cref="Java.Io.IOException"/>
         public void Init(byte[] arg0)
         {
-            IExecuteWithSignature("init", "([B)V", new object[] { arg0 });
+            IExecute("init", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#init(java.security.spec.AlgorithmParameterSpec)"/>
@@ -191,7 +191,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Spec.InvalidParameterSpecException"/>
         public void Init(Java.Security.Spec.AlgorithmParameterSpec arg0)
         {
-            IExecuteWithSignature("init", "(Ljava/security/spec/AlgorithmParameterSpec;)V", arg0);
+            IExecute("init", arg0);
         }
 
         #endregion

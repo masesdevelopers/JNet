@@ -150,21 +150,21 @@ namespace Javax.Swing.Tree
         /// </summary>
         public bool AllowsChildren
         {
-            get { return IExecuteWithSignature<bool>("getAllowsChildren", "()Z"); }
+            get { return IExecute<bool>("getAllowsChildren"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getChildCount()"/> 
         /// </summary>
         public int ChildCount
         {
-            get { return IExecuteWithSignature<int>("getChildCount", "()I"); }
+            get { return IExecute<int>("getChildCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getParent()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreeNode Parent
         {
-            get { return IExecuteWithSignature<Javax.Swing.Tree.TreeNode>("getParent", "()Ljavax/swing/tree/TreeNode;"); }
+            get { return IExecute<Javax.Swing.Tree.TreeNode>("getParent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#isLeaf()"/>
@@ -172,7 +172,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="bool"/></returns>
         public bool IsLeaf()
         {
-            return IExecuteWithSignature<bool>("isLeaf", "()Z");
+            return IExecute<bool>("isLeaf");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getIndex(javax.swing.tree.TreeNode)"/>
@@ -181,7 +181,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="int"/></returns>
         public int GetIndex(Javax.Swing.Tree.TreeNode arg0)
         {
-            return IExecuteWithSignature<int>("getIndex", "(Ljavax/swing/tree/TreeNode;)I", arg0);
+            return IExecute<int>("getIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#children()"/>
@@ -190,7 +190,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<ReturnExtendsJavax_Swing_Tree_TreeNode> Children<ReturnExtendsJavax_Swing_Tree_TreeNode>() where ReturnExtendsJavax_Swing_Tree_TreeNode : Javax.Swing.Tree.TreeNode
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<ReturnExtendsJavax_Swing_Tree_TreeNode>>("children", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration<ReturnExtendsJavax_Swing_Tree_TreeNode>>("children");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getChildAt(int)"/>
@@ -199,7 +199,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="Javax.Swing.Tree.TreeNode"/></returns>
         public Javax.Swing.Tree.TreeNode GetChildAt(int arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Tree.TreeNode>("getChildAt", "(I)Ljavax/swing/tree/TreeNode;", arg0);
+            return IExecute<Javax.Swing.Tree.TreeNode>("getChildAt", arg0);
         }
 
         #endregion

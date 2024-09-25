@@ -204,7 +204,7 @@ namespace Org.W3c.Dom.Events
         /// <param name="arg0"><see cref="Org.W3c.Dom.Events.Event"/></param>
         public override void HandleEvent(Org.W3c.Dom.Events.Event arg0)
         {
-            IExecuteWithSignature("handleEvent", "(Lorg/w3c/dom/events/Event;)V", arg0);
+            IExecute("handleEvent", arg0);
         }
 
         #endregion

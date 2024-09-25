@@ -149,7 +149,7 @@ namespace Javax.Accessibility
         /// </summary>
         public int AccessibleSelectionCount
         {
-            get { return IExecuteWithSignature<int>("getAccessibleSelectionCount", "()I"); }
+            get { return IExecute<int>("getAccessibleSelectionCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#isAccessibleChildSelected(int)"/>
@@ -158,7 +158,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool IsAccessibleChildSelected(int arg0)
         {
-            return IExecuteWithSignature<bool>("isAccessibleChildSelected", "(I)Z", arg0);
+            return IExecute<bool>("isAccessibleChildSelected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#getAccessibleSelection(int)"/>
@@ -167,7 +167,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
         public Javax.Accessibility.Accessible GetAccessibleSelection(int arg0)
         {
-            return IExecuteWithSignature<Javax.Accessibility.Accessible>("getAccessibleSelection", "(I)Ljavax/accessibility/Accessible;", arg0);
+            return IExecute<Javax.Accessibility.Accessible>("getAccessibleSelection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#addAccessibleSelection(int)"/>
@@ -175,14 +175,14 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="int"/></param>
         public void AddAccessibleSelection(int arg0)
         {
-            IExecuteWithSignature("addAccessibleSelection", "(I)V", arg0);
+            IExecute("addAccessibleSelection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#clearAccessibleSelection()"/>
         /// </summary>
         public void ClearAccessibleSelection()
         {
-            IExecuteWithSignature("clearAccessibleSelection", "()V");
+            IExecute("clearAccessibleSelection");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#removeAccessibleSelection(int)"/>
@@ -190,14 +190,14 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveAccessibleSelection(int arg0)
         {
-            IExecuteWithSignature("removeAccessibleSelection", "(I)V", arg0);
+            IExecute("removeAccessibleSelection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#selectAllAccessibleSelection()"/>
         /// </summary>
         public void SelectAllAccessibleSelection()
         {
-            IExecuteWithSignature("selectAllAccessibleSelection", "()V");
+            IExecute("selectAllAccessibleSelection");
         }
 
         #endregion

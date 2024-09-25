@@ -208,28 +208,28 @@ namespace Java.Text
         /// </summary>
         public Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute> AllAttributeKeys
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute>>("getAllAttributeKeys", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute>>("getAllAttributeKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAttributes()"/> 
         /// </summary>
         public Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object> Attributes
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object>>("getAttributes", "()Ljava/util/Map;"); }
+            get { return IExecute<Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object>>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit()"/> 
         /// </summary>
         public int RunLimit
         {
-            get { return IExecuteWithSignature<int>("getRunLimit", "()I"); }
+            get { return IExecute<int>("getRunLimit"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart()"/> 
         /// </summary>
         public int RunStart
         {
-            get { return IExecuteWithSignature<int>("getRunStart", "()I"); }
+            get { return IExecute<int>("getRunStart"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.text.AttributedCharacterIterator.Attribute)"/>
@@ -238,7 +238,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int GetRunLimit(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
-            return IExecuteWithSignature<int>("getRunLimit", "(Ljava/text/AttributedCharacterIterator$Attribute;)I", arg0);
+            return IExecute<int>("getRunLimit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.util.Set)"/>
@@ -248,7 +248,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int GetRunLimit<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute
         {
-            return IExecuteWithSignature<int>("getRunLimit", "(Ljava/util/Set;)I", arg0);
+            return IExecute<int>("getRunLimit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.text.AttributedCharacterIterator.Attribute)"/>
@@ -257,7 +257,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int GetRunStart(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
-            return IExecuteWithSignature<int>("getRunStart", "(Ljava/text/AttributedCharacterIterator$Attribute;)I", arg0);
+            return IExecute<int>("getRunStart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.util.Set)"/>
@@ -267,7 +267,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int GetRunStart<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute
         {
-            return IExecuteWithSignature<int>("getRunStart", "(Ljava/util/Set;)I", arg0);
+            return IExecute<int>("getRunStart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAttribute(java.text.AttributedCharacterIterator.Attribute)"/>
@@ -276,7 +276,7 @@ namespace Java.Text
         /// <returns><see cref="object"/></returns>
         public object GetAttribute(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
-            return IExecuteWithSignature("getAttribute", "(Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/lang/Object;", arg0);
+            return IExecute("getAttribute", arg0);
         }
 
         #endregion

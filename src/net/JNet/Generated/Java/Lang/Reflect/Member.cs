@@ -144,21 +144,21 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Java.Lang.Class DeclaringClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers
         {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
+            get { return IExecute<int>("getModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#isSynthetic()"/>
@@ -166,7 +166,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
         {
-            return IExecuteWithSignature<bool>("isSynthetic", "()Z");
+            return IExecute<bool>("isSynthetic");
         }
 
         #endregion

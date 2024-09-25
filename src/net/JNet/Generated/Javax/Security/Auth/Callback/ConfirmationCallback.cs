@@ -211,42 +211,42 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public int DefaultOption
         {
-            get { return IExecuteWithSignature<int>("getDefaultOption", "()I"); }
+            get { return IExecute<int>("getDefaultOption"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getMessageType()"/> 
         /// </summary>
         public int MessageType
         {
-            get { return IExecuteWithSignature<int>("getMessageType", "()I"); }
+            get { return IExecute<int>("getMessageType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getOptions()"/> 
         /// </summary>
         public Java.Lang.String[] Options
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getOptions", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getOptions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getOptionType()"/> 
         /// </summary>
         public int OptionType
         {
-            get { return IExecuteWithSignature<int>("getOptionType", "()I"); }
+            get { return IExecute<int>("getOptionType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getPrompt()"/> 
         /// </summary>
         public Java.Lang.String Prompt
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrompt", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPrompt"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#setSelectedIndex(int)"/>
         /// </summary>
         public int SelectedIndex
         {
-            get { return IExecuteWithSignature<int>("getSelectedIndex", "()I"); } set { IExecuteWithSignature("setSelectedIndex", "(I)V", value); }
+            get { return IExecute<int>("getSelectedIndex"); } set { IExecute("setSelectedIndex", value); }
         }
 
         #endregion

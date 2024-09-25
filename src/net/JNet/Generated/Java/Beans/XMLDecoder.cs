@@ -152,14 +152,14 @@ namespace Java.Beans
         /// </summary>
         public Java.Beans.ExceptionListener ExceptionListener
         {
-            get { return IExecuteWithSignature<Java.Beans.ExceptionListener>("getExceptionListener", "()Ljava/beans/ExceptionListener;"); } set { IExecuteWithSignature("setExceptionListener", "(Ljava/beans/ExceptionListener;)V", value); }
+            get { return IExecute<Java.Beans.ExceptionListener>("getExceptionListener"); } set { IExecute("setExceptionListener", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#getOwner()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#setOwner(java.lang.Object)"/>
         /// </summary>
         public object Owner
         {
-            get { return IExecuteWithSignature("getOwner", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setOwner", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getOwner"); } set { IExecute("setOwner", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#readObject()"/>
@@ -167,14 +167,14 @@ namespace Java.Beans
         /// <returns><see cref="object"/></returns>
         public object ReadObject()
         {
-            return IExecuteWithSignature("readObject", "()Ljava/lang/Object;");
+            return IExecute("readObject");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
 
         #endregion

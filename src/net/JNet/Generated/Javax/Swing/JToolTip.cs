@@ -99,14 +99,14 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.JComponent Component
         {
-            get { return IExecuteWithSignature<Javax.Swing.JComponent>("getComponent", "()Ljavax/swing/JComponent;"); } set { IExecuteWithSignature("setComponent", "(Ljavax/swing/JComponent;)V", value); }
+            get { return IExecute<Javax.Swing.JComponent>("getComponent"); } set { IExecute("setComponent", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolTip.html#getTipText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolTip.html#setTipText(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String TipText
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTipText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTipText", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getTipText"); } set { IExecute("setTipText", value); }
         }
 
         #endregion

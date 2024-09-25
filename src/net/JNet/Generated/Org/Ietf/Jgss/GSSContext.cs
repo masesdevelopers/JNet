@@ -331,84 +331,84 @@ namespace Org.Ietf.Jgss
         /// </summary>
         public bool AnonymityState
         {
-            get { return IExecuteWithSignature<bool>("getAnonymityState", "()Z"); }
+            get { return IExecute<bool>("getAnonymityState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getConfState()"/> 
         /// </summary>
         public bool ConfState
         {
-            get { return IExecuteWithSignature<bool>("getConfState", "()Z"); }
+            get { return IExecute<bool>("getConfState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getCredDelegState()"/> 
         /// </summary>
         public bool CredDelegState
         {
-            get { return IExecuteWithSignature<bool>("getCredDelegState", "()Z"); }
+            get { return IExecute<bool>("getCredDelegState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getDelegCred()"/> 
         /// </summary>
         public Org.Ietf.Jgss.GSSCredential DelegCred
         {
-            get { return IExecuteWithSignature<Org.Ietf.Jgss.GSSCredential>("getDelegCred", "()Lorg/ietf/jgss/GSSCredential;"); }
+            get { return IExecute<Org.Ietf.Jgss.GSSCredential>("getDelegCred"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getIntegState()"/> 
         /// </summary>
         public bool IntegState
         {
-            get { return IExecuteWithSignature<bool>("getIntegState", "()Z"); }
+            get { return IExecute<bool>("getIntegState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getLifetime()"/> 
         /// </summary>
         public int Lifetime
         {
-            get { return IExecuteWithSignature<int>("getLifetime", "()I"); }
+            get { return IExecute<int>("getLifetime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getMech()"/> 
         /// </summary>
         public Org.Ietf.Jgss.Oid Mech
         {
-            get { return IExecuteWithSignature<Org.Ietf.Jgss.Oid>("getMech", "()Lorg/ietf/jgss/Oid;"); }
+            get { return IExecute<Org.Ietf.Jgss.Oid>("getMech"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getMutualAuthState()"/> 
         /// </summary>
         public bool MutualAuthState
         {
-            get { return IExecuteWithSignature<bool>("getMutualAuthState", "()Z"); }
+            get { return IExecute<bool>("getMutualAuthState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getReplayDetState()"/> 
         /// </summary>
         public bool ReplayDetState
         {
-            get { return IExecuteWithSignature<bool>("getReplayDetState", "()Z"); }
+            get { return IExecute<bool>("getReplayDetState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getSequenceDetState()"/> 
         /// </summary>
         public bool SequenceDetState
         {
-            get { return IExecuteWithSignature<bool>("getSequenceDetState", "()Z"); }
+            get { return IExecute<bool>("getSequenceDetState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getSrcName()"/> 
         /// </summary>
         public Org.Ietf.Jgss.GSSName SrcName
         {
-            get { return IExecuteWithSignature<Org.Ietf.Jgss.GSSName>("getSrcName", "()Lorg/ietf/jgss/GSSName;"); }
+            get { return IExecute<Org.Ietf.Jgss.GSSName>("getSrcName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getTargName()"/> 
         /// </summary>
         public Org.Ietf.Jgss.GSSName TargName
         {
-            get { return IExecuteWithSignature<Org.Ietf.Jgss.GSSName>("getTargName", "()Lorg/ietf/jgss/GSSName;"); }
+            get { return IExecute<Org.Ietf.Jgss.GSSName>("getTargName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isEstablished()"/>
@@ -416,7 +416,7 @@ namespace Org.Ietf.Jgss
         /// <returns><see cref="bool"/></returns>
         public bool IsEstablished()
         {
-            return IExecuteWithSignature<bool>("isEstablished", "()Z");
+            return IExecute<bool>("isEstablished");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isInitiator()"/>
@@ -425,7 +425,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public bool IsInitiator()
         {
-            return IExecuteWithSignature<bool>("isInitiator", "()Z");
+            return IExecute<bool>("isInitiator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isProtReady()"/>
@@ -433,7 +433,7 @@ namespace Org.Ietf.Jgss
         /// <returns><see cref="bool"/></returns>
         public bool IsProtReady()
         {
-            return IExecuteWithSignature<bool>("isProtReady", "()Z");
+            return IExecute<bool>("isProtReady");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isTransferable()"/>
@@ -442,7 +442,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public bool IsTransferable()
         {
-            return IExecuteWithSignature<bool>("isTransferable", "()Z");
+            return IExecute<bool>("isTransferable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#acceptSecContext(byte[],int,int)"/>
@@ -463,7 +463,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public byte[] Export()
         {
-            return IExecuteWithSignatureArray<byte>("export", "()[B");
+            return IExecuteArray<byte>("export");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getMIC(byte[],int,int,org.ietf.jgss.MessageProp)"/>
@@ -534,7 +534,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public new void Dispose()
         {
-            IExecuteWithSignature("dispose", "()V");
+            IExecute("dispose");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestAnonymity(boolean)"/>
@@ -543,7 +543,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void RequestAnonymity(bool arg0)
         {
-            IExecuteWithSignature("requestAnonymity", "(Z)V", arg0);
+            IExecute("requestAnonymity", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestConf(boolean)"/>
@@ -552,7 +552,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void RequestConf(bool arg0)
         {
-            IExecuteWithSignature("requestConf", "(Z)V", arg0);
+            IExecute("requestConf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestCredDeleg(boolean)"/>
@@ -561,7 +561,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void RequestCredDeleg(bool arg0)
         {
-            IExecuteWithSignature("requestCredDeleg", "(Z)V", arg0);
+            IExecute("requestCredDeleg", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestInteg(boolean)"/>
@@ -570,7 +570,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void RequestInteg(bool arg0)
         {
-            IExecuteWithSignature("requestInteg", "(Z)V", arg0);
+            IExecute("requestInteg", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestLifetime(int)"/>
@@ -579,7 +579,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void RequestLifetime(int arg0)
         {
-            IExecuteWithSignature("requestLifetime", "(I)V", arg0);
+            IExecute("requestLifetime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestMutualAuth(boolean)"/>
@@ -588,7 +588,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void RequestMutualAuth(bool arg0)
         {
-            IExecuteWithSignature("requestMutualAuth", "(Z)V", arg0);
+            IExecute("requestMutualAuth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestReplayDet(boolean)"/>
@@ -597,7 +597,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void RequestReplayDet(bool arg0)
         {
-            IExecuteWithSignature("requestReplayDet", "(Z)V", arg0);
+            IExecute("requestReplayDet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestSequenceDet(boolean)"/>
@@ -606,7 +606,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void RequestSequenceDet(bool arg0)
         {
-            IExecuteWithSignature("requestSequenceDet", "(Z)V", arg0);
+            IExecute("requestSequenceDet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#setChannelBinding(org.ietf.jgss.ChannelBinding)"/>
@@ -615,7 +615,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void SetChannelBinding(Org.Ietf.Jgss.ChannelBinding arg0)
         {
-            IExecuteWithSignature("setChannelBinding", "(Lorg/ietf/jgss/ChannelBinding;)V", arg0);
+            IExecute("setChannelBinding", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#verifyMIC(byte[],int,int,byte[],int,int,org.ietf.jgss.MessageProp)"/>

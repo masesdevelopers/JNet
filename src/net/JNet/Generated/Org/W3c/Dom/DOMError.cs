@@ -157,42 +157,42 @@ namespace Org.W3c.Dom
         /// </summary>
         public Org.W3c.Dom.DOMLocator Location
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DOMLocator>("getLocation", "()Lorg/w3c/dom/DOMLocator;"); }
+            get { return IExecute<Org.W3c.Dom.DOMLocator>("getLocation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getMessage()"/> 
         /// </summary>
         public Java.Lang.String Message
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMessage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getRelatedData()"/> 
         /// </summary>
         public object RelatedData
         {
-            get { return IExecuteWithSignature("getRelatedData", "()Ljava/lang/Object;"); }
+            get { return IExecute("getRelatedData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getRelatedException()"/> 
         /// </summary>
         public object RelatedException
         {
-            get { return IExecuteWithSignature("getRelatedException", "()Ljava/lang/Object;"); }
+            get { return IExecute("getRelatedException"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getSeverity()"/> 
         /// </summary>
         public short Severity
         {
-            get { return IExecuteWithSignature<short>("getSeverity", "()S"); }
+            get { return IExecute<short>("getSeverity"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
 
         #endregion

@@ -234,7 +234,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
         public override void EditingCanceled(Javax.Swing.Event.ChangeEvent arg0)
         {
-            IExecuteWithSignature("editingCanceled", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
+            IExecute("editingCanceled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingStopped(javax.swing.event.ChangeEvent)"/>
@@ -242,7 +242,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
         public override void EditingStopped(Javax.Swing.Event.ChangeEvent arg0)
         {
-            IExecuteWithSignature("editingStopped", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
+            IExecute("editingStopped", arg0);
         }
 
         #endregion

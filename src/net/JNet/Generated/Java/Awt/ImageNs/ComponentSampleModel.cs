@@ -122,28 +122,28 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public int[] BandOffsets
         {
-            get { return IExecuteWithSignatureArray<int>("getBandOffsets", "()[I"); }
+            get { return IExecuteArray<int>("getBandOffsets"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ComponentSampleModel.html#getBankIndices()"/> 
         /// </summary>
         public int[] BankIndices
         {
-            get { return IExecuteWithSignatureArray<int>("getBankIndices", "()[I"); }
+            get { return IExecuteArray<int>("getBankIndices"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ComponentSampleModel.html#getPixelStride()"/> 
         /// </summary>
         public int PixelStride
         {
-            get { return IExecuteWithSignature<int>("getPixelStride", "()I"); }
+            get { return IExecute<int>("getPixelStride"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ComponentSampleModel.html#getScanlineStride()"/> 
         /// </summary>
         public int ScanlineStride
         {
-            get { return IExecuteWithSignature<int>("getScanlineStride", "()I"); }
+            get { return IExecute<int>("getScanlineStride"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ComponentSampleModel.html#getOffset(int,int,int)"/>

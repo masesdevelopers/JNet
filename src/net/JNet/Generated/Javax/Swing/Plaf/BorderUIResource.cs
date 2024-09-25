@@ -426,28 +426,28 @@ namespace Javax.Swing.Plaf
         /// </summary>
         public static Javax.Swing.Border.Border BlackLineBorderUIResource
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getBlackLineBorderUIResource", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getBlackLineBorderUIResource"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.html#getEtchedBorderUIResource()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetEtchedBorderUIResource
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getEtchedBorderUIResource", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getEtchedBorderUIResource"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.html#getLoweredBevelBorderUIResource()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border LoweredBevelBorderUIResource
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getLoweredBevelBorderUIResource", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getLoweredBevelBorderUIResource"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.html#getRaisedBevelBorderUIResource()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border RaisedBevelBorderUIResource
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getRaisedBevelBorderUIResource", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getRaisedBevelBorderUIResource"); }
         }
 
         #endregion
@@ -459,7 +459,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="bool"/></returns>
         public bool IsBorderOpaque()
         {
-            return IExecuteWithSignature<bool>("isBorderOpaque", "()Z");
+            return IExecute<bool>("isBorderOpaque");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.html#getBorderInsets(java.awt.Component)"/>
@@ -468,7 +468,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetBorderInsets(Java.Awt.Component arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Insets>("getBorderInsets", "(Ljava/awt/Component;)Ljava/awt/Insets;", arg0);
+            return IExecute<Java.Awt.Insets>("getBorderInsets", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.html#paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)"/>

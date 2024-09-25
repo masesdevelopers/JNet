@@ -125,7 +125,7 @@ namespace Java.Util.Zip
         /// <exception cref="Java.Io.IOException"/>
         public void CloseEntry()
         {
-            IExecuteWithSignature("closeEntry", "()V");
+            IExecute("closeEntry");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#putNextEntry(java.util.zip.ZipEntry)"/>
@@ -134,7 +134,7 @@ namespace Java.Util.Zip
         /// <exception cref="Java.Io.IOException"/>
         public void PutNextEntry(Java.Util.Zip.ZipEntry arg0)
         {
-            IExecuteWithSignature("putNextEntry", "(Ljava/util/zip/ZipEntry;)V", arg0);
+            IExecute("putNextEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#setComment(java.lang.String)"/>
@@ -142,7 +142,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetComment(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("setComment", "(Ljava/lang/String;)V", arg0);
+            IExecute("setComment", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#setLevel(int)"/>
@@ -150,7 +150,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="int"/></param>
         public void SetLevel(int arg0)
         {
-            IExecuteWithSignature("setLevel", "(I)V", arg0);
+            IExecute("setLevel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#setMethod(int)"/>
@@ -158,7 +158,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="int"/></param>
         public void SetMethod(int arg0)
         {
-            IExecuteWithSignature("setMethod", "(I)V", arg0);
+            IExecute("setMethod", arg0);
         }
 
         #endregion

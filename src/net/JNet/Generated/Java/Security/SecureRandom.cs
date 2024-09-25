@@ -99,7 +99,7 @@ namespace Java.Security
         /// </summary>
         public static Java.Security.SecureRandom InstanceStrong
         {
-            get { return SExecuteWithSignature<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstanceStrong", "()Ljava/security/SecureRandom;"); }
+            get { return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstanceStrong"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getSeed(int)"/>
@@ -108,7 +108,7 @@ namespace Java.Security
         /// <returns><see cref="byte"/></returns>
         public static byte[] GetSeed(int arg0)
         {
-            return SExecuteWithSignatureArray<byte>(LocalBridgeClazz, "getSeed", "(I)[B", arg0);
+            return SExecuteArray<byte>(LocalBridgeClazz, "getSeed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -177,7 +177,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.SecureRandom GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/SecureRandom;", arg0);
+            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -188,21 +188,21 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getParameters()"/> 
         /// </summary>
         public Java.Security.SecureRandomParameters Parameters
         {
-            get { return IExecuteWithSignature<Java.Security.SecureRandomParameters>("getParameters", "()Ljava/security/SecureRandomParameters;"); }
+            get { return IExecute<Java.Security.SecureRandomParameters>("getParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#generateSeed(int)"/>
@@ -211,7 +211,7 @@ namespace Java.Security
         /// <returns><see cref="byte"/></returns>
         public byte[] GenerateSeed(int arg0)
         {
-            return IExecuteWithSignatureArray<byte>("generateSeed", "(I)[B", arg0);
+            return IExecuteArray<byte>("generateSeed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#nextBytes(byte[],java.security.SecureRandomParameters)"/>
@@ -227,7 +227,7 @@ namespace Java.Security
         /// </summary>
         public void Reseed()
         {
-            IExecuteWithSignature("reseed", "()V");
+            IExecute("reseed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#reseed(java.security.SecureRandomParameters)"/>
@@ -235,7 +235,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="Java.Security.SecureRandomParameters"/></param>
         public void Reseed(Java.Security.SecureRandomParameters arg0)
         {
-            IExecuteWithSignature("reseed", "(Ljava/security/SecureRandomParameters;)V", arg0);
+            IExecute("reseed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#setSeed(byte[])"/>
@@ -243,7 +243,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="byte"/></param>
         public void SetSeed(byte[] arg0)
         {
-            IExecuteWithSignature("setSeed", "([B)V", new object[] { arg0 });
+            IExecute("setSeed", new object[] { arg0 });
         }
 
         #endregion

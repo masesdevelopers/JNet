@@ -551,7 +551,7 @@ namespace Java.Security
         /// </summary>
         public static Java.Lang.String DefaultType
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultType", "()Ljava/lang/String;"); }
+            get { return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDefaultType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.io.File,char[])"/>
@@ -612,7 +612,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public static Java.Security.KeyStore GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/KeyStore;", arg0);
+            return SExecute<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -623,14 +623,14 @@ namespace Java.Security
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#containsAlias(java.lang.String)"/>
@@ -640,7 +640,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public bool ContainsAlias(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("containsAlias", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("containsAlias", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#entryInstanceOf(java.lang.String,java.lang.Class)"/>
@@ -661,7 +661,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public bool IsCertificateEntry(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("isCertificateEntry", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("isCertificateEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#isKeyEntry(java.lang.String)"/>
@@ -671,7 +671,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public bool IsKeyEntry(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("isKeyEntry", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("isKeyEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#size()"/>
@@ -680,7 +680,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificateAlias(java.security.cert.Certificate)"/>
@@ -690,7 +690,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Lang.String GetCertificateAlias(Java.Security.Cert.Certificate arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getCertificateAlias", "(Ljava/security/cert/Certificate;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getCertificateAlias", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificate(java.lang.String)"/>
@@ -700,7 +700,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Security.Cert.Certificate GetCertificate(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Security.Cert.Certificate>("getCertificate", "(Ljava/lang/String;)Ljava/security/cert/Certificate;", arg0);
+            return IExecute<Java.Security.Cert.Certificate>("getCertificate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificateChain(java.lang.String)"/>
@@ -710,7 +710,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Security.Cert.Certificate[] GetCertificateChain(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificateChain", "(Ljava/lang/String;)[Ljava/security/cert/Certificate;", arg0);
+            return IExecuteArray<Java.Security.Cert.Certificate>("getCertificateChain", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getKey(java.lang.String,char[])"/>
@@ -746,7 +746,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Util.Date GetCreationDate(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Date>("getCreationDate", "(Ljava/lang/String;)Ljava/util/Date;", arg0);
+            return IExecute<Java.Util.Date>("getCreationDate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#aliases()"/>
@@ -755,7 +755,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Util.Enumeration<Java.Lang.String> Aliases()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("aliases", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration<Java.Lang.String>>("aliases");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#deleteEntry(java.lang.String)"/>
@@ -764,7 +764,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void DeleteEntry(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("deleteEntry", "(Ljava/lang/String;)V", arg0);
+            IExecute("deleteEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#load(java.io.InputStream,char[])"/>
@@ -787,7 +787,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void Load(Java.Security.KeyStore.LoadStoreParameter arg0)
         {
-            IExecuteWithSignature("load", "(Ljava/security/KeyStore$LoadStoreParameter;)V", arg0);
+            IExecute("load", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setCertificateEntry(java.lang.String,java.security.cert.Certificate)"/>
@@ -856,7 +856,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void Store(Java.Security.KeyStore.LoadStoreParameter arg0)
         {
-            IExecuteWithSignature("store", "(Ljava/security/KeyStore$LoadStoreParameter;)V", arg0);
+            IExecute("store", arg0);
         }
 
         #endregion
@@ -886,7 +886,7 @@ namespace Java.Security
             /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
             public static Java.Security.KeyStore.Builder NewInstance(Java.Io.File arg0, Java.Security.KeyStore.ProtectionParameter arg1)
             {
-                return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1);
+                return SExecuteWithSignature<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", "(Ljava/io/File;Ljava/security/KeyStore$ProtectionParameter;)Ljava/security/KeyStore$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#newInstance(java.lang.String,java.security.Provider,java.io.File,java.security.KeyStore.ProtectionParameter)"/>
@@ -898,7 +898,7 @@ namespace Java.Security
             /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
             public static Java.Security.KeyStore.Builder NewInstance(Java.Lang.String arg0, Java.Security.Provider arg1, Java.Io.File arg2, Java.Security.KeyStore.ProtectionParameter arg3)
             {
-                return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2, arg3);
+                return SExecuteWithSignature<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;Ljava/security/Provider;Ljava/io/File;Ljava/security/KeyStore$ProtectionParameter;)Ljava/security/KeyStore$Builder;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#newInstance(java.lang.String,java.security.Provider,java.security.KeyStore.ProtectionParameter)"/>
@@ -909,7 +909,7 @@ namespace Java.Security
             /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
             public static Java.Security.KeyStore.Builder NewInstance(Java.Lang.String arg0, Java.Security.Provider arg1, Java.Security.KeyStore.ProtectionParameter arg2)
             {
-                return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2);
+                return SExecuteWithSignature<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;Ljava/security/Provider;Ljava/security/KeyStore$ProtectionParameter;)Ljava/security/KeyStore$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#newInstance(java.security.KeyStore,java.security.KeyStore.ProtectionParameter)"/>
@@ -919,7 +919,7 @@ namespace Java.Security
             /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
             public static Java.Security.KeyStore.Builder NewInstance(Java.Security.KeyStore arg0, Java.Security.KeyStore.ProtectionParameter arg1)
             {
-                return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1);
+                return SExecuteWithSignature<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", "(Ljava/security/KeyStore;Ljava/security/KeyStore$ProtectionParameter;)Ljava/security/KeyStore$Builder;", arg0, arg1);
             }
 
             #endregion
@@ -986,7 +986,7 @@ namespace Java.Security
             /// </summary>
             public Javax.Security.Auth.Callback.CallbackHandler CallbackHandler
             {
-                get { return IExecuteWithSignature<Javax.Security.Auth.Callback.CallbackHandler>("getCallbackHandler", "()Ljavax/security/auth/callback/CallbackHandler;"); }
+                get { return IExecute<Javax.Security.Auth.Callback.CallbackHandler>("getCallbackHandler"); }
             }
 
             #endregion
@@ -1024,7 +1024,7 @@ namespace Java.Security
             /// </summary>
             public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
             {
-                get { return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;"); }
+                get { return IExecute<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes"); }
             }
 
             #endregion
@@ -1107,7 +1107,7 @@ namespace Java.Security
             /// </summary>
             public Java.Security.KeyStore.ProtectionParameter GetProtectionParameter
             {
-                get { return IExecuteWithSignature<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter", "()Ljava/security/KeyStore$ProtectionParameter;"); }
+                get { return IExecute<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter"); }
             }
 
             #endregion
@@ -1167,21 +1167,21 @@ namespace Java.Security
             /// </summary>
             public char[] Password
             {
-                get { return IExecuteWithSignatureArray<char>("getPassword", "()[C"); }
+                get { return IExecuteArray<char>("getPassword"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#getProtectionAlgorithm()"/> 
             /// </summary>
             public Java.Lang.String ProtectionAlgorithm
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getProtectionAlgorithm", "()Ljava/lang/String;"); }
+                get { return IExecute<Java.Lang.String>("getProtectionAlgorithm"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#getProtectionParameters()"/> 
             /// </summary>
             public Java.Security.Spec.AlgorithmParameterSpec ProtectionParameters
             {
-                get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getProtectionParameters", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+                get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getProtectionParameters"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#isDestroyed()"/>
@@ -1189,7 +1189,7 @@ namespace Java.Security
             /// <returns><see cref="bool"/></returns>
             public bool IsDestroyed()
             {
-                return IExecuteWithSignature<bool>("isDestroyed", "()Z");
+                return IExecute<bool>("isDestroyed");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#destroy()"/>
@@ -1197,7 +1197,7 @@ namespace Java.Security
             /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
             public void Destroy()
             {
-                IExecuteWithSignature("destroy", "()V");
+                IExecute("destroy");
             }
 
             #endregion
@@ -1254,28 +1254,28 @@ namespace Java.Security
             /// </summary>
             public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
             {
-                get { return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;"); }
+                get { return IExecute<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificate()"/> 
             /// </summary>
             public Java.Security.Cert.Certificate Certificate
             {
-                get { return IExecuteWithSignature<Java.Security.Cert.Certificate>("getCertificate", "()Ljava/security/cert/Certificate;"); }
+                get { return IExecute<Java.Security.Cert.Certificate>("getCertificate"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificateChain()"/> 
             /// </summary>
             public Java.Security.Cert.Certificate[] CertificateChain
             {
-                get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificateChain", "()[Ljava/security/cert/Certificate;"); }
+                get { return IExecuteArray<Java.Security.Cert.Certificate>("getCertificateChain"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getPrivateKey()"/> 
             /// </summary>
             public Java.Security.PrivateKey PrivateKey
             {
-                get { return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivateKey", "()Ljava/security/PrivateKey;"); }
+                get { return IExecute<Java.Security.PrivateKey>("getPrivateKey"); }
             }
 
             #endregion
@@ -1361,14 +1361,14 @@ namespace Java.Security
             /// </summary>
             public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
             {
-                get { return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;"); }
+                get { return IExecute<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html#getSecretKey()"/> 
             /// </summary>
             public Javax.Crypto.SecretKey SecretKey
             {
-                get { return IExecuteWithSignature<Javax.Crypto.SecretKey>("getSecretKey", "()Ljavax/crypto/SecretKey;"); }
+                get { return IExecute<Javax.Crypto.SecretKey>("getSecretKey"); }
             }
 
             #endregion
@@ -1423,14 +1423,14 @@ namespace Java.Security
             /// </summary>
             public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
             {
-                get { return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;"); }
+                get { return IExecute<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#getTrustedCertificate()"/> 
             /// </summary>
             public Java.Security.Cert.Certificate TrustedCertificate
             {
-                get { return IExecuteWithSignature<Java.Security.Cert.Certificate>("getTrustedCertificate", "()Ljava/security/cert/Certificate;"); }
+                get { return IExecute<Java.Security.Cert.Certificate>("getTrustedCertificate"); }
             }
 
             #endregion

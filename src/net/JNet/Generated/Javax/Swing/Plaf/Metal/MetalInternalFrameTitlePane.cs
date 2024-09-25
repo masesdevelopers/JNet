@@ -104,7 +104,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void PaintPalette(Java.Awt.Graphics arg0)
         {
-            IExecuteWithSignature("paintPalette", "(Ljava/awt/Graphics;)V", arg0);
+            IExecute("paintPalette", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalInternalFrameTitlePane.html#setPalette(boolean)"/>
@@ -112,7 +112,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetPalette(bool arg0)
         {
-            IExecuteWithSignature("setPalette", "(Z)V", arg0);
+            IExecute("setPalette", arg0);
         }
 
         #endregion

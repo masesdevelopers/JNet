@@ -95,14 +95,14 @@ namespace Java.Util.Concurrent
         /// </summary>
         public Java.Util.Concurrent.ForkJoinPool Pool
         {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool>("getPool", "()Ljava/util/concurrent/ForkJoinPool;"); }
+            get { return IExecute<Java.Util.Concurrent.ForkJoinPool>("getPool"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#getPoolIndex()"/> 
         /// </summary>
         public int PoolIndex
         {
-            get { return IExecuteWithSignature<int>("getPoolIndex", "()I"); }
+            get { return IExecute<int>("getPoolIndex"); }
         }
 
         #endregion

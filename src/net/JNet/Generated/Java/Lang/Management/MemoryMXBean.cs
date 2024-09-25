@@ -141,21 +141,21 @@ namespace Java.Lang.Management
         /// </summary>
         public Java.Lang.Management.MemoryUsage HeapMemoryUsage
         {
-            get { return IExecuteWithSignature<Java.Lang.Management.MemoryUsage>("getHeapMemoryUsage", "()Ljava/lang/management/MemoryUsage;"); }
+            get { return IExecute<Java.Lang.Management.MemoryUsage>("getHeapMemoryUsage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#getNonHeapMemoryUsage()"/> 
         /// </summary>
         public Java.Lang.Management.MemoryUsage NonHeapMemoryUsage
         {
-            get { return IExecuteWithSignature<Java.Lang.Management.MemoryUsage>("getNonHeapMemoryUsage", "()Ljava/lang/management/MemoryUsage;"); }
+            get { return IExecute<Java.Lang.Management.MemoryUsage>("getNonHeapMemoryUsage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#getObjectPendingFinalizationCount()"/> 
         /// </summary>
         public int ObjectPendingFinalizationCount
         {
-            get { return IExecuteWithSignature<int>("getObjectPendingFinalizationCount", "()I"); }
+            get { return IExecute<int>("getObjectPendingFinalizationCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#isVerbose()"/>
@@ -163,14 +163,14 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsVerbose()
         {
-            return IExecuteWithSignature<bool>("isVerbose", "()Z");
+            return IExecute<bool>("isVerbose");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#gc()"/>
         /// </summary>
         public void Gc()
         {
-            IExecuteWithSignature("gc", "()V");
+            IExecute("gc");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#setVerbose(boolean)"/>
@@ -178,7 +178,7 @@ namespace Java.Lang.Management
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetVerbose(bool arg0)
         {
-            IExecuteWithSignature("setVerbose", "(Z)V", arg0);
+            IExecute("setVerbose", arg0);
         }
 
         #endregion

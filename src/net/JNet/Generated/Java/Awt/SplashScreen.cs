@@ -91,7 +91,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.SplashScreen GetSplashScreen
         {
-            get { return SExecuteWithSignature<Java.Awt.SplashScreen>(LocalBridgeClazz, "getSplashScreen", "()Ljava/awt/SplashScreen;"); }
+            get { return SExecute<Java.Awt.SplashScreen>(LocalBridgeClazz, "getSplashScreen"); }
         }
 
         #endregion
@@ -102,21 +102,21 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
-            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "()Ljava/awt/Rectangle;"); }
+            get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#getImageURL()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#setImageURL(java.net.URL)"/>
         /// </summary>
         public Java.Net.URL ImageURL
         {
-            get { return IExecuteWithSignature<Java.Net.URL>("getImageURL", "()Ljava/net/URL;"); } set { IExecuteWithSignature("setImageURL", "(Ljava/net/URL;)V", value); }
+            get { return IExecute<Java.Net.URL>("getImageURL"); } set { IExecute("setImageURL", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#getSize()"/> 
         /// </summary>
         public Java.Awt.Dimension Size
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getSize", "()Ljava/awt/Dimension;"); }
+            get { return IExecute<Java.Awt.Dimension>("getSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#isVisible()"/>
@@ -124,7 +124,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsVisible()
         {
-            return IExecuteWithSignature<bool>("isVisible", "()Z");
+            return IExecute<bool>("isVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#createGraphics()"/>
@@ -133,7 +133,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public Java.Awt.Graphics2D CreateGraphics()
         {
-            return IExecuteWithSignature<Java.Awt.Graphics2D>("createGraphics", "()Ljava/awt/Graphics2D;");
+            return IExecute<Java.Awt.Graphics2D>("createGraphics");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#close()"/>
@@ -141,7 +141,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#update()"/>
@@ -149,7 +149,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Update()
         {
-            IExecuteWithSignature("update", "()V");
+            IExecute("update");
         }
 
         #endregion

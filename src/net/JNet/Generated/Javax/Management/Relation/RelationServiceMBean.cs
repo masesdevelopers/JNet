@@ -392,21 +392,21 @@ namespace Javax.Management.Relation
         /// </summary>
         public Java.Util.List<Java.Lang.String> AllRelationIds
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAllRelationIds", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Java.Lang.String>>("getAllRelationIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#getAllRelationTypeNames()"/> 
         /// </summary>
         public Java.Util.List<Java.Lang.String> AllRelationTypeNames
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAllRelationTypeNames", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Java.Lang.String>>("getAllRelationTypeNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#getPurgeFlag()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#setPurgeFlag(boolean)"/>
         /// </summary>
         public bool PurgeFlag
         {
-            get { return IExecuteWithSignature<bool>("getPurgeFlag", "()Z"); } set { IExecuteWithSignature("setPurgeFlag", "(Z)V", value); }
+            get { return IExecute<bool>("getPurgeFlag"); } set { IExecute("setPurgeFlag", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#hasRelation(java.lang.String)"/>
@@ -416,7 +416,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public Java.Lang.Boolean HasRelation(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Boolean>("hasRelation", "(Ljava/lang/String;)Ljava/lang/Boolean;", arg0);
+            return IExecute<Java.Lang.Boolean>("hasRelation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#checkRoleReading(java.lang.String,java.lang.String)"/>
@@ -465,7 +465,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         public Java.Lang.String GetRelationTypeName(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getRelationTypeName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getRelationTypeName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#isRelation(javax.management.ObjectName)"/>
@@ -475,7 +475,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public Java.Lang.String IsRelation(Javax.Management.ObjectName arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("isRelation", "(Ljavax/management/ObjectName;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("isRelation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#findRelationsOfType(java.lang.String)"/>
@@ -486,7 +486,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
         public Java.Util.List<Java.Lang.String> FindRelationsOfType(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("findRelationsOfType", "(Ljava/lang/String;)Ljava/util/List;", arg0);
+            return IExecute<Java.Util.List<Java.Lang.String>>("findRelationsOfType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#getRole(java.lang.String,java.lang.String)"/>
@@ -511,7 +511,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
         public Java.Util.List<Javax.Management.Relation.RoleInfo> GetRoleInfos(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Javax.Management.Relation.RoleInfo>>("getRoleInfos", "(Ljava/lang/String;)Ljava/util/List;", arg0);
+            return IExecute<Java.Util.List<Javax.Management.Relation.RoleInfo>>("getRoleInfos", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#findReferencingRelations(javax.management.ObjectName,java.lang.String,java.lang.String)"/>
@@ -546,7 +546,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         public Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<Java.Lang.String>> GetReferencedMBeans(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<Java.Lang.String>>>("getReferencedMBeans", "(Ljava/lang/String;)Ljava/util/Map;", arg0);
+            return IExecute<Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<Java.Lang.String>>>("getReferencedMBeans", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#isRelationMBean(java.lang.String)"/>
@@ -557,7 +557,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         public Javax.Management.ObjectName IsRelationMBean(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Management.ObjectName>("isRelationMBean", "(Ljava/lang/String;)Ljavax/management/ObjectName;", arg0);
+            return IExecute<Javax.Management.ObjectName>("isRelationMBean", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#getRoleInfo(java.lang.String,java.lang.String)"/>
@@ -582,7 +582,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         public Javax.Management.Relation.RoleResult GetAllRoles(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Management.Relation.RoleResult>("getAllRoles", "(Ljava/lang/String;)Ljavax/management/relation/RoleResult;", arg0);
+            return IExecute<Javax.Management.Relation.RoleResult>("getAllRoles", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#getRoles(java.lang.String,java.lang.String[])"/>
@@ -625,7 +625,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.InvalidRoleValueException"/>
         public void AddRelation(Javax.Management.ObjectName arg0)
         {
-            IExecuteWithSignature("addRelation", "(Ljavax/management/ObjectName;)V", arg0);
+            IExecute("addRelation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#addRelationType(javax.management.relation.RelationType)"/>
@@ -635,7 +635,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.InvalidRelationTypeException"/>
         public void AddRelationType(Javax.Management.Relation.RelationType arg0)
         {
-            IExecuteWithSignature("addRelationType", "(Ljavax/management/relation/RelationType;)V", arg0);
+            IExecute("addRelationType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#createRelation(java.lang.String,java.lang.String,javax.management.relation.RoleList)"/>
@@ -670,7 +670,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         public void IsActive()
         {
-            IExecuteWithSignature("isActive", "()V");
+            IExecute("isActive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#purgeRelations()"/>
@@ -678,7 +678,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         public void PurgeRelations()
         {
-            IExecuteWithSignature("purgeRelations", "()V");
+            IExecute("purgeRelations");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#removeRelation(java.lang.String)"/>
@@ -689,7 +689,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         public void RemoveRelation(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("removeRelation", "(Ljava/lang/String;)V", arg0);
+            IExecute("removeRelation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#removeRelationType(java.lang.String)"/>
@@ -700,7 +700,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
         public void RemoveRelationType(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("removeRelationType", "(Ljava/lang/String;)V", arg0);
+            IExecute("removeRelationType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#sendRelationCreationNotification(java.lang.String)"/>
@@ -710,7 +710,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         public void SendRelationCreationNotification(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("sendRelationCreationNotification", "(Ljava/lang/String;)V", arg0);
+            IExecute("sendRelationCreationNotification", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#sendRelationRemovalNotification(java.lang.String,java.util.List)"/>

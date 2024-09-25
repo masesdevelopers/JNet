@@ -105,7 +105,7 @@ namespace Java.Security.Cert
         /// </summary>
         public Java.Util.Set<Java.Lang.String> SupportedExtensions
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSupportedExtensions", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set<Java.Lang.String>>("getSupportedExtensions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#isForwardCheckingSupported()"/>
@@ -113,7 +113,7 @@ namespace Java.Security.Cert
         /// <returns><see cref="bool"/></returns>
         public bool IsForwardCheckingSupported()
         {
-            return IExecuteWithSignature<bool>("isForwardCheckingSupported", "()Z");
+            return IExecute<bool>("isForwardCheckingSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate,java.util.Collection)"/>
@@ -132,7 +132,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
         public void Init(bool arg0)
         {
-            IExecuteWithSignature("init", "(Z)V", arg0);
+            IExecute("init", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate)"/>
@@ -141,7 +141,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
         public void Check(Java.Security.Cert.Certificate arg0)
         {
-            IExecuteWithSignature("check", "(Ljava/security/cert/Certificate;)V", arg0);
+            IExecute("check", arg0);
         }
 
         #endregion

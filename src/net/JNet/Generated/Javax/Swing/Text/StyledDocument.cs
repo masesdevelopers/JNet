@@ -193,7 +193,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetBackground(Javax.Swing.Text.AttributeSet arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Color>("getBackground", "(Ljavax/swing/text/AttributeSet;)Ljava/awt/Color;", arg0);
+            return IExecute<Java.Awt.Color>("getBackground", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledDocument.html#getForeground(javax.swing.text.AttributeSet)"/>
@@ -202,7 +202,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetForeground(Javax.Swing.Text.AttributeSet arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Color>("getForeground", "(Ljavax/swing/text/AttributeSet;)Ljava/awt/Color;", arg0);
+            return IExecute<Java.Awt.Color>("getForeground", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledDocument.html#getFont(javax.swing.text.AttributeSet)"/>
@@ -211,7 +211,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font GetFont(Javax.Swing.Text.AttributeSet arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Font>("getFont", "(Ljavax/swing/text/AttributeSet;)Ljava/awt/Font;", arg0);
+            return IExecute<Java.Awt.Font>("getFont", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledDocument.html#getCharacterElement(int)"/>
@@ -220,7 +220,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetCharacterElement(int arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Element>("getCharacterElement", "(I)Ljavax/swing/text/Element;", arg0);
+            return IExecute<Javax.Swing.Text.Element>("getCharacterElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledDocument.html#getParagraphElement(int)"/>
@@ -229,7 +229,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetParagraphElement(int arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Element>("getParagraphElement", "(I)Ljavax/swing/text/Element;", arg0);
+            return IExecute<Javax.Swing.Text.Element>("getParagraphElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledDocument.html#addStyle(java.lang.String,javax.swing.text.Style)"/>
@@ -248,7 +248,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetLogicalStyle(int arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Style>("getLogicalStyle", "(I)Ljavax/swing/text/Style;", arg0);
+            return IExecute<Javax.Swing.Text.Style>("getLogicalStyle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledDocument.html#getStyle(java.lang.String)"/>
@@ -257,7 +257,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetStyle(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Style>("getStyle", "(Ljava/lang/String;)Ljavax/swing/text/Style;", arg0);
+            return IExecute<Javax.Swing.Text.Style>("getStyle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledDocument.html#removeStyle(java.lang.String)"/>
@@ -265,7 +265,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void RemoveStyle(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("removeStyle", "(Ljava/lang/String;)V", arg0);
+            IExecute("removeStyle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledDocument.html#setCharacterAttributes(int,int,javax.swing.text.AttributeSet,boolean)"/>

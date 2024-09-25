@@ -221,7 +221,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Consumer AndThenDefault(Java.Util.Function.Consumer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.Consumer>("andThenDefault", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
+            return IExecute<Java.Util.Function.Consumer>("andThenDefault", arg0);
         }
 
         /// <summary>
@@ -286,7 +286,7 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="object"/></param>
         public override void Accept(object arg0)
         {
-            IExecuteWithSignature("accept", "(Ljava/lang/Object;)V", arg0);
+            IExecute("accept", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
@@ -295,7 +295,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
         public override Java.Util.Function.Consumer AndThen(Java.Util.Function.Consumer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.ConsumerDirect, Java.Util.Function.Consumer>("andThen", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
+            return IExecute<Java.Util.Function.ConsumerDirect, Java.Util.Function.Consumer>("andThen", arg0);
         }
 
         #endregion
@@ -400,7 +400,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>Default(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.Consumer<T>>("andThenDefault", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
+            return IExecute<Java.Util.Function.Consumer<T>>("andThenDefault", arg0);
         }
 
         /// <summary>
@@ -466,7 +466,7 @@ namespace Java.Util.Function
         /// <param name="arg0"><typeparamref name="T"/></param>
         public override void Accept(T arg0)
         {
-            IExecuteWithSignature("accept", "(Ljava/lang/Object;)V", arg0);
+            IExecute("accept", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
@@ -476,7 +476,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
         public override Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.ConsumerDirect<T>, Java.Util.Function.Consumer<T>>("andThen", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
+            return IExecute<Java.Util.Function.ConsumerDirect<T>, Java.Util.Function.Consumer<T>>("andThen", arg0);
         }
 
         #endregion

@@ -117,7 +117,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Crypto.Mac GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Crypto.Mac>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/crypto/Mac;", arg0);
+            return SExecute<Javax.Crypto.Mac>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -128,21 +128,21 @@ namespace Javax.Crypto
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#getMacLength()"/> 
         /// </summary>
         public int MacLength
         {
-            get { return IExecuteWithSignature<int>("getMacLength", "()I"); }
+            get { return IExecute<int>("getMacLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#doFinal()"/>
@@ -151,7 +151,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public byte[] DoFinal()
         {
-            return IExecuteWithSignatureArray<byte>("doFinal", "()[B");
+            return IExecuteArray<byte>("doFinal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#doFinal(byte[])"/>
@@ -161,7 +161,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public byte[] DoFinal(byte[] arg0)
         {
-            return IExecuteWithSignatureArray<byte>("doFinal", "([B)[B", new object[] { arg0 });
+            return IExecuteArray<byte>("doFinal", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#doFinal(byte[],int)"/>
@@ -192,14 +192,14 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public void Init(Java.Security.Key arg0)
         {
-            IExecuteWithSignature("init", "(Ljava/security/Key;)V", arg0);
+            IExecute("init", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#update(byte)"/>
@@ -208,7 +208,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Update(byte arg0)
         {
-            IExecuteWithSignature("update", "(B)V", arg0);
+            IExecute("update", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#update(byte[],int,int)"/>
@@ -228,7 +228,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Update(byte[] arg0)
         {
-            IExecuteWithSignature("update", "([B)V", new object[] { arg0 });
+            IExecute("update", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#update(java.nio.ByteBuffer)"/>
@@ -236,7 +236,7 @@ namespace Javax.Crypto
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void Update(Java.Nio.ByteBuffer arg0)
         {
-            IExecuteWithSignature("update", "(Ljava/nio/ByteBuffer;)V", arg0);
+            IExecute("update", arg0);
         }
 
         #endregion

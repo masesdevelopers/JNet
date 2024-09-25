@@ -97,126 +97,126 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Lang.String ApplicationProtocol
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getApplicationProtocol", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getApplicationProtocol"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getDelegatedTask()"/> 
         /// </summary>
         public Java.Lang.Runnable DelegatedTask
         {
-            get { return IExecuteWithSignature<Java.Lang.Runnable>("getDelegatedTask", "()Ljava/lang/Runnable;"); }
+            get { return IExecute<Java.Lang.Runnable>("getDelegatedTask"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getEnabledCipherSuites()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setEnabledCipherSuites(java.lang.String[])"/>
         /// </summary>
         public Java.Lang.String[] EnabledCipherSuites
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getEnabledCipherSuites", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setEnabledCipherSuites", "([Ljava/lang/String;)V", value); }
+            get { return IExecuteArray<Java.Lang.String>("getEnabledCipherSuites"); } set { IExecute("setEnabledCipherSuites", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getEnabledProtocols()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setEnabledProtocols(java.lang.String[])"/>
         /// </summary>
         public Java.Lang.String[] EnabledProtocols
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getEnabledProtocols", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setEnabledProtocols", "([Ljava/lang/String;)V", value); }
+            get { return IExecuteArray<Java.Lang.String>("getEnabledProtocols"); } set { IExecute("setEnabledProtocols", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getEnableSessionCreation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setEnableSessionCreation(boolean)"/>
         /// </summary>
         public bool EnableSessionCreation
         {
-            get { return IExecuteWithSignature<bool>("getEnableSessionCreation", "()Z"); } set { IExecuteWithSignature("setEnableSessionCreation", "(Z)V", value); }
+            get { return IExecute<bool>("getEnableSessionCreation"); } set { IExecute("setEnableSessionCreation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeApplicationProtocol()"/> 
         /// </summary>
         public Java.Lang.String HandshakeApplicationProtocol
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHandshakeApplicationProtocol", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getHandshakeApplicationProtocol"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeApplicationProtocolSelector()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)"/>
         /// </summary>
         public Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLEngine, Java.Util.List<Java.Lang.String>, Java.Lang.String> HandshakeApplicationProtocolSelector
         {
-            get { return IExecuteWithSignature<Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLEngine, Java.Util.List<Java.Lang.String>, Java.Lang.String>>("getHandshakeApplicationProtocolSelector", "()Ljava/util/function/BiFunction;"); } set { IExecuteWithSignature("setHandshakeApplicationProtocolSelector", "(Ljava/util/function/BiFunction;)V", value); }
+            get { return IExecute<Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLEngine, Java.Util.List<Java.Lang.String>, Java.Lang.String>>("getHandshakeApplicationProtocolSelector"); } set { IExecute("setHandshakeApplicationProtocolSelector", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeSession()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSession HandshakeSession
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getHandshakeSession", "()Ljavax/net/ssl/SSLSession;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLSession>("getHandshakeSession"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeStatus()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLEngineResult.HandshakeStatus HandshakeStatus
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("getHandshakeStatus", "()Ljavax/net/ssl/SSLEngineResult$HandshakeStatus;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("getHandshakeStatus"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getNeedClientAuth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setNeedClientAuth(boolean)"/>
         /// </summary>
         public bool NeedClientAuth
         {
-            get { return IExecuteWithSignature<bool>("getNeedClientAuth", "()Z"); } set { IExecuteWithSignature("setNeedClientAuth", "(Z)V", value); }
+            get { return IExecute<bool>("getNeedClientAuth"); } set { IExecute("setNeedClientAuth", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getPeerHost()"/> 
         /// </summary>
         public Java.Lang.String PeerHost
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPeerHost", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPeerHost"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getPeerPort()"/> 
         /// </summary>
         public int PeerPort
         {
-            get { return IExecuteWithSignature<int>("getPeerPort", "()I"); }
+            get { return IExecute<int>("getPeerPort"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getSession()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSession Session
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getSession", "()Ljavax/net/ssl/SSLSession;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLSession>("getSession"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getSSLParameters()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setSSLParameters(javax.net.ssl.SSLParameters)"/>
         /// </summary>
         public Javax.Net.Ssl.SSLParameters SSLParameters
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLParameters>("getSSLParameters", "()Ljavax/net/ssl/SSLParameters;"); } set { IExecuteWithSignature("setSSLParameters", "(Ljavax/net/ssl/SSLParameters;)V", value); }
+            get { return IExecute<Javax.Net.Ssl.SSLParameters>("getSSLParameters"); } set { IExecute("setSSLParameters", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getSupportedCipherSuites()"/> 
         /// </summary>
         public Java.Lang.String[] SupportedCipherSuites
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedCipherSuites", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getSupportedCipherSuites"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getSupportedProtocols()"/> 
         /// </summary>
         public Java.Lang.String[] SupportedProtocols
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedProtocols", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getSupportedProtocols"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getUseClientMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setUseClientMode(boolean)"/>
         /// </summary>
         public bool UseClientMode
         {
-            get { return IExecuteWithSignature<bool>("getUseClientMode", "()Z"); } set { IExecuteWithSignature("setUseClientMode", "(Z)V", value); }
+            get { return IExecute<bool>("getUseClientMode"); } set { IExecute("setUseClientMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getWantClientAuth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setWantClientAuth(boolean)"/>
         /// </summary>
         public bool WantClientAuth
         {
-            get { return IExecuteWithSignature<bool>("getWantClientAuth", "()Z"); } set { IExecuteWithSignature("setWantClientAuth", "(Z)V", value); }
+            get { return IExecute<bool>("getWantClientAuth"); } set { IExecute("setWantClientAuth", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#isInboundDone()"/>
@@ -224,7 +224,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="bool"/></returns>
         public bool IsInboundDone()
         {
-            return IExecuteWithSignature<bool>("isInboundDone", "()Z");
+            return IExecute<bool>("isInboundDone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#isOutboundDone()"/>
@@ -232,7 +232,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="bool"/></returns>
         public bool IsOutboundDone()
         {
-            return IExecuteWithSignature<bool>("isOutboundDone", "()Z");
+            return IExecute<bool>("isOutboundDone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer[],int,int)"/>
@@ -266,7 +266,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public void BeginHandshake()
         {
-            IExecuteWithSignature("beginHandshake", "()V");
+            IExecute("beginHandshake");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#closeInbound()"/>
@@ -274,14 +274,14 @@ namespace Javax.Net.Ssl
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
         public void CloseInbound()
         {
-            IExecuteWithSignature("closeInbound", "()V");
+            IExecute("closeInbound");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#closeOutbound()"/>
         /// </summary>
         public void CloseOutbound()
         {
-            IExecuteWithSignature("closeOutbound", "()V");
+            IExecute("closeOutbound");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer)"/>

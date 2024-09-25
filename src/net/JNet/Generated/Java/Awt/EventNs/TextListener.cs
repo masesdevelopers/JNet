@@ -204,7 +204,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.TextEvent"/></param>
         public override void TextValueChanged(Java.Awt.EventNs.TextEvent arg0)
         {
-            IExecuteWithSignature("textValueChanged", "(Ljava/awt/event/TextEvent;)V", arg0);
+            IExecute("textValueChanged", arg0);
         }
 
         #endregion

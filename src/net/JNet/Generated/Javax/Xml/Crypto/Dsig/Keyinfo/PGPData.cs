@@ -133,21 +133,21 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// </summary>
         public Java.Util.List<Javax.Xml.Crypto.XMLStructure> ExternalElements
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.XMLStructure>>("getExternalElements", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.XMLStructure>>("getExternalElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html#getKeyId()"/> 
         /// </summary>
         public byte[] KeyId
         {
-            get { return IExecuteWithSignatureArray<byte>("getKeyId", "()[B"); }
+            get { return IExecuteArray<byte>("getKeyId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html#getKeyPacket()"/> 
         /// </summary>
         public byte[] KeyPacket
         {
-            get { return IExecuteWithSignatureArray<byte>("getKeyPacket", "()[B"); }
+            get { return IExecuteArray<byte>("getKeyPacket"); }
         }
 
         #endregion

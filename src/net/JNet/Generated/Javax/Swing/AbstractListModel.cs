@@ -153,7 +153,7 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Event.ListDataListener[] ListDataListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.ListDataListener>("getListDataListeners", "()[Ljavax/swing/event/ListDataListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.ListDataListener>("getListDataListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListeners(java.lang.Class)"/>
@@ -170,7 +170,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
         public void AddListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
-            IExecuteWithSignature("addListDataListener", "(Ljavax/swing/event/ListDataListener;)V", arg0);
+            IExecute("addListDataListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#removeListDataListener(javax.swing.event.ListDataListener)"/>
@@ -178,7 +178,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
         public void RemoveListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
-            IExecuteWithSignature("removeListDataListener", "(Ljavax/swing/event/ListDataListener;)V", arg0);
+            IExecute("removeListDataListener", arg0);
         }
 
         #endregion
@@ -228,7 +228,7 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Event.ListDataListener[] ListDataListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.ListDataListener>("getListDataListeners", "()[Ljavax/swing/event/ListDataListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.ListDataListener>("getListDataListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListeners(java.lang.Class)"/>
@@ -246,7 +246,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
         public void AddListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
-            IExecuteWithSignature("addListDataListener", "(Ljavax/swing/event/ListDataListener;)V", arg0);
+            IExecute("addListDataListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#removeListDataListener(javax.swing.event.ListDataListener)"/>
@@ -254,7 +254,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
         public void RemoveListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
-            IExecuteWithSignature("removeListDataListener", "(Ljavax/swing/event/ListDataListener;)V", arg0);
+            IExecute("removeListDataListener", arg0);
         }
 
         #endregion

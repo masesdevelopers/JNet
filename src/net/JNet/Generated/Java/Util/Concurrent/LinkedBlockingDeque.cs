@@ -165,14 +165,14 @@ namespace Java.Util.Concurrent
         /// </summary>
         public object First
         {
-            get { return IExecuteWithSignature("getFirst", "()Ljava/lang/Object;"); }
+            get { return IExecute("getFirst"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#getLast()"/> 
         /// </summary>
         public object Last
         {
-            get { return IExecuteWithSignature("getLast", "()Ljava/lang/Object;"); }
+            get { return IExecute("getLast"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -205,7 +205,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool OfferFirst(object arg0)
         {
-            return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("offerFirst", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#offerLast(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -226,7 +226,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool OfferLast(object arg0)
         {
-            return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("offerLast", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeFirstOccurrence(java.lang.Object)"/>
@@ -235,7 +235,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool RemoveFirstOccurrence(object arg0)
         {
-            return IExecuteWithSignature<bool>("removeFirstOccurrence", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("removeFirstOccurrence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeLastOccurrence(java.lang.Object)"/>
@@ -244,7 +244,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool RemoveLastOccurrence(object arg0)
         {
-            return IExecuteWithSignature<bool>("removeLastOccurrence", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("removeLastOccurrence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#peekFirst()"/>
@@ -252,7 +252,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object PeekFirst()
         {
-            return IExecuteWithSignature("peekFirst", "()Ljava/lang/Object;");
+            return IExecute("peekFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#peekLast()"/>
@@ -260,7 +260,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object PeekLast()
         {
-            return IExecuteWithSignature("peekLast", "()Ljava/lang/Object;");
+            return IExecute("peekLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#poll(long,java.util.concurrent.TimeUnit)"/>
@@ -279,7 +279,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object PollFirst()
         {
-            return IExecuteWithSignature("pollFirst", "()Ljava/lang/Object;");
+            return IExecute("pollFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#pollFirst(long,java.util.concurrent.TimeUnit)"/>
@@ -298,7 +298,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object PollLast()
         {
-            return IExecuteWithSignature("pollLast", "()Ljava/lang/Object;");
+            return IExecute("pollLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#pollLast(long,java.util.concurrent.TimeUnit)"/>
@@ -317,7 +317,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object Pop()
         {
-            return IExecuteWithSignature("pop", "()Ljava/lang/Object;");
+            return IExecute("pop");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeFirst()"/>
@@ -325,7 +325,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object RemoveFirst()
         {
-            return IExecuteWithSignature("removeFirst", "()Ljava/lang/Object;");
+            return IExecute("removeFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeLast()"/>
@@ -333,7 +333,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object RemoveLast()
         {
-            return IExecuteWithSignature("removeLast", "()Ljava/lang/Object;");
+            return IExecute("removeLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#take()"/>
@@ -342,7 +342,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object Take()
         {
-            return IExecuteWithSignature("take", "()Ljava/lang/Object;");
+            return IExecute("take");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#takeFirst()"/>
@@ -351,7 +351,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object TakeFirst()
         {
-            return IExecuteWithSignature("takeFirst", "()Ljava/lang/Object;");
+            return IExecute("takeFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#takeLast()"/>
@@ -360,7 +360,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object TakeLast()
         {
-            return IExecuteWithSignature("takeLast", "()Ljava/lang/Object;");
+            return IExecute("takeLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#drainTo(java.util.Collection,int)"/>
@@ -379,7 +379,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainTo(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
+            return IExecute<int>("drainTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#remainingCapacity()"/>
@@ -387,7 +387,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int RemainingCapacity()
         {
-            return IExecuteWithSignature<int>("remainingCapacity", "()I");
+            return IExecute<int>("remainingCapacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#descendingIterator()"/>
@@ -395,7 +395,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("descendingIterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator>("descendingIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#addFirst(java.lang.Object)"/>
@@ -403,7 +403,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="object"/></param>
         public void AddFirst(object arg0)
         {
-            IExecuteWithSignature("addFirst", "(Ljava/lang/Object;)V", arg0);
+            IExecute("addFirst", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#addLast(java.lang.Object)"/>
@@ -411,7 +411,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="object"/></param>
         public void AddLast(object arg0)
         {
-            IExecuteWithSignature("addLast", "(Ljava/lang/Object;)V", arg0);
+            IExecute("addLast", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#push(java.lang.Object)"/>
@@ -419,7 +419,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="object"/></param>
         public void Push(object arg0)
         {
-            IExecuteWithSignature("push", "(Ljava/lang/Object;)V", arg0);
+            IExecute("push", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#put(java.lang.Object)"/>
@@ -428,7 +428,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Put(object arg0)
         {
-            IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
+            IExecute("put", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#putFirst(java.lang.Object)"/>
@@ -437,7 +437,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void PutFirst(object arg0)
         {
-            IExecuteWithSignature("putFirst", "(Ljava/lang/Object;)V", arg0);
+            IExecute("putFirst", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#putLast(java.lang.Object)"/>
@@ -446,7 +446,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void PutLast(object arg0)
         {
-            IExecuteWithSignature("putLast", "(Ljava/lang/Object;)V", arg0);
+            IExecute("putLast", arg0);
         }
 
         #endregion
@@ -512,14 +512,14 @@ namespace Java.Util.Concurrent
         /// </summary>
         public E First
         {
-            get { return IExecuteWithSignature<E>("getFirst", "()Ljava/lang/Object;"); }
+            get { return IExecute<E>("getFirst"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#getLast()"/> 
         /// </summary>
         public E Last
         {
-            get { return IExecuteWithSignature<E>("getLast", "()Ljava/lang/Object;"); }
+            get { return IExecute<E>("getLast"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -552,7 +552,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool OfferFirst(E arg0)
         {
-            return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("offerFirst", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#offerLast(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -573,7 +573,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool OfferLast(E arg0)
         {
-            return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("offerLast", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeFirstOccurrence(java.lang.Object)"/>
@@ -582,7 +582,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool RemoveFirstOccurrence(object arg0)
         {
-            return IExecuteWithSignature<bool>("removeFirstOccurrence", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("removeFirstOccurrence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeLastOccurrence(java.lang.Object)"/>
@@ -591,7 +591,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool RemoveLastOccurrence(object arg0)
         {
-            return IExecuteWithSignature<bool>("removeLastOccurrence", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("removeLastOccurrence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#peekFirst()"/>
@@ -599,7 +599,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E PeekFirst()
         {
-            return IExecuteWithSignature<E>("peekFirst", "()Ljava/lang/Object;");
+            return IExecute<E>("peekFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#peekLast()"/>
@@ -607,7 +607,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E PeekLast()
         {
-            return IExecuteWithSignature<E>("peekLast", "()Ljava/lang/Object;");
+            return IExecute<E>("peekLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#poll(long,java.util.concurrent.TimeUnit)"/>
@@ -626,7 +626,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E PollFirst()
         {
-            return IExecuteWithSignature<E>("pollFirst", "()Ljava/lang/Object;");
+            return IExecute<E>("pollFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#pollFirst(long,java.util.concurrent.TimeUnit)"/>
@@ -645,7 +645,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E PollLast()
         {
-            return IExecuteWithSignature<E>("pollLast", "()Ljava/lang/Object;");
+            return IExecute<E>("pollLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#pollLast(long,java.util.concurrent.TimeUnit)"/>
@@ -664,7 +664,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E Pop()
         {
-            return IExecuteWithSignature<E>("pop", "()Ljava/lang/Object;");
+            return IExecute<E>("pop");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeFirst()"/>
@@ -672,7 +672,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveFirst()
         {
-            return IExecuteWithSignature<E>("removeFirst", "()Ljava/lang/Object;");
+            return IExecute<E>("removeFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#removeLast()"/>
@@ -680,7 +680,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveLast()
         {
-            return IExecuteWithSignature<E>("removeLast", "()Ljava/lang/Object;");
+            return IExecute<E>("removeLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#take()"/>
@@ -689,7 +689,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public E Take()
         {
-            return IExecuteWithSignature<E>("take", "()Ljava/lang/Object;");
+            return IExecute<E>("take");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#takeFirst()"/>
@@ -698,7 +698,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public E TakeFirst()
         {
-            return IExecuteWithSignature<E>("takeFirst", "()Ljava/lang/Object;");
+            return IExecute<E>("takeFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#takeLast()"/>
@@ -707,7 +707,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public E TakeLast()
         {
-            return IExecuteWithSignature<E>("takeLast", "()Ljava/lang/Object;");
+            return IExecute<E>("takeLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#drainTo(java.util.Collection,int)"/>
@@ -728,7 +728,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
-            return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
+            return IExecute<int>("drainTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#remainingCapacity()"/>
@@ -736,7 +736,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int RemainingCapacity()
         {
-            return IExecuteWithSignature<int>("remainingCapacity", "()I");
+            return IExecute<int>("remainingCapacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#descendingIterator()"/>
@@ -744,7 +744,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("descendingIterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator<E>>("descendingIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#addFirst(java.lang.Object)"/>
@@ -752,7 +752,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddFirst(E arg0)
         {
-            IExecuteWithSignature("addFirst", "(Ljava/lang/Object;)V", arg0);
+            IExecute("addFirst", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#addLast(java.lang.Object)"/>
@@ -760,7 +760,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddLast(E arg0)
         {
-            IExecuteWithSignature("addLast", "(Ljava/lang/Object;)V", arg0);
+            IExecute("addLast", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#push(java.lang.Object)"/>
@@ -768,7 +768,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void Push(E arg0)
         {
-            IExecuteWithSignature("push", "(Ljava/lang/Object;)V", arg0);
+            IExecute("push", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#put(java.lang.Object)"/>
@@ -777,7 +777,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Put(E arg0)
         {
-            IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
+            IExecute("put", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#putFirst(java.lang.Object)"/>
@@ -786,7 +786,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void PutFirst(E arg0)
         {
-            IExecuteWithSignature("putFirst", "(Ljava/lang/Object;)V", arg0);
+            IExecute("putFirst", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingDeque.html#putLast(java.lang.Object)"/>
@@ -795,7 +795,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void PutLast(E arg0)
         {
-            IExecuteWithSignature("putLast", "(Ljava/lang/Object;)V", arg0);
+            IExecute("putLast", arg0);
         }
 
         #endregion

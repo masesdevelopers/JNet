@@ -146,21 +146,21 @@ namespace Javax.Swing
         /// </summary>
         public int MaxSortKeys
         {
-            get { return IExecuteWithSignature<int>("getMaxSortKeys", "()I"); } set { IExecuteWithSignature("setMaxSortKeys", "(I)V", value); }
+            get { return IExecute<int>("getMaxSortKeys"); } set { IExecute("setMaxSortKeys", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#getRowFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setRowFilter(javax.swing.RowFilter)"/>
         /// </summary>
         public Javax.Swing.RowFilter RowFilter
         {
-            get { return IExecuteWithSignature<Javax.Swing.RowFilter>("getRowFilter", "()Ljavax/swing/RowFilter;"); } set { IExecuteWithSignature("setRowFilter", "(Ljavax/swing/RowFilter;)V", value); }
+            get { return IExecute<Javax.Swing.RowFilter>("getRowFilter"); } set { IExecute("setRowFilter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#getSortsOnUpdates()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setSortsOnUpdates(boolean)"/>
         /// </summary>
         public bool SortsOnUpdates
         {
-            get { return IExecuteWithSignature<bool>("getSortsOnUpdates", "()Z"); } set { IExecuteWithSignature("setSortsOnUpdates", "(Z)V", value); }
+            get { return IExecute<bool>("getSortsOnUpdates"); } set { IExecute("setSortsOnUpdates", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#isSortable(int)"/>
@@ -169,7 +169,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSortable(int arg0)
         {
-            return IExecuteWithSignature<bool>("isSortable", "(I)Z", arg0);
+            return IExecute<bool>("isSortable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#getComparator(int)"/>
@@ -178,7 +178,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public Java.Util.Comparator GetComparator(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.Comparator>("getComparator", "(I)Ljava/util/Comparator;", arg0);
+            return IExecute<Java.Util.Comparator>("getComparator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setComparator(int,java.util.Comparator)"/>
@@ -203,7 +203,7 @@ namespace Javax.Swing
         /// </summary>
         public void Sort()
         {
-            IExecuteWithSignature("sort", "()V");
+            IExecute("sort");
         }
 
         #endregion
@@ -245,21 +245,21 @@ namespace Javax.Swing
         /// </summary>
         public int MaxSortKeys
         {
-            get { return IExecuteWithSignature<int>("getMaxSortKeys", "()I"); } set { IExecuteWithSignature("setMaxSortKeys", "(I)V", value); }
+            get { return IExecute<int>("getMaxSortKeys"); } set { IExecute("setMaxSortKeys", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#getRowFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setRowFilter(javax.swing.RowFilter)"/>
         /// </summary>
         public Javax.Swing.RowFilter RowFilter
         {
-            get { return IExecuteWithSignature<Javax.Swing.RowFilter>("getRowFilter", "()Ljavax/swing/RowFilter;"); } set { IExecuteWithSignature("setRowFilter", "(Ljavax/swing/RowFilter;)V", value); }
+            get { return IExecute<Javax.Swing.RowFilter>("getRowFilter"); } set { IExecute("setRowFilter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#getSortsOnUpdates()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setSortsOnUpdates(boolean)"/>
         /// </summary>
         public bool SortsOnUpdates
         {
-            get { return IExecuteWithSignature<bool>("getSortsOnUpdates", "()Z"); } set { IExecuteWithSignature("setSortsOnUpdates", "(Z)V", value); }
+            get { return IExecute<bool>("getSortsOnUpdates"); } set { IExecute("setSortsOnUpdates", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#isSortable(int)"/>
@@ -268,7 +268,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSortable(int arg0)
         {
-            return IExecuteWithSignature<bool>("isSortable", "(I)Z", arg0);
+            return IExecute<bool>("isSortable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#getComparator(int)"/>
@@ -277,7 +277,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public Java.Util.Comparator<object> GetComparator(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.Comparator<object>>("getComparator", "(I)Ljava/util/Comparator;", arg0);
+            return IExecute<Java.Util.Comparator<object>>("getComparator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setComparator(int,java.util.Comparator)"/>
@@ -302,7 +302,7 @@ namespace Javax.Swing
         /// </summary>
         public void Sort()
         {
-            IExecuteWithSignature("sort", "()V");
+            IExecute("sort");
         }
 
         #endregion

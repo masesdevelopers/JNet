@@ -145,21 +145,21 @@ namespace Javax.Tools
         /// </summary>
         public Javax.Lang.Model.Element.Modifier AccessLevel
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Modifier>("getAccessLevel", "()Ljavax/lang/model/element/Modifier;"); }
+            get { return IExecute<Javax.Lang.Model.Element.Modifier>("getAccessLevel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html#getKind()"/> 
         /// </summary>
         public Javax.Tools.JavaFileObject.Kind Kind
         {
-            get { return IExecuteWithSignature<Javax.Tools.JavaFileObject.Kind>("getKind", "()Ljavax/tools/JavaFileObject$Kind;"); }
+            get { return IExecute<Javax.Tools.JavaFileObject.Kind>("getKind"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html#getNestingKind()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.NestingKind NestingKind
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.NestingKind>("getNestingKind", "()Ljavax/lang/model/element/NestingKind;"); }
+            get { return IExecute<Javax.Lang.Model.Element.NestingKind>("getNestingKind"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html#isNameCompatible(java.lang.String,javax.tools.JavaFileObject.Kind)"/>
@@ -215,21 +215,21 @@ namespace Javax.Tools
         /// </summary>
         public Javax.Lang.Model.Element.Modifier AccessLevel
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Modifier>("getAccessLevel", "()Ljavax/lang/model/element/Modifier;"); }
+            get { return IExecute<Javax.Lang.Model.Element.Modifier>("getAccessLevel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html#getKind()"/> 
         /// </summary>
         public Javax.Tools.JavaFileObject.Kind Kind
         {
-            get { return IExecuteWithSignature<Javax.Tools.JavaFileObject.Kind>("getKind", "()Ljavax/tools/JavaFileObject$Kind;"); }
+            get { return IExecute<Javax.Tools.JavaFileObject.Kind>("getKind"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html#getNestingKind()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.NestingKind NestingKind
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.NestingKind>("getNestingKind", "()Ljavax/lang/model/element/NestingKind;"); }
+            get { return IExecute<Javax.Lang.Model.Element.NestingKind>("getNestingKind"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html#isNameCompatible(java.lang.String,javax.tools.JavaFileObject.Kind)"/>

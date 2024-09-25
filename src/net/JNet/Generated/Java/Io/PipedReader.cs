@@ -124,7 +124,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Connect(Java.Io.PipedWriter arg0)
         {
-            IExecuteWithSignature("connect", "(Ljava/io/PipedWriter;)V", arg0);
+            IExecute("connect", arg0);
         }
 
         #endregion

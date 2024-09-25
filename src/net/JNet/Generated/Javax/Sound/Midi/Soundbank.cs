@@ -145,42 +145,42 @@ namespace Javax.Sound.Midi
         /// </summary>
         public Java.Lang.String Description
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDescription"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getInstruments()"/> 
         /// </summary>
         public Javax.Sound.Midi.Instrument[] Instruments
         {
-            get { return IExecuteWithSignatureArray<Javax.Sound.Midi.Instrument>("getInstruments", "()[Ljavax/sound/midi/Instrument;"); }
+            get { return IExecuteArray<Javax.Sound.Midi.Instrument>("getInstruments"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getResources()"/> 
         /// </summary>
         public Javax.Sound.Midi.SoundbankResource[] Resources
         {
-            get { return IExecuteWithSignatureArray<Javax.Sound.Midi.SoundbankResource>("getResources", "()[Ljavax/sound/midi/SoundbankResource;"); }
+            get { return IExecuteArray<Javax.Sound.Midi.SoundbankResource>("getResources"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getVendor()"/> 
         /// </summary>
         public Java.Lang.String Vendor
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVendor", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getVendor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getVersion()"/> 
         /// </summary>
         public Java.Lang.String Version
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getInstrument(javax.sound.midi.Patch)"/>
@@ -189,7 +189,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="Javax.Sound.Midi.Instrument"/></returns>
         public Javax.Sound.Midi.Instrument GetInstrument(Javax.Sound.Midi.Patch arg0)
         {
-            return IExecuteWithSignature<Javax.Sound.Midi.Instrument>("getInstrument", "(Ljavax/sound/midi/Patch;)Ljavax/sound/midi/Instrument;", arg0);
+            return IExecute<Javax.Sound.Midi.Instrument>("getInstrument", arg0);
         }
 
         #endregion

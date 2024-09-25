@@ -104,14 +104,14 @@ namespace Javax.Sound.Midi
         /// </summary>
         public int Bank
         {
-            get { return IExecuteWithSignature<int>("getBank", "()I"); }
+            get { return IExecute<int>("getBank"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Patch.html#getProgram()"/> 
         /// </summary>
         public int Program
         {
-            get { return IExecuteWithSignature<int>("getProgram", "()I"); }
+            get { return IExecute<int>("getProgram"); }
         }
 
         #endregion

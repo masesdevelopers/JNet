@@ -95,21 +95,21 @@ namespace Javax.Swing
         /// </summary>
         public int ButtonCount
         {
-            get { return IExecuteWithSignature<int>("getButtonCount", "()I"); }
+            get { return IExecute<int>("getButtonCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#getElements()"/> 
         /// </summary>
         public Java.Util.Enumeration<Javax.Swing.AbstractButton> Elements
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.AbstractButton>>("getElements", "()Ljava/util/Enumeration;"); }
+            get { return IExecute<Java.Util.Enumeration<Javax.Swing.AbstractButton>>("getElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#getSelection()"/> 
         /// </summary>
         public Javax.Swing.ButtonModel Selection
         {
-            get { return IExecuteWithSignature<Javax.Swing.ButtonModel>("getSelection", "()Ljavax/swing/ButtonModel;"); }
+            get { return IExecute<Javax.Swing.ButtonModel>("getSelection"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#isSelected(javax.swing.ButtonModel)"/>
@@ -118,7 +118,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSelected(Javax.Swing.ButtonModel arg0)
         {
-            return IExecuteWithSignature<bool>("isSelected", "(Ljavax/swing/ButtonModel;)Z", arg0);
+            return IExecute<bool>("isSelected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#add(javax.swing.AbstractButton)"/>
@@ -126,14 +126,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.AbstractButton"/></param>
         public void Add(Javax.Swing.AbstractButton arg0)
         {
-            IExecuteWithSignature("add", "(Ljavax/swing/AbstractButton;)V", arg0);
+            IExecute("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#clearSelection()"/>
         /// </summary>
         public void ClearSelection()
         {
-            IExecuteWithSignature("clearSelection", "()V");
+            IExecute("clearSelection");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#remove(javax.swing.AbstractButton)"/>
@@ -141,7 +141,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.AbstractButton"/></param>
         public void Remove(Javax.Swing.AbstractButton arg0)
         {
-            IExecuteWithSignature("remove", "(Ljavax/swing/AbstractButton;)V", arg0);
+            IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#setSelected(javax.swing.ButtonModel,boolean)"/>

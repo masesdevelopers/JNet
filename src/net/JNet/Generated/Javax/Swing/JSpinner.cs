@@ -287,42 +287,42 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Event.ChangeListener[] ChangeListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.ChangeListener>("getChangeListeners", "()[Ljavax/swing/event/ChangeListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.ChangeListener>("getChangeListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#getEditor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#setEditor(javax.swing.JComponent)"/>
         /// </summary>
         public Javax.Swing.JComponent Editor
         {
-            get { return IExecuteWithSignature<Javax.Swing.JComponent>("getEditor", "()Ljavax/swing/JComponent;"); } set { IExecuteWithSignature("setEditor", "(Ljavax/swing/JComponent;)V", value); }
+            get { return IExecute<Javax.Swing.JComponent>("getEditor"); } set { IExecute("setEditor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#setModel(javax.swing.SpinnerModel)"/>
         /// </summary>
         public Javax.Swing.SpinnerModel Model
         {
-            get { return IExecuteWithSignature<Javax.Swing.SpinnerModel>("getModel", "()Ljavax/swing/SpinnerModel;"); } set { IExecuteWithSignature("setModel", "(Ljavax/swing/SpinnerModel;)V", value); }
+            get { return IExecute<Javax.Swing.SpinnerModel>("getModel"); } set { IExecute("setModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#getNextValue()"/> 
         /// </summary>
         public object NextValue
         {
-            get { return IExecuteWithSignature("getNextValue", "()Ljava/lang/Object;"); }
+            get { return IExecute("getNextValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#getPreviousValue()"/> 
         /// </summary>
         public object PreviousValue
         {
-            get { return IExecuteWithSignature("getPreviousValue", "()Ljava/lang/Object;"); }
+            get { return IExecute("getPreviousValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#setValue(java.lang.Object)"/>
         /// </summary>
         public object Value
         {
-            get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#addChangeListener(javax.swing.event.ChangeListener)"/>
@@ -330,7 +330,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("addChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#commitEdit()"/>
@@ -338,7 +338,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Text.ParseException"/>
         public void CommitEdit()
         {
-            IExecuteWithSignature("commitEdit", "()V");
+            IExecute("commitEdit");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
@@ -346,7 +346,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("removeChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.html#setUI(javax.swing.plaf.SpinnerUI)"/>
@@ -354,7 +354,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.SpinnerUI"/></param>
         public void SetUI(Javax.Swing.Plaf.SpinnerUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/SpinnerUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
 
         #endregion
@@ -467,14 +467,14 @@ namespace Javax.Swing
             /// </summary>
             public Javax.Swing.JSpinner Spinner
             {
-                get { return IExecuteWithSignature<Javax.Swing.JSpinner>("getSpinner", "()Ljavax/swing/JSpinner;"); }
+                get { return IExecute<Javax.Swing.JSpinner>("getSpinner"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#getTextField()"/> 
             /// </summary>
             public Javax.Swing.JFormattedTextField TextField
             {
-                get { return IExecuteWithSignature<Javax.Swing.JFormattedTextField>("getTextField", "()Ljavax/swing/JFormattedTextField;"); }
+                get { return IExecute<Javax.Swing.JFormattedTextField>("getTextField"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#minimumLayoutSize(java.awt.Container)"/>
@@ -483,7 +483,7 @@ namespace Javax.Swing
             /// <returns><see cref="Java.Awt.Dimension"/></returns>
             public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
             {
-                return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+                return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#preferredLayoutSize(java.awt.Container)"/>
@@ -492,7 +492,7 @@ namespace Javax.Swing
             /// <returns><see cref="Java.Awt.Dimension"/></returns>
             public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
             {
-                return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+                return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
@@ -509,7 +509,7 @@ namespace Javax.Swing
             /// <exception cref="Java.Text.ParseException"/>
             public void CommitEdit()
             {
-                IExecuteWithSignature("commitEdit", "()V");
+                IExecute("commitEdit");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#dismiss(javax.swing.JSpinner)"/>
@@ -517,7 +517,7 @@ namespace Javax.Swing
             /// <param name="arg0"><see cref="Javax.Swing.JSpinner"/></param>
             public void Dismiss(Javax.Swing.JSpinner arg0)
             {
-                IExecuteWithSignature("dismiss", "(Ljavax/swing/JSpinner;)V", arg0);
+                IExecute("dismiss", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#layoutContainer(java.awt.Container)"/>
@@ -525,7 +525,7 @@ namespace Javax.Swing
             /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
             public void LayoutContainer(Java.Awt.Container arg0)
             {
-                IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
+                IExecute("layoutContainer", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#propertyChange(java.beans.PropertyChangeEvent)"/>
@@ -533,7 +533,7 @@ namespace Javax.Swing
             /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
-                IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
+                IExecute("propertyChange", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#removeLayoutComponent(java.awt.Component)"/>
@@ -541,7 +541,7 @@ namespace Javax.Swing
             /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
-                IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);
+                IExecute("removeLayoutComponent", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#stateChanged(javax.swing.event.ChangeEvent)"/>
@@ -549,7 +549,7 @@ namespace Javax.Swing
             /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
             public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
             {
-                IExecuteWithSignature("stateChanged", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
+                IExecute("stateChanged", arg0);
             }
 
             #endregion
@@ -595,7 +595,7 @@ namespace Javax.Swing
             /// </summary>
             public Javax.Swing.SpinnerListModel Model
             {
-                get { return IExecuteWithSignature<Javax.Swing.SpinnerListModel>("getModel", "()Ljavax/swing/SpinnerListModel;"); }
+                get { return IExecute<Javax.Swing.SpinnerListModel>("getModel"); }
             }
 
             #endregion
@@ -650,14 +650,14 @@ namespace Javax.Swing
             /// </summary>
             public Java.Text.DecimalFormat Format
             {
-                get { return IExecuteWithSignature<Java.Text.DecimalFormat>("getFormat", "()Ljava/text/DecimalFormat;"); }
+                get { return IExecute<Java.Text.DecimalFormat>("getFormat"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html#getModel()"/> 
             /// </summary>
             public Javax.Swing.SpinnerNumberModel Model
             {
-                get { return IExecuteWithSignature<Javax.Swing.SpinnerNumberModel>("getModel", "()Ljavax/swing/SpinnerNumberModel;"); }
+                get { return IExecute<Javax.Swing.SpinnerNumberModel>("getModel"); }
             }
 
             #endregion

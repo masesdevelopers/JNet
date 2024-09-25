@@ -240,14 +240,14 @@ namespace Javax.Script
         /// </summary>
         public Javax.Script.ScriptContext Context
         {
-            get { return IExecuteWithSignature<Javax.Script.ScriptContext>("getContext", "()Ljavax/script/ScriptContext;"); } set { IExecuteWithSignature("setContext", "(Ljavax/script/ScriptContext;)V", value); }
+            get { return IExecute<Javax.Script.ScriptContext>("getContext"); } set { IExecute("setContext", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getFactory()"/> 
         /// </summary>
         public Javax.Script.ScriptEngineFactory Factory
         {
-            get { return IExecuteWithSignature<Javax.Script.ScriptEngineFactory>("getFactory", "()Ljavax/script/ScriptEngineFactory;"); }
+            get { return IExecute<Javax.Script.ScriptEngineFactory>("getFactory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.io.Reader,javax.script.Bindings)"/>
@@ -279,7 +279,7 @@ namespace Javax.Script
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Java.Io.Reader arg0)
         {
-            return IExecuteWithSignature("eval", "(Ljava/io/Reader;)Ljava/lang/Object;", arg0);
+            return IExecute("eval", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String,javax.script.Bindings)"/>
@@ -311,7 +311,7 @@ namespace Javax.Script
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("eval", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("eval", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#get(java.lang.String)"/>
@@ -320,7 +320,7 @@ namespace Javax.Script
         /// <returns><see cref="object"/></returns>
         public object Get(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("get", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()"/>
@@ -328,7 +328,7 @@ namespace Javax.Script
         /// <returns><see cref="Javax.Script.Bindings"/></returns>
         public Javax.Script.Bindings CreateBindings()
         {
-            return IExecuteWithSignature<Javax.Script.Bindings>("createBindings", "()Ljavax/script/Bindings;");
+            return IExecute<Javax.Script.Bindings>("createBindings");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getBindings(int)"/>
@@ -337,7 +337,7 @@ namespace Javax.Script
         /// <returns><see cref="Javax.Script.Bindings"/></returns>
         public Javax.Script.Bindings GetBindings(int arg0)
         {
-            return IExecuteWithSignature<Javax.Script.Bindings>("getBindings", "(I)Ljavax/script/Bindings;", arg0);
+            return IExecute<Javax.Script.Bindings>("getBindings", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#put(java.lang.String,java.lang.Object)"/>

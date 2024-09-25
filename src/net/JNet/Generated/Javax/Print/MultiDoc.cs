@@ -125,7 +125,7 @@ namespace Javax.Print
         /// </summary>
         public Javax.Print.Doc Doc
         {
-            get { return IExecuteWithSignature<Javax.Print.Doc>("getDoc", "()Ljavax/print/Doc;"); }
+            get { return IExecute<Javax.Print.Doc>("getDoc"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDoc.html#next()"/>
@@ -134,7 +134,7 @@ namespace Javax.Print
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Print.MultiDoc Next()
         {
-            return IExecuteWithSignature<Javax.Print.MultiDoc>("next", "()Ljavax/print/MultiDoc;");
+            return IExecute<Javax.Print.MultiDoc>("next");
         }
 
         #endregion

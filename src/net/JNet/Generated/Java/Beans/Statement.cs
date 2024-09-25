@@ -95,21 +95,21 @@ namespace Java.Beans
         /// </summary>
         public object[] Arguments
         {
-            get { return IExecuteWithSignatureArray<object>("getArguments", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getArguments"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html#getMethodName()"/> 
         /// </summary>
         public Java.Lang.String MethodName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMethodName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMethodName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html#getTarget()"/> 
         /// </summary>
         public object Target
         {
-            get { return IExecuteWithSignature("getTarget", "()Ljava/lang/Object;"); }
+            get { return IExecute("getTarget"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html#execute()"/>
@@ -117,7 +117,7 @@ namespace Java.Beans
         /// <exception cref="Java.Lang.Exception"/>
         public void Execute()
         {
-            IExecuteWithSignature("execute", "()V");
+            IExecute("execute");
         }
 
         #endregion

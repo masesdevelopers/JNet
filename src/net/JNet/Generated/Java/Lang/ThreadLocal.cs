@@ -139,7 +139,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ThreadLocal"/></returns>
         public static Java.Lang.ThreadLocal WithInitial(Java.Util.Function.Supplier arg0)
         {
-            return SExecuteWithSignature<Java.Lang.ThreadLocal>(LocalBridgeClazz, "withInitial", "(Ljava/util/function/Supplier;)Ljava/lang/ThreadLocal;", arg0);
+            return SExecute<Java.Lang.ThreadLocal>(LocalBridgeClazz, "withInitial", arg0);
         }
 
         #endregion
@@ -151,14 +151,14 @@ namespace Java.Lang
         /// <returns><see cref="object"/></returns>
         public object Get()
         {
-            return IExecuteWithSignature("get", "()Ljava/lang/Object;");
+            return IExecute("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#remove()"/>
         /// </summary>
         public void Remove()
         {
-            IExecuteWithSignature("remove", "()V");
+            IExecute("remove");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#set(java.lang.Object)"/>
@@ -166,7 +166,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="object"/></param>
         public void Set(object arg0)
         {
-            IExecuteWithSignature("set", "(Ljava/lang/Object;)V", arg0);
+            IExecute("set", arg0);
         }
 
         #endregion
@@ -208,7 +208,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ThreadLocal"/></returns>
         public static Java.Lang.ThreadLocal<S> WithInitial<S, Arg0ExtendsS>(Java.Util.Function.Supplier<Arg0ExtendsS> arg0) where Arg0ExtendsS : S
         {
-            return SExecuteWithSignature<Java.Lang.ThreadLocal<S>>(LocalBridgeClazz, "withInitial", "(Ljava/util/function/Supplier;)Ljava/lang/ThreadLocal;", arg0);
+            return SExecute<Java.Lang.ThreadLocal<S>>(LocalBridgeClazz, "withInitial", arg0);
         }
 
         #endregion
@@ -220,14 +220,14 @@ namespace Java.Lang
         /// <returns><typeparamref name="T"/></returns>
         public T Get()
         {
-            return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
+            return IExecute<T>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#remove()"/>
         /// </summary>
         public void Remove()
         {
-            IExecuteWithSignature("remove", "()V");
+            IExecute("remove");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#set(java.lang.Object)"/>
@@ -235,7 +235,7 @@ namespace Java.Lang
         /// <param name="arg0"><typeparamref name="T"/></param>
         public void Set(T arg0)
         {
-            IExecuteWithSignature("set", "(Ljava/lang/Object;)V", arg0);
+            IExecute("set", arg0);
         }
 
         #endregion

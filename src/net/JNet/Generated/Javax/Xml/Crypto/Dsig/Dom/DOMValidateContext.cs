@@ -117,7 +117,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// </summary>
         public Org.W3c.Dom.Node Node
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getNode", "()Lorg/w3c/dom/Node;"); } set { IExecuteWithSignature("setNode", "(Lorg/w3c/dom/Node;)V", value); }
+            get { return IExecute<Org.W3c.Dom.Node>("getNode"); } set { IExecute("setNode", value); }
         }
 
         #endregion

@@ -151,7 +151,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setArchive(boolean)"/>
@@ -160,7 +160,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public void SetArchive(bool arg0)
         {
-            IExecuteWithSignature("setArchive", "(Z)V", arg0);
+            IExecute("setArchive", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setHidden(boolean)"/>
@@ -169,7 +169,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public void SetHidden(bool arg0)
         {
-            IExecuteWithSignature("setHidden", "(Z)V", arg0);
+            IExecute("setHidden", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setReadOnly(boolean)"/>
@@ -178,7 +178,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public void SetReadOnly(bool arg0)
         {
-            IExecuteWithSignature("setReadOnly", "(Z)V", arg0);
+            IExecute("setReadOnly", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setSystem(boolean)"/>
@@ -187,7 +187,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public void SetSystem(bool arg0)
         {
-            IExecuteWithSignature("setSystem", "(Z)V", arg0);
+            IExecute("setSystem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#readAttributes()"/>
@@ -196,7 +196,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes()
         {
-            return IExecuteWithSignature<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes", "()Ljava/nio/file/attribute/BasicFileAttributes;");
+            return IExecute<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes");
         }
 
         #endregion

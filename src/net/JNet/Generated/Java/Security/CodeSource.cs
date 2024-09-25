@@ -113,21 +113,21 @@ namespace Java.Security
         /// </summary>
         public Java.Security.Cert.Certificate[] Certificates
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificates", "()[Ljava/security/cert/Certificate;"); }
+            get { return IExecuteArray<Java.Security.Cert.Certificate>("getCertificates"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#getCodeSigners()"/> 
         /// </summary>
         public Java.Security.CodeSigner[] CodeSigners
         {
-            get { return IExecuteWithSignatureArray<Java.Security.CodeSigner>("getCodeSigners", "()[Ljava/security/CodeSigner;"); }
+            get { return IExecuteArray<Java.Security.CodeSigner>("getCodeSigners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#getLocation()"/> 
         /// </summary>
         public Java.Net.URL Location
         {
-            get { return IExecuteWithSignature<Java.Net.URL>("getLocation", "()Ljava/net/URL;"); }
+            get { return IExecute<Java.Net.URL>("getLocation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#implies(java.security.CodeSource)"/>
@@ -136,7 +136,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool Implies(Java.Security.CodeSource arg0)
         {
-            return IExecuteWithSignature<bool>("implies", "(Ljava/security/CodeSource;)Z", arg0);
+            return IExecute<bool>("implies", arg0);
         }
 
         #endregion

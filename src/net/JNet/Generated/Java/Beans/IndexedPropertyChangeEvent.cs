@@ -107,7 +107,7 @@ namespace Java.Beans
         /// </summary>
         public int Index
         {
-            get { return IExecuteWithSignature<int>("getIndex", "()I"); }
+            get { return IExecute<int>("getIndex"); }
         }
 
         #endregion

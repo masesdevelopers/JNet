@@ -119,7 +119,7 @@ namespace Java.Security.Spec
         /// </summary>
         public int FieldSize
         {
-            get { return IExecuteWithSignature<int>("getFieldSize", "()I"); }
+            get { return IExecute<int>("getFieldSize"); }
         }
 
         #endregion

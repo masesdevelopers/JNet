@@ -153,14 +153,14 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         public int IconHeight
         {
-            get { return IExecuteWithSignature<int>("getIconHeight", "()I"); }
+            get { return IExecute<int>("getIconHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconWidth()"/> 
         /// </summary>
         public int IconWidth
         {
-            get { return IExecuteWithSignature<int>("getIconWidth", "()I"); }
+            get { return IExecute<int>("getIconWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconHeight(javax.swing.plaf.synth.SynthContext)"/>
@@ -169,7 +169,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="int"/></returns>
         public int GetIconHeight(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
-            return IExecuteWithSignature<int>("getIconHeight", "(Ljavax/swing/plaf/synth/SynthContext;)I", arg0);
+            return IExecute<int>("getIconHeight", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconWidth(javax.swing.plaf.synth.SynthContext)"/>
@@ -178,7 +178,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="int"/></returns>
         public int GetIconWidth(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
-            return IExecuteWithSignature<int>("getIconWidth", "(Ljavax/swing/plaf/synth/SynthContext;)I", arg0);
+            return IExecute<int>("getIconWidth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#paintIcon(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>

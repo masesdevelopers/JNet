@@ -106,7 +106,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Connect(Java.Io.PipedInputStream arg0)
         {
-            IExecuteWithSignature("connect", "(Ljava/io/PipedInputStream;)V", arg0);
+            IExecute("connect", arg0);
         }
 
         #endregion

@@ -112,7 +112,7 @@ namespace Java.Awt
         /// </summary>
         public int Key
         {
-            get { return IExecuteWithSignature<int>("getKey", "()I"); }
+            get { return IExecute<int>("getKey"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#usesShiftModifier()"/>
@@ -120,7 +120,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool UsesShiftModifier()
         {
-            return IExecuteWithSignature<bool>("usesShiftModifier", "()Z");
+            return IExecute<bool>("usesShiftModifier");
         }
 
         #endregion

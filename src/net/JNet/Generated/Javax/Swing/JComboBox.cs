@@ -220,105 +220,105 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Action Action
         {
-            get { return IExecuteWithSignature<Javax.Swing.Action>("getAction", "()Ljavax/swing/Action;"); } set { IExecuteWithSignature("setAction", "(Ljavax/swing/Action;)V", value); }
+            get { return IExecute<Javax.Swing.Action>("getAction"); } set { IExecute("setAction", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getActionCommand()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setActionCommand(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String ActionCommand
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getActionCommand", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setActionCommand", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getActionCommand"); } set { IExecute("setActionCommand", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getActionListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ActionListener[] ActionListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ActionListener>("getActionListeners", "()[Ljava/awt/event/ActionListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.ActionListener>("getActionListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getEditor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setEditor(javax.swing.ComboBoxEditor)"/>
         /// </summary>
         public Javax.Swing.ComboBoxEditor Editor
         {
-            get { return IExecuteWithSignature<Javax.Swing.ComboBoxEditor>("getEditor", "()Ljavax/swing/ComboBoxEditor;"); } set { IExecuteWithSignature("setEditor", "(Ljavax/swing/ComboBoxEditor;)V", value); }
+            get { return IExecute<Javax.Swing.ComboBoxEditor>("getEditor"); } set { IExecute("setEditor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getKeySelectionManager()"/> 
         /// </summary>
         public Javax.Swing.JComboBox.KeySelectionManager GetKeySelectionManager
         {
-            get { return IExecuteWithSignature<Javax.Swing.JComboBox.KeySelectionManager>("getKeySelectionManager", "()Ljavax/swing/JComboBox$KeySelectionManager;"); }
+            get { return IExecute<Javax.Swing.JComboBox.KeySelectionManager>("getKeySelectionManager"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getItemCount()"/> 
         /// </summary>
         public int ItemCount
         {
-            get { return IExecuteWithSignature<int>("getItemCount", "()I"); }
+            get { return IExecute<int>("getItemCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getItemListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ItemListener[] ItemListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ItemListener>("getItemListeners", "()[Ljava/awt/event/ItemListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.ItemListener>("getItemListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getMaximumRowCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setMaximumRowCount(int)"/>
         /// </summary>
         public int MaximumRowCount
         {
-            get { return IExecuteWithSignature<int>("getMaximumRowCount", "()I"); } set { IExecuteWithSignature("setMaximumRowCount", "(I)V", value); }
+            get { return IExecute<int>("getMaximumRowCount"); } set { IExecute("setMaximumRowCount", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setModel(javax.swing.ComboBoxModel)"/>
         /// </summary>
         public Javax.Swing.ComboBoxModel Model
         {
-            get { return IExecuteWithSignature<Javax.Swing.ComboBoxModel>("getModel", "()Ljavax/swing/ComboBoxModel;"); } set { IExecuteWithSignature("setModel", "(Ljavax/swing/ComboBoxModel;)V", value); }
+            get { return IExecute<Javax.Swing.ComboBoxModel>("getModel"); } set { IExecute("setModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getPopupMenuListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.PopupMenuListener[] PopupMenuListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.PopupMenuListener>("getPopupMenuListeners", "()[Ljavax/swing/event/PopupMenuListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.PopupMenuListener>("getPopupMenuListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getPrototypeDisplayValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setPrototypeDisplayValue(java.lang.Object)"/>
         /// </summary>
         public object PrototypeDisplayValue
         {
-            get { return IExecuteWithSignature("getPrototypeDisplayValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setPrototypeDisplayValue", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getPrototypeDisplayValue"); } set { IExecute("setPrototypeDisplayValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getRenderer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setRenderer(javax.swing.ListCellRenderer)"/>
         /// </summary>
         public Javax.Swing.ListCellRenderer Renderer
         {
-            get { return IExecuteWithSignature<Javax.Swing.ListCellRenderer>("getRenderer", "()Ljavax/swing/ListCellRenderer;"); } set { IExecuteWithSignature("setRenderer", "(Ljavax/swing/ListCellRenderer;)V", value); }
+            get { return IExecute<Javax.Swing.ListCellRenderer>("getRenderer"); } set { IExecute("setRenderer", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setSelectedIndex(int)"/>
         /// </summary>
         public int SelectedIndex
         {
-            get { return IExecuteWithSignature<int>("getSelectedIndex", "()I"); } set { IExecuteWithSignature("setSelectedIndex", "(I)V", value); }
+            get { return IExecute<int>("getSelectedIndex"); } set { IExecute("setSelectedIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getSelectedItem()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setSelectedItem(java.lang.Object)"/>
         /// </summary>
         public object SelectedItem
         {
-            get { return IExecuteWithSignature("getSelectedItem", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setSelectedItem", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getSelectedItem"); } set { IExecute("setSelectedItem", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getSelectedObjects()"/> 
         /// </summary>
         public object[] SelectedObjects
         {
-            get { return IExecuteWithSignatureArray<object>("getSelectedObjects", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getSelectedObjects"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isEditable()"/>
@@ -326,7 +326,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsEditable()
         {
-            return IExecuteWithSignature<bool>("isEditable", "()Z");
+            return IExecute<bool>("isEditable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isLightWeightPopupEnabled()"/>
@@ -334,7 +334,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsLightWeightPopupEnabled()
         {
-            return IExecuteWithSignature<bool>("isLightWeightPopupEnabled", "()Z");
+            return IExecute<bool>("isLightWeightPopupEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isPopupVisible()"/>
@@ -342,7 +342,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsPopupVisible()
         {
-            return IExecuteWithSignature<bool>("isPopupVisible", "()Z");
+            return IExecute<bool>("isPopupVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#selectWithKeyChar(char)"/>
@@ -351,7 +351,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool SelectWithKeyChar(char arg0)
         {
-            return IExecuteWithSignature<bool>("selectWithKeyChar", "(C)Z", arg0);
+            return IExecute<bool>("selectWithKeyChar", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getItemAt(int)"/>
@@ -360,7 +360,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public object GetItemAt(int arg0)
         {
-            return IExecuteWithSignature("getItemAt", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("getItemAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#actionPerformed(java.awt.event.ActionEvent)"/>
@@ -368,7 +368,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
         public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
         {
-            IExecuteWithSignature("actionPerformed", "(Ljava/awt/event/ActionEvent;)V", arg0);
+            IExecute("actionPerformed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#addActionListener(java.awt.event.ActionListener)"/>
@@ -376,7 +376,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
+            IExecute("addActionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#addItem(java.lang.Object)"/>
@@ -384,7 +384,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="object"/></param>
         public void AddItem(object arg0)
         {
-            IExecuteWithSignature("addItem", "(Ljava/lang/Object;)V", arg0);
+            IExecute("addItem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#addItemListener(java.awt.event.ItemListener)"/>
@@ -392,7 +392,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecuteWithSignature("addItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
+            IExecute("addItemListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#addPopupMenuListener(javax.swing.event.PopupMenuListener)"/>
@@ -400,7 +400,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuListener"/></param>
         public void AddPopupMenuListener(Javax.Swing.Event.PopupMenuListener arg0)
         {
-            IExecuteWithSignature("addPopupMenuListener", "(Ljavax/swing/event/PopupMenuListener;)V", arg0);
+            IExecute("addPopupMenuListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#configureEditor(javax.swing.ComboBoxEditor,java.lang.Object)"/>
@@ -417,35 +417,35 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
         {
-            IExecuteWithSignature("contentsChanged", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+            IExecute("contentsChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#firePopupMenuCanceled()"/>
         /// </summary>
         public void FirePopupMenuCanceled()
         {
-            IExecuteWithSignature("firePopupMenuCanceled", "()V");
+            IExecute("firePopupMenuCanceled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#firePopupMenuWillBecomeInvisible()"/>
         /// </summary>
         public void FirePopupMenuWillBecomeInvisible()
         {
-            IExecuteWithSignature("firePopupMenuWillBecomeInvisible", "()V");
+            IExecute("firePopupMenuWillBecomeInvisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#firePopupMenuWillBecomeVisible()"/>
         /// </summary>
         public void FirePopupMenuWillBecomeVisible()
         {
-            IExecuteWithSignature("firePopupMenuWillBecomeVisible", "()V");
+            IExecute("firePopupMenuWillBecomeVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#hidePopup()"/>
         /// </summary>
         public void HidePopup()
         {
-            IExecuteWithSignature("hidePopup", "()V");
+            IExecute("hidePopup");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#insertItemAt(java.lang.Object,int)"/>
@@ -462,7 +462,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
         {
-            IExecuteWithSignature("intervalAdded", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+            IExecute("intervalAdded", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
@@ -470,7 +470,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
         {
-            IExecuteWithSignature("intervalRemoved", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+            IExecute("intervalRemoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#processKeyEvent(java.awt.event.KeyEvent)"/>
@@ -478,7 +478,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public void ProcessKeyEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
-            IExecuteWithSignature("processKeyEvent", "(Ljava/awt/event/KeyEvent;)V", arg0);
+            IExecute("processKeyEvent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#removeActionListener(java.awt.event.ActionListener)"/>
@@ -486,14 +486,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
+            IExecute("removeActionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#removeAllItems()"/>
         /// </summary>
         public void RemoveAllItems()
         {
-            IExecuteWithSignature("removeAllItems", "()V");
+            IExecute("removeAllItems");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#removeItem(java.lang.Object)"/>
@@ -501,7 +501,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="object"/></param>
         public void RemoveItem(object arg0)
         {
-            IExecuteWithSignature("removeItem", "(Ljava/lang/Object;)V", arg0);
+            IExecute("removeItem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#removeItemAt(int)"/>
@@ -509,7 +509,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveItemAt(int arg0)
         {
-            IExecuteWithSignature("removeItemAt", "(I)V", arg0);
+            IExecute("removeItemAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#removeItemListener(java.awt.event.ItemListener)"/>
@@ -517,7 +517,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecuteWithSignature("removeItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
+            IExecute("removeItemListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#removePopupMenuListener(javax.swing.event.PopupMenuListener)"/>
@@ -525,7 +525,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuListener"/></param>
         public void RemovePopupMenuListener(Javax.Swing.Event.PopupMenuListener arg0)
         {
-            IExecuteWithSignature("removePopupMenuListener", "(Ljavax/swing/event/PopupMenuListener;)V", arg0);
+            IExecute("removePopupMenuListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setEditable(boolean)"/>
@@ -533,7 +533,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetEditable(bool arg0)
         {
-            IExecuteWithSignature("setEditable", "(Z)V", arg0);
+            IExecute("setEditable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setKeySelectionManager(javax.swing.JComboBox.KeySelectionManager)"/>
@@ -541,7 +541,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.JComboBox.KeySelectionManager"/></param>
         public void SetKeySelectionManager(Javax.Swing.JComboBox.KeySelectionManager arg0)
         {
-            IExecuteWithSignature("setKeySelectionManager", "(Ljavax/swing/JComboBox$KeySelectionManager;)V", arg0);
+            IExecute("setKeySelectionManager", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setLightWeightPopupEnabled(boolean)"/>
@@ -549,7 +549,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetLightWeightPopupEnabled(bool arg0)
         {
-            IExecuteWithSignature("setLightWeightPopupEnabled", "(Z)V", arg0);
+            IExecute("setLightWeightPopupEnabled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setPopupVisible(boolean)"/>
@@ -557,7 +557,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetPopupVisible(bool arg0)
         {
-            IExecuteWithSignature("setPopupVisible", "(Z)V", arg0);
+            IExecute("setPopupVisible", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setUI(javax.swing.plaf.ComboBoxUI)"/>
@@ -565,14 +565,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.ComboBoxUI"/></param>
         public void SetUI(Javax.Swing.Plaf.ComboBoxUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ComboBoxUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#showPopup()"/>
         /// </summary>
         public void ShowPopup()
         {
-            IExecuteWithSignature("showPopup", "()V");
+            IExecute("showPopup");
         }
 
         #endregion
@@ -606,7 +606,7 @@ namespace Javax.Swing
             /// <returns><see cref="int"/></returns>
             public int SelectionForKey(char arg0, Javax.Swing.ComboBoxModel<object> arg1)
             {
-                return IExecute<int>("selectionForKey", arg0, arg1);
+                return IExecuteWithSignature<int>("selectionForKey", "(CLjavax/swing/ComboBoxModel;)I", arg0, arg1);
             }
 
             #endregion
@@ -695,105 +695,105 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Action Action
         {
-            get { return IExecuteWithSignature<Javax.Swing.Action>("getAction", "()Ljavax/swing/Action;"); } set { IExecuteWithSignature("setAction", "(Ljavax/swing/Action;)V", value); }
+            get { return IExecute<Javax.Swing.Action>("getAction"); } set { IExecute("setAction", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getActionCommand()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setActionCommand(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String ActionCommand
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getActionCommand", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setActionCommand", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getActionCommand"); } set { IExecute("setActionCommand", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getActionListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ActionListener[] ActionListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ActionListener>("getActionListeners", "()[Ljava/awt/event/ActionListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.ActionListener>("getActionListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getEditor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setEditor(javax.swing.ComboBoxEditor)"/>
         /// </summary>
         public Javax.Swing.ComboBoxEditor Editor
         {
-            get { return IExecuteWithSignature<Javax.Swing.ComboBoxEditor>("getEditor", "()Ljavax/swing/ComboBoxEditor;"); } set { IExecuteWithSignature("setEditor", "(Ljavax/swing/ComboBoxEditor;)V", value); }
+            get { return IExecute<Javax.Swing.ComboBoxEditor>("getEditor"); } set { IExecute("setEditor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getKeySelectionManager()"/> 
         /// </summary>
         public Javax.Swing.JComboBox.KeySelectionManager GetKeySelectionManager
         {
-            get { return IExecuteWithSignature<Javax.Swing.JComboBox.KeySelectionManager>("getKeySelectionManager", "()Ljavax/swing/JComboBox$KeySelectionManager;"); }
+            get { return IExecute<Javax.Swing.JComboBox.KeySelectionManager>("getKeySelectionManager"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getItemCount()"/> 
         /// </summary>
         public int ItemCount
         {
-            get { return IExecuteWithSignature<int>("getItemCount", "()I"); }
+            get { return IExecute<int>("getItemCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getItemListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ItemListener[] ItemListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ItemListener>("getItemListeners", "()[Ljava/awt/event/ItemListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.ItemListener>("getItemListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getMaximumRowCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setMaximumRowCount(int)"/>
         /// </summary>
         public int MaximumRowCount
         {
-            get { return IExecuteWithSignature<int>("getMaximumRowCount", "()I"); } set { IExecuteWithSignature("setMaximumRowCount", "(I)V", value); }
+            get { return IExecute<int>("getMaximumRowCount"); } set { IExecute("setMaximumRowCount", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setModel(javax.swing.ComboBoxModel)"/>
         /// </summary>
         public Javax.Swing.ComboBoxModel<E> Model
         {
-            get { return IExecuteWithSignature<Javax.Swing.ComboBoxModel<E>>("getModel", "()Ljavax/swing/ComboBoxModel;"); } set { IExecuteWithSignature("setModel", "(Ljavax/swing/ComboBoxModel;)V", value); }
+            get { return IExecute<Javax.Swing.ComboBoxModel<E>>("getModel"); } set { IExecute("setModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getPopupMenuListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.PopupMenuListener[] PopupMenuListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.PopupMenuListener>("getPopupMenuListeners", "()[Ljavax/swing/event/PopupMenuListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.PopupMenuListener>("getPopupMenuListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getPrototypeDisplayValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setPrototypeDisplayValue(java.lang.Object)"/>
         /// </summary>
         public E PrototypeDisplayValue
         {
-            get { return IExecuteWithSignature<E>("getPrototypeDisplayValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setPrototypeDisplayValue", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute<E>("getPrototypeDisplayValue"); } set { IExecute("setPrototypeDisplayValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getRenderer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setRenderer(javax.swing.ListCellRenderer)"/>
         /// </summary>
         public Javax.Swing.ListCellRenderer Renderer
         {
-            get { return IExecuteWithSignature<Javax.Swing.ListCellRenderer>("getRenderer", "()Ljavax/swing/ListCellRenderer;"); } set { IExecuteWithSignature("setRenderer", "(Ljavax/swing/ListCellRenderer;)V", value); }
+            get { return IExecute<Javax.Swing.ListCellRenderer>("getRenderer"); } set { IExecute("setRenderer", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setSelectedIndex(int)"/>
         /// </summary>
         public int SelectedIndex
         {
-            get { return IExecuteWithSignature<int>("getSelectedIndex", "()I"); } set { IExecuteWithSignature("setSelectedIndex", "(I)V", value); }
+            get { return IExecute<int>("getSelectedIndex"); } set { IExecute("setSelectedIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getSelectedItem()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setSelectedItem(java.lang.Object)"/>
         /// </summary>
         public object SelectedItem
         {
-            get { return IExecuteWithSignature("getSelectedItem", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setSelectedItem", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getSelectedItem"); } set { IExecute("setSelectedItem", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getSelectedObjects()"/> 
         /// </summary>
         public object[] SelectedObjects
         {
-            get { return IExecuteWithSignatureArray<object>("getSelectedObjects", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getSelectedObjects"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isEditable()"/>
@@ -801,7 +801,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsEditable()
         {
-            return IExecuteWithSignature<bool>("isEditable", "()Z");
+            return IExecute<bool>("isEditable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isLightWeightPopupEnabled()"/>
@@ -809,7 +809,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsLightWeightPopupEnabled()
         {
-            return IExecuteWithSignature<bool>("isLightWeightPopupEnabled", "()Z");
+            return IExecute<bool>("isLightWeightPopupEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isPopupVisible()"/>
@@ -817,7 +817,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsPopupVisible()
         {
-            return IExecuteWithSignature<bool>("isPopupVisible", "()Z");
+            return IExecute<bool>("isPopupVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#selectWithKeyChar(char)"/>
@@ -826,7 +826,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool SelectWithKeyChar(char arg0)
         {
-            return IExecuteWithSignature<bool>("selectWithKeyChar", "(C)Z", arg0);
+            return IExecute<bool>("selectWithKeyChar", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getItemAt(int)"/>
@@ -835,7 +835,7 @@ namespace Javax.Swing
         /// <returns><typeparamref name="E"/></returns>
         public E GetItemAt(int arg0)
         {
-            return IExecuteWithSignature<E>("getItemAt", "(I)Ljava/lang/Object;", arg0);
+            return IExecute<E>("getItemAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#actionPerformed(java.awt.event.ActionEvent)"/>
@@ -843,7 +843,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
         public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
         {
-            IExecuteWithSignature("actionPerformed", "(Ljava/awt/event/ActionEvent;)V", arg0);
+            IExecute("actionPerformed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#addActionListener(java.awt.event.ActionListener)"/>
@@ -851,7 +851,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
+            IExecute("addActionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#addItem(java.lang.Object)"/>
@@ -859,7 +859,7 @@ namespace Javax.Swing
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddItem(E arg0)
         {
-            IExecuteWithSignature("addItem", "(Ljava/lang/Object;)V", arg0);
+            IExecute("addItem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#addItemListener(java.awt.event.ItemListener)"/>
@@ -867,7 +867,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecuteWithSignature("addItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
+            IExecute("addItemListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#addPopupMenuListener(javax.swing.event.PopupMenuListener)"/>
@@ -875,7 +875,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuListener"/></param>
         public void AddPopupMenuListener(Javax.Swing.Event.PopupMenuListener arg0)
         {
-            IExecuteWithSignature("addPopupMenuListener", "(Ljavax/swing/event/PopupMenuListener;)V", arg0);
+            IExecute("addPopupMenuListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#configureEditor(javax.swing.ComboBoxEditor,java.lang.Object)"/>
@@ -892,35 +892,35 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
         {
-            IExecuteWithSignature("contentsChanged", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+            IExecute("contentsChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#firePopupMenuCanceled()"/>
         /// </summary>
         public void FirePopupMenuCanceled()
         {
-            IExecuteWithSignature("firePopupMenuCanceled", "()V");
+            IExecute("firePopupMenuCanceled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#firePopupMenuWillBecomeInvisible()"/>
         /// </summary>
         public void FirePopupMenuWillBecomeInvisible()
         {
-            IExecuteWithSignature("firePopupMenuWillBecomeInvisible", "()V");
+            IExecute("firePopupMenuWillBecomeInvisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#firePopupMenuWillBecomeVisible()"/>
         /// </summary>
         public void FirePopupMenuWillBecomeVisible()
         {
-            IExecuteWithSignature("firePopupMenuWillBecomeVisible", "()V");
+            IExecute("firePopupMenuWillBecomeVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#hidePopup()"/>
         /// </summary>
         public void HidePopup()
         {
-            IExecuteWithSignature("hidePopup", "()V");
+            IExecute("hidePopup");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#insertItemAt(java.lang.Object,int)"/>
@@ -937,7 +937,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
         {
-            IExecuteWithSignature("intervalAdded", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+            IExecute("intervalAdded", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
@@ -945,7 +945,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
         {
-            IExecuteWithSignature("intervalRemoved", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+            IExecute("intervalRemoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#processKeyEvent(java.awt.event.KeyEvent)"/>
@@ -953,7 +953,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public void ProcessKeyEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
-            IExecuteWithSignature("processKeyEvent", "(Ljava/awt/event/KeyEvent;)V", arg0);
+            IExecute("processKeyEvent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#removeActionListener(java.awt.event.ActionListener)"/>
@@ -961,14 +961,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
+            IExecute("removeActionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#removeAllItems()"/>
         /// </summary>
         public void RemoveAllItems()
         {
-            IExecuteWithSignature("removeAllItems", "()V");
+            IExecute("removeAllItems");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#removeItem(java.lang.Object)"/>
@@ -976,7 +976,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="object"/></param>
         public void RemoveItem(object arg0)
         {
-            IExecuteWithSignature("removeItem", "(Ljava/lang/Object;)V", arg0);
+            IExecute("removeItem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#removeItemAt(int)"/>
@@ -984,7 +984,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveItemAt(int arg0)
         {
-            IExecuteWithSignature("removeItemAt", "(I)V", arg0);
+            IExecute("removeItemAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#removeItemListener(java.awt.event.ItemListener)"/>
@@ -992,7 +992,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecuteWithSignature("removeItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
+            IExecute("removeItemListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#removePopupMenuListener(javax.swing.event.PopupMenuListener)"/>
@@ -1000,7 +1000,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuListener"/></param>
         public void RemovePopupMenuListener(Javax.Swing.Event.PopupMenuListener arg0)
         {
-            IExecuteWithSignature("removePopupMenuListener", "(Ljavax/swing/event/PopupMenuListener;)V", arg0);
+            IExecute("removePopupMenuListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setEditable(boolean)"/>
@@ -1008,7 +1008,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetEditable(bool arg0)
         {
-            IExecuteWithSignature("setEditable", "(Z)V", arg0);
+            IExecute("setEditable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setKeySelectionManager(javax.swing.JComboBox.KeySelectionManager)"/>
@@ -1016,7 +1016,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.JComboBox.KeySelectionManager"/></param>
         public void SetKeySelectionManager(Javax.Swing.JComboBox.KeySelectionManager arg0)
         {
-            IExecuteWithSignature("setKeySelectionManager", "(Ljavax/swing/JComboBox$KeySelectionManager;)V", arg0);
+            IExecute("setKeySelectionManager", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setLightWeightPopupEnabled(boolean)"/>
@@ -1024,7 +1024,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetLightWeightPopupEnabled(bool arg0)
         {
-            IExecuteWithSignature("setLightWeightPopupEnabled", "(Z)V", arg0);
+            IExecute("setLightWeightPopupEnabled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setPopupVisible(boolean)"/>
@@ -1032,7 +1032,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetPopupVisible(bool arg0)
         {
-            IExecuteWithSignature("setPopupVisible", "(Z)V", arg0);
+            IExecute("setPopupVisible", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setUI(javax.swing.plaf.ComboBoxUI)"/>
@@ -1040,14 +1040,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.ComboBoxUI"/></param>
         public void SetUI(Javax.Swing.Plaf.ComboBoxUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ComboBoxUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#showPopup()"/>
         /// </summary>
         public void ShowPopup()
         {
-            IExecuteWithSignature("showPopup", "()V");
+            IExecute("showPopup");
         }
 
         #endregion

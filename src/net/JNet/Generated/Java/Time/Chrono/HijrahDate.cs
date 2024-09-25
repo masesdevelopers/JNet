@@ -100,7 +100,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
         public static Java.Time.Chrono.HijrahDate Now()
         {
-            return SExecuteWithSignature<Java.Time.Chrono.HijrahDate>(LocalBridgeClazz, "now", "()Ljava/time/chrono/HijrahDate;");
+            return SExecute<Java.Time.Chrono.HijrahDate>(LocalBridgeClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahDate.html#now(java.time.Clock)"/>
@@ -109,7 +109,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
         public static Java.Time.Chrono.HijrahDate Now(Java.Time.Clock arg0)
         {
-            return SExecuteWithSignature<Java.Time.Chrono.HijrahDate>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/chrono/HijrahDate;", arg0);
+            return SExecute<Java.Time.Chrono.HijrahDate>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahDate.html#now(java.time.ZoneId)"/>
@@ -118,7 +118,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
         public static Java.Time.Chrono.HijrahDate Now(Java.Time.ZoneId arg0)
         {
-            return SExecuteWithSignature<Java.Time.Chrono.HijrahDate>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/chrono/HijrahDate;", arg0);
+            return SExecute<Java.Time.Chrono.HijrahDate>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahDate.html#of(int,int,int)"/>
@@ -142,7 +142,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
         public Java.Time.Chrono.HijrahDate WithVariant(Java.Time.Chrono.HijrahChronology arg0)
         {
-            return IExecuteWithSignature<Java.Time.Chrono.HijrahDate>("withVariant", "(Ljava/time/chrono/HijrahChronology;)Ljava/time/chrono/HijrahDate;", arg0);
+            return IExecute<Java.Time.Chrono.HijrahDate>("withVariant", arg0);
         }
 
         #endregion

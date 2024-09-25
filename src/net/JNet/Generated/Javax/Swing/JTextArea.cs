@@ -141,42 +141,42 @@ namespace Javax.Swing
         /// </summary>
         public int Columns
         {
-            get { return IExecuteWithSignature<int>("getColumns", "()I"); } set { IExecuteWithSignature("setColumns", "(I)V", value); }
+            get { return IExecute<int>("getColumns"); } set { IExecute("setColumns", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#getLineCount()"/> 
         /// </summary>
         public int LineCount
         {
-            get { return IExecuteWithSignature<int>("getLineCount", "()I"); }
+            get { return IExecute<int>("getLineCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#getLineWrap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#setLineWrap(boolean)"/>
         /// </summary>
         public bool LineWrap
         {
-            get { return IExecuteWithSignature<bool>("getLineWrap", "()Z"); } set { IExecuteWithSignature("setLineWrap", "(Z)V", value); }
+            get { return IExecute<bool>("getLineWrap"); } set { IExecute("setLineWrap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#getRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#setRows(int)"/>
         /// </summary>
         public int Rows
         {
-            get { return IExecuteWithSignature<int>("getRows", "()I"); } set { IExecuteWithSignature("setRows", "(I)V", value); }
+            get { return IExecute<int>("getRows"); } set { IExecute("setRows", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#getTabSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#setTabSize(int)"/>
         /// </summary>
         public int TabSize
         {
-            get { return IExecuteWithSignature<int>("getTabSize", "()I"); } set { IExecuteWithSignature("setTabSize", "(I)V", value); }
+            get { return IExecute<int>("getTabSize"); } set { IExecute("setTabSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#getWrapStyleWord()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#setWrapStyleWord(boolean)"/>
         /// </summary>
         public bool WrapStyleWord
         {
-            get { return IExecuteWithSignature<bool>("getWrapStyleWord", "()Z"); } set { IExecuteWithSignature("setWrapStyleWord", "(Z)V", value); }
+            get { return IExecute<bool>("getWrapStyleWord"); } set { IExecute("setWrapStyleWord", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#getLineEndOffset(int)"/>
@@ -186,7 +186,7 @@ namespace Javax.Swing
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public int GetLineEndOffset(int arg0)
         {
-            return IExecuteWithSignature<int>("getLineEndOffset", "(I)I", arg0);
+            return IExecute<int>("getLineEndOffset", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#getLineOfOffset(int)"/>
@@ -196,7 +196,7 @@ namespace Javax.Swing
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public int GetLineOfOffset(int arg0)
         {
-            return IExecuteWithSignature<int>("getLineOfOffset", "(I)I", arg0);
+            return IExecute<int>("getLineOfOffset", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#getLineStartOffset(int)"/>
@@ -206,7 +206,7 @@ namespace Javax.Swing
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public int GetLineStartOffset(int arg0)
         {
-            return IExecuteWithSignature<int>("getLineStartOffset", "(I)I", arg0);
+            return IExecute<int>("getLineStartOffset", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#append(java.lang.String)"/>
@@ -214,7 +214,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Append(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("append", "(Ljava/lang/String;)V", arg0);
+            IExecute("append", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#insert(java.lang.String,int)"/>

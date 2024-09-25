@@ -213,7 +213,7 @@ namespace Javax.Swing.Text
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public void InsertString(int arg0, Java.Lang.String arg1, Javax.Swing.Text.AttributeSet arg2)
             {
-                IExecute("insertString", arg0, arg1, arg2);
+                IExecuteWithSignature("insertString", "(ILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html#remove(int,int)"/>
@@ -223,7 +223,7 @@ namespace Javax.Swing.Text
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public void Remove(int arg0, int arg1)
             {
-                IExecute("remove", arg0, arg1);
+                IExecuteWithSignature("remove", "(II)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html#replace(int,int,java.lang.String,javax.swing.text.AttributeSet)"/>
@@ -235,7 +235,7 @@ namespace Javax.Swing.Text
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public void Replace(int arg0, int arg1, Java.Lang.String arg2, Javax.Swing.Text.AttributeSet arg3)
             {
-                IExecute("replace", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("replace", "(IILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", arg0, arg1, arg2, arg3);
             }
 
             #endregion

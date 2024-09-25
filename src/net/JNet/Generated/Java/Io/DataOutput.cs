@@ -214,7 +214,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(byte[] arg0)
         {
-            IExecuteWithSignature("write", "([B)V", new object[] { arg0 });
+            IExecute("write", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutput.html#write(int)"/>
@@ -223,7 +223,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(int arg0)
         {
-            IExecuteWithSignature("write", "(I)V", arg0);
+            IExecute("write", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutput.html#writeBoolean(boolean)"/>
@@ -232,7 +232,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteBoolean(bool arg0)
         {
-            IExecuteWithSignature("writeBoolean", "(Z)V", arg0);
+            IExecute("writeBoolean", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutput.html#writeByte(int)"/>
@@ -241,7 +241,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteByte(int arg0)
         {
-            IExecuteWithSignature("writeByte", "(I)V", arg0);
+            IExecute("writeByte", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutput.html#writeBytes(java.lang.String)"/>
@@ -250,7 +250,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteBytes(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("writeBytes", "(Ljava/lang/String;)V", arg0);
+            IExecute("writeBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutput.html#writeChar(int)"/>
@@ -259,7 +259,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteChar(int arg0)
         {
-            IExecuteWithSignature("writeChar", "(I)V", arg0);
+            IExecute("writeChar", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutput.html#writeChars(java.lang.String)"/>
@@ -268,7 +268,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteChars(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("writeChars", "(Ljava/lang/String;)V", arg0);
+            IExecute("writeChars", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutput.html#writeDouble(double)"/>
@@ -277,7 +277,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteDouble(double arg0)
         {
-            IExecuteWithSignature("writeDouble", "(D)V", arg0);
+            IExecute("writeDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutput.html#writeFloat(float)"/>
@@ -286,7 +286,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteFloat(float arg0)
         {
-            IExecuteWithSignature("writeFloat", "(F)V", arg0);
+            IExecute("writeFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutput.html#writeInt(int)"/>
@@ -295,7 +295,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteInt(int arg0)
         {
-            IExecuteWithSignature("writeInt", "(I)V", arg0);
+            IExecute("writeInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutput.html#writeLong(long)"/>
@@ -304,7 +304,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteLong(long arg0)
         {
-            IExecuteWithSignature("writeLong", "(J)V", arg0);
+            IExecute("writeLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutput.html#writeShort(int)"/>
@@ -313,7 +313,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteShort(int arg0)
         {
-            IExecuteWithSignature("writeShort", "(I)V", arg0);
+            IExecute("writeShort", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutput.html#writeUTF(java.lang.String)"/>
@@ -322,7 +322,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteUTF(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("writeUTF", "(Ljava/lang/String;)V", arg0);
+            IExecute("writeUTF", arg0);
         }
 
         #endregion

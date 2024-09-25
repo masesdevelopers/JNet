@@ -103,7 +103,7 @@ namespace Javax.Swing
         /// </summary>
         public Java.Util.List<object> List
         {
-            get { return IExecuteWithSignature<Java.Util.List<object>>("getList", "()Ljava/util/List;"); } set { IExecuteWithSignature("setList", "(Ljava/util/List;)V", value); }
+            get { return IExecute<Java.Util.List<object>>("getList"); } set { IExecute("setList", value); }
         }
 
         #endregion

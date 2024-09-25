@@ -114,7 +114,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Length()
         {
-            return IExecuteWithSignature<int>("length", "()I");
+            return IExecute<int>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#add(java.lang.CharSequence)"/>
@@ -123,7 +123,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.StringJoiner"/></returns>
         public Java.Util.StringJoiner Add(Java.Lang.CharSequence arg0)
         {
-            return IExecuteWithSignature<Java.Util.StringJoiner>("add", "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;", arg0);
+            return IExecute<Java.Util.StringJoiner>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#merge(java.util.StringJoiner)"/>
@@ -132,7 +132,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.StringJoiner"/></returns>
         public Java.Util.StringJoiner Merge(Java.Util.StringJoiner arg0)
         {
-            return IExecuteWithSignature<Java.Util.StringJoiner>("merge", "(Ljava/util/StringJoiner;)Ljava/util/StringJoiner;", arg0);
+            return IExecute<Java.Util.StringJoiner>("merge", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#setEmptyValue(java.lang.CharSequence)"/>
@@ -141,7 +141,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.StringJoiner"/></returns>
         public Java.Util.StringJoiner SetEmptyValue(Java.Lang.CharSequence arg0)
         {
-            return IExecuteWithSignature<Java.Util.StringJoiner>("setEmptyValue", "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;", arg0);
+            return IExecute<Java.Util.StringJoiner>("setEmptyValue", arg0);
         }
 
         #endregion

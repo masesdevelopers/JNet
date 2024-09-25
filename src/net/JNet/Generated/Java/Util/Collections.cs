@@ -144,7 +144,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public static Java.Util.NavigableSet<E> EmptyNavigableSet<E>()
         {
-            return SExecuteWithSignature<Java.Util.NavigableSet<E>>(LocalBridgeClazz, "emptyNavigableSet", "()Ljava/util/NavigableSet;");
+            return SExecute<Java.Util.NavigableSet<E>>(LocalBridgeClazz, "emptyNavigableSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedQueue(java.util.Queue,java.lang.Class)"/>
@@ -176,7 +176,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> NewSetFromMap<E>(Java.Util.Map<E, Java.Lang.Boolean> arg0)
         {
-            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "newSetFromMap", "(Ljava/util/Map;)Ljava/util/Set;", arg0);
+            return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "newSetFromMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedSortedSet(java.util.SortedSet,java.lang.Class)"/>
@@ -196,7 +196,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public static Java.Util.SortedSet<E> EmptySortedSet<E>()
         {
-            return SExecuteWithSignature<Java.Util.SortedSet<E>>(LocalBridgeClazz, "emptySortedSet", "()Ljava/util/SortedSet;");
+            return SExecute<Java.Util.SortedSet<E>>(LocalBridgeClazz, "emptySortedSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedMap(java.util.Map,java.lang.Class,java.lang.Class)"/>
@@ -378,7 +378,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ArrayList"/></returns>
         public static Java.Util.ArrayList<T> List<T>(Java.Util.Enumeration<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.ArrayList<T>>(LocalBridgeClazz, "list", "(Ljava/util/Enumeration;)Ljava/util/ArrayList;", arg0);
+            return SExecute<Java.Util.ArrayList<T>>(LocalBridgeClazz, "list", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedCollection(java.util.Collection)"/>
@@ -388,7 +388,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection<T> SynchronizedCollectionMethod<T>(Java.Util.Collection<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.Collection<T>>(LocalBridgeClazz, "synchronizedCollection", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
+            return SExecute<Java.Util.Collection<T>>(LocalBridgeClazz, "synchronizedCollection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableCollection(java.util.Collection)"/>
@@ -399,7 +399,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection<T> UnmodifiableCollectionMethod<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
-            return SExecuteWithSignature<Java.Util.Collection<T>>(LocalBridgeClazz, "unmodifiableCollection", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
+            return SExecute<Java.Util.Collection<T>>(LocalBridgeClazz, "unmodifiableCollection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder()"/>
@@ -408,7 +408,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public static Java.Util.Comparator<T> ReverseOrder<T>()
         {
-            return SExecuteWithSignature<Java.Util.Comparator<T>>(LocalBridgeClazz, "reverseOrder", "()Ljava/util/Comparator;");
+            return SExecute<Java.Util.Comparator<T>>(LocalBridgeClazz, "reverseOrder");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder(java.util.Comparator)"/>
@@ -418,7 +418,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public static Java.Util.Comparator<T> ReverseOrder<T>(Java.Util.Comparator<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.Comparator<T>>(LocalBridgeClazz, "reverseOrder", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
+            return SExecute<Java.Util.Comparator<T>>(LocalBridgeClazz, "reverseOrder", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyEnumeration()"/>
@@ -427,7 +427,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public static Java.Util.Enumeration<T> EmptyEnumerationMethod<T>()
         {
-            return SExecuteWithSignature<Java.Util.Enumeration<T>>(LocalBridgeClazz, "emptyEnumeration", "()Ljava/util/Enumeration;");
+            return SExecute<Java.Util.Enumeration<T>>(LocalBridgeClazz, "emptyEnumeration");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#enumeration(java.util.Collection)"/>
@@ -437,7 +437,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public static Java.Util.Enumeration<T> Enumeration<T>(Java.Util.Collection<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.Enumeration<T>>(LocalBridgeClazz, "enumeration", "(Ljava/util/Collection;)Ljava/util/Enumeration;", arg0);
+            return SExecute<Java.Util.Enumeration<T>>(LocalBridgeClazz, "enumeration", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyIterator()"/>
@@ -446,7 +446,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<T> EmptyIteratorMethod<T>()
         {
-            return SExecuteWithSignature<Java.Util.Iterator<T>>(LocalBridgeClazz, "emptyIterator", "()Ljava/util/Iterator;");
+            return SExecute<Java.Util.Iterator<T>>(LocalBridgeClazz, "emptyIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#nCopies(int,java.lang.Object)"/>
@@ -467,7 +467,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> SingletonListMethod<T>(T arg0)
         {
-            return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "singletonList", "(Ljava/lang/Object;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "singletonList", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedList(java.util.List)"/>
@@ -477,7 +477,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> SynchronizedListMethod<T>(Java.Util.List<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "synchronizedList", "(Ljava/util/List;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "synchronizedList", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableList(java.util.List)"/>
@@ -488,7 +488,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> UnmodifiableListMethod<T, Arg0ExtendsT>(Java.Util.List<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
-            return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "unmodifiableList", "(Ljava/util/List;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "unmodifiableList", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyListIterator()"/>
@@ -497,7 +497,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public static Java.Util.ListIterator<T> EmptyListIteratorMethod<T>()
         {
-            return SExecuteWithSignature<Java.Util.ListIterator<T>>(LocalBridgeClazz, "emptyListIterator", "()Ljava/util/ListIterator;");
+            return SExecute<Java.Util.ListIterator<T>>(LocalBridgeClazz, "emptyListIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedNavigableSet(java.util.NavigableSet)"/>
@@ -507,7 +507,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public static Java.Util.NavigableSet<T> SynchronizedNavigableSetMethod<T>(Java.Util.NavigableSet<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.NavigableSet<T>>(LocalBridgeClazz, "synchronizedNavigableSet", "(Ljava/util/NavigableSet;)Ljava/util/NavigableSet;", arg0);
+            return SExecute<Java.Util.NavigableSet<T>>(LocalBridgeClazz, "synchronizedNavigableSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableNavigableSet(java.util.NavigableSet)"/>
@@ -517,7 +517,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public static Java.Util.NavigableSet<T> UnmodifiableNavigableSetMethod<T>(Java.Util.NavigableSet<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.NavigableSet<T>>(LocalBridgeClazz, "unmodifiableNavigableSet", "(Ljava/util/NavigableSet;)Ljava/util/NavigableSet;", arg0);
+            return SExecute<Java.Util.NavigableSet<T>>(LocalBridgeClazz, "unmodifiableNavigableSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#asLifoQueue(java.util.Deque)"/>
@@ -527,7 +527,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Queue"/></returns>
         public static Java.Util.Queue<T> AsLifoQueue<T>(Java.Util.Deque<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.Queue<T>>(LocalBridgeClazz, "asLifoQueue", "(Ljava/util/Deque;)Ljava/util/Queue;", arg0);
+            return SExecute<Java.Util.Queue<T>>(LocalBridgeClazz, "asLifoQueue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(java.lang.Object)"/>
@@ -537,7 +537,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<T> Singleton<T>(T arg0)
         {
-            return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "singleton", "(Ljava/lang/Object;)Ljava/util/Set;", arg0);
+            return SExecute<Java.Util.Set<T>>(LocalBridgeClazz, "singleton", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSet(java.util.Set)"/>
@@ -547,7 +547,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<T> SynchronizedSetMethod<T>(Java.Util.Set<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "synchronizedSet", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
+            return SExecute<Java.Util.Set<T>>(LocalBridgeClazz, "synchronizedSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSet(java.util.Set)"/>
@@ -558,7 +558,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<T> UnmodifiableSetMethod<T, Arg0ExtendsT>(Java.Util.Set<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
-            return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "unmodifiableSet", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
+            return SExecute<Java.Util.Set<T>>(LocalBridgeClazz, "unmodifiableSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSortedSet(java.util.SortedSet)"/>
@@ -568,7 +568,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public static Java.Util.SortedSet<T> SynchronizedSortedSetMethod<T>(Java.Util.SortedSet<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.SortedSet<T>>(LocalBridgeClazz, "synchronizedSortedSet", "(Ljava/util/SortedSet;)Ljava/util/SortedSet;", arg0);
+            return SExecute<Java.Util.SortedSet<T>>(LocalBridgeClazz, "synchronizedSortedSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSortedSet(java.util.SortedSet)"/>
@@ -578,7 +578,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public static Java.Util.SortedSet<T> UnmodifiableSortedSetMethod<T>(Java.Util.SortedSet<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.SortedSet<T>>(LocalBridgeClazz, "unmodifiableSortedSet", "(Ljava/util/SortedSet;)Ljava/util/SortedSet;", arg0);
+            return SExecute<Java.Util.SortedSet<T>>(LocalBridgeClazz, "unmodifiableSortedSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection,java.util.Comparator)"/>
@@ -718,7 +718,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> EmptyListMethod<T>()
         {
-            return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "emptyList", "()Ljava/util/List;");
+            return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "emptyList");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySet()"/>
@@ -727,7 +727,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<T> EmptySetMethod<T>()
         {
-            return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "emptySet", "()Ljava/util/Set;");
+            return SExecute<Java.Util.Set<T>>(LocalBridgeClazz, "emptySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#frequency(java.util.Collection,java.lang.Object)"/>
@@ -765,7 +765,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         public static void Reverse(Java.Util.List<object> arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "reverse", "(Ljava/util/List;)V", arg0);
+            SExecute(LocalBridgeClazz, "reverse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#rotate(java.util.List,int)"/>
@@ -791,7 +791,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         public static void Shuffle(Java.Util.List<object> arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "shuffle", "(Ljava/util/List;)V", arg0);
+            SExecute(LocalBridgeClazz, "shuffle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#swap(java.util.List,int,int)"/>

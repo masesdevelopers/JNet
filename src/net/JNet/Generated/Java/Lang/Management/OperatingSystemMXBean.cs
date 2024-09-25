@@ -135,35 +135,35 @@ namespace Java.Lang.Management
         /// </summary>
         public Java.Lang.String Arch
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getArch", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getArch"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/OperatingSystemMXBean.html#getAvailableProcessors()"/> 
         /// </summary>
         public int AvailableProcessors
         {
-            get { return IExecuteWithSignature<int>("getAvailableProcessors", "()I"); }
+            get { return IExecute<int>("getAvailableProcessors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/OperatingSystemMXBean.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage()"/> 
         /// </summary>
         public double SystemLoadAverage
         {
-            get { return IExecuteWithSignature<double>("getSystemLoadAverage", "()D"); }
+            get { return IExecute<double>("getSystemLoadAverage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/OperatingSystemMXBean.html#getVersion()"/> 
         /// </summary>
         public Java.Lang.String Version
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getVersion"); }
         }
 
         #endregion

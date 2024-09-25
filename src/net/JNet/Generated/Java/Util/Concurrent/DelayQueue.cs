@@ -155,7 +155,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Add(Java.Util.Concurrent.Delayed arg0)
         {
-            return IExecuteWithSignature<bool>("add", "(Ljava/util/concurrent/Delayed;)Z", arg0);
+            return IExecute<bool>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed,long,java.util.concurrent.TimeUnit)"/>
@@ -175,7 +175,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Offer(Java.Util.Concurrent.Delayed arg0)
         {
-            return IExecuteWithSignature<bool>("offer", "(Ljava/util/concurrent/Delayed;)Z", arg0);
+            return IExecute<bool>("offer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -206,7 +206,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainTo(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
+            return IExecute<int>("drainTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#remainingCapacity()"/>
@@ -214,7 +214,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int RemainingCapacity()
         {
-            return IExecuteWithSignature<int>("remainingCapacity", "()I");
+            return IExecute<int>("remainingCapacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
@@ -234,7 +234,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object Take()
         {
-            return IExecuteWithSignature("take", "()Ljava/lang/Object;");
+            return IExecute("take");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#put(java.util.concurrent.Delayed)"/>
@@ -242,7 +242,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Delayed"/></param>
         public void Put(Java.Util.Concurrent.Delayed arg0)
         {
-            IExecuteWithSignature("put", "(Ljava/util/concurrent/Delayed;)V", arg0);
+            IExecute("put", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#put(java.lang.Object)"/>
@@ -251,7 +251,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Put(object arg0)
         {
-            IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
+            IExecute("put", arg0);
         }
 
         #endregion
@@ -307,7 +307,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Add(E arg0)
         {
-            return IExecuteWithSignature<bool>("add", "(Ljava/util/concurrent/Delayed;)Z", arg0);
+            return IExecute<bool>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed,long,java.util.concurrent.TimeUnit)"/>
@@ -327,7 +327,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Offer(E arg0)
         {
-            return IExecuteWithSignature<bool>("offer", "(Ljava/util/concurrent/Delayed;)Z", arg0);
+            return IExecute<bool>("offer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -360,7 +360,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
-            return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
+            return IExecute<int>("drainTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#remainingCapacity()"/>
@@ -368,7 +368,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int RemainingCapacity()
         {
-            return IExecuteWithSignature<int>("remainingCapacity", "()I");
+            return IExecute<int>("remainingCapacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
@@ -388,7 +388,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object Take()
         {
-            return IExecuteWithSignature("take", "()Ljava/lang/Object;");
+            return IExecute("take");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#put(java.util.concurrent.Delayed)"/>
@@ -396,7 +396,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void Put(E arg0)
         {
-            IExecuteWithSignature("put", "(Ljava/util/concurrent/Delayed;)V", arg0);
+            IExecute("put", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#put(java.lang.Object)"/>
@@ -405,7 +405,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Put(object arg0)
         {
-            IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
+            IExecute("put", arg0);
         }
 
         #endregion

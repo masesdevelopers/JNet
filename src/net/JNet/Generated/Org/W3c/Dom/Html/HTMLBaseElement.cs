@@ -123,14 +123,14 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Href
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHref", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHref", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getHref"); } set { IExecute("setHref", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBaseElement.html#getTarget()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBaseElement.html#setTarget(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Target
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTarget", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTarget", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getTarget"); } set { IExecute("setTarget", value); }
         }
 
         #endregion

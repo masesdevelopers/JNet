@@ -203,7 +203,7 @@ namespace Java.Util.Function
         /// </summary>
         public long AsLong
         {
-            get { return IExecuteWithSignature<long>("getAsLong", "()J"); }
+            get { return IExecute<long>("getAsLong"); }
         }
 
         #endregion

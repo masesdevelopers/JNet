@@ -99,14 +99,14 @@ namespace Javax.Swing.Undo
         /// </summary>
         public int Limit
         {
-            get { return IExecuteWithSignature<int>("getLimit", "()I"); } set { IExecuteWithSignature("setLimit", "(I)V", value); }
+            get { return IExecute<int>("getLimit"); } set { IExecute("setLimit", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#getUndoOrRedoPresentationName()"/> 
         /// </summary>
         public Java.Lang.String UndoOrRedoPresentationName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUndoOrRedoPresentationName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getUndoOrRedoPresentationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#canUndoOrRedo()"/>
@@ -114,14 +114,14 @@ namespace Javax.Swing.Undo
         /// <returns><see cref="bool"/></returns>
         public bool CanUndoOrRedo()
         {
-            return IExecuteWithSignature<bool>("canUndoOrRedo", "()Z");
+            return IExecute<bool>("canUndoOrRedo");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#discardAllEdits()"/>
         /// </summary>
         public void DiscardAllEdits()
         {
-            IExecuteWithSignature("discardAllEdits", "()V");
+            IExecute("discardAllEdits");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)"/>
@@ -129,7 +129,7 @@ namespace Javax.Swing.Undo
         /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditEvent"/></param>
         public void UndoableEditHappened(Javax.Swing.Event.UndoableEditEvent arg0)
         {
-            IExecuteWithSignature("undoableEditHappened", "(Ljavax/swing/event/UndoableEditEvent;)V", arg0);
+            IExecute("undoableEditHappened", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#undoOrRedo()"/>
@@ -138,7 +138,7 @@ namespace Javax.Swing.Undo
         /// <exception cref="Javax.Swing.Undo.CannotUndoException"/>
         public void UndoOrRedo()
         {
-            IExecuteWithSignature("undoOrRedo", "()V");
+            IExecute("undoOrRedo");
         }
 
         #endregion

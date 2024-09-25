@@ -209,28 +209,28 @@ namespace Java.Awt.EventNs
         /// </summary>
         public int NewState
         {
-            get { return IExecuteWithSignature<int>("getNewState", "()I"); }
+            get { return IExecute<int>("getNewState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#getOldState()"/> 
         /// </summary>
         public int OldState
         {
-            get { return IExecuteWithSignature<int>("getOldState", "()I"); }
+            get { return IExecute<int>("getOldState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#getOppositeWindow()"/> 
         /// </summary>
         public Java.Awt.Window OppositeWindow
         {
-            get { return IExecuteWithSignature<Java.Awt.Window>("getOppositeWindow", "()Ljava/awt/Window;"); }
+            get { return IExecute<Java.Awt.Window>("getOppositeWindow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#getWindow()"/> 
         /// </summary>
         public Java.Awt.Window Window
         {
-            get { return IExecuteWithSignature<Java.Awt.Window>("getWindow", "()Ljava/awt/Window;"); }
+            get { return IExecute<Java.Awt.Window>("getWindow"); }
         }
 
         #endregion

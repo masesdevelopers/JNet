@@ -147,7 +147,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.XAConnection Build()
         {
-            return IExecuteWithSignature<Javax.Sql.XAConnection>("build", "()Ljavax/sql/XAConnection;");
+            return IExecute<Javax.Sql.XAConnection>("build");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#password(java.lang.String)"/>
@@ -156,7 +156,7 @@ namespace Javax.Sql
         /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
         public Javax.Sql.XAConnectionBuilder Password(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Sql.XAConnectionBuilder>("password", "(Ljava/lang/String;)Ljavax/sql/XAConnectionBuilder;", arg0);
+            return IExecute<Javax.Sql.XAConnectionBuilder>("password", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#shardingKey(java.sql.ShardingKey)"/>
@@ -165,7 +165,7 @@ namespace Javax.Sql
         /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
         public Javax.Sql.XAConnectionBuilder ShardingKey(Java.Sql.ShardingKey arg0)
         {
-            return IExecuteWithSignature<Javax.Sql.XAConnectionBuilder>("shardingKey", "(Ljava/sql/ShardingKey;)Ljavax/sql/XAConnectionBuilder;", arg0);
+            return IExecute<Javax.Sql.XAConnectionBuilder>("shardingKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#superShardingKey(java.sql.ShardingKey)"/>
@@ -174,7 +174,7 @@ namespace Javax.Sql
         /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
         public Javax.Sql.XAConnectionBuilder SuperShardingKey(Java.Sql.ShardingKey arg0)
         {
-            return IExecuteWithSignature<Javax.Sql.XAConnectionBuilder>("superShardingKey", "(Ljava/sql/ShardingKey;)Ljavax/sql/XAConnectionBuilder;", arg0);
+            return IExecute<Javax.Sql.XAConnectionBuilder>("superShardingKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#user(java.lang.String)"/>
@@ -183,7 +183,7 @@ namespace Javax.Sql
         /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
         public Javax.Sql.XAConnectionBuilder User(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Sql.XAConnectionBuilder>("user", "(Ljava/lang/String;)Ljavax/sql/XAConnectionBuilder;", arg0);
+            return IExecute<Javax.Sql.XAConnectionBuilder>("user", arg0);
         }
 
         #endregion

@@ -92,7 +92,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public static bool IsDesignTime()
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDesignTime", "()Z");
+            return SExecute<bool>(LocalBridgeClazz, "isDesignTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isGuiAvailable()"/>
@@ -100,7 +100,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public static bool IsGuiAvailable()
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isGuiAvailable", "()Z");
+            return SExecute<bool>(LocalBridgeClazz, "isGuiAvailable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isInstanceOf(java.lang.Object,java.lang.Class)"/>
@@ -154,7 +154,7 @@ namespace Java.Beans
         /// <exception cref="Java.Lang.SecurityException"/>
         public static void SetDesignTime(bool arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setDesignTime", "(Z)V", arg0);
+            SExecute(LocalBridgeClazz, "setDesignTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#setGuiAvailable(boolean)"/>
@@ -163,7 +163,7 @@ namespace Java.Beans
         /// <exception cref="Java.Lang.SecurityException"/>
         public static void SetGuiAvailable(bool arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setGuiAvailable", "(Z)V", arg0);
+            SExecute(LocalBridgeClazz, "setGuiAvailable", arg0);
         }
 
         #endregion

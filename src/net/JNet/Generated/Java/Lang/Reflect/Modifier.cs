@@ -165,7 +165,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsAbstract(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isAbstract", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isAbstract", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isFinal(int)"/>
@@ -174,7 +174,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsFinal(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isFinal", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isFinal", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isInterface(int)"/>
@@ -183,7 +183,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsInterface(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isInterface", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isInterface", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isNative(int)"/>
@@ -192,7 +192,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsNative(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNative", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isNative", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isPrivate(int)"/>
@@ -201,7 +201,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsPrivate(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isPrivate", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isPrivate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isProtected(int)"/>
@@ -210,7 +210,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsProtected(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isProtected", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isProtected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isPublic(int)"/>
@@ -219,7 +219,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsPublic(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isPublic", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isPublic", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isStatic(int)"/>
@@ -228,7 +228,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsStatic(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isStatic", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isStatic", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isStrict(int)"/>
@@ -237,7 +237,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsStrict(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isStrict", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isStrict", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isSynchronized(int)"/>
@@ -246,7 +246,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsSynchronized(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSynchronized", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isSynchronized", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isTransient(int)"/>
@@ -255,7 +255,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsTransient(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isTransient", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isTransient", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#isVolatile(int)"/>
@@ -264,7 +264,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsVolatile(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isVolatile", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isVolatile", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#classModifiers()"/>
@@ -280,7 +280,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="int"/></returns>
         public static int ConstructorModifiers()
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "constructorModifiers", "()I");
+            return SExecute<int>(LocalBridgeClazz, "constructorModifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#fieldModifiers()"/>
@@ -288,7 +288,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="int"/></returns>
         public static int FieldModifiers()
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "fieldModifiers", "()I");
+            return SExecute<int>(LocalBridgeClazz, "fieldModifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#interfaceModifiers()"/>
@@ -304,7 +304,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="int"/></returns>
         public static int MethodModifiers()
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "methodModifiers", "()I");
+            return SExecute<int>(LocalBridgeClazz, "methodModifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#parameterModifiers()"/>
@@ -312,7 +312,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="int"/></returns>
         public static int ParameterModifiers()
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "parameterModifiers", "()I");
+            return SExecute<int>(LocalBridgeClazz, "parameterModifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#toString(int)"/>
@@ -321,7 +321,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0);
         }
 
         #endregion

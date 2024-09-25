@@ -97,49 +97,49 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
-            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "()Ljava/awt/Rectangle;"); }
+            get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getBufferCapabilities()"/> 
         /// </summary>
         public Java.Awt.BufferCapabilities BufferCapabilities
         {
-            get { return IExecuteWithSignature<Java.Awt.BufferCapabilities>("getBufferCapabilities", "()Ljava/awt/BufferCapabilities;"); }
+            get { return IExecute<Java.Awt.BufferCapabilities>("getBufferCapabilities"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getColorModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.ColorModel ColorModel
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.ColorModel>("getColorModel", "()Ljava/awt/image/ColorModel;"); }
+            get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getDefaultTransform()"/> 
         /// </summary>
         public Java.Awt.Geom.AffineTransform DefaultTransform
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.AffineTransform>("getDefaultTransform", "()Ljava/awt/geom/AffineTransform;"); }
+            get { return IExecute<Java.Awt.Geom.AffineTransform>("getDefaultTransform"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getDevice()"/> 
         /// </summary>
         public Java.Awt.GraphicsDevice Device
         {
-            get { return IExecuteWithSignature<Java.Awt.GraphicsDevice>("getDevice", "()Ljava/awt/GraphicsDevice;"); }
+            get { return IExecute<Java.Awt.GraphicsDevice>("getDevice"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getImageCapabilities()"/> 
         /// </summary>
         public Java.Awt.ImageCapabilities ImageCapabilities
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageCapabilities>("getImageCapabilities", "()Ljava/awt/ImageCapabilities;"); }
+            get { return IExecute<Java.Awt.ImageCapabilities>("getImageCapabilities"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getNormalizingTransform()"/> 
         /// </summary>
         public Java.Awt.Geom.AffineTransform NormalizingTransform
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.AffineTransform>("getNormalizingTransform", "()Ljava/awt/geom/AffineTransform;"); }
+            get { return IExecute<Java.Awt.Geom.AffineTransform>("getNormalizingTransform"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getColorModel(int)"/>
@@ -148,7 +148,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.ImageNs.ColorModel"/></returns>
         public Java.Awt.ImageNs.ColorModel GetColorModel(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.ColorModel>("getColorModel", "(I)Ljava/awt/image/ColorModel;", arg0);
+            return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#isTranslucencyCapable()"/>
@@ -156,7 +156,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsTranslucencyCapable()
         {
-            return IExecuteWithSignature<bool>("isTranslucencyCapable", "()Z");
+            return IExecute<bool>("isTranslucencyCapable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleImage(int,int,int)"/>

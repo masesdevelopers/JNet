@@ -159,21 +159,21 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         public Java.Lang.String Expression
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getExpression", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getExpression"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#getFilter()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter GetFilter
         {
-            get { return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>("getFilter", "()Ljavax/xml/crypto/dsig/spec/XPathType$Filter;"); }
+            get { return IExecute<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>("getFilter"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#getNamespaceMap()"/> 
         /// </summary>
         public Java.Util.Map<Java.Lang.String, Java.Lang.String> NamespaceMap
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getNamespaceMap", "()Ljava/util/Map;"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getNamespaceMap"); }
         }
 
         #endregion

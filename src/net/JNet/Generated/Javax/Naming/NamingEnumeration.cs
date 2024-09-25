@@ -147,7 +147,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public bool HasMore()
         {
-            return IExecuteWithSignature<bool>("hasMore", "()Z");
+            return IExecute<bool>("hasMore");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
@@ -156,7 +156,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public object Next()
         {
-            return IExecuteWithSignature("next", "()Ljava/lang/Object;");
+            return IExecute("next");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
@@ -164,7 +164,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
 
         #endregion
@@ -243,7 +243,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public bool HasMore()
         {
-            return IExecuteWithSignature<bool>("hasMore", "()Z");
+            return IExecute<bool>("hasMore");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
@@ -252,7 +252,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public T Next()
         {
-            return IExecuteWithSignature<T>("next", "()Ljava/lang/Object;");
+            return IExecute<T>("next");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
@@ -260,7 +260,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
 
         #endregion

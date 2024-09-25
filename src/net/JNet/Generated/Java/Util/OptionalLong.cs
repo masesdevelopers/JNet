@@ -92,7 +92,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public static Java.Util.OptionalLong Empty()
         {
-            return SExecuteWithSignature<Java.Util.OptionalLong>(LocalBridgeClazz, "empty", "()Ljava/util/OptionalLong;");
+            return SExecute<Java.Util.OptionalLong>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#of(long)"/>
@@ -101,7 +101,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public static Java.Util.OptionalLong Of(long arg0)
         {
-            return SExecuteWithSignature<Java.Util.OptionalLong>(LocalBridgeClazz, "of", "(J)Ljava/util/OptionalLong;", arg0);
+            return SExecute<Java.Util.OptionalLong>(LocalBridgeClazz, "of", arg0);
         }
 
         #endregion
@@ -112,7 +112,7 @@ namespace Java.Util
         /// </summary>
         public long AsLong
         {
-            get { return IExecuteWithSignature<long>("getAsLong", "()J"); }
+            get { return IExecute<long>("getAsLong"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElseThrow(java.util.function.Supplier)"/>
@@ -132,7 +132,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#isPresent()"/>
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
         {
-            return IExecuteWithSignature<bool>("isPresent", "()Z");
+            return IExecute<bool>("isPresent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#stream()"/>
@@ -148,7 +148,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Stream()
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("stream", "()Ljava/util/stream/LongStream;");
+            return IExecute<Java.Util.Stream.LongStream>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElse(long)"/>
@@ -157,7 +157,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public long OrElse(long arg0)
         {
-            return IExecuteWithSignature<long>("orElse", "(J)J", arg0);
+            return IExecute<long>("orElse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElseGet(java.util.function.LongSupplier)"/>
@@ -166,7 +166,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public long OrElseGet(Java.Util.Function.LongSupplier arg0)
         {
-            return IExecuteWithSignature<long>("orElseGet", "(Ljava/util/function/LongSupplier;)J", arg0);
+            return IExecute<long>("orElseGet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElseThrow()"/>
@@ -174,7 +174,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public long OrElseThrow()
         {
-            return IExecuteWithSignature<long>("orElseThrow", "()J");
+            return IExecute<long>("orElseThrow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#ifPresent(java.util.function.LongConsumer)"/>
@@ -182,7 +182,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         public void IfPresent(Java.Util.Function.LongConsumer arg0)
         {
-            IExecuteWithSignature("ifPresent", "(Ljava/util/function/LongConsumer;)V", arg0);
+            IExecute("ifPresent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#ifPresentOrElse(java.util.function.LongConsumer,java.lang.Runnable)"/>

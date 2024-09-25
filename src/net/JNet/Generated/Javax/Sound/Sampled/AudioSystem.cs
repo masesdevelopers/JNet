@@ -97,21 +97,21 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public static Javax.Sound.Sampled.AudioFileFormat.Type[] AudioFileTypes
         {
-            get { return SExecuteWithSignatureArray<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalBridgeClazz, "getAudioFileTypes", "()[Ljavax/sound/sampled/AudioFileFormat$Type;"); }
+            get { return SExecuteArray<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalBridgeClazz, "getAudioFileTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getClip()"/> 
         /// </summary>
         public static Javax.Sound.Sampled.Clip Clip
         {
-            get { return SExecuteWithSignature<Javax.Sound.Sampled.Clip>(LocalBridgeClazz, "getClip", "()Ljavax/sound/sampled/Clip;"); }
+            get { return SExecute<Javax.Sound.Sampled.Clip>(LocalBridgeClazz, "getClip"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getMixerInfo()"/> 
         /// </summary>
         public static Javax.Sound.Sampled.Mixer.Info[] MixerInfo
         {
-            get { return SExecuteWithSignatureArray<Javax.Sound.Sampled.Mixer.Info>(LocalBridgeClazz, "getMixerInfo", "()[Ljavax/sound/sampled/Mixer$Info;"); }
+            get { return SExecuteArray<Javax.Sound.Sampled.Mixer.Info>(LocalBridgeClazz, "getMixerInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#isConversionSupported(javax.sound.sampled.AudioFormat,javax.sound.sampled.AudioFormat)"/>
@@ -150,7 +150,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="bool"/></returns>
         public static bool IsFileTypeSupported(Javax.Sound.Sampled.AudioFileFormat.Type arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isFileTypeSupported", "(Ljavax/sound/sampled/AudioFileFormat$Type;)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isFileTypeSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#isLineSupported(javax.sound.sampled.Line.Info)"/>
@@ -159,7 +159,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="bool"/></returns>
         public static bool IsLineSupported(Javax.Sound.Sampled.Line.Info arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLineSupported", "(Ljavax/sound/sampled/Line$Info;)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isLineSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#write(javax.sound.sampled.AudioInputStream,javax.sound.sampled.AudioFileFormat.Type,java.io.File)"/>
@@ -194,7 +194,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Sampled.AudioFileFormat GetAudioFileFormat(Java.Io.File arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Sampled.AudioFileFormat>(LocalBridgeClazz, "getAudioFileFormat", "(Ljava/io/File;)Ljavax/sound/sampled/AudioFileFormat;", arg0);
+            return SExecute<Javax.Sound.Sampled.AudioFileFormat>(LocalBridgeClazz, "getAudioFileFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileFormat(java.io.InputStream)"/>
@@ -205,7 +205,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Sampled.AudioFileFormat GetAudioFileFormat(Java.Io.InputStream arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Sampled.AudioFileFormat>(LocalBridgeClazz, "getAudioFileFormat", "(Ljava/io/InputStream;)Ljavax/sound/sampled/AudioFileFormat;", arg0);
+            return SExecute<Javax.Sound.Sampled.AudioFileFormat>(LocalBridgeClazz, "getAudioFileFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileFormat(java.net.URL)"/>
@@ -216,7 +216,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Sampled.AudioFileFormat GetAudioFileFormat(Java.Net.URL arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Sampled.AudioFileFormat>(LocalBridgeClazz, "getAudioFileFormat", "(Ljava/net/URL;)Ljavax/sound/sampled/AudioFileFormat;", arg0);
+            return SExecute<Javax.Sound.Sampled.AudioFileFormat>(LocalBridgeClazz, "getAudioFileFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileTypes(javax.sound.sampled.AudioInputStream)"/>
@@ -225,7 +225,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></returns>
         public static Javax.Sound.Sampled.AudioFileFormat.Type[] GetAudioFileTypes(Javax.Sound.Sampled.AudioInputStream arg0)
         {
-            return SExecuteWithSignatureArray<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalBridgeClazz, "getAudioFileTypes", "(Ljavax/sound/sampled/AudioInputStream;)[Ljavax/sound/sampled/AudioFileFormat$Type;", arg0);
+            return SExecuteArray<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalBridgeClazz, "getAudioFileTypes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetFormats(javax.sound.sampled.AudioFormat.Encoding,javax.sound.sampled.AudioFormat)"/>
@@ -244,7 +244,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></returns>
         public static Javax.Sound.Sampled.AudioFormat.Encoding[] GetTargetEncodings(Javax.Sound.Sampled.AudioFormat arg0)
         {
-            return SExecuteWithSignatureArray<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalBridgeClazz, "getTargetEncodings", "(Ljavax/sound/sampled/AudioFormat;)[Ljavax/sound/sampled/AudioFormat$Encoding;", arg0);
+            return SExecuteArray<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalBridgeClazz, "getTargetEncodings", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetEncodings(javax.sound.sampled.AudioFormat.Encoding)"/>
@@ -253,7 +253,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></returns>
         public static Javax.Sound.Sampled.AudioFormat.Encoding[] GetTargetEncodings(Javax.Sound.Sampled.AudioFormat.Encoding arg0)
         {
-            return SExecuteWithSignatureArray<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalBridgeClazz, "getTargetEncodings", "(Ljavax/sound/sampled/AudioFormat$Encoding;)[Ljavax/sound/sampled/AudioFormat$Encoding;", arg0);
+            return SExecuteArray<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalBridgeClazz, "getTargetEncodings", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(java.io.File)"/>
@@ -264,7 +264,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Java.Io.File arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>(LocalBridgeClazz, "getAudioInputStream", "(Ljava/io/File;)Ljavax/sound/sampled/AudioInputStream;", arg0);
+            return SExecute<Javax.Sound.Sampled.AudioInputStream>(LocalBridgeClazz, "getAudioInputStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(java.io.InputStream)"/>
@@ -275,7 +275,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Java.Io.InputStream arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>(LocalBridgeClazz, "getAudioInputStream", "(Ljava/io/InputStream;)Ljavax/sound/sampled/AudioInputStream;", arg0);
+            return SExecute<Javax.Sound.Sampled.AudioInputStream>(LocalBridgeClazz, "getAudioInputStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(java.net.URL)"/>
@@ -286,7 +286,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Java.Net.URL arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>(LocalBridgeClazz, "getAudioInputStream", "(Ljava/net/URL;)Ljavax/sound/sampled/AudioInputStream;", arg0);
+            return SExecute<Javax.Sound.Sampled.AudioInputStream>(LocalBridgeClazz, "getAudioInputStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(javax.sound.sampled.AudioFormat,javax.sound.sampled.AudioInputStream)"/>
@@ -316,7 +316,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public static Javax.Sound.Sampled.Clip GetClip(Javax.Sound.Sampled.Mixer.Info arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Sampled.Clip>(LocalBridgeClazz, "getClip", "(Ljavax/sound/sampled/Mixer$Info;)Ljavax/sound/sampled/Clip;", arg0);
+            return SExecute<Javax.Sound.Sampled.Clip>(LocalBridgeClazz, "getClip", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getLine(javax.sound.sampled.Line.Info)"/>
@@ -326,7 +326,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public static Javax.Sound.Sampled.Line GetLine(Javax.Sound.Sampled.Line.Info arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Sampled.Line>(LocalBridgeClazz, "getLine", "(Ljavax/sound/sampled/Line$Info;)Ljavax/sound/sampled/Line;", arg0);
+            return SExecute<Javax.Sound.Sampled.Line>(LocalBridgeClazz, "getLine", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getSourceLineInfo(javax.sound.sampled.Line.Info)"/>
@@ -335,7 +335,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="Javax.Sound.Sampled.Line.Info"/></returns>
         public static Javax.Sound.Sampled.Line.Info[] GetSourceLineInfo(Javax.Sound.Sampled.Line.Info arg0)
         {
-            return SExecuteWithSignatureArray<Javax.Sound.Sampled.Line.Info>(LocalBridgeClazz, "getSourceLineInfo", "(Ljavax/sound/sampled/Line$Info;)[Ljavax/sound/sampled/Line$Info;", arg0);
+            return SExecuteArray<Javax.Sound.Sampled.Line.Info>(LocalBridgeClazz, "getSourceLineInfo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetLineInfo(javax.sound.sampled.Line.Info)"/>
@@ -344,7 +344,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="Javax.Sound.Sampled.Line.Info"/></returns>
         public static Javax.Sound.Sampled.Line.Info[] GetTargetLineInfo(Javax.Sound.Sampled.Line.Info arg0)
         {
-            return SExecuteWithSignatureArray<Javax.Sound.Sampled.Line.Info>(LocalBridgeClazz, "getTargetLineInfo", "(Ljavax/sound/sampled/Line$Info;)[Ljavax/sound/sampled/Line$Info;", arg0);
+            return SExecuteArray<Javax.Sound.Sampled.Line.Info>(LocalBridgeClazz, "getTargetLineInfo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getMixer(javax.sound.sampled.Mixer.Info)"/>
@@ -353,7 +353,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="Javax.Sound.Sampled.Mixer"/></returns>
         public static Javax.Sound.Sampled.Mixer GetMixer(Javax.Sound.Sampled.Mixer.Info arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Sampled.Mixer>(LocalBridgeClazz, "getMixer", "(Ljavax/sound/sampled/Mixer$Info;)Ljavax/sound/sampled/Mixer;", arg0);
+            return SExecute<Javax.Sound.Sampled.Mixer>(LocalBridgeClazz, "getMixer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getSourceDataLine(javax.sound.sampled.AudioFormat,javax.sound.sampled.Mixer.Info)"/>
@@ -374,7 +374,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public static Javax.Sound.Sampled.SourceDataLine GetSourceDataLine(Javax.Sound.Sampled.AudioFormat arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Sampled.SourceDataLine>(LocalBridgeClazz, "getSourceDataLine", "(Ljavax/sound/sampled/AudioFormat;)Ljavax/sound/sampled/SourceDataLine;", arg0);
+            return SExecute<Javax.Sound.Sampled.SourceDataLine>(LocalBridgeClazz, "getSourceDataLine", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetDataLine(javax.sound.sampled.AudioFormat,javax.sound.sampled.Mixer.Info)"/>
@@ -395,7 +395,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public static Javax.Sound.Sampled.TargetDataLine GetTargetDataLine(Javax.Sound.Sampled.AudioFormat arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Sampled.TargetDataLine>(LocalBridgeClazz, "getTargetDataLine", "(Ljavax/sound/sampled/AudioFormat;)Ljavax/sound/sampled/TargetDataLine;", arg0);
+            return SExecute<Javax.Sound.Sampled.TargetDataLine>(LocalBridgeClazz, "getTargetDataLine", arg0);
         }
 
         #endregion

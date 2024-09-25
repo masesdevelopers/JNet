@@ -159,77 +159,77 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Align
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlign", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getAlt()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setAlt(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Alt
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlt", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlt", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAlt"); } set { IExecute("setAlt", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getArchive()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setArchive(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Archive
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getArchive", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setArchive", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getArchive"); } set { IExecute("setArchive", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getCode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setCode(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Code
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCode", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCode", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCode"); } set { IExecute("setCode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getCodeBase()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setCodeBase(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String CodeBase
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCodeBase", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCodeBase", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCodeBase"); } set { IExecute("setCodeBase", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setHeight(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Height
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHeight", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHeight", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getHeight"); } set { IExecute("setHeight", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getHspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setHspace(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Hspace
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHspace", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHspace", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getHspace"); } set { IExecute("setHspace", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getObject()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setObject(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Object
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getObject", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setObject", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getObject"); } set { IExecute("setObject", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getVspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setVspace(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Vspace
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVspace", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setVspace", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getVspace"); } set { IExecute("setVspace", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setWidth(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Width
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWidth", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setWidth", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getWidth"); } set { IExecute("setWidth", value); }
         }
 
         #endregion

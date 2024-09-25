@@ -205,7 +205,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public static Java.Math.BigInteger ValueOf(long arg0)
         {
-            return SExecuteWithSignature<Java.Math.BigInteger>(LocalBridgeClazz, "valueOf", "(J)Ljava/math/BigInteger;", arg0);
+            return SExecute<Java.Math.BigInteger>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion
@@ -216,7 +216,7 @@ namespace Java.Math
         /// </summary>
         public int LowestSetBit
         {
-            get { return IExecuteWithSignature<int>("getLowestSetBit", "()I"); }
+            get { return IExecute<int>("getLowestSetBit"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#isProbablePrime(int)"/>
@@ -225,7 +225,7 @@ namespace Java.Math
         /// <returns><see cref="bool"/></returns>
         public bool IsProbablePrime(int arg0)
         {
-            return IExecuteWithSignature<bool>("isProbablePrime", "(I)Z", arg0);
+            return IExecute<bool>("isProbablePrime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#testBit(int)"/>
@@ -234,7 +234,7 @@ namespace Java.Math
         /// <returns><see cref="bool"/></returns>
         public bool TestBit(int arg0)
         {
-            return IExecuteWithSignature<bool>("testBit", "(I)Z", arg0);
+            return IExecute<bool>("testBit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#byteValueExact()"/>
@@ -242,7 +242,7 @@ namespace Java.Math
         /// <returns><see cref="byte"/></returns>
         public byte ByteValueExact()
         {
-            return IExecuteWithSignature<byte>("byteValueExact", "()B");
+            return IExecute<byte>("byteValueExact");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#toByteArray()"/>
@@ -250,7 +250,7 @@ namespace Java.Math
         /// <returns><see cref="byte"/></returns>
         public byte[] ToByteArray()
         {
-            return IExecuteWithSignatureArray<byte>("toByteArray", "()[B");
+            return IExecuteArray<byte>("toByteArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#bitCount()"/>
@@ -258,7 +258,7 @@ namespace Java.Math
         /// <returns><see cref="int"/></returns>
         public int BitCount()
         {
-            return IExecuteWithSignature<int>("bitCount", "()I");
+            return IExecute<int>("bitCount");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#bitLength()"/>
@@ -266,7 +266,7 @@ namespace Java.Math
         /// <returns><see cref="int"/></returns>
         public int BitLength()
         {
-            return IExecuteWithSignature<int>("bitLength", "()I");
+            return IExecute<int>("bitLength");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#compareTo(java.lang.Object)"/>
@@ -275,7 +275,7 @@ namespace Java.Math
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#compareTo(java.math.BigInteger)"/>
@@ -284,7 +284,7 @@ namespace Java.Math
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/math/BigInteger;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#intValueExact()"/>
@@ -292,7 +292,7 @@ namespace Java.Math
         /// <returns><see cref="int"/></returns>
         public int IntValueExact()
         {
-            return IExecuteWithSignature<int>("intValueExact", "()I");
+            return IExecute<int>("intValueExact");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#signum()"/>
@@ -300,7 +300,7 @@ namespace Java.Math
         /// <returns><see cref="int"/></returns>
         public int Signum()
         {
-            return IExecuteWithSignature<int>("signum", "()I");
+            return IExecute<int>("signum");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#toString(int)"/>
@@ -309,7 +309,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToString(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("toString", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#abs()"/>
@@ -317,7 +317,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Abs()
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("abs", "()Ljava/math/BigInteger;");
+            return IExecute<Java.Math.BigInteger>("abs");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#add(java.math.BigInteger)"/>
@@ -326,7 +326,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Add(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("add", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#and(java.math.BigInteger)"/>
@@ -335,7 +335,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger And(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("and", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("and", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#andNot(java.math.BigInteger)"/>
@@ -344,7 +344,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger AndNot(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("andNot", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("andNot", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#clearBit(int)"/>
@@ -353,7 +353,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ClearBit(int arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("clearBit", "(I)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("clearBit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#divide(java.math.BigInteger)"/>
@@ -362,7 +362,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Divide(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("divide", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("divide", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#flipBit(int)"/>
@@ -371,7 +371,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger FlipBit(int arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("flipBit", "(I)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("flipBit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#gcd(java.math.BigInteger)"/>
@@ -380,7 +380,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Gcd(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("gcd", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("gcd", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#max(java.math.BigInteger)"/>
@@ -389,7 +389,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Max(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("max", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("max", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#min(java.math.BigInteger)"/>
@@ -398,7 +398,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Min(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("min", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("min", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#mod(java.math.BigInteger)"/>
@@ -407,7 +407,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Mod(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("mod", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("mod", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#modInverse(java.math.BigInteger)"/>
@@ -416,7 +416,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ModInverse(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("modInverse", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("modInverse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#modPow(java.math.BigInteger,java.math.BigInteger)"/>
@@ -435,7 +435,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Multiply(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("multiply", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("multiply", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#negate()"/>
@@ -443,7 +443,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Negate()
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("negate", "()Ljava/math/BigInteger;");
+            return IExecute<Java.Math.BigInteger>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#nextProbablePrime()"/>
@@ -451,7 +451,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger NextProbablePrime()
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("nextProbablePrime", "()Ljava/math/BigInteger;");
+            return IExecute<Java.Math.BigInteger>("nextProbablePrime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#not()"/>
@@ -459,7 +459,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Not()
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("not", "()Ljava/math/BigInteger;");
+            return IExecute<Java.Math.BigInteger>("not");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#or(java.math.BigInteger)"/>
@@ -468,7 +468,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Or(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("or", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("or", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#pow(int)"/>
@@ -477,7 +477,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Pow(int arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("pow", "(I)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("pow", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#remainder(java.math.BigInteger)"/>
@@ -486,7 +486,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Remainder(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("remainder", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("remainder", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#setBit(int)"/>
@@ -495,7 +495,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger SetBit(int arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("setBit", "(I)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("setBit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#shiftLeft(int)"/>
@@ -504,7 +504,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ShiftLeft(int arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("shiftLeft", "(I)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("shiftLeft", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#shiftRight(int)"/>
@@ -513,7 +513,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ShiftRight(int arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("shiftRight", "(I)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("shiftRight", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#sqrt()"/>
@@ -521,7 +521,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Sqrt()
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("sqrt", "()Ljava/math/BigInteger;");
+            return IExecute<Java.Math.BigInteger>("sqrt");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#subtract(java.math.BigInteger)"/>
@@ -530,7 +530,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Subtract(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("subtract", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("subtract", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#xor(java.math.BigInteger)"/>
@@ -539,7 +539,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Xor(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigInteger>("xor", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;", arg0);
+            return IExecute<Java.Math.BigInteger>("xor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#divideAndRemainder(java.math.BigInteger)"/>
@@ -548,7 +548,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger[] DivideAndRemainder(Java.Math.BigInteger arg0)
         {
-            return IExecuteWithSignatureArray<Java.Math.BigInteger>("divideAndRemainder", "(Ljava/math/BigInteger;)[Ljava/math/BigInteger;", arg0);
+            return IExecuteArray<Java.Math.BigInteger>("divideAndRemainder", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#sqrtAndRemainder()"/>
@@ -556,7 +556,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger[] SqrtAndRemainder()
         {
-            return IExecuteWithSignatureArray<Java.Math.BigInteger>("sqrtAndRemainder", "()[Ljava/math/BigInteger;");
+            return IExecuteArray<Java.Math.BigInteger>("sqrtAndRemainder");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#longValueExact()"/>
@@ -564,7 +564,7 @@ namespace Java.Math
         /// <returns><see cref="long"/></returns>
         public long LongValueExact()
         {
-            return IExecuteWithSignature<long>("longValueExact", "()J");
+            return IExecute<long>("longValueExact");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#shortValueExact()"/>
@@ -572,7 +572,7 @@ namespace Java.Math
         /// <returns><see cref="short"/></returns>
         public short ShortValueExact()
         {
-            return IExecuteWithSignature<short>("shortValueExact", "()S");
+            return IExecute<short>("shortValueExact");
         }
 
         #endregion

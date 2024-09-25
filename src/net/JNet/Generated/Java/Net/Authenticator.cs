@@ -138,7 +138,7 @@ namespace Java.Net
         /// </summary>
         public static Java.Net.Authenticator Default
         {
-            get { return SExecuteWithSignature<Java.Net.Authenticator>(LocalBridgeClazz, "getDefault", "()Ljava/net/Authenticator;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/Authenticator;)V", value); }
+            get { return SExecute<Java.Net.Authenticator>(LocalBridgeClazz, "getDefault"); } set { SExecute(LocalBridgeClazz, "setDefault", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>

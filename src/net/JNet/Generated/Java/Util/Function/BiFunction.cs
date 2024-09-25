@@ -225,7 +225,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiFunction AndThenDefault(Java.Util.Function.Function arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.BiFunction>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
+            return IExecute<Java.Util.Function.BiFunction>("andThenDefault", arg0);
         }
 
         /// <summary>
@@ -301,7 +301,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
         public override Java.Util.Function.BiFunction AndThen(Java.Util.Function.Function arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect, Java.Util.Function.BiFunction>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
+            return IExecute<Java.Util.Function.BiFunctionDirect, Java.Util.Function.BiFunction>("andThen", arg0);
         }
 
         #endregion
@@ -414,7 +414,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return IExecuteWithSignature<Java.Util.Function.BiFunction<T, U, V>>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
+            return IExecute<Java.Util.Function.BiFunction<T, U, V>>("andThenDefault", arg0);
         }
 
         /// <summary>
@@ -496,7 +496,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
         public override Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect<T, U, V>, Java.Util.Function.BiFunction<T, U, V>>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
+            return IExecute<Java.Util.Function.BiFunctionDirect<T, U, V>, Java.Util.Function.BiFunction<T, U, V>>("andThen", arg0);
         }
 
         #endregion

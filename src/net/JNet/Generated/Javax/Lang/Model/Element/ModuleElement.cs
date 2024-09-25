@@ -576,35 +576,35 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public Java.Util.List Directives
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getDirectives", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List>("getDirectives"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getEnclosedElements()"/> 
         /// </summary>
         public Java.Util.List EnclosedElements
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getEnclosedElements", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List>("getEnclosedElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Element>("getEnclosingElement", "()Ljavax/lang/model/element/Element;"); }
+            get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getQualifiedName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name QualifiedName
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getQualifiedName", "()Ljavax/lang/model/element/Name;"); }
+            get { return IExecute<Javax.Lang.Model.Element.Name>("getQualifiedName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getSimpleName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name SimpleName
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getSimpleName", "()Ljavax/lang/model/element/Name;"); }
+            get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isOpen()"/>
@@ -612,7 +612,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
         {
-            return IExecuteWithSignature<bool>("isOpen", "()Z");
+            return IExecute<bool>("isOpen");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isUnnamed()"/>
@@ -620,7 +620,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="bool"/></returns>
         public bool IsUnnamed()
         {
-            return IExecuteWithSignature<bool>("isUnnamed", "()Z");
+            return IExecute<bool>("isUnnamed");
         }
 
         #endregion
@@ -663,7 +663,7 @@ namespace Javax.Lang.Model.Element
             /// <returns><typeparamref name="R"/></returns>
             public R Accept<R, P>(Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor<R, P> arg0, P arg1)
             {
-                return IExecute<R>("accept", arg0, arg1);
+                return IExecuteWithSignature<R>("accept", "(Ljavax/lang/model/element/ModuleElement$DirectiveVisitor;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
             }
 
             #endregion
@@ -729,7 +729,7 @@ namespace Javax.Lang.Model.Element
             /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveKind"/></returns>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind ValueOf(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/element/ModuleElement$DirectiveKind;", arg0);
+                return SExecute<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "valueOf", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#values()"/>
@@ -737,7 +737,7 @@ namespace Javax.Lang.Model.Element
             /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveKind"/></returns>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind[] Values()
             {
-                return SExecuteWithSignatureArray<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/element/ModuleElement$DirectiveKind;");
+                return SExecuteArray<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "values");
             }
 
             #endregion
@@ -841,7 +841,7 @@ namespace Javax.Lang.Model.Element
             /// <returns><see cref="object"/></returns>
             public object Visit(Javax.Lang.Model.Element.ModuleElement.Directive arg0)
             {
-                return IExecuteWithSignature("visit", "(Ljavax/lang/model/element/ModuleElement$Directive;)Ljava/lang/Object;", arg0);
+                return IExecute("visit", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUnknown(javax.lang.model.element.ModuleElement.Directive,java.lang.Object)"/>
@@ -955,7 +955,7 @@ namespace Javax.Lang.Model.Element
             /// <returns><typeparamref name="R"/></returns>
             public R Visit(Javax.Lang.Model.Element.ModuleElement.Directive arg0)
             {
-                return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/element/ModuleElement$Directive;)Ljava/lang/Object;", arg0);
+                return IExecute<R>("visit", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUnknown(javax.lang.model.element.ModuleElement.Directive,java.lang.Object)"/>
@@ -1003,14 +1003,14 @@ namespace Javax.Lang.Model.Element
             /// </summary>
             public Javax.Lang.Model.Element.PackageElement Package
             {
-                get { return IExecuteWithSignature<Javax.Lang.Model.Element.PackageElement>("getPackage", "()Ljavax/lang/model/element/PackageElement;"); }
+                get { return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackage"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ExportsDirective.html#getTargetModules()"/> 
             /// </summary>
             public Java.Util.List TargetModules
             {
-                get { return IExecuteWithSignature<Java.Util.List>("getTargetModules", "()Ljava/util/List;"); }
+                get { return IExecute<Java.Util.List>("getTargetModules"); }
             }
 
             #endregion
@@ -1048,14 +1048,14 @@ namespace Javax.Lang.Model.Element
             /// </summary>
             public Javax.Lang.Model.Element.PackageElement Package
             {
-                get { return IExecuteWithSignature<Javax.Lang.Model.Element.PackageElement>("getPackage", "()Ljavax/lang/model/element/PackageElement;"); }
+                get { return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackage"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.OpensDirective.html#getTargetModules()"/> 
             /// </summary>
             public Java.Util.List TargetModules
             {
-                get { return IExecuteWithSignature<Java.Util.List>("getTargetModules", "()Ljava/util/List;"); }
+                get { return IExecute<Java.Util.List>("getTargetModules"); }
             }
 
             #endregion
@@ -1093,14 +1093,14 @@ namespace Javax.Lang.Model.Element
             /// </summary>
             public Java.Util.List Implementations
             {
-                get { return IExecuteWithSignature<Java.Util.List>("getImplementations", "()Ljava/util/List;"); }
+                get { return IExecute<Java.Util.List>("getImplementations"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ProvidesDirective.html#getService()"/> 
             /// </summary>
             public Javax.Lang.Model.Element.TypeElement Service
             {
-                get { return IExecuteWithSignature<Javax.Lang.Model.Element.TypeElement>("getService", "()Ljavax/lang/model/element/TypeElement;"); }
+                get { return IExecute<Javax.Lang.Model.Element.TypeElement>("getService"); }
             }
 
             #endregion
@@ -1138,7 +1138,7 @@ namespace Javax.Lang.Model.Element
             /// </summary>
             public Javax.Lang.Model.Element.ModuleElement Dependency
             {
-                get { return IExecuteWithSignature<Javax.Lang.Model.Element.ModuleElement>("getDependency", "()Ljavax/lang/model/element/ModuleElement;"); }
+                get { return IExecute<Javax.Lang.Model.Element.ModuleElement>("getDependency"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isStatic()"/>
@@ -1146,7 +1146,7 @@ namespace Javax.Lang.Model.Element
             /// <returns><see cref="bool"/></returns>
             public bool IsStatic()
             {
-                return IExecuteWithSignature<bool>("isStatic", "()Z");
+                return IExecute<bool>("isStatic");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isTransitive()"/>
@@ -1154,7 +1154,7 @@ namespace Javax.Lang.Model.Element
             /// <returns><see cref="bool"/></returns>
             public bool IsTransitive()
             {
-                return IExecuteWithSignature<bool>("isTransitive", "()Z");
+                return IExecute<bool>("isTransitive");
             }
 
             #endregion
@@ -1192,7 +1192,7 @@ namespace Javax.Lang.Model.Element
             /// </summary>
             public Javax.Lang.Model.Element.TypeElement Service
             {
-                get { return IExecuteWithSignature<Javax.Lang.Model.Element.TypeElement>("getService", "()Ljavax/lang/model/element/TypeElement;"); }
+                get { return IExecute<Javax.Lang.Model.Element.TypeElement>("getService"); }
             }
 
             #endregion

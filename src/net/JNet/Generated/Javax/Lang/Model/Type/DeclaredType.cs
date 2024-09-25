@@ -128,14 +128,14 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror EnclosingType
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("getEnclosingType", "()Ljavax/lang/model/type/TypeMirror;"); }
+            get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getEnclosingType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#getTypeArguments()"/> 
         /// </summary>
         public Java.Util.List TypeArguments
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getTypeArguments", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List>("getTypeArguments"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#asElement()"/>
@@ -143,7 +143,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
         public Javax.Lang.Model.Element.Element AsElement()
         {
-            return IExecuteWithSignature<Javax.Lang.Model.Element.Element>("asElement", "()Ljavax/lang/model/element/Element;");
+            return IExecute<Javax.Lang.Model.Element.Element>("asElement");
         }
 
         #endregion

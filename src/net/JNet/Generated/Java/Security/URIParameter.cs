@@ -103,7 +103,7 @@ namespace Java.Security
         /// </summary>
         public Java.Net.URI URI
         {
-            get { return IExecuteWithSignature<Java.Net.URI>("getURI", "()Ljava/net/URI;"); }
+            get { return IExecute<Java.Net.URI>("getURI"); }
         }
 
         #endregion

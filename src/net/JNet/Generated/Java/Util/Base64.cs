@@ -181,42 +181,42 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.Base64.Decoder GetDecoder
         {
-            get { return SExecuteWithSignature<Java.Util.Base64.Decoder>(LocalBridgeClazz, "getDecoder", "()Ljava/util/Base64$Decoder;"); }
+            get { return SExecute<Java.Util.Base64.Decoder>(LocalBridgeClazz, "getDecoder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getEncoder()"/> 
         /// </summary>
         public static Java.Util.Base64.Encoder GetEncoder
         {
-            get { return SExecuteWithSignature<Java.Util.Base64.Encoder>(LocalBridgeClazz, "getEncoder", "()Ljava/util/Base64$Encoder;"); }
+            get { return SExecute<Java.Util.Base64.Encoder>(LocalBridgeClazz, "getEncoder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getMimeDecoder()"/> 
         /// </summary>
         public static Java.Util.Base64.Decoder MimeDecoder
         {
-            get { return SExecuteWithSignature<Java.Util.Base64.Decoder>(LocalBridgeClazz, "getMimeDecoder", "()Ljava/util/Base64$Decoder;"); }
+            get { return SExecute<Java.Util.Base64.Decoder>(LocalBridgeClazz, "getMimeDecoder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getMimeEncoder()"/> 
         /// </summary>
         public static Java.Util.Base64.Encoder MimeEncoder
         {
-            get { return SExecuteWithSignature<Java.Util.Base64.Encoder>(LocalBridgeClazz, "getMimeEncoder", "()Ljava/util/Base64$Encoder;"); }
+            get { return SExecute<Java.Util.Base64.Encoder>(LocalBridgeClazz, "getMimeEncoder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getUrlDecoder()"/> 
         /// </summary>
         public static Java.Util.Base64.Decoder UrlDecoder
         {
-            get { return SExecuteWithSignature<Java.Util.Base64.Decoder>(LocalBridgeClazz, "getUrlDecoder", "()Ljava/util/Base64$Decoder;"); }
+            get { return SExecute<Java.Util.Base64.Decoder>(LocalBridgeClazz, "getUrlDecoder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getUrlEncoder()"/> 
         /// </summary>
         public static Java.Util.Base64.Encoder UrlEncoder
         {
-            get { return SExecuteWithSignature<Java.Util.Base64.Encoder>(LocalBridgeClazz, "getUrlEncoder", "()Ljava/util/Base64$Encoder;"); }
+            get { return SExecute<Java.Util.Base64.Encoder>(LocalBridgeClazz, "getUrlEncoder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getMimeEncoder(int,byte[])"/>
@@ -282,7 +282,7 @@ namespace Java.Util
             /// <returns><see cref="int"/></returns>
             public int Decode(byte[] arg0, byte[] arg1)
             {
-                return IExecute<int>("decode", arg0, arg1);
+                return IExecuteWithSignature<int>("decode", "([B[B)I", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#wrap(java.io.InputStream)"/>
@@ -340,7 +340,7 @@ namespace Java.Util
             /// <returns><see cref="byte"/></returns>
             public byte[] Encode(byte[] arg0)
             {
-                return IExecuteWithSignatureArray<byte>("encode", "([B)[B", new object[] { arg0 });
+                return IExecuteArray<byte>("encode", new object[] { arg0 });
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#encode(byte[],byte[])"/>
@@ -359,7 +359,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Io.OutputStream"/></returns>
             public Java.Io.OutputStream Wrap(Java.Io.OutputStream arg0)
             {
-                return IExecuteWithSignature<Java.Io.OutputStream>("wrap", "(Ljava/io/OutputStream;)Ljava/io/OutputStream;", arg0);
+                return IExecute<Java.Io.OutputStream>("wrap", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#encodeToString(byte[])"/>
@@ -368,7 +368,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String EncodeToString(byte[] arg0)
             {
-                return IExecuteWithSignature<Java.Lang.String>("encodeToString", "([B)Ljava/lang/String;", new object[] { arg0 });
+                return IExecute<Java.Lang.String>("encodeToString", new object[] { arg0 });
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#encode(java.nio.ByteBuffer)"/>
@@ -377,7 +377,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
             public Java.Nio.ByteBuffer Encode(Java.Nio.ByteBuffer arg0)
             {
-                return IExecuteWithSignature<Java.Nio.ByteBuffer>("encode", "(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;", arg0);
+                return IExecute<Java.Nio.ByteBuffer>("encode", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#withoutPadding()"/>
@@ -385,7 +385,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Base64.Encoder"/></returns>
             public Java.Util.Base64.Encoder WithoutPadding()
             {
-                return IExecuteWithSignature<Java.Util.Base64.Encoder>("withoutPadding", "()Ljava/util/Base64$Encoder;");
+                return IExecute<Java.Util.Base64.Encoder>("withoutPadding");
             }
 
             #endregion

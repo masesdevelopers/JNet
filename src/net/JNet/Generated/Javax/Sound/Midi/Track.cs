@@ -97,7 +97,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="bool"/></returns>
         public bool Add(Javax.Sound.Midi.MidiEvent arg0)
         {
-            return IExecuteWithSignature<bool>("add", "(Ljavax/sound/midi/MidiEvent;)Z", arg0);
+            return IExecute<bool>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#remove(javax.sound.midi.MidiEvent)"/>
@@ -106,7 +106,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="bool"/></returns>
         public bool Remove(Javax.Sound.Midi.MidiEvent arg0)
         {
-            return IExecuteWithSignature<bool>("remove", "(Ljavax/sound/midi/MidiEvent;)Z", arg0);
+            return IExecute<bool>("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#size()"/>
@@ -114,7 +114,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#get(int)"/>
@@ -124,7 +124,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public Javax.Sound.Midi.MidiEvent Get(int arg0)
         {
-            return IExecuteWithSignature<Javax.Sound.Midi.MidiEvent>("get", "(I)Ljavax/sound/midi/MidiEvent;", arg0);
+            return IExecute<Javax.Sound.Midi.MidiEvent>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#ticks()"/>
@@ -132,7 +132,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="long"/></returns>
         public long Ticks()
         {
-            return IExecuteWithSignature<long>("ticks", "()J");
+            return IExecute<long>("ticks");
         }
 
         #endregion

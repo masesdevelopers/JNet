@@ -455,35 +455,35 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Javax.Swing.Plaf.Basic.BasicSplitPaneDivider Divider
         {
-            get { return IExecuteWithSignature<Javax.Swing.Plaf.Basic.BasicSplitPaneDivider>("getDivider", "()Ljavax/swing/plaf/basic/BasicSplitPaneDivider;"); }
+            get { return IExecute<Javax.Swing.Plaf.Basic.BasicSplitPaneDivider>("getDivider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getLastDragLocation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#setLastDragLocation(int)"/>
         /// </summary>
         public int LastDragLocation
         {
-            get { return IExecuteWithSignature<int>("getLastDragLocation", "()I"); } set { IExecuteWithSignature("setLastDragLocation", "(I)V", value); }
+            get { return IExecute<int>("getLastDragLocation"); } set { IExecute("setLastDragLocation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getNonContinuousLayoutDivider()"/> 
         /// </summary>
         public Java.Awt.Component NonContinuousLayoutDivider
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getNonContinuousLayoutDivider", "()Ljava/awt/Component;"); }
+            get { return IExecute<Java.Awt.Component>("getNonContinuousLayoutDivider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#setOrientation(int)"/>
         /// </summary>
         public int Orientation
         {
-            get { return IExecuteWithSignature<int>("getOrientation", "()I"); } set { IExecuteWithSignature("setOrientation", "(I)V", value); }
+            get { return IExecute<int>("getOrientation"); } set { IExecute("setOrientation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getSplitPane()"/> 
         /// </summary>
         public Javax.Swing.JSplitPane SplitPane
         {
-            get { return IExecuteWithSignature<Javax.Swing.JSplitPane>("getSplitPane", "()Ljavax/swing/JSplitPane;"); }
+            get { return IExecute<Javax.Swing.JSplitPane>("getSplitPane"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#isContinuousLayout()"/>
@@ -491,7 +491,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="bool"/></returns>
         public bool IsContinuousLayout()
         {
-            return IExecuteWithSignature<bool>("isContinuousLayout", "()Z");
+            return IExecute<bool>("isContinuousLayout");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getInsets(javax.swing.JComponent)"/>
@@ -500,7 +500,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetInsets(Javax.Swing.JComponent arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Insets>("getInsets", "(Ljavax/swing/JComponent;)Ljava/awt/Insets;", arg0);
+            return IExecute<Java.Awt.Insets>("getInsets", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#createDefaultDivider()"/>
@@ -508,7 +508,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneDivider"/></returns>
         public Javax.Swing.Plaf.Basic.BasicSplitPaneDivider CreateDefaultDivider()
         {
-            return IExecuteWithSignature<Javax.Swing.Plaf.Basic.BasicSplitPaneDivider>("createDefaultDivider", "()Ljavax/swing/plaf/basic/BasicSplitPaneDivider;");
+            return IExecute<Javax.Swing.Plaf.Basic.BasicSplitPaneDivider>("createDefaultDivider");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#setContinuousLayout(boolean)"/>
@@ -516,7 +516,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetContinuousLayout(bool arg0)
         {
-            IExecuteWithSignature("setContinuousLayout", "(Z)V", arg0);
+            IExecute("setContinuousLayout", arg0);
         }
 
         #endregion
@@ -594,7 +594,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg1"><see cref="object"/></param>
             public void AddLayoutComponent(Java.Awt.Component arg0, object arg1)
             {
-                IExecute("addLayoutComponent", arg0, arg1);
+                IExecuteWithSignature("addLayoutComponent", "(Ljava/awt/Component;Ljava/lang/Object;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
@@ -603,7 +603,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
             public void AddLayoutComponent(Java.Lang.String arg0, Java.Awt.Component arg1)
             {
-                IExecute("addLayoutComponent", arg0, arg1);
+                IExecuteWithSignature("addLayoutComponent", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#invalidateLayout(java.awt.Container)"/>
@@ -724,7 +724,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
             public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
             {
-                IExecuteWithSignature("actionPerformed", "(Ljava/awt/event/ActionEvent;)V", arg0);
+                IExecute("actionPerformed", arg0);
             }
 
             #endregion
@@ -775,7 +775,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
             public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
             {
-                IExecuteWithSignature("actionPerformed", "(Ljava/awt/event/ActionEvent;)V", arg0);
+                IExecute("actionPerformed", arg0);
             }
 
             #endregion
@@ -826,7 +826,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
             public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
             {
-                IExecuteWithSignature("actionPerformed", "(Ljava/awt/event/ActionEvent;)V", arg0);
+                IExecute("actionPerformed", arg0);
             }
 
             #endregion
@@ -877,7 +877,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
             public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
             {
-                IExecuteWithSignature("actionPerformed", "(Ljava/awt/event/ActionEvent;)V", arg0);
+                IExecute("actionPerformed", arg0);
             }
 
             #endregion
@@ -928,7 +928,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
             public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
             {
-                IExecuteWithSignature("actionPerformed", "(Ljava/awt/event/ActionEvent;)V", arg0);
+                IExecute("actionPerformed", arg0);
             }
 
             #endregion
@@ -979,7 +979,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
-                IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
+                IExecute("propertyChange", arg0);
             }
 
             #endregion

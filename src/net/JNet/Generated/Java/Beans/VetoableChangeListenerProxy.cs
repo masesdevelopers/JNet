@@ -108,7 +108,7 @@ namespace Java.Beans
         /// </summary>
         public Java.Lang.String PropertyName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPropertyName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html#vetoableChange(java.beans.PropertyChangeEvent)"/>
@@ -117,7 +117,7 @@ namespace Java.Beans
         /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void VetoableChange(Java.Beans.PropertyChangeEvent arg0)
         {
-            IExecuteWithSignature("vetoableChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
+            IExecute("vetoableChange", arg0);
         }
 
         #endregion

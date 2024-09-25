@@ -103,7 +103,7 @@ namespace Java.Io
         /// </summary>
         public Java.Lang.StringBuffer Buffer
         {
-            get { return IExecuteWithSignature<Java.Lang.StringBuffer>("getBuffer", "()Ljava/lang/StringBuffer;"); }
+            get { return IExecute<Java.Lang.StringBuffer>("getBuffer"); }
         }
 
         #endregion

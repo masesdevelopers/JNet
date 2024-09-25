@@ -129,7 +129,7 @@ namespace Java.Awt
         /// </summary>
         public object[] SelectedObjects
         {
-            get { return IExecuteWithSignatureArray<object>("getSelectedObjects", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getSelectedObjects"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ItemSelectable.html#addItemListener(java.awt.event.ItemListener)"/>
@@ -137,7 +137,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecuteWithSignature("addItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
+            IExecute("addItemListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ItemSelectable.html#removeItemListener(java.awt.event.ItemListener)"/>
@@ -145,7 +145,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecuteWithSignature("removeItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
+            IExecute("removeItemListener", arg0);
         }
 
         #endregion

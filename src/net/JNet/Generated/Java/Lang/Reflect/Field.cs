@@ -99,42 +99,42 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType AnnotatedType
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.AnnotatedType>("getAnnotatedType", "()Ljava/lang/reflect/AnnotatedType;"); }
+            get { return IExecute<Java.Lang.Reflect.AnnotatedType>("getAnnotatedType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getDeclaringClass()"/> 
         /// </summary>
         public Java.Lang.Class DeclaringClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getGenericType()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type GenericType
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getGenericType", "()Ljava/lang/reflect/Type;"); }
+            get { return IExecute<Java.Lang.Reflect.Type>("getGenericType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers
         {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
+            get { return IExecute<int>("getModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getType()"/> 
         /// </summary>
         public Java.Lang.Class Type
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getBoolean(java.lang.Object)"/>
@@ -145,7 +145,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public bool GetBoolean(object arg0)
         {
-            return IExecuteWithSignature<bool>("getBoolean", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("getBoolean", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#isEnumConstant()"/>
@@ -153,7 +153,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public bool IsEnumConstant()
         {
-            return IExecuteWithSignature<bool>("isEnumConstant", "()Z");
+            return IExecute<bool>("isEnumConstant");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#isSynthetic()"/>
@@ -161,7 +161,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
         {
-            return IExecuteWithSignature<bool>("isSynthetic", "()Z");
+            return IExecute<bool>("isSynthetic");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getByte(java.lang.Object)"/>
@@ -172,7 +172,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public byte GetByte(object arg0)
         {
-            return IExecuteWithSignature<byte>("getByte", "(Ljava/lang/Object;)B", arg0);
+            return IExecute<byte>("getByte", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getChar(java.lang.Object)"/>
@@ -183,7 +183,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public char GetChar(object arg0)
         {
-            return IExecuteWithSignature<char>("getChar", "(Ljava/lang/Object;)C", arg0);
+            return IExecute<char>("getChar", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getDouble(java.lang.Object)"/>
@@ -194,7 +194,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public double GetDouble(object arg0)
         {
-            return IExecuteWithSignature<double>("getDouble", "(Ljava/lang/Object;)D", arg0);
+            return IExecute<double>("getDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getFloat(java.lang.Object)"/>
@@ -205,7 +205,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public float GetFloat(object arg0)
         {
-            return IExecuteWithSignature<float>("getFloat", "(Ljava/lang/Object;)F", arg0);
+            return IExecute<float>("getFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getInt(java.lang.Object)"/>
@@ -216,7 +216,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public int GetInt(object arg0)
         {
-            return IExecuteWithSignature<int>("getInt", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("getInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#get(java.lang.Object)"/>
@@ -227,7 +227,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public object Get(object arg0)
         {
-            return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#toGenericString()"/>
@@ -235,7 +235,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToGenericString()
         {
-            return IExecuteWithSignature<Java.Lang.String>("toGenericString", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("toGenericString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getLong(java.lang.Object)"/>
@@ -246,7 +246,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public long GetLong(object arg0)
         {
-            return IExecuteWithSignature<long>("getLong", "(Ljava/lang/Object;)J", arg0);
+            return IExecute<long>("getLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getShort(java.lang.Object)"/>
@@ -257,7 +257,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalAccessException"/>
         public short GetShort(object arg0)
         {
-            return IExecuteWithSignature<short>("getShort", "(Ljava/lang/Object;)S", arg0);
+            return IExecute<short>("getShort", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#set(java.lang.Object,java.lang.Object)"/>

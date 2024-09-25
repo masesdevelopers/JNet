@@ -99,7 +99,7 @@ namespace Javax.Management
         /// </summary>
         public Java.Util.Vector<Java.Lang.String> EnabledAttributes
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<Java.Lang.String>>("getEnabledAttributes", "()Ljava/util/Vector;"); }
+            get { return IExecute<Java.Util.Vector<Java.Lang.String>>("getEnabledAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
@@ -108,14 +108,14 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsNotificationEnabled(Javax.Management.Notification arg0)
         {
-            return IExecuteWithSignature<bool>("isNotificationEnabled", "(Ljavax/management/Notification;)Z", arg0);
+            return IExecute<bool>("isNotificationEnabled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#disableAllAttributes()"/>
         /// </summary>
         public void DisableAllAttributes()
         {
-            IExecuteWithSignature("disableAllAttributes", "()V");
+            IExecute("disableAllAttributes");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#disableAttribute(java.lang.String)"/>
@@ -123,7 +123,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void DisableAttribute(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("disableAttribute", "(Ljava/lang/String;)V", arg0);
+            IExecute("disableAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#enableAttribute(java.lang.String)"/>
@@ -132,7 +132,7 @@ namespace Javax.Management
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void EnableAttribute(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("enableAttribute", "(Ljava/lang/String;)V", arg0);
+            IExecute("enableAttribute", arg0);
         }
 
         #endregion

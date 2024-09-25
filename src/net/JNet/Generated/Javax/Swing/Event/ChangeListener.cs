@@ -204,7 +204,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
         public override void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
         {
-            IExecuteWithSignature("stateChanged", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
+            IExecute("stateChanged", arg0);
         }
 
         #endregion

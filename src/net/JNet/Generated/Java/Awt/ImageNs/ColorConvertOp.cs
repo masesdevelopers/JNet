@@ -139,14 +139,14 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public Java.Awt.ColorNs.ICC_Profile[] ICC_Profiles
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.ColorNs.ICC_Profile>("getICC_Profiles", "()[Ljava/awt/color/ICC_Profile;"); }
+            get { return IExecuteArray<Java.Awt.ColorNs.ICC_Profile>("getICC_Profiles"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorConvertOp.html#getRenderingHints()"/> 
         /// </summary>
         public Java.Awt.RenderingHints RenderingHints
         {
-            get { return IExecuteWithSignature<Java.Awt.RenderingHints>("getRenderingHints", "()Ljava/awt/RenderingHints;"); }
+            get { return IExecute<Java.Awt.RenderingHints>("getRenderingHints"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorConvertOp.html#getPoint2D(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
@@ -165,7 +165,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetBounds2D(Java.Awt.ImageNs.BufferedImage arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getBounds2D", "(Ljava/awt/image/BufferedImage;)Ljava/awt/geom/Rectangle2D;", arg0);
+            return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds2D", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorConvertOp.html#getBounds2D(java.awt.image.Raster)"/>
@@ -174,7 +174,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetBounds2D(Java.Awt.ImageNs.Raster arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getBounds2D", "(Ljava/awt/image/Raster;)Ljava/awt/geom/Rectangle2D;", arg0);
+            return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds2D", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorConvertOp.html#filter(java.awt.image.BufferedImage,java.awt.image.BufferedImage)"/>
@@ -213,7 +213,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleDestRaster(Java.Awt.ImageNs.Raster arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("createCompatibleDestRaster", "(Ljava/awt/image/Raster;)Ljava/awt/image/WritableRaster;", arg0);
+            return IExecute<Java.Awt.ImageNs.WritableRaster>("createCompatibleDestRaster", arg0);
         }
 
         #endregion

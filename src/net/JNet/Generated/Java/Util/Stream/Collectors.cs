@@ -443,7 +443,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Lang.Double> AveragingDouble<T, Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Lang.Double>>(LocalBridgeClazz, "averagingDouble", "(Ljava/util/function/ToDoubleFunction;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Lang.Double>>(LocalBridgeClazz, "averagingDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#averagingInt(java.util.function.ToIntFunction)"/>
@@ -454,7 +454,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Lang.Double> AveragingInt<T, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Lang.Double>>(LocalBridgeClazz, "averagingInt", "(Ljava/util/function/ToIntFunction;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Lang.Double>>(LocalBridgeClazz, "averagingInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#averagingLong(java.util.function.ToLongFunction)"/>
@@ -465,7 +465,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Lang.Double> AveragingLong<T, Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Lang.Double>>(LocalBridgeClazz, "averagingLong", "(Ljava/util/function/ToLongFunction;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Lang.Double>>(LocalBridgeClazz, "averagingLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingDouble(java.util.function.ToDoubleFunction)"/>
@@ -476,7 +476,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Lang.Double> SummingDouble<T, Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Lang.Double>>(LocalBridgeClazz, "summingDouble", "(Ljava/util/function/ToDoubleFunction;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Lang.Double>>(LocalBridgeClazz, "summingDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingInt(java.util.function.ToIntFunction)"/>
@@ -487,7 +487,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Lang.Integer> SummingInt<T, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Lang.Integer>>(LocalBridgeClazz, "summingInt", "(Ljava/util/function/ToIntFunction;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Lang.Integer>>(LocalBridgeClazz, "summingInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#counting()"/>
@@ -496,7 +496,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Lang.Long> Counting<T>()
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Lang.Long>>(LocalBridgeClazz, "counting", "()Ljava/util/stream/Collector;");
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Lang.Long>>(LocalBridgeClazz, "counting");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingLong(java.util.function.ToLongFunction)"/>
@@ -507,7 +507,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Lang.Long> SummingLong<T, Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Lang.Long>>(LocalBridgeClazz, "summingLong", "(Ljava/util/function/ToLongFunction;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Lang.Long>>(LocalBridgeClazz, "summingLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingDouble(java.util.function.ToDoubleFunction)"/>
@@ -518,7 +518,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.DoubleSummaryStatistics> SummarizingDouble<T, Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.DoubleSummaryStatistics>>(LocalBridgeClazz, "summarizingDouble", "(Ljava/util/function/ToDoubleFunction;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.DoubleSummaryStatistics>>(LocalBridgeClazz, "summarizingDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingInt(java.util.function.ToIntFunction)"/>
@@ -529,7 +529,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.IntSummaryStatistics> SummarizingInt<T, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.IntSummaryStatistics>>(LocalBridgeClazz, "summarizingInt", "(Ljava/util/function/ToIntFunction;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.IntSummaryStatistics>>(LocalBridgeClazz, "summarizingInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toList()"/>
@@ -538,7 +538,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.List<T>> ToList<T>()
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.List<T>>>(LocalBridgeClazz, "toList", "()Ljava/util/stream/Collector;");
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.List<T>>>(LocalBridgeClazz, "toList");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableList()"/>
@@ -547,7 +547,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.List<T>> ToUnmodifiableList<T>()
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.List<T>>>(LocalBridgeClazz, "toUnmodifiableList", "()Ljava/util/stream/Collector;");
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.List<T>>>(LocalBridgeClazz, "toUnmodifiableList");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingLong(java.util.function.ToLongFunction)"/>
@@ -558,7 +558,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.LongSummaryStatistics> SummarizingLong<T, Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.LongSummaryStatistics>>(LocalBridgeClazz, "summarizingLong", "(Ljava/util/function/ToLongFunction;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.LongSummaryStatistics>>(LocalBridgeClazz, "summarizingLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#partitioningBy(java.util.function.Predicate)"/>
@@ -569,7 +569,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Map<Java.Lang.Boolean, Java.Util.List<T>>> PartitioningBy<T, Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Map<Java.Lang.Boolean, Java.Util.List<T>>>>(LocalBridgeClazz, "partitioningBy", "(Ljava/util/function/Predicate;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<Java.Lang.Boolean, Java.Util.List<T>>>>(LocalBridgeClazz, "partitioningBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#maxBy(java.util.Comparator)"/>
@@ -580,7 +580,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Optional<T>> MaxBy<T, Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Optional<T>>>(LocalBridgeClazz, "maxBy", "(Ljava/util/Comparator;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Optional<T>>>(LocalBridgeClazz, "maxBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#minBy(java.util.Comparator)"/>
@@ -591,7 +591,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Optional<T>> MinBy<T, Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Optional<T>>>(LocalBridgeClazz, "minBy", "(Ljava/util/Comparator;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Optional<T>>>(LocalBridgeClazz, "minBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.util.function.BinaryOperator)"/>
@@ -601,7 +601,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Optional<T>> Reducing<T>(Java.Util.Function.BinaryOperator<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Optional<T>>>(LocalBridgeClazz, "reducing", "(Ljava/util/function/BinaryOperator;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Optional<T>>>(LocalBridgeClazz, "reducing", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toSet()"/>
@@ -610,7 +610,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Set<T>> ToSet<T>()
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Set<T>>>(LocalBridgeClazz, "toSet", "()Ljava/util/stream/Collector;");
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Set<T>>>(LocalBridgeClazz, "toSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableSet()"/>
@@ -619,7 +619,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Set<T>> ToUnmodifiableSet<T>()
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Set<T>>>(LocalBridgeClazz, "toUnmodifiableSet", "()Ljava/util/stream/Collector;");
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Set<T>>>(LocalBridgeClazz, "toUnmodifiableSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.lang.Object,java.util.function.BinaryOperator)"/>
@@ -638,7 +638,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<Java.Lang.CharSequence, object, Java.Lang.String> Joining()
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<Java.Lang.CharSequence, object, Java.Lang.String>>(LocalBridgeClazz, "joining", "()Ljava/util/stream/Collector;");
+            return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, object, Java.Lang.String>>(LocalBridgeClazz, "joining");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining(java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence)"/>
@@ -658,7 +658,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<Java.Lang.CharSequence, object, Java.Lang.String> Joining(Java.Lang.CharSequence arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.Collector<Java.Lang.CharSequence, object, Java.Lang.String>>(LocalBridgeClazz, "joining", "(Ljava/lang/CharSequence;)Ljava/util/stream/Collector;", arg0);
+            return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, object, Java.Lang.String>>(LocalBridgeClazz, "joining", arg0);
         }
 
         #endregion

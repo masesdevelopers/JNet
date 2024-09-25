@@ -95,7 +95,7 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Javax.Swing.MenuElement[] Path
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.MenuElement>("getPath", "()[Ljavax/swing/MenuElement;"); }
+            get { return IExecuteArray<Javax.Swing.MenuElement>("getPath"); }
         }
 
         #endregion

@@ -94,7 +94,7 @@ namespace Javax.Xml.Transform
         /// <returns><see cref="Javax.Xml.Transform.TransformerFactory"/></returns>
         public static Javax.Xml.Transform.TransformerFactory NewDefaultInstance()
         {
-            return SExecuteWithSignature<Javax.Xml.Transform.TransformerFactory>(LocalBridgeClazz, "newDefaultInstance", "()Ljavax/xml/transform/TransformerFactory;");
+            return SExecute<Javax.Xml.Transform.TransformerFactory>(LocalBridgeClazz, "newDefaultInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newInstance()"/>
@@ -103,7 +103,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerFactoryConfigurationError"/>
         public static Javax.Xml.Transform.TransformerFactory NewInstance()
         {
-            return SExecuteWithSignature<Javax.Xml.Transform.TransformerFactory>(LocalBridgeClazz, "newInstance", "()Ljavax/xml/transform/TransformerFactory;");
+            return SExecute<Javax.Xml.Transform.TransformerFactory>(LocalBridgeClazz, "newInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)"/>
@@ -125,14 +125,14 @@ namespace Javax.Xml.Transform
         /// </summary>
         public Javax.Xml.Transform.ErrorListener ErrorListener
         {
-            get { return IExecuteWithSignature<Javax.Xml.Transform.ErrorListener>("getErrorListener", "()Ljavax/xml/transform/ErrorListener;"); } set { IExecuteWithSignature("setErrorListener", "(Ljavax/xml/transform/ErrorListener;)V", value); }
+            get { return IExecute<Javax.Xml.Transform.ErrorListener>("getErrorListener"); } set { IExecute("setErrorListener", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getURIResolver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#setURIResolver(javax.xml.transform.URIResolver)"/>
         /// </summary>
         public Javax.Xml.Transform.URIResolver URIResolver
         {
-            get { return IExecuteWithSignature<Javax.Xml.Transform.URIResolver>("getURIResolver", "()Ljavax/xml/transform/URIResolver;"); } set { IExecuteWithSignature("setURIResolver", "(Ljavax/xml/transform/URIResolver;)V", value); }
+            get { return IExecute<Javax.Xml.Transform.URIResolver>("getURIResolver"); } set { IExecute("setURIResolver", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getFeature(java.lang.String)"/>
@@ -141,7 +141,7 @@ namespace Javax.Xml.Transform
         /// <returns><see cref="bool"/></returns>
         public bool GetFeature(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("getFeature", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getAttribute(java.lang.String)"/>
@@ -150,7 +150,7 @@ namespace Javax.Xml.Transform
         /// <returns><see cref="object"/></returns>
         public object GetAttribute(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getAssociatedStylesheet(javax.xml.transform.Source,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -173,7 +173,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Templates NewTemplates(Javax.Xml.Transform.Source arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Transform.Templates>("newTemplates", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/Templates;", arg0);
+            return IExecute<Javax.Xml.Transform.Templates>("newTemplates", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newTransformer()"/>
@@ -182,7 +182,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Transformer NewTransformer()
         {
-            return IExecuteWithSignature<Javax.Xml.Transform.Transformer>("newTransformer", "()Ljavax/xml/transform/Transformer;");
+            return IExecute<Javax.Xml.Transform.Transformer>("newTransformer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newTransformer(javax.xml.transform.Source)"/>
@@ -192,7 +192,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Transformer NewTransformer(Javax.Xml.Transform.Source arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Transform.Transformer>("newTransformer", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/Transformer;", arg0);
+            return IExecute<Javax.Xml.Transform.Transformer>("newTransformer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#setAttribute(java.lang.String,java.lang.Object)"/>

@@ -99,7 +99,7 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public static Java.Awt.Datatransfer.FlavorMap DefaultFlavorMap
         {
-            get { return SExecuteWithSignature<Java.Awt.Datatransfer.FlavorMap>(LocalBridgeClazz, "getDefaultFlavorMap", "()Ljava/awt/datatransfer/FlavorMap;"); }
+            get { return SExecute<Java.Awt.Datatransfer.FlavorMap>(LocalBridgeClazz, "getDefaultFlavorMap"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#isJavaMIMEType(java.lang.String)"/>
@@ -108,7 +108,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public static bool IsJavaMIMEType(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaMIMEType", "(Ljava/lang/String;)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isJavaMIMEType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#decodeDataFlavor(java.lang.String)"/>
@@ -118,7 +118,7 @@ namespace Java.Awt.Datatransfer
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Awt.Datatransfer.DataFlavor DecodeDataFlavor(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "decodeDataFlavor", "(Ljava/lang/String;)Ljava/awt/datatransfer/DataFlavor;", arg0);
+            return SExecute<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "decodeDataFlavor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#decodeJavaMIMEType(java.lang.String)"/>
@@ -127,7 +127,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String DecodeJavaMIMEType(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "decodeJavaMIMEType", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "decodeJavaMIMEType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#encodeDataFlavor(java.awt.datatransfer.DataFlavor)"/>
@@ -136,7 +136,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String EncodeDataFlavor(Java.Awt.Datatransfer.DataFlavor arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "encodeDataFlavor", "(Ljava/awt/datatransfer/DataFlavor;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "encodeDataFlavor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#encodeJavaMIMEType(java.lang.String)"/>
@@ -145,7 +145,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String EncodeJavaMIMEType(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "encodeJavaMIMEType", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "encodeJavaMIMEType", arg0);
         }
 
         #endregion
@@ -158,7 +158,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Awt.Datatransfer.DataFlavor> GetFlavorsForNative(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Awt.Datatransfer.DataFlavor>>("getFlavorsForNative", "(Ljava/lang/String;)Ljava/util/List;", arg0);
+            return IExecute<Java.Util.List<Java.Awt.Datatransfer.DataFlavor>>("getFlavorsForNative", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#getNativesForFlavor(java.awt.datatransfer.DataFlavor)"/>
@@ -167,7 +167,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.String> GetNativesForFlavor(Java.Awt.Datatransfer.DataFlavor arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getNativesForFlavor", "(Ljava/awt/datatransfer/DataFlavor;)Ljava/util/List;", arg0);
+            return IExecute<Java.Util.List<Java.Lang.String>>("getNativesForFlavor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#getNativesForFlavors(java.awt.datatransfer.DataFlavor[])"/>
@@ -176,7 +176,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Java.Awt.Datatransfer.DataFlavor, Java.Lang.String> GetNativesForFlavors(Java.Awt.Datatransfer.DataFlavor[] arg0)
         {
-            return IExecuteWithSignature<Java.Util.Map<Java.Awt.Datatransfer.DataFlavor, Java.Lang.String>>("getNativesForFlavors", "([Ljava/awt/datatransfer/DataFlavor;)Ljava/util/Map;", new object[] { arg0 });
+            return IExecute<Java.Util.Map<Java.Awt.Datatransfer.DataFlavor, Java.Lang.String>>("getNativesForFlavors", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#getFlavorsForNatives(java.lang.String[])"/>
@@ -185,7 +185,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Java.Lang.String, Java.Awt.Datatransfer.DataFlavor> GetFlavorsForNatives(Java.Lang.String[] arg0)
         {
-            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Awt.Datatransfer.DataFlavor>>("getFlavorsForNatives", "([Ljava/lang/String;)Ljava/util/Map;", new object[] { arg0 });
+            return IExecute<Java.Util.Map<Java.Lang.String, Java.Awt.Datatransfer.DataFlavor>>("getFlavorsForNatives", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#addFlavorForUnencodedNative(java.lang.String,java.awt.datatransfer.DataFlavor)"/>

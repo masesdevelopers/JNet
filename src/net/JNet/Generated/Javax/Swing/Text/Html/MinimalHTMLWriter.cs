@@ -117,7 +117,7 @@ namespace Javax.Swing.Text.Html
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Write()
         {
-            IExecuteWithSignature("write", "()V");
+            IExecute("write");
         }
 
         #endregion

@@ -155,7 +155,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="int"/></param>
         public void Remove(int arg0)
         {
-            IExecuteWithSignature("remove", "(I)V", arg0);
+            IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#remove(javax.swing.tree.MutableTreeNode)"/>
@@ -163,14 +163,14 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
         public void Remove(Javax.Swing.Tree.MutableTreeNode arg0)
         {
-            IExecuteWithSignature("remove", "(Ljavax/swing/tree/MutableTreeNode;)V", arg0);
+            IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#removeFromParent()"/>
         /// </summary>
         public void RemoveFromParent()
         {
-            IExecuteWithSignature("removeFromParent", "()V");
+            IExecute("removeFromParent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#setParent(javax.swing.tree.MutableTreeNode)"/>
@@ -178,7 +178,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
         public void SetParent(Javax.Swing.Tree.MutableTreeNode arg0)
         {
-            IExecuteWithSignature("setParent", "(Ljavax/swing/tree/MutableTreeNode;)V", arg0);
+            IExecute("setParent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#setUserObject(java.lang.Object)"/>
@@ -186,7 +186,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="object"/></param>
         public void SetUserObject(object arg0)
         {
-            IExecuteWithSignature("setUserObject", "(Ljava/lang/Object;)V", arg0);
+            IExecute("setUserObject", arg0);
         }
 
         #endregion

@@ -268,112 +268,112 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.Container ContentPane
         {
-            get { return IExecuteWithSignature<Java.Awt.Container>("getContentPane", "()Ljava/awt/Container;"); } set { IExecuteWithSignature("setContentPane", "(Ljava/awt/Container;)V", value); }
+            get { return IExecute<Java.Awt.Container>("getContentPane"); } set { IExecute("setContentPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getDefaultCloseOperation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setDefaultCloseOperation(int)"/>
         /// </summary>
         public int DefaultCloseOperation
         {
-            get { return IExecuteWithSignature<int>("getDefaultCloseOperation", "()I"); } set { IExecuteWithSignature("setDefaultCloseOperation", "(I)V", value); }
+            get { return IExecute<int>("getDefaultCloseOperation"); } set { IExecute("setDefaultCloseOperation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getDesktopIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setDesktopIcon(javax.swing.JInternalFrame.JDesktopIcon)"/>
         /// </summary>
         public Javax.Swing.JInternalFrame.JDesktopIcon DesktopIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.JInternalFrame.JDesktopIcon>("getDesktopIcon", "()Ljavax/swing/JInternalFrame$JDesktopIcon;"); } set { IExecuteWithSignature("setDesktopIcon", "(Ljavax/swing/JInternalFrame$JDesktopIcon;)V", value); }
+            get { return IExecute<Javax.Swing.JInternalFrame.JDesktopIcon>("getDesktopIcon"); } set { IExecute("setDesktopIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getDesktopPane()"/> 
         /// </summary>
         public Javax.Swing.JDesktopPane DesktopPane
         {
-            get { return IExecuteWithSignature<Javax.Swing.JDesktopPane>("getDesktopPane", "()Ljavax/swing/JDesktopPane;"); }
+            get { return IExecute<Javax.Swing.JDesktopPane>("getDesktopPane"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getFocusOwner()"/> 
         /// </summary>
         public Java.Awt.Component FocusOwner
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getFocusOwner", "()Ljava/awt/Component;"); }
+            get { return IExecute<Java.Awt.Component>("getFocusOwner"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getFrameIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setFrameIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon FrameIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getFrameIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setFrameIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getFrameIcon"); } set { IExecute("setFrameIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getGlassPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setGlassPane(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component GlassPane
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getGlassPane", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setGlassPane", "(Ljava/awt/Component;)V", value); }
+            get { return IExecute<Java.Awt.Component>("getGlassPane"); } set { IExecute("setGlassPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getInternalFrameListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.InternalFrameListener[] InternalFrameListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.InternalFrameListener>("getInternalFrameListeners", "()[Ljavax/swing/event/InternalFrameListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.InternalFrameListener>("getInternalFrameListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getJMenuBar()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setJMenuBar(javax.swing.JMenuBar)"/>
         /// </summary>
         public Javax.Swing.JMenuBar JMenuBar
         {
-            get { return IExecuteWithSignature<Javax.Swing.JMenuBar>("getJMenuBar", "()Ljavax/swing/JMenuBar;"); } set { IExecuteWithSignature("setJMenuBar", "(Ljavax/swing/JMenuBar;)V", value); }
+            get { return IExecute<Javax.Swing.JMenuBar>("getJMenuBar"); } set { IExecute("setJMenuBar", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getLastCursor()"/> 
         /// </summary>
         public Java.Awt.Cursor LastCursor
         {
-            get { return IExecuteWithSignature<Java.Awt.Cursor>("getLastCursor", "()Ljava/awt/Cursor;"); }
+            get { return IExecute<Java.Awt.Cursor>("getLastCursor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getLayer()"/> 
         /// </summary>
         public int Layer
         {
-            get { return IExecuteWithSignature<int>("getLayer", "()I"); }
+            get { return IExecute<int>("getLayer"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getLayeredPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setLayeredPane(javax.swing.JLayeredPane)"/>
         /// </summary>
         public Javax.Swing.JLayeredPane LayeredPane
         {
-            get { return IExecuteWithSignature<Javax.Swing.JLayeredPane>("getLayeredPane", "()Ljavax/swing/JLayeredPane;"); } set { IExecuteWithSignature("setLayeredPane", "(Ljavax/swing/JLayeredPane;)V", value); }
+            get { return IExecute<Javax.Swing.JLayeredPane>("getLayeredPane"); } set { IExecute("setLayeredPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getMostRecentFocusOwner()"/> 
         /// </summary>
         public Java.Awt.Component MostRecentFocusOwner
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getMostRecentFocusOwner", "()Ljava/awt/Component;"); }
+            get { return IExecute<Java.Awt.Component>("getMostRecentFocusOwner"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getNormalBounds()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setNormalBounds(java.awt.Rectangle)"/>
         /// </summary>
         public Java.Awt.Rectangle NormalBounds
         {
-            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getNormalBounds", "()Ljava/awt/Rectangle;"); } set { IExecuteWithSignature("setNormalBounds", "(Ljava/awt/Rectangle;)V", value); }
+            get { return IExecute<Java.Awt.Rectangle>("getNormalBounds"); } set { IExecute("setNormalBounds", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getTitle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setTitle(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Title
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTitle", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTitle", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getTitle"); } set { IExecute("setTitle", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#getWarningString()"/> 
         /// </summary>
         public Java.Lang.String WarningString
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWarningString", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getWarningString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isClosable()"/>
@@ -381,7 +381,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsClosable()
         {
-            return IExecuteWithSignature<bool>("isClosable", "()Z");
+            return IExecute<bool>("isClosable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isClosed()"/>
@@ -389,7 +389,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
         {
-            return IExecuteWithSignature<bool>("isClosed", "()Z");
+            return IExecute<bool>("isClosed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isIcon()"/>
@@ -397,7 +397,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsIcon()
         {
-            return IExecuteWithSignature<bool>("isIcon", "()Z");
+            return IExecute<bool>("isIcon");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isIconifiable()"/>
@@ -405,7 +405,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsIconifiable()
         {
-            return IExecuteWithSignature<bool>("isIconifiable", "()Z");
+            return IExecute<bool>("isIconifiable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isMaximizable()"/>
@@ -413,7 +413,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsMaximizable()
         {
-            return IExecuteWithSignature<bool>("isMaximizable", "()Z");
+            return IExecute<bool>("isMaximizable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isMaximum()"/>
@@ -421,7 +421,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsMaximum()
         {
-            return IExecuteWithSignature<bool>("isMaximum", "()Z");
+            return IExecute<bool>("isMaximum");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isResizable()"/>
@@ -429,7 +429,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsResizable()
         {
-            return IExecuteWithSignature<bool>("isResizable", "()Z");
+            return IExecute<bool>("isResizable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isSelected()"/>
@@ -437,7 +437,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSelected()
         {
-            return IExecuteWithSignature<bool>("isSelected", "()Z");
+            return IExecute<bool>("isSelected");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#addInternalFrameListener(javax.swing.event.InternalFrameListener)"/>
@@ -445,42 +445,42 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameListener"/></param>
         public void AddInternalFrameListener(Javax.Swing.Event.InternalFrameListener arg0)
         {
-            IExecuteWithSignature("addInternalFrameListener", "(Ljavax/swing/event/InternalFrameListener;)V", arg0);
+            IExecute("addInternalFrameListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#dispose()"/>
         /// </summary>
         public new void Dispose()
         {
-            IExecuteWithSignature("dispose", "()V");
+            IExecute("dispose");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#doDefaultCloseAction()"/>
         /// </summary>
         public void DoDefaultCloseAction()
         {
-            IExecuteWithSignature("doDefaultCloseAction", "()V");
+            IExecute("doDefaultCloseAction");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#moveToBack()"/>
         /// </summary>
         public void MoveToBack()
         {
-            IExecuteWithSignature("moveToBack", "()V");
+            IExecute("moveToBack");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#moveToFront()"/>
         /// </summary>
         public void MoveToFront()
         {
-            IExecuteWithSignature("moveToFront", "()V");
+            IExecute("moveToFront");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#pack()"/>
         /// </summary>
         public void Pack()
         {
-            IExecuteWithSignature("pack", "()V");
+            IExecute("pack");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#removeInternalFrameListener(javax.swing.event.InternalFrameListener)"/>
@@ -488,14 +488,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameListener"/></param>
         public void RemoveInternalFrameListener(Javax.Swing.Event.InternalFrameListener arg0)
         {
-            IExecuteWithSignature("removeInternalFrameListener", "(Ljavax/swing/event/InternalFrameListener;)V", arg0);
+            IExecute("removeInternalFrameListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#restoreSubcomponentFocus()"/>
         /// </summary>
         public void RestoreSubcomponentFocus()
         {
-            IExecuteWithSignature("restoreSubcomponentFocus", "()V");
+            IExecute("restoreSubcomponentFocus");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setClosable(boolean)"/>
@@ -503,7 +503,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetClosable(bool arg0)
         {
-            IExecuteWithSignature("setClosable", "(Z)V", arg0);
+            IExecute("setClosable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setClosed(boolean)"/>
@@ -512,7 +512,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void SetClosed(bool arg0)
         {
-            IExecuteWithSignature("setClosed", "(Z)V", arg0);
+            IExecute("setClosed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setIcon(boolean)"/>
@@ -521,7 +521,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void SetIcon(bool arg0)
         {
-            IExecuteWithSignature("setIcon", "(Z)V", arg0);
+            IExecute("setIcon", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setIconifiable(boolean)"/>
@@ -529,7 +529,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetIconifiable(bool arg0)
         {
-            IExecuteWithSignature("setIconifiable", "(Z)V", arg0);
+            IExecute("setIconifiable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setLayer(int)"/>
@@ -537,7 +537,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void SetLayer(int arg0)
         {
-            IExecuteWithSignature("setLayer", "(I)V", arg0);
+            IExecute("setLayer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setLayer(java.lang.Integer)"/>
@@ -545,7 +545,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Lang.Integer"/></param>
         public void SetLayer(Java.Lang.Integer arg0)
         {
-            IExecuteWithSignature("setLayer", "(Ljava/lang/Integer;)V", arg0);
+            IExecute("setLayer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setMaximizable(boolean)"/>
@@ -553,7 +553,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetMaximizable(bool arg0)
         {
-            IExecuteWithSignature("setMaximizable", "(Z)V", arg0);
+            IExecute("setMaximizable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setMaximum(boolean)"/>
@@ -562,7 +562,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void SetMaximum(bool arg0)
         {
-            IExecuteWithSignature("setMaximum", "(Z)V", arg0);
+            IExecute("setMaximum", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setResizable(boolean)"/>
@@ -570,7 +570,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetResizable(bool arg0)
         {
-            IExecuteWithSignature("setResizable", "(Z)V", arg0);
+            IExecute("setResizable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setSelected(boolean)"/>
@@ -579,7 +579,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void SetSelected(bool arg0)
         {
-            IExecuteWithSignature("setSelected", "(Z)V", arg0);
+            IExecute("setSelected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setUI(javax.swing.plaf.InternalFrameUI)"/>
@@ -587,21 +587,21 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.InternalFrameUI"/></param>
         public void SetUI(Javax.Swing.Plaf.InternalFrameUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/InternalFrameUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#toBack()"/>
         /// </summary>
         public void ToBack()
         {
-            IExecuteWithSignature("toBack", "()V");
+            IExecute("toBack");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#toFront()"/>
         /// </summary>
         public void ToFront()
         {
-            IExecuteWithSignature("toFront", "()V");
+            IExecute("toFront");
         }
 
         #endregion

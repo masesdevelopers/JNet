@@ -204,7 +204,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterEvent"/></param>
         public override void SorterChanged(Javax.Swing.Event.RowSorterEvent arg0)
         {
-            IExecuteWithSignature("sorterChanged", "(Ljavax/swing/event/RowSorterEvent;)V", arg0);
+            IExecute("sorterChanged", arg0);
         }
 
         #endregion

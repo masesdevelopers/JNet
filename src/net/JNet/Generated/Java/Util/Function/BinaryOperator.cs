@@ -184,7 +184,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.BinaryOperator MaxBy(Java.Util.Comparator arg0)
         {
-            return SExecuteWithSignature<Java.Util.Function.BinaryOperator>(LocalBridgeClazz, "maxBy", "(Ljava/util/Comparator;)Ljava/util/function/BinaryOperator;", arg0);
+            return SExecute<Java.Util.Function.BinaryOperator>(LocalBridgeClazz, "maxBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#minBy(java.util.Comparator)"/>
@@ -194,7 +194,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.BinaryOperator MinBy(Java.Util.Comparator arg0)
         {
-            return SExecuteWithSignature<Java.Util.Function.BinaryOperator>(LocalBridgeClazz, "minBy", "(Ljava/util/Comparator;)Ljava/util/function/BinaryOperator;", arg0);
+            return SExecute<Java.Util.Function.BinaryOperator>(LocalBridgeClazz, "minBy", arg0);
         }
 
         #endregion
@@ -395,7 +395,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.BinaryOperator<T> MaxBy<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Function.BinaryOperator<T>>(LocalBridgeClazz, "maxBy", "(Ljava/util/Comparator;)Ljava/util/function/BinaryOperator;", arg0);
+            return SExecute<Java.Util.Function.BinaryOperator<T>>(LocalBridgeClazz, "maxBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#minBy(java.util.Comparator)"/>
@@ -406,7 +406,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.BinaryOperator<T> MinBy<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Function.BinaryOperator<T>>(LocalBridgeClazz, "minBy", "(Ljava/util/Comparator;)Ljava/util/function/BinaryOperator;", arg0);
+            return SExecute<Java.Util.Function.BinaryOperator<T>>(LocalBridgeClazz, "minBy", arg0);
         }
 
         #endregion

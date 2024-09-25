@@ -106,14 +106,14 @@ namespace Java.Lang.Management
         /// </summary>
         public int LockedStackDepth
         {
-            get { return IExecuteWithSignature<int>("getLockedStackDepth", "()I"); }
+            get { return IExecute<int>("getLockedStackDepth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MonitorInfo.html#getLockedStackFrame()"/> 
         /// </summary>
         public Java.Lang.StackTraceElement LockedStackFrame
         {
-            get { return IExecuteWithSignature<Java.Lang.StackTraceElement>("getLockedStackFrame", "()Ljava/lang/StackTraceElement;"); }
+            get { return IExecute<Java.Lang.StackTraceElement>("getLockedStackFrame"); }
         }
 
         #endregion

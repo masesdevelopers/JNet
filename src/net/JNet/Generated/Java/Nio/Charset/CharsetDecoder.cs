@@ -98,7 +98,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="bool"/></returns>
         public bool IsAutoDetecting()
         {
-            return IExecuteWithSignature<bool>("isAutoDetecting", "()Z");
+            return IExecute<bool>("isAutoDetecting");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#isCharsetDetected()"/>
@@ -106,7 +106,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="bool"/></returns>
         public bool IsCharsetDetected()
         {
-            return IExecuteWithSignature<bool>("isCharsetDetected", "()Z");
+            return IExecute<bool>("isCharsetDetected");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#averageCharsPerByte()"/>
@@ -114,7 +114,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="float"/></returns>
         public float AverageCharsPerByte()
         {
-            return IExecuteWithSignature<float>("averageCharsPerByte", "()F");
+            return IExecute<float>("averageCharsPerByte");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#maxCharsPerByte()"/>
@@ -122,7 +122,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="float"/></returns>
         public float MaxCharsPerByte()
         {
-            return IExecuteWithSignature<float>("maxCharsPerByte", "()F");
+            return IExecute<float>("maxCharsPerByte");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#replacement()"/>
@@ -130,7 +130,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Replacement()
         {
-            return IExecuteWithSignature<Java.Lang.String>("replacement", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("replacement");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#decode(java.nio.ByteBuffer)"/>
@@ -140,7 +140,7 @@ namespace Java.Nio.Charset
         /// <exception cref="Java.Nio.Charset.CharacterCodingException"/>
         public Java.Nio.CharBuffer Decode(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Nio.CharBuffer>("decode", "(Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer;", arg0);
+            return IExecute<Java.Nio.CharBuffer>("decode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#charset()"/>
@@ -148,7 +148,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
         public Java.Nio.Charset.Charset Charset()
         {
-            return IExecuteWithSignature<Java.Nio.Charset.Charset>("charset", "()Ljava/nio/charset/Charset;");
+            return IExecute<Java.Nio.Charset.Charset>("charset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#onMalformedInput(java.nio.charset.CodingErrorAction)"/>
@@ -157,7 +157,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
         public Java.Nio.Charset.CharsetDecoder OnMalformedInput(Java.Nio.Charset.CodingErrorAction arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Charset.CharsetDecoder>("onMalformedInput", "(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder;", arg0);
+            return IExecute<Java.Nio.Charset.CharsetDecoder>("onMalformedInput", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#onUnmappableCharacter(java.nio.charset.CodingErrorAction)"/>
@@ -166,7 +166,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
         public Java.Nio.Charset.CharsetDecoder OnUnmappableCharacter(Java.Nio.Charset.CodingErrorAction arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Charset.CharsetDecoder>("onUnmappableCharacter", "(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder;", arg0);
+            return IExecute<Java.Nio.Charset.CharsetDecoder>("onUnmappableCharacter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#replaceWith(java.lang.String)"/>
@@ -175,7 +175,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
         public Java.Nio.Charset.CharsetDecoder ReplaceWith(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Charset.CharsetDecoder>("replaceWith", "(Ljava/lang/String;)Ljava/nio/charset/CharsetDecoder;", arg0);
+            return IExecute<Java.Nio.Charset.CharsetDecoder>("replaceWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#reset()"/>
@@ -183,7 +183,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
         public Java.Nio.Charset.CharsetDecoder Reset()
         {
-            return IExecuteWithSignature<Java.Nio.Charset.CharsetDecoder>("reset", "()Ljava/nio/charset/CharsetDecoder;");
+            return IExecute<Java.Nio.Charset.CharsetDecoder>("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#decode(java.nio.ByteBuffer,java.nio.CharBuffer,boolean)"/>
@@ -203,7 +203,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
         public Java.Nio.Charset.CoderResult Flush(Java.Nio.CharBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Charset.CoderResult>("flush", "(Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;", arg0);
+            return IExecute<Java.Nio.Charset.CoderResult>("flush", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#detectedCharset()"/>
@@ -211,7 +211,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
         public Java.Nio.Charset.Charset DetectedCharset()
         {
-            return IExecuteWithSignature<Java.Nio.Charset.Charset>("detectedCharset", "()Ljava/nio/charset/Charset;");
+            return IExecute<Java.Nio.Charset.Charset>("detectedCharset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#malformedInputAction()"/>
@@ -219,7 +219,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CodingErrorAction"/></returns>
         public Java.Nio.Charset.CodingErrorAction MalformedInputAction()
         {
-            return IExecuteWithSignature<Java.Nio.Charset.CodingErrorAction>("malformedInputAction", "()Ljava/nio/charset/CodingErrorAction;");
+            return IExecute<Java.Nio.Charset.CodingErrorAction>("malformedInputAction");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#unmappableCharacterAction()"/>
@@ -227,7 +227,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CodingErrorAction"/></returns>
         public Java.Nio.Charset.CodingErrorAction UnmappableCharacterAction()
         {
-            return IExecuteWithSignature<Java.Nio.Charset.CodingErrorAction>("unmappableCharacterAction", "()Ljava/nio/charset/CodingErrorAction;");
+            return IExecute<Java.Nio.Charset.CodingErrorAction>("unmappableCharacterAction");
         }
 
         #endregion

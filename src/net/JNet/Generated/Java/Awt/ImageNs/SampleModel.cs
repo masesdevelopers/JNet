@@ -108,49 +108,49 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public int DataType
         {
-            get { return IExecuteWithSignature<int>("getDataType", "()I"); }
+            get { return IExecute<int>("getDataType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+            get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getNumBands()"/> 
         /// </summary>
         public int NumBands
         {
-            get { return IExecuteWithSignature<int>("getNumBands", "()I"); }
+            get { return IExecute<int>("getNumBands"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getNumDataElements()"/> 
         /// </summary>
         public int NumDataElements
         {
-            get { return IExecuteWithSignature<int>("getNumDataElements", "()I"); }
+            get { return IExecute<int>("getNumDataElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleSize()"/> 
         /// </summary>
         public int[] SampleSize
         {
-            get { return IExecuteWithSignatureArray<int>("getSampleSize", "()[I"); }
+            get { return IExecuteArray<int>("getSampleSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getTransferType()"/> 
         /// </summary>
         public int TransferType
         {
-            get { return IExecuteWithSignature<int>("getTransferType", "()I"); }
+            get { return IExecute<int>("getTransferType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSample(int,int,int,java.awt.image.DataBuffer)"/>
@@ -171,7 +171,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetSampleSize(int arg0)
         {
-            return IExecuteWithSignature<int>("getSampleSize", "(I)I", arg0);
+            return IExecute<int>("getSampleSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createDataBuffer()"/>
@@ -179,7 +179,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.DataBuffer"/></returns>
         public Java.Awt.ImageNs.DataBuffer CreateDataBuffer()
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.DataBuffer>("createDataBuffer", "()Ljava/awt/image/DataBuffer;");
+            return IExecute<Java.Awt.ImageNs.DataBuffer>("createDataBuffer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createCompatibleSampleModel(int,int)"/>
@@ -198,7 +198,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.SampleModel"/></returns>
         public Java.Awt.ImageNs.SampleModel CreateSubsetSampleModel(int[] arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.SampleModel>("createSubsetSampleModel", "([I)Ljava/awt/image/SampleModel;", new object[] { arg0 });
+            return IExecute<Java.Awt.ImageNs.SampleModel>("createSubsetSampleModel", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getDataElements(int,int,java.lang.Object,java.awt.image.DataBuffer)"/>

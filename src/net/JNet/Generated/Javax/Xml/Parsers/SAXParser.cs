@@ -97,14 +97,14 @@ namespace Javax.Xml.Parsers
         /// </summary>
         public Javax.Xml.Validation.Schema Schema
         {
-            get { return IExecuteWithSignature<Javax.Xml.Validation.Schema>("getSchema", "()Ljavax/xml/validation/Schema;"); }
+            get { return IExecute<Javax.Xml.Validation.Schema>("getSchema"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#getXMLReader()"/> 
         /// </summary>
         public Org.Xml.Sax.XMLReader XMLReader
         {
-            get { return IExecuteWithSignature<Org.Xml.Sax.XMLReader>("getXMLReader", "()Lorg/xml/sax/XMLReader;"); }
+            get { return IExecute<Org.Xml.Sax.XMLReader>("getXMLReader"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#isNamespaceAware()"/>
@@ -112,7 +112,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsNamespaceAware()
         {
-            return IExecuteWithSignature<bool>("isNamespaceAware", "()Z");
+            return IExecute<bool>("isNamespaceAware");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#isValidating()"/>
@@ -120,7 +120,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsValidating()
         {
-            return IExecuteWithSignature<bool>("isValidating", "()Z");
+            return IExecute<bool>("isValidating");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#getProperty(java.lang.String)"/>
@@ -131,7 +131,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#setProperty(java.lang.String,java.lang.Object)"/>
@@ -150,7 +150,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsXIncludeAware()
         {
-            return IExecuteWithSignature<bool>("isXIncludeAware", "()Z");
+            return IExecute<bool>("isXIncludeAware");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#parse(java.io.File,org.xml.sax.helpers.DefaultHandler)"/>
@@ -213,7 +213,7 @@ namespace Javax.Xml.Parsers
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
 
         #endregion

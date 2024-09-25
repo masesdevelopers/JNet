@@ -131,28 +131,28 @@ namespace Java.Net
         /// </summary>
         public Java.Net.InetAddress Address
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;"); }
+            get { return IExecute<Java.Net.InetAddress>("getAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#getHostName()"/> 
         /// </summary>
         public Java.Lang.String HostName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHostName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getHostName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#getHostString()"/> 
         /// </summary>
         public Java.Lang.String HostString
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHostString", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getHostString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#getPort()"/> 
         /// </summary>
         public int Port
         {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); }
+            get { return IExecute<int>("getPort"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#isUnresolved()"/>
@@ -160,7 +160,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsUnresolved()
         {
-            return IExecuteWithSignature<bool>("isUnresolved", "()Z");
+            return IExecute<bool>("isUnresolved");
         }
 
         #endregion

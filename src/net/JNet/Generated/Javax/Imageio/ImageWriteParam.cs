@@ -127,105 +127,105 @@ namespace Javax.Imageio
         /// </summary>
         public int CompressionMode
         {
-            get { return IExecuteWithSignature<int>("getCompressionMode", "()I"); } set { IExecuteWithSignature("setCompressionMode", "(I)V", value); }
+            get { return IExecute<int>("getCompressionMode"); } set { IExecute("setCompressionMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getCompressionQuality()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#setCompressionQuality(float)"/>
         /// </summary>
         public float CompressionQuality
         {
-            get { return IExecuteWithSignature<float>("getCompressionQuality", "()F"); } set { IExecuteWithSignature("setCompressionQuality", "(F)V", value); }
+            get { return IExecute<float>("getCompressionQuality"); } set { IExecute("setCompressionQuality", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getCompressionQualityDescriptions()"/> 
         /// </summary>
         public Java.Lang.String[] CompressionQualityDescriptions
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getCompressionQualityDescriptions", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getCompressionQualityDescriptions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getCompressionQualityValues()"/> 
         /// </summary>
         public float[] CompressionQualityValues
         {
-            get { return IExecuteWithSignatureArray<float>("getCompressionQualityValues", "()[F"); }
+            get { return IExecuteArray<float>("getCompressionQualityValues"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getCompressionType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#setCompressionType(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String CompressionType
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCompressionType", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCompressionType", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCompressionType"); } set { IExecute("setCompressionType", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getCompressionTypes()"/> 
         /// </summary>
         public Java.Lang.String[] CompressionTypes
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getCompressionTypes", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getCompressionTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getLocale()"/> 
         /// </summary>
         public Java.Util.Locale Locale
         {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
+            get { return IExecute<Java.Util.Locale>("getLocale"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getLocalizedCompressionTypeName()"/> 
         /// </summary>
         public Java.Lang.String LocalizedCompressionTypeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLocalizedCompressionTypeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getLocalizedCompressionTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getPreferredTileSizes()"/> 
         /// </summary>
         public Java.Awt.Dimension[] PreferredTileSizes
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.Dimension>("getPreferredTileSizes", "()[Ljava/awt/Dimension;"); }
+            get { return IExecuteArray<Java.Awt.Dimension>("getPreferredTileSizes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getProgressiveMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#setProgressiveMode(int)"/>
         /// </summary>
         public int ProgressiveMode
         {
-            get { return IExecuteWithSignature<int>("getProgressiveMode", "()I"); } set { IExecuteWithSignature("setProgressiveMode", "(I)V", value); }
+            get { return IExecute<int>("getProgressiveMode"); } set { IExecute("setProgressiveMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getTileGridXOffset()"/> 
         /// </summary>
         public int TileGridXOffset
         {
-            get { return IExecuteWithSignature<int>("getTileGridXOffset", "()I"); }
+            get { return IExecute<int>("getTileGridXOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getTileGridYOffset()"/> 
         /// </summary>
         public int TileGridYOffset
         {
-            get { return IExecuteWithSignature<int>("getTileGridYOffset", "()I"); }
+            get { return IExecute<int>("getTileGridYOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getTileHeight()"/> 
         /// </summary>
         public int TileHeight
         {
-            get { return IExecuteWithSignature<int>("getTileHeight", "()I"); }
+            get { return IExecute<int>("getTileHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getTileWidth()"/> 
         /// </summary>
         public int TileWidth
         {
-            get { return IExecuteWithSignature<int>("getTileWidth", "()I"); }
+            get { return IExecute<int>("getTileWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getTilingMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#setTilingMode(int)"/>
         /// </summary>
         public int TilingMode
         {
-            get { return IExecuteWithSignature<int>("getTilingMode", "()I"); } set { IExecuteWithSignature("setTilingMode", "(I)V", value); }
+            get { return IExecute<int>("getTilingMode"); } set { IExecute("setTilingMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canOffsetTiles()"/>
@@ -233,7 +233,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool CanOffsetTiles()
         {
-            return IExecuteWithSignature<bool>("canOffsetTiles", "()Z");
+            return IExecute<bool>("canOffsetTiles");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canWriteCompressed()"/>
@@ -241,7 +241,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool CanWriteCompressed()
         {
-            return IExecuteWithSignature<bool>("canWriteCompressed", "()Z");
+            return IExecute<bool>("canWriteCompressed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canWriteProgressive()"/>
@@ -249,7 +249,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool CanWriteProgressive()
         {
-            return IExecuteWithSignature<bool>("canWriteProgressive", "()Z");
+            return IExecute<bool>("canWriteProgressive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#canWriteTiles()"/>
@@ -257,7 +257,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool CanWriteTiles()
         {
-            return IExecuteWithSignature<bool>("canWriteTiles", "()Z");
+            return IExecute<bool>("canWriteTiles");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#isCompressionLossless()"/>
@@ -265,7 +265,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool IsCompressionLossless()
         {
-            return IExecuteWithSignature<bool>("isCompressionLossless", "()Z");
+            return IExecute<bool>("isCompressionLossless");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#getBitRate(float)"/>
@@ -274,7 +274,7 @@ namespace Javax.Imageio
         /// <returns><see cref="float"/></returns>
         public float GetBitRate(float arg0)
         {
-            return IExecuteWithSignature<float>("getBitRate", "(F)F", arg0);
+            return IExecute<float>("getBitRate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#setTiling(int,int,int,int)"/>
@@ -292,14 +292,14 @@ namespace Javax.Imageio
         /// </summary>
         public void UnsetCompression()
         {
-            IExecuteWithSignature("unsetCompression", "()V");
+            IExecute("unsetCompression");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#unsetTiling()"/>
         /// </summary>
         public void UnsetTiling()
         {
-            IExecuteWithSignature("unsetTiling", "()V");
+            IExecute("unsetTiling");
         }
 
         #endregion

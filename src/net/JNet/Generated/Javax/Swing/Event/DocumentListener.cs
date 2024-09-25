@@ -264,7 +264,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
         public override void ChangedUpdate(Javax.Swing.Event.DocumentEvent arg0)
         {
-            IExecuteWithSignature("changedUpdate", "(Ljavax/swing/event/DocumentEvent;)V", arg0);
+            IExecute("changedUpdate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#insertUpdate(javax.swing.event.DocumentEvent)"/>
@@ -272,7 +272,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
         public override void InsertUpdate(Javax.Swing.Event.DocumentEvent arg0)
         {
-            IExecuteWithSignature("insertUpdate", "(Ljavax/swing/event/DocumentEvent;)V", arg0);
+            IExecute("insertUpdate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#removeUpdate(javax.swing.event.DocumentEvent)"/>
@@ -280,7 +280,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
         public override void RemoveUpdate(Javax.Swing.Event.DocumentEvent arg0)
         {
-            IExecuteWithSignature("removeUpdate", "(Ljavax/swing/event/DocumentEvent;)V", arg0);
+            IExecute("removeUpdate", arg0);
         }
 
         #endregion

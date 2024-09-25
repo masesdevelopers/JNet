@@ -96,14 +96,14 @@ namespace Javax.Swing.Undo
         /// <returns><see cref="bool"/></returns>
         public bool IsInProgress()
         {
-            return IExecuteWithSignature<bool>("isInProgress", "()Z");
+            return IExecute<bool>("isInProgress");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CompoundEdit.html#end()"/>
         /// </summary>
         public void End()
         {
-            IExecuteWithSignature("end", "()V");
+            IExecute("end");
         }
 
         #endregion

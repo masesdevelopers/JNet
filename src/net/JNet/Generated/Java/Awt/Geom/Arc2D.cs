@@ -205,35 +205,35 @@ namespace Java.Awt.Geom
         /// </summary>
         public double AngleExtent
         {
-            get { return IExecuteWithSignature<double>("getAngleExtent", "()D"); } set { IExecuteWithSignature("setAngleExtent", "(D)V", value); }
+            get { return IExecute<double>("getAngleExtent"); } set { IExecute("setAngleExtent", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getAngleStart()"/> 
         /// </summary>
         public double AngleStart
         {
-            get { return IExecuteWithSignature<double>("getAngleStart", "()D"); }
+            get { return IExecute<double>("getAngleStart"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getArcType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArcType(int)"/>
         /// </summary>
         public int ArcType
         {
-            get { return IExecuteWithSignature<int>("getArcType", "()I"); } set { IExecuteWithSignature("setArcType", "(I)V", value); }
+            get { return IExecute<int>("getArcType"); } set { IExecute("setArcType", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getEndPoint()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D EndPoint
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getEndPoint", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getEndPoint"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getStartPoint()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D StartPoint
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getStartPoint", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getStartPoint"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngleStart(double)"/>
@@ -241,7 +241,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="double"/></param>
         public void SetAngleStart(double arg0)
         {
-            IExecuteWithSignature("setAngleStart", "(D)V", arg0);
+            IExecute("setAngleStart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(double,double,double,double,double,double,int)"/>
@@ -264,7 +264,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool ContainsAngle(double arg0)
         {
-            return IExecuteWithSignature<bool>("containsAngle", "(D)Z", arg0);
+            return IExecute<bool>("containsAngle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngles(double,double,double,double)"/>
@@ -292,7 +292,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void SetAngleStart(Java.Awt.Geom.Point2D arg0)
         {
-            IExecuteWithSignature("setAngleStart", "(Ljava/awt/geom/Point2D;)V", arg0);
+            IExecute("setAngleStart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Arc2D)"/>
@@ -300,7 +300,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.Arc2D"/></param>
         public void SetArc(Java.Awt.Geom.Arc2D arg0)
         {
-            IExecuteWithSignature("setArc", "(Ljava/awt/geom/Arc2D;)V", arg0);
+            IExecute("setArc", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Point2D,java.awt.geom.Dimension2D,double,double,int)"/>

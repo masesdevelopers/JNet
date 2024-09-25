@@ -158,7 +158,7 @@ namespace Javax.Swing.Event
         /// </summary>
         public Javax.Swing.JInternalFrame InternalFrame
         {
-            get { return IExecuteWithSignature<Javax.Swing.JInternalFrame>("getInternalFrame", "()Ljavax/swing/JInternalFrame;"); }
+            get { return IExecute<Javax.Swing.JInternalFrame>("getInternalFrame"); }
         }
 
         #endregion

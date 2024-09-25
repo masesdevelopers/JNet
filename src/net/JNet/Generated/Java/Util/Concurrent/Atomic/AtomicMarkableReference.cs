@@ -150,7 +150,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         public object Reference
         {
-            get { return IExecuteWithSignature("getReference", "()Ljava/lang/Object;"); }
+            get { return IExecute("getReference"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#attemptMark(java.lang.Object,boolean)"/>
@@ -180,7 +180,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool IsMarked()
         {
-            return IExecuteWithSignature<bool>("isMarked", "()Z");
+            return IExecute<bool>("isMarked");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
@@ -201,7 +201,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object Get(bool[] arg0)
         {
-            return IExecuteWithSignature("get", "([Z)Ljava/lang/Object;", new object[] { arg0 });
+            return IExecute("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#set(java.lang.Object,boolean)"/>
@@ -261,7 +261,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         public V Reference
         {
-            get { return IExecuteWithSignature<V>("getReference", "()Ljava/lang/Object;"); }
+            get { return IExecute<V>("getReference"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#attemptMark(java.lang.Object,boolean)"/>
@@ -291,7 +291,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool IsMarked()
         {
-            return IExecuteWithSignature<bool>("isMarked", "()Z");
+            return IExecute<bool>("isMarked");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
@@ -312,7 +312,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="V"/></returns>
         public V Get(bool[] arg0)
         {
-            return IExecuteWithSignature<V>("get", "([Z)Ljava/lang/Object;", new object[] { arg0 });
+            return IExecute<V>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#set(java.lang.Object,boolean)"/>

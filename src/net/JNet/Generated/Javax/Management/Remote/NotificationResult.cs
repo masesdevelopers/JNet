@@ -105,21 +105,21 @@ namespace Javax.Management.Remote
         /// </summary>
         public long EarliestSequenceNumber
         {
-            get { return IExecuteWithSignature<long>("getEarliestSequenceNumber", "()J"); }
+            get { return IExecute<long>("getEarliestSequenceNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html#getNextSequenceNumber()"/> 
         /// </summary>
         public long NextSequenceNumber
         {
-            get { return IExecuteWithSignature<long>("getNextSequenceNumber", "()J"); }
+            get { return IExecute<long>("getNextSequenceNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html#getTargetedNotifications()"/> 
         /// </summary>
         public Javax.Management.Remote.TargetedNotification[] TargetedNotifications
         {
-            get { return IExecuteWithSignatureArray<Javax.Management.Remote.TargetedNotification>("getTargetedNotifications", "()[Ljavax/management/remote/TargetedNotification;"); }
+            get { return IExecuteArray<Javax.Management.Remote.TargetedNotification>("getTargetedNotifications"); }
         }
 
         #endregion

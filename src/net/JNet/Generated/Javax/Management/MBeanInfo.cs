@@ -136,49 +136,49 @@ namespace Javax.Management
         /// </summary>
         public Javax.Management.MBeanAttributeInfo[] Attributes
         {
-            get { return IExecuteWithSignatureArray<Javax.Management.MBeanAttributeInfo>("getAttributes", "()[Ljavax/management/MBeanAttributeInfo;"); }
+            get { return IExecuteArray<Javax.Management.MBeanAttributeInfo>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getClassName()"/> 
         /// </summary>
         public Java.Lang.String ClassName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getConstructors()"/> 
         /// </summary>
         public Javax.Management.MBeanConstructorInfo[] Constructors
         {
-            get { return IExecuteWithSignatureArray<Javax.Management.MBeanConstructorInfo>("getConstructors", "()[Ljavax/management/MBeanConstructorInfo;"); }
+            get { return IExecuteArray<Javax.Management.MBeanConstructorInfo>("getConstructors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getDescription()"/> 
         /// </summary>
         public Java.Lang.String Description
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDescription"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getDescriptor()"/> 
         /// </summary>
         public Javax.Management.Descriptor Descriptor
         {
-            get { return IExecuteWithSignature<Javax.Management.Descriptor>("getDescriptor", "()Ljavax/management/Descriptor;"); }
+            get { return IExecute<Javax.Management.Descriptor>("getDescriptor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getNotifications()"/> 
         /// </summary>
         public Javax.Management.MBeanNotificationInfo[] Notifications
         {
-            get { return IExecuteWithSignatureArray<Javax.Management.MBeanNotificationInfo>("getNotifications", "()[Ljavax/management/MBeanNotificationInfo;"); }
+            get { return IExecuteArray<Javax.Management.MBeanNotificationInfo>("getNotifications"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getOperations()"/> 
         /// </summary>
         public Javax.Management.MBeanOperationInfo[] Operations
         {
-            get { return IExecuteWithSignatureArray<Javax.Management.MBeanOperationInfo>("getOperations", "()[Ljavax/management/MBeanOperationInfo;"); }
+            get { return IExecuteArray<Javax.Management.MBeanOperationInfo>("getOperations"); }
         }
 
         #endregion

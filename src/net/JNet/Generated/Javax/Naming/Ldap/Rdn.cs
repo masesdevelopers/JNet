@@ -137,7 +137,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="object"/></returns>
         public static object UnescapeValue(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature(LocalBridgeClazz, "unescapeValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return SExecute(LocalBridgeClazz, "unescapeValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#escapeValue(java.lang.Object)"/>
@@ -146,7 +146,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String EscapeValue(object arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "escapeValue", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "escapeValue", arg0);
         }
 
         #endregion
@@ -157,14 +157,14 @@ namespace Javax.Naming.Ldap
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#getValue()"/> 
         /// </summary>
         public object Value
         {
-            get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); }
+            get { return IExecute("getValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#compareTo(java.lang.Object)"/>
@@ -173,7 +173,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#size()"/>
@@ -181,7 +181,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#toAttributes()"/>
@@ -189,7 +189,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="Javax.Naming.Directory.Attributes"/></returns>
         public Javax.Naming.Directory.Attributes ToAttributes()
         {
-            return IExecuteWithSignature<Javax.Naming.Directory.Attributes>("toAttributes", "()Ljavax/naming/directory/Attributes;");
+            return IExecute<Javax.Naming.Directory.Attributes>("toAttributes");
         }
 
         #endregion

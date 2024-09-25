@@ -148,7 +148,7 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         public Java.Awt.DesktopNs.UserSessionEvent.Reason GetReason
         {
-            get { return IExecuteWithSignature<Java.Awt.DesktopNs.UserSessionEvent.Reason>("getReason", "()Ljava/awt/desktop/UserSessionEvent$Reason;"); }
+            get { return IExecute<Java.Awt.DesktopNs.UserSessionEvent.Reason>("getReason"); }
         }
 
         #endregion

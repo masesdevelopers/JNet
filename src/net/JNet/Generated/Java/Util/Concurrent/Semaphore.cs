@@ -112,7 +112,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public int QueueLength
         {
-            get { return IExecuteWithSignature<int>("getQueueLength", "()I"); }
+            get { return IExecute<int>("getQueueLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#isFair()"/>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsFair()
         {
-            return IExecuteWithSignature<bool>("isFair", "()Z");
+            return IExecute<bool>("isFair");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#tryAcquire()"/>
@@ -128,7 +128,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool TryAcquire()
         {
-            return IExecuteWithSignature<bool>("tryAcquire", "()Z");
+            return IExecute<bool>("tryAcquire");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#tryAcquire(int,long,java.util.concurrent.TimeUnit)"/>
@@ -149,7 +149,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool TryAcquire(int arg0)
         {
-            return IExecuteWithSignature<bool>("tryAcquire", "(I)Z", arg0);
+            return IExecute<bool>("tryAcquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#tryAcquire(long,java.util.concurrent.TimeUnit)"/>
@@ -168,7 +168,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThreads()
         {
-            return IExecuteWithSignature<bool>("hasQueuedThreads", "()Z");
+            return IExecute<bool>("hasQueuedThreads");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#availablePermits()"/>
@@ -176,7 +176,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int AvailablePermits()
         {
-            return IExecuteWithSignature<int>("availablePermits", "()I");
+            return IExecute<int>("availablePermits");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#drainPermits()"/>
@@ -184,7 +184,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainPermits()
         {
-            return IExecuteWithSignature<int>("drainPermits", "()I");
+            return IExecute<int>("drainPermits");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#acquire()"/>
@@ -192,7 +192,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Acquire()
         {
-            IExecuteWithSignature("acquire", "()V");
+            IExecute("acquire");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#acquire(int)"/>
@@ -201,14 +201,14 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Acquire(int arg0)
         {
-            IExecuteWithSignature("acquire", "(I)V", arg0);
+            IExecute("acquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#acquireUninterruptibly()"/>
         /// </summary>
         public void AcquireUninterruptibly()
         {
-            IExecuteWithSignature("acquireUninterruptibly", "()V");
+            IExecute("acquireUninterruptibly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#acquireUninterruptibly(int)"/>
@@ -216,14 +216,14 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="int"/></param>
         public void AcquireUninterruptibly(int arg0)
         {
-            IExecuteWithSignature("acquireUninterruptibly", "(I)V", arg0);
+            IExecute("acquireUninterruptibly", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#release()"/>
         /// </summary>
         public void Release()
         {
-            IExecuteWithSignature("release", "()V");
+            IExecute("release");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#release(int)"/>
@@ -231,7 +231,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="int"/></param>
         public void Release(int arg0)
         {
-            IExecuteWithSignature("release", "(I)V", arg0);
+            IExecute("release", arg0);
         }
 
         #endregion

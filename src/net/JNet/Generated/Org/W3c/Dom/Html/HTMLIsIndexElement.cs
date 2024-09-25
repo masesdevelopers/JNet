@@ -123,14 +123,14 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Org.W3c.Dom.Html.HTMLFormElement Form
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLFormElement>("getForm", "()Lorg/w3c/dom/html/HTMLFormElement;"); }
+            get { return IExecute<Org.W3c.Dom.Html.HTMLFormElement>("getForm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIsIndexElement.html#getPrompt()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLIsIndexElement.html#setPrompt(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Prompt
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrompt", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPrompt", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getPrompt"); } set { IExecute("setPrompt", value); }
         }
 
         #endregion

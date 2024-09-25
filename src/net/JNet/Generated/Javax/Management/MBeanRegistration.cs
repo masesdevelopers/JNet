@@ -148,7 +148,7 @@ namespace Javax.Management
         /// </summary>
         public void PostDeregister()
         {
-            IExecuteWithSignature("postDeregister", "()V");
+            IExecute("postDeregister");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanRegistration.html#postRegister(java.lang.Boolean)"/>
@@ -156,7 +156,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
         public void PostRegister(Java.Lang.Boolean arg0)
         {
-            IExecuteWithSignature("postRegister", "(Ljava/lang/Boolean;)V", arg0);
+            IExecute("postRegister", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanRegistration.html#preDeregister()"/>
@@ -164,7 +164,7 @@ namespace Javax.Management
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
-            IExecuteWithSignature("preDeregister", "()V");
+            IExecute("preDeregister");
         }
 
         #endregion

@@ -135,35 +135,35 @@ namespace Javax.Print
         /// </summary>
         public Javax.Print.Attribute.DocAttributeSet Attributes
         {
-            get { return IExecuteWithSignature<Javax.Print.Attribute.DocAttributeSet>("getAttributes", "()Ljavax/print/attribute/DocAttributeSet;"); }
+            get { return IExecute<Javax.Print.Attribute.DocAttributeSet>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getDocFlavor()"/> 
         /// </summary>
         public Javax.Print.DocFlavor DocFlavor
         {
-            get { return IExecuteWithSignature<Javax.Print.DocFlavor>("getDocFlavor", "()Ljavax/print/DocFlavor;"); }
+            get { return IExecute<Javax.Print.DocFlavor>("getDocFlavor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getPrintData()"/> 
         /// </summary>
         public object PrintData
         {
-            get { return IExecuteWithSignature("getPrintData", "()Ljava/lang/Object;"); }
+            get { return IExecute("getPrintData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getReaderForText()"/> 
         /// </summary>
         public Java.Io.Reader ReaderForText
         {
-            get { return IExecuteWithSignature<Java.Io.Reader>("getReaderForText", "()Ljava/io/Reader;"); }
+            get { return IExecute<Java.Io.Reader>("getReaderForText"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getStreamForBytes()"/> 
         /// </summary>
         public Java.Io.InputStream StreamForBytes
         {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getStreamForBytes", "()Ljava/io/InputStream;"); }
+            get { return IExecute<Java.Io.InputStream>("getStreamForBytes"); }
         }
 
         #endregion

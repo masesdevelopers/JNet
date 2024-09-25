@@ -104,14 +104,14 @@ namespace Javax.Security.Auth
         /// </summary>
         public Java.Lang.String CredentialClass
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCredentialClass", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCredentialClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/PrivateCredentialPermission.html#getPrincipals()"/> 
         /// </summary>
         public Java.Lang.String[] Principals
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getPrincipals", "()[[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getPrincipals"); }
         }
 
         #endregion

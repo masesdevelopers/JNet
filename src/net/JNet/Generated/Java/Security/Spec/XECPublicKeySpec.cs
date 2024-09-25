@@ -104,14 +104,14 @@ namespace Java.Security.Spec
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec Params
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParams", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+            get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParams"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/XECPublicKeySpec.html#getU()"/> 
         /// </summary>
         public Java.Math.BigInteger U
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getU", "()Ljava/math/BigInteger;"); }
+            get { return IExecute<Java.Math.BigInteger>("getU"); }
         }
 
         #endregion

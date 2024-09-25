@@ -185,21 +185,21 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public int MapSize
         {
-            get { return IExecuteWithSignature<int>("getMapSize", "()I"); }
+            get { return IExecute<int>("getMapSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getTransparentPixel()"/> 
         /// </summary>
         public int TransparentPixel
         {
-            get { return IExecuteWithSignature<int>("getTransparentPixel", "()I"); }
+            get { return IExecute<int>("getTransparentPixel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getValidPixels()"/> 
         /// </summary>
         public Java.Math.BigInteger ValidPixels
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getValidPixels", "()Ljava/math/BigInteger;"); }
+            get { return IExecute<Java.Math.BigInteger>("getValidPixels"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#isValid()"/>
@@ -207,7 +207,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
-            return IExecuteWithSignature<bool>("isValid", "()Z");
+            return IExecute<bool>("isValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#isValid(int)"/>
@@ -216,7 +216,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool IsValid(int arg0)
         {
-            return IExecuteWithSignature<bool>("isValid", "(I)Z", arg0);
+            return IExecute<bool>("isValid", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getAlphas(byte[])"/>
@@ -224,7 +224,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="byte"/></param>
         public void GetAlphas(byte[] arg0)
         {
-            IExecuteWithSignature("getAlphas", "([B)V", new object[] { arg0 });
+            IExecute("getAlphas", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getBlues(byte[])"/>
@@ -232,7 +232,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="byte"/></param>
         public void GetBlues(byte[] arg0)
         {
-            IExecuteWithSignature("getBlues", "([B)V", new object[] { arg0 });
+            IExecute("getBlues", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getGreens(byte[])"/>
@@ -240,7 +240,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="byte"/></param>
         public void GetGreens(byte[] arg0)
         {
-            IExecuteWithSignature("getGreens", "([B)V", new object[] { arg0 });
+            IExecute("getGreens", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getReds(byte[])"/>
@@ -248,7 +248,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="byte"/></param>
         public void GetReds(byte[] arg0)
         {
-            IExecuteWithSignature("getReds", "([B)V", new object[] { arg0 });
+            IExecute("getReds", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getRGBs(int[])"/>
@@ -256,7 +256,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         public void GetRGBs(int[] arg0)
         {
-            IExecuteWithSignature("getRGBs", "([I)V", new object[] { arg0 });
+            IExecute("getRGBs", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#convertToIntDiscrete(java.awt.image.Raster,boolean)"/>

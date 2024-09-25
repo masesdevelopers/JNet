@@ -185,7 +185,7 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public static Java.Awt.Datatransfer.DataFlavor TextPlainUnicodeFlavor
         {
-            get { return SExecuteWithSignature<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "getTextPlainUnicodeFlavor", "()Ljava/awt/datatransfer/DataFlavor;"); }
+            get { return SExecute<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "getTextPlainUnicodeFlavor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#selectBestTextFlavor(java.awt.datatransfer.DataFlavor[])"/>
@@ -194,7 +194,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="Java.Awt.Datatransfer.DataFlavor"/></returns>
         public static Java.Awt.Datatransfer.DataFlavor SelectBestTextFlavor(Java.Awt.Datatransfer.DataFlavor[] arg0)
         {
-            return SExecuteWithSignature<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "selectBestTextFlavor", "([Ljava/awt/datatransfer/DataFlavor;)Ljava/awt/datatransfer/DataFlavor;", new object[] { arg0 });
+            return SExecute<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "selectBestTextFlavor", new object[] { arg0 });
         }
 
         #endregion
@@ -205,49 +205,49 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public Java.Lang.Class DefaultRepresentationClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDefaultRepresentationClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getDefaultRepresentationClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getDefaultRepresentationClassAsString()"/> 
         /// </summary>
         public Java.Lang.String DefaultRepresentationClassAsString
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDefaultRepresentationClassAsString", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDefaultRepresentationClassAsString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getHumanPresentableName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#setHumanPresentableName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String HumanPresentableName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHumanPresentableName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHumanPresentableName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getHumanPresentableName"); } set { IExecute("setHumanPresentableName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getMimeType()"/> 
         /// </summary>
         public Java.Lang.String MimeType
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMimeType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getPrimaryType()"/> 
         /// </summary>
         public Java.Lang.String PrimaryType
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrimaryType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPrimaryType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getRepresentationClass()"/> 
         /// </summary>
         public Java.Lang.Class RepresentationClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getRepresentationClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getRepresentationClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getSubType()"/> 
         /// </summary>
         public Java.Lang.String SubType
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSubType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSubType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorJavaFileListType()"/>
@@ -255,7 +255,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsFlavorJavaFileListType()
         {
-            return IExecuteWithSignature<bool>("isFlavorJavaFileListType", "()Z");
+            return IExecute<bool>("isFlavorJavaFileListType");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorRemoteObjectType()"/>
@@ -263,7 +263,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsFlavorRemoteObjectType()
         {
-            return IExecuteWithSignature<bool>("isFlavorRemoteObjectType", "()Z");
+            return IExecute<bool>("isFlavorRemoteObjectType");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorSerializedObjectType()"/>
@@ -271,7 +271,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsFlavorSerializedObjectType()
         {
-            return IExecuteWithSignature<bool>("isFlavorSerializedObjectType", "()Z");
+            return IExecute<bool>("isFlavorSerializedObjectType");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isFlavorTextType()"/>
@@ -279,7 +279,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsFlavorTextType()
         {
-            return IExecuteWithSignature<bool>("isFlavorTextType", "()Z");
+            return IExecute<bool>("isFlavorTextType");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isMimeTypeEqual(java.lang.String)"/>
@@ -288,7 +288,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsMimeTypeEqual(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("isMimeTypeEqual", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("isMimeTypeEqual", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isMimeTypeSerializedObject()"/>
@@ -296,7 +296,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsMimeTypeSerializedObject()
         {
-            return IExecuteWithSignature<bool>("isMimeTypeSerializedObject", "()Z");
+            return IExecute<bool>("isMimeTypeSerializedObject");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassByteBuffer()"/>
@@ -304,7 +304,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassByteBuffer()
         {
-            return IExecuteWithSignature<bool>("isRepresentationClassByteBuffer", "()Z");
+            return IExecute<bool>("isRepresentationClassByteBuffer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassCharBuffer()"/>
@@ -312,7 +312,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassCharBuffer()
         {
-            return IExecuteWithSignature<bool>("isRepresentationClassCharBuffer", "()Z");
+            return IExecute<bool>("isRepresentationClassCharBuffer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassInputStream()"/>
@@ -320,7 +320,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassInputStream()
         {
-            return IExecuteWithSignature<bool>("isRepresentationClassInputStream", "()Z");
+            return IExecute<bool>("isRepresentationClassInputStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassReader()"/>
@@ -328,7 +328,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassReader()
         {
-            return IExecuteWithSignature<bool>("isRepresentationClassReader", "()Z");
+            return IExecute<bool>("isRepresentationClassReader");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassRemote()"/>
@@ -336,7 +336,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassRemote()
         {
-            return IExecuteWithSignature<bool>("isRepresentationClassRemote", "()Z");
+            return IExecute<bool>("isRepresentationClassRemote");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isRepresentationClassSerializable()"/>
@@ -344,7 +344,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsRepresentationClassSerializable()
         {
-            return IExecuteWithSignature<bool>("isRepresentationClassSerializable", "()Z");
+            return IExecute<bool>("isRepresentationClassSerializable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#match(java.awt.datatransfer.DataFlavor)"/>
@@ -353,7 +353,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool Match(Java.Awt.Datatransfer.DataFlavor arg0)
         {
-            return IExecuteWithSignature<bool>("match", "(Ljava/awt/datatransfer/DataFlavor;)Z", arg0);
+            return IExecute<bool>("match", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#isMimeTypeEqual(java.awt.datatransfer.DataFlavor)"/>
@@ -362,7 +362,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="bool"/></returns>
         public bool IsMimeTypeEqual(Java.Awt.Datatransfer.DataFlavor arg0)
         {
-            return IExecuteWithSignature<bool>("isMimeTypeEqual", "(Ljava/awt/datatransfer/DataFlavor;)Z", arg0);
+            return IExecute<bool>("isMimeTypeEqual", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getReaderForText(java.awt.datatransfer.Transferable)"/>
@@ -373,7 +373,7 @@ namespace Java.Awt.Datatransfer
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.Reader GetReaderForText(Java.Awt.Datatransfer.Transferable arg0)
         {
-            return IExecuteWithSignature<Java.Io.Reader>("getReaderForText", "(Ljava/awt/datatransfer/Transferable;)Ljava/io/Reader;", arg0);
+            return IExecute<Java.Io.Reader>("getReaderForText", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getParameter(java.lang.String)"/>
@@ -382,7 +382,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetParameter(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getParameter", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#readExternal(java.io.ObjectInput)"/>
@@ -392,7 +392,7 @@ namespace Java.Awt.Datatransfer
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public void ReadExternal(Java.Io.ObjectInput arg0)
         {
-            IExecuteWithSignature("readExternal", "(Ljava/io/ObjectInput;)V", arg0);
+            IExecute("readExternal", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#writeExternal(java.io.ObjectOutput)"/>
@@ -401,7 +401,7 @@ namespace Java.Awt.Datatransfer
         /// <exception cref="Java.Io.IOException"/>
         public void WriteExternal(Java.Io.ObjectOutput arg0)
         {
-            IExecuteWithSignature("writeExternal", "(Ljava/io/ObjectOutput;)V", arg0);
+            IExecute("writeExternal", arg0);
         }
 
         #endregion

@@ -173,7 +173,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Month"/></returns>
         public static Java.Time.Month From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecuteWithSignature<Java.Time.Month>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/Month;", arg0);
+            return SExecute<Java.Time.Month>(LocalBridgeClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#of(int)"/>
@@ -182,7 +182,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Month"/></returns>
         public static Java.Time.Month Of(int arg0)
         {
-            return SExecuteWithSignature<Java.Time.Month>(LocalBridgeClazz, "of", "(I)Ljava/time/Month;", arg0);
+            return SExecute<Java.Time.Month>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#valueOf(java.lang.String)"/>
@@ -191,7 +191,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Month"/></returns>
         public static Java.Time.Month ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Time.Month>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/Month;", arg0);
+            return SExecute<Java.Time.Month>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#values()"/>
@@ -199,7 +199,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Month"/></returns>
         public static Java.Time.Month[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Time.Month>(LocalBridgeClazz, "values", "()[Ljava/time/Month;");
+            return SExecuteArray<Java.Time.Month>(LocalBridgeClazz, "values");
         }
 
         #endregion
@@ -210,7 +210,7 @@ namespace Java.Time
         /// </summary>
         public int Value
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); }
+            get { return IExecute<int>("getValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#query(java.time.temporal.TemporalQuery)"/>
@@ -220,7 +220,7 @@ namespace Java.Time
         /// <returns><typeparamref name="R"/></returns>
         public R Query<R>(Java.Time.Temporal.TemporalQuery<R> arg0)
         {
-            return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
+            return IExecute<R>("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#isSupported(java.time.temporal.TemporalField)"/>
@@ -229,7 +229,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
+            return IExecute<bool>("isSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#firstDayOfYear(boolean)"/>
@@ -238,7 +238,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int FirstDayOfYear(bool arg0)
         {
-            return IExecuteWithSignature<int>("firstDayOfYear", "(Z)I", arg0);
+            return IExecute<int>("firstDayOfYear", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#get(java.time.temporal.TemporalField)"/>
@@ -247,7 +247,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int Get(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
+            return IExecute<int>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#length(boolean)"/>
@@ -256,7 +256,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int Length(bool arg0)
         {
-            return IExecuteWithSignature<int>("length", "(Z)I", arg0);
+            return IExecute<int>("length", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#maxLength()"/>
@@ -264,7 +264,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int MaxLength()
         {
-            return IExecuteWithSignature<int>("maxLength", "()I");
+            return IExecute<int>("maxLength");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#minLength()"/>
@@ -272,7 +272,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int MinLength()
         {
-            return IExecuteWithSignature<int>("minLength", "()I");
+            return IExecute<int>("minLength");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
@@ -290,7 +290,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Month"/></returns>
         public Java.Time.Month FirstMonthOfQuarter()
         {
-            return IExecuteWithSignature<Java.Time.Month>("firstMonthOfQuarter", "()Ljava/time/Month;");
+            return IExecute<Java.Time.Month>("firstMonthOfQuarter");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#minus(long)"/>
@@ -299,7 +299,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Month"/></returns>
         public Java.Time.Month Minus(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.Month>("minus", "(J)Ljava/time/Month;", arg0);
+            return IExecute<Java.Time.Month>("minus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#plus(long)"/>
@@ -308,7 +308,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Month"/></returns>
         public Java.Time.Month Plus(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.Month>("plus", "(J)Ljava/time/Month;", arg0);
+            return IExecute<Java.Time.Month>("plus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#adjustInto(java.time.temporal.Temporal)"/>
@@ -317,7 +317,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("adjustInto", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("adjustInto", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#range(java.time.temporal.TemporalField)"/>
@@ -326,7 +326,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
+            return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#getLong(java.time.temporal.TemporalField)"/>
@@ -335,7 +335,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long GetLong(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
+            return IExecute<long>("getLong", arg0);
         }
 
         #endregion

@@ -175,28 +175,28 @@ namespace Javax.Swing.Event
         /// </summary>
         public int Column
         {
-            get { return IExecuteWithSignature<int>("getColumn", "()I"); }
+            get { return IExecute<int>("getColumn"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#getFirstRow()"/> 
         /// </summary>
         public int FirstRow
         {
-            get { return IExecuteWithSignature<int>("getFirstRow", "()I"); }
+            get { return IExecute<int>("getFirstRow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#getLastRow()"/> 
         /// </summary>
         public int LastRow
         {
-            get { return IExecuteWithSignature<int>("getLastRow", "()I"); }
+            get { return IExecute<int>("getLastRow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            get { return IExecute<int>("getType"); }
         }
 
         #endregion

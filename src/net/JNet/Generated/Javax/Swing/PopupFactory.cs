@@ -91,7 +91,7 @@ namespace Javax.Swing
         /// </summary>
         public static Javax.Swing.PopupFactory SharedInstance
         {
-            get { return SExecuteWithSignature<Javax.Swing.PopupFactory>(LocalBridgeClazz, "getSharedInstance", "()Ljavax/swing/PopupFactory;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setSharedInstance", "(Ljavax/swing/PopupFactory;)V", value); }
+            get { return SExecute<Javax.Swing.PopupFactory>(LocalBridgeClazz, "getSharedInstance"); } set { SExecute(LocalBridgeClazz, "setSharedInstance", value); }
         }
 
         #endregion

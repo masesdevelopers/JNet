@@ -497,28 +497,28 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
+            get { return SExecuteArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getDefault()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#setDefault(java.util.Locale)"/>
         /// </summary>
         public static Java.Util.Locale Default
         {
-            get { return SExecuteWithSignature<Java.Util.Locale>(LocalBridgeClazz, "getDefault", "()Ljava/util/Locale;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/util/Locale;)V", value); }
+            get { return SExecute<Java.Util.Locale>(LocalBridgeClazz, "getDefault"); } set { SExecute(LocalBridgeClazz, "setDefault", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getISOCountries()"/> 
         /// </summary>
         public static Java.Lang.String[] ISOCountries
         {
-            get { return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getISOCountries", "()[Ljava/lang/String;"); }
+            get { return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "getISOCountries"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getISOLanguages()"/> 
         /// </summary>
         public static Java.Lang.String[] ISOLanguages
         {
-            get { return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getISOLanguages", "()[Ljava/lang/String;"); }
+            get { return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "getISOLanguages"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#lookupTag(java.util.List,java.util.Collection)"/>
@@ -579,7 +579,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public static Java.Util.Locale ForLanguageTag(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.Locale>(LocalBridgeClazz, "forLanguageTag", "(Ljava/lang/String;)Ljava/util/Locale;", arg0);
+            return SExecute<Java.Util.Locale>(LocalBridgeClazz, "forLanguageTag", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getDefault(java.util.Locale.Category)"/>
@@ -588,7 +588,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public static Java.Util.Locale GetDefault(Java.Util.Locale.Category arg0)
         {
-            return SExecuteWithSignature<Java.Util.Locale>(LocalBridgeClazz, "getDefault", "(Ljava/util/Locale$Category;)Ljava/util/Locale;", arg0);
+            return SExecute<Java.Util.Locale>(LocalBridgeClazz, "getDefault", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#lookup(java.util.List,java.util.Collection)"/>
@@ -607,7 +607,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Java.Lang.String> GetISOCountries(Java.Util.Locale.IsoCountryCode arg0)
         {
-            return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getISOCountries", "(Ljava/util/Locale$IsoCountryCode;)Ljava/util/Set;", arg0);
+            return SExecute<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getISOCountries", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#setDefault(java.util.Locale.Category,java.util.Locale)"/>
@@ -627,98 +627,98 @@ namespace Java.Util
         /// </summary>
         public Java.Lang.String Country
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCountry", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCountry"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getDisplayCountry()"/> 
         /// </summary>
         public Java.Lang.String DisplayCountry
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayCountry", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDisplayCountry"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getDisplayLanguage()"/> 
         /// </summary>
         public Java.Lang.String DisplayLanguage
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayLanguage", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDisplayLanguage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getDisplayName()"/> 
         /// </summary>
         public Java.Lang.String DisplayName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDisplayName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getDisplayScript()"/> 
         /// </summary>
         public Java.Lang.String DisplayScript
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayScript", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDisplayScript"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getDisplayVariant()"/> 
         /// </summary>
         public Java.Lang.String DisplayVariant
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayVariant", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDisplayVariant"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getExtensionKeys()"/> 
         /// </summary>
         public Java.Util.Set<Java.Lang.Character> ExtensionKeys
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.Character>>("getExtensionKeys", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set<Java.Lang.Character>>("getExtensionKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getISO3Country()"/> 
         /// </summary>
         public Java.Lang.String ISO3Country
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getISO3Country", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getISO3Country"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getISO3Language()"/> 
         /// </summary>
         public Java.Lang.String ISO3Language
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getISO3Language", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getISO3Language"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getLanguage()"/> 
         /// </summary>
         public Java.Lang.String Language
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getLanguage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getScript()"/> 
         /// </summary>
         public Java.Lang.String Script
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getScript", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getScript"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getUnicodeLocaleAttributes()"/> 
         /// </summary>
         public Java.Util.Set<Java.Lang.String> UnicodeLocaleAttributes
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleAttributes", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getUnicodeLocaleKeys()"/> 
         /// </summary>
         public Java.Util.Set<Java.Lang.String> UnicodeLocaleKeys
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleKeys", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getVariant()"/> 
         /// </summary>
         public Java.Lang.String Variant
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVariant", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getVariant"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#hasExtensions()"/>
@@ -726,7 +726,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool HasExtensions()
         {
-            return IExecuteWithSignature<bool>("hasExtensions", "()Z");
+            return IExecute<bool>("hasExtensions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getDisplayCountry(java.util.Locale)"/>
@@ -735,7 +735,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayCountry(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDisplayCountry", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getDisplayCountry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getDisplayLanguage(java.util.Locale)"/>
@@ -744,7 +744,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayLanguage(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDisplayLanguage", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getDisplayLanguage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getDisplayName(java.util.Locale)"/>
@@ -753,7 +753,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getDisplayName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getDisplayScript(java.util.Locale)"/>
@@ -762,7 +762,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayScript(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDisplayScript", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getDisplayScript", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getDisplayVariant(java.util.Locale)"/>
@@ -771,7 +771,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayVariant(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDisplayVariant", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getDisplayVariant", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getExtension(char)"/>
@@ -780,7 +780,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetExtension(char arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getExtension", "(C)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getExtension", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getUnicodeLocaleType(java.lang.String)"/>
@@ -789,7 +789,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetUnicodeLocaleType(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getUnicodeLocaleType", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getUnicodeLocaleType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#toLanguageTag()"/>
@@ -797,7 +797,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToLanguageTag()
         {
-            return IExecuteWithSignature<Java.Lang.String>("toLanguageTag", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("toLanguageTag");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#stripExtensions()"/>
@@ -805,7 +805,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public Java.Util.Locale StripExtensions()
         {
-            return IExecuteWithSignature<Java.Util.Locale>("stripExtensions", "()Ljava/util/Locale;");
+            return IExecute<Java.Util.Locale>("stripExtensions");
         }
 
         #endregion
@@ -881,7 +881,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder SetExtension(char arg0, Java.Lang.String arg1)
             {
-                return IExecute<Java.Util.Locale.Builder>("setExtension", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Locale.Builder>("setExtension", "(CLjava/lang/String;)Ljava/util/Locale$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#setLanguage(java.lang.String)"/>
@@ -936,7 +936,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder SetUnicodeLocaleKeyword(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Java.Util.Locale.Builder>("setUnicodeLocaleKeyword", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Locale.Builder>("setUnicodeLocaleKeyword", "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Locale$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#setVariant(java.lang.String)"/>
@@ -993,7 +993,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Locale.Category"/></returns>
             public static Java.Util.Locale.Category ValueOf(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Java.Util.Locale.Category>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/util/Locale$Category;", arg0);
+                return SExecute<Java.Util.Locale.Category>(LocalBridgeClazz, "valueOf", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#values()"/>
@@ -1001,7 +1001,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Locale.Category"/></returns>
             public static Java.Util.Locale.Category[] Values()
             {
-                return SExecuteWithSignatureArray<Java.Util.Locale.Category>(LocalBridgeClazz, "values", "()[Ljava/util/Locale$Category;");
+                return SExecuteArray<Java.Util.Locale.Category>(LocalBridgeClazz, "values");
             }
 
             #endregion
@@ -1071,7 +1071,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Locale.FilteringMode"/></returns>
             public static Java.Util.Locale.FilteringMode ValueOf(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Java.Util.Locale.FilteringMode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/util/Locale$FilteringMode;", arg0);
+                return SExecute<Java.Util.Locale.FilteringMode>(LocalBridgeClazz, "valueOf", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.FilteringMode.html#values()"/>
@@ -1079,7 +1079,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Locale.FilteringMode"/></returns>
             public static Java.Util.Locale.FilteringMode[] Values()
             {
-                return SExecuteWithSignatureArray<Java.Util.Locale.FilteringMode>(LocalBridgeClazz, "values", "()[Ljava/util/Locale$FilteringMode;");
+                return SExecuteArray<Java.Util.Locale.FilteringMode>(LocalBridgeClazz, "values");
             }
 
             #endregion
@@ -1137,7 +1137,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Locale.IsoCountryCode"/></returns>
             public static Java.Util.Locale.IsoCountryCode ValueOf(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Java.Util.Locale.IsoCountryCode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/util/Locale$IsoCountryCode;", arg0);
+                return SExecute<Java.Util.Locale.IsoCountryCode>(LocalBridgeClazz, "valueOf", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#values()"/>
@@ -1145,7 +1145,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Locale.IsoCountryCode"/></returns>
             public static Java.Util.Locale.IsoCountryCode[] Values()
             {
-                return SExecuteWithSignatureArray<Java.Util.Locale.IsoCountryCode>(LocalBridgeClazz, "values", "()[Ljava/util/Locale$IsoCountryCode;");
+                return SExecuteArray<Java.Util.Locale.IsoCountryCode>(LocalBridgeClazz, "values");
             }
 
             #endregion
@@ -1234,7 +1234,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.List"/></returns>
             public static Java.Util.List<Java.Util.Locale.LanguageRange> Parse(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Java.Util.List<Java.Util.Locale.LanguageRange>>(LocalBridgeClazz, "parse", "(Ljava/lang/String;)Ljava/util/List;", arg0);
+                return SExecute<Java.Util.List<Java.Util.Locale.LanguageRange>>(LocalBridgeClazz, "parse", arg0);
             }
 
             #endregion
@@ -1245,14 +1245,14 @@ namespace Java.Util
             /// </summary>
             public Java.Lang.String Range
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getRange", "()Ljava/lang/String;"); }
+                get { return IExecute<Java.Lang.String>("getRange"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#getWeight()"/> 
             /// </summary>
             public double Weight
             {
-                get { return IExecuteWithSignature<double>("getWeight", "()D"); }
+                get { return IExecute<double>("getWeight"); }
             }
 
             #endregion

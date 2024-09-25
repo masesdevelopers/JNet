@@ -119,7 +119,7 @@ namespace Java.Beans.Beancontext
         /// </summary>
         public Java.Beans.BeanInfo[] ServicesBeanInfo
         {
-            get { return IExecuteWithSignatureArray<Java.Beans.BeanInfo>("getServicesBeanInfo", "()[Ljava/beans/BeanInfo;"); }
+            get { return IExecuteArray<Java.Beans.BeanInfo>("getServicesBeanInfo"); }
         }
 
         #endregion

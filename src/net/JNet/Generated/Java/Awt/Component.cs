@@ -184,315 +184,315 @@ namespace Java.Awt
         /// </summary>
         public Javax.Accessibility.AccessibleContext AccessibleContext
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleContext>("getAccessibleContext", "()Ljavax/accessibility/AccessibleContext;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleContext>("getAccessibleContext"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getAlignmentX()"/> 
         /// </summary>
         public float AlignmentX
         {
-            get { return IExecuteWithSignature<float>("getAlignmentX", "()F"); }
+            get { return IExecute<float>("getAlignmentX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getAlignmentY()"/> 
         /// </summary>
         public float AlignmentY
         {
-            get { return IExecuteWithSignature<float>("getAlignmentY", "()F"); }
+            get { return IExecute<float>("getAlignmentY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBackground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setBackground(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color Background
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getBackground", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setBackground", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getBackground"); } set { IExecute("setBackground", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBounds()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setBounds(java.awt.Rectangle)"/>
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
-            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "()Ljava/awt/Rectangle;"); } set { IExecuteWithSignature("setBounds", "(Ljava/awt/Rectangle;)V", value); }
+            get { return IExecute<Java.Awt.Rectangle>("getBounds"); } set { IExecute("setBounds", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getColorModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.ColorModel ColorModel
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.ColorModel>("getColorModel", "()Ljava/awt/image/ColorModel;"); }
+            get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getComponentListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ComponentListener[] ComponentListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ComponentListener>("getComponentListeners", "()[Ljava/awt/event/ComponentListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.ComponentListener>("getComponentListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getComponentOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setComponentOrientation(java.awt.ComponentOrientation)"/>
         /// </summary>
         public Java.Awt.ComponentOrientation ComponentOrientation
         {
-            get { return IExecuteWithSignature<Java.Awt.ComponentOrientation>("getComponentOrientation", "()Ljava/awt/ComponentOrientation;"); } set { IExecuteWithSignature("setComponentOrientation", "(Ljava/awt/ComponentOrientation;)V", value); }
+            get { return IExecute<Java.Awt.ComponentOrientation>("getComponentOrientation"); } set { IExecute("setComponentOrientation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getCursor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setCursor(java.awt.Cursor)"/>
         /// </summary>
         public Java.Awt.Cursor Cursor
         {
-            get { return IExecuteWithSignature<Java.Awt.Cursor>("getCursor", "()Ljava/awt/Cursor;"); } set { IExecuteWithSignature("setCursor", "(Ljava/awt/Cursor;)V", value); }
+            get { return IExecute<Java.Awt.Cursor>("getCursor"); } set { IExecute("setCursor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getDropTarget()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setDropTarget(java.awt.dnd.DropTarget)"/>
         /// </summary>
         public Java.Awt.Dnd.DropTarget DropTarget
         {
-            get { return IExecuteWithSignature<Java.Awt.Dnd.DropTarget>("getDropTarget", "()Ljava/awt/dnd/DropTarget;"); } set { IExecuteWithSignature("setDropTarget", "(Ljava/awt/dnd/DropTarget;)V", value); }
+            get { return IExecute<Java.Awt.Dnd.DropTarget>("getDropTarget"); } set { IExecute("setDropTarget", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFocusCycleRootAncestor()"/> 
         /// </summary>
         public Java.Awt.Container FocusCycleRootAncestor
         {
-            get { return IExecuteWithSignature<Java.Awt.Container>("getFocusCycleRootAncestor", "()Ljava/awt/Container;"); }
+            get { return IExecute<Java.Awt.Container>("getFocusCycleRootAncestor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFocusListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.FocusListener[] FocusListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.FocusListener>("getFocusListeners", "()[Ljava/awt/event/FocusListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.FocusListener>("getFocusListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFocusTraversalKeysEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setFocusTraversalKeysEnabled(boolean)"/>
         /// </summary>
         public bool FocusTraversalKeysEnabled
         {
-            get { return IExecuteWithSignature<bool>("getFocusTraversalKeysEnabled", "()Z"); } set { IExecuteWithSignature("setFocusTraversalKeysEnabled", "(Z)V", value); }
+            get { return IExecute<bool>("getFocusTraversalKeysEnabled"); } set { IExecute("setFocusTraversalKeysEnabled", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFont()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setFont(java.awt.Font)"/>
         /// </summary>
         public Java.Awt.Font Font
         {
-            get { return IExecuteWithSignature<Java.Awt.Font>("getFont", "()Ljava/awt/Font;"); } set { IExecuteWithSignature("setFont", "(Ljava/awt/Font;)V", value); }
+            get { return IExecute<Java.Awt.Font>("getFont"); } set { IExecute("setFont", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getForeground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setForeground(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color Foreground
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getForeground", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setForeground", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getForeground"); } set { IExecute("setForeground", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBaselineResizeBehavior()"/> 
         /// </summary>
         public Java.Awt.Component.BaselineResizeBehavior GetBaselineResizeBehavior
         {
-            get { return IExecuteWithSignature<Java.Awt.Component.BaselineResizeBehavior>("getBaselineResizeBehavior", "()Ljava/awt/Component$BaselineResizeBehavior;"); }
+            get { return IExecute<Java.Awt.Component.BaselineResizeBehavior>("getBaselineResizeBehavior"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getGraphics()"/> 
         /// </summary>
         public Java.Awt.Graphics Graphics
         {
-            get { return IExecuteWithSignature<Java.Awt.Graphics>("getGraphics", "()Ljava/awt/Graphics;"); }
+            get { return IExecute<Java.Awt.Graphics>("getGraphics"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getGraphicsConfiguration()"/> 
         /// </summary>
         public Java.Awt.GraphicsConfiguration GraphicsConfiguration
         {
-            get { return IExecuteWithSignature<Java.Awt.GraphicsConfiguration>("getGraphicsConfiguration", "()Ljava/awt/GraphicsConfiguration;"); }
+            get { return IExecute<Java.Awt.GraphicsConfiguration>("getGraphicsConfiguration"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+            get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getHierarchyBoundsListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.HierarchyBoundsListener[] HierarchyBoundsListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.HierarchyBoundsListener>("getHierarchyBoundsListeners", "()[Ljava/awt/event/HierarchyBoundsListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.HierarchyBoundsListener>("getHierarchyBoundsListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getHierarchyListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.HierarchyListener[] HierarchyListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.HierarchyListener>("getHierarchyListeners", "()[Ljava/awt/event/HierarchyListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.HierarchyListener>("getHierarchyListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getIgnoreRepaint()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setIgnoreRepaint(boolean)"/>
         /// </summary>
         public bool IgnoreRepaint
         {
-            get { return IExecuteWithSignature<bool>("getIgnoreRepaint", "()Z"); } set { IExecuteWithSignature("setIgnoreRepaint", "(Z)V", value); }
+            get { return IExecute<bool>("getIgnoreRepaint"); } set { IExecute("setIgnoreRepaint", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getInputContext()"/> 
         /// </summary>
         public Java.Awt.Im.InputContext InputContext
         {
-            get { return IExecuteWithSignature<Java.Awt.Im.InputContext>("getInputContext", "()Ljava/awt/im/InputContext;"); }
+            get { return IExecute<Java.Awt.Im.InputContext>("getInputContext"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getInputMethodListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.InputMethodListener[] InputMethodListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.InputMethodListener>("getInputMethodListeners", "()[Ljava/awt/event/InputMethodListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.InputMethodListener>("getInputMethodListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getInputMethodRequests()"/> 
         /// </summary>
         public Java.Awt.Im.InputMethodRequests InputMethodRequests
         {
-            get { return IExecuteWithSignature<Java.Awt.Im.InputMethodRequests>("getInputMethodRequests", "()Ljava/awt/im/InputMethodRequests;"); }
+            get { return IExecute<Java.Awt.Im.InputMethodRequests>("getInputMethodRequests"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getKeyListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.KeyListener[] KeyListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.KeyListener>("getKeyListeners", "()[Ljava/awt/event/KeyListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.KeyListener>("getKeyListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getLocale()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setLocale(java.util.Locale)"/>
         /// </summary>
         public Java.Util.Locale Locale
         {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); } set { IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", value); }
+            get { return IExecute<Java.Util.Locale>("getLocale"); } set { IExecute("setLocale", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getLocation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setLocation(java.awt.Point)"/>
         /// </summary>
         public Java.Awt.Point Location
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getLocation", "()Ljava/awt/Point;"); } set { IExecuteWithSignature("setLocation", "(Ljava/awt/Point;)V", value); }
+            get { return IExecute<Java.Awt.Point>("getLocation"); } set { IExecute("setLocation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getLocationOnScreen()"/> 
         /// </summary>
         public Java.Awt.Point LocationOnScreen
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getLocationOnScreen", "()Ljava/awt/Point;"); }
+            get { return IExecute<Java.Awt.Point>("getLocationOnScreen"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMaximumSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setMaximumSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension MaximumSize
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getMaximumSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setMaximumSize", "(Ljava/awt/Dimension;)V", value); }
+            get { return IExecute<Java.Awt.Dimension>("getMaximumSize"); } set { IExecute("setMaximumSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMinimumSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setMinimumSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension MinimumSize
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getMinimumSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setMinimumSize", "(Ljava/awt/Dimension;)V", value); }
+            get { return IExecute<Java.Awt.Dimension>("getMinimumSize"); } set { IExecute("setMinimumSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMouseListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseListener[] MouseListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.MouseListener>("getMouseListeners", "()[Ljava/awt/event/MouseListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.MouseListener>("getMouseListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMouseMotionListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseMotionListener[] MouseMotionListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.MouseMotionListener>("getMouseMotionListeners", "()[Ljava/awt/event/MouseMotionListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.MouseMotionListener>("getMouseMotionListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMousePosition()"/> 
         /// </summary>
         public Java.Awt.Point MousePosition
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getMousePosition", "()Ljava/awt/Point;"); }
+            get { return IExecute<Java.Awt.Point>("getMousePosition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMouseWheelListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseWheelListener[] MouseWheelListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.MouseWheelListener>("getMouseWheelListeners", "()[Ljava/awt/event/MouseWheelListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.MouseWheelListener>("getMouseWheelListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getParent()"/> 
         /// </summary>
         public Java.Awt.Container Parent
         {
-            get { return IExecuteWithSignature<Java.Awt.Container>("getParent", "()Ljava/awt/Container;"); }
+            get { return IExecute<Java.Awt.Container>("getParent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getPreferredSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setPreferredSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension PreferredSize
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setPreferredSize", "(Ljava/awt/Dimension;)V", value); }
+            get { return IExecute<Java.Awt.Dimension>("getPreferredSize"); } set { IExecute("setPreferredSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getPropertyChangeListeners()"/> 
         /// </summary>
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;"); }
+            get { return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension Size
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setSize", "(Ljava/awt/Dimension;)V", value); }
+            get { return IExecute<Java.Awt.Dimension>("getSize"); } set { IExecute("setSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getToolkit()"/> 
         /// </summary>
         public Java.Awt.Toolkit Toolkit
         {
-            get { return IExecuteWithSignature<Java.Awt.Toolkit>("getToolkit", "()Ljava/awt/Toolkit;"); }
+            get { return IExecute<Java.Awt.Toolkit>("getToolkit"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getTreeLock()"/> 
         /// </summary>
         public object TreeLock
         {
-            get { return IExecuteWithSignature("getTreeLock", "()Ljava/lang/Object;"); }
+            get { return IExecute("getTreeLock"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getX()"/> 
         /// </summary>
         public int X
         {
-            get { return IExecuteWithSignature<int>("getX", "()I"); }
+            get { return IExecute<int>("getX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getY()"/> 
         /// </summary>
         public int Y
         {
-            get { return IExecuteWithSignature<int>("getY", "()I"); }
+            get { return IExecute<int>("getY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getListeners(java.lang.Class)"/>
@@ -511,7 +511,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool AreFocusTraversalKeysSet(int arg0)
         {
-            return IExecuteWithSignature<bool>("areFocusTraversalKeysSet", "(I)Z", arg0);
+            return IExecute<bool>("areFocusTraversalKeysSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#contains(int,int)"/>
@@ -530,7 +530,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/Point;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#hasFocus()"/>
@@ -538,7 +538,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool HasFocus()
         {
-            return IExecuteWithSignature<bool>("hasFocus", "()Z");
+            return IExecute<bool>("hasFocus");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#imageUpdate(java.awt.Image,int,int,int,int,int)"/>
@@ -560,7 +560,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsBackgroundSet()
         {
-            return IExecuteWithSignature<bool>("isBackgroundSet", "()Z");
+            return IExecute<bool>("isBackgroundSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isCursorSet()"/>
@@ -568,7 +568,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsCursorSet()
         {
-            return IExecuteWithSignature<bool>("isCursorSet", "()Z");
+            return IExecute<bool>("isCursorSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isDisplayable()"/>
@@ -576,7 +576,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsDisplayable()
         {
-            return IExecuteWithSignature<bool>("isDisplayable", "()Z");
+            return IExecute<bool>("isDisplayable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isDoubleBuffered()"/>
@@ -584,7 +584,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsDoubleBuffered()
         {
-            return IExecuteWithSignature<bool>("isDoubleBuffered", "()Z");
+            return IExecute<bool>("isDoubleBuffered");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isEnabled()"/>
@@ -592,7 +592,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsEnabled()
         {
-            return IExecuteWithSignature<bool>("isEnabled", "()Z");
+            return IExecute<bool>("isEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusable()"/>
@@ -600,7 +600,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusable()
         {
-            return IExecuteWithSignature<bool>("isFocusable", "()Z");
+            return IExecute<bool>("isFocusable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusCycleRoot(java.awt.Container)"/>
@@ -609,7 +609,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusCycleRoot(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<bool>("isFocusCycleRoot", "(Ljava/awt/Container;)Z", arg0);
+            return IExecute<bool>("isFocusCycleRoot", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusOwner()"/>
@@ -617,7 +617,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusOwner()
         {
-            return IExecuteWithSignature<bool>("isFocusOwner", "()Z");
+            return IExecute<bool>("isFocusOwner");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFontSet()"/>
@@ -625,7 +625,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsFontSet()
         {
-            return IExecuteWithSignature<bool>("isFontSet", "()Z");
+            return IExecute<bool>("isFontSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isForegroundSet()"/>
@@ -633,7 +633,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsForegroundSet()
         {
-            return IExecuteWithSignature<bool>("isForegroundSet", "()Z");
+            return IExecute<bool>("isForegroundSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isLightweight()"/>
@@ -641,7 +641,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsLightweight()
         {
-            return IExecuteWithSignature<bool>("isLightweight", "()Z");
+            return IExecute<bool>("isLightweight");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isMaximumSizeSet()"/>
@@ -649,7 +649,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsMaximumSizeSet()
         {
-            return IExecuteWithSignature<bool>("isMaximumSizeSet", "()Z");
+            return IExecute<bool>("isMaximumSizeSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isMinimumSizeSet()"/>
@@ -657,7 +657,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsMinimumSizeSet()
         {
-            return IExecuteWithSignature<bool>("isMinimumSizeSet", "()Z");
+            return IExecute<bool>("isMinimumSizeSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isOpaque()"/>
@@ -665,7 +665,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsOpaque()
         {
-            return IExecuteWithSignature<bool>("isOpaque", "()Z");
+            return IExecute<bool>("isOpaque");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isPreferredSizeSet()"/>
@@ -673,7 +673,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsPreferredSizeSet()
         {
-            return IExecuteWithSignature<bool>("isPreferredSizeSet", "()Z");
+            return IExecute<bool>("isPreferredSizeSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isShowing()"/>
@@ -681,7 +681,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsShowing()
         {
-            return IExecuteWithSignature<bool>("isShowing", "()Z");
+            return IExecute<bool>("isShowing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isValid()"/>
@@ -689,7 +689,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
-            return IExecuteWithSignature<bool>("isValid", "()Z");
+            return IExecute<bool>("isValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isVisible()"/>
@@ -697,7 +697,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsVisible()
         {
-            return IExecuteWithSignature<bool>("isVisible", "()Z");
+            return IExecute<bool>("isVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#prepareImage(java.awt.Image,int,int,java.awt.image.ImageObserver)"/>
@@ -727,7 +727,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool RequestFocusInWindow()
         {
-            return IExecuteWithSignature<bool>("requestFocusInWindow", "()Z");
+            return IExecute<bool>("requestFocusInWindow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#requestFocusInWindow(java.awt.event.FocusEvent.Cause)"/>
@@ -736,7 +736,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool RequestFocusInWindow(Java.Awt.EventNs.FocusEvent.Cause arg0)
         {
-            return IExecuteWithSignature<bool>("requestFocusInWindow", "(Ljava/awt/event/FocusEvent$Cause;)Z", arg0);
+            return IExecute<bool>("requestFocusInWindow", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#dispatchEvent(java.awt.AWTEvent)"/>
@@ -744,7 +744,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
         public void DispatchEvent(Java.Awt.AWTEvent arg0)
         {
-            IExecuteWithSignature("dispatchEvent", "(Ljava/awt/AWTEvent;)V", arg0);
+            IExecute("dispatchEvent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#checkImage(java.awt.Image,int,int,java.awt.image.ImageObserver)"/>
@@ -795,7 +795,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetComponentAt(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Component>("getComponentAt", "(Ljava/awt/Point;)Ljava/awt/Component;", arg0);
+            return IExecute<Java.Awt.Component>("getComponentAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getSize(java.awt.Dimension)"/>
@@ -804,7 +804,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetSize(Java.Awt.Dimension arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("getSize", "(Ljava/awt/Dimension;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("getSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFontMetrics(java.awt.Font)"/>
@@ -813,7 +813,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontMetrics"/></returns>
         public Java.Awt.FontMetrics GetFontMetrics(Java.Awt.Font arg0)
         {
-            return IExecuteWithSignature<Java.Awt.FontMetrics>("getFontMetrics", "(Ljava/awt/Font;)Ljava/awt/FontMetrics;", arg0);
+            return IExecute<Java.Awt.FontMetrics>("getFontMetrics", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#createImage(int,int)"/>
@@ -832,7 +832,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image CreateImage(Java.Awt.ImageNs.ImageProducer arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Image>("createImage", "(Ljava/awt/image/ImageProducer;)Ljava/awt/Image;", arg0);
+            return IExecute<Java.Awt.Image>("createImage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#createVolatileImage(int,int,java.awt.ImageCapabilities)"/>
@@ -863,7 +863,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Point"/></returns>
         public Java.Awt.Point GetLocation(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Point>("getLocation", "(Ljava/awt/Point;)Ljava/awt/Point;", arg0);
+            return IExecute<Java.Awt.Point>("getLocation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBounds(java.awt.Rectangle)"/>
@@ -872,7 +872,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetBounds(Java.Awt.Rectangle arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "(Ljava/awt/Rectangle;)Ljava/awt/Rectangle;", arg0);
+            return IExecute<Java.Awt.Rectangle>("getBounds", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getPropertyChangeListeners(java.lang.String)"/>
@@ -881,7 +881,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "(Ljava/lang/String;)[Ljava/beans/PropertyChangeListener;", arg0);
+            return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFocusTraversalKeys(int)"/>
@@ -890,7 +890,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Awt.AWTKeyStroke> GetFocusTraversalKeys(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Awt.AWTKeyStroke>>("getFocusTraversalKeys", "(I)Ljava/util/Set;", arg0);
+            return IExecute<Java.Util.Set<Java.Awt.AWTKeyStroke>>("getFocusTraversalKeys", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addComponentListener(java.awt.event.ComponentListener)"/>
@@ -898,7 +898,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
         public void AddComponentListener(Java.Awt.EventNs.ComponentListener arg0)
         {
-            IExecuteWithSignature("addComponentListener", "(Ljava/awt/event/ComponentListener;)V", arg0);
+            IExecute("addComponentListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addFocusListener(java.awt.event.FocusListener)"/>
@@ -906,7 +906,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
         public void AddFocusListener(Java.Awt.EventNs.FocusListener arg0)
         {
-            IExecuteWithSignature("addFocusListener", "(Ljava/awt/event/FocusListener;)V", arg0);
+            IExecute("addFocusListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addInputMethodListener(java.awt.event.InputMethodListener)"/>
@@ -914,7 +914,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
         public void AddInputMethodListener(Java.Awt.EventNs.InputMethodListener arg0)
         {
-            IExecuteWithSignature("addInputMethodListener", "(Ljava/awt/event/InputMethodListener;)V", arg0);
+            IExecute("addInputMethodListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addKeyListener(java.awt.event.KeyListener)"/>
@@ -922,7 +922,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyListener"/></param>
         public void AddKeyListener(Java.Awt.EventNs.KeyListener arg0)
         {
-            IExecuteWithSignature("addKeyListener", "(Ljava/awt/event/KeyListener;)V", arg0);
+            IExecute("addKeyListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addMouseListener(java.awt.event.MouseListener)"/>
@@ -930,7 +930,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
         public void AddMouseListener(Java.Awt.EventNs.MouseListener arg0)
         {
-            IExecuteWithSignature("addMouseListener", "(Ljava/awt/event/MouseListener;)V", arg0);
+            IExecute("addMouseListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addMouseMotionListener(java.awt.event.MouseMotionListener)"/>
@@ -938,7 +938,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
         public void AddMouseMotionListener(Java.Awt.EventNs.MouseMotionListener arg0)
         {
-            IExecuteWithSignature("addMouseMotionListener", "(Ljava/awt/event/MouseMotionListener;)V", arg0);
+            IExecute("addMouseMotionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addMouseWheelListener(java.awt.event.MouseWheelListener)"/>
@@ -946,7 +946,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
         public void AddMouseWheelListener(Java.Awt.EventNs.MouseWheelListener arg0)
         {
-            IExecuteWithSignature("addMouseWheelListener", "(Ljava/awt/event/MouseWheelListener;)V", arg0);
+            IExecute("addMouseWheelListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeComponentListener(java.awt.event.ComponentListener)"/>
@@ -954,7 +954,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
         public void RemoveComponentListener(Java.Awt.EventNs.ComponentListener arg0)
         {
-            IExecuteWithSignature("removeComponentListener", "(Ljava/awt/event/ComponentListener;)V", arg0);
+            IExecute("removeComponentListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeFocusListener(java.awt.event.FocusListener)"/>
@@ -962,7 +962,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
         public void RemoveFocusListener(Java.Awt.EventNs.FocusListener arg0)
         {
-            IExecuteWithSignature("removeFocusListener", "(Ljava/awt/event/FocusListener;)V", arg0);
+            IExecute("removeFocusListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeInputMethodListener(java.awt.event.InputMethodListener)"/>
@@ -970,7 +970,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
         public void RemoveInputMethodListener(Java.Awt.EventNs.InputMethodListener arg0)
         {
-            IExecuteWithSignature("removeInputMethodListener", "(Ljava/awt/event/InputMethodListener;)V", arg0);
+            IExecute("removeInputMethodListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeKeyListener(java.awt.event.KeyListener)"/>
@@ -978,7 +978,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyListener"/></param>
         public void RemoveKeyListener(Java.Awt.EventNs.KeyListener arg0)
         {
-            IExecuteWithSignature("removeKeyListener", "(Ljava/awt/event/KeyListener;)V", arg0);
+            IExecute("removeKeyListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeMouseListener(java.awt.event.MouseListener)"/>
@@ -986,7 +986,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
         public void RemoveMouseListener(Java.Awt.EventNs.MouseListener arg0)
         {
-            IExecuteWithSignature("removeMouseListener", "(Ljava/awt/event/MouseListener;)V", arg0);
+            IExecute("removeMouseListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeMouseMotionListener(java.awt.event.MouseMotionListener)"/>
@@ -994,7 +994,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
         public void RemoveMouseMotionListener(Java.Awt.EventNs.MouseMotionListener arg0)
         {
-            IExecuteWithSignature("removeMouseMotionListener", "(Ljava/awt/event/MouseMotionListener;)V", arg0);
+            IExecute("removeMouseMotionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeMouseWheelListener(java.awt.event.MouseWheelListener)"/>
@@ -1002,7 +1002,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
         public void RemoveMouseWheelListener(Java.Awt.EventNs.MouseWheelListener arg0)
         {
-            IExecuteWithSignature("removeMouseWheelListener", "(Ljava/awt/event/MouseWheelListener;)V", arg0);
+            IExecute("removeMouseWheelListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#add(java.awt.PopupMenu)"/>
@@ -1010,7 +1010,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.PopupMenu"/></param>
         public void Add(Java.Awt.PopupMenu arg0)
         {
-            IExecuteWithSignature("add", "(Ljava/awt/PopupMenu;)V", arg0);
+            IExecute("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addHierarchyBoundsListener(java.awt.event.HierarchyBoundsListener)"/>
@@ -1018,7 +1018,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
         public void AddHierarchyBoundsListener(Java.Awt.EventNs.HierarchyBoundsListener arg0)
         {
-            IExecuteWithSignature("addHierarchyBoundsListener", "(Ljava/awt/event/HierarchyBoundsListener;)V", arg0);
+            IExecute("addHierarchyBoundsListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addHierarchyListener(java.awt.event.HierarchyListener)"/>
@@ -1026,14 +1026,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
         public void AddHierarchyListener(Java.Awt.EventNs.HierarchyListener arg0)
         {
-            IExecuteWithSignature("addHierarchyListener", "(Ljava/awt/event/HierarchyListener;)V", arg0);
+            IExecute("addHierarchyListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addNotify()"/>
         /// </summary>
         public void AddNotify()
         {
-            IExecuteWithSignature("addNotify", "()V");
+            IExecute("addNotify");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -1041,7 +1041,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("addPropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
@@ -1058,14 +1058,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.ComponentOrientation"/></param>
         public void ApplyComponentOrientation(Java.Awt.ComponentOrientation arg0)
         {
-            IExecuteWithSignature("applyComponentOrientation", "(Ljava/awt/ComponentOrientation;)V", arg0);
+            IExecute("applyComponentOrientation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#doLayout()"/>
         /// </summary>
         public void DoLayout()
         {
-            IExecuteWithSignature("doLayout", "()V");
+            IExecute("doLayout");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#enableInputMethods(boolean)"/>
@@ -1073,7 +1073,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void EnableInputMethods(bool arg0)
         {
-            IExecuteWithSignature("enableInputMethods", "(Z)V", arg0);
+            IExecute("enableInputMethods", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,byte,byte)"/>
@@ -1140,14 +1140,14 @@ namespace Java.Awt
         /// </summary>
         public void Invalidate()
         {
-            IExecuteWithSignature("invalidate", "()V");
+            IExecute("invalidate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list()"/>
         /// </summary>
         public void List()
         {
-            IExecuteWithSignature("list", "()V");
+            IExecute("list");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list(java.io.PrintStream,int)"/>
@@ -1164,7 +1164,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public void List(Java.Io.PrintStream arg0)
         {
-            IExecuteWithSignature("list", "(Ljava/io/PrintStream;)V", arg0);
+            IExecute("list", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list(java.io.PrintWriter,int)"/>
@@ -1181,7 +1181,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
         public void List(Java.Io.PrintWriter arg0)
         {
-            IExecuteWithSignature("list", "(Ljava/io/PrintWriter;)V", arg0);
+            IExecute("list", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#paint(java.awt.Graphics)"/>
@@ -1189,7 +1189,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void Paint(Java.Awt.Graphics arg0)
         {
-            IExecuteWithSignature("paint", "(Ljava/awt/Graphics;)V", arg0);
+            IExecute("paint", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#paintAll(java.awt.Graphics)"/>
@@ -1197,7 +1197,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void PaintAll(Java.Awt.Graphics arg0)
         {
-            IExecuteWithSignature("paintAll", "(Ljava/awt/Graphics;)V", arg0);
+            IExecute("paintAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#print(java.awt.Graphics)"/>
@@ -1205,7 +1205,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void Print(Java.Awt.Graphics arg0)
         {
-            IExecuteWithSignature("print", "(Ljava/awt/Graphics;)V", arg0);
+            IExecute("print", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#printAll(java.awt.Graphics)"/>
@@ -1213,7 +1213,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void PrintAll(Java.Awt.Graphics arg0)
         {
-            IExecuteWithSignature("printAll", "(Ljava/awt/Graphics;)V", arg0);
+            IExecute("printAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#remove(java.awt.MenuComponent)"/>
@@ -1221,7 +1221,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.MenuComponent"/></param>
         public void Remove(Java.Awt.MenuComponent arg0)
         {
-            IExecuteWithSignature("remove", "(Ljava/awt/MenuComponent;)V", arg0);
+            IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeHierarchyBoundsListener(java.awt.event.HierarchyBoundsListener)"/>
@@ -1229,7 +1229,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
         public void RemoveHierarchyBoundsListener(Java.Awt.EventNs.HierarchyBoundsListener arg0)
         {
-            IExecuteWithSignature("removeHierarchyBoundsListener", "(Ljava/awt/event/HierarchyBoundsListener;)V", arg0);
+            IExecute("removeHierarchyBoundsListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeHierarchyListener(java.awt.event.HierarchyListener)"/>
@@ -1237,14 +1237,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
         public void RemoveHierarchyListener(Java.Awt.EventNs.HierarchyListener arg0)
         {
-            IExecuteWithSignature("removeHierarchyListener", "(Ljava/awt/event/HierarchyListener;)V", arg0);
+            IExecute("removeHierarchyListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeNotify()"/>
         /// </summary>
         public void RemoveNotify()
         {
-            IExecuteWithSignature("removeNotify", "()V");
+            IExecute("removeNotify");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -1252,7 +1252,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("removePropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
@@ -1268,7 +1268,7 @@ namespace Java.Awt
         /// </summary>
         public void Repaint()
         {
-            IExecuteWithSignature("repaint", "()V");
+            IExecute("repaint");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#repaint(int,int,int,int)"/>
@@ -1299,14 +1299,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="long"/></param>
         public void Repaint(long arg0)
         {
-            IExecuteWithSignature("repaint", "(J)V", arg0);
+            IExecute("repaint", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#requestFocus()"/>
         /// </summary>
         public void RequestFocus()
         {
-            IExecuteWithSignature("requestFocus", "()V");
+            IExecute("requestFocus");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#requestFocus(java.awt.event.FocusEvent.Cause)"/>
@@ -1314,14 +1314,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent.Cause"/></param>
         public void RequestFocus(Java.Awt.EventNs.FocusEvent.Cause arg0)
         {
-            IExecuteWithSignature("requestFocus", "(Ljava/awt/event/FocusEvent$Cause;)V", arg0);
+            IExecute("requestFocus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#revalidate()"/>
         /// </summary>
         public void Revalidate()
         {
-            IExecuteWithSignature("revalidate", "()V");
+            IExecute("revalidate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setBounds(int,int,int,int)"/>
@@ -1340,7 +1340,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetEnabled(bool arg0)
         {
-            IExecuteWithSignature("setEnabled", "(Z)V", arg0);
+            IExecute("setEnabled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setFocusable(boolean)"/>
@@ -1348,7 +1348,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetFocusable(bool arg0)
         {
-            IExecuteWithSignature("setFocusable", "(Z)V", arg0);
+            IExecute("setFocusable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setFocusTraversalKeys(int,java.util.Set)"/>
@@ -1375,7 +1375,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
         public void SetMixingCutoutShape(Java.Awt.Shape arg0)
         {
-            IExecuteWithSignature("setMixingCutoutShape", "(Ljava/awt/Shape;)V", arg0);
+            IExecute("setMixingCutoutShape", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setSize(int,int)"/>
@@ -1392,28 +1392,28 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetVisible(bool arg0)
         {
-            IExecuteWithSignature("setVisible", "(Z)V", arg0);
+            IExecute("setVisible", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#transferFocus()"/>
         /// </summary>
         public void TransferFocus()
         {
-            IExecuteWithSignature("transferFocus", "()V");
+            IExecute("transferFocus");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#transferFocusBackward()"/>
         /// </summary>
         public void TransferFocusBackward()
         {
-            IExecuteWithSignature("transferFocusBackward", "()V");
+            IExecute("transferFocusBackward");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#transferFocusUpCycle()"/>
         /// </summary>
         public void TransferFocusUpCycle()
         {
-            IExecuteWithSignature("transferFocusUpCycle", "()V");
+            IExecute("transferFocusUpCycle");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#update(java.awt.Graphics)"/>
@@ -1421,14 +1421,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void Update(Java.Awt.Graphics arg0)
         {
-            IExecuteWithSignature("update", "(Ljava/awt/Graphics;)V", arg0);
+            IExecute("update", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#validate()"/>
         /// </summary>
         public void Validate()
         {
-            IExecuteWithSignature("validate", "()V");
+            IExecute("validate");
         }
 
         #endregion

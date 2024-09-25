@@ -91,7 +91,7 @@ namespace Java.Security.Cert
         /// </summary>
         public static Java.Lang.String DefaultType
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultType", "()Ljava/lang/String;"); }
+            get { return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDefaultType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.lang.String)"/>
@@ -141,21 +141,21 @@ namespace Java.Security.Cert
         /// </summary>
         public Java.Security.Cert.CertStoreParameters CertStoreParameters
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.CertStoreParameters>("getCertStoreParameters", "()Ljava/security/cert/CertStoreParameters;"); }
+            get { return IExecute<Java.Security.Cert.CertStoreParameters>("getCertStoreParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getCertificates(java.security.cert.CertSelector)"/>
@@ -166,7 +166,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertStoreException"/>
         public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> GetCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate : Java.Security.Cert.Certificate
         {
-            return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate>>("getCertificates", "(Ljava/security/cert/CertSelector;)Ljava/util/Collection;", arg0);
+            return IExecute<Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate>>("getCertificates", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getCRLs(java.security.cert.CRLSelector)"/>
@@ -177,7 +177,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertStoreException"/>
         public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> GetCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL : Java.Security.Cert.CRL
         {
-            return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("getCRLs", "(Ljava/security/cert/CRLSelector;)Ljava/util/Collection;", arg0);
+            return IExecute<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("getCRLs", arg0);
         }
 
         #endregion

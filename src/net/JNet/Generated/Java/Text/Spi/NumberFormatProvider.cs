@@ -99,7 +99,7 @@ namespace Java.Text.Spi
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public Java.Text.NumberFormat GetCurrencyInstance(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Text.NumberFormat>("getCurrencyInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
+            return IExecute<Java.Text.NumberFormat>("getCurrencyInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/NumberFormatProvider.html#getIntegerInstance(java.util.Locale)"/>
@@ -108,7 +108,7 @@ namespace Java.Text.Spi
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public Java.Text.NumberFormat GetIntegerInstance(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Text.NumberFormat>("getIntegerInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
+            return IExecute<Java.Text.NumberFormat>("getIntegerInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/NumberFormatProvider.html#getNumberInstance(java.util.Locale)"/>
@@ -117,7 +117,7 @@ namespace Java.Text.Spi
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public Java.Text.NumberFormat GetNumberInstance(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Text.NumberFormat>("getNumberInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
+            return IExecute<Java.Text.NumberFormat>("getNumberInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/NumberFormatProvider.html#getPercentInstance(java.util.Locale)"/>
@@ -126,7 +126,7 @@ namespace Java.Text.Spi
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public Java.Text.NumberFormat GetPercentInstance(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Text.NumberFormat>("getPercentInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
+            return IExecute<Java.Text.NumberFormat>("getPercentInstance", arg0);
         }
 
         #endregion

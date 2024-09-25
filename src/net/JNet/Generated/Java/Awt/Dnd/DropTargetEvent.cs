@@ -103,7 +103,7 @@ namespace Java.Awt.Dnd
         /// </summary>
         public Java.Awt.Dnd.DropTargetContext DropTargetContext
         {
-            get { return IExecuteWithSignature<Java.Awt.Dnd.DropTargetContext>("getDropTargetContext", "()Ljava/awt/dnd/DropTargetContext;"); }
+            get { return IExecute<Java.Awt.Dnd.DropTargetContext>("getDropTargetContext"); }
         }
 
         #endregion

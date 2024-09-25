@@ -155,14 +155,14 @@ namespace Org.W3c.Dom
         /// </summary>
         public Java.Lang.String TypeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#getTypeNamespace()"/> 
         /// </summary>
         public Java.Lang.String TypeNamespace
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeNamespace", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTypeNamespace"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#isDerivedFrom(java.lang.String,java.lang.String,int)"/>

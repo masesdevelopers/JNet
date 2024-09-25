@@ -230,7 +230,7 @@ namespace Java.Lang
         /// </summary>
         public static Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]> AllStackTraces
         {
-            get { return SExecuteWithSignature<Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]>>(LocalBridgeClazz, "getAllStackTraces", "()Ljava/util/Map;"); }
+            get { return SExecute<Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]>>(LocalBridgeClazz, "getAllStackTraces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupted()"/>
@@ -238,7 +238,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool Interrupted()
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "interrupted", "()Z");
+            return SExecute<bool>(LocalBridgeClazz, "interrupted");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#activeCount()"/>
@@ -246,7 +246,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int ActiveCount()
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "activeCount", "()I");
+            return SExecute<int>(LocalBridgeClazz, "activeCount");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#enumerate(java.lang.Thread[])"/>
@@ -255,7 +255,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Enumerate(Java.Lang.Thread[] arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "enumerate", "([Ljava/lang/Thread;)I", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "enumerate", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#holdsLock(java.lang.Object)"/>
@@ -264,7 +264,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool HoldsLock(object arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "holdsLock", "(Ljava/lang/Object;)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "holdsLock", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#currentThread()"/>
@@ -272,7 +272,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Thread"/></returns>
         public static Java.Lang.Thread CurrentThread()
         {
-            return SExecuteWithSignature<Java.Lang.Thread>(LocalBridgeClazz, "currentThread", "()Ljava/lang/Thread;");
+            return SExecute<Java.Lang.Thread>(LocalBridgeClazz, "currentThread");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long)"/>
@@ -281,28 +281,28 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public static void Sleep(long arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "sleep", "(J)V", arg0);
+            SExecute(LocalBridgeClazz, "sleep", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#yield()"/>
         /// </summary>
         public static void Yield()
         {
-            SExecuteWithSignature(LocalBridgeClazz, "yield", "()V");
+            SExecute(LocalBridgeClazz, "yield");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#dumpStack()"/>
         /// </summary>
         public static void DumpStack()
         {
-            SExecuteWithSignature(LocalBridgeClazz, "dumpStack", "()V");
+            SExecute(LocalBridgeClazz, "dumpStack");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#onSpinWait()"/>
         /// </summary>
         public static void OnSpinWait()
         {
-            SExecuteWithSignature(LocalBridgeClazz, "onSpinWait", "()V");
+            SExecute(LocalBridgeClazz, "onSpinWait");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long,int)"/>
@@ -323,49 +323,49 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.ClassLoader ContextClassLoader
         {
-            get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getContextClassLoader", "()Ljava/lang/ClassLoader;"); } set { IExecuteWithSignature("setContextClassLoader", "(Ljava/lang/ClassLoader;)V", value); }
+            get { return IExecute<Java.Lang.ClassLoader>("getContextClassLoader"); } set { IExecute("setContextClassLoader", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getState()"/> 
         /// </summary>
         public Java.Lang.Thread.State GetState
         {
-            get { return IExecuteWithSignature<Java.Lang.Thread.State>("getState", "()Ljava/lang/Thread$State;"); }
+            get { return IExecute<Java.Lang.Thread.State>("getState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getId()"/> 
         /// </summary>
         public long Id
         {
-            get { return IExecuteWithSignature<long>("getId", "()J"); }
+            get { return IExecute<long>("getId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getPriority()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setPriority(int)"/>
         /// </summary>
         public int Priority
         {
-            get { return IExecuteWithSignature<int>("getPriority", "()I"); } set { IExecuteWithSignature("setPriority", "(I)V", value); }
+            get { return IExecute<int>("getPriority"); } set { IExecute("setPriority", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getStackTrace()"/> 
         /// </summary>
         public Java.Lang.StackTraceElement[] StackTrace
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.StackTraceElement>("getStackTrace", "()[Ljava/lang/StackTraceElement;"); }
+            get { return IExecuteArray<Java.Lang.StackTraceElement>("getStackTrace"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getThreadGroup()"/> 
         /// </summary>
         public Java.Lang.ThreadGroup ThreadGroup
         {
-            get { return IExecuteWithSignature<Java.Lang.ThreadGroup>("getThreadGroup", "()Ljava/lang/ThreadGroup;"); }
+            get { return IExecute<Java.Lang.ThreadGroup>("getThreadGroup"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isInterrupted()"/>
@@ -373,7 +373,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsInterrupted()
         {
-            return IExecuteWithSignature<bool>("isInterrupted", "()Z");
+            return IExecute<bool>("isInterrupted");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isDaemon()"/>
@@ -381,7 +381,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsDaemon()
         {
-            return IExecuteWithSignature<bool>("isDaemon", "()Z");
+            return IExecute<bool>("isDaemon");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isAlive()"/>
@@ -389,7 +389,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsAlive()
         {
-            return IExecuteWithSignature<bool>("isAlive", "()Z");
+            return IExecute<bool>("isAlive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join(long,int)"/>
@@ -408,14 +408,14 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join(long arg0)
         {
-            IExecuteWithSignature("join", "(J)V", arg0);
+            IExecute("join", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#checkAccess()"/>
         /// </summary>
         public void CheckAccess()
         {
-            IExecuteWithSignature("checkAccess", "()V");
+            IExecute("checkAccess");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join()"/>
@@ -423,7 +423,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join()
         {
-            IExecuteWithSignature("join", "()V");
+            IExecute("join");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setDaemon(boolean)"/>
@@ -431,28 +431,28 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDaemon(bool arg0)
         {
-            IExecuteWithSignature("setDaemon", "(Z)V", arg0);
+            IExecute("setDaemon", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#start()"/>
         /// </summary>
         public void Start()
         {
-            IExecuteWithSignature("start", "()V");
+            IExecute("start");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupt()"/>
         /// </summary>
         public void Interrupt()
         {
-            IExecuteWithSignature("interrupt", "()V");
+            IExecute("interrupt");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#run()"/>
         /// </summary>
         public void Run()
         {
-            IExecuteWithSignature("run", "()V");
+            IExecute("run");
         }
 
         #endregion

@@ -207,7 +207,7 @@ namespace Java.Util.Function
         /// <returns><see cref="int"/></returns>
         public override int ApplyAsInt(long arg0)
         {
-            return IExecuteWithSignature<int>("applyAsInt", "(J)I", arg0);
+            return IExecute<int>("applyAsInt", arg0);
         }
 
         #endregion

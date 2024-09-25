@@ -125,7 +125,7 @@ namespace Javax.Accessibility
         /// </summary>
         public int AccessibleKeyBindingCount
         {
-            get { return IExecuteWithSignature<int>("getAccessibleKeyBindingCount", "()I"); }
+            get { return IExecute<int>("getAccessibleKeyBindingCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleKeyBinding.html#getAccessibleKeyBinding(int)"/>
@@ -134,7 +134,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="object"/></returns>
         public object GetAccessibleKeyBinding(int arg0)
         {
-            return IExecuteWithSignature("getAccessibleKeyBinding", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("getAccessibleKeyBinding", arg0);
         }
 
         #endregion

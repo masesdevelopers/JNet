@@ -111,7 +111,7 @@ namespace Javax.Swing
         /// </summary>
         public int Orientation
         {
-            get { return IExecuteWithSignature<int>("getOrientation", "()I"); } set { IExecuteWithSignature("setOrientation", "(I)V", value); }
+            get { return IExecute<int>("getOrientation"); } set { IExecute("setOrientation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSeparator.html#setUI(javax.swing.plaf.SeparatorUI)"/>
@@ -119,7 +119,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.SeparatorUI"/></param>
         public void SetUI(Javax.Swing.Plaf.SeparatorUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/SeparatorUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
 
         #endregion

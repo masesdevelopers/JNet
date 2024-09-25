@@ -136,14 +136,14 @@ namespace Java.Awt
         /// </summary>
         public int Alignment
         {
-            get { return IExecuteWithSignature<int>("getAlignment", "()I"); } set { IExecuteWithSignature("setAlignment", "(I)V", value); }
+            get { return IExecute<int>("getAlignment"); } set { IExecute("setAlignment", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#setText(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Text
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setText", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getText"); } set { IExecute("setText", value); }
         }
 
         #endregion

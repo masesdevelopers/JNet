@@ -95,21 +95,21 @@ namespace Java.Beans
         /// </summary>
         public Java.Lang.String DisplayName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDisplayName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getDisplayName"); } set { IExecute("setDisplayName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#getShortDescription()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#setShortDescription(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String ShortDescription
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getShortDescription", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setShortDescription", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getShortDescription"); } set { IExecute("setShortDescription", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isExpert()"/>
@@ -117,7 +117,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool IsExpert()
         {
-            return IExecuteWithSignature<bool>("isExpert", "()Z");
+            return IExecute<bool>("isExpert");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isHidden()"/>
@@ -125,7 +125,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool IsHidden()
         {
-            return IExecuteWithSignature<bool>("isHidden", "()Z");
+            return IExecute<bool>("isHidden");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isPreferred()"/>
@@ -133,7 +133,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool IsPreferred()
         {
-            return IExecuteWithSignature<bool>("isPreferred", "()Z");
+            return IExecute<bool>("isPreferred");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#getValue(java.lang.String)"/>
@@ -142,7 +142,7 @@ namespace Java.Beans
         /// <returns><see cref="object"/></returns>
         public object GetValue(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#attributeNames()"/>
@@ -150,7 +150,7 @@ namespace Java.Beans
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Lang.String> AttributeNames()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("attributeNames", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration<Java.Lang.String>>("attributeNames");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#setExpert(boolean)"/>
@@ -158,7 +158,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetExpert(bool arg0)
         {
-            IExecuteWithSignature("setExpert", "(Z)V", arg0);
+            IExecute("setExpert", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#setHidden(boolean)"/>
@@ -166,7 +166,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetHidden(bool arg0)
         {
-            IExecuteWithSignature("setHidden", "(Z)V", arg0);
+            IExecute("setHidden", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#setPreferred(boolean)"/>
@@ -174,7 +174,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetPreferred(bool arg0)
         {
-            IExecuteWithSignature("setPreferred", "(Z)V", arg0);
+            IExecute("setPreferred", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#setValue(java.lang.String,java.lang.Object)"/>

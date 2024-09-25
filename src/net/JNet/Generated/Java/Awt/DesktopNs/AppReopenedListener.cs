@@ -204,7 +204,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppReopenedEvent"/></param>
         public override void AppReopened(Java.Awt.DesktopNs.AppReopenedEvent arg0)
         {
-            IExecuteWithSignature("appReopened", "(Ljava/awt/desktop/AppReopenedEvent;)V", arg0);
+            IExecute("appReopened", arg0);
         }
 
         #endregion

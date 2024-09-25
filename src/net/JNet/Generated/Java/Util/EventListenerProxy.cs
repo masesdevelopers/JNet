@@ -153,7 +153,7 @@ namespace Java.Util
         /// </summary>
         public Java.Util.EventListener Listener
         {
-            get { return IExecuteWithSignature<Java.Util.EventListener>("getListener", "()Ljava/util/EventListener;"); }
+            get { return IExecute<Java.Util.EventListener>("getListener"); }
         }
 
         #endregion
@@ -203,7 +203,7 @@ namespace Java.Util
         /// </summary>
         public T Listener
         {
-            get { return IExecuteWithSignature<T>("getListener", "()Ljava/util/EventListener;"); }
+            get { return IExecute<T>("getListener"); }
         }
 
         #endregion

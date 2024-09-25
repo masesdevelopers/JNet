@@ -206,14 +206,14 @@ namespace Java.Awt.EventNs
         /// </summary>
         public Java.Awt.EventNs.FocusEvent.Cause GetCause
         {
-            get { return IExecuteWithSignature<Java.Awt.EventNs.FocusEvent.Cause>("getCause", "()Ljava/awt/event/FocusEvent$Cause;"); }
+            get { return IExecute<Java.Awt.EventNs.FocusEvent.Cause>("getCause"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#getOppositeComponent()"/> 
         /// </summary>
         public Java.Awt.Component OppositeComponent
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getOppositeComponent", "()Ljava/awt/Component;"); }
+            get { return IExecute<Java.Awt.Component>("getOppositeComponent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#isTemporary()"/>
@@ -221,7 +221,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="bool"/></returns>
         public bool IsTemporary()
         {
-            return IExecuteWithSignature<bool>("isTemporary", "()Z");
+            return IExecute<bool>("isTemporary");
         }
 
         #endregion

@@ -93,7 +93,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.GraphicsEnvironment LocalGraphicsEnvironment
         {
-            get { return SExecuteWithSignature<Java.Awt.GraphicsEnvironment>(LocalBridgeClazz, "getLocalGraphicsEnvironment", "()Ljava/awt/GraphicsEnvironment;"); }
+            get { return SExecute<Java.Awt.GraphicsEnvironment>(LocalBridgeClazz, "getLocalGraphicsEnvironment"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadless()"/>
@@ -101,7 +101,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public static bool IsHeadless()
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isHeadless", "()Z");
+            return SExecute<bool>(LocalBridgeClazz, "isHeadless");
         }
 
         #endregion
@@ -112,42 +112,42 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Font[] AllFonts
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.Font>("getAllFonts", "()[Ljava/awt/Font;"); }
+            get { return IExecuteArray<Java.Awt.Font>("getAllFonts"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getAvailableFontFamilyNames()"/> 
         /// </summary>
         public Java.Lang.String[] AvailableFontFamilyNames
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getAvailableFontFamilyNames", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getAvailableFontFamilyNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getCenterPoint()"/> 
         /// </summary>
         public Java.Awt.Point CenterPoint
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getCenterPoint", "()Ljava/awt/Point;"); }
+            get { return IExecute<Java.Awt.Point>("getCenterPoint"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getDefaultScreenDevice()"/> 
         /// </summary>
         public Java.Awt.GraphicsDevice DefaultScreenDevice
         {
-            get { return IExecuteWithSignature<Java.Awt.GraphicsDevice>("getDefaultScreenDevice", "()Ljava/awt/GraphicsDevice;"); }
+            get { return IExecute<Java.Awt.GraphicsDevice>("getDefaultScreenDevice"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getMaximumWindowBounds()"/> 
         /// </summary>
         public Java.Awt.Rectangle MaximumWindowBounds
         {
-            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getMaximumWindowBounds", "()Ljava/awt/Rectangle;"); }
+            get { return IExecute<Java.Awt.Rectangle>("getMaximumWindowBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getScreenDevices()"/> 
         /// </summary>
         public Java.Awt.GraphicsDevice[] ScreenDevices
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.GraphicsDevice>("getScreenDevices", "()[Ljava/awt/GraphicsDevice;"); }
+            get { return IExecuteArray<Java.Awt.GraphicsDevice>("getScreenDevices"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#createGraphics(java.awt.image.BufferedImage)"/>
@@ -156,7 +156,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
         public Java.Awt.Graphics2D CreateGraphics(Java.Awt.ImageNs.BufferedImage arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Graphics2D>("createGraphics", "(Ljava/awt/image/BufferedImage;)Ljava/awt/Graphics2D;", arg0);
+            return IExecute<Java.Awt.Graphics2D>("createGraphics", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getAvailableFontFamilyNames(java.util.Locale)"/>
@@ -165,7 +165,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetAvailableFontFamilyNames(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignatureArray<Java.Lang.String>("getAvailableFontFamilyNames", "(Ljava/util/Locale;)[Ljava/lang/String;", arg0);
+            return IExecuteArray<Java.Lang.String>("getAvailableFontFamilyNames", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadlessInstance()"/>
@@ -173,7 +173,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsHeadlessInstance()
         {
-            return IExecuteWithSignature<bool>("isHeadlessInstance", "()Z");
+            return IExecute<bool>("isHeadlessInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#registerFont(java.awt.Font)"/>
@@ -182,21 +182,21 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool RegisterFont(Java.Awt.Font arg0)
         {
-            return IExecuteWithSignature<bool>("registerFont", "(Ljava/awt/Font;)Z", arg0);
+            return IExecute<bool>("registerFont", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#preferLocaleFonts()"/>
         /// </summary>
         public void PreferLocaleFonts()
         {
-            IExecuteWithSignature("preferLocaleFonts", "()V");
+            IExecute("preferLocaleFonts");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#preferProportionalFonts()"/>
         /// </summary>
         public void PreferProportionalFonts()
         {
-            IExecuteWithSignature("preferProportionalFonts", "()V");
+            IExecute("preferProportionalFonts");
         }
 
         #endregion

@@ -132,7 +132,7 @@ namespace Java.Sql
         /// </summary>
         public Java.Lang.String SQLTypeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSQLTypeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSQLTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#readSQL(java.sql.SQLInput,java.lang.String)"/>
@@ -151,7 +151,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteSQL(Java.Sql.SQLOutput arg0)
         {
-            IExecuteWithSignature("writeSQL", "(Ljava/sql/SQLOutput;)V", arg0);
+            IExecute("writeSQL", arg0);
         }
 
         #endregion

@@ -141,7 +141,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener CreatePropertyChangeListener()
         {
-            return IExecuteWithSignature<Java.Beans.PropertyChangeListener>("createPropertyChangeListener", "()Ljava/beans/PropertyChangeListener;");
+            return IExecute<Java.Beans.PropertyChangeListener>("createPropertyChangeListener");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#createPropertyChangeListener()"/>
@@ -149,14 +149,14 @@ namespace Javax.Swing.Plaf.Metal
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener CreatePropertyChangeListenerDirect()
         {
-            return IExecuteWithSignature<Java.Beans.PropertyChangeListenerDirect, Java.Beans.PropertyChangeListener>("createPropertyChangeListener", "()Ljava/beans/PropertyChangeListener;");
+            return IExecute<Java.Beans.PropertyChangeListenerDirect, Java.Beans.PropertyChangeListener>("createPropertyChangeListener");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#configureEditor()"/>
         /// </summary>
         public void ConfigureEditor()
         {
-            IExecuteWithSignature("configureEditor", "()V");
+            IExecute("configureEditor");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#layoutComboBox(java.awt.Container,javax.swing.plaf.metal.MetalComboBoxUI.MetalComboBoxLayoutManager)"/>
@@ -172,7 +172,7 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public void UnconfigureEditor()
         {
-            IExecuteWithSignature("unconfigureEditor", "()V");
+            IExecute("unconfigureEditor");
         }
 
         #endregion

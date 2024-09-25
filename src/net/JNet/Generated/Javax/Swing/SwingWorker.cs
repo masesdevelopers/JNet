@@ -191,21 +191,21 @@ namespace Javax.Swing
         /// </summary>
         public int Progress
         {
-            get { return IExecuteWithSignature<int>("getProgress", "()I"); }
+            get { return IExecute<int>("getProgress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#getPropertyChangeSupport()"/> 
         /// </summary>
         public Java.Beans.PropertyChangeSupport PropertyChangeSupport
         {
-            get { return IExecuteWithSignature<Java.Beans.PropertyChangeSupport>("getPropertyChangeSupport", "()Ljava/beans/PropertyChangeSupport;"); }
+            get { return IExecute<Java.Beans.PropertyChangeSupport>("getPropertyChangeSupport"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#getState()"/> 
         /// </summary>
         public Javax.Swing.SwingWorker.StateValue State
         {
-            get { return IExecuteWithSignature<Javax.Swing.SwingWorker.StateValue>("getState", "()Ljavax/swing/SwingWorker$StateValue;"); }
+            get { return IExecute<Javax.Swing.SwingWorker.StateValue>("getState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#cancel(boolean)"/>
@@ -214,7 +214,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool Cancel(bool arg0)
         {
-            return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
+            return IExecute<bool>("cancel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isCancelled()"/>
@@ -222,7 +222,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
         {
-            return IExecuteWithSignature<bool>("isCancelled", "()Z");
+            return IExecute<bool>("isCancelled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isDone()"/>
@@ -230,7 +230,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {
-            return IExecuteWithSignature<bool>("isDone", "()Z");
+            return IExecute<bool>("isDone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get()"/>
@@ -240,7 +240,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         public object Get()
         {
-            return IExecuteWithSignature("get", "()Ljava/lang/Object;");
+            return IExecute("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get(long,java.util.concurrent.TimeUnit)"/>
@@ -261,14 +261,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("addPropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#execute()"/>
         /// </summary>
         public void Execute()
         {
-            IExecuteWithSignature("execute", "()V");
+            IExecute("execute");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
@@ -286,14 +286,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("removePropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#run()"/>
         /// </summary>
         public void Run()
         {
-            IExecuteWithSignature("run", "()V");
+            IExecute("run");
         }
 
         #endregion
@@ -401,21 +401,21 @@ namespace Javax.Swing
         /// </summary>
         public int Progress
         {
-            get { return IExecuteWithSignature<int>("getProgress", "()I"); }
+            get { return IExecute<int>("getProgress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#getPropertyChangeSupport()"/> 
         /// </summary>
         public Java.Beans.PropertyChangeSupport PropertyChangeSupport
         {
-            get { return IExecuteWithSignature<Java.Beans.PropertyChangeSupport>("getPropertyChangeSupport", "()Ljava/beans/PropertyChangeSupport;"); }
+            get { return IExecute<Java.Beans.PropertyChangeSupport>("getPropertyChangeSupport"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#getState()"/> 
         /// </summary>
         public Javax.Swing.SwingWorker.StateValue State
         {
-            get { return IExecuteWithSignature<Javax.Swing.SwingWorker.StateValue>("getState", "()Ljavax/swing/SwingWorker$StateValue;"); }
+            get { return IExecute<Javax.Swing.SwingWorker.StateValue>("getState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#cancel(boolean)"/>
@@ -424,7 +424,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool Cancel(bool arg0)
         {
-            return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
+            return IExecute<bool>("cancel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isCancelled()"/>
@@ -432,7 +432,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
         {
-            return IExecuteWithSignature<bool>("isCancelled", "()Z");
+            return IExecute<bool>("isCancelled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isDone()"/>
@@ -440,7 +440,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {
-            return IExecuteWithSignature<bool>("isDone", "()Z");
+            return IExecute<bool>("isDone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get()"/>
@@ -450,7 +450,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         public T Get()
         {
-            return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
+            return IExecute<T>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get(long,java.util.concurrent.TimeUnit)"/>
@@ -471,14 +471,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("addPropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#execute()"/>
         /// </summary>
         public void Execute()
         {
-            IExecuteWithSignature("execute", "()V");
+            IExecute("execute");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
@@ -496,14 +496,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("removePropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#run()"/>
         /// </summary>
         public void Run()
         {
-            IExecuteWithSignature("run", "()V");
+            IExecute("run");
         }
 
         #endregion

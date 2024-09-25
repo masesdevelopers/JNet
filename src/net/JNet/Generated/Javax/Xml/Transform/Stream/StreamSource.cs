@@ -151,28 +151,28 @@ namespace Javax.Xml.Transform.Stream
         /// </summary>
         public Java.Io.InputStream InputStream
         {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;"); } set { IExecuteWithSignature("setInputStream", "(Ljava/io/InputStream;)V", value); }
+            get { return IExecute<Java.Io.InputStream>("getInputStream"); } set { IExecute("setInputStream", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#getPublicId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setPublicId(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String PublicId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPublicId", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getPublicId"); } set { IExecute("setPublicId", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#getReader()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setReader(java.io.Reader)"/>
         /// </summary>
         public Java.Io.Reader Reader
         {
-            get { return IExecuteWithSignature<Java.Io.Reader>("getReader", "()Ljava/io/Reader;"); } set { IExecuteWithSignature("setReader", "(Ljava/io/Reader;)V", value); }
+            get { return IExecute<Java.Io.Reader>("getReader"); } set { IExecute("setReader", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#getSystemId()"/> 
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#isEmpty()"/>
@@ -180,7 +180,7 @@ namespace Javax.Xml.Transform.Stream
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setSystemId(java.io.File)"/>
@@ -188,7 +188,7 @@ namespace Javax.Xml.Transform.Stream
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public void SetSystemId(Java.Io.File arg0)
         {
-            IExecuteWithSignature("setSystemId", "(Ljava/io/File;)V", arg0);
+            IExecute("setSystemId", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setSystemId(java.lang.String)"/>
@@ -196,7 +196,7 @@ namespace Javax.Xml.Transform.Stream
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetSystemId(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
+            IExecute("setSystemId", arg0);
         }
 
         #endregion

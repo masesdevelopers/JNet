@@ -123,14 +123,14 @@ namespace Org.W3c.Dom
         /// </summary>
         public Java.Lang.String Data
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setData", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ProcessingInstruction.html#getTarget()"/> 
         /// </summary>
         public Java.Lang.String Target
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTarget", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTarget"); }
         }
 
         #endregion

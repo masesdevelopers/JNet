@@ -152,7 +152,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Empty()
         {
-            return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "empty", "()Ljava/util/stream/Stream;");
+            return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#generate(java.util.function.Supplier)"/>
@@ -161,7 +161,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Generate(Java.Util.Function.Supplier arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "generate", "(Ljava/util/function/Supplier;)Ljava/util/stream/Stream;", arg0);
+            return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "generate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#iterate(java.lang.Object,java.util.function.Predicate,java.util.function.UnaryOperator)"/>
@@ -191,7 +191,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Of(params object[] arg0)
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "of", "([Ljava/lang/Object;)Ljava/util/stream/Stream;"); else return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "of", "([Ljava/lang/Object;)Ljava/util/stream/Stream;", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "of"); else return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#of(java.lang.Object)"/>
@@ -200,7 +200,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Of(object arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "of", "(Ljava/lang/Object;)Ljava/util/stream/Stream;", arg0);
+            return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#ofNullable(java.lang.Object)"/>
@@ -209,7 +209,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream OfNullable(object arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "ofNullable", "(Ljava/lang/Object;)Ljava/util/stream/Stream;", arg0);
+            return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "ofNullable", arg0);
         }
 
         #endregion
@@ -222,7 +222,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="object"/></returns>
         public object[] ToArray(Java.Util.Function.IntFunction arg0)
         {
-            return IExecuteWithSignatureArray<object>("toArray", "(Ljava/util/function/IntFunction;)[Ljava/lang/Object;", arg0);
+            return IExecuteArray<object>("toArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.stream.Collector)"/>
@@ -240,7 +240,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream FlatMap(Java.Util.Function.Function arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("flatMap", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream>("flatMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#map(java.util.function.Function)"/>
@@ -249,7 +249,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Map(Java.Util.Function.Function arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream>("map", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BiConsumer)"/>
@@ -280,7 +280,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="bool"/></returns>
         public bool AllMatch(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<bool>("allMatch", "(Ljava/util/function/Predicate;)Z", arg0);
+            return IExecute<bool>("allMatch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#anyMatch(java.util.function.Predicate)"/>
@@ -289,7 +289,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="bool"/></returns>
         public bool AnyMatch(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<bool>("anyMatch", "(Ljava/util/function/Predicate;)Z", arg0);
+            return IExecute<bool>("anyMatch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#noneMatch(java.util.function.Predicate)"/>
@@ -298,7 +298,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="bool"/></returns>
         public bool NoneMatch(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<bool>("noneMatch", "(Ljava/util/function/Predicate;)Z", arg0);
+            return IExecute<bool>("noneMatch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray()"/>
@@ -306,7 +306,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
-            return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
+            return IExecuteArray<object>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findAny()"/>
@@ -314,7 +314,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional FindAny()
         {
-            return IExecuteWithSignature<Java.Util.Optional>("findAny", "()Ljava/util/Optional;");
+            return IExecute<Java.Util.Optional>("findAny");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findFirst()"/>
@@ -322,7 +322,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional FindFirst()
         {
-            return IExecuteWithSignature<Java.Util.Optional>("findFirst", "()Ljava/util/Optional;");
+            return IExecute<Java.Util.Optional>("findFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#max(java.util.Comparator)"/>
@@ -331,7 +331,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional Max(Java.Util.Comparator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional>("max", "(Ljava/util/Comparator;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional>("max", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#min(java.util.Comparator)"/>
@@ -340,7 +340,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional Min(Java.Util.Comparator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional>("min", "(Ljava/util/Comparator;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional>("min", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.util.function.BinaryOperator)"/>
@@ -349,7 +349,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional Reduce(Java.Util.Function.BinaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional>("reduce", "(Ljava/util/function/BinaryOperator;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional>("reduce", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#flatMapToDouble(java.util.function.Function)"/>
@@ -358,7 +358,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream FlatMapToDouble(Java.Util.Function.Function arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("flatMapToDouble", "(Ljava/util/function/Function;)Ljava/util/stream/DoubleStream;", arg0);
+            return IExecute<Java.Util.Stream.DoubleStream>("flatMapToDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#mapToDouble(java.util.function.ToDoubleFunction)"/>
@@ -367,7 +367,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream MapToDouble(Java.Util.Function.ToDoubleFunction arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("mapToDouble", "(Ljava/util/function/ToDoubleFunction;)Ljava/util/stream/DoubleStream;", arg0);
+            return IExecute<Java.Util.Stream.DoubleStream>("mapToDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#flatMapToInt(java.util.function.Function)"/>
@@ -376,7 +376,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream FlatMapToInt(Java.Util.Function.Function arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.IntStream>("flatMapToInt", "(Ljava/util/function/Function;)Ljava/util/stream/IntStream;", arg0);
+            return IExecute<Java.Util.Stream.IntStream>("flatMapToInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#mapToInt(java.util.function.ToIntFunction)"/>
@@ -385,7 +385,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream MapToInt(Java.Util.Function.ToIntFunction arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.IntStream>("mapToInt", "(Ljava/util/function/ToIntFunction;)Ljava/util/stream/IntStream;", arg0);
+            return IExecute<Java.Util.Stream.IntStream>("mapToInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#flatMapToLong(java.util.function.Function)"/>
@@ -394,7 +394,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream FlatMapToLong(Java.Util.Function.Function arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("flatMapToLong", "(Ljava/util/function/Function;)Ljava/util/stream/LongStream;", arg0);
+            return IExecute<Java.Util.Stream.LongStream>("flatMapToLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#mapToLong(java.util.function.ToLongFunction)"/>
@@ -403,7 +403,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream MapToLong(Java.Util.Function.ToLongFunction arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("mapToLong", "(Ljava/util/function/ToLongFunction;)Ljava/util/stream/LongStream;", arg0);
+            return IExecute<Java.Util.Stream.LongStream>("mapToLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#distinct()"/>
@@ -411,7 +411,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Distinct()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("distinct", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream>("distinct");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#filter(java.util.function.Predicate)"/>
@@ -420,7 +420,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Filter(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream>("filter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#limit(long)"/>
@@ -429,7 +429,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Limit(long arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("limit", "(J)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream>("limit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#peek(java.util.function.Consumer)"/>
@@ -438,7 +438,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Peek(Java.Util.Function.Consumer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("peek", "(Ljava/util/function/Consumer;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream>("peek", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#skip(long)"/>
@@ -447,7 +447,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Skip(long arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("skip", "(J)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream>("skip", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted()"/>
@@ -455,7 +455,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Sorted()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("sorted", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream>("sorted");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted(java.util.Comparator)"/>
@@ -464,7 +464,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Sorted(Java.Util.Comparator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("sorted", "(Ljava/util/Comparator;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream>("sorted", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>
@@ -472,7 +472,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="long"/></returns>
         public long Count()
         {
-            return IExecuteWithSignature<long>("count", "()J");
+            return IExecute<long>("count");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.lang.Object,java.util.function.BinaryOperator)"/>
@@ -490,7 +490,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         public void ForEach(Java.Util.Function.Consumer arg0)
         {
-            IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
+            IExecute("forEach", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#forEachOrdered(java.util.function.Consumer)"/>
@@ -498,7 +498,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         public void ForEachOrdered(Java.Util.Function.Consumer arg0)
         {
-            IExecuteWithSignature("forEachOrdered", "(Ljava/util/function/Consumer;)V", arg0);
+            IExecute("forEachOrdered", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#dropWhile(java.util.function.Predicate)"/>
@@ -507,7 +507,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream DropWhile(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("dropWhile", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream>("dropWhile", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#takeWhile(java.util.function.Predicate)"/>
@@ -516,7 +516,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream TakeWhile(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("takeWhile", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream>("takeWhile", arg0);
         }
 
         #endregion
@@ -822,7 +822,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Empty()
         {
-            return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "empty", "()Ljava/util/stream/Stream;");
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#generate(java.util.function.Supplier)"/>
@@ -832,7 +832,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Generate<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
-            return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "generate", "(Ljava/util/function/Supplier;)Ljava/util/stream/Stream;", arg0);
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "generate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#iterate(java.lang.Object,java.util.function.Predicate,java.util.function.UnaryOperator)"/>
@@ -863,7 +863,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Of(params T[] arg0)
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "of", "([Ljava/lang/Object;)Ljava/util/stream/Stream;"); else return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "of", "([Ljava/lang/Object;)Ljava/util/stream/Stream;", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "of"); else return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#of(java.lang.Object)"/>
@@ -872,7 +872,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Of(T arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;)Ljava/util/stream/Stream;", arg0);
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#ofNullable(java.lang.Object)"/>
@@ -881,7 +881,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> OfNullable(T arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "ofNullable", "(Ljava/lang/Object;)Ljava/util/stream/Stream;", arg0);
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "ofNullable", arg0);
         }
 
         #endregion
@@ -895,7 +895,7 @@ namespace Java.Util.Stream
         /// <returns><typeparamref name="A"/></returns>
         public A[] ToArray<A>(Java.Util.Function.IntFunction<A[]> arg0)
         {
-            return IExecuteWithSignatureArray<A>("toArray", "(Ljava/util/function/IntFunction;)[Ljava/lang/Object;", arg0);
+            return IExecuteArray<A>("toArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.stream.Collector)"/>
@@ -920,7 +920,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<R> FlatMap<R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_ : Java.Util.Stream.Stream<Arg0ExtendsR> where Arg0ExtendsR : R
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<R>>("flatMap", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream<R>>("flatMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#map(java.util.function.Function)"/>
@@ -932,7 +932,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<R> Map<R, Arg0objectSuperT, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsR> arg0) where Arg0objectSuperT : T where Arg0ExtendsR : R
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<R>>("map", "(Ljava/util/function/Function;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream<R>>("map", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BiConsumer)"/>
@@ -968,7 +968,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="bool"/></returns>
         public bool AllMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<bool>("allMatch", "(Ljava/util/function/Predicate;)Z", arg0);
+            return IExecute<bool>("allMatch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#anyMatch(java.util.function.Predicate)"/>
@@ -978,7 +978,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="bool"/></returns>
         public bool AnyMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<bool>("anyMatch", "(Ljava/util/function/Predicate;)Z", arg0);
+            return IExecute<bool>("anyMatch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#noneMatch(java.util.function.Predicate)"/>
@@ -988,7 +988,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="bool"/></returns>
         public bool NoneMatch<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<bool>("noneMatch", "(Ljava/util/function/Predicate;)Z", arg0);
+            return IExecute<bool>("noneMatch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray()"/>
@@ -996,7 +996,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
-            return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
+            return IExecuteArray<object>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findAny()"/>
@@ -1004,7 +1004,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<T> FindAny()
         {
-            return IExecuteWithSignature<Java.Util.Optional<T>>("findAny", "()Ljava/util/Optional;");
+            return IExecute<Java.Util.Optional<T>>("findAny");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findFirst()"/>
@@ -1012,7 +1012,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<T> FindFirst()
         {
-            return IExecuteWithSignature<Java.Util.Optional<T>>("findFirst", "()Ljava/util/Optional;");
+            return IExecute<Java.Util.Optional<T>>("findFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#max(java.util.Comparator)"/>
@@ -1022,7 +1022,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<T> Max<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Optional<T>>("max", "(Ljava/util/Comparator;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<T>>("max", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#min(java.util.Comparator)"/>
@@ -1032,7 +1032,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<T> Min<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Optional<T>>("min", "(Ljava/util/Comparator;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<T>>("min", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.util.function.BinaryOperator)"/>
@@ -1041,7 +1041,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<T> Reduce(Java.Util.Function.BinaryOperator<T> arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional<T>>("reduce", "(Ljava/util/function/BinaryOperator;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<T>>("reduce", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#flatMapToDouble(java.util.function.Function)"/>
@@ -1052,7 +1052,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream FlatMapToDouble<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_DoubleStream : Java.Util.Stream.DoubleStream
         {
-            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("flatMapToDouble", "(Ljava/util/function/Function;)Ljava/util/stream/DoubleStream;", arg0);
+            return IExecute<Java.Util.Stream.DoubleStream>("flatMapToDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#mapToDouble(java.util.function.ToDoubleFunction)"/>
@@ -1062,7 +1062,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream MapToDouble<Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("mapToDouble", "(Ljava/util/function/ToDoubleFunction;)Ljava/util/stream/DoubleStream;", arg0);
+            return IExecute<Java.Util.Stream.DoubleStream>("mapToDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#flatMapToInt(java.util.function.Function)"/>
@@ -1073,7 +1073,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream FlatMapToInt<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_IntStream : Java.Util.Stream.IntStream
         {
-            return IExecuteWithSignature<Java.Util.Stream.IntStream>("flatMapToInt", "(Ljava/util/function/Function;)Ljava/util/stream/IntStream;", arg0);
+            return IExecute<Java.Util.Stream.IntStream>("flatMapToInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#mapToInt(java.util.function.ToIntFunction)"/>
@@ -1083,7 +1083,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream MapToInt<Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Stream.IntStream>("mapToInt", "(Ljava/util/function/ToIntFunction;)Ljava/util/stream/IntStream;", arg0);
+            return IExecute<Java.Util.Stream.IntStream>("mapToInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#flatMapToLong(java.util.function.Function)"/>
@@ -1094,7 +1094,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream FlatMapToLong<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_LongStream : Java.Util.Stream.LongStream
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("flatMapToLong", "(Ljava/util/function/Function;)Ljava/util/stream/LongStream;", arg0);
+            return IExecute<Java.Util.Stream.LongStream>("flatMapToLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#mapToLong(java.util.function.ToLongFunction)"/>
@@ -1104,7 +1104,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream MapToLong<Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("mapToLong", "(Ljava/util/function/ToLongFunction;)Ljava/util/stream/LongStream;", arg0);
+            return IExecute<Java.Util.Stream.LongStream>("mapToLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#distinct()"/>
@@ -1112,7 +1112,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Distinct()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("distinct", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream<T>>("distinct");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#filter(java.util.function.Predicate)"/>
@@ -1122,7 +1122,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Filter<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream<T>>("filter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#limit(long)"/>
@@ -1131,7 +1131,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Limit(long arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("limit", "(J)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream<T>>("limit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#peek(java.util.function.Consumer)"/>
@@ -1141,7 +1141,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Peek<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("peek", "(Ljava/util/function/Consumer;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream<T>>("peek", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#skip(long)"/>
@@ -1150,7 +1150,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Skip(long arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("skip", "(J)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream<T>>("skip", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted()"/>
@@ -1158,7 +1158,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Sorted()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("sorted", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream<T>>("sorted");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted(java.util.Comparator)"/>
@@ -1168,7 +1168,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Sorted<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("sorted", "(Ljava/util/Comparator;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream<T>>("sorted", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>
@@ -1176,7 +1176,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="long"/></returns>
         public long Count()
         {
-            return IExecuteWithSignature<long>("count", "()J");
+            return IExecute<long>("count");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.lang.Object,java.util.function.BinaryOperator)"/>
@@ -1195,7 +1195,7 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         public void ForEach<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
+            IExecute("forEach", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#forEachOrdered(java.util.function.Consumer)"/>
@@ -1204,7 +1204,7 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         public void ForEachOrdered<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            IExecuteWithSignature("forEachOrdered", "(Ljava/util/function/Consumer;)V", arg0);
+            IExecute("forEachOrdered", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#dropWhile(java.util.function.Predicate)"/>
@@ -1214,7 +1214,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> DropWhile<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("dropWhile", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream<T>>("dropWhile", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#takeWhile(java.util.function.Predicate)"/>
@@ -1224,7 +1224,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> TakeWhile<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("takeWhile", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream<T>>("takeWhile", arg0);
         }
 
         #endregion

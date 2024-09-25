@@ -158,14 +158,14 @@ namespace Javax.Swing.Event
         /// </summary>
         public Javax.Swing.Event.RowSorterEvent.Type GetType
         {
-            get { return IExecuteWithSignature<Javax.Swing.Event.RowSorterEvent.Type>("getType", "()Ljavax/swing/event/RowSorterEvent$Type;"); }
+            get { return IExecute<Javax.Swing.Event.RowSorterEvent.Type>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#getPreviousRowCount()"/> 
         /// </summary>
         public int PreviousRowCount
         {
-            get { return IExecuteWithSignature<int>("getPreviousRowCount", "()I"); }
+            get { return IExecute<int>("getPreviousRowCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#convertPreviousRowIndexToModel(int)"/>
@@ -174,7 +174,7 @@ namespace Javax.Swing.Event
         /// <returns><see cref="int"/></returns>
         public int ConvertPreviousRowIndexToModel(int arg0)
         {
-            return IExecuteWithSignature<int>("convertPreviousRowIndexToModel", "(I)I", arg0);
+            return IExecute<int>("convertPreviousRowIndexToModel", arg0);
         }
 
         #endregion

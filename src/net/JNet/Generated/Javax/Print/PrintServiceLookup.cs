@@ -95,7 +95,7 @@ namespace Javax.Print
         /// <returns><see cref="bool"/></returns>
         public static bool RegisterService(Javax.Print.PrintService arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "registerService", "(Ljavax/print/PrintService;)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "registerService", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#registerServiceProvider(javax.print.PrintServiceLookup)"/>
@@ -104,7 +104,7 @@ namespace Javax.Print
         /// <returns><see cref="bool"/></returns>
         public static bool RegisterServiceProvider(Javax.Print.PrintServiceLookup arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "registerServiceProvider", "(Ljavax/print/PrintServiceLookup;)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "registerServiceProvider", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#lookupMultiDocPrintServices(javax.print.DocFlavor[],javax.print.attribute.AttributeSet)"/>
@@ -122,7 +122,7 @@ namespace Javax.Print
         /// <returns><see cref="Javax.Print.PrintService"/></returns>
         public static Javax.Print.PrintService LookupDefaultPrintService()
         {
-            return SExecuteWithSignature<Javax.Print.PrintService>(LocalBridgeClazz, "lookupDefaultPrintService", "()Ljavax/print/PrintService;");
+            return SExecute<Javax.Print.PrintService>(LocalBridgeClazz, "lookupDefaultPrintService");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#lookupPrintServices(javax.print.DocFlavor,javax.print.attribute.AttributeSet)"/>
@@ -143,14 +143,14 @@ namespace Javax.Print
         /// </summary>
         public Javax.Print.PrintService DefaultPrintService
         {
-            get { return IExecuteWithSignature<Javax.Print.PrintService>("getDefaultPrintService", "()Ljavax/print/PrintService;"); }
+            get { return IExecute<Javax.Print.PrintService>("getDefaultPrintService"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#getPrintServices()"/> 
         /// </summary>
         public Javax.Print.PrintService[] PrintServices
         {
-            get { return IExecuteWithSignatureArray<Javax.Print.PrintService>("getPrintServices", "()[Ljavax/print/PrintService;"); }
+            get { return IExecuteArray<Javax.Print.PrintService>("getPrintServices"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#getMultiDocPrintServices(javax.print.DocFlavor[],javax.print.attribute.AttributeSet)"/>

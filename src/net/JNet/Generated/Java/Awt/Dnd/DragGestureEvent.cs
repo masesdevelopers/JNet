@@ -106,42 +106,42 @@ namespace Java.Awt.Dnd
         /// </summary>
         public Java.Awt.Component Component
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getComponent", "()Ljava/awt/Component;"); }
+            get { return IExecute<Java.Awt.Component>("getComponent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#getDragAction()"/> 
         /// </summary>
         public int DragAction
         {
-            get { return IExecuteWithSignature<int>("getDragAction", "()I"); }
+            get { return IExecute<int>("getDragAction"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#getDragOrigin()"/> 
         /// </summary>
         public Java.Awt.Point DragOrigin
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getDragOrigin", "()Ljava/awt/Point;"); }
+            get { return IExecute<Java.Awt.Point>("getDragOrigin"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#getDragSource()"/> 
         /// </summary>
         public Java.Awt.Dnd.DragSource DragSource
         {
-            get { return IExecuteWithSignature<Java.Awt.Dnd.DragSource>("getDragSource", "()Ljava/awt/dnd/DragSource;"); }
+            get { return IExecute<Java.Awt.Dnd.DragSource>("getDragSource"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#getSourceAsDragGestureRecognizer()"/> 
         /// </summary>
         public Java.Awt.Dnd.DragGestureRecognizer SourceAsDragGestureRecognizer
         {
-            get { return IExecuteWithSignature<Java.Awt.Dnd.DragGestureRecognizer>("getSourceAsDragGestureRecognizer", "()Ljava/awt/dnd/DragGestureRecognizer;"); }
+            get { return IExecute<Java.Awt.Dnd.DragGestureRecognizer>("getSourceAsDragGestureRecognizer"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#getTriggerEvent()"/> 
         /// </summary>
         public Java.Awt.EventNs.InputEvent TriggerEvent
         {
-            get { return IExecuteWithSignature<Java.Awt.EventNs.InputEvent>("getTriggerEvent", "()Ljava/awt/event/InputEvent;"); }
+            get { return IExecute<Java.Awt.EventNs.InputEvent>("getTriggerEvent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#toArray()"/>
@@ -149,7 +149,7 @@ namespace Java.Awt.Dnd
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
-            return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
+            return IExecuteArray<object>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#toArray(java.lang.Object[])"/>
@@ -158,7 +158,7 @@ namespace Java.Awt.Dnd
         /// <returns><see cref="object"/></returns>
         public object[] ToArray(object[] arg0)
         {
-            return IExecuteWithSignatureArray<object>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
+            return IExecuteArray<object>("toArray", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#iterator()"/>
@@ -166,7 +166,7 @@ namespace Java.Awt.Dnd
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<Java.Awt.EventNs.InputEvent> Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Awt.EventNs.InputEvent>>("iterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator<Java.Awt.EventNs.InputEvent>>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#startDrag(java.awt.Cursor,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)"/>

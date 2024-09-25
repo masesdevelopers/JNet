@@ -107,42 +107,42 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Accessibility.AccessibleContext AccessibleContext
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleContext>("getAccessibleContext", "()Ljavax/accessibility/AccessibleContext;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleContext>("getAccessibleContext"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMaximum(int)"/>
         /// </summary>
         public int Maximum
         {
-            get { return IExecuteWithSignature<int>("getMaximum", "()I"); } set { IExecuteWithSignature("setMaximum", "(I)V", value); }
+            get { return IExecute<int>("getMaximum"); } set { IExecute("setMaximum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMillisToDecideToPopup()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMillisToDecideToPopup(int)"/>
         /// </summary>
         public int MillisToDecideToPopup
         {
-            get { return IExecuteWithSignature<int>("getMillisToDecideToPopup", "()I"); } set { IExecuteWithSignature("setMillisToDecideToPopup", "(I)V", value); }
+            get { return IExecute<int>("getMillisToDecideToPopup"); } set { IExecute("setMillisToDecideToPopup", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMillisToPopup()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMillisToPopup(int)"/>
         /// </summary>
         public int MillisToPopup
         {
-            get { return IExecuteWithSignature<int>("getMillisToPopup", "()I"); } set { IExecuteWithSignature("setMillisToPopup", "(I)V", value); }
+            get { return IExecute<int>("getMillisToPopup"); } set { IExecute("setMillisToPopup", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMinimum(int)"/>
         /// </summary>
         public int Minimum
         {
-            get { return IExecuteWithSignature<int>("getMinimum", "()I"); } set { IExecuteWithSignature("setMinimum", "(I)V", value); }
+            get { return IExecute<int>("getMinimum"); } set { IExecute("setMinimum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getNote()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setNote(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Note
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNote", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setNote", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getNote"); } set { IExecute("setNote", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#isCanceled()"/>
@@ -150,14 +150,14 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsCanceled()
         {
-            return IExecuteWithSignature<bool>("isCanceled", "()Z");
+            return IExecute<bool>("isCanceled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setProgress(int)"/>
@@ -165,7 +165,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void SetProgress(int arg0)
         {
-            IExecuteWithSignature("setProgress", "(I)V", arg0);
+            IExecute("setProgress", arg0);
         }
 
         #endregion

@@ -146,42 +146,42 @@ namespace Javax.Sound.Midi
         /// </summary>
         public float DivisionType
         {
-            get { return IExecuteWithSignature<float>("getDivisionType", "()F"); }
+            get { return IExecute<float>("getDivisionType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getMicrosecondLength()"/> 
         /// </summary>
         public long MicrosecondLength
         {
-            get { return IExecuteWithSignature<long>("getMicrosecondLength", "()J"); }
+            get { return IExecute<long>("getMicrosecondLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getPatchList()"/> 
         /// </summary>
         public Javax.Sound.Midi.Patch[] PatchList
         {
-            get { return IExecuteWithSignatureArray<Javax.Sound.Midi.Patch>("getPatchList", "()[Ljavax/sound/midi/Patch;"); }
+            get { return IExecuteArray<Javax.Sound.Midi.Patch>("getPatchList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getResolution()"/> 
         /// </summary>
         public int Resolution
         {
-            get { return IExecuteWithSignature<int>("getResolution", "()I"); }
+            get { return IExecute<int>("getResolution"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getTickLength()"/> 
         /// </summary>
         public long TickLength
         {
-            get { return IExecuteWithSignature<long>("getTickLength", "()J"); }
+            get { return IExecute<long>("getTickLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getTracks()"/> 
         /// </summary>
         public Javax.Sound.Midi.Track[] Tracks
         {
-            get { return IExecuteWithSignatureArray<Javax.Sound.Midi.Track>("getTracks", "()[Ljavax/sound/midi/Track;"); }
+            get { return IExecuteArray<Javax.Sound.Midi.Track>("getTracks"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#deleteTrack(javax.sound.midi.Track)"/>
@@ -190,7 +190,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="bool"/></returns>
         public bool DeleteTrack(Javax.Sound.Midi.Track arg0)
         {
-            return IExecuteWithSignature<bool>("deleteTrack", "(Ljavax/sound/midi/Track;)Z", arg0);
+            return IExecute<bool>("deleteTrack", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#createTrack()"/>
@@ -198,7 +198,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="Javax.Sound.Midi.Track"/></returns>
         public Javax.Sound.Midi.Track CreateTrack()
         {
-            return IExecuteWithSignature<Javax.Sound.Midi.Track>("createTrack", "()Ljavax/sound/midi/Track;");
+            return IExecute<Javax.Sound.Midi.Track>("createTrack");
         }
 
         #endregion

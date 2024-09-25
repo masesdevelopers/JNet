@@ -119,7 +119,7 @@ namespace Java.Awt.Print
         /// </summary>
         public Java.Awt.Print.PrinterJob PrinterJob
         {
-            get { return IExecuteWithSignature<Java.Awt.Print.PrinterJob>("getPrinterJob", "()Ljava/awt/print/PrinterJob;"); }
+            get { return IExecute<Java.Awt.Print.PrinterJob>("getPrinterJob"); }
         }
 
         #endregion

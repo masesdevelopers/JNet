@@ -95,7 +95,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.Selector Open()
         {
-            return SExecuteWithSignature<Java.Nio.Channels.Selector>(LocalBridgeClazz, "open", "()Ljava/nio/channels/Selector;");
+            return SExecute<Java.Nio.Channels.Selector>(LocalBridgeClazz, "open");
         }
 
         #endregion
@@ -107,7 +107,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
         {
-            return IExecuteWithSignature<bool>("isOpen", "()Z");
+            return IExecute<bool>("isOpen");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#select()"/>
@@ -116,7 +116,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Select()
         {
-            return IExecuteWithSignature<int>("select", "()I");
+            return IExecute<int>("select");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#select(long)"/>
@@ -126,7 +126,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Select(long arg0)
         {
-            return IExecuteWithSignature<int>("select", "(J)I", arg0);
+            return IExecute<int>("select", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#selectNow()"/>
@@ -135,7 +135,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int SelectNow()
         {
-            return IExecuteWithSignature<int>("selectNow", "()I");
+            return IExecute<int>("selectNow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#wakeup()"/>
@@ -143,7 +143,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.Selector"/></returns>
         public Java.Nio.Channels.Selector Wakeup()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.Selector>("wakeup", "()Ljava/nio/channels/Selector;");
+            return IExecute<Java.Nio.Channels.Selector>("wakeup");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#provider()"/>
@@ -151,7 +151,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.Spi.SelectorProvider"/></returns>
         public Java.Nio.Channels.Spi.SelectorProvider Provider()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.Spi.SelectorProvider>("provider", "()Ljava/nio/channels/spi/SelectorProvider;");
+            return IExecute<Java.Nio.Channels.Spi.SelectorProvider>("provider");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#keys()"/>
@@ -159,7 +159,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Nio.Channels.SelectionKey> Keys()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Nio.Channels.SelectionKey>>("keys", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Nio.Channels.SelectionKey>>("keys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#selectedKeys()"/>
@@ -167,7 +167,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Nio.Channels.SelectionKey> SelectedKeys()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Nio.Channels.SelectionKey>>("selectedKeys", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Nio.Channels.SelectionKey>>("selectedKeys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#close()"/>
@@ -175,7 +175,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#select(java.util.function.Consumer,long)"/>
@@ -196,7 +196,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Select(Java.Util.Function.Consumer<Java.Nio.Channels.SelectionKey> arg0)
         {
-            return IExecuteWithSignature<int>("select", "(Ljava/util/function/Consumer;)I", arg0);
+            return IExecute<int>("select", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#selectNow(java.util.function.Consumer)"/>
@@ -206,7 +206,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int SelectNow(Java.Util.Function.Consumer<Java.Nio.Channels.SelectionKey> arg0)
         {
-            return IExecuteWithSignature<int>("selectNow", "(Ljava/util/function/Consumer;)I", arg0);
+            return IExecute<int>("selectNow", arg0);
         }
 
         #endregion

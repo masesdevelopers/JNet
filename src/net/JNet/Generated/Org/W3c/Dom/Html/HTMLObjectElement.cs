@@ -191,133 +191,133 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Align
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlign", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getArchive()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setArchive(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Archive
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getArchive", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setArchive", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getArchive"); } set { IExecute("setArchive", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getBorder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setBorder(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Border
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBorder", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setBorder", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getBorder"); } set { IExecute("setBorder", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getCode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setCode(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Code
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCode", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCode", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCode"); } set { IExecute("setCode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getCodeBase()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setCodeBase(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String CodeBase
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCodeBase", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCodeBase", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCodeBase"); } set { IExecute("setCodeBase", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getCodeType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setCodeType(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String CodeType
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCodeType", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCodeType", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCodeType"); } set { IExecute("setCodeType", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getContentDocument()"/> 
         /// </summary>
         public Org.W3c.Dom.Document ContentDocument
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Document>("getContentDocument", "()Lorg/w3c/dom/Document;"); }
+            get { return IExecute<Org.W3c.Dom.Document>("getContentDocument"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setData(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Data
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setData", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getDeclare()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setDeclare(boolean)"/>
         /// </summary>
         public bool Declare
         {
-            get { return IExecuteWithSignature<bool>("getDeclare", "()Z"); } set { IExecuteWithSignature("setDeclare", "(Z)V", value); }
+            get { return IExecute<bool>("getDeclare"); } set { IExecute("setDeclare", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getForm()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLFormElement Form
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLFormElement>("getForm", "()Lorg/w3c/dom/html/HTMLFormElement;"); }
+            get { return IExecute<Org.W3c.Dom.Html.HTMLFormElement>("getForm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setHeight(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Height
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHeight", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHeight", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getHeight"); } set { IExecute("setHeight", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getHspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setHspace(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Hspace
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHspace", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHspace", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getHspace"); } set { IExecute("setHspace", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getStandby()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setStandby(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Standby
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getStandby", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setStandby", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getStandby"); } set { IExecute("setStandby", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getTabIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setTabIndex(int)"/>
         /// </summary>
         public int TabIndex
         {
-            get { return IExecuteWithSignature<int>("getTabIndex", "()I"); } set { IExecuteWithSignature("setTabIndex", "(I)V", value); }
+            get { return IExecute<int>("getTabIndex"); } set { IExecute("setTabIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setType(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setType", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getType"); } set { IExecute("setType", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getUseMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setUseMap(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String UseMap
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUseMap", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setUseMap", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getUseMap"); } set { IExecute("setUseMap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getVspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setVspace(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Vspace
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVspace", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setVspace", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getVspace"); } set { IExecute("setVspace", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setWidth(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Width
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWidth", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setWidth", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getWidth"); } set { IExecute("setWidth", value); }
         }
 
         #endregion

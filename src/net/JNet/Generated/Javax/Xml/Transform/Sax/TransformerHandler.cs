@@ -141,14 +141,14 @@ namespace Javax.Xml.Transform.Sax
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#getTransformer()"/> 
         /// </summary>
         public Javax.Xml.Transform.Transformer Transformer
         {
-            get { return IExecuteWithSignature<Javax.Xml.Transform.Transformer>("getTransformer", "()Ljavax/xml/transform/Transformer;"); }
+            get { return IExecute<Javax.Xml.Transform.Transformer>("getTransformer"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#setResult(javax.xml.transform.Result)"/>
@@ -157,7 +157,7 @@ namespace Javax.Xml.Transform.Sax
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetResult(Javax.Xml.Transform.Result arg0)
         {
-            IExecuteWithSignature("setResult", "(Ljavax/xml/transform/Result;)V", arg0);
+            IExecute("setResult", arg0);
         }
 
         #endregion

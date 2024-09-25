@@ -260,7 +260,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.ObjectInputFilter.Status"/></returns>
         public Java.Io.ObjectInputFilter.Status CheckInput(Java.Io.ObjectInputFilter.FilterInfo arg0)
         {
-            return IExecuteWithSignature<Java.Io.ObjectInputFilter.Status>("checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;", arg0);
+            return IExecute<Java.Io.ObjectInputFilter.Status>("checkInput", arg0);
         }
 
         #endregion
@@ -339,7 +339,7 @@ namespace Java.Io
             /// <returns><see cref="Java.Lang.Class"/></returns>
             public Java.Lang.Class SerialClass()
             {
-                return IExecuteWithSignature<Java.Lang.Class>("serialClass", "()Ljava/lang/Class;");
+                return IExecute<Java.Lang.Class>("serialClass");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#arrayLength()"/>
@@ -347,7 +347,7 @@ namespace Java.Io
             /// <returns><see cref="long"/></returns>
             public long ArrayLength()
             {
-                return IExecuteWithSignature<long>("arrayLength", "()J");
+                return IExecute<long>("arrayLength");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#depth()"/>
@@ -355,7 +355,7 @@ namespace Java.Io
             /// <returns><see cref="long"/></returns>
             public long Depth()
             {
-                return IExecuteWithSignature<long>("depth", "()J");
+                return IExecute<long>("depth");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#references()"/>
@@ -363,7 +363,7 @@ namespace Java.Io
             /// <returns><see cref="long"/></returns>
             public long References()
             {
-                return IExecuteWithSignature<long>("references", "()J");
+                return IExecute<long>("references");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#streamBytes()"/>
@@ -371,7 +371,7 @@ namespace Java.Io
             /// <returns><see cref="long"/></returns>
             public long StreamBytes()
             {
-                return IExecuteWithSignature<long>("streamBytes", "()J");
+                return IExecute<long>("streamBytes");
             }
 
             #endregion
@@ -425,7 +425,7 @@ namespace Java.Io
             /// <returns><see cref="Java.Io.ObjectInputFilter.Status"/></returns>
             public static Java.Io.ObjectInputFilter.Status ValueOf(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Java.Io.ObjectInputFilter.Status>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/io/ObjectInputFilter$Status;", arg0);
+                return SExecute<Java.Io.ObjectInputFilter.Status>(LocalBridgeClazz, "valueOf", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#values()"/>
@@ -433,7 +433,7 @@ namespace Java.Io
             /// <returns><see cref="Java.Io.ObjectInputFilter.Status"/></returns>
             public static Java.Io.ObjectInputFilter.Status[] Values()
             {
-                return SExecuteWithSignatureArray<Java.Io.ObjectInputFilter.Status>(LocalBridgeClazz, "values", "()[Ljava/io/ObjectInputFilter$Status;");
+                return SExecuteArray<Java.Io.ObjectInputFilter.Status>(LocalBridgeClazz, "values");
             }
 
             #endregion

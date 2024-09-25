@@ -115,14 +115,14 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public byte[] IV
         {
-            get { return IExecuteWithSignatureArray<byte>("getIV", "()[B"); }
+            get { return IExecuteArray<byte>("getIV"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/GCMParameterSpec.html#getTLen()"/> 
         /// </summary>
         public int TLen
         {
-            get { return IExecuteWithSignature<int>("getTLen", "()I"); }
+            get { return IExecute<int>("getTLen"); }
         }
 
         #endregion

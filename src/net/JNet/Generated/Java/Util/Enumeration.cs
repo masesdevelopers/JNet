@@ -146,7 +146,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool HasMoreElements()
         {
-            return IExecuteWithSignature<bool>("hasMoreElements", "()Z");
+            return IExecute<bool>("hasMoreElements");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#nextElement()"/>
@@ -154,7 +154,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object NextElement()
         {
-            return IExecuteWithSignature("nextElement", "()Ljava/lang/Object;");
+            return IExecute("nextElement");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/>
@@ -162,7 +162,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator AsIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("asIterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator>("asIterator");
         }
 
         #endregion
@@ -238,7 +238,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool HasMoreElements()
         {
-            return IExecuteWithSignature<bool>("hasMoreElements", "()Z");
+            return IExecute<bool>("hasMoreElements");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#nextElement()"/>
@@ -246,7 +246,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E NextElement()
         {
-            return IExecuteWithSignature<E>("nextElement", "()Ljava/lang/Object;");
+            return IExecute<E>("nextElement");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/>
@@ -254,7 +254,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> AsIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("asIterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator<E>>("asIterator");
         }
 
         #endregion

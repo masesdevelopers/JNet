@@ -234,7 +234,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
         public override void AncestorMoved(Java.Awt.EventNs.HierarchyEvent arg0)
         {
-            IExecuteWithSignature("ancestorMoved", "(Ljava/awt/event/HierarchyEvent;)V", arg0);
+            IExecute("ancestorMoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html#ancestorResized(java.awt.event.HierarchyEvent)"/>
@@ -242,7 +242,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
         public override void AncestorResized(Java.Awt.EventNs.HierarchyEvent arg0)
         {
-            IExecuteWithSignature("ancestorResized", "(Ljava/awt/event/HierarchyEvent;)V", arg0);
+            IExecute("ancestorResized", arg0);
         }
 
         #endregion

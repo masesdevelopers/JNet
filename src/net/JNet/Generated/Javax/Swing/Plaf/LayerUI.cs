@@ -145,7 +145,7 @@ namespace Javax.Swing.Plaf
         /// </summary>
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;"); }
+            get { return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html#imageUpdate(java.awt.Image,int,int,int,int,int,javax.swing.JLayer)"/>
@@ -169,7 +169,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "(Ljava/lang/String;)[Ljava/beans/PropertyChangeListener;", arg0);
+            return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -177,7 +177,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("addPropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
@@ -203,7 +203,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg0"><see cref="Javax.Swing.JLayer"/></param>
         public void DoLayout(Javax.Swing.JLayer arg0)
         {
-            IExecuteWithSignature("doLayout", "(Ljavax/swing/JLayer;)V", arg0);
+            IExecute("doLayout", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html#eventDispatched(java.awt.AWTEvent,javax.swing.JLayer)"/>
@@ -232,7 +232,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("removePropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
@@ -249,7 +249,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg0"><see cref="Javax.Swing.JLayer"/></param>
         public void UpdateUI(Javax.Swing.JLayer arg0)
         {
-            IExecuteWithSignature("updateUI", "(Ljavax/swing/JLayer;)V", arg0);
+            IExecute("updateUI", arg0);
         }
 
         #endregion
@@ -295,7 +295,7 @@ namespace Javax.Swing.Plaf
         /// </summary>
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;"); }
+            get { return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html#imageUpdate(java.awt.Image,int,int,int,int,int,javax.swing.JLayer)"/>
@@ -319,7 +319,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "(Ljava/lang/String;)[Ljava/beans/PropertyChangeListener;", arg0);
+            return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -327,7 +327,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("addPropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
@@ -353,7 +353,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg0"><see cref="Javax.Swing.JLayer"/></param>
         public void DoLayout(Javax.Swing.JLayer arg0)
         {
-            IExecuteWithSignature("doLayout", "(Ljavax/swing/JLayer;)V", arg0);
+            IExecute("doLayout", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html#eventDispatched(java.awt.AWTEvent,javax.swing.JLayer)"/>
@@ -382,7 +382,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("removePropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
@@ -399,7 +399,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg0"><see cref="Javax.Swing.JLayer"/></param>
         public void UpdateUI(Javax.Swing.JLayer arg0)
         {
-            IExecuteWithSignature("updateUI", "(Ljavax/swing/JLayer;)V", arg0);
+            IExecute("updateUI", arg0);
         }
 
         #endregion

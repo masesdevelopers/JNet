@@ -119,21 +119,21 @@ namespace Java.Awt
         /// </summary>
         public int[] LayoutDimensions
         {
-            get { return IExecuteWithSignatureArray<int>("getLayoutDimensions", "()[[I"); }
+            get { return IExecuteArray<int>("getLayoutDimensions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#getLayoutOrigin()"/> 
         /// </summary>
         public Java.Awt.Point LayoutOrigin
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getLayoutOrigin", "()Ljava/awt/Point;"); }
+            get { return IExecute<Java.Awt.Point>("getLayoutOrigin"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#getLayoutWeights()"/> 
         /// </summary>
         public double[] LayoutWeights
         {
-            get { return IExecuteWithSignatureArray<double>("getLayoutWeights", "()[[D"); }
+            get { return IExecuteArray<double>("getLayoutWeights"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#getLayoutAlignmentX(java.awt.Container)"/>
@@ -142,7 +142,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float GetLayoutAlignmentX(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<float>("getLayoutAlignmentX", "(Ljava/awt/Container;)F", arg0);
+            return IExecute<float>("getLayoutAlignmentX", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#getLayoutAlignmentY(java.awt.Container)"/>
@@ -151,7 +151,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float GetLayoutAlignmentY(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<float>("getLayoutAlignmentY", "(Ljava/awt/Container;)F", arg0);
+            return IExecute<float>("getLayoutAlignmentY", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#maximumLayoutSize(java.awt.Container)"/>
@@ -160,7 +160,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MaximumLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("maximumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("maximumLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#minimumLayoutSize(java.awt.Container)"/>
@@ -169,7 +169,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#preferredLayoutSize(java.awt.Container)"/>
@@ -178,7 +178,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#getConstraints(java.awt.Component)"/>
@@ -187,7 +187,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.GridBagConstraints"/></returns>
         public Java.Awt.GridBagConstraints GetConstraints(Java.Awt.Component arg0)
         {
-            return IExecuteWithSignature<Java.Awt.GridBagConstraints>("getConstraints", "(Ljava/awt/Component;)Ljava/awt/GridBagConstraints;", arg0);
+            return IExecute<Java.Awt.GridBagConstraints>("getConstraints", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#location(int,int)"/>
@@ -223,7 +223,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void InvalidateLayout(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("invalidateLayout", "(Ljava/awt/Container;)V", arg0);
+            IExecute("invalidateLayout", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#layoutContainer(java.awt.Container)"/>
@@ -231,7 +231,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void LayoutContainer(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
+            IExecute("layoutContainer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#removeLayoutComponent(java.awt.Component)"/>
@@ -239,7 +239,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void RemoveLayoutComponent(Java.Awt.Component arg0)
         {
-            IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);
+            IExecute("removeLayoutComponent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#setConstraints(java.awt.Component,java.awt.GridBagConstraints)"/>

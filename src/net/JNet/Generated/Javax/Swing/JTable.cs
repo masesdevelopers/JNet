@@ -288,280 +288,280 @@ namespace Javax.Swing
         /// </summary>
         public bool AutoCreateColumnsFromModel
         {
-            get { return IExecuteWithSignature<bool>("getAutoCreateColumnsFromModel", "()Z"); } set { IExecuteWithSignature("setAutoCreateColumnsFromModel", "(Z)V", value); }
+            get { return IExecute<bool>("getAutoCreateColumnsFromModel"); } set { IExecute("setAutoCreateColumnsFromModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoCreateRowSorter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoCreateRowSorter(boolean)"/>
         /// </summary>
         public bool AutoCreateRowSorter
         {
-            get { return IExecuteWithSignature<bool>("getAutoCreateRowSorter", "()Z"); } set { IExecuteWithSignature("setAutoCreateRowSorter", "(Z)V", value); }
+            get { return IExecute<bool>("getAutoCreateRowSorter"); } set { IExecute("setAutoCreateRowSorter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getAutoResizeMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setAutoResizeMode(int)"/>
         /// </summary>
         public int AutoResizeMode
         {
-            get { return IExecuteWithSignature<int>("getAutoResizeMode", "()I"); } set { IExecuteWithSignature("setAutoResizeMode", "(I)V", value); }
+            get { return IExecute<int>("getAutoResizeMode"); } set { IExecute("setAutoResizeMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellEditor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setCellEditor(javax.swing.table.TableCellEditor)"/>
         /// </summary>
         public Javax.Swing.Table.TableCellEditor CellEditor
         {
-            get { return IExecuteWithSignature<Javax.Swing.Table.TableCellEditor>("getCellEditor", "()Ljavax/swing/table/TableCellEditor;"); } set { IExecuteWithSignature("setCellEditor", "(Ljavax/swing/table/TableCellEditor;)V", value); }
+            get { return IExecute<Javax.Swing.Table.TableCellEditor>("getCellEditor"); } set { IExecute("setCellEditor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellSelectionEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setCellSelectionEnabled(boolean)"/>
         /// </summary>
         public bool CellSelectionEnabled
         {
-            get { return IExecuteWithSignature<bool>("getCellSelectionEnabled", "()Z"); } set { IExecuteWithSignature("setCellSelectionEnabled", "(Z)V", value); }
+            get { return IExecute<bool>("getCellSelectionEnabled"); } set { IExecute("setCellSelectionEnabled", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnCount()"/> 
         /// </summary>
         public int ColumnCount
         {
-            get { return IExecuteWithSignature<int>("getColumnCount", "()I"); }
+            get { return IExecute<int>("getColumnCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setColumnModel(javax.swing.table.TableColumnModel)"/>
         /// </summary>
         public Javax.Swing.Table.TableColumnModel ColumnModel
         {
-            get { return IExecuteWithSignature<Javax.Swing.Table.TableColumnModel>("getColumnModel", "()Ljavax/swing/table/TableColumnModel;"); } set { IExecuteWithSignature("setColumnModel", "(Ljavax/swing/table/TableColumnModel;)V", value); }
+            get { return IExecute<Javax.Swing.Table.TableColumnModel>("getColumnModel"); } set { IExecute("setColumnModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnSelectionAllowed()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setColumnSelectionAllowed(boolean)"/>
         /// </summary>
         public bool ColumnSelectionAllowed
         {
-            get { return IExecuteWithSignature<bool>("getColumnSelectionAllowed", "()Z"); } set { IExecuteWithSignature("setColumnSelectionAllowed", "(Z)V", value); }
+            get { return IExecute<bool>("getColumnSelectionAllowed"); } set { IExecute("setColumnSelectionAllowed", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDragEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDragEnabled(boolean)"/>
         /// </summary>
         public bool DragEnabled
         {
-            get { return IExecuteWithSignature<bool>("getDragEnabled", "()Z"); } set { IExecuteWithSignature("setDragEnabled", "(Z)V", value); }
+            get { return IExecute<bool>("getDragEnabled"); } set { IExecute("setDragEnabled", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDropMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDropMode(javax.swing.DropMode)"/>
         /// </summary>
         public Javax.Swing.DropMode DropMode
         {
-            get { return IExecuteWithSignature<Javax.Swing.DropMode>("getDropMode", "()Ljavax/swing/DropMode;"); } set { IExecuteWithSignature("setDropMode", "(Ljavax/swing/DropMode;)V", value); }
+            get { return IExecute<Javax.Swing.DropMode>("getDropMode"); } set { IExecute("setDropMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getEditingColumn()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setEditingColumn(int)"/>
         /// </summary>
         public int EditingColumn
         {
-            get { return IExecuteWithSignature<int>("getEditingColumn", "()I"); } set { IExecuteWithSignature("setEditingColumn", "(I)V", value); }
+            get { return IExecute<int>("getEditingColumn"); } set { IExecute("setEditingColumn", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getEditingRow()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setEditingRow(int)"/>
         /// </summary>
         public int EditingRow
         {
-            get { return IExecuteWithSignature<int>("getEditingRow", "()I"); } set { IExecuteWithSignature("setEditingRow", "(I)V", value); }
+            get { return IExecute<int>("getEditingRow"); } set { IExecute("setEditingRow", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getEditorComponent()"/> 
         /// </summary>
         public Java.Awt.Component EditorComponent
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getEditorComponent", "()Ljava/awt/Component;"); }
+            get { return IExecute<Java.Awt.Component>("getEditorComponent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getFillsViewportHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setFillsViewportHeight(boolean)"/>
         /// </summary>
         public bool FillsViewportHeight
         {
-            get { return IExecuteWithSignature<bool>("getFillsViewportHeight", "()Z"); } set { IExecuteWithSignature("setFillsViewportHeight", "(Z)V", value); }
+            get { return IExecute<bool>("getFillsViewportHeight"); } set { IExecute("setFillsViewportHeight", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDropLocation()"/> 
         /// </summary>
         public Javax.Swing.JTable.DropLocation GetDropLocation
         {
-            get { return IExecuteWithSignature<Javax.Swing.JTable.DropLocation>("getDropLocation", "()Ljavax/swing/JTable$DropLocation;"); }
+            get { return IExecute<Javax.Swing.JTable.DropLocation>("getDropLocation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getGridColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setGridColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color GridColor
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getGridColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setGridColor", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getGridColor"); } set { IExecute("setGridColor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getIntercellSpacing()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setIntercellSpacing(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension IntercellSpacing
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getIntercellSpacing", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setIntercellSpacing", "(Ljava/awt/Dimension;)V", value); }
+            get { return IExecute<Java.Awt.Dimension>("getIntercellSpacing"); } set { IExecute("setIntercellSpacing", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setModel(javax.swing.table.TableModel)"/>
         /// </summary>
         public Javax.Swing.Table.TableModel Model
         {
-            get { return IExecuteWithSignature<Javax.Swing.Table.TableModel>("getModel", "()Ljavax/swing/table/TableModel;"); } set { IExecuteWithSignature("setModel", "(Ljavax/swing/table/TableModel;)V", value); }
+            get { return IExecute<Javax.Swing.Table.TableModel>("getModel"); } set { IExecute("setModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getPreferredScrollableViewportSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setPreferredScrollableViewportSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension PreferredScrollableViewportSize
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredScrollableViewportSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setPreferredScrollableViewportSize", "(Ljava/awt/Dimension;)V", value); }
+            get { return IExecute<Java.Awt.Dimension>("getPreferredScrollableViewportSize"); } set { IExecute("setPreferredScrollableViewportSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowCount()"/> 
         /// </summary>
         public int RowCount
         {
-            get { return IExecuteWithSignature<int>("getRowCount", "()I"); }
+            get { return IExecute<int>("getRowCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowHeight(int)"/>
         /// </summary>
         public int RowHeight
         {
-            get { return IExecuteWithSignature<int>("getRowHeight", "()I"); } set { IExecuteWithSignature("setRowHeight", "(I)V", value); }
+            get { return IExecute<int>("getRowHeight"); } set { IExecute("setRowHeight", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowMargin()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowMargin(int)"/>
         /// </summary>
         public int RowMargin
         {
-            get { return IExecuteWithSignature<int>("getRowMargin", "()I"); } set { IExecuteWithSignature("setRowMargin", "(I)V", value); }
+            get { return IExecute<int>("getRowMargin"); } set { IExecute("setRowMargin", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowSelectionAllowed()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowSelectionAllowed(boolean)"/>
         /// </summary>
         public bool RowSelectionAllowed
         {
-            get { return IExecuteWithSignature<bool>("getRowSelectionAllowed", "()Z"); } set { IExecuteWithSignature("setRowSelectionAllowed", "(Z)V", value); }
+            get { return IExecute<bool>("getRowSelectionAllowed"); } set { IExecute("setRowSelectionAllowed", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowSorter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowSorter(javax.swing.RowSorter)"/>
         /// </summary>
         public Javax.Swing.RowSorter RowSorter
         {
-            get { return IExecuteWithSignature<Javax.Swing.RowSorter>("getRowSorter", "()Ljavax/swing/RowSorter;"); } set { IExecuteWithSignature("setRowSorter", "(Ljavax/swing/RowSorter;)V", value); }
+            get { return IExecute<Javax.Swing.RowSorter>("getRowSorter"); } set { IExecute("setRowSorter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getScrollableTracksViewportHeight()"/> 
         /// </summary>
         public bool ScrollableTracksViewportHeight
         {
-            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportHeight", "()Z"); }
+            get { return IExecute<bool>("getScrollableTracksViewportHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getScrollableTracksViewportWidth()"/> 
         /// </summary>
         public bool ScrollableTracksViewportWidth
         {
-            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportWidth", "()Z"); }
+            get { return IExecute<bool>("getScrollableTracksViewportWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectedColumn()"/> 
         /// </summary>
         public int SelectedColumn
         {
-            get { return IExecuteWithSignature<int>("getSelectedColumn", "()I"); }
+            get { return IExecute<int>("getSelectedColumn"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectedColumnCount()"/> 
         /// </summary>
         public int SelectedColumnCount
         {
-            get { return IExecuteWithSignature<int>("getSelectedColumnCount", "()I"); }
+            get { return IExecute<int>("getSelectedColumnCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectedColumns()"/> 
         /// </summary>
         public int[] SelectedColumns
         {
-            get { return IExecuteWithSignatureArray<int>("getSelectedColumns", "()[I"); }
+            get { return IExecuteArray<int>("getSelectedColumns"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectedRow()"/> 
         /// </summary>
         public int SelectedRow
         {
-            get { return IExecuteWithSignature<int>("getSelectedRow", "()I"); }
+            get { return IExecute<int>("getSelectedRow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectedRowCount()"/> 
         /// </summary>
         public int SelectedRowCount
         {
-            get { return IExecuteWithSignature<int>("getSelectedRowCount", "()I"); }
+            get { return IExecute<int>("getSelectedRowCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectedRows()"/> 
         /// </summary>
         public int[] SelectedRows
         {
-            get { return IExecuteWithSignatureArray<int>("getSelectedRows", "()[I"); }
+            get { return IExecuteArray<int>("getSelectedRows"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionBackground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionBackground(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color SelectionBackground
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getSelectionBackground", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setSelectionBackground", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getSelectionBackground"); } set { IExecute("setSelectionBackground", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionForeground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionForeground(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color SelectionForeground
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getSelectionForeground", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setSelectionForeground", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getSelectionForeground"); } set { IExecute("setSelectionForeground", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSelectionModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionModel(javax.swing.ListSelectionModel)"/>
         /// </summary>
         public Javax.Swing.ListSelectionModel SelectionModel
         {
-            get { return IExecuteWithSignature<Javax.Swing.ListSelectionModel>("getSelectionModel", "()Ljavax/swing/ListSelectionModel;"); } set { IExecuteWithSignature("setSelectionModel", "(Ljavax/swing/ListSelectionModel;)V", value); }
+            get { return IExecute<Javax.Swing.ListSelectionModel>("getSelectionModel"); } set { IExecute("setSelectionModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getShowHorizontalLines()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setShowHorizontalLines(boolean)"/>
         /// </summary>
         public bool ShowHorizontalLines
         {
-            get { return IExecuteWithSignature<bool>("getShowHorizontalLines", "()Z"); } set { IExecuteWithSignature("setShowHorizontalLines", "(Z)V", value); }
+            get { return IExecute<bool>("getShowHorizontalLines"); } set { IExecute("setShowHorizontalLines", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getShowVerticalLines()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setShowVerticalLines(boolean)"/>
         /// </summary>
         public bool ShowVerticalLines
         {
-            get { return IExecuteWithSignature<bool>("getShowVerticalLines", "()Z"); } set { IExecuteWithSignature("setShowVerticalLines", "(Z)V", value); }
+            get { return IExecute<bool>("getShowVerticalLines"); } set { IExecute("setShowVerticalLines", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getSurrendersFocusOnKeystroke()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSurrendersFocusOnKeystroke(boolean)"/>
         /// </summary>
         public bool SurrendersFocusOnKeystroke
         {
-            get { return IExecuteWithSignature<bool>("getSurrendersFocusOnKeystroke", "()Z"); } set { IExecuteWithSignature("setSurrendersFocusOnKeystroke", "(Z)V", value); }
+            get { return IExecute<bool>("getSurrendersFocusOnKeystroke"); } set { IExecute("setSurrendersFocusOnKeystroke", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getTableHeader()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setTableHeader(javax.swing.table.JTableHeader)"/>
         /// </summary>
         public Javax.Swing.Table.JTableHeader TableHeader
         {
-            get { return IExecuteWithSignature<Javax.Swing.Table.JTableHeader>("getTableHeader", "()Ljavax/swing/table/JTableHeader;"); } set { IExecuteWithSignature("setTableHeader", "(Ljavax/swing/table/JTableHeader;)V", value); }
+            get { return IExecute<Javax.Swing.Table.JTableHeader>("getTableHeader"); } set { IExecute("setTableHeader", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getUpdateSelectionOnSort()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setUpdateSelectionOnSort(boolean)"/>
         /// </summary>
         public bool UpdateSelectionOnSort
         {
-            get { return IExecuteWithSignature<bool>("getUpdateSelectionOnSort", "()Z"); } set { IExecuteWithSignature("setUpdateSelectionOnSort", "(Z)V", value); }
+            get { return IExecute<bool>("getUpdateSelectionOnSort"); } set { IExecute("setUpdateSelectionOnSort", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#editCellAt(int,int,java.util.EventObject)"/>
@@ -611,7 +611,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsColumnSelected(int arg0)
         {
-            return IExecuteWithSignature<bool>("isColumnSelected", "(I)Z", arg0);
+            return IExecute<bool>("isColumnSelected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#isEditing()"/>
@@ -619,7 +619,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsEditing()
         {
-            return IExecuteWithSignature<bool>("isEditing", "()Z");
+            return IExecute<bool>("isEditing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#isRowSelected(int)"/>
@@ -628,7 +628,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsRowSelected(int arg0)
         {
-            return IExecuteWithSignature<bool>("isRowSelected", "(I)Z", arg0);
+            return IExecute<bool>("isRowSelected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#print()"/>
@@ -637,7 +637,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print()
         {
-            return IExecuteWithSignature<bool>("print", "()Z");
+            return IExecute<bool>("print");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#print(javax.swing.JTable.PrintMode,java.text.MessageFormat,java.text.MessageFormat,boolean,javax.print.attribute.PrintRequestAttributeSet,boolean,javax.print.PrintService)"/>
@@ -692,7 +692,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print(Javax.Swing.JTable.PrintMode arg0)
         {
-            return IExecuteWithSignature<bool>("print", "(Ljavax/swing/JTable$PrintMode;)Z", arg0);
+            return IExecute<bool>("print", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#columnAtPoint(java.awt.Point)"/>
@@ -701,7 +701,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int ColumnAtPoint(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<int>("columnAtPoint", "(Ljava/awt/Point;)I", arg0);
+            return IExecute<int>("columnAtPoint", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#convertColumnIndexToModel(int)"/>
@@ -710,7 +710,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int ConvertColumnIndexToModel(int arg0)
         {
-            return IExecuteWithSignature<int>("convertColumnIndexToModel", "(I)I", arg0);
+            return IExecute<int>("convertColumnIndexToModel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#convertColumnIndexToView(int)"/>
@@ -719,7 +719,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int ConvertColumnIndexToView(int arg0)
         {
-            return IExecuteWithSignature<int>("convertColumnIndexToView", "(I)I", arg0);
+            return IExecute<int>("convertColumnIndexToView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#convertRowIndexToModel(int)"/>
@@ -728,7 +728,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int ConvertRowIndexToModel(int arg0)
         {
-            return IExecuteWithSignature<int>("convertRowIndexToModel", "(I)I", arg0);
+            return IExecute<int>("convertRowIndexToModel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#convertRowIndexToView(int)"/>
@@ -737,7 +737,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int ConvertRowIndexToView(int arg0)
         {
-            return IExecuteWithSignature<int>("convertRowIndexToView", "(I)I", arg0);
+            return IExecute<int>("convertRowIndexToView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowHeight(int)"/>
@@ -746,7 +746,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetRowHeight(int arg0)
         {
-            return IExecuteWithSignature<int>("getRowHeight", "(I)I", arg0);
+            return IExecute<int>("getRowHeight", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
@@ -777,7 +777,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int RowAtPoint(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<int>("rowAtPoint", "(Ljava/awt/Point;)I", arg0);
+            return IExecute<int>("rowAtPoint", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#prepareEditor(javax.swing.table.TableCellEditor,int,int)"/>
@@ -830,7 +830,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class GetColumnClass(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Class>("getColumnClass", "(I)Ljava/lang/Class;", arg0);
+            return IExecute<Java.Lang.Class>("getColumnClass", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getValueAt(int,int)"/>
@@ -849,7 +849,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetColumnName(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getColumnName", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getColumnName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellEditor(int,int)"/>
@@ -868,7 +868,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Table.TableCellEditor"/></returns>
         public Javax.Swing.Table.TableCellEditor GetDefaultEditor(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Table.TableCellEditor>("getDefaultEditor", "(Ljava/lang/Class;)Ljavax/swing/table/TableCellEditor;", arg0);
+            return IExecute<Javax.Swing.Table.TableCellEditor>("getDefaultEditor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellRenderer(int,int)"/>
@@ -887,7 +887,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Table.TableCellRenderer"/></returns>
         public Javax.Swing.Table.TableCellRenderer GetDefaultRenderer(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Table.TableCellRenderer>("getDefaultRenderer", "(Ljava/lang/Class;)Ljavax/swing/table/TableCellRenderer;", arg0);
+            return IExecute<Javax.Swing.Table.TableCellRenderer>("getDefaultRenderer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumn(java.lang.Object)"/>
@@ -896,7 +896,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Table.TableColumn"/></returns>
         public Javax.Swing.Table.TableColumn GetColumn(object arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Table.TableColumn>("getColumn", "(Ljava/lang/Object;)Ljavax/swing/table/TableColumn;", arg0);
+            return IExecute<Javax.Swing.Table.TableColumn>("getColumn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#addColumn(javax.swing.table.TableColumn)"/>
@@ -904,7 +904,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableColumn"/></param>
         public void AddColumn(Javax.Swing.Table.TableColumn arg0)
         {
-            IExecuteWithSignature("addColumn", "(Ljavax/swing/table/TableColumn;)V", arg0);
+            IExecute("addColumn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#addColumnSelectionInterval(int,int)"/>
@@ -940,7 +940,7 @@ namespace Javax.Swing
         /// </summary>
         public void ClearSelection()
         {
-            IExecuteWithSignature("clearSelection", "()V");
+            IExecute("clearSelection");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#columnAdded(javax.swing.event.TableColumnModelEvent)"/>
@@ -948,7 +948,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
         public void ColumnAdded(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
-            IExecuteWithSignature("columnAdded", "(Ljavax/swing/event/TableColumnModelEvent;)V", arg0);
+            IExecute("columnAdded", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#columnMarginChanged(javax.swing.event.ChangeEvent)"/>
@@ -956,7 +956,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
         public void ColumnMarginChanged(Javax.Swing.Event.ChangeEvent arg0)
         {
-            IExecuteWithSignature("columnMarginChanged", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
+            IExecute("columnMarginChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#columnMoved(javax.swing.event.TableColumnModelEvent)"/>
@@ -964,7 +964,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
         public void ColumnMoved(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
-            IExecuteWithSignature("columnMoved", "(Ljavax/swing/event/TableColumnModelEvent;)V", arg0);
+            IExecute("columnMoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#columnRemoved(javax.swing.event.TableColumnModelEvent)"/>
@@ -972,7 +972,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
         public void ColumnRemoved(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
-            IExecuteWithSignature("columnRemoved", "(Ljavax/swing/event/TableColumnModelEvent;)V", arg0);
+            IExecute("columnRemoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#columnSelectionChanged(javax.swing.event.ListSelectionEvent)"/>
@@ -980,14 +980,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
         public void ColumnSelectionChanged(Javax.Swing.Event.ListSelectionEvent arg0)
         {
-            IExecuteWithSignature("columnSelectionChanged", "(Ljavax/swing/event/ListSelectionEvent;)V", arg0);
+            IExecute("columnSelectionChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#createDefaultColumnsFromModel()"/>
         /// </summary>
         public void CreateDefaultColumnsFromModel()
         {
-            IExecuteWithSignature("createDefaultColumnsFromModel", "()V");
+            IExecute("createDefaultColumnsFromModel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#editingCanceled(javax.swing.event.ChangeEvent)"/>
@@ -995,7 +995,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
         public void EditingCanceled(Javax.Swing.Event.ChangeEvent arg0)
         {
-            IExecuteWithSignature("editingCanceled", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
+            IExecute("editingCanceled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#editingStopped(javax.swing.event.ChangeEvent)"/>
@@ -1003,7 +1003,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
         public void EditingStopped(Javax.Swing.Event.ChangeEvent arg0)
         {
-            IExecuteWithSignature("editingStopped", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
+            IExecute("editingStopped", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#moveColumn(int,int)"/>
@@ -1020,7 +1020,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableColumn"/></param>
         public void RemoveColumn(Javax.Swing.Table.TableColumn arg0)
         {
-            IExecuteWithSignature("removeColumn", "(Ljavax/swing/table/TableColumn;)V", arg0);
+            IExecute("removeColumn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#removeColumnSelectionInterval(int,int)"/>
@@ -1036,7 +1036,7 @@ namespace Javax.Swing
         /// </summary>
         public void RemoveEditor()
         {
-            IExecuteWithSignature("removeEditor", "()V");
+            IExecute("removeEditor");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#removeRowSelectionInterval(int,int)"/>
@@ -1052,7 +1052,7 @@ namespace Javax.Swing
         /// </summary>
         public void SelectAll()
         {
-            IExecuteWithSignature("selectAll", "()V");
+            IExecute("selectAll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setColumnSelectionInterval(int,int)"/>
@@ -1105,7 +1105,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void SetSelectionMode(int arg0)
         {
-            IExecuteWithSignature("setSelectionMode", "(I)V", arg0);
+            IExecute("setSelectionMode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setShowGrid(boolean)"/>
@@ -1113,7 +1113,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetShowGrid(bool arg0)
         {
-            IExecuteWithSignature("setShowGrid", "(Z)V", arg0);
+            IExecute("setShowGrid", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setUI(javax.swing.plaf.TableUI)"/>
@@ -1121,7 +1121,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.TableUI"/></param>
         public void SetUI(Javax.Swing.Plaf.TableUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/TableUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setValueAt(java.lang.Object,int,int)"/>
@@ -1139,7 +1139,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void SizeColumnsToFit(int arg0)
         {
-            IExecuteWithSignature("sizeColumnsToFit", "(I)V", arg0);
+            IExecute("sizeColumnsToFit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#sorterChanged(javax.swing.event.RowSorterEvent)"/>
@@ -1147,7 +1147,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterEvent"/></param>
         public void SorterChanged(Javax.Swing.Event.RowSorterEvent arg0)
         {
-            IExecuteWithSignature("sorterChanged", "(Ljavax/swing/event/RowSorterEvent;)V", arg0);
+            IExecute("sorterChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#tableChanged(javax.swing.event.TableModelEvent)"/>
@@ -1155,7 +1155,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
         public void TableChanged(Javax.Swing.Event.TableModelEvent arg0)
         {
-            IExecuteWithSignature("tableChanged", "(Ljavax/swing/event/TableModelEvent;)V", arg0);
+            IExecute("tableChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#valueChanged(javax.swing.event.ListSelectionEvent)"/>
@@ -1163,7 +1163,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
         public void ValueChanged(Javax.Swing.Event.ListSelectionEvent arg0)
         {
-            IExecuteWithSignature("valueChanged", "(Ljavax/swing/event/ListSelectionEvent;)V", arg0);
+            IExecute("valueChanged", arg0);
         }
 
         #endregion
@@ -1265,7 +1265,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.JTable.PrintMode"/></returns>
             public static Javax.Swing.JTable.PrintMode ValueOf(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Javax.Swing.JTable.PrintMode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/swing/JTable$PrintMode;", arg0);
+                return SExecute<Javax.Swing.JTable.PrintMode>(LocalBridgeClazz, "valueOf", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#values()"/>
@@ -1273,7 +1273,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.JTable.PrintMode"/></returns>
             public static Javax.Swing.JTable.PrintMode[] Values()
             {
-                return SExecuteWithSignatureArray<Javax.Swing.JTable.PrintMode>(LocalBridgeClazz, "values", "()[Ljavax/swing/JTable$PrintMode;");
+                return SExecuteArray<Javax.Swing.JTable.PrintMode>(LocalBridgeClazz, "values");
             }
 
             #endregion

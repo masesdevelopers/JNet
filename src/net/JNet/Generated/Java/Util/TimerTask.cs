@@ -97,7 +97,7 @@ namespace Java.Util
         /// </summary>
         public void Run()
         {
-            IExecuteWithSignature("run", "()V");
+            IExecute("run");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html#cancel()"/>
@@ -105,7 +105,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Cancel()
         {
-            return IExecuteWithSignature<bool>("cancel", "()Z");
+            return IExecute<bool>("cancel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html#scheduledExecutionTime()"/>
@@ -113,7 +113,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public long ScheduledExecutionTime()
         {
-            return IExecuteWithSignature<long>("scheduledExecutionTime", "()J");
+            return IExecute<long>("scheduledExecutionTime");
         }
 
         #endregion

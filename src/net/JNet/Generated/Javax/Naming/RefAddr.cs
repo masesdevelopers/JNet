@@ -97,14 +97,14 @@ namespace Javax.Naming
         /// </summary>
         public object Content
         {
-            get { return IExecuteWithSignature("getContent", "()Ljava/lang/Object;"); }
+            get { return IExecute("getContent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/RefAddr.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
 
         #endregion

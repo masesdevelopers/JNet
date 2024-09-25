@@ -155,7 +155,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet DescendingKeySet()
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet>("descendingKeySet", "()Ljava/util/NavigableSet;");
+            return IExecute<Java.Util.NavigableSet>("descendingKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet()"/>
@@ -163,7 +163,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet NavigableKeySet()
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet>("navigableKeySet", "()Ljava/util/NavigableSet;");
+            return IExecute<Java.Util.NavigableSet>("navigableKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap()"/>
@@ -171,7 +171,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap DescendingMap()
         {
-            return IExecuteWithSignature<Java.Util.NavigableMap>("descendingMap", "()Ljava/util/NavigableMap;");
+            return IExecute<Java.Util.NavigableMap>("descendingMap");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object,boolean)"/>
@@ -211,7 +211,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object)"/>
@@ -220,7 +220,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap HeadMap(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedMap>("headMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
+            return IExecute<Java.Util.SortedMap>("headMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,java.lang.Object)"/>
@@ -239,7 +239,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap TailMap(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedMap>("tailMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
+            return IExecute<Java.Util.SortedMap>("tailMap", arg0);
         }
 
         #endregion
@@ -370,7 +370,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<K> DescendingKeySet()
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet<K>>("descendingKeySet", "()Ljava/util/NavigableSet;");
+            return IExecute<Java.Util.NavigableSet<K>>("descendingKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet()"/>
@@ -378,7 +378,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<K> NavigableKeySet()
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet<K>>("navigableKeySet", "()Ljava/util/NavigableSet;");
+            return IExecute<Java.Util.NavigableSet<K>>("navigableKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap()"/>
@@ -386,7 +386,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap DescendingMap()
         {
-            return IExecuteWithSignature<Java.Util.NavigableMap>("descendingMap", "()Ljava/util/NavigableMap;");
+            return IExecute<Java.Util.NavigableMap>("descendingMap");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object,boolean)"/>
@@ -426,7 +426,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object)"/>
@@ -435,7 +435,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap HeadMap(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedMap>("headMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
+            return IExecute<Java.Util.SortedMap>("headMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,java.lang.Object)"/>
@@ -454,7 +454,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap TailMap(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedMap>("tailMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
+            return IExecute<Java.Util.SortedMap>("tailMap", arg0);
         }
 
         #endregion

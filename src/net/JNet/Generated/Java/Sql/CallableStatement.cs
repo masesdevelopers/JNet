@@ -1021,7 +1021,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool GetBoolean(int arg0)
         {
-            return IExecuteWithSignature<bool>("getBoolean", "(I)Z", arg0);
+            return IExecute<bool>("getBoolean", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getBoolean(java.lang.String)"/>
@@ -1031,7 +1031,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool GetBoolean(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("getBoolean", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("getBoolean", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#wasNull()"/>
@@ -1040,7 +1040,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool WasNull()
         {
-            return IExecuteWithSignature<bool>("wasNull", "()Z");
+            return IExecute<bool>("wasNull");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getByte(int)"/>
@@ -1050,7 +1050,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public byte GetByte(int arg0)
         {
-            return IExecuteWithSignature<byte>("getByte", "(I)B", arg0);
+            return IExecute<byte>("getByte", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getByte(java.lang.String)"/>
@@ -1060,7 +1060,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public byte GetByte(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<byte>("getByte", "(Ljava/lang/String;)B", arg0);
+            return IExecute<byte>("getByte", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getBytes(int)"/>
@@ -1070,7 +1070,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public byte[] GetBytes(int arg0)
         {
-            return IExecuteWithSignatureArray<byte>("getBytes", "(I)[B", arg0);
+            return IExecuteArray<byte>("getBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getBytes(java.lang.String)"/>
@@ -1080,7 +1080,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public byte[] GetBytes(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<byte>("getBytes", "(Ljava/lang/String;)[B", arg0);
+            return IExecuteArray<byte>("getBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getDouble(int)"/>
@@ -1090,7 +1090,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public double GetDouble(int arg0)
         {
-            return IExecuteWithSignature<double>("getDouble", "(I)D", arg0);
+            return IExecute<double>("getDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getDouble(java.lang.String)"/>
@@ -1100,7 +1100,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public double GetDouble(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<double>("getDouble", "(Ljava/lang/String;)D", arg0);
+            return IExecute<double>("getDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getFloat(int)"/>
@@ -1110,7 +1110,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public float GetFloat(int arg0)
         {
-            return IExecuteWithSignature<float>("getFloat", "(I)F", arg0);
+            return IExecute<float>("getFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getFloat(java.lang.String)"/>
@@ -1120,7 +1120,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public float GetFloat(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<float>("getFloat", "(Ljava/lang/String;)F", arg0);
+            return IExecute<float>("getFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getInt(int)"/>
@@ -1130,7 +1130,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetInt(int arg0)
         {
-            return IExecuteWithSignature<int>("getInt", "(I)I", arg0);
+            return IExecute<int>("getInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getInt(java.lang.String)"/>
@@ -1140,7 +1140,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetInt(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<int>("getInt", "(Ljava/lang/String;)I", arg0);
+            return IExecute<int>("getInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getCharacterStream(int)"/>
@@ -1150,7 +1150,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetCharacterStream(int arg0)
         {
-            return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "(I)Ljava/io/Reader;", arg0);
+            return IExecute<Java.Io.Reader>("getCharacterStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getCharacterStream(java.lang.String)"/>
@@ -1160,7 +1160,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetCharacterStream(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "(Ljava/lang/String;)Ljava/io/Reader;", arg0);
+            return IExecute<Java.Io.Reader>("getCharacterStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getNCharacterStream(int)"/>
@@ -1170,7 +1170,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetNCharacterStream(int arg0)
         {
-            return IExecuteWithSignature<Java.Io.Reader>("getNCharacterStream", "(I)Ljava/io/Reader;", arg0);
+            return IExecute<Java.Io.Reader>("getNCharacterStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getNCharacterStream(java.lang.String)"/>
@@ -1180,7 +1180,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetNCharacterStream(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Io.Reader>("getNCharacterStream", "(Ljava/lang/String;)Ljava/io/Reader;", arg0);
+            return IExecute<Java.Io.Reader>("getNCharacterStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getObject(int,java.util.Map)"/>
@@ -1201,7 +1201,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetObject(int arg0)
         {
-            return IExecuteWithSignature("getObject", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("getObject", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getObject(java.lang.String,java.util.Map)"/>
@@ -1222,7 +1222,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetObject(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getObject", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getObject", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getNString(int)"/>
@@ -1232,7 +1232,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetNString(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getNString", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getNString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getNString(java.lang.String)"/>
@@ -1242,7 +1242,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetNString(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getNString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getNString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getString(int)"/>
@@ -1252,7 +1252,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetString(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getString", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getString(java.lang.String)"/>
@@ -1262,7 +1262,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetString(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getBigDecimal(int)"/>
@@ -1272,7 +1272,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Math.BigDecimal GetBigDecimal(int arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigDecimal>("getBigDecimal", "(I)Ljava/math/BigDecimal;", arg0);
+            return IExecute<Java.Math.BigDecimal>("getBigDecimal", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getBigDecimal(java.lang.String)"/>
@@ -1282,7 +1282,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Math.BigDecimal GetBigDecimal(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigDecimal>("getBigDecimal", "(Ljava/lang/String;)Ljava/math/BigDecimal;", arg0);
+            return IExecute<Java.Math.BigDecimal>("getBigDecimal", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getURL(int)"/>
@@ -1292,7 +1292,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Net.URL GetURL(int arg0)
         {
-            return IExecuteWithSignature<Java.Net.URL>("getURL", "(I)Ljava/net/URL;", arg0);
+            return IExecute<Java.Net.URL>("getURL", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getURL(java.lang.String)"/>
@@ -1302,7 +1302,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Net.URL GetURL(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Net.URL>("getURL", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
+            return IExecute<Java.Net.URL>("getURL", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getArray(int)"/>
@@ -1312,7 +1312,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Array GetArray(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Array>("getArray", "(I)Ljava/sql/Array;", arg0);
+            return IExecute<Java.Sql.Array>("getArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getArray(java.lang.String)"/>
@@ -1322,7 +1322,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Array GetArray(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Array>("getArray", "(Ljava/lang/String;)Ljava/sql/Array;", arg0);
+            return IExecute<Java.Sql.Array>("getArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getBlob(int)"/>
@@ -1332,7 +1332,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Blob GetBlob(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Blob>("getBlob", "(I)Ljava/sql/Blob;", arg0);
+            return IExecute<Java.Sql.Blob>("getBlob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getBlob(java.lang.String)"/>
@@ -1342,7 +1342,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Blob GetBlob(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Blob>("getBlob", "(Ljava/lang/String;)Ljava/sql/Blob;", arg0);
+            return IExecute<Java.Sql.Blob>("getBlob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getClob(int)"/>
@@ -1352,7 +1352,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Clob GetClob(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Clob>("getClob", "(I)Ljava/sql/Clob;", arg0);
+            return IExecute<Java.Sql.Clob>("getClob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getClob(java.lang.String)"/>
@@ -1362,7 +1362,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Clob GetClob(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Clob>("getClob", "(Ljava/lang/String;)Ljava/sql/Clob;", arg0);
+            return IExecute<Java.Sql.Clob>("getClob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getDate(int,java.util.Calendar)"/>
@@ -1383,7 +1383,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Date GetDate(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Date>("getDate", "(I)Ljava/sql/Date;", arg0);
+            return IExecute<Java.Sql.Date>("getDate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getDate(java.lang.String,java.util.Calendar)"/>
@@ -1404,7 +1404,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Date GetDate(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Date>("getDate", "(Ljava/lang/String;)Ljava/sql/Date;", arg0);
+            return IExecute<Java.Sql.Date>("getDate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getNClob(int)"/>
@@ -1414,7 +1414,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.NClob GetNClob(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.NClob>("getNClob", "(I)Ljava/sql/NClob;", arg0);
+            return IExecute<Java.Sql.NClob>("getNClob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getNClob(java.lang.String)"/>
@@ -1424,7 +1424,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.NClob GetNClob(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.NClob>("getNClob", "(Ljava/lang/String;)Ljava/sql/NClob;", arg0);
+            return IExecute<Java.Sql.NClob>("getNClob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getRef(int)"/>
@@ -1434,7 +1434,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Ref GetRef(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Ref>("getRef", "(I)Ljava/sql/Ref;", arg0);
+            return IExecute<Java.Sql.Ref>("getRef", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getRef(java.lang.String)"/>
@@ -1444,7 +1444,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Ref GetRef(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Ref>("getRef", "(Ljava/lang/String;)Ljava/sql/Ref;", arg0);
+            return IExecute<Java.Sql.Ref>("getRef", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getRowId(int)"/>
@@ -1454,7 +1454,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.RowId GetRowId(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.RowId>("getRowId", "(I)Ljava/sql/RowId;", arg0);
+            return IExecute<Java.Sql.RowId>("getRowId", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getRowId(java.lang.String)"/>
@@ -1464,7 +1464,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.RowId GetRowId(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.RowId>("getRowId", "(Ljava/lang/String;)Ljava/sql/RowId;", arg0);
+            return IExecute<Java.Sql.RowId>("getRowId", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getSQLXML(int)"/>
@@ -1474,7 +1474,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.SQLXML GetSQLXML(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.SQLXML>("getSQLXML", "(I)Ljava/sql/SQLXML;", arg0);
+            return IExecute<Java.Sql.SQLXML>("getSQLXML", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getSQLXML(java.lang.String)"/>
@@ -1484,7 +1484,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.SQLXML GetSQLXML(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.SQLXML>("getSQLXML", "(Ljava/lang/String;)Ljava/sql/SQLXML;", arg0);
+            return IExecute<Java.Sql.SQLXML>("getSQLXML", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getTime(int,java.util.Calendar)"/>
@@ -1505,7 +1505,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Time GetTime(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Time>("getTime", "(I)Ljava/sql/Time;", arg0);
+            return IExecute<Java.Sql.Time>("getTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getTime(java.lang.String,java.util.Calendar)"/>
@@ -1526,7 +1526,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Time GetTime(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Time>("getTime", "(Ljava/lang/String;)Ljava/sql/Time;", arg0);
+            return IExecute<Java.Sql.Time>("getTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getTimestamp(int,java.util.Calendar)"/>
@@ -1547,7 +1547,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Timestamp GetTimestamp(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Timestamp>("getTimestamp", "(I)Ljava/sql/Timestamp;", arg0);
+            return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getTimestamp(java.lang.String,java.util.Calendar)"/>
@@ -1568,7 +1568,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Timestamp GetTimestamp(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Timestamp>("getTimestamp", "(Ljava/lang/String;)Ljava/sql/Timestamp;", arg0);
+            return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getLong(int)"/>
@@ -1578,7 +1578,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long GetLong(int arg0)
         {
-            return IExecuteWithSignature<long>("getLong", "(I)J", arg0);
+            return IExecute<long>("getLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getLong(java.lang.String)"/>
@@ -1588,7 +1588,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long GetLong(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<long>("getLong", "(Ljava/lang/String;)J", arg0);
+            return IExecute<long>("getLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getShort(int)"/>
@@ -1598,7 +1598,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public short GetShort(int arg0)
         {
-            return IExecuteWithSignature<short>("getShort", "(I)S", arg0);
+            return IExecute<short>("getShort", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getShort(java.lang.String)"/>
@@ -1608,7 +1608,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public short GetShort(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<short>("getShort", "(Ljava/lang/String;)S", arg0);
+            return IExecute<short>("getShort", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#registerOutParameter(int,int,int)"/>

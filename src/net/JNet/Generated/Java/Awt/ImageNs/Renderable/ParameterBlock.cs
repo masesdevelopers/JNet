@@ -120,35 +120,35 @@ namespace Java.Awt.ImageNs.Renderable
         /// </summary>
         public int NumParameters
         {
-            get { return IExecuteWithSignature<int>("getNumParameters", "()I"); }
+            get { return IExecute<int>("getNumParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getNumSources()"/> 
         /// </summary>
         public int NumSources
         {
-            get { return IExecuteWithSignature<int>("getNumSources", "()I"); }
+            get { return IExecute<int>("getNumSources"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getParamClasses()"/> 
         /// </summary>
         public Java.Lang.Class[] ParamClasses
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getParamClasses", "()[Ljava/lang/Class;"); }
+            get { return IExecuteArray<Java.Lang.Class>("getParamClasses"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getParameters()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#setParameters(java.util.Vector)"/>
         /// </summary>
         public Java.Util.Vector<object> Parameters
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<object>>("getParameters", "()Ljava/util/Vector;"); } set { IExecuteWithSignature("setParameters", "(Ljava/util/Vector;)V", value); }
+            get { return IExecute<Java.Util.Vector<object>>("getParameters"); } set { IExecute("setParameters", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getSources()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#setSources(java.util.Vector)"/>
         /// </summary>
         public Java.Util.Vector<object> Sources
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<object>>("getSources", "()Ljava/util/Vector;"); } set { IExecuteWithSignature("setSources", "(Ljava/util/Vector;)V", value); }
+            get { return IExecute<Java.Util.Vector<object>>("getSources"); } set { IExecute("setSources", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getByteParameter(int)"/>
@@ -157,7 +157,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="byte"/></returns>
         public byte GetByteParameter(int arg0)
         {
-            return IExecuteWithSignature<byte>("getByteParameter", "(I)B", arg0);
+            return IExecute<byte>("getByteParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getCharParameter(int)"/>
@@ -166,7 +166,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="char"/></returns>
         public char GetCharParameter(int arg0)
         {
-            return IExecuteWithSignature<char>("getCharParameter", "(I)C", arg0);
+            return IExecute<char>("getCharParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getDoubleParameter(int)"/>
@@ -175,7 +175,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="double"/></returns>
         public double GetDoubleParameter(int arg0)
         {
-            return IExecuteWithSignature<double>("getDoubleParameter", "(I)D", arg0);
+            return IExecute<double>("getDoubleParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getFloatParameter(int)"/>
@@ -184,7 +184,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="float"/></returns>
         public float GetFloatParameter(int arg0)
         {
-            return IExecuteWithSignature<float>("getFloatParameter", "(I)F", arg0);
+            return IExecute<float>("getFloatParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getIntParameter(int)"/>
@@ -193,7 +193,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="int"/></returns>
         public int GetIntParameter(int arg0)
         {
-            return IExecuteWithSignature<int>("getIntParameter", "(I)I", arg0);
+            return IExecute<int>("getIntParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(byte)"/>
@@ -202,7 +202,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(byte arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(B)Ljava/awt/image/renderable/ParameterBlock;", arg0);
+            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(char)"/>
@@ -211,7 +211,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(char arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(C)Ljava/awt/image/renderable/ParameterBlock;", arg0);
+            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(double)"/>
@@ -220,7 +220,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(double arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(D)Ljava/awt/image/renderable/ParameterBlock;", arg0);
+            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(float)"/>
@@ -229,7 +229,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(float arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(F)Ljava/awt/image/renderable/ParameterBlock;", arg0);
+            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(int)"/>
@@ -238,7 +238,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(I)Ljava/awt/image/renderable/ParameterBlock;", arg0);
+            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(java.lang.Object)"/>
@@ -247,7 +247,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(object arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(Ljava/lang/Object;)Ljava/awt/image/renderable/ParameterBlock;", arg0);
+            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(long)"/>
@@ -256,7 +256,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(long arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(J)Ljava/awt/image/renderable/ParameterBlock;", arg0);
+            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(short)"/>
@@ -265,7 +265,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(short arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(S)Ljava/awt/image/renderable/ParameterBlock;", arg0);
+            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#addSource(java.lang.Object)"/>
@@ -274,7 +274,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock AddSource(object arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("addSource", "(Ljava/lang/Object;)Ljava/awt/image/renderable/ParameterBlock;", arg0);
+            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("addSource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(byte,int)"/>
@@ -373,7 +373,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.RenderableImage"/></returns>
         public Java.Awt.ImageNs.Renderable.RenderableImage GetRenderableSource(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.RenderableImage>("getRenderableSource", "(I)Ljava/awt/image/renderable/RenderableImage;", arg0);
+            return IExecute<Java.Awt.ImageNs.Renderable.RenderableImage>("getRenderableSource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getRenderedSource(int)"/>
@@ -382,7 +382,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         public Java.Awt.ImageNs.RenderedImage GetRenderedSource(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("getRenderedSource", "(I)Ljava/awt/image/RenderedImage;", arg0);
+            return IExecute<Java.Awt.ImageNs.RenderedImage>("getRenderedSource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getObjectParameter(int)"/>
@@ -391,7 +391,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="object"/></returns>
         public object GetObjectParameter(int arg0)
         {
-            return IExecuteWithSignature("getObjectParameter", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("getObjectParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getSource(int)"/>
@@ -400,7 +400,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="object"/></returns>
         public object GetSource(int arg0)
         {
-            return IExecuteWithSignature("getSource", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("getSource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#shallowClone()"/>
@@ -408,7 +408,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="object"/></returns>
         public object ShallowClone()
         {
-            return IExecuteWithSignature("shallowClone", "()Ljava/lang/Object;");
+            return IExecute("shallowClone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getLongParameter(int)"/>
@@ -417,7 +417,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="long"/></returns>
         public long GetLongParameter(int arg0)
         {
-            return IExecuteWithSignature<long>("getLongParameter", "(I)J", arg0);
+            return IExecute<long>("getLongParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getShortParameter(int)"/>
@@ -426,21 +426,21 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="short"/></returns>
         public short GetShortParameter(int arg0)
         {
-            return IExecuteWithSignature<short>("getShortParameter", "(I)S", arg0);
+            return IExecute<short>("getShortParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#removeParameters()"/>
         /// </summary>
         public void RemoveParameters()
         {
-            IExecuteWithSignature("removeParameters", "()V");
+            IExecute("removeParameters");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#removeSources()"/>
         /// </summary>
         public void RemoveSources()
         {
-            IExecuteWithSignature("removeSources", "()V");
+            IExecute("removeSources");
         }
 
         #endregion

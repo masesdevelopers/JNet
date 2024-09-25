@@ -128,28 +128,28 @@ namespace Java.Time.Temporal
         /// </summary>
         public long LargestMinimum
         {
-            get { return IExecuteWithSignature<long>("getLargestMinimum", "()J"); }
+            get { return IExecute<long>("getLargestMinimum"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#getMaximum()"/> 
         /// </summary>
         public long Maximum
         {
-            get { return IExecuteWithSignature<long>("getMaximum", "()J"); }
+            get { return IExecute<long>("getMaximum"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#getMinimum()"/> 
         /// </summary>
         public long Minimum
         {
-            get { return IExecuteWithSignature<long>("getMinimum", "()J"); }
+            get { return IExecute<long>("getMinimum"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#getSmallestMaximum()"/> 
         /// </summary>
         public long SmallestMaximum
         {
-            get { return IExecuteWithSignature<long>("getSmallestMaximum", "()J"); }
+            get { return IExecute<long>("getSmallestMaximum"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isFixed()"/>
@@ -157,7 +157,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsFixed()
         {
-            return IExecuteWithSignature<bool>("isFixed", "()Z");
+            return IExecute<bool>("isFixed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isIntValue()"/>
@@ -165,7 +165,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsIntValue()
         {
-            return IExecuteWithSignature<bool>("isIntValue", "()Z");
+            return IExecute<bool>("isIntValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isValidIntValue(long)"/>
@@ -174,7 +174,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsValidIntValue(long arg0)
         {
-            return IExecuteWithSignature<bool>("isValidIntValue", "(J)Z", arg0);
+            return IExecute<bool>("isValidIntValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isValidValue(long)"/>
@@ -183,7 +183,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsValidValue(long arg0)
         {
-            return IExecuteWithSignature<bool>("isValidValue", "(J)Z", arg0);
+            return IExecute<bool>("isValidValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#checkValidIntValue(long,java.time.temporal.TemporalField)"/>

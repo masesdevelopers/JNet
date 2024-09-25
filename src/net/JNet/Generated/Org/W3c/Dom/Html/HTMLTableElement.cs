@@ -211,98 +211,98 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Align
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlign", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getBgColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setBgColor(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String BgColor
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBgColor", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setBgColor", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getBgColor"); } set { IExecute("setBgColor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getBorder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setBorder(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Border
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBorder", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setBorder", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getBorder"); } set { IExecute("setBorder", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getCaption()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setCaption(org.w3c.dom.html.HTMLTableCaptionElement)"/>
         /// </summary>
         public Org.W3c.Dom.Html.HTMLTableCaptionElement Caption
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLTableCaptionElement>("getCaption", "()Lorg/w3c/dom/html/HTMLTableCaptionElement;"); } set { IExecuteWithSignature("setCaption", "(Lorg/w3c/dom/html/HTMLTableCaptionElement;)V", value); }
+            get { return IExecute<Org.W3c.Dom.Html.HTMLTableCaptionElement>("getCaption"); } set { IExecute("setCaption", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getCellPadding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setCellPadding(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String CellPadding
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCellPadding", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCellPadding", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCellPadding"); } set { IExecute("setCellPadding", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getCellSpacing()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setCellSpacing(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String CellSpacing
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCellSpacing", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCellSpacing", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCellSpacing"); } set { IExecute("setCellSpacing", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getFrame()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setFrame(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Frame
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFrame", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFrame", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getFrame"); } set { IExecute("setFrame", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getRows()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLCollection Rows
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLCollection>("getRows", "()Lorg/w3c/dom/html/HTMLCollection;"); }
+            get { return IExecute<Org.W3c.Dom.Html.HTMLCollection>("getRows"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getRules()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setRules(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Rules
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRules", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setRules", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getRules"); } set { IExecute("setRules", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getSummary()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setSummary(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Summary
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSummary", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSummary", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSummary"); } set { IExecute("setSummary", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getTBodies()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLCollection TBodies
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLCollection>("getTBodies", "()Lorg/w3c/dom/html/HTMLCollection;"); }
+            get { return IExecute<Org.W3c.Dom.Html.HTMLCollection>("getTBodies"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getTFoot()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setTFoot(org.w3c.dom.html.HTMLTableSectionElement)"/>
         /// </summary>
         public Org.W3c.Dom.Html.HTMLTableSectionElement TFoot
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLTableSectionElement>("getTFoot", "()Lorg/w3c/dom/html/HTMLTableSectionElement;"); } set { IExecuteWithSignature("setTFoot", "(Lorg/w3c/dom/html/HTMLTableSectionElement;)V", value); }
+            get { return IExecute<Org.W3c.Dom.Html.HTMLTableSectionElement>("getTFoot"); } set { IExecute("setTFoot", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getTHead()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setTHead(org.w3c.dom.html.HTMLTableSectionElement)"/>
         /// </summary>
         public Org.W3c.Dom.Html.HTMLTableSectionElement THead
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLTableSectionElement>("getTHead", "()Lorg/w3c/dom/html/HTMLTableSectionElement;"); } set { IExecuteWithSignature("setTHead", "(Lorg/w3c/dom/html/HTMLTableSectionElement;)V", value); }
+            get { return IExecute<Org.W3c.Dom.Html.HTMLTableSectionElement>("getTHead"); } set { IExecute("setTHead", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setWidth(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Width
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWidth", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setWidth", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getWidth"); } set { IExecute("setWidth", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createCaption()"/>
@@ -310,7 +310,7 @@ namespace Org.W3c.Dom.Html
         /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
         public Org.W3c.Dom.Html.HTMLElement CreateCaption()
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLElement>("createCaption", "()Lorg/w3c/dom/html/HTMLElement;");
+            return IExecute<Org.W3c.Dom.Html.HTMLElement>("createCaption");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTFoot()"/>
@@ -318,7 +318,7 @@ namespace Org.W3c.Dom.Html
         /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
         public Org.W3c.Dom.Html.HTMLElement CreateTFoot()
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLElement>("createTFoot", "()Lorg/w3c/dom/html/HTMLElement;");
+            return IExecute<Org.W3c.Dom.Html.HTMLElement>("createTFoot");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTHead()"/>
@@ -326,7 +326,7 @@ namespace Org.W3c.Dom.Html
         /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
         public Org.W3c.Dom.Html.HTMLElement CreateTHead()
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLElement>("createTHead", "()Lorg/w3c/dom/html/HTMLElement;");
+            return IExecute<Org.W3c.Dom.Html.HTMLElement>("createTHead");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#insertRow(int)"/>
@@ -336,14 +336,14 @@ namespace Org.W3c.Dom.Html
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Html.HTMLElement InsertRow(int arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLElement>("insertRow", "(I)Lorg/w3c/dom/html/HTMLElement;", arg0);
+            return IExecute<Org.W3c.Dom.Html.HTMLElement>("insertRow", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#deleteCaption()"/>
         /// </summary>
         public void DeleteCaption()
         {
-            IExecuteWithSignature("deleteCaption", "()V");
+            IExecute("deleteCaption");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#deleteRow(int)"/>
@@ -352,21 +352,21 @@ namespace Org.W3c.Dom.Html
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteRow(int arg0)
         {
-            IExecuteWithSignature("deleteRow", "(I)V", arg0);
+            IExecute("deleteRow", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#deleteTFoot()"/>
         /// </summary>
         public void DeleteTFoot()
         {
-            IExecuteWithSignature("deleteTFoot", "()V");
+            IExecute("deleteTFoot");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#deleteTHead()"/>
         /// </summary>
         public void DeleteTHead()
         {
-            IExecuteWithSignature("deleteTHead", "()V");
+            IExecute("deleteTHead");
         }
 
         #endregion

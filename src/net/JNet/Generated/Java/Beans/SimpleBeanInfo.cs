@@ -95,49 +95,49 @@ namespace Java.Beans
         /// </summary>
         public Java.Beans.BeanInfo[] AdditionalBeanInfo
         {
-            get { return IExecuteWithSignatureArray<Java.Beans.BeanInfo>("getAdditionalBeanInfo", "()[Ljava/beans/BeanInfo;"); }
+            get { return IExecuteArray<Java.Beans.BeanInfo>("getAdditionalBeanInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getBeanDescriptor()"/> 
         /// </summary>
         public Java.Beans.BeanDescriptor BeanDescriptor
         {
-            get { return IExecuteWithSignature<Java.Beans.BeanDescriptor>("getBeanDescriptor", "()Ljava/beans/BeanDescriptor;"); }
+            get { return IExecute<Java.Beans.BeanDescriptor>("getBeanDescriptor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getDefaultEventIndex()"/> 
         /// </summary>
         public int DefaultEventIndex
         {
-            get { return IExecuteWithSignature<int>("getDefaultEventIndex", "()I"); }
+            get { return IExecute<int>("getDefaultEventIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getDefaultPropertyIndex()"/> 
         /// </summary>
         public int DefaultPropertyIndex
         {
-            get { return IExecuteWithSignature<int>("getDefaultPropertyIndex", "()I"); }
+            get { return IExecute<int>("getDefaultPropertyIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getEventSetDescriptors()"/> 
         /// </summary>
         public Java.Beans.EventSetDescriptor[] EventSetDescriptors
         {
-            get { return IExecuteWithSignatureArray<Java.Beans.EventSetDescriptor>("getEventSetDescriptors", "()[Ljava/beans/EventSetDescriptor;"); }
+            get { return IExecuteArray<Java.Beans.EventSetDescriptor>("getEventSetDescriptors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getMethodDescriptors()"/> 
         /// </summary>
         public Java.Beans.MethodDescriptor[] MethodDescriptors
         {
-            get { return IExecuteWithSignatureArray<Java.Beans.MethodDescriptor>("getMethodDescriptors", "()[Ljava/beans/MethodDescriptor;"); }
+            get { return IExecuteArray<Java.Beans.MethodDescriptor>("getMethodDescriptors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getPropertyDescriptors()"/> 
         /// </summary>
         public Java.Beans.PropertyDescriptor[] PropertyDescriptors
         {
-            get { return IExecuteWithSignatureArray<Java.Beans.PropertyDescriptor>("getPropertyDescriptors", "()[Ljava/beans/PropertyDescriptor;"); }
+            get { return IExecuteArray<Java.Beans.PropertyDescriptor>("getPropertyDescriptors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getIcon(int)"/>
@@ -146,7 +146,7 @@ namespace Java.Beans
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetIcon(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Image>("getIcon", "(I)Ljava/awt/Image;", arg0);
+            return IExecute<Java.Awt.Image>("getIcon", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#loadImage(java.lang.String)"/>
@@ -155,7 +155,7 @@ namespace Java.Beans
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image LoadImage(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Image>("loadImage", "(Ljava/lang/String;)Ljava/awt/Image;", arg0);
+            return IExecute<Java.Awt.Image>("loadImage", arg0);
         }
 
         #endregion

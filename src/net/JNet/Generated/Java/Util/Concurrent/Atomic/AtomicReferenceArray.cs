@@ -250,7 +250,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object Get(int arg0)
         {
-            return IExecuteWithSignature("get", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAcquire(int)"/>
@@ -259,7 +259,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object GetAcquire(int arg0)
         {
-            return IExecuteWithSignature("getAcquire", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("getAcquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndAccumulate(int,java.lang.Object,java.util.function.BinaryOperator)"/>
@@ -299,7 +299,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object GetOpaque(int arg0)
         {
-            return IExecuteWithSignature("getOpaque", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("getOpaque", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getPlain(int)"/>
@@ -308,7 +308,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object GetPlain(int arg0)
         {
-            return IExecuteWithSignature("getPlain", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("getPlain", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#updateAndGet(int,java.util.function.UnaryOperator)"/>
@@ -326,7 +326,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int Length()
         {
-            return IExecuteWithSignature<int>("length", "()I");
+            return IExecute<int>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#lazySet(int,java.lang.Object)"/>
@@ -530,7 +530,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="E"/></returns>
         public E Get(int arg0)
         {
-            return IExecuteWithSignature<E>("get", "(I)Ljava/lang/Object;", arg0);
+            return IExecute<E>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAcquire(int)"/>
@@ -539,7 +539,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="E"/></returns>
         public E GetAcquire(int arg0)
         {
-            return IExecuteWithSignature<E>("getAcquire", "(I)Ljava/lang/Object;", arg0);
+            return IExecute<E>("getAcquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndAccumulate(int,java.lang.Object,java.util.function.BinaryOperator)"/>
@@ -579,7 +579,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="E"/></returns>
         public E GetOpaque(int arg0)
         {
-            return IExecuteWithSignature<E>("getOpaque", "(I)Ljava/lang/Object;", arg0);
+            return IExecute<E>("getOpaque", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getPlain(int)"/>
@@ -588,7 +588,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="E"/></returns>
         public E GetPlain(int arg0)
         {
-            return IExecuteWithSignature<E>("getPlain", "(I)Ljava/lang/Object;", arg0);
+            return IExecute<E>("getPlain", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#updateAndGet(int,java.util.function.UnaryOperator)"/>
@@ -606,7 +606,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int Length()
         {
-            return IExecuteWithSignature<int>("length", "()I");
+            return IExecute<int>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#lazySet(int,java.lang.Object)"/>

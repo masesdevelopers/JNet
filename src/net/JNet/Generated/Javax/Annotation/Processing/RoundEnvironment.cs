@@ -158,7 +158,7 @@ namespace Javax.Annotation.Processing
         /// </summary>
         public Java.Util.Set RootElements
         {
-            get { return IExecuteWithSignature<Java.Util.Set>("getRootElements", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set>("getRootElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#errorRaised()"/>
@@ -166,7 +166,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="bool"/></returns>
         public bool ErrorRaised()
         {
-            return IExecuteWithSignature<bool>("errorRaised", "()Z");
+            return IExecute<bool>("errorRaised");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#processingOver()"/>
@@ -174,7 +174,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="bool"/></returns>
         public bool ProcessingOver()
         {
-            return IExecuteWithSignature<bool>("processingOver", "()Z");
+            return IExecute<bool>("processingOver");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWith(java.lang.Class)"/>
@@ -184,7 +184,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element> GetElementsAnnotatedWith<ReturnExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Class arg0) where ReturnExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWith", "(Ljava/lang/Class;)Ljava/util/Set;", arg0);
+            return IExecute<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWith(javax.lang.model.element.TypeElement)"/>
@@ -194,7 +194,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element> GetElementsAnnotatedWith<ReturnExtendsJavax_Lang_Model_Element_Element>(Javax.Lang.Model.Element.TypeElement arg0) where ReturnExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWith", "(Ljavax/lang/model/element/TypeElement;)Ljava/util/Set;", arg0);
+            return IExecute<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWithAny(java.util.Set)"/>
@@ -205,7 +205,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element> GetElementsAnnotatedWithAny<ReturnExtendsJavax_Lang_Model_Element_Element, Arg0ExtendsJava_Lang_Annotation_Annotation>(Java.Util.Set<Java.Lang.Class> arg0) where ReturnExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element where Arg0ExtendsJava_Lang_Annotation_Annotation : Java.Lang.Annotation.Annotation
         {
-            return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWithAny", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
+            return IExecute<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWithAny", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWithAny(javax.lang.model.element.TypeElement[])"/>
@@ -215,7 +215,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element> GetElementsAnnotatedWithAny<ReturnExtendsJavax_Lang_Model_Element_Element>(params Javax.Lang.Model.Element.TypeElement[] arg0) where ReturnExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWithAny", "([Ljavax/lang/model/element/TypeElement;)Ljava/util/Set;"); else return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWithAny", "([Ljavax/lang/model/element/TypeElement;)Ljava/util/Set;", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWithAny"); else return IExecute<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWithAny", arg0);
         }
 
         #endregion

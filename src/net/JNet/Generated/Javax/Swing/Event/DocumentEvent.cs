@@ -229,28 +229,28 @@ namespace Javax.Swing.Event
         /// </summary>
         public Javax.Swing.Text.Document Document
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.Document>("getDocument", "()Ljavax/swing/text/Document;"); }
+            get { return IExecute<Javax.Swing.Text.Document>("getDocument"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getLength()"/> 
         /// </summary>
         public int Length
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            get { return IExecute<int>("getLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getOffset()"/> 
         /// </summary>
         public int Offset
         {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
+            get { return IExecute<int>("getOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getType()"/> 
         /// </summary>
         public Javax.Swing.Event.DocumentEvent.EventType Type
         {
-            get { return IExecuteWithSignature<Javax.Swing.Event.DocumentEvent.EventType>("getType", "()Ljavax/swing/event/DocumentEvent$EventType;"); }
+            get { return IExecute<Javax.Swing.Event.DocumentEvent.EventType>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getChange(javax.swing.text.Element)"/>
@@ -259,7 +259,7 @@ namespace Javax.Swing.Event
         /// <returns><see cref="Javax.Swing.Event.DocumentEvent.ElementChange"/></returns>
         public Javax.Swing.Event.DocumentEvent.ElementChange GetChange(Javax.Swing.Text.Element arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", "(Ljavax/swing/text/Element;)Ljavax/swing/event/DocumentEvent$ElementChange;", arg0);
+            return IExecute<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", arg0);
         }
 
         #endregion

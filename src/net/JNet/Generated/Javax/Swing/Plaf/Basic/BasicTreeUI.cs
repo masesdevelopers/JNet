@@ -770,35 +770,35 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Javax.Swing.Icon CollapsedIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getCollapsedIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setCollapsedIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getCollapsedIcon"); } set { IExecute("setCollapsedIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.html#getExpandedIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.html#setExpandedIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon ExpandedIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getExpandedIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setExpandedIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getExpandedIcon"); } set { IExecute("setExpandedIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.html#getLeftChildIndent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.html#setLeftChildIndent(int)"/>
         /// </summary>
         public int LeftChildIndent
         {
-            get { return IExecuteWithSignature<int>("getLeftChildIndent", "()I"); } set { IExecuteWithSignature("setLeftChildIndent", "(I)V", value); }
+            get { return IExecute<int>("getLeftChildIndent"); } set { IExecute("setLeftChildIndent", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.html#getPreferredMinSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.html#setPreferredMinSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension PreferredMinSize
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredMinSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setPreferredMinSize", "(Ljava/awt/Dimension;)V", value); }
+            get { return IExecute<Java.Awt.Dimension>("getPreferredMinSize"); } set { IExecute("setPreferredMinSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.html#getRightChildIndent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.html#setRightChildIndent(int)"/>
         /// </summary>
         public int RightChildIndent
         {
-            get { return IExecuteWithSignature<int>("getRightChildIndent", "()I"); } set { IExecuteWithSignature("setRightChildIndent", "(I)V", value); }
+            get { return IExecute<int>("getRightChildIndent"); } set { IExecute("setRightChildIndent", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.html#getPreferredSize(javax.swing.JComponent,boolean)"/>
@@ -911,7 +911,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
             public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
             {
-                IExecuteWithSignature("focusGained", "(Ljava/awt/event/FocusEvent;)V", arg0);
+                IExecute("focusGained", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)"/>
@@ -919,7 +919,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
             public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
             {
-                IExecuteWithSignature("focusLost", "(Ljava/awt/event/FocusEvent;)V", arg0);
+                IExecute("focusLost", arg0);
             }
 
             #endregion
@@ -973,7 +973,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecuteWithSignature("mouseClicked", "(Ljava/awt/event/MouseEvent;)V", arg0);
+                IExecute("mouseClicked", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.MouseInputHandler.html#mouseDragged(java.awt.event.MouseEvent)"/>
@@ -981,7 +981,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecuteWithSignature("mouseDragged", "(Ljava/awt/event/MouseEvent;)V", arg0);
+                IExecute("mouseDragged", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.MouseInputHandler.html#mouseEntered(java.awt.event.MouseEvent)"/>
@@ -989,7 +989,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecuteWithSignature("mouseEntered", "(Ljava/awt/event/MouseEvent;)V", arg0);
+                IExecute("mouseEntered", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.MouseInputHandler.html#mouseExited(java.awt.event.MouseEvent)"/>
@@ -997,7 +997,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecuteWithSignature("mouseExited", "(Ljava/awt/event/MouseEvent;)V", arg0);
+                IExecute("mouseExited", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.MouseInputHandler.html#mouseMoved(java.awt.event.MouseEvent)"/>
@@ -1005,7 +1005,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecuteWithSignature("mouseMoved", "(Ljava/awt/event/MouseEvent;)V", arg0);
+                IExecute("mouseMoved", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.MouseInputHandler.html#mousePressed(java.awt.event.MouseEvent)"/>
@@ -1013,7 +1013,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecuteWithSignature("mousePressed", "(Ljava/awt/event/MouseEvent;)V", arg0);
+                IExecute("mousePressed", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.MouseInputHandler.html#mouseReleased(java.awt.event.MouseEvent)"/>
@@ -1021,7 +1021,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
             {
-                IExecuteWithSignature("mouseReleased", "(Ljava/awt/event/MouseEvent;)V", arg0);
+                IExecute("mouseReleased", arg0);
             }
 
             #endregion
@@ -1111,7 +1111,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
-                IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
+                IExecute("propertyChange", arg0);
             }
 
             #endregion
@@ -1162,7 +1162,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
-                IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
+                IExecute("propertyChange", arg0);
             }
 
             #endregion
@@ -1253,7 +1253,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
             public void TreeCollapsed(Javax.Swing.Event.TreeExpansionEvent arg0)
             {
-                IExecuteWithSignature("treeCollapsed", "(Ljavax/swing/event/TreeExpansionEvent;)V", arg0);
+                IExecute("treeCollapsed", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeExpansionHandler.html#treeExpanded(javax.swing.event.TreeExpansionEvent)"/>
@@ -1261,7 +1261,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
             public void TreeExpanded(Javax.Swing.Event.TreeExpansionEvent arg0)
             {
-                IExecuteWithSignature("treeExpanded", "(Ljavax/swing/event/TreeExpansionEvent;)V", arg0);
+                IExecute("treeExpanded", arg0);
             }
 
             #endregion
@@ -1394,7 +1394,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
             public void TreeNodesChanged(Javax.Swing.Event.TreeModelEvent arg0)
             {
-                IExecuteWithSignature("treeNodesChanged", "(Ljavax/swing/event/TreeModelEvent;)V", arg0);
+                IExecute("treeNodesChanged", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeModelHandler.html#treeNodesInserted(javax.swing.event.TreeModelEvent)"/>
@@ -1402,7 +1402,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
             public void TreeNodesInserted(Javax.Swing.Event.TreeModelEvent arg0)
             {
-                IExecuteWithSignature("treeNodesInserted", "(Ljavax/swing/event/TreeModelEvent;)V", arg0);
+                IExecute("treeNodesInserted", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeModelHandler.html#treeNodesRemoved(javax.swing.event.TreeModelEvent)"/>
@@ -1410,7 +1410,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
             public void TreeNodesRemoved(Javax.Swing.Event.TreeModelEvent arg0)
             {
-                IExecuteWithSignature("treeNodesRemoved", "(Ljavax/swing/event/TreeModelEvent;)V", arg0);
+                IExecute("treeNodesRemoved", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeModelHandler.html#treeStructureChanged(javax.swing.event.TreeModelEvent)"/>
@@ -1418,7 +1418,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
             public void TreeStructureChanged(Javax.Swing.Event.TreeModelEvent arg0)
             {
-                IExecuteWithSignature("treeStructureChanged", "(Ljavax/swing/event/TreeModelEvent;)V", arg0);
+                IExecute("treeStructureChanged", arg0);
             }
 
             #endregion
@@ -1510,7 +1510,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionEvent"/></param>
             public void ValueChanged(Javax.Swing.Event.TreeSelectionEvent arg0)
             {
-                IExecuteWithSignature("valueChanged", "(Ljavax/swing/event/TreeSelectionEvent;)V", arg0);
+                IExecute("valueChanged", arg0);
             }
 
             #endregion

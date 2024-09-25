@@ -155,7 +155,7 @@ namespace Java.Time.Temporal
         /// </summary>
         public Java.Time.Duration Duration
         {
-            get { return IExecuteWithSignature<Java.Time.Duration>("getDuration", "()Ljava/time/Duration;"); }
+            get { return IExecute<Java.Time.Duration>("getDuration"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#addTo(java.time.temporal.Temporal,long)"/>
@@ -174,7 +174,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsDateBased()
         {
-            return IExecuteWithSignature<bool>("isDateBased", "()Z");
+            return IExecute<bool>("isDateBased");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDurationEstimated()"/>
@@ -182,7 +182,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsDurationEstimated()
         {
-            return IExecuteWithSignature<bool>("isDurationEstimated", "()Z");
+            return IExecute<bool>("isDurationEstimated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isTimeBased()"/>
@@ -190,7 +190,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsTimeBased()
         {
-            return IExecuteWithSignature<bool>("isTimeBased", "()Z");
+            return IExecute<bool>("isTimeBased");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#between(java.time.temporal.Temporal,java.time.temporal.Temporal)"/>
@@ -209,7 +209,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsSupportedBy(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecuteWithSignature<bool>("isSupportedBy", "(Ljava/time/temporal/Temporal;)Z", arg0);
+            return IExecute<bool>("isSupportedBy", arg0);
         }
 
         #endregion

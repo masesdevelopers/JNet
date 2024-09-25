@@ -112,14 +112,14 @@ namespace Java.Security.Cert
         /// </summary>
         public int Port
         {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); }
+            get { return IExecute<int>("getPort"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/LDAPCertStoreParameters.html#getServerName()"/> 
         /// </summary>
         public Java.Lang.String ServerName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getServerName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getServerName"); }
         }
 
         #endregion

@@ -104,14 +104,14 @@ namespace Javax.Sound.Midi
         /// </summary>
         public Javax.Sound.Midi.MidiMessage Message
         {
-            get { return IExecuteWithSignature<Javax.Sound.Midi.MidiMessage>("getMessage", "()Ljavax/sound/midi/MidiMessage;"); }
+            get { return IExecute<Javax.Sound.Midi.MidiMessage>("getMessage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiEvent.html#getTick()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiEvent.html#setTick(long)"/>
         /// </summary>
         public long Tick
         {
-            get { return IExecuteWithSignature<long>("getTick", "()J"); } set { IExecuteWithSignature("setTick", "(J)V", value); }
+            get { return IExecute<long>("getTick"); } set { IExecute("setTick", value); }
         }
 
         #endregion

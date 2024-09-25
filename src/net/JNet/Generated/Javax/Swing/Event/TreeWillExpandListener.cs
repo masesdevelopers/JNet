@@ -239,7 +239,7 @@ namespace Javax.Swing.Event
         /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
         public override void TreeWillCollapse(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
-            IExecuteWithSignature("treeWillCollapse", "(Ljavax/swing/event/TreeExpansionEvent;)V", arg0);
+            IExecute("treeWillCollapse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillExpand(javax.swing.event.TreeExpansionEvent)"/>
@@ -248,7 +248,7 @@ namespace Javax.Swing.Event
         /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
         public override void TreeWillExpand(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
-            IExecuteWithSignature("treeWillExpand", "(Ljavax/swing/event/TreeExpansionEvent;)V", arg0);
+            IExecute("treeWillExpand", arg0);
         }
 
         #endregion

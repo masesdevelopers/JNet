@@ -107,49 +107,49 @@ namespace Javax.Swing
         /// </summary>
         public int AnchorSelectionIndex
         {
-            get { return IExecuteWithSignature<int>("getAnchorSelectionIndex", "()I"); } set { IExecuteWithSignature("setAnchorSelectionIndex", "(I)V", value); }
+            get { return IExecute<int>("getAnchorSelectionIndex"); } set { IExecute("setAnchorSelectionIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#getLeadSelectionIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#setLeadSelectionIndex(int)"/>
         /// </summary>
         public int LeadSelectionIndex
         {
-            get { return IExecuteWithSignature<int>("getLeadSelectionIndex", "()I"); } set { IExecuteWithSignature("setLeadSelectionIndex", "(I)V", value); }
+            get { return IExecute<int>("getLeadSelectionIndex"); } set { IExecute("setLeadSelectionIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#getListSelectionListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.ListSelectionListener[] ListSelectionListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.ListSelectionListener>("getListSelectionListeners", "()[Ljavax/swing/event/ListSelectionListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.ListSelectionListener>("getListSelectionListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#getMaxSelectionIndex()"/> 
         /// </summary>
         public int MaxSelectionIndex
         {
-            get { return IExecuteWithSignature<int>("getMaxSelectionIndex", "()I"); }
+            get { return IExecute<int>("getMaxSelectionIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#getMinSelectionIndex()"/> 
         /// </summary>
         public int MinSelectionIndex
         {
-            get { return IExecuteWithSignature<int>("getMinSelectionIndex", "()I"); }
+            get { return IExecute<int>("getMinSelectionIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#getSelectionMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#setSelectionMode(int)"/>
         /// </summary>
         public int SelectionMode
         {
-            get { return IExecuteWithSignature<int>("getSelectionMode", "()I"); } set { IExecuteWithSignature("setSelectionMode", "(I)V", value); }
+            get { return IExecute<int>("getSelectionMode"); } set { IExecute("setSelectionMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#getValueIsAdjusting()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#setValueIsAdjusting(boolean)"/>
         /// </summary>
         public bool ValueIsAdjusting
         {
-            get { return IExecuteWithSignature<bool>("getValueIsAdjusting", "()Z"); } set { IExecuteWithSignature("setValueIsAdjusting", "(Z)V", value); }
+            get { return IExecute<bool>("getValueIsAdjusting"); } set { IExecute("setValueIsAdjusting", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#getListeners(java.lang.Class)"/>
@@ -167,7 +167,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsLeadAnchorNotificationEnabled()
         {
-            return IExecuteWithSignature<bool>("isLeadAnchorNotificationEnabled", "()Z");
+            return IExecute<bool>("isLeadAnchorNotificationEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#isSelectedIndex(int)"/>
@@ -176,7 +176,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSelectedIndex(int arg0)
         {
-            return IExecuteWithSignature<bool>("isSelectedIndex", "(I)Z", arg0);
+            return IExecute<bool>("isSelectedIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#isSelectionEmpty()"/>
@@ -184,7 +184,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSelectionEmpty()
         {
-            return IExecuteWithSignature<bool>("isSelectionEmpty", "()Z");
+            return IExecute<bool>("isSelectionEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#addListSelectionListener(javax.swing.event.ListSelectionListener)"/>
@@ -192,7 +192,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
         public void AddListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
-            IExecuteWithSignature("addListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
+            IExecute("addListSelectionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#addSelectionInterval(int,int)"/>
@@ -208,7 +208,7 @@ namespace Javax.Swing
         /// </summary>
         public void ClearSelection()
         {
-            IExecuteWithSignature("clearSelection", "()V");
+            IExecute("clearSelection");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#insertIndexInterval(int,int,boolean)"/>
@@ -226,7 +226,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void MoveLeadSelectionIndex(int arg0)
         {
-            IExecuteWithSignature("moveLeadSelectionIndex", "(I)V", arg0);
+            IExecute("moveLeadSelectionIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#removeIndexInterval(int,int)"/>
@@ -243,7 +243,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
         public void RemoveListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
-            IExecuteWithSignature("removeListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
+            IExecute("removeListSelectionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#removeSelectionInterval(int,int)"/>
@@ -260,7 +260,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetLeadAnchorNotificationEnabled(bool arg0)
         {
-            IExecuteWithSignature("setLeadAnchorNotificationEnabled", "(Z)V", arg0);
+            IExecute("setLeadAnchorNotificationEnabled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#setSelectionInterval(int,int)"/>

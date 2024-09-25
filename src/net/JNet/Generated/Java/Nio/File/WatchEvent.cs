@@ -288,7 +288,7 @@ namespace Java.Nio.File
         /// <returns><see cref="int"/></returns>
         public int Count()
         {
-            return IExecuteWithSignature<int>("count", "()I");
+            return IExecute<int>("count");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#kind()"/>
@@ -296,7 +296,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
         public Java.Nio.File.WatchEvent.Kind KindMethod()
         {
-            return IExecuteWithSignature<Java.Nio.File.WatchEvent.Kind>("kind", "()Ljava/nio/file/WatchEvent$Kind;");
+            return IExecute<Java.Nio.File.WatchEvent.Kind>("kind");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/>
@@ -304,7 +304,7 @@ namespace Java.Nio.File
         /// <returns><see cref="object"/></returns>
         public object Context()
         {
-            return IExecuteWithSignature("context", "()Ljava/lang/Object;");
+            return IExecute("context");
         }
 
         #endregion
@@ -434,7 +434,7 @@ namespace Java.Nio.File
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Name()
             {
-                return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+                return IExecute<Java.Lang.String>("name");
             }
 
             #endregion
@@ -517,7 +517,7 @@ namespace Java.Nio.File
         /// <returns><see cref="int"/></returns>
         public int Count()
         {
-            return IExecuteWithSignature<int>("count", "()I");
+            return IExecute<int>("count");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#kind()"/>
@@ -525,7 +525,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
         public Java.Nio.File.WatchEvent.Kind<T> KindMethod()
         {
-            return IExecuteWithSignature<Java.Nio.File.WatchEvent.Kind<T>>("kind", "()Ljava/nio/file/WatchEvent$Kind;");
+            return IExecute<Java.Nio.File.WatchEvent.Kind<T>>("kind");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/>
@@ -533,7 +533,7 @@ namespace Java.Nio.File
         /// <returns><typeparamref name="T"/></returns>
         public T Context()
         {
-            return IExecuteWithSignature<T>("context", "()Ljava/lang/Object;");
+            return IExecute<T>("context");
         }
 
         #endregion

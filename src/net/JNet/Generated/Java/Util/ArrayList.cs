@@ -170,14 +170,14 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void EnsureCapacity(int arg0)
         {
-            IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
+            IExecute("ensureCapacity", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#trimToSize()"/>
         /// </summary>
         public void TrimToSize()
         {
-            IExecuteWithSignature("trimToSize", "()V");
+            IExecute("trimToSize");
         }
 
         #endregion
@@ -248,14 +248,14 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void EnsureCapacity(int arg0)
         {
-            IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
+            IExecute("ensureCapacity", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#trimToSize()"/>
         /// </summary>
         public void TrimToSize()
         {
-            IExecuteWithSignature("trimToSize", "()V");
+            IExecute("trimToSize");
         }
 
         #endregion

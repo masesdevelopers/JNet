@@ -163,49 +163,49 @@ namespace Javax.Sql.Rowset.Spi
         /// </summary>
         public int DataSourceLock
         {
-            get { return IExecuteWithSignature<int>("getDataSourceLock", "()I"); } set { IExecuteWithSignature("setDataSourceLock", "(I)V", value); }
+            get { return IExecute<int>("getDataSourceLock"); } set { IExecute("setDataSourceLock", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#getProviderGrade()"/> 
         /// </summary>
         public int ProviderGrade
         {
-            get { return IExecuteWithSignature<int>("getProviderGrade", "()I"); }
+            get { return IExecute<int>("getProviderGrade"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#getProviderID()"/> 
         /// </summary>
         public Java.Lang.String ProviderID
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProviderID", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getProviderID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#getRowSetReader()"/> 
         /// </summary>
         public Javax.Sql.RowSetReader RowSetReader
         {
-            get { return IExecuteWithSignature<Javax.Sql.RowSetReader>("getRowSetReader", "()Ljavax/sql/RowSetReader;"); }
+            get { return IExecute<Javax.Sql.RowSetReader>("getRowSetReader"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#getRowSetWriter()"/> 
         /// </summary>
         public Javax.Sql.RowSetWriter RowSetWriter
         {
-            get { return IExecuteWithSignature<Javax.Sql.RowSetWriter>("getRowSetWriter", "()Ljavax/sql/RowSetWriter;"); }
+            get { return IExecute<Javax.Sql.RowSetWriter>("getRowSetWriter"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#getVendor()"/> 
         /// </summary>
         public Java.Lang.String Vendor
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVendor", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getVendor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#getVersion()"/> 
         /// </summary>
         public Java.Lang.String Version
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#supportsUpdatableView()"/>
@@ -213,7 +213,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <returns><see cref="int"/></returns>
         public int SupportsUpdatableView()
         {
-            return IExecuteWithSignature<int>("supportsUpdatableView", "()I");
+            return IExecute<int>("supportsUpdatableView");
         }
 
         #endregion

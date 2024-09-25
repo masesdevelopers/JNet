@@ -131,35 +131,35 @@ namespace Javax.Naming.Event
         /// </summary>
         public object ChangeInfo
         {
-            get { return IExecuteWithSignature("getChangeInfo", "()Ljava/lang/Object;"); }
+            get { return IExecute("getChangeInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getEventContext()"/> 
         /// </summary>
         public Javax.Naming.Event.EventContext EventContext
         {
-            get { return IExecuteWithSignature<Javax.Naming.Event.EventContext>("getEventContext", "()Ljavax/naming/event/EventContext;"); }
+            get { return IExecute<Javax.Naming.Event.EventContext>("getEventContext"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getNewBinding()"/> 
         /// </summary>
         public Javax.Naming.Binding NewBinding
         {
-            get { return IExecuteWithSignature<Javax.Naming.Binding>("getNewBinding", "()Ljavax/naming/Binding;"); }
+            get { return IExecute<Javax.Naming.Binding>("getNewBinding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getOldBinding()"/> 
         /// </summary>
         public Javax.Naming.Binding OldBinding
         {
-            get { return IExecuteWithSignature<Javax.Naming.Binding>("getOldBinding", "()Ljavax/naming/Binding;"); }
+            get { return IExecute<Javax.Naming.Binding>("getOldBinding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            get { return IExecute<int>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#dispatch(javax.naming.event.NamingListener)"/>
@@ -167,7 +167,7 @@ namespace Javax.Naming.Event
         /// <param name="arg0"><see cref="Javax.Naming.Event.NamingListener"/></param>
         public void Dispatch(Javax.Naming.Event.NamingListener arg0)
         {
-            IExecuteWithSignature("dispatch", "(Ljavax/naming/event/NamingListener;)V", arg0);
+            IExecute("dispatch", arg0);
         }
 
         #endregion

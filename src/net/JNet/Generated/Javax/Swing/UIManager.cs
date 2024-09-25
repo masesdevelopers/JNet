@@ -136,56 +136,56 @@ namespace Javax.Swing
         /// </summary>
         public static Javax.Swing.LookAndFeel[] AuxiliaryLookAndFeels
         {
-            get { return SExecuteWithSignatureArray<Javax.Swing.LookAndFeel>(LocalBridgeClazz, "getAuxiliaryLookAndFeels", "()[Ljavax/swing/LookAndFeel;"); }
+            get { return SExecuteArray<Javax.Swing.LookAndFeel>(LocalBridgeClazz, "getAuxiliaryLookAndFeels"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getCrossPlatformLookAndFeelClassName()"/> 
         /// </summary>
         public static Java.Lang.String CrossPlatformLookAndFeelClassName
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getCrossPlatformLookAndFeelClassName", "()Ljava/lang/String;"); }
+            get { return SExecute<Java.Lang.String>(LocalBridgeClazz, "getCrossPlatformLookAndFeelClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getDefaults()"/> 
         /// </summary>
         public static Javax.Swing.UIDefaults Defaults
         {
-            get { return SExecuteWithSignature<Javax.Swing.UIDefaults>(LocalBridgeClazz, "getDefaults", "()Ljavax/swing/UIDefaults;"); }
+            get { return SExecute<Javax.Swing.UIDefaults>(LocalBridgeClazz, "getDefaults"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getInstalledLookAndFeels()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#setInstalledLookAndFeels(javax.swing.UIManager.LookAndFeelInfo[])"/>
         /// </summary>
         public static Javax.Swing.UIManager.LookAndFeelInfo[] InstalledLookAndFeels
         {
-            get { return SExecuteWithSignatureArray<Javax.Swing.UIManager.LookAndFeelInfo>(LocalBridgeClazz, "getInstalledLookAndFeels", "()[Ljavax/swing/UIManager$LookAndFeelInfo;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setInstalledLookAndFeels", "([Ljavax/swing/UIManager$LookAndFeelInfo;)V", value); }
+            get { return SExecuteArray<Javax.Swing.UIManager.LookAndFeelInfo>(LocalBridgeClazz, "getInstalledLookAndFeels"); } set { SExecute(LocalBridgeClazz, "setInstalledLookAndFeels", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getLookAndFeel()"/> 
         /// </summary>
         public static Javax.Swing.LookAndFeel LookAndFeel
         {
-            get { return SExecuteWithSignature<Javax.Swing.LookAndFeel>(LocalBridgeClazz, "getLookAndFeel", "()Ljavax/swing/LookAndFeel;"); }
+            get { return SExecute<Javax.Swing.LookAndFeel>(LocalBridgeClazz, "getLookAndFeel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getLookAndFeelDefaults()"/> 
         /// </summary>
         public static Javax.Swing.UIDefaults LookAndFeelDefaults
         {
-            get { return SExecuteWithSignature<Javax.Swing.UIDefaults>(LocalBridgeClazz, "getLookAndFeelDefaults", "()Ljavax/swing/UIDefaults;"); }
+            get { return SExecute<Javax.Swing.UIDefaults>(LocalBridgeClazz, "getLookAndFeelDefaults"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getPropertyChangeListeners()"/> 
         /// </summary>
         public static Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
-            get { return SExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>(LocalBridgeClazz, "getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;"); }
+            get { return SExecuteArray<Java.Beans.PropertyChangeListener>(LocalBridgeClazz, "getPropertyChangeListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getSystemLookAndFeelClassName()"/> 
         /// </summary>
         public static Java.Lang.String SystemLookAndFeelClassName
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getSystemLookAndFeelClassName", "()Ljava/lang/String;"); }
+            get { return SExecute<Java.Lang.String>(LocalBridgeClazz, "getSystemLookAndFeelClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getBoolean(java.lang.Object,java.util.Locale)"/>
@@ -204,7 +204,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public static bool GetBoolean(object arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "getBoolean", "(Ljava/lang/Object;)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "getBoolean", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#removeAuxiliaryLookAndFeel(javax.swing.LookAndFeel)"/>
@@ -213,7 +213,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public static bool RemoveAuxiliaryLookAndFeel(Javax.Swing.LookAndFeel arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "removeAuxiliaryLookAndFeel", "(Ljavax/swing/LookAndFeel;)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "removeAuxiliaryLookAndFeel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getInt(java.lang.Object,java.util.Locale)"/>
@@ -232,7 +232,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int GetInt(object arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "getInt", "(Ljava/lang/Object;)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "getInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getColor(java.lang.Object,java.util.Locale)"/>
@@ -251,7 +251,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(object arg0)
         {
-            return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "getColor", "(Ljava/lang/Object;)Ljava/awt/Color;", arg0);
+            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "getColor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getDimension(java.lang.Object,java.util.Locale)"/>
@@ -270,7 +270,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public static Java.Awt.Dimension GetDimension(object arg0)
         {
-            return SExecuteWithSignature<Java.Awt.Dimension>(LocalBridgeClazz, "getDimension", "(Ljava/lang/Object;)Ljava/awt/Dimension;", arg0);
+            return SExecute<Java.Awt.Dimension>(LocalBridgeClazz, "getDimension", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getFont(java.lang.Object,java.util.Locale)"/>
@@ -289,7 +289,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font GetFont(object arg0)
         {
-            return SExecuteWithSignature<Java.Awt.Font>(LocalBridgeClazz, "getFont", "(Ljava/lang/Object;)Ljava/awt/Font;", arg0);
+            return SExecute<Java.Awt.Font>(LocalBridgeClazz, "getFont", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getInsets(java.lang.Object,java.util.Locale)"/>
@@ -308,7 +308,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public static Java.Awt.Insets GetInsets(object arg0)
         {
-            return SExecuteWithSignature<Java.Awt.Insets>(LocalBridgeClazz, "getInsets", "(Ljava/lang/Object;)Ljava/awt/Insets;", arg0);
+            return SExecute<Java.Awt.Insets>(LocalBridgeClazz, "getInsets", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#get(java.lang.Object,java.util.Locale)"/>
@@ -327,7 +327,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public static object Get(object arg0)
         {
-            return SExecuteWithSignature(LocalBridgeClazz, "get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return SExecute(LocalBridgeClazz, "get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#put(java.lang.Object,java.lang.Object)"/>
@@ -356,7 +356,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetString(object arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getString", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getBorder(java.lang.Object,java.util.Locale)"/>
@@ -375,7 +375,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetBorder(object arg0)
         {
-            return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getBorder", "(Ljava/lang/Object;)Ljavax/swing/border/Border;", arg0);
+            return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getBorder", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getIcon(java.lang.Object,java.util.Locale)"/>
@@ -394,7 +394,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetIcon(object arg0)
         {
-            return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getIcon", "(Ljava/lang/Object;)Ljavax/swing/Icon;", arg0);
+            return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "getIcon", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#createLookAndFeel(java.lang.String)"/>
@@ -404,7 +404,7 @@ namespace Javax.Swing
         /// <exception cref="Javax.Swing.UnsupportedLookAndFeelException"/>
         public static Javax.Swing.LookAndFeel CreateLookAndFeel(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Swing.LookAndFeel>(LocalBridgeClazz, "createLookAndFeel", "(Ljava/lang/String;)Ljavax/swing/LookAndFeel;", arg0);
+            return SExecute<Javax.Swing.LookAndFeel>(LocalBridgeClazz, "createLookAndFeel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getUI(javax.swing.JComponent)"/>
@@ -413,7 +413,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Plaf.ComponentUI"/></returns>
         public static Javax.Swing.Plaf.ComponentUI GetUI(Javax.Swing.JComponent arg0)
         {
-            return SExecuteWithSignature<Javax.Swing.Plaf.ComponentUI>(LocalBridgeClazz, "getUI", "(Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;", arg0);
+            return SExecute<Javax.Swing.Plaf.ComponentUI>(LocalBridgeClazz, "getUI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#addAuxiliaryLookAndFeel(javax.swing.LookAndFeel)"/>
@@ -421,7 +421,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.LookAndFeel"/></param>
         public static void AddAuxiliaryLookAndFeel(Javax.Swing.LookAndFeel arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "addAuxiliaryLookAndFeel", "(Ljavax/swing/LookAndFeel;)V", arg0);
+            SExecute(LocalBridgeClazz, "addAuxiliaryLookAndFeel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -429,7 +429,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public static void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            SExecute(LocalBridgeClazz, "addPropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#installLookAndFeel(java.lang.String,java.lang.String)"/>
@@ -446,7 +446,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.UIManager.LookAndFeelInfo"/></param>
         public static void InstallLookAndFeel(Javax.Swing.UIManager.LookAndFeelInfo arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "installLookAndFeel", "(Ljavax/swing/UIManager$LookAndFeelInfo;)V", arg0);
+            SExecute(LocalBridgeClazz, "installLookAndFeel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -454,7 +454,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public static void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            SExecute(LocalBridgeClazz, "removePropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#setLookAndFeel(java.lang.String)"/>
@@ -466,7 +466,7 @@ namespace Javax.Swing
         /// <exception cref="Javax.Swing.UnsupportedLookAndFeelException"/>
         public static void SetLookAndFeel(Java.Lang.String arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setLookAndFeel", "(Ljava/lang/String;)V", arg0);
+            SExecute(LocalBridgeClazz, "setLookAndFeel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#setLookAndFeel(javax.swing.LookAndFeel)"/>
@@ -475,7 +475,7 @@ namespace Javax.Swing
         /// <exception cref="Javax.Swing.UnsupportedLookAndFeelException"/>
         public static void SetLookAndFeel(Javax.Swing.LookAndFeel arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setLookAndFeel", "(Ljavax/swing/LookAndFeel;)V", arg0);
+            SExecute(LocalBridgeClazz, "setLookAndFeel", arg0);
         }
 
         #endregion

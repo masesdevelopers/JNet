@@ -119,7 +119,7 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Version
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setVersion", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getVersion"); } set { IExecute("setVersion", value); }
         }
 
         #endregion

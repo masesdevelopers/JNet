@@ -102,7 +102,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
         public static Java.Io.OutputStream NullOutputStream()
         {
-            return SExecuteWithSignature<Java.Io.OutputStream>(LocalBridgeClazz, "nullOutputStream", "()Ljava/io/OutputStream;");
+            return SExecute<Java.Io.OutputStream>(LocalBridgeClazz, "nullOutputStream");
         }
 
         #endregion
@@ -115,7 +115,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(int arg0)
         {
-            IExecuteWithSignature("write", "(I)V", arg0);
+            IExecute("write", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#close()"/>
@@ -123,7 +123,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#flush()"/>
@@ -131,7 +131,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
-            IExecuteWithSignature("flush", "()V");
+            IExecute("flush");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#write(byte[],int,int)"/>
@@ -151,7 +151,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(byte[] arg0)
         {
-            IExecuteWithSignature("write", "([B)V", new object[] { arg0 });
+            IExecute("write", new object[] { arg0 });
         }
 
         #endregion

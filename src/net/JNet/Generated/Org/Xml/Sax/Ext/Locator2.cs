@@ -123,14 +123,14 @@ namespace Org.Xml.Sax.Ext
         /// </summary>
         public Java.Lang.String Encoding
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getEncoding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Locator2.html#getXMLVersion()"/> 
         /// </summary>
         public Java.Lang.String XMLVersion
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getXMLVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getXMLVersion"); }
         }
 
         #endregion

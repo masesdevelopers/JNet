@@ -91,14 +91,14 @@ namespace Java.Net
         /// </summary>
         public static Java.Net.InetAddress LocalHost
         {
-            get { return SExecuteWithSignature<Java.Net.InetAddress>(LocalBridgeClazz, "getLocalHost", "()Ljava/net/InetAddress;"); }
+            get { return SExecute<Java.Net.InetAddress>(LocalBridgeClazz, "getLocalHost"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getLoopbackAddress()"/> 
         /// </summary>
         public static Java.Net.InetAddress LoopbackAddress
         {
-            get { return SExecuteWithSignature<Java.Net.InetAddress>(LocalBridgeClazz, "getLoopbackAddress", "()Ljava/net/InetAddress;"); }
+            get { return SExecute<Java.Net.InetAddress>(LocalBridgeClazz, "getLoopbackAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByAddress(byte[])"/>
@@ -108,7 +108,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.InetAddress GetByAddress(byte[] arg0)
         {
-            return SExecuteWithSignature<Java.Net.InetAddress>(LocalBridgeClazz, "getByAddress", "([B)Ljava/net/InetAddress;", new object[] { arg0 });
+            return SExecute<Java.Net.InetAddress>(LocalBridgeClazz, "getByAddress", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByAddress(java.lang.String,byte[])"/>
@@ -129,7 +129,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.InetAddress GetByName(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Net.InetAddress>(LocalBridgeClazz, "getByName", "(Ljava/lang/String;)Ljava/net/InetAddress;", arg0);
+            return SExecute<Java.Net.InetAddress>(LocalBridgeClazz, "getByName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getAllByName(java.lang.String)"/>
@@ -139,7 +139,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.InetAddress[] GetAllByName(Java.Lang.String arg0)
         {
-            return SExecuteWithSignatureArray<Java.Net.InetAddress>(LocalBridgeClazz, "getAllByName", "(Ljava/lang/String;)[Ljava/net/InetAddress;", arg0);
+            return SExecuteArray<Java.Net.InetAddress>(LocalBridgeClazz, "getAllByName", arg0);
         }
 
         #endregion
@@ -150,28 +150,28 @@ namespace Java.Net
         /// </summary>
         public byte[] Address
         {
-            get { return IExecuteWithSignatureArray<byte>("getAddress", "()[B"); }
+            get { return IExecuteArray<byte>("getAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getCanonicalHostName()"/> 
         /// </summary>
         public Java.Lang.String CanonicalHostName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCanonicalHostName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCanonicalHostName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getHostAddress()"/> 
         /// </summary>
         public Java.Lang.String HostAddress
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHostAddress", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getHostAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getHostName()"/> 
         /// </summary>
         public Java.Lang.String HostName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHostName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getHostName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isAnyLocalAddress()"/>
@@ -179,7 +179,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsAnyLocalAddress()
         {
-            return IExecuteWithSignature<bool>("isAnyLocalAddress", "()Z");
+            return IExecute<bool>("isAnyLocalAddress");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isLinkLocalAddress()"/>
@@ -187,7 +187,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsLinkLocalAddress()
         {
-            return IExecuteWithSignature<bool>("isLinkLocalAddress", "()Z");
+            return IExecute<bool>("isLinkLocalAddress");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isLoopbackAddress()"/>
@@ -195,7 +195,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsLoopbackAddress()
         {
-            return IExecuteWithSignature<bool>("isLoopbackAddress", "()Z");
+            return IExecute<bool>("isLoopbackAddress");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCGlobal()"/>
@@ -203,7 +203,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsMCGlobal()
         {
-            return IExecuteWithSignature<bool>("isMCGlobal", "()Z");
+            return IExecute<bool>("isMCGlobal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCLinkLocal()"/>
@@ -211,7 +211,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsMCLinkLocal()
         {
-            return IExecuteWithSignature<bool>("isMCLinkLocal", "()Z");
+            return IExecute<bool>("isMCLinkLocal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCNodeLocal()"/>
@@ -219,7 +219,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsMCNodeLocal()
         {
-            return IExecuteWithSignature<bool>("isMCNodeLocal", "()Z");
+            return IExecute<bool>("isMCNodeLocal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCOrgLocal()"/>
@@ -227,7 +227,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsMCOrgLocal()
         {
-            return IExecuteWithSignature<bool>("isMCOrgLocal", "()Z");
+            return IExecute<bool>("isMCOrgLocal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCSiteLocal()"/>
@@ -235,7 +235,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsMCSiteLocal()
         {
-            return IExecuteWithSignature<bool>("isMCSiteLocal", "()Z");
+            return IExecute<bool>("isMCSiteLocal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMulticastAddress()"/>
@@ -243,7 +243,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsMulticastAddress()
         {
-            return IExecuteWithSignature<bool>("isMulticastAddress", "()Z");
+            return IExecute<bool>("isMulticastAddress");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isReachable(int)"/>
@@ -253,7 +253,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public bool IsReachable(int arg0)
         {
-            return IExecuteWithSignature<bool>("isReachable", "(I)Z", arg0);
+            return IExecute<bool>("isReachable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isReachable(java.net.NetworkInterface,int,int)"/>
@@ -273,7 +273,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsSiteLocalAddress()
         {
-            return IExecuteWithSignature<bool>("isSiteLocalAddress", "()Z");
+            return IExecute<bool>("isSiteLocalAddress");
         }
 
         #endregion

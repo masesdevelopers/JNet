@@ -265,7 +265,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> AsList<T>(params T[] arg0)
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "asList", "([Ljava/lang/Object;)Ljava/util/List;"); else return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "asList", "([Ljava/lang/Object;)Ljava/util/List;", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "asList"); else return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "asList", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(java.lang.Object[],int,int)"/>
@@ -287,7 +287,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T>(T[] arg0)
         {
-            return SExecuteWithSignature<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", "([Ljava/lang/Object;)Ljava/util/Spliterator;", new object[] { arg0 });
+            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(java.lang.Object[],int,int)"/>
@@ -309,7 +309,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Stream<T>(T[] arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "stream", "([Ljava/lang/Object;)Ljava/util/stream/Stream;", new object[] { arg0 });
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "stream", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(java.lang.Object[],int)"/>
@@ -1248,7 +1248,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int DeepHashCode(object[] arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "deepHashCode", "([Ljava/lang/Object;)I", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "deepHashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(boolean[])"/>
@@ -1257,7 +1257,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(bool[] arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([Z)I", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(byte[])"/>
@@ -1266,7 +1266,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(byte[] arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([B)I", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(char[])"/>
@@ -1275,7 +1275,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(char[] arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([C)I", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(double[])"/>
@@ -1284,7 +1284,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(double[] arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([D)I", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(float[])"/>
@@ -1293,7 +1293,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(float[] arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([F)I", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(int[])"/>
@@ -1302,7 +1302,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(int[] arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([I)I", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(java.lang.Object[])"/>
@@ -1311,7 +1311,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(object[] arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([Ljava/lang/Object;)I", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(long[])"/>
@@ -1320,7 +1320,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(long[] arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([J)I", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(short[])"/>
@@ -1329,7 +1329,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(short[] arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([S)I", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(boolean[],boolean[])"/>
@@ -1575,7 +1575,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String DeepToString(object[] arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "deepToString", "([Ljava/lang/Object;)Ljava/lang/String;", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "deepToString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(boolean[])"/>
@@ -1584,7 +1584,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(bool[] arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([Z)Ljava/lang/String;", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(byte[])"/>
@@ -1593,7 +1593,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(byte[] arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([B)Ljava/lang/String;", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(char[])"/>
@@ -1602,7 +1602,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(char[] arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([C)Ljava/lang/String;", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(double[])"/>
@@ -1611,7 +1611,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(double[] arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([D)Ljava/lang/String;", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(float[])"/>
@@ -1620,7 +1620,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(float[] arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([F)Ljava/lang/String;", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(int[])"/>
@@ -1629,7 +1629,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(int[] arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([I)Ljava/lang/String;", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(java.lang.Object[])"/>
@@ -1638,7 +1638,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(object[] arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([Ljava/lang/Object;)Ljava/lang/String;", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(long[])"/>
@@ -1647,7 +1647,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(long[] arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([J)Ljava/lang/String;", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(short[])"/>
@@ -1656,7 +1656,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(short[] arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([S)Ljava/lang/String;", new object[] { arg0 });
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(double[],int,int)"/>
@@ -1676,7 +1676,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble Spliterator(double[] arg0)
         {
-            return SExecuteWithSignature<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", "([D)Ljava/util/Spliterator$OfDouble;", new object[] { arg0 });
+            return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(int[],int,int)"/>
@@ -1696,7 +1696,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt Spliterator(int[] arg0)
         {
-            return SExecuteWithSignature<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", "([I)Ljava/util/Spliterator$OfInt;", new object[] { arg0 });
+            return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(long[],int,int)"/>
@@ -1716,7 +1716,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong Spliterator(long[] arg0)
         {
-            return SExecuteWithSignature<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", "([J)Ljava/util/Spliterator$OfLong;", new object[] { arg0 });
+            return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(double[],int,int)"/>
@@ -1736,7 +1736,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Stream(double[] arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "stream", "([D)Ljava/util/stream/DoubleStream;", new object[] { arg0 });
+            return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "stream", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(int[],int,int)"/>
@@ -1756,7 +1756,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Stream(int[] arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "stream", "([I)Ljava/util/stream/IntStream;", new object[] { arg0 });
+            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "stream", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(long[],int,int)"/>
@@ -1776,7 +1776,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Stream(long[] arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "stream", "([J)Ljava/util/stream/LongStream;", new object[] { arg0 });
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "stream", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(long[],int)"/>
@@ -2103,7 +2103,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="byte"/></param>
         public static void ParallelSort(byte[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([B)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(char[],int,int)"/>
@@ -2121,7 +2121,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="char"/></param>
         public static void ParallelSort(char[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([C)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(double[],int,int)"/>
@@ -2139,7 +2139,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="double"/></param>
         public static void ParallelSort(double[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([D)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(float[],int,int)"/>
@@ -2157,7 +2157,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="float"/></param>
         public static void ParallelSort(float[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([F)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(int[],int,int)"/>
@@ -2175,7 +2175,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public static void ParallelSort(int[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([I)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(long[],int,int)"/>
@@ -2193,7 +2193,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="long"/></param>
         public static void ParallelSort(long[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([J)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(short[],int,int)"/>
@@ -2211,7 +2211,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="short"/></param>
         public static void ParallelSort(short[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([S)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(double[],java.util.function.IntToDoubleFunction)"/>
@@ -2256,7 +2256,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="byte"/></param>
         public static void Sort(byte[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "sort", "([B)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(char[],int,int)"/>
@@ -2274,7 +2274,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="char"/></param>
         public static void Sort(char[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "sort", "([C)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(double[],int,int)"/>
@@ -2292,7 +2292,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="double"/></param>
         public static void Sort(double[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "sort", "([D)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(float[],int,int)"/>
@@ -2310,7 +2310,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="float"/></param>
         public static void Sort(float[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "sort", "([F)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(int[],int,int)"/>
@@ -2328,7 +2328,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public static void Sort(int[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "sort", "([I)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[],int,int)"/>
@@ -2346,7 +2346,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         public static void Sort(object[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "sort", "([Ljava/lang/Object;)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(long[],int,int)"/>
@@ -2364,7 +2364,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="long"/></param>
         public static void Sort(long[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "sort", "([J)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(short[],int,int)"/>
@@ -2382,7 +2382,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="short"/></param>
         public static void Sort(short[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "sort", "([S)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
 
         #endregion

@@ -204,7 +204,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.CaretEvent"/></param>
         public override void CaretUpdate(Javax.Swing.Event.CaretEvent arg0)
         {
-            IExecuteWithSignature("caretUpdate", "(Ljavax/swing/event/CaretEvent;)V", arg0);
+            IExecute("caretUpdate", arg0);
         }
 
         #endregion

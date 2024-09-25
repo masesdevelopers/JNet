@@ -104,7 +104,7 @@ namespace Java.Text
         /// </summary>
         public Java.Lang.String Rules
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRules", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getRules"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#getCollationElementIterator(java.lang.String)"/>
@@ -113,7 +113,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.CollationElementIterator"/></returns>
         public Java.Text.CollationElementIterator GetCollationElementIterator(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Text.CollationElementIterator>("getCollationElementIterator", "(Ljava/lang/String;)Ljava/text/CollationElementIterator;", arg0);
+            return IExecute<Java.Text.CollationElementIterator>("getCollationElementIterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#getCollationElementIterator(java.text.CharacterIterator)"/>
@@ -122,7 +122,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.CollationElementIterator"/></returns>
         public Java.Text.CollationElementIterator GetCollationElementIterator(Java.Text.CharacterIterator arg0)
         {
-            return IExecuteWithSignature<Java.Text.CollationElementIterator>("getCollationElementIterator", "(Ljava/text/CharacterIterator;)Ljava/text/CollationElementIterator;", arg0);
+            return IExecute<Java.Text.CollationElementIterator>("getCollationElementIterator", arg0);
         }
 
         #endregion

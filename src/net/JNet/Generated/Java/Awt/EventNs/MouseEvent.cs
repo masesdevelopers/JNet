@@ -226,7 +226,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetMouseModifiersText(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getMouseModifiersText", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getMouseModifiersText", arg0);
         }
 
         #endregion
@@ -237,56 +237,56 @@ namespace Java.Awt.EventNs
         /// </summary>
         public int Button
         {
-            get { return IExecuteWithSignature<int>("getButton", "()I"); }
+            get { return IExecute<int>("getButton"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#getClickCount()"/> 
         /// </summary>
         public int ClickCount
         {
-            get { return IExecuteWithSignature<int>("getClickCount", "()I"); }
+            get { return IExecute<int>("getClickCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#getLocationOnScreen()"/> 
         /// </summary>
         public Java.Awt.Point LocationOnScreen
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getLocationOnScreen", "()Ljava/awt/Point;"); }
+            get { return IExecute<Java.Awt.Point>("getLocationOnScreen"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#getPoint()"/> 
         /// </summary>
         public Java.Awt.Point Point
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getPoint", "()Ljava/awt/Point;"); }
+            get { return IExecute<Java.Awt.Point>("getPoint"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#getX()"/> 
         /// </summary>
         public int X
         {
-            get { return IExecuteWithSignature<int>("getX", "()I"); }
+            get { return IExecute<int>("getX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#getXOnScreen()"/> 
         /// </summary>
         public int XOnScreen
         {
-            get { return IExecuteWithSignature<int>("getXOnScreen", "()I"); }
+            get { return IExecute<int>("getXOnScreen"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#getY()"/> 
         /// </summary>
         public int Y
         {
-            get { return IExecuteWithSignature<int>("getY", "()I"); }
+            get { return IExecute<int>("getY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#getYOnScreen()"/> 
         /// </summary>
         public int YOnScreen
         {
-            get { return IExecuteWithSignature<int>("getYOnScreen", "()I"); }
+            get { return IExecute<int>("getYOnScreen"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#isPopupTrigger()"/>
@@ -294,7 +294,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="bool"/></returns>
         public bool IsPopupTrigger()
         {
-            return IExecuteWithSignature<bool>("isPopupTrigger", "()Z");
+            return IExecute<bool>("isPopupTrigger");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#translatePoint(int,int)"/>

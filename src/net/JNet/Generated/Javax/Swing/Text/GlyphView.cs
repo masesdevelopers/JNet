@@ -158,35 +158,35 @@ namespace Javax.Swing.Text
         /// </summary>
         public Java.Awt.Color Background
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getBackground", "()Ljava/awt/Color;"); }
+            get { return IExecute<Java.Awt.Color>("getBackground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getFont()"/> 
         /// </summary>
         public Java.Awt.Font Font
         {
-            get { return IExecuteWithSignature<Java.Awt.Font>("getFont", "()Ljava/awt/Font;"); }
+            get { return IExecute<Java.Awt.Font>("getFont"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getForeground()"/> 
         /// </summary>
         public Java.Awt.Color Foreground
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getForeground", "()Ljava/awt/Color;"); }
+            get { return IExecute<Java.Awt.Color>("getForeground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getGlyphPainter()"/> 
         /// </summary>
         public Javax.Swing.Text.GlyphView.GlyphPainter GetGlyphPainter
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.GlyphView.GlyphPainter>("getGlyphPainter", "()Ljavax/swing/text/GlyphView$GlyphPainter;"); }
+            get { return IExecute<Javax.Swing.Text.GlyphView.GlyphPainter>("getGlyphPainter"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getTabExpander()"/> 
         /// </summary>
         public Javax.Swing.Text.TabExpander TabExpander
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.TabExpander>("getTabExpander", "()Ljavax/swing/text/TabExpander;"); }
+            get { return IExecute<Javax.Swing.Text.TabExpander>("getTabExpander"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isStrikeThrough()"/>
@@ -194,7 +194,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsStrikeThrough()
         {
-            return IExecuteWithSignature<bool>("isStrikeThrough", "()Z");
+            return IExecute<bool>("isStrikeThrough");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isSubscript()"/>
@@ -202,7 +202,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsSubscript()
         {
-            return IExecuteWithSignature<bool>("isSubscript", "()Z");
+            return IExecute<bool>("isSubscript");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isSuperscript()"/>
@@ -210,7 +210,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsSuperscript()
         {
-            return IExecuteWithSignature<bool>("isSuperscript", "()Z");
+            return IExecute<bool>("isSuperscript");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isUnderline()"/>
@@ -218,7 +218,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsUnderline()
         {
-            return IExecuteWithSignature<bool>("isUnderline", "()Z");
+            return IExecute<bool>("isUnderline");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getPartialSpan(int,int)"/>
@@ -256,7 +256,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Text.GlyphView.GlyphPainter"/></param>
         public void SetGlyphPainter(Javax.Swing.Text.GlyphView.GlyphPainter arg0)
         {
-            IExecuteWithSignature("setGlyphPainter", "(Ljavax/swing/text/GlyphView$GlyphPainter;)V", arg0);
+            IExecute("setGlyphPainter", arg0);
         }
 
         #endregion
@@ -320,7 +320,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="float"/></returns>
             public float GetSpan(Javax.Swing.Text.GlyphView arg0, int arg1, int arg2, Javax.Swing.Text.TabExpander arg3, float arg4)
             {
-                return IExecute<float>("getSpan", arg0, arg1, arg2, arg3, arg4);
+                return IExecuteWithSignature<float>("getSpan", "(Ljavax/swing/text/GlyphView;IILjavax/swing/text/TabExpander;F)F", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#getBoundedPosition(javax.swing.text.GlyphView,int,float,float)"/>
@@ -332,7 +332,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="int"/></returns>
             public int GetBoundedPosition(Javax.Swing.Text.GlyphView arg0, int arg1, float arg2, float arg3)
             {
-                return IExecute<int>("getBoundedPosition", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<int>("getBoundedPosition", "(Ljavax/swing/text/GlyphView;IFF)I", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#viewToModel(javax.swing.text.GlyphView,float,float,java.awt.Shape,javax.swing.text.Position.Bias[])"/>
@@ -345,7 +345,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="int"/></returns>
             public int ViewToModel(Javax.Swing.Text.GlyphView arg0, float arg1, float arg2, Java.Awt.Shape arg3, Javax.Swing.Text.Position.Bias[] arg4)
             {
-                return IExecute<int>("viewToModel", arg0, arg1, arg2, arg3, arg4);
+                return IExecuteWithSignature<int>("viewToModel", "(Ljavax/swing/text/GlyphView;FFLjava/awt/Shape;[Ljavax/swing/text/Position$Bias;)I", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#modelToView(javax.swing.text.GlyphView,int,javax.swing.text.Position.Bias,java.awt.Shape)"/>
@@ -358,7 +358,7 @@ namespace Javax.Swing.Text
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public Java.Awt.Shape ModelToView(Javax.Swing.Text.GlyphView arg0, int arg1, Javax.Swing.Text.Position.Bias arg2, Java.Awt.Shape arg3)
             {
-                return IExecute<Java.Awt.Shape>("modelToView", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Java.Awt.Shape>("modelToView", "(Ljavax/swing/text/GlyphView;ILjavax/swing/text/Position$Bias;Ljava/awt/Shape;)Ljava/awt/Shape;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#paint(javax.swing.text.GlyphView,java.awt.Graphics,java.awt.Shape,int,int)"/>
@@ -370,7 +370,7 @@ namespace Javax.Swing.Text
             /// <param name="arg4"><see cref="int"/></param>
             public void Paint(Javax.Swing.Text.GlyphView arg0, Java.Awt.Graphics arg1, Java.Awt.Shape arg2, int arg3, int arg4)
             {
-                IExecute("paint", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("paint", "(Ljavax/swing/text/GlyphView;Ljava/awt/Graphics;Ljava/awt/Shape;II)V", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#getNextVisualPositionFrom(javax.swing.text.GlyphView,int,javax.swing.text.Position.Bias,java.awt.Shape,int,javax.swing.text.Position.Bias[])"/>
@@ -385,7 +385,7 @@ namespace Javax.Swing.Text
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public int GetNextVisualPositionFrom(Javax.Swing.Text.GlyphView arg0, int arg1, Javax.Swing.Text.Position.Bias arg2, Java.Awt.Shape arg3, int arg4, Javax.Swing.Text.Position.Bias[] arg5)
             {
-                return IExecute<int>("getNextVisualPositionFrom", arg0, arg1, arg2, arg3, arg4, arg5);
+                return IExecuteWithSignature<int>("getNextVisualPositionFrom", "(Ljavax/swing/text/GlyphView;ILjavax/swing/text/Position$Bias;Ljava/awt/Shape;I[Ljavax/swing/text/Position$Bias;)I", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#getPainter(javax.swing.text.GlyphView,int,int)"/>
@@ -396,7 +396,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Text.GlyphView.GlyphPainter"/></returns>
             public Javax.Swing.Text.GlyphView.GlyphPainter GetPainter(Javax.Swing.Text.GlyphView arg0, int arg1, int arg2)
             {
-                return IExecute<Javax.Swing.Text.GlyphView.GlyphPainter>("getPainter", arg0, arg1, arg2);
+                return IExecuteWithSignature<Javax.Swing.Text.GlyphView.GlyphPainter>("getPainter", "(Ljavax/swing/text/GlyphView;II)Ljavax/swing/text/GlyphView$GlyphPainter;", arg0, arg1, arg2);
             }
 
             #endregion

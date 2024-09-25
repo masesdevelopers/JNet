@@ -147,7 +147,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Connection Build()
         {
-            return IExecuteWithSignature<Java.Sql.Connection>("build", "()Ljava/sql/Connection;");
+            return IExecute<Java.Sql.Connection>("build");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#password(java.lang.String)"/>
@@ -156,7 +156,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
         public Java.Sql.ConnectionBuilder Password(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.ConnectionBuilder>("password", "(Ljava/lang/String;)Ljava/sql/ConnectionBuilder;", arg0);
+            return IExecute<Java.Sql.ConnectionBuilder>("password", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#shardingKey(java.sql.ShardingKey)"/>
@@ -165,7 +165,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
         public Java.Sql.ConnectionBuilder ShardingKey(Java.Sql.ShardingKey arg0)
         {
-            return IExecuteWithSignature<Java.Sql.ConnectionBuilder>("shardingKey", "(Ljava/sql/ShardingKey;)Ljava/sql/ConnectionBuilder;", arg0);
+            return IExecute<Java.Sql.ConnectionBuilder>("shardingKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#superShardingKey(java.sql.ShardingKey)"/>
@@ -174,7 +174,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
         public Java.Sql.ConnectionBuilder SuperShardingKey(Java.Sql.ShardingKey arg0)
         {
-            return IExecuteWithSignature<Java.Sql.ConnectionBuilder>("superShardingKey", "(Ljava/sql/ShardingKey;)Ljava/sql/ConnectionBuilder;", arg0);
+            return IExecute<Java.Sql.ConnectionBuilder>("superShardingKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#user(java.lang.String)"/>
@@ -183,7 +183,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
         public Java.Sql.ConnectionBuilder User(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.ConnectionBuilder>("user", "(Ljava/lang/String;)Ljava/sql/ConnectionBuilder;", arg0);
+            return IExecute<Java.Sql.ConnectionBuilder>("user", arg0);
         }
 
         #endregion

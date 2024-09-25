@@ -254,28 +254,28 @@ namespace Javax.Swing
         /// </summary>
         public int FocusLostBehavior
         {
-            get { return IExecuteWithSignature<int>("getFocusLostBehavior", "()I"); } set { IExecuteWithSignature("setFocusLostBehavior", "(I)V", value); }
+            get { return IExecute<int>("getFocusLostBehavior"); } set { IExecute("setFocusLostBehavior", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#getFormatter()"/> 
         /// </summary>
         public Javax.Swing.JFormattedTextField.AbstractFormatter Formatter
         {
-            get { return IExecuteWithSignature<Javax.Swing.JFormattedTextField.AbstractFormatter>("getFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"); }
+            get { return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatter>("getFormatter"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#getFormatterFactory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#setFormatterFactory(javax.swing.JFormattedTextField.AbstractFormatterFactory)"/>
         /// </summary>
         public Javax.Swing.JFormattedTextField.AbstractFormatterFactory FormatterFactory
         {
-            get { return IExecuteWithSignature<Javax.Swing.JFormattedTextField.AbstractFormatterFactory>("getFormatterFactory", "()Ljavax/swing/JFormattedTextField$AbstractFormatterFactory;"); } set { IExecuteWithSignature("setFormatterFactory", "(Ljavax/swing/JFormattedTextField$AbstractFormatterFactory;)V", value); }
+            get { return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatterFactory>("getFormatterFactory"); } set { IExecute("setFormatterFactory", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#setValue(java.lang.Object)"/>
         /// </summary>
         public object Value
         {
-            get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#isEditValid()"/>
@@ -283,7 +283,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsEditValid()
         {
-            return IExecuteWithSignature<bool>("isEditValid", "()Z");
+            return IExecute<bool>("isEditValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#commitEdit()"/>
@@ -291,7 +291,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Text.ParseException"/>
         public void CommitEdit()
         {
-            IExecuteWithSignature("commitEdit", "()V");
+            IExecute("commitEdit");
         }
 
         #endregion
@@ -390,7 +390,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></returns>
             public Javax.Swing.JFormattedTextField.AbstractFormatter GetFormatter(Javax.Swing.JFormattedTextField arg0)
             {
-                return IExecuteWithSignature<Javax.Swing.JFormattedTextField.AbstractFormatter>("getFormatter", "(Ljavax/swing/JFormattedTextField;)Ljavax/swing/JFormattedTextField$AbstractFormatter;", arg0);
+                return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatter>("getFormatter", arg0);
             }
 
             #endregion

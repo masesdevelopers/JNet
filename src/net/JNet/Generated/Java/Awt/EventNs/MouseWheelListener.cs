@@ -204,7 +204,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelEvent"/></param>
         public override void MouseWheelMoved(Java.Awt.EventNs.MouseWheelEvent arg0)
         {
-            IExecuteWithSignature("mouseWheelMoved", "(Ljava/awt/event/MouseWheelEvent;)V", arg0);
+            IExecute("mouseWheelMoved", arg0);
         }
 
         #endregion

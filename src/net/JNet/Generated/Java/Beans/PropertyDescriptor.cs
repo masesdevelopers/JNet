@@ -128,28 +128,28 @@ namespace Java.Beans
         /// </summary>
         public Java.Lang.Class PropertyEditorClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getPropertyEditorClass", "()Ljava/lang/Class;"); } set { IExecuteWithSignature("setPropertyEditorClass", "(Ljava/lang/Class;)V", value); }
+            get { return IExecute<Java.Lang.Class>("getPropertyEditorClass"); } set { IExecute("setPropertyEditorClass", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#getPropertyType()"/> 
         /// </summary>
         public Java.Lang.Class PropertyType
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getPropertyType", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getPropertyType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#getReadMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setReadMethod(java.lang.reflect.Method)"/>
         /// </summary>
         public Java.Lang.Reflect.Method ReadMethod
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Method>("getReadMethod", "()Ljava/lang/reflect/Method;"); } set { IExecuteWithSignature("setReadMethod", "(Ljava/lang/reflect/Method;)V", value); }
+            get { return IExecute<Java.Lang.Reflect.Method>("getReadMethod"); } set { IExecute("setReadMethod", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#getWriteMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setWriteMethod(java.lang.reflect.Method)"/>
         /// </summary>
         public Java.Lang.Reflect.Method WriteMethod
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Method>("getWriteMethod", "()Ljava/lang/reflect/Method;"); } set { IExecuteWithSignature("setWriteMethod", "(Ljava/lang/reflect/Method;)V", value); }
+            get { return IExecute<Java.Lang.Reflect.Method>("getWriteMethod"); } set { IExecute("setWriteMethod", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#isBound()"/>
@@ -157,7 +157,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool IsBound()
         {
-            return IExecuteWithSignature<bool>("isBound", "()Z");
+            return IExecute<bool>("isBound");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#isConstrained()"/>
@@ -165,7 +165,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool IsConstrained()
         {
-            return IExecuteWithSignature<bool>("isConstrained", "()Z");
+            return IExecute<bool>("isConstrained");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#createPropertyEditor(java.lang.Object)"/>
@@ -174,7 +174,7 @@ namespace Java.Beans
         /// <returns><see cref="Java.Beans.PropertyEditor"/></returns>
         public Java.Beans.PropertyEditor CreatePropertyEditor(object arg0)
         {
-            return IExecuteWithSignature<Java.Beans.PropertyEditor>("createPropertyEditor", "(Ljava/lang/Object;)Ljava/beans/PropertyEditor;", arg0);
+            return IExecute<Java.Beans.PropertyEditor>("createPropertyEditor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setBound(boolean)"/>
@@ -182,7 +182,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetBound(bool arg0)
         {
-            IExecuteWithSignature("setBound", "(Z)V", arg0);
+            IExecute("setBound", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setConstrained(boolean)"/>
@@ -190,7 +190,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetConstrained(bool arg0)
         {
-            IExecuteWithSignature("setConstrained", "(Z)V", arg0);
+            IExecute("setConstrained", arg0);
         }
 
         #endregion

@@ -234,7 +234,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
         public override void ChildrenAdded(Java.Beans.Beancontext.BeanContextMembershipEvent arg0)
         {
-            IExecuteWithSignature("childrenAdded", "(Ljava/beans/beancontext/BeanContextMembershipEvent;)V", arg0);
+            IExecute("childrenAdded", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenRemoved(java.beans.beancontext.BeanContextMembershipEvent)"/>
@@ -242,7 +242,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
         public override void ChildrenRemoved(Java.Beans.Beancontext.BeanContextMembershipEvent arg0)
         {
-            IExecuteWithSignature("childrenRemoved", "(Ljava/beans/beancontext/BeanContextMembershipEvent;)V", arg0);
+            IExecute("childrenRemoved", arg0);
         }
 
         #endregion

@@ -172,21 +172,21 @@ namespace Java.Text
         /// </summary>
         public int BaseLevel
         {
-            get { return IExecuteWithSignature<int>("getBaseLevel", "()I"); }
+            get { return IExecute<int>("getBaseLevel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getLength()"/> 
         /// </summary>
         public int Length
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            get { return IExecute<int>("getLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunCount()"/> 
         /// </summary>
         public int RunCount
         {
-            get { return IExecuteWithSignature<int>("getRunCount", "()I"); }
+            get { return IExecute<int>("getRunCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#baseIsLeftToRight()"/>
@@ -194,7 +194,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public bool BaseIsLeftToRight()
         {
-            return IExecuteWithSignature<bool>("baseIsLeftToRight", "()Z");
+            return IExecute<bool>("baseIsLeftToRight");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isLeftToRight()"/>
@@ -202,7 +202,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsLeftToRight()
         {
-            return IExecuteWithSignature<bool>("isLeftToRight", "()Z");
+            return IExecute<bool>("isLeftToRight");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isMixed()"/>
@@ -210,7 +210,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsMixed()
         {
-            return IExecuteWithSignature<bool>("isMixed", "()Z");
+            return IExecute<bool>("isMixed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isRightToLeft()"/>
@@ -218,7 +218,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsRightToLeft()
         {
-            return IExecuteWithSignature<bool>("isRightToLeft", "()Z");
+            return IExecute<bool>("isRightToLeft");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getLevelAt(int)"/>
@@ -227,7 +227,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int GetLevelAt(int arg0)
         {
-            return IExecuteWithSignature<int>("getLevelAt", "(I)I", arg0);
+            return IExecute<int>("getLevelAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunLevel(int)"/>
@@ -236,7 +236,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int GetRunLevel(int arg0)
         {
-            return IExecuteWithSignature<int>("getRunLevel", "(I)I", arg0);
+            return IExecute<int>("getRunLevel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunLimit(int)"/>
@@ -245,7 +245,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int GetRunLimit(int arg0)
         {
-            return IExecuteWithSignature<int>("getRunLimit", "(I)I", arg0);
+            return IExecute<int>("getRunLimit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunStart(int)"/>
@@ -254,7 +254,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int GetRunStart(int arg0)
         {
-            return IExecuteWithSignature<int>("getRunStart", "(I)I", arg0);
+            return IExecute<int>("getRunStart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#createLineBidi(int,int)"/>

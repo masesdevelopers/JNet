@@ -127,21 +127,21 @@ namespace Org.W3c.Dom.Ls
         /// </summary>
         public Org.W3c.Dom.Ls.LSInput Input
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Ls.LSInput>("getInput", "()Lorg/w3c/dom/ls/LSInput;"); }
+            get { return IExecute<Org.W3c.Dom.Ls.LSInput>("getInput"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html#getPosition()"/> 
         /// </summary>
         public int Position
         {
-            get { return IExecuteWithSignature<int>("getPosition", "()I"); }
+            get { return IExecute<int>("getPosition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html#getTotalSize()"/> 
         /// </summary>
         public int TotalSize
         {
-            get { return IExecuteWithSignature<int>("getTotalSize", "()I"); }
+            get { return IExecute<int>("getTotalSize"); }
         }
 
         #endregion

@@ -204,7 +204,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
         public override void TableChanged(Javax.Swing.Event.TableModelEvent arg0)
         {
-            IExecuteWithSignature("tableChanged", "(Ljavax/swing/event/TableModelEvent;)V", arg0);
+            IExecute("tableChanged", arg0);
         }
 
         #endregion

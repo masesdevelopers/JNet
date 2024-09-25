@@ -104,7 +104,7 @@ namespace Java.Awt
         /// </summary>
         public int AutoDelay
         {
-            get { return IExecuteWithSignature<int>("getAutoDelay", "()I"); } set { IExecuteWithSignature("setAutoDelay", "(I)V", value); }
+            get { return IExecute<int>("getAutoDelay"); } set { IExecute("setAutoDelay", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#isAutoWaitForIdle()"/>
@@ -112,7 +112,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsAutoWaitForIdle()
         {
-            return IExecuteWithSignature<bool>("isAutoWaitForIdle", "()Z");
+            return IExecute<bool>("isAutoWaitForIdle");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#getPixelColor(int,int)"/>
@@ -131,7 +131,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage CreateScreenCapture(Java.Awt.Rectangle arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("createScreenCapture", "(Ljava/awt/Rectangle;)Ljava/awt/image/BufferedImage;", arg0);
+            return IExecute<Java.Awt.ImageNs.BufferedImage>("createScreenCapture", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#createMultiResolutionScreenCapture(java.awt.Rectangle)"/>
@@ -140,7 +140,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.ImageNs.MultiResolutionImage"/></returns>
         public Java.Awt.ImageNs.MultiResolutionImage CreateMultiResolutionScreenCapture(Java.Awt.Rectangle arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.MultiResolutionImage>("createMultiResolutionScreenCapture", "(Ljava/awt/Rectangle;)Ljava/awt/image/MultiResolutionImage;", arg0);
+            return IExecute<Java.Awt.ImageNs.MultiResolutionImage>("createMultiResolutionScreenCapture", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#delay(int)"/>
@@ -148,7 +148,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void Delay(int arg0)
         {
-            IExecuteWithSignature("delay", "(I)V", arg0);
+            IExecute("delay", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#keyPress(int)"/>
@@ -156,7 +156,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void KeyPress(int arg0)
         {
-            IExecuteWithSignature("keyPress", "(I)V", arg0);
+            IExecute("keyPress", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#keyRelease(int)"/>
@@ -164,7 +164,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void KeyRelease(int arg0)
         {
-            IExecuteWithSignature("keyRelease", "(I)V", arg0);
+            IExecute("keyRelease", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#mouseMove(int,int)"/>
@@ -181,7 +181,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void MousePress(int arg0)
         {
-            IExecuteWithSignature("mousePress", "(I)V", arg0);
+            IExecute("mousePress", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#mouseRelease(int)"/>
@@ -189,7 +189,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void MouseRelease(int arg0)
         {
-            IExecuteWithSignature("mouseRelease", "(I)V", arg0);
+            IExecute("mouseRelease", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#mouseWheel(int)"/>
@@ -197,7 +197,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void MouseWheel(int arg0)
         {
-            IExecuteWithSignature("mouseWheel", "(I)V", arg0);
+            IExecute("mouseWheel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#setAutoWaitForIdle(boolean)"/>
@@ -205,14 +205,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetAutoWaitForIdle(bool arg0)
         {
-            IExecuteWithSignature("setAutoWaitForIdle", "(Z)V", arg0);
+            IExecute("setAutoWaitForIdle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#waitForIdle()"/>
         /// </summary>
         public void WaitForIdle()
         {
-            IExecuteWithSignature("waitForIdle", "()V");
+            IExecute("waitForIdle");
         }
 
         #endregion

@@ -133,21 +133,21 @@ namespace Javax.Crypto.Interfaces
         /// </summary>
         public int IterationCount
         {
-            get { return IExecuteWithSignature<int>("getIterationCount", "()I"); }
+            get { return IExecute<int>("getIterationCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#getPassword()"/> 
         /// </summary>
         public char[] Password
         {
-            get { return IExecuteWithSignatureArray<char>("getPassword", "()[C"); }
+            get { return IExecuteArray<char>("getPassword"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#getSalt()"/> 
         /// </summary>
         public byte[] Salt
         {
-            get { return IExecuteWithSignatureArray<byte>("getSalt", "()[B"); }
+            get { return IExecuteArray<byte>("getSalt"); }
         }
 
         #endregion

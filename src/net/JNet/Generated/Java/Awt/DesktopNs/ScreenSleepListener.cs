@@ -234,7 +234,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.ScreenSleepEvent"/></param>
         public override void ScreenAboutToSleep(Java.Awt.DesktopNs.ScreenSleepEvent arg0)
         {
-            IExecuteWithSignature("screenAboutToSleep", "(Ljava/awt/desktop/ScreenSleepEvent;)V", arg0);
+            IExecute("screenAboutToSleep", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAwoke(java.awt.desktop.ScreenSleepEvent)"/>
@@ -242,7 +242,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.ScreenSleepEvent"/></param>
         public override void ScreenAwoke(Java.Awt.DesktopNs.ScreenSleepEvent arg0)
         {
-            IExecuteWithSignature("screenAwoke", "(Ljava/awt/desktop/ScreenSleepEvent;)V", arg0);
+            IExecute("screenAwoke", arg0);
         }
 
         #endregion

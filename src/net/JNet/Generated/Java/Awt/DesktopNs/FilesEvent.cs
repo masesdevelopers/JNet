@@ -95,7 +95,7 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         public Java.Util.List<Java.Io.File> Files
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Io.File>>("getFiles", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Java.Io.File>>("getFiles"); }
         }
 
         #endregion

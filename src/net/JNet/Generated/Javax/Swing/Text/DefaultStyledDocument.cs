@@ -257,7 +257,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public Java.Util.Enumeration<object> StyleNames
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<object>>("getStyleNames", "()Ljava/util/Enumeration;"); }
+            get { return IExecute<Java.Util.Enumeration<object>>("getStyleNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getBackground(javax.swing.text.AttributeSet)"/>
@@ -266,7 +266,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetBackground(Javax.Swing.Text.AttributeSet arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Color>("getBackground", "(Ljavax/swing/text/AttributeSet;)Ljava/awt/Color;", arg0);
+            return IExecute<Java.Awt.Color>("getBackground", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getForeground(javax.swing.text.AttributeSet)"/>
@@ -275,7 +275,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetForeground(Javax.Swing.Text.AttributeSet arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Color>("getForeground", "(Ljavax/swing/text/AttributeSet;)Ljava/awt/Color;", arg0);
+            return IExecute<Java.Awt.Color>("getForeground", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getFont(javax.swing.text.AttributeSet)"/>
@@ -284,7 +284,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font GetFont(Javax.Swing.Text.AttributeSet arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Font>("getFont", "(Ljavax/swing/text/AttributeSet;)Ljava/awt/Font;", arg0);
+            return IExecute<Java.Awt.Font>("getFont", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getCharacterElement(int)"/>
@@ -293,7 +293,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetCharacterElement(int arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Element>("getCharacterElement", "(I)Ljavax/swing/text/Element;", arg0);
+            return IExecute<Javax.Swing.Text.Element>("getCharacterElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#addStyle(java.lang.String,javax.swing.text.Style)"/>
@@ -312,7 +312,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetLogicalStyle(int arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Style>("getLogicalStyle", "(I)Ljavax/swing/text/Style;", arg0);
+            return IExecute<Javax.Swing.Text.Style>("getLogicalStyle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getStyle(java.lang.String)"/>
@@ -321,7 +321,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetStyle(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Style>("getStyle", "(Ljava/lang/String;)Ljavax/swing/text/Style;", arg0);
+            return IExecute<Javax.Swing.Text.Style>("getStyle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#removeElement(javax.swing.text.Element)"/>
@@ -329,7 +329,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
         public void RemoveElement(Javax.Swing.Text.Element arg0)
         {
-            IExecuteWithSignature("removeElement", "(Ljavax/swing/text/Element;)V", arg0);
+            IExecute("removeElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#removeStyle(java.lang.String)"/>
@@ -337,7 +337,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void RemoveStyle(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("removeStyle", "(Ljava/lang/String;)V", arg0);
+            IExecute("removeStyle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#setCharacterAttributes(int,int,javax.swing.text.AttributeSet,boolean)"/>
@@ -449,7 +449,7 @@ namespace Javax.Swing.Text
             /// </summary>
             public Javax.Swing.Text.Element RootElement
             {
-                get { return IExecuteWithSignature<Javax.Swing.Text.Element>("getRootElement", "()Ljavax/swing/text/Element;"); }
+                get { return IExecute<Javax.Swing.Text.Element>("getRootElement"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#clone(javax.swing.text.Element,javax.swing.text.Element)"/>
@@ -601,42 +601,42 @@ namespace Javax.Swing.Text
             /// </summary>
             public char[] Array
             {
-                get { return IExecuteWithSignatureArray<char>("getArray", "()[C"); }
+                get { return IExecuteArray<char>("getArray"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getAttributes()"/> 
             /// </summary>
             public Javax.Swing.Text.AttributeSet Attributes
             {
-                get { return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getAttributes", "()Ljavax/swing/text/AttributeSet;"); }
+                get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getDirection()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#setDirection(short)"/>
             /// </summary>
             public short Direction
             {
-                get { return IExecuteWithSignature<short>("getDirection", "()S"); } set { IExecuteWithSignature("setDirection", "(S)V", value); }
+                get { return IExecute<short>("getDirection"); } set { IExecute("setDirection", value); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getLength()"/> 
             /// </summary>
             public int Length
             {
-                get { return IExecuteWithSignature<int>("getLength", "()I"); }
+                get { return IExecute<int>("getLength"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getOffset()"/> 
             /// </summary>
             public int Offset
             {
-                get { return IExecuteWithSignature<int>("getOffset", "()I"); }
+                get { return IExecute<int>("getOffset"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#setType(short)"/>
             /// </summary>
             public short Type
             {
-                get { return IExecuteWithSignature<short>("getType", "()S"); } set { IExecuteWithSignature("setType", "(S)V", value); }
+                get { return IExecute<short>("getType"); } set { IExecute("setType", value); }
             }
 
             #endregion

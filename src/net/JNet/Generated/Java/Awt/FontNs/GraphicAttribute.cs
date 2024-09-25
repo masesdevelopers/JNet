@@ -127,42 +127,42 @@ namespace Java.Awt.FontNs
         /// </summary>
         public float Advance
         {
-            get { return IExecuteWithSignature<float>("getAdvance", "()F"); }
+            get { return IExecute<float>("getAdvance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getAlignment()"/> 
         /// </summary>
         public int Alignment
         {
-            get { return IExecuteWithSignature<int>("getAlignment", "()I"); }
+            get { return IExecute<int>("getAlignment"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getAscent()"/> 
         /// </summary>
         public float Ascent
         {
-            get { return IExecuteWithSignature<float>("getAscent", "()F"); }
+            get { return IExecute<float>("getAscent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getBounds()"/> 
         /// </summary>
         public Java.Awt.Geom.Rectangle2D Bounds
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getBounds", "()Ljava/awt/geom/Rectangle2D;"); }
+            get { return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getDescent()"/> 
         /// </summary>
         public float Descent
         {
-            get { return IExecuteWithSignature<float>("getDescent", "()F"); }
+            get { return IExecute<float>("getDescent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getJustificationInfo()"/> 
         /// </summary>
         public Java.Awt.FontNs.GlyphJustificationInfo JustificationInfo
         {
-            get { return IExecuteWithSignature<Java.Awt.FontNs.GlyphJustificationInfo>("getJustificationInfo", "()Ljava/awt/font/GlyphJustificationInfo;"); }
+            get { return IExecute<Java.Awt.FontNs.GlyphJustificationInfo>("getJustificationInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#draw(java.awt.Graphics2D,float,float)"/>
@@ -181,7 +181,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetOutline(Java.Awt.Geom.AffineTransform arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Shape>("getOutline", "(Ljava/awt/geom/AffineTransform;)Ljava/awt/Shape;", arg0);
+            return IExecute<Java.Awt.Shape>("getOutline", arg0);
         }
 
         #endregion

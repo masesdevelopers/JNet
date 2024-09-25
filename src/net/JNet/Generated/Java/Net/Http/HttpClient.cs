@@ -256,7 +256,7 @@ namespace Java.Net.Http
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Net.Http.HttpResponse<T> Send<T>(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler<T> arg1)
         {
-            return IExecute<Java.Net.Http.HttpResponse<T>>("send", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.Http.HttpResponse<T>>("send", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/net/http/HttpResponse;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler,java.net.http.HttpResponse.PushPromiseHandler)"/>
@@ -268,7 +268,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>> SendAsync<T>(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler<T> arg1, Java.Net.Http.HttpResponse.PushPromiseHandler<T> arg2)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>>>("sendAsync", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>>>("sendAsync", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;Ljava/net/http/HttpResponse$PushPromiseHandler;)Ljava/util/concurrent/CompletableFuture;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler)"/>
@@ -279,7 +279,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>> SendAsync<T>(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler<T> arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>>>("sendAsync", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>>>("sendAsync", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#followRedirects()"/>
@@ -541,7 +541,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpClient.Redirect"/></returns>
             public static Java.Net.Http.HttpClient.Redirect ValueOf(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpClient.Redirect>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/net/http/HttpClient$Redirect;", arg0);
+                return SExecute<Java.Net.Http.HttpClient.Redirect>(LocalBridgeClazz, "valueOf", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#values()"/>
@@ -549,7 +549,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpClient.Redirect"/></returns>
             public static Java.Net.Http.HttpClient.Redirect[] Values()
             {
-                return SExecuteWithSignatureArray<Java.Net.Http.HttpClient.Redirect>(LocalBridgeClazz, "values", "()[Ljava/net/http/HttpClient$Redirect;");
+                return SExecuteArray<Java.Net.Http.HttpClient.Redirect>(LocalBridgeClazz, "values");
             }
 
             #endregion
@@ -601,7 +601,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
             public static Java.Net.Http.HttpClient.Version ValueOf(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpClient.Version>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/net/http/HttpClient$Version;", arg0);
+                return SExecute<Java.Net.Http.HttpClient.Version>(LocalBridgeClazz, "valueOf", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#values()"/>
@@ -609,7 +609,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
             public static Java.Net.Http.HttpClient.Version[] Values()
             {
-                return SExecuteWithSignatureArray<Java.Net.Http.HttpClient.Version>(LocalBridgeClazz, "values", "()[Ljava/net/http/HttpClient$Version;");
+                return SExecuteArray<Java.Net.Http.HttpClient.Version>(LocalBridgeClazz, "values");
             }
 
             #endregion

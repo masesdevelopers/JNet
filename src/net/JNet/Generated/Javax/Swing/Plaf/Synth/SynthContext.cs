@@ -106,28 +106,28 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         public Javax.Swing.JComponent Component
         {
-            get { return IExecuteWithSignature<Javax.Swing.JComponent>("getComponent", "()Ljavax/swing/JComponent;"); }
+            get { return IExecute<Javax.Swing.JComponent>("getComponent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthContext.html#getComponentState()"/> 
         /// </summary>
         public int ComponentState
         {
-            get { return IExecuteWithSignature<int>("getComponentState", "()I"); }
+            get { return IExecute<int>("getComponentState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthContext.html#getRegion()"/> 
         /// </summary>
         public Javax.Swing.Plaf.Synth.Region Region
         {
-            get { return IExecuteWithSignature<Javax.Swing.Plaf.Synth.Region>("getRegion", "()Ljavax/swing/plaf/synth/Region;"); }
+            get { return IExecute<Javax.Swing.Plaf.Synth.Region>("getRegion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthContext.html#getStyle()"/> 
         /// </summary>
         public Javax.Swing.Plaf.Synth.SynthStyle Style
         {
-            get { return IExecuteWithSignature<Javax.Swing.Plaf.Synth.SynthStyle>("getStyle", "()Ljavax/swing/plaf/synth/SynthStyle;"); }
+            get { return IExecute<Javax.Swing.Plaf.Synth.SynthStyle>("getStyle"); }
         }
 
         #endregion

@@ -123,14 +123,14 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         public Java.Lang.String Data
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/ProcessingInstruction.html#getTarget()"/> 
         /// </summary>
         public Java.Lang.String Target
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTarget", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTarget"); }
         }
 
         #endregion

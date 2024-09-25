@@ -165,7 +165,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.GregorianCalendar"/></returns>
         public static Java.Util.GregorianCalendar From(Java.Time.ZonedDateTime arg0)
         {
-            return SExecuteWithSignature<Java.Util.GregorianCalendar>(LocalBridgeClazz, "from", "(Ljava/time/ZonedDateTime;)Ljava/util/GregorianCalendar;", arg0);
+            return SExecute<Java.Util.GregorianCalendar>(LocalBridgeClazz, "from", arg0);
         }
 
         #endregion
@@ -176,7 +176,7 @@ namespace Java.Util
         /// </summary>
         public Java.Util.Date GregorianChange
         {
-            get { return IExecuteWithSignature<Java.Util.Date>("getGregorianChange", "()Ljava/util/Date;"); } set { IExecuteWithSignature("setGregorianChange", "(Ljava/util/Date;)V", value); }
+            get { return IExecute<Java.Util.Date>("getGregorianChange"); } set { IExecute("setGregorianChange", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#isLeapYear(int)"/>
@@ -185,7 +185,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsLeapYear(int arg0)
         {
-            return IExecuteWithSignature<bool>("isLeapYear", "(I)Z", arg0);
+            return IExecute<bool>("isLeapYear", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#toZonedDateTime()"/>
@@ -193,7 +193,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime ToZonedDateTime()
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("toZonedDateTime", "()Ljava/time/ZonedDateTime;");
+            return IExecute<Java.Time.ZonedDateTime>("toZonedDateTime");
         }
 
         #endregion

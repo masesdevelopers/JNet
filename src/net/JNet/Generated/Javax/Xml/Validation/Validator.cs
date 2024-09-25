@@ -97,21 +97,21 @@ namespace Javax.Xml.Validation
         /// </summary>
         public Org.Xml.Sax.ErrorHandler ErrorHandler
         {
-            get { return IExecuteWithSignature<Org.Xml.Sax.ErrorHandler>("getErrorHandler", "()Lorg/xml/sax/ErrorHandler;"); } set { IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", value); }
+            get { return IExecute<Org.Xml.Sax.ErrorHandler>("getErrorHandler"); } set { IExecute("setErrorHandler", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#getResourceResolver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#setResourceResolver(org.w3c.dom.ls.LSResourceResolver)"/>
         /// </summary>
         public Org.W3c.Dom.Ls.LSResourceResolver ResourceResolver
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Ls.LSResourceResolver>("getResourceResolver", "()Lorg/w3c/dom/ls/LSResourceResolver;"); } set { IExecuteWithSignature("setResourceResolver", "(Lorg/w3c/dom/ls/LSResourceResolver;)V", value); }
+            get { return IExecute<Org.W3c.Dom.Ls.LSResourceResolver>("getResourceResolver"); } set { IExecute("setResourceResolver", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#validate(javax.xml.transform.Source,javax.xml.transform.Result)"/>
@@ -133,7 +133,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public bool GetFeature(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("getFeature", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#getProperty(java.lang.String)"/>
@@ -144,7 +144,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#setFeature(java.lang.String,boolean)"/>
@@ -176,7 +176,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Java.Io.IOException"/>
         public void Validate(Javax.Xml.Transform.Source arg0)
         {
-            IExecuteWithSignature("validate", "(Ljavax/xml/transform/Source;)V", arg0);
+            IExecute("validate", arg0);
         }
 
         #endregion

@@ -112,14 +112,14 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public char[] Password
         {
-            get { return IExecuteWithSignatureArray<char>("getPassword", "()[C"); } set { IExecuteWithSignature("setPassword", "([C)V", value); }
+            get { return IExecuteArray<char>("getPassword"); } set { IExecute("setPassword", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#getPrompt()"/> 
         /// </summary>
         public Java.Lang.String Prompt
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrompt", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPrompt"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#isEchoOn()"/>
@@ -127,14 +127,14 @@ namespace Javax.Security.Auth.Callback
         /// <returns><see cref="bool"/></returns>
         public bool IsEchoOn()
         {
-            return IExecuteWithSignature<bool>("isEchoOn", "()Z");
+            return IExecute<bool>("isEchoOn");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#clearPassword()"/>
         /// </summary>
         public void ClearPassword()
         {
-            IExecuteWithSignature("clearPassword", "()V");
+            IExecute("clearPassword");
         }
 
         #endregion

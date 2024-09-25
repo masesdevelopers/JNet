@@ -95,7 +95,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="bool"/></returns>
         public static bool IsSupported(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSupported", "(Ljava/lang/String;)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#defaultCharset()"/>
@@ -103,7 +103,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
         public static Java.Nio.Charset.Charset DefaultCharset()
         {
-            return SExecuteWithSignature<Java.Nio.Charset.Charset>(LocalBridgeClazz, "defaultCharset", "()Ljava/nio/charset/Charset;");
+            return SExecute<Java.Nio.Charset.Charset>(LocalBridgeClazz, "defaultCharset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#forName(java.lang.String)"/>
@@ -112,7 +112,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
         public static Java.Nio.Charset.Charset ForName(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Nio.Charset.Charset>(LocalBridgeClazz, "forName", "(Ljava/lang/String;)Ljava/nio/charset/Charset;", arg0);
+            return SExecute<Java.Nio.Charset.Charset>(LocalBridgeClazz, "forName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#availableCharsets()"/>
@@ -120,7 +120,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public static Java.Util.SortedMap<Java.Lang.String, Java.Nio.Charset.Charset> AvailableCharsets()
         {
-            return SExecuteWithSignature<Java.Util.SortedMap<Java.Lang.String, Java.Nio.Charset.Charset>>(LocalBridgeClazz, "availableCharsets", "()Ljava/util/SortedMap;");
+            return SExecute<Java.Util.SortedMap<Java.Lang.String, Java.Nio.Charset.Charset>>(LocalBridgeClazz, "availableCharsets");
         }
 
         #endregion
@@ -133,7 +133,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Nio.Charset.Charset arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/nio/charset/Charset;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#newDecoder()"/>
@@ -141,7 +141,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
         public Java.Nio.Charset.CharsetDecoder NewDecoder()
         {
-            return IExecuteWithSignature<Java.Nio.Charset.CharsetDecoder>("newDecoder", "()Ljava/nio/charset/CharsetDecoder;");
+            return IExecute<Java.Nio.Charset.CharsetDecoder>("newDecoder");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#newEncoder()"/>
@@ -149,7 +149,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CharsetEncoder"/></returns>
         public Java.Nio.Charset.CharsetEncoder NewEncoder()
         {
-            return IExecuteWithSignature<Java.Nio.Charset.CharsetEncoder>("newEncoder", "()Ljava/nio/charset/CharsetEncoder;");
+            return IExecute<Java.Nio.Charset.CharsetEncoder>("newEncoder");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#canEncode()"/>
@@ -157,7 +157,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="bool"/></returns>
         public bool CanEncode()
         {
-            return IExecuteWithSignature<bool>("canEncode", "()Z");
+            return IExecute<bool>("canEncode");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#isRegistered()"/>
@@ -165,7 +165,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="bool"/></returns>
         public bool IsRegistered()
         {
-            return IExecuteWithSignature<bool>("isRegistered", "()Z");
+            return IExecute<bool>("isRegistered");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#compareTo(java.nio.charset.Charset)"/>
@@ -174,7 +174,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Nio.Charset.Charset arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/charset/Charset;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#name()"/>
@@ -182,7 +182,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#encode(java.lang.String)"/>
@@ -191,7 +191,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer Encode(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Nio.ByteBuffer>("encode", "(Ljava/lang/String;)Ljava/nio/ByteBuffer;", arg0);
+            return IExecute<Java.Nio.ByteBuffer>("encode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#encode(java.nio.CharBuffer)"/>
@@ -200,7 +200,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer Encode(Java.Nio.CharBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Nio.ByteBuffer>("encode", "(Ljava/nio/CharBuffer;)Ljava/nio/ByteBuffer;", arg0);
+            return IExecute<Java.Nio.ByteBuffer>("encode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#decode(java.nio.ByteBuffer)"/>
@@ -209,7 +209,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Decode(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Nio.CharBuffer>("decode", "(Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer;", arg0);
+            return IExecute<Java.Nio.CharBuffer>("decode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#aliases()"/>
@@ -217,7 +217,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> Aliases()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("aliases", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Lang.String>>("aliases");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#compareTo(java.lang.Object)"/>
@@ -226,7 +226,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#displayName()"/>
@@ -234,7 +234,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String DisplayName()
         {
-            return IExecuteWithSignature<Java.Lang.String>("displayName", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("displayName");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#displayName(java.util.Locale)"/>
@@ -243,7 +243,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String DisplayName(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("displayName", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("displayName", arg0);
         }
 
         #endregion

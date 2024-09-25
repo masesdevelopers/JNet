@@ -159,7 +159,7 @@ namespace Java.Io
         /// </summary>
         public Java.Io.ObjectInputFilter ObjectInputFilter
         {
-            get { return IExecuteWithSignature<Java.Io.ObjectInputFilter>("getObjectInputFilter", "()Ljava/io/ObjectInputFilter;"); } set { IExecuteWithSignature("setObjectInputFilter", "(Ljava/io/ObjectInputFilter;)V", value); }
+            get { return IExecute<Java.Io.ObjectInputFilter>("getObjectInputFilter"); } set { IExecute("setObjectInputFilter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readBoolean()"/>
@@ -168,7 +168,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public bool ReadBoolean()
         {
-            return IExecuteWithSignature<bool>("readBoolean", "()Z");
+            return IExecute<bool>("readBoolean");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readByte()"/>
@@ -177,7 +177,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public byte ReadByte()
         {
-            return IExecuteWithSignature<byte>("readByte", "()B");
+            return IExecute<byte>("readByte");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readChar()"/>
@@ -186,7 +186,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public char ReadChar()
         {
-            return IExecuteWithSignature<char>("readChar", "()C");
+            return IExecute<char>("readChar");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readDouble()"/>
@@ -195,7 +195,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public double ReadDouble()
         {
-            return IExecuteWithSignature<double>("readDouble", "()D");
+            return IExecute<double>("readDouble");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readObject()"/>
@@ -205,7 +205,7 @@ namespace Java.Io
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public object ReadObject()
         {
-            return IExecuteWithSignature("readObject", "()Ljava/lang/Object;");
+            return IExecute("readObject");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFloat()"/>
@@ -214,7 +214,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public float ReadFloat()
         {
-            return IExecuteWithSignature<float>("readFloat", "()F");
+            return IExecute<float>("readFloat");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readInt()"/>
@@ -223,7 +223,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int ReadInt()
         {
-            return IExecuteWithSignature<int>("readInt", "()I");
+            return IExecute<int>("readInt");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUnsignedByte()"/>
@@ -232,7 +232,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int ReadUnsignedByte()
         {
-            return IExecuteWithSignature<int>("readUnsignedByte", "()I");
+            return IExecute<int>("readUnsignedByte");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUnsignedShort()"/>
@@ -241,7 +241,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int ReadUnsignedShort()
         {
-            return IExecuteWithSignature<int>("readUnsignedShort", "()I");
+            return IExecute<int>("readUnsignedShort");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#skipBytes(int)"/>
@@ -251,7 +251,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int SkipBytes(int arg0)
         {
-            return IExecuteWithSignature<int>("skipBytes", "(I)I", arg0);
+            return IExecute<int>("skipBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFields()"/>
@@ -261,7 +261,7 @@ namespace Java.Io
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public Java.Io.ObjectInputStream.GetField ReadFields()
         {
-            return IExecuteWithSignature<Java.Io.ObjectInputStream.GetField>("readFields", "()Ljava/io/ObjectInputStream$GetField;");
+            return IExecute<Java.Io.ObjectInputStream.GetField>("readFields");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUnshared()"/>
@@ -271,7 +271,7 @@ namespace Java.Io
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public object ReadUnshared()
         {
-            return IExecuteWithSignature("readUnshared", "()Ljava/lang/Object;");
+            return IExecute("readUnshared");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUTF()"/>
@@ -280,7 +280,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String ReadUTF()
         {
-            return IExecuteWithSignature<Java.Lang.String>("readUTF", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("readUTF");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readLong()"/>
@@ -289,7 +289,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public long ReadLong()
         {
-            return IExecuteWithSignature<long>("readLong", "()J");
+            return IExecute<long>("readLong");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readShort()"/>
@@ -298,7 +298,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public short ReadShort()
         {
-            return IExecuteWithSignature<short>("readShort", "()S");
+            return IExecute<short>("readShort");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#defaultReadObject()"/>
@@ -307,7 +307,7 @@ namespace Java.Io
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public void DefaultReadObject()
         {
-            IExecuteWithSignature("defaultReadObject", "()V");
+            IExecute("defaultReadObject");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFully(byte[],int,int)"/>
@@ -327,7 +327,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0)
         {
-            IExecuteWithSignature("readFully", "([B)V", new object[] { arg0 });
+            IExecute("readFully", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#registerValidation(java.io.ObjectInputValidation,int)"/>
@@ -390,7 +390,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public bool Get(Java.Lang.String arg0, bool arg1)
             {
-                return IExecute<bool>("get", arg0, arg1);
+                return IExecuteWithSignature<bool>("get", "(Ljava/lang/String;Z)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,byte)"/>
@@ -401,7 +401,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public byte Get(Java.Lang.String arg0, byte arg1)
             {
-                return IExecute<byte>("get", arg0, arg1);
+                return IExecuteWithSignature<byte>("get", "(Ljava/lang/String;B)B", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,char)"/>
@@ -412,7 +412,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public char Get(Java.Lang.String arg0, char arg1)
             {
-                return IExecute<char>("get", arg0, arg1);
+                return IExecuteWithSignature<char>("get", "(Ljava/lang/String;C)C", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,double)"/>
@@ -423,7 +423,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public double Get(Java.Lang.String arg0, double arg1)
             {
-                return IExecute<double>("get", arg0, arg1);
+                return IExecuteWithSignature<double>("get", "(Ljava/lang/String;D)D", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,float)"/>
@@ -434,7 +434,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public float Get(Java.Lang.String arg0, float arg1)
             {
-                return IExecute<float>("get", arg0, arg1);
+                return IExecuteWithSignature<float>("get", "(Ljava/lang/String;F)F", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,int)"/>
@@ -445,7 +445,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public int Get(Java.Lang.String arg0, int arg1)
             {
-                return IExecute<int>("get", arg0, arg1);
+                return IExecuteWithSignature<int>("get", "(Ljava/lang/String;I)I", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,java.lang.Object)"/>
@@ -456,7 +456,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public object Get(Java.Lang.String arg0, object arg1)
             {
-                return IExecute("get", arg0, arg1);
+                return IExecuteWithSignature("get", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,long)"/>
@@ -467,7 +467,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public long Get(Java.Lang.String arg0, long arg1)
             {
-                return IExecute<long>("get", arg0, arg1);
+                return IExecuteWithSignature<long>("get", "(Ljava/lang/String;J)J", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,short)"/>
@@ -478,7 +478,7 @@ namespace Java.Io
             /// <exception cref="Java.Io.IOException"/>
             public short Get(Java.Lang.String arg0, short arg1)
             {
-                return IExecute<short>("get", arg0, arg1);
+                return IExecuteWithSignature<short>("get", "(Ljava/lang/String;S)S", arg0, arg1);
             }
 
             #endregion

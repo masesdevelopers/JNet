@@ -145,7 +145,7 @@ namespace Javax.Swing
         /// </summary>
         public object SelectedItem
         {
-            get { return IExecuteWithSignature("getSelectedItem", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setSelectedItem", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getSelectedItem"); } set { IExecute("setSelectedItem", value); }
         }
 
         #endregion
@@ -209,7 +209,7 @@ namespace Javax.Swing
         /// </summary>
         public object SelectedItem
         {
-            get { return IExecuteWithSignature("getSelectedItem", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setSelectedItem", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getSelectedItem"); } set { IExecute("setSelectedItem", value); }
         }
 
         #endregion

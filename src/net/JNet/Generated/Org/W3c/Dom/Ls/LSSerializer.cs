@@ -151,21 +151,21 @@ namespace Org.W3c.Dom.Ls
         /// </summary>
         public Org.W3c.Dom.DOMConfiguration DomConfig
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DOMConfiguration>("getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;"); }
+            get { return IExecute<Org.W3c.Dom.DOMConfiguration>("getDomConfig"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#getFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#setFilter(org.w3c.dom.ls.LSSerializerFilter)"/>
         /// </summary>
         public Org.W3c.Dom.Ls.LSSerializerFilter Filter
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Ls.LSSerializerFilter>("getFilter", "()Lorg/w3c/dom/ls/LSSerializerFilter;"); } set { IExecuteWithSignature("setFilter", "(Lorg/w3c/dom/ls/LSSerializerFilter;)V", value); }
+            get { return IExecute<Org.W3c.Dom.Ls.LSSerializerFilter>("getFilter"); } set { IExecute("setFilter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#getNewLine()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#setNewLine(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String NewLine
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNewLine", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setNewLine", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getNewLine"); } set { IExecute("setNewLine", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#write(org.w3c.dom.Node,org.w3c.dom.ls.LSOutput)"/>
@@ -198,7 +198,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public Java.Lang.String WriteToString(Org.W3c.Dom.Node arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("writeToString", "(Lorg/w3c/dom/Node;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("writeToString", arg0);
         }
 
         #endregion

@@ -137,21 +137,21 @@ namespace Java.Lang.Management
         /// </summary>
         public int LoadedClassCount
         {
-            get { return IExecuteWithSignature<int>("getLoadedClassCount", "()I"); }
+            get { return IExecute<int>("getLoadedClassCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#getTotalLoadedClassCount()"/> 
         /// </summary>
         public long TotalLoadedClassCount
         {
-            get { return IExecuteWithSignature<long>("getTotalLoadedClassCount", "()J"); }
+            get { return IExecute<long>("getTotalLoadedClassCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#getUnloadedClassCount()"/> 
         /// </summary>
         public long UnloadedClassCount
         {
-            get { return IExecuteWithSignature<long>("getUnloadedClassCount", "()J"); }
+            get { return IExecute<long>("getUnloadedClassCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#isVerbose()"/>
@@ -159,7 +159,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsVerbose()
         {
-            return IExecuteWithSignature<bool>("isVerbose", "()Z");
+            return IExecute<bool>("isVerbose");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#setVerbose(boolean)"/>
@@ -167,7 +167,7 @@ namespace Java.Lang.Management
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetVerbose(bool arg0)
         {
-            IExecuteWithSignature("setVerbose", "(Z)V", arg0);
+            IExecute("setVerbose", arg0);
         }
 
         #endregion

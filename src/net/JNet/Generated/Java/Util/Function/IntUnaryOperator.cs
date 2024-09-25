@@ -151,7 +151,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.IntUnaryOperator Identity()
         {
-            return SExecuteWithSignature<Java.Util.Function.IntUnaryOperator>(LocalBridgeClazz, "identity", "()Ljava/util/function/IntUnaryOperator;");
+            return SExecute<Java.Util.Function.IntUnaryOperator>(LocalBridgeClazz, "identity");
         }
 
         #endregion
@@ -200,7 +200,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.IntUnaryOperator AndThenDefault(Java.Util.Function.IntUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.IntUnaryOperator>("andThenDefault", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;", arg0);
+            return IExecute<Java.Util.Function.IntUnaryOperator>("andThenDefault", arg0);
         }
 
         /// <summary>
@@ -236,7 +236,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.IntUnaryOperator ComposeDefault(Java.Util.Function.IntUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.IntUnaryOperator>("composeDefault", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;", arg0);
+            return IExecute<Java.Util.Function.IntUnaryOperator>("composeDefault", arg0);
         }
 
         /// <summary>
@@ -302,7 +302,7 @@ namespace Java.Util.Function
         /// <returns><see cref="int"/></returns>
         public override int ApplyAsInt(int arg0)
         {
-            return IExecuteWithSignature<int>("applyAsInt", "(I)I", arg0);
+            return IExecute<int>("applyAsInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
@@ -311,7 +311,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
         public override Java.Util.Function.IntUnaryOperator AndThen(Java.Util.Function.IntUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.IntUnaryOperatorDirect, Java.Util.Function.IntUnaryOperator>("andThen", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;", arg0);
+            return IExecute<Java.Util.Function.IntUnaryOperatorDirect, Java.Util.Function.IntUnaryOperator>("andThen", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
@@ -320,7 +320,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
         public override Java.Util.Function.IntUnaryOperator Compose(Java.Util.Function.IntUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.IntUnaryOperatorDirect, Java.Util.Function.IntUnaryOperator>("compose", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;", arg0);
+            return IExecute<Java.Util.Function.IntUnaryOperatorDirect, Java.Util.Function.IntUnaryOperator>("compose", arg0);
         }
 
         #endregion

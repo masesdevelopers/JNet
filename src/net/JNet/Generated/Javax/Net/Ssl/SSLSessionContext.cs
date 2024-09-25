@@ -133,21 +133,21 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Util.Enumeration<byte[]> Ids
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<byte[]>>("getIds", "()Ljava/util/Enumeration;"); }
+            get { return IExecute<Java.Util.Enumeration<byte[]>>("getIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSessionCacheSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)"/>
         /// </summary>
         public int SessionCacheSize
         {
-            get { return IExecuteWithSignature<int>("getSessionCacheSize", "()I"); } set { IExecuteWithSignature("setSessionCacheSize", "(I)V", value); }
+            get { return IExecute<int>("getSessionCacheSize"); } set { IExecute("setSessionCacheSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSessionTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionTimeout(int)"/>
         /// </summary>
         public int SessionTimeout
         {
-            get { return IExecuteWithSignature<int>("getSessionTimeout", "()I"); } set { IExecuteWithSignature("setSessionTimeout", "(I)V", value); }
+            get { return IExecute<int>("getSessionTimeout"); } set { IExecute("setSessionTimeout", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSession(byte[])"/>
@@ -156,7 +156,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
         public Javax.Net.Ssl.SSLSession GetSession(byte[] arg0)
         {
-            return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getSession", "([B)Ljavax/net/ssl/SSLSession;", new object[] { arg0 });
+            return IExecute<Javax.Net.Ssl.SSLSession>("getSession", new object[] { arg0 });
         }
 
         #endregion

@@ -97,14 +97,14 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public Java.Awt.BufferCapabilities Capabilities
         {
-            get { return IExecuteWithSignature<Java.Awt.BufferCapabilities>("getCapabilities", "()Ljava/awt/BufferCapabilities;"); }
+            get { return IExecute<Java.Awt.BufferCapabilities>("getCapabilities"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#getDrawGraphics()"/> 
         /// </summary>
         public Java.Awt.Graphics DrawGraphics
         {
-            get { return IExecuteWithSignature<Java.Awt.Graphics>("getDrawGraphics", "()Ljava/awt/Graphics;"); }
+            get { return IExecute<Java.Awt.Graphics>("getDrawGraphics"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#contentsLost()"/>
@@ -112,7 +112,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool ContentsLost()
         {
-            return IExecuteWithSignature<bool>("contentsLost", "()Z");
+            return IExecute<bool>("contentsLost");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#contentsRestored()"/>
@@ -120,21 +120,21 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool ContentsRestored()
         {
-            return IExecuteWithSignature<bool>("contentsRestored", "()Z");
+            return IExecute<bool>("contentsRestored");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#show()"/>
         /// </summary>
         public void Show()
         {
-            IExecuteWithSignature("show", "()V");
+            IExecute("show");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#dispose()"/>
         /// </summary>
         public new void Dispose()
         {
-            IExecuteWithSignature("dispose", "()V");
+            IExecute("dispose");
         }
 
         #endregion

@@ -178,7 +178,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class ForName(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "forName", "(Ljava/lang/String;)Ljava/lang/Class;", arg0);
+            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0);
         }
 
         #endregion
@@ -189,7 +189,7 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType[] AnnotatedInterfaces
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedInterfaces", "()[Ljava/lang/reflect/AnnotatedType;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedInterfaces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getAnnotatedSuperclass()"/> 
@@ -203,126 +203,126 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.Annotation.Annotation[] Annotations
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
+            get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getAnnotations"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getCanonicalName()"/> 
         /// </summary>
         public Java.Lang.String CanonicalName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCanonicalName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCanonicalName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getClasses()"/> 
         /// </summary>
         public Java.Lang.Class[] Classes
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getClasses", "()[Ljava/lang/Class;"); }
+            get { return IExecuteArray<Java.Lang.Class>("getClasses"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getClassLoader()"/> 
         /// </summary>
         public Java.Lang.ClassLoader ClassLoader
         {
-            get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;"); }
+            get { return IExecute<Java.Lang.ClassLoader>("getClassLoader"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getComponentType()"/> 
         /// </summary>
         public Java.Lang.Class ComponentType
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getComponentType", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getComponentType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getConstructors()"/> 
         /// </summary>
         public Java.Lang.Reflect.Constructor[] Constructors
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Constructor>("getConstructors", "()[Ljava/lang/reflect/Constructor;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Constructor>("getConstructors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredAnnotations()"/> 
         /// </summary>
         public Java.Lang.Annotation.Annotation[] DeclaredAnnotations
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
+            get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredClasses()"/> 
         /// </summary>
         public Java.Lang.Class[] DeclaredClasses
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getDeclaredClasses", "()[Ljava/lang/Class;"); }
+            get { return IExecuteArray<Java.Lang.Class>("getDeclaredClasses"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructors()"/> 
         /// </summary>
         public Java.Lang.Reflect.Constructor[] DeclaredConstructors
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Constructor>("getDeclaredConstructors", "()[Ljava/lang/reflect/Constructor;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Constructor>("getDeclaredConstructors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredFields()"/> 
         /// </summary>
         public Java.Lang.Reflect.Field[] DeclaredFields
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getDeclaredFields", "()[Ljava/lang/reflect/Field;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Field>("getDeclaredFields"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredMethods()"/> 
         /// </summary>
         public Java.Lang.Reflect.Method[] DeclaredMethods
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Method>("getDeclaredMethods", "()[Ljava/lang/reflect/Method;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Method>("getDeclaredMethods"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaringClass()"/> 
         /// </summary>
         public Java.Lang.Class DeclaringClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnclosingClass()"/> 
         /// </summary>
         public Java.Lang.Class EnclosingClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getEnclosingClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getEnclosingClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnclosingConstructor()"/> 
         /// </summary>
         public Java.Lang.Reflect.Constructor EnclosingConstructor
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getEnclosingConstructor", "()Ljava/lang/reflect/Constructor;"); }
+            get { return IExecute<Java.Lang.Reflect.Constructor>("getEnclosingConstructor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnclosingMethod()"/> 
         /// </summary>
         public Java.Lang.Reflect.Method EnclosingMethod
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Method>("getEnclosingMethod", "()Ljava/lang/reflect/Method;"); }
+            get { return IExecute<Java.Lang.Reflect.Method>("getEnclosingMethod"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnumConstants()"/> 
         /// </summary>
         public object[] EnumConstants
         {
-            get { return IExecuteWithSignatureArray<object>("getEnumConstants", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getEnumConstants"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getFields()"/> 
         /// </summary>
         public Java.Lang.Reflect.Field[] Fields
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getFields", "()[Ljava/lang/reflect/Field;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Field>("getFields"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getGenericInterfaces()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type[] GenericInterfaces
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getGenericInterfaces", "()[Ljava/lang/reflect/Type;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Type>("getGenericInterfaces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getGenericSuperclass()"/> 
@@ -336,84 +336,84 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.Class[] Interfaces
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getInterfaces", "()[Ljava/lang/Class;"); }
+            get { return IExecuteArray<Java.Lang.Class>("getInterfaces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getMethods()"/> 
         /// </summary>
         public Java.Lang.Reflect.Method[] Methods
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Method>("getMethods", "()[Ljava/lang/reflect/Method;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Method>("getMethods"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers
         {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
+            get { return IExecute<int>("getModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getModule()"/> 
         /// </summary>
         public Java.Lang.Module Module
         {
-            get { return IExecuteWithSignature<Java.Lang.Module>("getModule", "()Ljava/lang/Module;"); }
+            get { return IExecute<Java.Lang.Module>("getModule"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getNestHost()"/> 
         /// </summary>
         public Java.Lang.Class NestHost
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getNestHost", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getNestHost"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getNestMembers()"/> 
         /// </summary>
         public Java.Lang.Class[] NestMembers
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getNestMembers", "()[Ljava/lang/Class;"); }
+            get { return IExecuteArray<Java.Lang.Class>("getNestMembers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getPackage()"/> 
         /// </summary>
         public Java.Lang.Package Package
         {
-            get { return IExecuteWithSignature<Java.Lang.Package>("getPackage", "()Ljava/lang/Package;"); }
+            get { return IExecute<Java.Lang.Package>("getPackage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getPackageName()"/> 
         /// </summary>
         public Java.Lang.String PackageName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPackageName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getProtectionDomain()"/> 
         /// </summary>
         public Java.Security.ProtectionDomain ProtectionDomain
         {
-            get { return IExecuteWithSignature<Java.Security.ProtectionDomain>("getProtectionDomain", "()Ljava/security/ProtectionDomain;"); }
+            get { return IExecute<Java.Security.ProtectionDomain>("getProtectionDomain"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getSigners()"/> 
         /// </summary>
         public object[] Signers
         {
-            get { return IExecuteWithSignatureArray<object>("getSigners", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getSigners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getSimpleName()"/> 
         /// </summary>
         public Java.Lang.String SimpleName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSimpleName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSimpleName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getSuperclass()"/> 
@@ -427,14 +427,14 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.String TypeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getTypeParameters()"/> 
         /// </summary>
         public Java.Lang.Reflect.TypeVariable[] TypeParameters
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getAnnotation(java.lang.Class)"/>
@@ -487,7 +487,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool DesiredAssertionStatus()
         {
-            return IExecuteWithSignature<bool>("desiredAssertionStatus", "()Z");
+            return IExecute<bool>("desiredAssertionStatus");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotation()"/>
@@ -495,7 +495,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsAnnotation()
         {
-            return IExecuteWithSignature<bool>("isAnnotation", "()Z");
+            return IExecute<bool>("isAnnotation");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotationPresent(java.lang.Class)"/>
@@ -504,7 +504,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsAnnotationPresent(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<bool>("isAnnotationPresent", "(Ljava/lang/Class;)Z", arg0);
+            return IExecute<bool>("isAnnotationPresent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnonymousClass()"/>
@@ -512,7 +512,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsAnonymousClass()
         {
-            return IExecuteWithSignature<bool>("isAnonymousClass", "()Z");
+            return IExecute<bool>("isAnonymousClass");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isEnum()"/>
@@ -520,7 +520,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsEnum()
         {
-            return IExecuteWithSignature<bool>("isEnum", "()Z");
+            return IExecute<bool>("isEnum");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isLocalClass()"/>
@@ -528,7 +528,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsLocalClass()
         {
-            return IExecuteWithSignature<bool>("isLocalClass", "()Z");
+            return IExecute<bool>("isLocalClass");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isMemberClass()"/>
@@ -536,7 +536,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsMemberClass()
         {
-            return IExecuteWithSignature<bool>("isMemberClass", "()Z");
+            return IExecute<bool>("isMemberClass");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isNestmateOf(java.lang.Class)"/>
@@ -545,7 +545,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsNestmateOf(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<bool>("isNestmateOf", "(Ljava/lang/Class;)Z", arg0);
+            return IExecute<bool>("isNestmateOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isSynthetic()"/>
@@ -553,7 +553,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
         {
-            return IExecuteWithSignature<bool>("isSynthetic", "()Z");
+            return IExecute<bool>("isSynthetic");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getResourceAsStream(java.lang.String)"/>
@@ -562,7 +562,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public Java.Io.InputStream GetResourceAsStream(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Io.InputStream>("getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
+            return IExecute<Java.Io.InputStream>("getResourceAsStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getConstructor(java.lang.Class[])"/>
@@ -573,7 +573,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Constructor GetConstructor(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor>("getConstructor"); else return IExecute<Java.Lang.Reflect.Constructor>("getConstructor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])"/>
@@ -584,7 +584,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Constructor GetDeclaredConstructor(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor>("getDeclaredConstructor"); else return IExecute<Java.Lang.Reflect.Constructor>("getDeclaredConstructor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredField(java.lang.String)"/>
@@ -595,7 +595,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Field GetDeclaredField(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Reflect.Field>("getDeclaredField", "(Ljava/lang/String;)Ljava/lang/reflect/Field;", arg0);
+            return IExecute<Java.Lang.Reflect.Field>("getDeclaredField", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getField(java.lang.String)"/>
@@ -606,7 +606,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Field GetField(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Reflect.Field>("getField", "(Ljava/lang/String;)Ljava/lang/reflect/Field;", arg0);
+            return IExecute<Java.Lang.Reflect.Field>("getField", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class[])"/>
@@ -638,7 +638,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToGenericString()
         {
-            return IExecuteWithSignature<Java.Lang.String>("toGenericString", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("toGenericString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getResource(java.lang.String)"/>
@@ -647,7 +647,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Net.URL"/></returns>
         public Java.Net.URL GetResource(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Net.URL>("getResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
+            return IExecute<Java.Net.URL>("getResource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isArray()"/>
@@ -655,7 +655,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsArray()
         {
-            return IExecuteWithSignature<bool>("isArray", "()Z");
+            return IExecute<bool>("isArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAssignableFrom(java.lang.Class)"/>
@@ -664,7 +664,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsAssignableFrom(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<bool>("isAssignableFrom", "(Ljava/lang/Class;)Z", arg0);
+            return IExecute<bool>("isAssignableFrom", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isInstance(java.lang.Object)"/>
@@ -673,7 +673,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsInstance(object arg0)
         {
-            return IExecuteWithSignature<bool>("isInstance", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("isInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isInterface()"/>
@@ -681,7 +681,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsInterface()
         {
-            return IExecuteWithSignature<bool>("isInterface", "()Z");
+            return IExecute<bool>("isInterface");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isPrimitive()"/>
@@ -689,7 +689,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsPrimitive()
         {
-            return IExecuteWithSignature<bool>("isPrimitive", "()Z");
+            return IExecute<bool>("isPrimitive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#cast(java.lang.Object)"/>
@@ -698,7 +698,7 @@ namespace Java.Lang
         /// <returns><see cref="object"/></returns>
         public object Cast(object arg0)
         {
-            return IExecuteWithSignature("cast", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("cast", arg0);
         }
 
         #endregion
@@ -777,7 +777,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class ForName(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "forName", "(Ljava/lang/String;)Ljava/lang/Class;", arg0);
+            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0);
         }
 
         #endregion
@@ -788,7 +788,7 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType[] AnnotatedInterfaces
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedInterfaces", "()[Ljava/lang/reflect/AnnotatedType;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedInterfaces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getAnnotatedSuperclass()"/> 
@@ -802,126 +802,126 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.Annotation.Annotation[] Annotations
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
+            get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getAnnotations"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getCanonicalName()"/> 
         /// </summary>
         public Java.Lang.String CanonicalName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCanonicalName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCanonicalName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getClasses()"/> 
         /// </summary>
         public Java.Lang.Class[] Classes
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getClasses", "()[Ljava/lang/Class;"); }
+            get { return IExecuteArray<Java.Lang.Class>("getClasses"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getClassLoader()"/> 
         /// </summary>
         public Java.Lang.ClassLoader ClassLoader
         {
-            get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;"); }
+            get { return IExecute<Java.Lang.ClassLoader>("getClassLoader"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getComponentType()"/> 
         /// </summary>
         public Java.Lang.Class ComponentType
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getComponentType", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getComponentType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getConstructors()"/> 
         /// </summary>
         public Java.Lang.Reflect.Constructor<object>[] Constructors
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Constructor<object>>("getConstructors", "()[Ljava/lang/reflect/Constructor;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Constructor<object>>("getConstructors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredAnnotations()"/> 
         /// </summary>
         public Java.Lang.Annotation.Annotation[] DeclaredAnnotations
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
+            get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredClasses()"/> 
         /// </summary>
         public Java.Lang.Class[] DeclaredClasses
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getDeclaredClasses", "()[Ljava/lang/Class;"); }
+            get { return IExecuteArray<Java.Lang.Class>("getDeclaredClasses"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructors()"/> 
         /// </summary>
         public Java.Lang.Reflect.Constructor<object>[] DeclaredConstructors
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Constructor<object>>("getDeclaredConstructors", "()[Ljava/lang/reflect/Constructor;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Constructor<object>>("getDeclaredConstructors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredFields()"/> 
         /// </summary>
         public Java.Lang.Reflect.Field[] DeclaredFields
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getDeclaredFields", "()[Ljava/lang/reflect/Field;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Field>("getDeclaredFields"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredMethods()"/> 
         /// </summary>
         public Java.Lang.Reflect.Method[] DeclaredMethods
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Method>("getDeclaredMethods", "()[Ljava/lang/reflect/Method;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Method>("getDeclaredMethods"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaringClass()"/> 
         /// </summary>
         public Java.Lang.Class DeclaringClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnclosingClass()"/> 
         /// </summary>
         public Java.Lang.Class EnclosingClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getEnclosingClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getEnclosingClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnclosingConstructor()"/> 
         /// </summary>
         public Java.Lang.Reflect.Constructor<object> EnclosingConstructor
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Constructor<object>>("getEnclosingConstructor", "()Ljava/lang/reflect/Constructor;"); }
+            get { return IExecute<Java.Lang.Reflect.Constructor<object>>("getEnclosingConstructor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnclosingMethod()"/> 
         /// </summary>
         public Java.Lang.Reflect.Method EnclosingMethod
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Method>("getEnclosingMethod", "()Ljava/lang/reflect/Method;"); }
+            get { return IExecute<Java.Lang.Reflect.Method>("getEnclosingMethod"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnumConstants()"/> 
         /// </summary>
         public T[] EnumConstants
         {
-            get { return IExecuteWithSignatureArray<T>("getEnumConstants", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<T>("getEnumConstants"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getFields()"/> 
         /// </summary>
         public Java.Lang.Reflect.Field[] Fields
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Field>("getFields", "()[Ljava/lang/reflect/Field;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Field>("getFields"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getGenericInterfaces()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type[] GenericInterfaces
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getGenericInterfaces", "()[Ljava/lang/reflect/Type;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Type>("getGenericInterfaces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getGenericSuperclass()"/> 
@@ -935,84 +935,84 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.Class[] Interfaces
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getInterfaces", "()[Ljava/lang/Class;"); }
+            get { return IExecuteArray<Java.Lang.Class>("getInterfaces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getMethods()"/> 
         /// </summary>
         public Java.Lang.Reflect.Method[] Methods
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Method>("getMethods", "()[Ljava/lang/reflect/Method;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Method>("getMethods"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers
         {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
+            get { return IExecute<int>("getModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getModule()"/> 
         /// </summary>
         public Java.Lang.Module Module
         {
-            get { return IExecuteWithSignature<Java.Lang.Module>("getModule", "()Ljava/lang/Module;"); }
+            get { return IExecute<Java.Lang.Module>("getModule"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getNestHost()"/> 
         /// </summary>
         public Java.Lang.Class NestHost
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getNestHost", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getNestHost"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getNestMembers()"/> 
         /// </summary>
         public Java.Lang.Class[] NestMembers
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getNestMembers", "()[Ljava/lang/Class;"); }
+            get { return IExecuteArray<Java.Lang.Class>("getNestMembers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getPackage()"/> 
         /// </summary>
         public Java.Lang.Package Package
         {
-            get { return IExecuteWithSignature<Java.Lang.Package>("getPackage", "()Ljava/lang/Package;"); }
+            get { return IExecute<Java.Lang.Package>("getPackage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getPackageName()"/> 
         /// </summary>
         public Java.Lang.String PackageName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPackageName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getProtectionDomain()"/> 
         /// </summary>
         public Java.Security.ProtectionDomain ProtectionDomain
         {
-            get { return IExecuteWithSignature<Java.Security.ProtectionDomain>("getProtectionDomain", "()Ljava/security/ProtectionDomain;"); }
+            get { return IExecute<Java.Security.ProtectionDomain>("getProtectionDomain"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getSigners()"/> 
         /// </summary>
         public object[] Signers
         {
-            get { return IExecuteWithSignatureArray<object>("getSigners", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getSigners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getSimpleName()"/> 
         /// </summary>
         public Java.Lang.String SimpleName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSimpleName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSimpleName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getSuperclass()"/> 
@@ -1026,14 +1026,14 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.String TypeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getTypeParameters()"/> 
         /// </summary>
         public Java.Lang.Reflect.TypeVariable<Java.Lang.Class>[] TypeParameters
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.TypeVariable<Java.Lang.Class>>("getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.TypeVariable<Java.Lang.Class>>("getTypeParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getAnnotation(java.lang.Class)"/>
@@ -1092,7 +1092,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool DesiredAssertionStatus()
         {
-            return IExecuteWithSignature<bool>("desiredAssertionStatus", "()Z");
+            return IExecute<bool>("desiredAssertionStatus");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotation()"/>
@@ -1100,7 +1100,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsAnnotation()
         {
-            return IExecuteWithSignature<bool>("isAnnotation", "()Z");
+            return IExecute<bool>("isAnnotation");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotationPresent(java.lang.Class)"/>
@@ -1109,7 +1109,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsAnnotationPresent(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<bool>("isAnnotationPresent", "(Ljava/lang/Class;)Z", arg0);
+            return IExecute<bool>("isAnnotationPresent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnonymousClass()"/>
@@ -1117,7 +1117,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsAnonymousClass()
         {
-            return IExecuteWithSignature<bool>("isAnonymousClass", "()Z");
+            return IExecute<bool>("isAnonymousClass");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isEnum()"/>
@@ -1125,7 +1125,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsEnum()
         {
-            return IExecuteWithSignature<bool>("isEnum", "()Z");
+            return IExecute<bool>("isEnum");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isLocalClass()"/>
@@ -1133,7 +1133,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsLocalClass()
         {
-            return IExecuteWithSignature<bool>("isLocalClass", "()Z");
+            return IExecute<bool>("isLocalClass");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isMemberClass()"/>
@@ -1141,7 +1141,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsMemberClass()
         {
-            return IExecuteWithSignature<bool>("isMemberClass", "()Z");
+            return IExecute<bool>("isMemberClass");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isNestmateOf(java.lang.Class)"/>
@@ -1150,7 +1150,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsNestmateOf(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<bool>("isNestmateOf", "(Ljava/lang/Class;)Z", arg0);
+            return IExecute<bool>("isNestmateOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isSynthetic()"/>
@@ -1158,7 +1158,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
         {
-            return IExecuteWithSignature<bool>("isSynthetic", "()Z");
+            return IExecute<bool>("isSynthetic");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getResourceAsStream(java.lang.String)"/>
@@ -1167,7 +1167,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public Java.Io.InputStream GetResourceAsStream(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Io.InputStream>("getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
+            return IExecute<Java.Io.InputStream>("getResourceAsStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getConstructor(java.lang.Class[])"/>
@@ -1178,7 +1178,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Constructor<T> GetConstructor(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor<T>>("getConstructor"); else return IExecute<Java.Lang.Reflect.Constructor<T>>("getConstructor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])"/>
@@ -1189,7 +1189,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Constructor<T> GetDeclaredConstructor(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor"); else return IExecute<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredField(java.lang.String)"/>
@@ -1200,7 +1200,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Field GetDeclaredField(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Reflect.Field>("getDeclaredField", "(Ljava/lang/String;)Ljava/lang/reflect/Field;", arg0);
+            return IExecute<Java.Lang.Reflect.Field>("getDeclaredField", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getField(java.lang.String)"/>
@@ -1211,7 +1211,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Field GetField(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Reflect.Field>("getField", "(Ljava/lang/String;)Ljava/lang/reflect/Field;", arg0);
+            return IExecute<Java.Lang.Reflect.Field>("getField", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class[])"/>
@@ -1243,7 +1243,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToGenericString()
         {
-            return IExecuteWithSignature<Java.Lang.String>("toGenericString", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("toGenericString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getResource(java.lang.String)"/>
@@ -1252,7 +1252,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Net.URL"/></returns>
         public Java.Net.URL GetResource(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Net.URL>("getResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
+            return IExecute<Java.Net.URL>("getResource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isArray()"/>
@@ -1260,7 +1260,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsArray()
         {
-            return IExecuteWithSignature<bool>("isArray", "()Z");
+            return IExecute<bool>("isArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAssignableFrom(java.lang.Class)"/>
@@ -1269,7 +1269,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsAssignableFrom(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<bool>("isAssignableFrom", "(Ljava/lang/Class;)Z", arg0);
+            return IExecute<bool>("isAssignableFrom", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isInstance(java.lang.Object)"/>
@@ -1278,7 +1278,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsInstance(object arg0)
         {
-            return IExecuteWithSignature<bool>("isInstance", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("isInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isInterface()"/>
@@ -1286,7 +1286,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsInterface()
         {
-            return IExecuteWithSignature<bool>("isInterface", "()Z");
+            return IExecute<bool>("isInterface");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isPrimitive()"/>
@@ -1294,7 +1294,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsPrimitive()
         {
-            return IExecuteWithSignature<bool>("isPrimitive", "()Z");
+            return IExecute<bool>("isPrimitive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#cast(java.lang.Object)"/>
@@ -1303,7 +1303,7 @@ namespace Java.Lang
         /// <returns><typeparamref name="T"/></returns>
         public T Cast(object arg0)
         {
-            return IExecuteWithSignature<T>("cast", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<T>("cast", arg0);
         }
 
         #endregion

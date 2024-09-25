@@ -146,7 +146,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
@@ -154,7 +154,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="object"/></returns>
         public object Value()
         {
-            return IExecuteWithSignature("value", "()Ljava/lang/Object;");
+            return IExecute("value");
         }
 
         #endregion
@@ -225,7 +225,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
@@ -233,7 +233,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><typeparamref name="T"/></returns>
         public T Value()
         {
-            return IExecuteWithSignature<T>("value", "()Ljava/lang/Object;");
+            return IExecute<T>("value");
         }
 
         #endregion

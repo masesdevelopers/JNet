@@ -140,7 +140,7 @@ namespace Javax.Xml.Catalog
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String MatchPublic(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("matchPublic", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("matchPublic", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#matchSystem(java.lang.String)"/>
@@ -149,7 +149,7 @@ namespace Javax.Xml.Catalog
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String MatchSystem(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("matchSystem", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("matchSystem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#matchURI(java.lang.String)"/>
@@ -158,7 +158,7 @@ namespace Javax.Xml.Catalog
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String MatchURI(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("matchURI", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("matchURI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#catalogs()"/>
@@ -166,7 +166,7 @@ namespace Javax.Xml.Catalog
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Javax.Xml.Catalog.Catalog> Catalogs()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Javax.Xml.Catalog.Catalog>>("catalogs", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream<Javax.Xml.Catalog.Catalog>>("catalogs");
         }
 
         #endregion

@@ -95,70 +95,70 @@ namespace Java.Lang.Invoke
         /// </summary>
         public int CapturedArgCount
         {
-            get { return IExecuteWithSignature<int>("getCapturedArgCount", "()I"); }
+            get { return IExecute<int>("getCapturedArgCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getCapturingClass()"/> 
         /// </summary>
         public Java.Lang.String CapturingClass
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCapturingClass", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCapturingClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getFunctionalInterfaceClass()"/> 
         /// </summary>
         public Java.Lang.String FunctionalInterfaceClass
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFunctionalInterfaceClass", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getFunctionalInterfaceClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getFunctionalInterfaceMethodName()"/> 
         /// </summary>
         public Java.Lang.String FunctionalInterfaceMethodName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFunctionalInterfaceMethodName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getFunctionalInterfaceMethodName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getFunctionalInterfaceMethodSignature()"/> 
         /// </summary>
         public Java.Lang.String FunctionalInterfaceMethodSignature
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFunctionalInterfaceMethodSignature", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getFunctionalInterfaceMethodSignature"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getImplClass()"/> 
         /// </summary>
         public Java.Lang.String ImplClass
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImplClass", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getImplClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getImplMethodKind()"/> 
         /// </summary>
         public int ImplMethodKind
         {
-            get { return IExecuteWithSignature<int>("getImplMethodKind", "()I"); }
+            get { return IExecute<int>("getImplMethodKind"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getImplMethodName()"/> 
         /// </summary>
         public Java.Lang.String ImplMethodName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImplMethodName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getImplMethodName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getImplMethodSignature()"/> 
         /// </summary>
         public Java.Lang.String ImplMethodSignature
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImplMethodSignature", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getImplMethodSignature"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getInstantiatedMethodType()"/> 
         /// </summary>
         public Java.Lang.String InstantiatedMethodType
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInstantiatedMethodType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getInstantiatedMethodType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getCapturedArg(int)"/>
@@ -167,7 +167,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetCapturedArg(int arg0)
         {
-            return IExecuteWithSignature("getCapturedArg", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("getCapturedArg", arg0);
         }
 
         #endregion

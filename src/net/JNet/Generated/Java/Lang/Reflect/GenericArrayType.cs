@@ -119,7 +119,7 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Java.Lang.Reflect.Type GenericComponentType
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getGenericComponentType", "()Ljava/lang/reflect/Type;"); }
+            get { return IExecute<Java.Lang.Reflect.Type>("getGenericComponentType"); }
         }
 
         #endregion

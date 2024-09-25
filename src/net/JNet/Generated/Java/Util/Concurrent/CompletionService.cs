@@ -146,7 +146,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future Poll()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future>("poll", "()Ljava/util/concurrent/Future;");
+            return IExecute<Java.Util.Concurrent.Future>("poll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
@@ -176,7 +176,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future Submit(Java.Util.Concurrent.Callable arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future>("submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;", arg0);
+            return IExecute<Java.Util.Concurrent.Future>("submit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#take()"/>
@@ -185,7 +185,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Util.Concurrent.Future Take()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future>("take", "()Ljava/util/concurrent/Future;");
+            return IExecute<Java.Util.Concurrent.Future>("take");
         }
 
         #endregion
@@ -278,7 +278,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<V> Poll()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("poll", "()Ljava/util/concurrent/Future;");
+            return IExecute<Java.Util.Concurrent.Future<V>>("poll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
@@ -308,7 +308,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<V> Submit(Java.Util.Concurrent.Callable<V> arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;", arg0);
+            return IExecute<Java.Util.Concurrent.Future<V>>("submit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#take()"/>
@@ -317,7 +317,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Util.Concurrent.Future<V> Take()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("take", "()Ljava/util/concurrent/Future;");
+            return IExecute<Java.Util.Concurrent.Future<V>>("take");
         }
 
         #endregion

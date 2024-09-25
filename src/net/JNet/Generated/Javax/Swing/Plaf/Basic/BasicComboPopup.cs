@@ -152,35 +152,35 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Java.Awt.EventNs.KeyListener KeyListener
         {
-            get { return IExecuteWithSignature<Java.Awt.EventNs.KeyListener>("getKeyListener", "()Ljava/awt/event/KeyListener;"); }
+            get { return IExecute<Java.Awt.EventNs.KeyListener>("getKeyListener"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getList()"/> 
         /// </summary>
         public Javax.Swing.JList<object> List
         {
-            get { return IExecuteWithSignature<Javax.Swing.JList<object>>("getList", "()Ljavax/swing/JList;"); }
+            get { return IExecute<Javax.Swing.JList<object>>("getList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getMouseListener()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseListener MouseListener
         {
-            get { return IExecuteWithSignature<Java.Awt.EventNs.MouseListener>("getMouseListener", "()Ljava/awt/event/MouseListener;"); }
+            get { return IExecute<Java.Awt.EventNs.MouseListener>("getMouseListener"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getMouseMotionListener()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseMotionListener MouseMotionListener
         {
-            get { return IExecuteWithSignature<Java.Awt.EventNs.MouseMotionListener>("getMouseMotionListener", "()Ljava/awt/event/MouseMotionListener;"); }
+            get { return IExecute<Java.Awt.EventNs.MouseMotionListener>("getMouseMotionListener"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#uninstallingUI()"/>
         /// </summary>
         public void UninstallingUI()
         {
-            IExecuteWithSignature("uninstallingUI", "()V");
+            IExecute("uninstallingUI");
         }
 
         #endregion

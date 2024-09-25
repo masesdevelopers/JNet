@@ -204,7 +204,7 @@ namespace Javax.Net.Ssl
         /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedEvent"/></param>
         public override void HandshakeCompleted(Javax.Net.Ssl.HandshakeCompletedEvent arg0)
         {
-            IExecuteWithSignature("handshakeCompleted", "(Ljavax/net/ssl/HandshakeCompletedEvent;)V", arg0);
+            IExecute("handshakeCompleted", arg0);
         }
 
         #endregion

@@ -188,7 +188,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Java.Awt.Shape"/></returns>
             public Java.Awt.Shape PaintLayer(Java.Awt.Graphics arg0, int arg1, int arg2, Java.Awt.Shape arg3, Javax.Swing.Text.JTextComponent arg4, Javax.Swing.Text.View arg5)
             {
-                return IExecute<Java.Awt.Shape>("paintLayer", arg0, arg1, arg2, arg3, arg4, arg5);
+                return IExecuteWithSignature<Java.Awt.Shape>("paintLayer", "(Ljava/awt/Graphics;IILjava/awt/Shape;Ljavax/swing/text/JTextComponent;Ljavax/swing/text/View;)Ljava/awt/Shape;", arg0, arg1, arg2, arg3, arg4, arg5);
             }
 
             #endregion

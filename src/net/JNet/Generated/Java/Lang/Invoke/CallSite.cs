@@ -97,7 +97,7 @@ namespace Java.Lang.Invoke
         /// </summary>
         public Java.Lang.Invoke.MethodHandle Target
         {
-            get { return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("getTarget", "()Ljava/lang/invoke/MethodHandle;"); } set { IExecuteWithSignature("setTarget", "(Ljava/lang/invoke/MethodHandle;)V", value); }
+            get { return IExecute<Java.Lang.Invoke.MethodHandle>("getTarget"); } set { IExecute("setTarget", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/CallSite.html#dynamicInvoker()"/>
@@ -105,7 +105,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle DynamicInvoker()
         {
-            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("dynamicInvoker", "()Ljava/lang/invoke/MethodHandle;");
+            return IExecute<Java.Lang.Invoke.MethodHandle>("dynamicInvoker");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/CallSite.html#type()"/>
@@ -113,7 +113,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Type()
         {
-            return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("type", "()Ljava/lang/invoke/MethodType;");
+            return IExecute<Java.Lang.Invoke.MethodType>("type");
         }
 
         #endregion

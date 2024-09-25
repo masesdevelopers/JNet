@@ -160,7 +160,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetModelMBeanInfo(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
         {
-            IExecuteWithSignature("setModelMBeanInfo", "(Ljavax/management/modelmbean/ModelMBeanInfo;)V", arg0);
+            IExecute("setModelMBeanInfo", arg0);
         }
 
         #endregion

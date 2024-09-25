@@ -121,7 +121,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] Value()
         {
-            return IExecuteWithSignatureArray<Java.Lang.String>("value", "()[Ljava/lang/String;");
+            return IExecuteArray<Java.Lang.String>("value");
         }
 
         #endregion

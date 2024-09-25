@@ -198,56 +198,56 @@ namespace Javax.Smartcardio
         /// </summary>
         public byte[] Bytes
         {
-            get { return IExecuteWithSignatureArray<byte>("getBytes", "()[B"); }
+            get { return IExecuteArray<byte>("getBytes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#getCLA()"/> 
         /// </summary>
         public int CLA
         {
-            get { return IExecuteWithSignature<int>("getCLA", "()I"); }
+            get { return IExecute<int>("getCLA"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#getData()"/> 
         /// </summary>
         public byte[] Data
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
+            get { return IExecuteArray<byte>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#getINS()"/> 
         /// </summary>
         public int INS
         {
-            get { return IExecuteWithSignature<int>("getINS", "()I"); }
+            get { return IExecute<int>("getINS"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#getNc()"/> 
         /// </summary>
         public int Nc
         {
-            get { return IExecuteWithSignature<int>("getNc", "()I"); }
+            get { return IExecute<int>("getNc"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#getNe()"/> 
         /// </summary>
         public int Ne
         {
-            get { return IExecuteWithSignature<int>("getNe", "()I"); }
+            get { return IExecute<int>("getNe"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#getP1()"/> 
         /// </summary>
         public int P1
         {
-            get { return IExecuteWithSignature<int>("getP1", "()I"); }
+            get { return IExecute<int>("getP1"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#getP2()"/> 
         /// </summary>
         public int P2
         {
-            get { return IExecuteWithSignature<int>("getP2", "()I"); }
+            get { return IExecute<int>("getP2"); }
         }
 
         #endregion

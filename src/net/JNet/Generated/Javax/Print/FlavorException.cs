@@ -119,7 +119,7 @@ namespace Javax.Print
         /// </summary>
         public Javax.Print.DocFlavor[] UnsupportedFlavors
         {
-            get { return IExecuteWithSignatureArray<Javax.Print.DocFlavor>("getUnsupportedFlavors", "()[Ljavax/print/DocFlavor;"); }
+            get { return IExecuteArray<Javax.Print.DocFlavor>("getUnsupportedFlavors"); }
         }
 
         #endregion

@@ -147,28 +147,28 @@ namespace Java.Awt.FontNs
         /// </summary>
         public float[] DesignAxisDefaults
         {
-            get { return IExecuteWithSignatureArray<float>("getDesignAxisDefaults", "()[F"); }
+            get { return IExecuteArray<float>("getDesignAxisDefaults"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getDesignAxisNames()"/> 
         /// </summary>
         public Java.Lang.String[] DesignAxisNames
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getDesignAxisNames", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getDesignAxisNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getDesignAxisRanges()"/> 
         /// </summary>
         public float[] DesignAxisRanges
         {
-            get { return IExecuteWithSignatureArray<float>("getDesignAxisRanges", "()[F"); }
+            get { return IExecuteArray<float>("getDesignAxisRanges"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getNumDesignAxes()"/> 
         /// </summary>
         public int NumDesignAxes
         {
-            get { return IExecuteWithSignature<int>("getNumDesignAxes", "()I"); }
+            get { return IExecute<int>("getNumDesignAxes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#deriveMMFont(float[],float,float,float,float)"/>
@@ -190,7 +190,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveMMFont(float[] arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Font>("deriveMMFont", "([F)Ljava/awt/Font;", new object[] { arg0 });
+            return IExecute<Java.Awt.Font>("deriveMMFont", new object[] { arg0 });
         }
 
         #endregion

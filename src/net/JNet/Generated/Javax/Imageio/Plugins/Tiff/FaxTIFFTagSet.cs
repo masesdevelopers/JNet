@@ -127,7 +127,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public static Javax.Imageio.Plugins.Tiff.FaxTIFFTagSet Instance
         {
-            get { return SExecuteWithSignature<Javax.Imageio.Plugins.Tiff.FaxTIFFTagSet>(LocalBridgeClazz, "getInstance", "()Ljavax/imageio/plugins/tiff/FaxTIFFTagSet;"); }
+            get { return SExecute<Javax.Imageio.Plugins.Tiff.FaxTIFFTagSet>(LocalBridgeClazz, "getInstance"); }
         }
 
         #endregion

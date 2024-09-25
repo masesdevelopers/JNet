@@ -161,7 +161,7 @@ namespace Javax.Xml.Stream
         /// </summary>
         public Javax.Xml.Namespace.NamespaceContext NamespaceContext
         {
-            get { return IExecuteWithSignature<Javax.Xml.Namespace.NamespaceContext>("getNamespaceContext", "()Ljavax/xml/namespace/NamespaceContext;"); } set { IExecuteWithSignature("setNamespaceContext", "(Ljavax/xml/namespace/NamespaceContext;)V", value); }
+            get { return IExecute<Javax.Xml.Namespace.NamespaceContext>("getNamespaceContext"); } set { IExecute("setNamespaceContext", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#getPrefix(java.lang.String)"/>
@@ -171,7 +171,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Java.Lang.String GetPrefix(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getPrefix", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getPrefix", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#add(javax.xml.stream.events.XMLEvent)"/>
@@ -180,7 +180,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Add(Javax.Xml.Stream.Events.XMLEvent arg0)
         {
-            IExecuteWithSignature("add", "(Ljavax/xml/stream/events/XMLEvent;)V", arg0);
+            IExecute("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#add(javax.xml.stream.XMLEventReader)"/>
@@ -189,7 +189,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Add(Javax.Xml.Stream.XMLEventReader arg0)
         {
-            IExecuteWithSignature("add", "(Ljavax/xml/stream/XMLEventReader;)V", arg0);
+            IExecute("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#close()"/>
@@ -197,7 +197,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#flush()"/>
@@ -205,7 +205,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Flush()
         {
-            IExecuteWithSignature("flush", "()V");
+            IExecute("flush");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#setDefaultNamespace(java.lang.String)"/>
@@ -214,7 +214,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void SetDefaultNamespace(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("setDefaultNamespace", "(Ljava/lang/String;)V", arg0);
+            IExecute("setDefaultNamespace", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#setPrefix(java.lang.String,java.lang.String)"/>

@@ -128,14 +128,14 @@ namespace Java.Lang.Management
         /// </summary>
         public Java.Lang.String[] MemoryPoolNames
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getMemoryPoolNames", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getMemoryPoolNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#isValid()"/>
@@ -143,7 +143,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
-            return IExecuteWithSignature<bool>("isValid", "()Z");
+            return IExecute<bool>("isValid");
         }
 
         #endregion

@@ -103,7 +103,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.HijrahEra"/></returns>
         public static Java.Time.Chrono.HijrahEra Of(int arg0)
         {
-            return SExecuteWithSignature<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "of", "(I)Ljava/time/chrono/HijrahEra;", arg0);
+            return SExecute<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#valueOf(java.lang.String)"/>
@@ -112,7 +112,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.HijrahEra"/></returns>
         public static Java.Time.Chrono.HijrahEra ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/chrono/HijrahEra;", arg0);
+            return SExecute<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#values()"/>
@@ -120,7 +120,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.HijrahEra"/></returns>
         public static Java.Time.Chrono.HijrahEra[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "values", "()[Ljava/time/chrono/HijrahEra;");
+            return SExecuteArray<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "values");
         }
 
         #endregion
@@ -131,7 +131,7 @@ namespace Java.Time.Chrono
         /// </summary>
         public int Value
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); }
+            get { return IExecute<int>("getValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
@@ -150,7 +150,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
+            return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
         }
 
         #endregion

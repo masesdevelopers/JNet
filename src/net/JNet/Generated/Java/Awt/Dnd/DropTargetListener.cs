@@ -324,7 +324,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
         public override void DragEnter(Java.Awt.Dnd.DropTargetDragEvent arg0)
         {
-            IExecuteWithSignature("dragEnter", "(Ljava/awt/dnd/DropTargetDragEvent;)V", arg0);
+            IExecute("dragEnter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dragExit(java.awt.dnd.DropTargetEvent)"/>
@@ -332,7 +332,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetEvent"/></param>
         public override void DragExit(Java.Awt.Dnd.DropTargetEvent arg0)
         {
-            IExecuteWithSignature("dragExit", "(Ljava/awt/dnd/DropTargetEvent;)V", arg0);
+            IExecute("dragExit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dragOver(java.awt.dnd.DropTargetDragEvent)"/>
@@ -340,7 +340,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
         public override void DragOver(Java.Awt.Dnd.DropTargetDragEvent arg0)
         {
-            IExecuteWithSignature("dragOver", "(Ljava/awt/dnd/DropTargetDragEvent;)V", arg0);
+            IExecute("dragOver", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#drop(java.awt.dnd.DropTargetDropEvent)"/>
@@ -348,7 +348,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDropEvent"/></param>
         public override void Drop(Java.Awt.Dnd.DropTargetDropEvent arg0)
         {
-            IExecuteWithSignature("drop", "(Ljava/awt/dnd/DropTargetDropEvent;)V", arg0);
+            IExecute("drop", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dropActionChanged(java.awt.dnd.DropTargetDragEvent)"/>
@@ -356,7 +356,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
         public override void DropActionChanged(Java.Awt.Dnd.DropTargetDragEvent arg0)
         {
-            IExecuteWithSignature("dropActionChanged", "(Ljava/awt/dnd/DropTargetDragEvent;)V", arg0);
+            IExecute("dropActionChanged", arg0);
         }
 
         #endregion

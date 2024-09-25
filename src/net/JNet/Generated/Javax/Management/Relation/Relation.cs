@@ -198,35 +198,35 @@ namespace Javax.Management.Relation
         /// </summary>
         public Javax.Management.Relation.RoleResult AllRoles
         {
-            get { return IExecuteWithSignature<Javax.Management.Relation.RoleResult>("getAllRoles", "()Ljavax/management/relation/RoleResult;"); }
+            get { return IExecute<Javax.Management.Relation.RoleResult>("getAllRoles"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getReferencedMBeans()"/> 
         /// </summary>
         public Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<Java.Lang.String>> ReferencedMBeans
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<Java.Lang.String>>>("getReferencedMBeans", "()Ljava/util/Map;"); }
+            get { return IExecute<Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<Java.Lang.String>>>("getReferencedMBeans"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRelationId()"/> 
         /// </summary>
         public Java.Lang.String RelationId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRelationId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getRelationId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRelationServiceName()"/> 
         /// </summary>
         public Javax.Management.ObjectName RelationServiceName
         {
-            get { return IExecuteWithSignature<Javax.Management.ObjectName>("getRelationServiceName", "()Ljavax/management/ObjectName;"); }
+            get { return IExecute<Javax.Management.ObjectName>("getRelationServiceName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRelationTypeName()"/> 
         /// </summary>
         public Java.Lang.String RelationTypeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRelationTypeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getRelationTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRoleCardinality(java.lang.String)"/>
@@ -237,7 +237,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
         public Java.Lang.Integer GetRoleCardinality(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Integer>("getRoleCardinality", "(Ljava/lang/String;)Ljava/lang/Integer;", arg0);
+            return IExecute<Java.Lang.Integer>("getRoleCardinality", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRole(java.lang.String)"/>
@@ -249,7 +249,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         public Java.Util.List<Javax.Management.ObjectName> GetRole(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Javax.Management.ObjectName>>("getRole", "(Ljava/lang/String;)Ljava/util/List;", arg0);
+            return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getRole", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#retrieveAllRoles()"/>
@@ -257,7 +257,7 @@ namespace Javax.Management.Relation
         /// <returns><see cref="Javax.Management.Relation.RoleList"/></returns>
         public Javax.Management.Relation.RoleList RetrieveAllRoles()
         {
-            return IExecuteWithSignature<Javax.Management.Relation.RoleList>("retrieveAllRoles", "()Ljavax/management/relation/RoleList;");
+            return IExecute<Javax.Management.Relation.RoleList>("retrieveAllRoles");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRoles(java.lang.String[])"/>
@@ -268,7 +268,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
         public Javax.Management.Relation.RoleResult GetRoles(Java.Lang.String[] arg0)
         {
-            return IExecuteWithSignature<Javax.Management.Relation.RoleResult>("getRoles", "([Ljava/lang/String;)Ljavax/management/relation/RoleResult;", new object[] { arg0 });
+            return IExecute<Javax.Management.Relation.RoleResult>("getRoles", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#setRoles(javax.management.relation.RoleList)"/>
@@ -281,7 +281,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         public Javax.Management.Relation.RoleResult SetRoles(Javax.Management.Relation.RoleList arg0)
         {
-            return IExecuteWithSignature<Javax.Management.Relation.RoleResult>("setRoles", "(Ljavax/management/relation/RoleList;)Ljavax/management/relation/RoleResult;", arg0);
+            return IExecute<Javax.Management.Relation.RoleResult>("setRoles", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#handleMBeanUnregistration(javax.management.ObjectName,java.lang.String)"/>
@@ -310,7 +310,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         public void SetRole(Javax.Management.Relation.Role arg0)
         {
-            IExecuteWithSignature("setRole", "(Ljavax/management/relation/Role;)V", arg0);
+            IExecute("setRole", arg0);
         }
 
         #endregion

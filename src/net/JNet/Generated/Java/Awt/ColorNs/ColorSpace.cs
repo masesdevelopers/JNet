@@ -275,7 +275,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="Java.Awt.ColorNs.ColorSpace"/></returns>
         public static Java.Awt.ColorNs.ColorSpace GetInstance(int arg0)
         {
-            return SExecuteWithSignature<Java.Awt.ColorNs.ColorSpace>(LocalBridgeClazz, "getInstance", "(I)Ljava/awt/color/ColorSpace;", arg0);
+            return SExecute<Java.Awt.ColorNs.ColorSpace>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -286,14 +286,14 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public int NumComponents
         {
-            get { return IExecuteWithSignature<int>("getNumComponents", "()I"); }
+            get { return IExecute<int>("getNumComponents"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            get { return IExecute<int>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#fromCIEXYZ(float[])"/>
@@ -302,7 +302,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="float"/></returns>
         public float[] FromCIEXYZ(float[] arg0)
         {
-            return IExecuteWithSignatureArray<float>("fromCIEXYZ", "([F)[F", new object[] { arg0 });
+            return IExecuteArray<float>("fromCIEXYZ", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#fromRGB(float[])"/>
@@ -311,7 +311,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="float"/></returns>
         public float[] FromRGB(float[] arg0)
         {
-            return IExecuteWithSignatureArray<float>("fromRGB", "([F)[F", new object[] { arg0 });
+            return IExecuteArray<float>("fromRGB", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#toCIEXYZ(float[])"/>
@@ -320,7 +320,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="float"/></returns>
         public float[] ToCIEXYZ(float[] arg0)
         {
-            return IExecuteWithSignatureArray<float>("toCIEXYZ", "([F)[F", new object[] { arg0 });
+            return IExecuteArray<float>("toCIEXYZ", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#toRGB(float[])"/>
@@ -329,7 +329,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="float"/></returns>
         public float[] ToRGB(float[] arg0)
         {
-            return IExecuteWithSignatureArray<float>("toRGB", "([F)[F", new object[] { arg0 });
+            return IExecuteArray<float>("toRGB", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#isCS_sRGB()"/>
@@ -337,7 +337,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="bool"/></returns>
         public bool IsCS_sRGB()
         {
-            return IExecuteWithSignature<bool>("isCS_sRGB", "()Z");
+            return IExecute<bool>("isCS_sRGB");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getMaxValue(int)"/>
@@ -346,7 +346,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="float"/></returns>
         public float GetMaxValue(int arg0)
         {
-            return IExecuteWithSignature<float>("getMaxValue", "(I)F", arg0);
+            return IExecute<float>("getMaxValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getMinValue(int)"/>
@@ -355,7 +355,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="float"/></returns>
         public float GetMinValue(int arg0)
         {
-            return IExecuteWithSignature<float>("getMinValue", "(I)F", arg0);
+            return IExecute<float>("getMinValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getName(int)"/>
@@ -364,7 +364,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getName", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getName", arg0);
         }
 
         #endregion

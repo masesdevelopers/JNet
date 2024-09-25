@@ -103,14 +103,14 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public Java.Util.SortedSet<Java.Lang.String> TagNames
         {
-            get { return IExecuteWithSignature<Java.Util.SortedSet<Java.Lang.String>>("getTagNames", "()Ljava/util/SortedSet;"); }
+            get { return IExecute<Java.Util.SortedSet<Java.Lang.String>>("getTagNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#getTagNumbers()"/> 
         /// </summary>
         public Java.Util.SortedSet<Java.Lang.Integer> TagNumbers
         {
-            get { return IExecuteWithSignature<Java.Util.SortedSet<Java.Lang.Integer>>("getTagNumbers", "()Ljava/util/SortedSet;"); }
+            get { return IExecute<Java.Util.SortedSet<Java.Lang.Integer>>("getTagNumbers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#getTag(int)"/>
@@ -119,7 +119,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFTag"/></returns>
         public Javax.Imageio.Plugins.Tiff.TIFFTag GetTag(int arg0)
         {
-            return IExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFTag>("getTag", "(I)Ljavax/imageio/plugins/tiff/TIFFTag;", arg0);
+            return IExecute<Javax.Imageio.Plugins.Tiff.TIFFTag>("getTag", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#getTag(java.lang.String)"/>
@@ -128,7 +128,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFTag"/></returns>
         public Javax.Imageio.Plugins.Tiff.TIFFTag GetTag(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFTag>("getTag", "(Ljava/lang/String;)Ljavax/imageio/plugins/tiff/TIFFTag;", arg0);
+            return IExecute<Javax.Imageio.Plugins.Tiff.TIFFTag>("getTag", arg0);
         }
 
         #endregion

@@ -99,7 +99,7 @@ namespace Java.Time
         /// </summary>
         public static Java.Util.Set<Java.Lang.String> AvailableZoneIds
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableZoneIds", "()Ljava/util/Set;"); }
+            get { return SExecute<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableZoneIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -108,7 +108,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecuteWithSignature<Java.Time.ZoneId>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/ZoneId;", arg0);
+            return SExecute<Java.Time.ZoneId>(LocalBridgeClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#of(java.lang.String,java.util.Map)"/>
@@ -127,7 +127,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId Of(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Time.ZoneId>(LocalBridgeClazz, "of", "(Ljava/lang/String;)Ljava/time/ZoneId;", arg0);
+            return SExecute<Java.Time.ZoneId>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#ofOffset(java.lang.String,java.time.ZoneOffset)"/>
@@ -145,7 +145,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId SystemDefault()
         {
-            return SExecuteWithSignature<Java.Time.ZoneId>(LocalBridgeClazz, "systemDefault", "()Ljava/time/ZoneId;");
+            return SExecute<Java.Time.ZoneId>(LocalBridgeClazz, "systemDefault");
         }
 
         #endregion
@@ -156,14 +156,14 @@ namespace Java.Time
         /// </summary>
         public Java.Lang.String Id
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getRules()"/> 
         /// </summary>
         public Java.Time.Zone.ZoneRules Rules
         {
-            get { return IExecuteWithSignature<Java.Time.Zone.ZoneRules>("getRules", "()Ljava/time/zone/ZoneRules;"); }
+            get { return IExecute<Java.Time.Zone.ZoneRules>("getRules"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
@@ -181,7 +181,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public Java.Time.ZoneId Normalized()
         {
-            return IExecuteWithSignature<Java.Time.ZoneId>("normalized", "()Ljava/time/ZoneId;");
+            return IExecute<Java.Time.ZoneId>("normalized");
         }
 
         #endregion

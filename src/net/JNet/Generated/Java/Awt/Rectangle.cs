@@ -172,14 +172,14 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Point Location
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getLocation", "()Ljava/awt/Point;"); } set { IExecuteWithSignature("setLocation", "(Ljava/awt/Point;)V", value); }
+            get { return IExecute<Java.Awt.Point>("getLocation"); } set { IExecute("setLocation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#setSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension Size
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setSize", "(Ljava/awt/Dimension;)V", value); }
+            get { return IExecute<Java.Awt.Dimension>("getSize"); } set { IExecute("setSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#contains(int,int,int,int)"/>
@@ -210,7 +210,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/Point;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#contains(java.awt.Rectangle)"/>
@@ -219,7 +219,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Rectangle arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/Rectangle;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#intersects(java.awt.Rectangle)"/>
@@ -228,7 +228,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Intersects(Java.Awt.Rectangle arg0)
         {
-            return IExecuteWithSignature<bool>("intersects", "(Ljava/awt/Rectangle;)Z", arg0);
+            return IExecute<bool>("intersects", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#intersection(java.awt.Rectangle)"/>
@@ -237,7 +237,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle Intersection(Java.Awt.Rectangle arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Rectangle>("intersection", "(Ljava/awt/Rectangle;)Ljava/awt/Rectangle;", arg0);
+            return IExecute<Java.Awt.Rectangle>("intersection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#union(java.awt.Rectangle)"/>
@@ -246,7 +246,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle Union(Java.Awt.Rectangle arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Rectangle>("union", "(Ljava/awt/Rectangle;)Ljava/awt/Rectangle;", arg0);
+            return IExecute<Java.Awt.Rectangle>("union", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#add(int,int)"/>
@@ -263,7 +263,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
         public void Add(Java.Awt.Point arg0)
         {
-            IExecuteWithSignature("add", "(Ljava/awt/Point;)V", arg0);
+            IExecute("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#add(java.awt.Rectangle)"/>
@@ -271,7 +271,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
         public void Add(Java.Awt.Rectangle arg0)
         {
-            IExecuteWithSignature("add", "(Ljava/awt/Rectangle;)V", arg0);
+            IExecute("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#grow(int,int)"/>
@@ -299,7 +299,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
         public void SetBounds(Java.Awt.Rectangle arg0)
         {
-            IExecuteWithSignature("setBounds", "(Ljava/awt/Rectangle;)V", arg0);
+            IExecute("setBounds", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#setLocation(int,int)"/>

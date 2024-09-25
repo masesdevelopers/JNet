@@ -140,7 +140,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
         public Java.Nio.File.WatchKey Poll()
         {
-            return IExecuteWithSignature<Java.Nio.File.WatchKey>("poll", "()Ljava/nio/file/WatchKey;");
+            return IExecute<Java.Nio.File.WatchKey>("poll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#poll(long,java.util.concurrent.TimeUnit)"/>
@@ -160,7 +160,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Nio.File.WatchKey Take()
         {
-            return IExecuteWithSignature<Java.Nio.File.WatchKey>("take", "()Ljava/nio/file/WatchKey;");
+            return IExecute<Java.Nio.File.WatchKey>("take");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#close()"/>
@@ -168,7 +168,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
 
         #endregion

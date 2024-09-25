@@ -104,7 +104,7 @@ namespace Javax.Swing.Filechooser
         /// </summary>
         public Java.Lang.String[] Extensions
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getExtensions", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getExtensions"); }
         }
 
         #endregion

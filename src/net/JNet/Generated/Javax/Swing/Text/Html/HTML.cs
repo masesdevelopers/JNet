@@ -232,14 +232,14 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         public static Javax.Swing.Text.Html.HTML.Attribute[] AllAttributeKeys
         {
-            get { return SExecuteWithSignatureArray<Javax.Swing.Text.Html.HTML.Attribute>(LocalBridgeClazz, "getAllAttributeKeys", "()[Ljavax/swing/text/html/HTML$Attribute;"); }
+            get { return SExecuteArray<Javax.Swing.Text.Html.HTML.Attribute>(LocalBridgeClazz, "getAllAttributeKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#getAllTags()"/> 
         /// </summary>
         public static Javax.Swing.Text.Html.HTML.Tag[] AllTags
         {
-            get { return SExecuteWithSignatureArray<Javax.Swing.Text.Html.HTML.Tag>(LocalBridgeClazz, "getAllTags", "()[Ljavax/swing/text/html/HTML$Tag;"); }
+            get { return SExecuteArray<Javax.Swing.Text.Html.HTML.Tag>(LocalBridgeClazz, "getAllTags"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#getIntegerAttributeValue(javax.swing.text.AttributeSet,javax.swing.text.html.HTML.Attribute,int)"/>
@@ -259,7 +259,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="Javax.Swing.Text.Html.HTML.Attribute"/></returns>
         public static Javax.Swing.Text.Html.HTML.Attribute GetAttributeKey(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Swing.Text.Html.HTML.Attribute>(LocalBridgeClazz, "getAttributeKey", "(Ljava/lang/String;)Ljavax/swing/text/html/HTML$Attribute;", arg0);
+            return SExecute<Javax.Swing.Text.Html.HTML.Attribute>(LocalBridgeClazz, "getAttributeKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#getTag(java.lang.String)"/>
@@ -268,7 +268,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="Javax.Swing.Text.Html.HTML.Tag"/></returns>
         public static Javax.Swing.Text.Html.HTML.Tag GetTag(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Swing.Text.Html.HTML.Tag>(LocalBridgeClazz, "getTag", "(Ljava/lang/String;)Ljavax/swing/text/html/HTML$Tag;", arg0);
+            return SExecute<Javax.Swing.Text.Html.HTML.Tag>(LocalBridgeClazz, "getTag", arg0);
         }
 
         #endregion
@@ -1271,7 +1271,7 @@ namespace Javax.Swing.Text.Html
             /// <returns><see cref="bool"/></returns>
             public bool BreaksFlow()
             {
-                return IExecuteWithSignature<bool>("breaksFlow", "()Z");
+                return IExecute<bool>("breaksFlow");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#isBlock()"/>
@@ -1279,7 +1279,7 @@ namespace Javax.Swing.Text.Html
             /// <returns><see cref="bool"/></returns>
             public bool IsBlock()
             {
-                return IExecuteWithSignature<bool>("isBlock", "()Z");
+                return IExecute<bool>("isBlock");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#isPreformatted()"/>
@@ -1287,7 +1287,7 @@ namespace Javax.Swing.Text.Html
             /// <returns><see cref="bool"/></returns>
             public bool IsPreformatted()
             {
-                return IExecuteWithSignature<bool>("isPreformatted", "()Z");
+                return IExecute<bool>("isPreformatted");
             }
 
             #endregion

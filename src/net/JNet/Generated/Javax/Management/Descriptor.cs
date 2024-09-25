@@ -169,14 +169,14 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String[] FieldNames
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getFieldNames", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getFieldNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFields()"/> 
         /// </summary>
         public Java.Lang.String[] Fields
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getFields", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getFields"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#isValid()"/>
@@ -185,7 +185,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public bool IsValid()
         {
-            return IExecuteWithSignature<bool>("isValid", "()Z");
+            return IExecute<bool>("isValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValue(java.lang.String)"/>
@@ -195,7 +195,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public object GetFieldValue(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getFieldValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getFieldValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValues(java.lang.String[])"/>
@@ -204,7 +204,7 @@ namespace Javax.Management
         /// <returns><see cref="object"/></returns>
         public object[] GetFieldValues(params Java.Lang.String[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;"); else return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;", arg0);
+            if (arg0.Length == 0) return IExecuteArray<object>("getFieldValues"); else return IExecuteArray<object>("getFieldValues", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#removeField(java.lang.String)"/>
@@ -212,7 +212,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void RemoveField(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("removeField", "(Ljava/lang/String;)V", arg0);
+            IExecute("removeField", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#setField(java.lang.String,java.lang.Object)"/>

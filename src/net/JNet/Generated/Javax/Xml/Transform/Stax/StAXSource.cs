@@ -118,21 +118,21 @@ namespace Javax.Xml.Transform.Stax
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#getXMLEventReader()"/> 
         /// </summary>
         public Javax.Xml.Stream.XMLEventReader XMLEventReader
         {
-            get { return IExecuteWithSignature<Javax.Xml.Stream.XMLEventReader>("getXMLEventReader", "()Ljavax/xml/stream/XMLEventReader;"); }
+            get { return IExecute<Javax.Xml.Stream.XMLEventReader>("getXMLEventReader"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#getXMLStreamReader()"/> 
         /// </summary>
         public Javax.Xml.Stream.XMLStreamReader XMLStreamReader
         {
-            get { return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamReader>("getXMLStreamReader", "()Ljavax/xml/stream/XMLStreamReader;"); }
+            get { return IExecute<Javax.Xml.Stream.XMLStreamReader>("getXMLStreamReader"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#isEmpty()"/>
@@ -140,7 +140,7 @@ namespace Javax.Xml.Transform.Stax
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
 
         #endregion

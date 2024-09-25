@@ -135,35 +135,35 @@ namespace Javax.Xml.Stream
         /// </summary>
         public int CharacterOffset
         {
-            get { return IExecuteWithSignature<int>("getCharacterOffset", "()I"); }
+            get { return IExecute<int>("getCharacterOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getColumnNumber()"/> 
         /// </summary>
         public int ColumnNumber
         {
-            get { return IExecuteWithSignature<int>("getColumnNumber", "()I"); }
+            get { return IExecute<int>("getColumnNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getLineNumber()"/> 
         /// </summary>
         public int LineNumber
         {
-            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); }
+            get { return IExecute<int>("getLineNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getPublicId()"/> 
         /// </summary>
         public Java.Lang.String PublicId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPublicId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getSystemId()"/> 
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); }
         }
 
         #endregion

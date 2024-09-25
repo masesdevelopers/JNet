@@ -136,7 +136,7 @@ namespace Java.Awt
         /// </summary>
         public new void Dispose()
         {
-            IExecuteWithSignature("dispose", "()V");
+            IExecute("dispose");
         }
 
         #endregion

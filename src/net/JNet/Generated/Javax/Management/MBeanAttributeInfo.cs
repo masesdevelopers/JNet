@@ -138,7 +138,7 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#isIs()"/>
@@ -146,7 +146,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsIs()
         {
-            return IExecuteWithSignature<bool>("isIs", "()Z");
+            return IExecute<bool>("isIs");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#isReadable()"/>
@@ -154,7 +154,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsReadable()
         {
-            return IExecuteWithSignature<bool>("isReadable", "()Z");
+            return IExecute<bool>("isReadable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#isWritable()"/>
@@ -162,7 +162,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsWritable()
         {
-            return IExecuteWithSignature<bool>("isWritable", "()Z");
+            return IExecute<bool>("isWritable");
         }
 
         #endregion

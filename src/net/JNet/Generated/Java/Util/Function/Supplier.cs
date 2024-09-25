@@ -249,7 +249,7 @@ namespace Java.Util.Function
         /// <returns><see cref="object"/></returns>
         public override object Get()
         {
-            return IExecuteWithSignature("get", "()Ljava/lang/Object;");
+            return IExecute("get");
         }
 
         #endregion
@@ -374,7 +374,7 @@ namespace Java.Util.Function
         /// <returns><typeparamref name="T"/></returns>
         public override T Get()
         {
-            return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
+            return IExecute<T>("get");
         }
 
         #endregion

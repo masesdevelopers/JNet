@@ -123,7 +123,7 @@ namespace Javax.Xml.Stream.Util
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Add(Javax.Xml.Stream.Events.XMLEvent arg0)
         {
-            IExecuteWithSignature("add", "(Ljavax/xml/stream/events/XMLEvent;)V", arg0);
+            IExecute("add", arg0);
         }
 
         #endregion

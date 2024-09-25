@@ -114,7 +114,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool Valid()
         {
-            return IExecuteWithSignature<bool>("valid", "()Z");
+            return IExecute<bool>("valid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#sync()"/>
@@ -122,7 +122,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.SyncFailedException"/>
         public void Sync()
         {
-            IExecuteWithSignature("sync", "()V");
+            IExecute("sync");
         }
 
         #endregion

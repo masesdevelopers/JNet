@@ -117,49 +117,49 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Event.ChangeListener[] ChangeListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.ChangeListener>("getChangeListeners", "()[Ljavax/swing/event/ChangeListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.ChangeListener>("getChangeListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#getExtentSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#setExtentSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension ExtentSize
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getExtentSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setExtentSize", "(Ljava/awt/Dimension;)V", value); }
+            get { return IExecute<Java.Awt.Dimension>("getExtentSize"); } set { IExecute("setExtentSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#getScrollMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#setScrollMode(int)"/>
         /// </summary>
         public int ScrollMode
         {
-            get { return IExecuteWithSignature<int>("getScrollMode", "()I"); } set { IExecuteWithSignature("setScrollMode", "(I)V", value); }
+            get { return IExecute<int>("getScrollMode"); } set { IExecute("setScrollMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#getView()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#setView(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component View
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getView", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setView", "(Ljava/awt/Component;)V", value); }
+            get { return IExecute<Java.Awt.Component>("getView"); } set { IExecute("setView", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#getViewPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#setViewPosition(java.awt.Point)"/>
         /// </summary>
         public Java.Awt.Point ViewPosition
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getViewPosition", "()Ljava/awt/Point;"); } set { IExecuteWithSignature("setViewPosition", "(Ljava/awt/Point;)V", value); }
+            get { return IExecute<Java.Awt.Point>("getViewPosition"); } set { IExecute("setViewPosition", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#getViewRect()"/> 
         /// </summary>
         public Java.Awt.Rectangle ViewRect
         {
-            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getViewRect", "()Ljava/awt/Rectangle;"); }
+            get { return IExecute<Java.Awt.Rectangle>("getViewRect"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#getViewSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#setViewSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension ViewSize
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getViewSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setViewSize", "(Ljava/awt/Dimension;)V", value); }
+            get { return IExecute<Java.Awt.Dimension>("getViewSize"); } set { IExecute("setViewSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#toViewCoordinates(java.awt.Dimension)"/>
@@ -168,7 +168,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension ToViewCoordinates(Java.Awt.Dimension arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("toViewCoordinates", "(Ljava/awt/Dimension;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("toViewCoordinates", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#toViewCoordinates(java.awt.Point)"/>
@@ -177,7 +177,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Point"/></returns>
         public Java.Awt.Point ToViewCoordinates(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Point>("toViewCoordinates", "(Ljava/awt/Point;)Ljava/awt/Point;", arg0);
+            return IExecute<Java.Awt.Point>("toViewCoordinates", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#addChangeListener(javax.swing.event.ChangeListener)"/>
@@ -185,7 +185,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("addChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
@@ -193,7 +193,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("removeChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#setUI(javax.swing.plaf.ViewportUI)"/>
@@ -201,7 +201,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.ViewportUI"/></param>
         public void SetUI(Javax.Swing.Plaf.ViewportUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ViewportUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
 
         #endregion

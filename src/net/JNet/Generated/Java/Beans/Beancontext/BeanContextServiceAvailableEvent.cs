@@ -104,21 +104,21 @@ namespace Java.Beans.Beancontext
         /// </summary>
         public Java.Util.Iterator<object> CurrentServiceSelectors
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<object>>("getCurrentServiceSelectors", "()Ljava/util/Iterator;"); }
+            get { return IExecute<Java.Util.Iterator<object>>("getCurrentServiceSelectors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html#getServiceClass()"/> 
         /// </summary>
         public Java.Lang.Class ServiceClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getServiceClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getServiceClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html#getSourceAsBeanContextServices()"/> 
         /// </summary>
         public Java.Beans.Beancontext.BeanContextServices SourceAsBeanContextServices
         {
-            get { return IExecuteWithSignature<Java.Beans.Beancontext.BeanContextServices>("getSourceAsBeanContextServices", "()Ljava/beans/beancontext/BeanContextServices;"); }
+            get { return IExecute<Java.Beans.Beancontext.BeanContextServices>("getSourceAsBeanContextServices"); }
         }
 
         #endregion

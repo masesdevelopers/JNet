@@ -326,7 +326,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Empty()
         {
-            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "empty", "()Ljava/util/stream/LongStream;");
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#generate(java.util.function.LongSupplier)"/>
@@ -335,7 +335,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Generate(Java.Util.Function.LongSupplier arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "generate", "(Ljava/util/function/LongSupplier;)Ljava/util/stream/LongStream;", arg0);
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "generate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#iterate(long,java.util.function.LongPredicate,java.util.function.LongUnaryOperator)"/>
@@ -365,7 +365,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Of(params long[] arg0)
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", "([J)Ljava/util/stream/LongStream;"); else return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", "([J)Ljava/util/stream/LongStream;", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of"); else return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#of(long)"/>
@@ -374,7 +374,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Of(long arg0)
         {
-            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", "(J)Ljava/util/stream/LongStream;", arg0);
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#range(long,long)"/>
@@ -421,7 +421,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.LongFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU : U
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<U>>("mapToObj", "(Ljava/util/function/LongFunction;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream<U>>("mapToObj", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#allMatch(java.util.function.LongPredicate)"/>
@@ -430,7 +430,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="bool"/></returns>
         public bool AllMatch(Java.Util.Function.LongPredicate arg0)
         {
-            return IExecuteWithSignature<bool>("allMatch", "(Ljava/util/function/LongPredicate;)Z", arg0);
+            return IExecute<bool>("allMatch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#anyMatch(java.util.function.LongPredicate)"/>
@@ -439,7 +439,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="bool"/></returns>
         public bool AnyMatch(Java.Util.Function.LongPredicate arg0)
         {
-            return IExecuteWithSignature<bool>("anyMatch", "(Ljava/util/function/LongPredicate;)Z", arg0);
+            return IExecute<bool>("anyMatch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#noneMatch(java.util.function.LongPredicate)"/>
@@ -448,7 +448,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="bool"/></returns>
         public bool NoneMatch(Java.Util.Function.LongPredicate arg0)
         {
-            return IExecuteWithSignature<bool>("noneMatch", "(Ljava/util/function/LongPredicate;)Z", arg0);
+            return IExecute<bool>("noneMatch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#summaryStatistics()"/>
@@ -456,7 +456,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.LongSummaryStatistics"/></returns>
         public Java.Util.LongSummaryStatistics SummaryStatistics()
         {
-            return IExecuteWithSignature<Java.Util.LongSummaryStatistics>("summaryStatistics", "()Ljava/util/LongSummaryStatistics;");
+            return IExecute<Java.Util.LongSummaryStatistics>("summaryStatistics");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#average()"/>
@@ -464,7 +464,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble Average()
         {
-            return IExecuteWithSignature<Java.Util.OptionalDouble>("average", "()Ljava/util/OptionalDouble;");
+            return IExecute<Java.Util.OptionalDouble>("average");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#findAny()"/>
@@ -472,7 +472,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public Java.Util.OptionalLong FindAny()
         {
-            return IExecuteWithSignature<Java.Util.OptionalLong>("findAny", "()Ljava/util/OptionalLong;");
+            return IExecute<Java.Util.OptionalLong>("findAny");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#findFirst()"/>
@@ -480,7 +480,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public Java.Util.OptionalLong FindFirst()
         {
-            return IExecuteWithSignature<Java.Util.OptionalLong>("findFirst", "()Ljava/util/OptionalLong;");
+            return IExecute<Java.Util.OptionalLong>("findFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#max()"/>
@@ -488,7 +488,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public Java.Util.OptionalLong Max()
         {
-            return IExecuteWithSignature<Java.Util.OptionalLong>("max", "()Ljava/util/OptionalLong;");
+            return IExecute<Java.Util.OptionalLong>("max");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#min()"/>
@@ -496,7 +496,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public Java.Util.OptionalLong Min()
         {
-            return IExecuteWithSignature<Java.Util.OptionalLong>("min", "()Ljava/util/OptionalLong;");
+            return IExecute<Java.Util.OptionalLong>("min");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#reduce(java.util.function.LongBinaryOperator)"/>
@@ -505,7 +505,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public Java.Util.OptionalLong Reduce(Java.Util.Function.LongBinaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.OptionalLong>("reduce", "(Ljava/util/function/LongBinaryOperator;)Ljava/util/OptionalLong;", arg0);
+            return IExecute<Java.Util.OptionalLong>("reduce", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#asDoubleStream()"/>
@@ -513,7 +513,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream AsDoubleStream()
         {
-            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("asDoubleStream", "()Ljava/util/stream/DoubleStream;");
+            return IExecute<Java.Util.Stream.DoubleStream>("asDoubleStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#mapToDouble(java.util.function.LongToDoubleFunction)"/>
@@ -522,7 +522,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream MapToDouble(Java.Util.Function.LongToDoubleFunction arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("mapToDouble", "(Ljava/util/function/LongToDoubleFunction;)Ljava/util/stream/DoubleStream;", arg0);
+            return IExecute<Java.Util.Stream.DoubleStream>("mapToDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#mapToInt(java.util.function.LongToIntFunction)"/>
@@ -531,7 +531,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream MapToInt(Java.Util.Function.LongToIntFunction arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.IntStream>("mapToInt", "(Ljava/util/function/LongToIntFunction;)Ljava/util/stream/IntStream;", arg0);
+            return IExecute<Java.Util.Stream.IntStream>("mapToInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#distinct()"/>
@@ -539,7 +539,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Distinct()
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("distinct", "()Ljava/util/stream/LongStream;");
+            return IExecute<Java.Util.Stream.LongStream>("distinct");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#filter(java.util.function.LongPredicate)"/>
@@ -548,7 +548,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Filter(Java.Util.Function.LongPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("filter", "(Ljava/util/function/LongPredicate;)Ljava/util/stream/LongStream;", arg0);
+            return IExecute<Java.Util.Stream.LongStream>("filter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#flatMap(java.util.function.LongFunction)"/>
@@ -558,7 +558,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream FlatMap<Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.LongFunction<Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0ExtendsJava_Util_Stream_LongStream : Java.Util.Stream.LongStream
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("flatMap", "(Ljava/util/function/LongFunction;)Ljava/util/stream/LongStream;", arg0);
+            return IExecute<Java.Util.Stream.LongStream>("flatMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#limit(long)"/>
@@ -567,7 +567,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Limit(long arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("limit", "(J)Ljava/util/stream/LongStream;", arg0);
+            return IExecute<Java.Util.Stream.LongStream>("limit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#map(java.util.function.LongUnaryOperator)"/>
@@ -576,7 +576,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Map(Java.Util.Function.LongUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("map", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/stream/LongStream;", arg0);
+            return IExecute<Java.Util.Stream.LongStream>("map", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#peek(java.util.function.LongConsumer)"/>
@@ -585,7 +585,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Peek(Java.Util.Function.LongConsumer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("peek", "(Ljava/util/function/LongConsumer;)Ljava/util/stream/LongStream;", arg0);
+            return IExecute<Java.Util.Stream.LongStream>("peek", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#skip(long)"/>
@@ -594,7 +594,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Skip(long arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("skip", "(J)Ljava/util/stream/LongStream;", arg0);
+            return IExecute<Java.Util.Stream.LongStream>("skip", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#sorted()"/>
@@ -602,7 +602,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Sorted()
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("sorted", "()Ljava/util/stream/LongStream;");
+            return IExecute<Java.Util.Stream.LongStream>("sorted");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#boxed()"/>
@@ -610,7 +610,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.Long> Boxed()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.Long>>("boxed", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream<Java.Lang.Long>>("boxed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#count()"/>
@@ -618,7 +618,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="long"/></returns>
         public long Count()
         {
-            return IExecuteWithSignature<long>("count", "()J");
+            return IExecute<long>("count");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#reduce(long,java.util.function.LongBinaryOperator)"/>
@@ -636,7 +636,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="long"/></returns>
         public long Sum()
         {
-            return IExecuteWithSignature<long>("sum", "()J");
+            return IExecute<long>("sum");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#toArray()"/>
@@ -644,7 +644,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="long"/></returns>
         public long[] ToArray()
         {
-            return IExecuteWithSignatureArray<long>("toArray", "()[J");
+            return IExecuteArray<long>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#forEach(java.util.function.LongConsumer)"/>
@@ -652,7 +652,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         public void ForEach(Java.Util.Function.LongConsumer arg0)
         {
-            IExecuteWithSignature("forEach", "(Ljava/util/function/LongConsumer;)V", arg0);
+            IExecute("forEach", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#forEachOrdered(java.util.function.LongConsumer)"/>
@@ -660,7 +660,7 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         public void ForEachOrdered(Java.Util.Function.LongConsumer arg0)
         {
-            IExecuteWithSignature("forEachOrdered", "(Ljava/util/function/LongConsumer;)V", arg0);
+            IExecute("forEachOrdered", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#iterator()"/>
@@ -668,7 +668,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#spliterator()"/>
@@ -676,7 +676,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
         {
-            return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
+            return IExecute<Java.Util.Spliterator>("spliterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#parallel()"/>
@@ -684,7 +684,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Parallel()
         {
-            return IExecuteWithSignature<Java.Util.Stream.BaseStream>("parallel", "()Ljava/util/stream/BaseStream;");
+            return IExecute<Java.Util.Stream.BaseStream>("parallel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#sequential()"/>
@@ -692,7 +692,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Sequential()
         {
-            return IExecuteWithSignature<Java.Util.Stream.BaseStream>("sequential", "()Ljava/util/stream/BaseStream;");
+            return IExecute<Java.Util.Stream.BaseStream>("sequential");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#dropWhile(java.util.function.LongPredicate)"/>
@@ -701,7 +701,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream DropWhile(Java.Util.Function.LongPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("dropWhile", "(Ljava/util/function/LongPredicate;)Ljava/util/stream/LongStream;", arg0);
+            return IExecute<Java.Util.Stream.LongStream>("dropWhile", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#takeWhile(java.util.function.LongPredicate)"/>
@@ -710,7 +710,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream TakeWhile(Java.Util.Function.LongPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("takeWhile", "(Ljava/util/function/LongPredicate;)Ljava/util/stream/LongStream;", arg0);
+            return IExecute<Java.Util.Stream.LongStream>("takeWhile", arg0);
         }
 
         #endregion

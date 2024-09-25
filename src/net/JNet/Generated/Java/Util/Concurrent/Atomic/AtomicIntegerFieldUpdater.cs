@@ -179,7 +179,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int Get(object arg0)
         {
-            return IExecuteWithSignature<int>("get", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#lazySet(java.lang.Object,int)"/>
@@ -258,7 +258,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int DecrementAndGet(object arg0)
         {
-            return IExecuteWithSignature<int>("decrementAndGet", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("decrementAndGet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndAdd(java.lang.Object,int)"/>
@@ -277,7 +277,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndDecrement(object arg0)
         {
-            return IExecuteWithSignature<int>("getAndDecrement", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("getAndDecrement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndIncrement(java.lang.Object)"/>
@@ -286,7 +286,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndIncrement(object arg0)
         {
-            return IExecuteWithSignature<int>("getAndIncrement", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("getAndIncrement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndSet(java.lang.Object,int)"/>
@@ -305,7 +305,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int IncrementAndGet(object arg0)
         {
-            return IExecuteWithSignature<int>("incrementAndGet", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("incrementAndGet", arg0);
         }
 
         #endregion
@@ -382,7 +382,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int Get(T arg0)
         {
-            return IExecuteWithSignature<int>("get", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#lazySet(java.lang.Object,int)"/>
@@ -461,7 +461,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int DecrementAndGet(T arg0)
         {
-            return IExecuteWithSignature<int>("decrementAndGet", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("decrementAndGet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndAdd(java.lang.Object,int)"/>
@@ -480,7 +480,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndDecrement(T arg0)
         {
-            return IExecuteWithSignature<int>("getAndDecrement", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("getAndDecrement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndIncrement(java.lang.Object)"/>
@@ -489,7 +489,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndIncrement(T arg0)
         {
-            return IExecuteWithSignature<int>("getAndIncrement", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("getAndIncrement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndSet(java.lang.Object,int)"/>
@@ -508,7 +508,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int IncrementAndGet(T arg0)
         {
-            return IExecuteWithSignature<int>("incrementAndGet", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("incrementAndGet", arg0);
         }
 
         #endregion

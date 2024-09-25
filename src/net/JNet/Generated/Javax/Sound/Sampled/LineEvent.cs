@@ -150,21 +150,21 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public long FramePosition
         {
-            get { return IExecuteWithSignature<long>("getFramePosition", "()J"); }
+            get { return IExecute<long>("getFramePosition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#getType()"/> 
         /// </summary>
         public Javax.Sound.Sampled.LineEvent.Type GetType
         {
-            get { return IExecuteWithSignature<Javax.Sound.Sampled.LineEvent.Type>("getType", "()Ljavax/sound/sampled/LineEvent$Type;"); }
+            get { return IExecute<Javax.Sound.Sampled.LineEvent.Type>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#getLine()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line Line
         {
-            get { return IExecuteWithSignature<Javax.Sound.Sampled.Line>("getLine", "()Ljavax/sound/sampled/Line;"); }
+            get { return IExecute<Javax.Sound.Sampled.Line>("getLine"); }
         }
 
         #endregion

@@ -127,21 +127,21 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Java.Lang.Reflect.Type[] ActualTypeArguments
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getActualTypeArguments", "()[Ljava/lang/reflect/Type;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Type>("getActualTypeArguments"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html#getOwnerType()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type OwnerType
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getOwnerType", "()Ljava/lang/reflect/Type;"); }
+            get { return IExecute<Java.Lang.Reflect.Type>("getOwnerType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html#getRawType()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type RawType
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getRawType", "()Ljava/lang/reflect/Type;"); }
+            get { return IExecute<Java.Lang.Reflect.Type>("getRawType"); }
         }
 
         #endregion

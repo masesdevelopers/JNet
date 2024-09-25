@@ -91,7 +91,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public static Javax.Swing.Text.LayoutQueue DefaultQueue
         {
-            get { return SExecuteWithSignature<Javax.Swing.Text.LayoutQueue>(LocalBridgeClazz, "getDefaultQueue", "()Ljavax/swing/text/LayoutQueue;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefaultQueue", "(Ljavax/swing/text/LayoutQueue;)V", value); }
+            get { return SExecute<Javax.Swing.Text.LayoutQueue>(LocalBridgeClazz, "getDefaultQueue"); } set { SExecute(LocalBridgeClazz, "setDefaultQueue", value); }
         }
 
         #endregion
@@ -103,7 +103,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         public void AddTask(Java.Lang.Runnable arg0)
         {
-            IExecuteWithSignature("addTask", "(Ljava/lang/Runnable;)V", arg0);
+            IExecute("addTask", arg0);
         }
 
         #endregion

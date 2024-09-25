@@ -132,7 +132,7 @@ namespace Javax.Script
         /// <exception cref="Javax.Script.ScriptException"/>
         public Javax.Script.CompiledScript Compile(Java.Io.Reader arg0)
         {
-            return IExecuteWithSignature<Javax.Script.CompiledScript>("compile", "(Ljava/io/Reader;)Ljavax/script/CompiledScript;", arg0);
+            return IExecute<Javax.Script.CompiledScript>("compile", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html#compile(java.lang.String)"/>
@@ -142,7 +142,7 @@ namespace Javax.Script
         /// <exception cref="Javax.Script.ScriptException"/>
         public Javax.Script.CompiledScript Compile(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Script.CompiledScript>("compile", "(Ljava/lang/String;)Ljavax/script/CompiledScript;", arg0);
+            return IExecute<Javax.Script.CompiledScript>("compile", arg0);
         }
 
         #endregion

@@ -131,7 +131,7 @@ namespace Java.Beans
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String DefaultEventSet()
         {
-            return IExecuteWithSignature<Java.Lang.String>("defaultEventSet", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("defaultEventSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultProperty()"/>
@@ -139,7 +139,7 @@ namespace Java.Beans
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String DefaultProperty()
         {
-            return IExecuteWithSignature<Java.Lang.String>("defaultProperty", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("defaultProperty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#description()"/>
@@ -147,7 +147,7 @@ namespace Java.Beans
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Description()
         {
-            return IExecuteWithSignature<Java.Lang.String>("description", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("description");
         }
 
         #endregion

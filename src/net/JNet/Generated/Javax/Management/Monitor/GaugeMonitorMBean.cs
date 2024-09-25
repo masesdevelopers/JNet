@@ -154,35 +154,35 @@ namespace Javax.Management.Monitor
         /// </summary>
         public bool DifferenceMode
         {
-            get { return IExecuteWithSignature<bool>("getDifferenceMode", "()Z"); } set { IExecuteWithSignature("setDifferenceMode", "(Z)V", value); }
+            get { return IExecute<bool>("getDifferenceMode"); } set { IExecute("setDifferenceMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getHighThreshold()"/> 
         /// </summary>
         public Java.Lang.Number HighThreshold
         {
-            get { return IExecuteWithSignature<Java.Lang.Number>("getHighThreshold", "()Ljava/lang/Number;"); }
+            get { return IExecute<Java.Lang.Number>("getHighThreshold"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getLowThreshold()"/> 
         /// </summary>
         public Java.Lang.Number LowThreshold
         {
-            get { return IExecuteWithSignature<Java.Lang.Number>("getLowThreshold", "()Ljava/lang/Number;"); }
+            get { return IExecute<Java.Lang.Number>("getLowThreshold"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyHigh()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyHigh(boolean)"/>
         /// </summary>
         public bool NotifyHigh
         {
-            get { return IExecuteWithSignature<bool>("getNotifyHigh", "()Z"); } set { IExecuteWithSignature("setNotifyHigh", "(Z)V", value); }
+            get { return IExecute<bool>("getNotifyHigh"); } set { IExecute("setNotifyHigh", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyLow()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyLow(boolean)"/>
         /// </summary>
         public bool NotifyLow
         {
-            get { return IExecuteWithSignature<bool>("getNotifyLow", "()Z"); } set { IExecuteWithSignature("setNotifyLow", "(Z)V", value); }
+            get { return IExecute<bool>("getNotifyLow"); } set { IExecute("setNotifyLow", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGauge(javax.management.ObjectName)"/>
@@ -191,7 +191,7 @@ namespace Javax.Management.Monitor
         /// <returns><see cref="Java.Lang.Number"/></returns>
         public Java.Lang.Number GetDerivedGauge(Javax.Management.ObjectName arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Number>("getDerivedGauge", "(Ljavax/management/ObjectName;)Ljava/lang/Number;", arg0);
+            return IExecute<Java.Lang.Number>("getDerivedGauge", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGaugeTimeStamp(javax.management.ObjectName)"/>
@@ -200,7 +200,7 @@ namespace Javax.Management.Monitor
         /// <returns><see cref="long"/></returns>
         public long GetDerivedGaugeTimeStamp(Javax.Management.ObjectName arg0)
         {
-            return IExecuteWithSignature<long>("getDerivedGaugeTimeStamp", "(Ljavax/management/ObjectName;)J", arg0);
+            return IExecute<long>("getDerivedGaugeTimeStamp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setThresholds(java.lang.Number,java.lang.Number)"/>

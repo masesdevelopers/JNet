@@ -93,7 +93,7 @@ namespace Javax.Management
         /// </summary>
         public static Javax.Management.MBeanServer MBeanServer
         {
-            get { return SExecuteWithSignature<Javax.Management.MBeanServer>(LocalBridgeClazz, "getMBeanServer", "()Ljavax/management/MBeanServer;"); }
+            get { return SExecute<Javax.Management.MBeanServer>(LocalBridgeClazz, "getMBeanServer"); }
         }
 
         #endregion
@@ -105,7 +105,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
         public void SetMBeanServer(Javax.Management.MBeanServer arg0)
         {
-            IExecuteWithSignature("setMBeanServer", "(Ljavax/management/MBeanServer;)V", arg0);
+            IExecute("setMBeanServer", arg0);
         }
 
         #endregion

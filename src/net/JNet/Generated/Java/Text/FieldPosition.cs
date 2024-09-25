@@ -120,28 +120,28 @@ namespace Java.Text
         /// </summary>
         public int BeginIndex
         {
-            get { return IExecuteWithSignature<int>("getBeginIndex", "()I"); } set { IExecuteWithSignature("setBeginIndex", "(I)V", value); }
+            get { return IExecute<int>("getBeginIndex"); } set { IExecute("setBeginIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#getEndIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#setEndIndex(int)"/>
         /// </summary>
         public int EndIndex
         {
-            get { return IExecuteWithSignature<int>("getEndIndex", "()I"); } set { IExecuteWithSignature("setEndIndex", "(I)V", value); }
+            get { return IExecute<int>("getEndIndex"); } set { IExecute("setEndIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#getField()"/> 
         /// </summary>
         public int Field
         {
-            get { return IExecuteWithSignature<int>("getField", "()I"); }
+            get { return IExecute<int>("getField"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#getFieldAttribute()"/> 
         /// </summary>
         public Java.Text.Format.Field FieldAttribute
         {
-            get { return IExecuteWithSignature<Java.Text.Format.Field>("getFieldAttribute", "()Ljava/text/Format$Field;"); }
+            get { return IExecute<Java.Text.Format.Field>("getFieldAttribute"); }
         }
 
         #endregion

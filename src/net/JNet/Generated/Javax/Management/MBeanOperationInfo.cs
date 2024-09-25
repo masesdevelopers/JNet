@@ -157,21 +157,21 @@ namespace Javax.Management
         /// </summary>
         public int Impact
         {
-            get { return IExecuteWithSignature<int>("getImpact", "()I"); }
+            get { return IExecute<int>("getImpact"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#getReturnType()"/> 
         /// </summary>
         public Java.Lang.String ReturnType
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getReturnType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getReturnType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#getSignature()"/> 
         /// </summary>
         public Javax.Management.MBeanParameterInfo[] Signature
         {
-            get { return IExecuteWithSignatureArray<Javax.Management.MBeanParameterInfo>("getSignature", "()[Ljavax/management/MBeanParameterInfo;"); }
+            get { return IExecuteArray<Javax.Management.MBeanParameterInfo>("getSignature"); }
         }
 
         #endregion

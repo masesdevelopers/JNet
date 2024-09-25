@@ -242,7 +242,7 @@ namespace Javax.Naming.Ldap
         /// <param name="arg0"><see cref="Javax.Naming.Ldap.UnsolicitedNotificationEvent"/></param>
         public override void NotificationReceived(Javax.Naming.Ldap.UnsolicitedNotificationEvent arg0)
         {
-            IExecuteWithSignature("notificationReceived", "(Ljavax/naming/ldap/UnsolicitedNotificationEvent;)V", arg0);
+            IExecute("notificationReceived", arg0);
         }
 
         #endregion

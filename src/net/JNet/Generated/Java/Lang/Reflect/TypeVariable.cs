@@ -153,28 +153,28 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType[] AnnotatedBounds
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedBounds", "()[Ljava/lang/reflect/AnnotatedType;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getBounds()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type[] Bounds
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getBounds", "()[Ljava/lang/reflect/Type;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Type>("getBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getGenericDeclaration()"/> 
         /// </summary>
         public Java.Lang.Reflect.GenericDeclaration GenericDeclaration
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.GenericDeclaration>("getGenericDeclaration", "()Ljava/lang/reflect/GenericDeclaration;"); }
+            get { return IExecute<Java.Lang.Reflect.GenericDeclaration>("getGenericDeclaration"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
 
         #endregion
@@ -258,28 +258,28 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType[] AnnotatedBounds
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedBounds", "()[Ljava/lang/reflect/AnnotatedType;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getBounds()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type[] Bounds
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getBounds", "()[Ljava/lang/reflect/Type;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Type>("getBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getGenericDeclaration()"/> 
         /// </summary>
         public D GenericDeclaration
         {
-            get { return IExecuteWithSignature<D>("getGenericDeclaration", "()Ljava/lang/reflect/GenericDeclaration;"); }
+            get { return IExecute<D>("getGenericDeclaration"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
 
         #endregion

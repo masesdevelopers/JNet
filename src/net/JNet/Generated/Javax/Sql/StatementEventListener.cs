@@ -234,7 +234,7 @@ namespace Javax.Sql
         /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
         public override void StatementClosed(Javax.Sql.StatementEvent arg0)
         {
-            IExecuteWithSignature("statementClosed", "(Ljavax/sql/StatementEvent;)V", arg0);
+            IExecute("statementClosed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
@@ -242,7 +242,7 @@ namespace Javax.Sql
         /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
         public override void StatementErrorOccurred(Javax.Sql.StatementEvent arg0)
         {
-            IExecuteWithSignature("statementErrorOccurred", "(Ljavax/sql/StatementEvent;)V", arg0);
+            IExecute("statementErrorOccurred", arg0);
         }
 
         #endregion

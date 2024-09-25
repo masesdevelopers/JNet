@@ -147,7 +147,7 @@ namespace Javax.Security.Auth.Login
         /// </summary>
         public Javax.Security.Auth.Subject Subject
         {
-            get { return IExecuteWithSignature<Javax.Security.Auth.Subject>("getSubject", "()Ljavax/security/auth/Subject;"); }
+            get { return IExecute<Javax.Security.Auth.Subject>("getSubject"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#login()"/>
@@ -155,7 +155,7 @@ namespace Javax.Security.Auth.Login
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public void Login()
         {
-            IExecuteWithSignature("login", "()V");
+            IExecute("login");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#logout()"/>
@@ -163,7 +163,7 @@ namespace Javax.Security.Auth.Login
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public void Logout()
         {
-            IExecuteWithSignature("logout", "()V");
+            IExecute("logout");
         }
 
         #endregion

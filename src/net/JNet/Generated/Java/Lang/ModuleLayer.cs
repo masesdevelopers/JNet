@@ -137,7 +137,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
         public static Java.Lang.ModuleLayer Boot()
         {
-            return SExecuteWithSignature<Java.Lang.ModuleLayer>(LocalBridgeClazz, "boot", "()Ljava/lang/ModuleLayer;");
+            return SExecute<Java.Lang.ModuleLayer>(LocalBridgeClazz, "boot");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#empty()"/>
@@ -145,7 +145,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
         public static Java.Lang.ModuleLayer Empty()
         {
-            return SExecuteWithSignature<Java.Lang.ModuleLayer>(LocalBridgeClazz, "empty", "()Ljava/lang/ModuleLayer;");
+            return SExecute<Java.Lang.ModuleLayer>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModules(java.lang.module.Configuration,java.util.List,java.util.function.Function)"/>
@@ -191,7 +191,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
         public Java.Lang.ClassLoader FindLoader(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.ClassLoader>("findLoader", "(Ljava/lang/String;)Ljava/lang/ClassLoader;", arg0);
+            return IExecute<Java.Lang.ClassLoader>("findLoader", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#configuration()"/>
@@ -199,7 +199,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public Java.Lang.ModuleNs.Configuration Configuration()
         {
-            return IExecuteWithSignature<Java.Lang.ModuleNs.Configuration>("configuration", "()Ljava/lang/module/Configuration;");
+            return IExecute<Java.Lang.ModuleNs.Configuration>("configuration");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModules(java.lang.module.Configuration,java.util.function.Function)"/>
@@ -237,7 +237,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.ModuleLayer> Parents()
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Lang.ModuleLayer>>("parents", "()Ljava/util/List;");
+            return IExecute<Java.Util.List<Java.Lang.ModuleLayer>>("parents");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#findModule(java.lang.String)"/>
@@ -246,7 +246,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Lang.Module> FindModule(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Module>>("findModule", "(Ljava/lang/String;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<Java.Lang.Module>>("findModule", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#modules()"/>
@@ -254,7 +254,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.Module> Modules()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Module>>("modules", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Lang.Module>>("modules");
         }
 
         #endregion
@@ -297,7 +297,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
             public Java.Lang.ModuleLayer.Controller AddExports(Java.Lang.Module arg0, Java.Lang.String arg1, Java.Lang.Module arg2)
             {
-                return IExecute<Java.Lang.ModuleLayer.Controller>("addExports", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Lang.ModuleLayer.Controller>("addExports", "(Ljava/lang/Module;Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/ModuleLayer$Controller;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addOpens(java.lang.Module,java.lang.String,java.lang.Module)"/>
@@ -308,7 +308,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
             public Java.Lang.ModuleLayer.Controller AddOpens(Java.Lang.Module arg0, Java.Lang.String arg1, Java.Lang.Module arg2)
             {
-                return IExecute<Java.Lang.ModuleLayer.Controller>("addOpens", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Lang.ModuleLayer.Controller>("addOpens", "(Ljava/lang/Module;Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/ModuleLayer$Controller;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addReads(java.lang.Module,java.lang.Module)"/>
@@ -318,7 +318,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
             public Java.Lang.ModuleLayer.Controller AddReads(Java.Lang.Module arg0, Java.Lang.Module arg1)
             {
-                return IExecute<Java.Lang.ModuleLayer.Controller>("addReads", arg0, arg1);
+                return IExecuteWithSignature<Java.Lang.ModuleLayer.Controller>("addReads", "(Ljava/lang/Module;Ljava/lang/Module;)Ljava/lang/ModuleLayer$Controller;", arg0, arg1);
             }
 
             #endregion

@@ -323,14 +323,14 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Dialog.ModalityType GetModalityType
         {
-            get { return IExecuteWithSignature<Java.Awt.Dialog.ModalityType>("getModalityType", "()Ljava/awt/Dialog$ModalityType;"); }
+            get { return IExecute<Java.Awt.Dialog.ModalityType>("getModalityType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#getTitle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setTitle(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Title
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTitle", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTitle", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getTitle"); } set { IExecute("setTitle", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isModal()"/>
@@ -338,7 +338,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsModal()
         {
-            return IExecuteWithSignature<bool>("isModal", "()Z");
+            return IExecute<bool>("isModal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isResizable()"/>
@@ -346,7 +346,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsResizable()
         {
-            return IExecuteWithSignature<bool>("isResizable", "()Z");
+            return IExecute<bool>("isResizable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isUndecorated()"/>
@@ -354,7 +354,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsUndecorated()
         {
-            return IExecuteWithSignature<bool>("isUndecorated", "()Z");
+            return IExecute<bool>("isUndecorated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setModal(boolean)"/>
@@ -362,7 +362,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetModal(bool arg0)
         {
-            IExecuteWithSignature("setModal", "(Z)V", arg0);
+            IExecute("setModal", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setModalityType(java.awt.Dialog.ModalityType)"/>
@@ -370,7 +370,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Dialog.ModalityType"/></param>
         public void SetModalityType(Java.Awt.Dialog.ModalityType arg0)
         {
-            IExecuteWithSignature("setModalityType", "(Ljava/awt/Dialog$ModalityType;)V", arg0);
+            IExecute("setModalityType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setResizable(boolean)"/>
@@ -378,7 +378,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetResizable(bool arg0)
         {
-            IExecuteWithSignature("setResizable", "(Z)V", arg0);
+            IExecute("setResizable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setUndecorated(boolean)"/>
@@ -386,7 +386,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetUndecorated(bool arg0)
         {
-            IExecuteWithSignature("setUndecorated", "(Z)V", arg0);
+            IExecute("setUndecorated", arg0);
         }
 
         #endregion
@@ -505,7 +505,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Dialog.ModalityType"/></returns>
             public static Java.Awt.Dialog.ModalityType ValueOf(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/Dialog$ModalityType;", arg0);
+                return SExecute<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "valueOf", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#values()"/>
@@ -513,7 +513,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Dialog.ModalityType"/></returns>
             public static Java.Awt.Dialog.ModalityType[] Values()
             {
-                return SExecuteWithSignatureArray<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "values", "()[Ljava/awt/Dialog$ModalityType;");
+                return SExecuteArray<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "values");
             }
 
             #endregion

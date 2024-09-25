@@ -103,42 +103,42 @@ namespace Java.Util.Zip
         /// </summary>
         public int Adler
         {
-            get { return IExecuteWithSignature<int>("getAdler", "()I"); }
+            get { return IExecute<int>("getAdler"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#getBytesRead()"/> 
         /// </summary>
         public long BytesRead
         {
-            get { return IExecuteWithSignature<long>("getBytesRead", "()J"); }
+            get { return IExecute<long>("getBytesRead"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#getBytesWritten()"/> 
         /// </summary>
         public long BytesWritten
         {
-            get { return IExecuteWithSignature<long>("getBytesWritten", "()J"); }
+            get { return IExecute<long>("getBytesWritten"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#getRemaining()"/> 
         /// </summary>
         public int Remaining
         {
-            get { return IExecuteWithSignature<int>("getRemaining", "()I"); }
+            get { return IExecute<int>("getRemaining"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#getTotalIn()"/> 
         /// </summary>
         public int TotalIn
         {
-            get { return IExecuteWithSignature<int>("getTotalIn", "()I"); }
+            get { return IExecute<int>("getTotalIn"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#getTotalOut()"/> 
         /// </summary>
         public int TotalOut
         {
-            get { return IExecuteWithSignature<int>("getTotalOut", "()I"); }
+            get { return IExecute<int>("getTotalOut"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#finished()"/>
@@ -146,7 +146,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="bool"/></returns>
         public bool Finished()
         {
-            return IExecuteWithSignature<bool>("finished", "()Z");
+            return IExecute<bool>("finished");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#needsDictionary()"/>
@@ -154,7 +154,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="bool"/></returns>
         public bool NeedsDictionary()
         {
-            return IExecuteWithSignature<bool>("needsDictionary", "()Z");
+            return IExecute<bool>("needsDictionary");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#needsInput()"/>
@@ -162,7 +162,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="bool"/></returns>
         public bool NeedsInput()
         {
-            return IExecuteWithSignature<bool>("needsInput", "()Z");
+            return IExecute<bool>("needsInput");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#inflate(byte[],int,int)"/>
@@ -184,7 +184,7 @@ namespace Java.Util.Zip
         /// <exception cref="Java.Util.Zip.DataFormatException"/>
         public int Inflate(byte[] arg0)
         {
-            return IExecuteWithSignature<int>("inflate", "([B)I", new object[] { arg0 });
+            return IExecute<int>("inflate", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#inflate(java.nio.ByteBuffer)"/>
@@ -194,21 +194,21 @@ namespace Java.Util.Zip
         /// <exception cref="Java.Util.Zip.DataFormatException"/>
         public int Inflate(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<int>("inflate", "(Ljava/nio/ByteBuffer;)I", arg0);
+            return IExecute<int>("inflate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#end()"/>
         /// </summary>
         public void End()
         {
-            IExecuteWithSignature("end", "()V");
+            IExecute("end");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#setDictionary(byte[],int,int)"/>
@@ -226,7 +226,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="byte"/></param>
         public void SetDictionary(byte[] arg0)
         {
-            IExecuteWithSignature("setDictionary", "([B)V", new object[] { arg0 });
+            IExecute("setDictionary", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#setDictionary(java.nio.ByteBuffer)"/>
@@ -234,7 +234,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void SetDictionary(Java.Nio.ByteBuffer arg0)
         {
-            IExecuteWithSignature("setDictionary", "(Ljava/nio/ByteBuffer;)V", arg0);
+            IExecute("setDictionary", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#setInput(byte[],int,int)"/>
@@ -252,7 +252,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="byte"/></param>
         public void SetInput(byte[] arg0)
         {
-            IExecuteWithSignature("setInput", "([B)V", new object[] { arg0 });
+            IExecute("setInput", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#setInput(java.nio.ByteBuffer)"/>
@@ -260,7 +260,7 @@ namespace Java.Util.Zip
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void SetInput(Java.Nio.ByteBuffer arg0)
         {
-            IExecuteWithSignature("setInput", "(Ljava/nio/ByteBuffer;)V", arg0);
+            IExecute("setInput", arg0);
         }
 
         #endregion

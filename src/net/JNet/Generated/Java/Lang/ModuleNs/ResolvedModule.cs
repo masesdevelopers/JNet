@@ -96,7 +96,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public Java.Lang.ModuleNs.Configuration Configuration()
         {
-            return IExecuteWithSignature<Java.Lang.ModuleNs.Configuration>("configuration", "()Ljava/lang/module/Configuration;");
+            return IExecute<Java.Lang.ModuleNs.Configuration>("configuration");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#reference()"/>
@@ -104,7 +104,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleReference"/></returns>
         public Java.Lang.ModuleNs.ModuleReference Reference()
         {
-            return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleReference>("reference", "()Ljava/lang/module/ModuleReference;");
+            return IExecute<Java.Lang.ModuleNs.ModuleReference>("reference");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#name()"/>
@@ -112,7 +112,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#reads()"/>
@@ -120,7 +120,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule> Reads()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule>>("reads", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule>>("reads");
         }
 
         #endregion

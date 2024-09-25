@@ -109,7 +109,7 @@ namespace Java.Beans
         /// </summary>
         public static Java.Lang.String[] BeanInfoSearchPath
         {
-            get { return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getBeanInfoSearchPath", "()[Ljava/lang/String;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setBeanInfoSearchPath", "([Ljava/lang/String;)V", value); }
+            get { return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "getBeanInfoSearchPath"); } set { SExecute(LocalBridgeClazz, "setBeanInfoSearchPath", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class,int)"/>
@@ -153,7 +153,7 @@ namespace Java.Beans
         /// <exception cref="Java.Beans.IntrospectionException"/>
         public static Java.Beans.BeanInfo GetBeanInfo(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Beans.BeanInfo>(LocalBridgeClazz, "getBeanInfo", "(Ljava/lang/Class;)Ljava/beans/BeanInfo;", arg0);
+            return SExecute<Java.Beans.BeanInfo>(LocalBridgeClazz, "getBeanInfo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#decapitalize(java.lang.String)"/>
@@ -162,14 +162,14 @@ namespace Java.Beans
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Decapitalize(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "decapitalize", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "decapitalize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#flushCaches()"/>
         /// </summary>
         public static void FlushCaches()
         {
-            SExecuteWithSignature(LocalBridgeClazz, "flushCaches", "()V");
+            SExecute(LocalBridgeClazz, "flushCaches");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#flushFromCaches(java.lang.Class)"/>
@@ -177,7 +177,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         public static void FlushFromCaches(Java.Lang.Class arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "flushFromCaches", "(Ljava/lang/Class;)V", arg0);
+            SExecute(LocalBridgeClazz, "flushFromCaches", arg0);
         }
 
         #endregion

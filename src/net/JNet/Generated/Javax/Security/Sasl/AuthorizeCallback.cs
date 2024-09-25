@@ -112,21 +112,21 @@ namespace Javax.Security.Sasl
         /// </summary>
         public Java.Lang.String AuthenticationID
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAuthenticationID", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAuthenticationID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#getAuthorizationID()"/> 
         /// </summary>
         public Java.Lang.String AuthorizationID
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAuthorizationID", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAuthorizationID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#getAuthorizedID()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#setAuthorizedID(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String AuthorizedID
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAuthorizedID", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAuthorizedID", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAuthorizedID"); } set { IExecute("setAuthorizedID", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#isAuthorized()"/>
@@ -134,7 +134,7 @@ namespace Javax.Security.Sasl
         /// <returns><see cref="bool"/></returns>
         public bool IsAuthorized()
         {
-            return IExecuteWithSignature<bool>("isAuthorized", "()Z");
+            return IExecute<bool>("isAuthorized");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#setAuthorized(boolean)"/>
@@ -142,7 +142,7 @@ namespace Javax.Security.Sasl
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetAuthorized(bool arg0)
         {
-            IExecuteWithSignature("setAuthorized", "(Z)V", arg0);
+            IExecute("setAuthorized", arg0);
         }
 
         #endregion

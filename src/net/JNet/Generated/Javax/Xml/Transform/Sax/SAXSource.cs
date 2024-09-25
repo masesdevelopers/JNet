@@ -116,7 +116,7 @@ namespace Javax.Xml.Transform.Sax
         /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
         public static Org.Xml.Sax.InputSource SourceToInputSource(Javax.Xml.Transform.Source arg0)
         {
-            return SExecuteWithSignature<Org.Xml.Sax.InputSource>(LocalBridgeClazz, "sourceToInputSource", "(Ljavax/xml/transform/Source;)Lorg/xml/sax/InputSource;", arg0);
+            return SExecute<Org.Xml.Sax.InputSource>(LocalBridgeClazz, "sourceToInputSource", arg0);
         }
 
         #endregion
@@ -127,21 +127,21 @@ namespace Javax.Xml.Transform.Sax
         /// </summary>
         public Org.Xml.Sax.InputSource InputSource
         {
-            get { return IExecuteWithSignature<Org.Xml.Sax.InputSource>("getInputSource", "()Lorg/xml/sax/InputSource;"); } set { IExecuteWithSignature("setInputSource", "(Lorg/xml/sax/InputSource;)V", value); }
+            get { return IExecute<Org.Xml.Sax.InputSource>("getInputSource"); } set { IExecute("setInputSource", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#getXMLReader()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#setXMLReader(org.xml.sax.XMLReader)"/>
         /// </summary>
         public Org.Xml.Sax.XMLReader XMLReader
         {
-            get { return IExecuteWithSignature<Org.Xml.Sax.XMLReader>("getXMLReader", "()Lorg/xml/sax/XMLReader;"); } set { IExecuteWithSignature("setXMLReader", "(Lorg/xml/sax/XMLReader;)V", value); }
+            get { return IExecute<Org.Xml.Sax.XMLReader>("getXMLReader"); } set { IExecute("setXMLReader", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#isEmpty()"/>
@@ -149,7 +149,7 @@ namespace Javax.Xml.Transform.Sax
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
 
         #endregion

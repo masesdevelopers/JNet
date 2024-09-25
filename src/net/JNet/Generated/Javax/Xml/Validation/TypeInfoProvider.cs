@@ -97,7 +97,7 @@ namespace Javax.Xml.Validation
         /// </summary>
         public Org.W3c.Dom.TypeInfo ElementTypeInfo
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.TypeInfo>("getElementTypeInfo", "()Lorg/w3c/dom/TypeInfo;"); }
+            get { return IExecute<Org.W3c.Dom.TypeInfo>("getElementTypeInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#isIdAttribute(int)"/>
@@ -106,7 +106,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="bool"/></returns>
         public bool IsIdAttribute(int arg0)
         {
-            return IExecuteWithSignature<bool>("isIdAttribute", "(I)Z", arg0);
+            return IExecute<bool>("isIdAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#isSpecified(int)"/>
@@ -115,7 +115,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="bool"/></returns>
         public bool IsSpecified(int arg0)
         {
-            return IExecuteWithSignature<bool>("isSpecified", "(I)Z", arg0);
+            return IExecute<bool>("isSpecified", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#getAttributeTypeInfo(int)"/>
@@ -124,7 +124,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Org.W3c.Dom.TypeInfo"/></returns>
         public Org.W3c.Dom.TypeInfo GetAttributeTypeInfo(int arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.TypeInfo>("getAttributeTypeInfo", "(I)Lorg/w3c/dom/TypeInfo;", arg0);
+            return IExecute<Org.W3c.Dom.TypeInfo>("getAttributeTypeInfo", arg0);
         }
 
         #endregion

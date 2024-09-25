@@ -97,21 +97,21 @@ namespace Javax.Xml.Transform
         /// </summary>
         public Javax.Xml.Transform.ErrorListener ErrorListener
         {
-            get { return IExecuteWithSignature<Javax.Xml.Transform.ErrorListener>("getErrorListener", "()Ljavax/xml/transform/ErrorListener;"); } set { IExecuteWithSignature("setErrorListener", "(Ljavax/xml/transform/ErrorListener;)V", value); }
+            get { return IExecute<Javax.Xml.Transform.ErrorListener>("getErrorListener"); } set { IExecute("setErrorListener", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getOutputProperties()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setOutputProperties(java.util.Properties)"/>
         /// </summary>
         public Java.Util.Properties OutputProperties
         {
-            get { return IExecuteWithSignature<Java.Util.Properties>("getOutputProperties", "()Ljava/util/Properties;"); } set { IExecuteWithSignature("setOutputProperties", "(Ljava/util/Properties;)V", value); }
+            get { return IExecute<Java.Util.Properties>("getOutputProperties"); } set { IExecute("setOutputProperties", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getURIResolver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setURIResolver(javax.xml.transform.URIResolver)"/>
         /// </summary>
         public Javax.Xml.Transform.URIResolver URIResolver
         {
-            get { return IExecuteWithSignature<Javax.Xml.Transform.URIResolver>("getURIResolver", "()Ljavax/xml/transform/URIResolver;"); } set { IExecuteWithSignature("setURIResolver", "(Ljavax/xml/transform/URIResolver;)V", value); }
+            get { return IExecute<Javax.Xml.Transform.URIResolver>("getURIResolver"); } set { IExecute("setURIResolver", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getParameter(java.lang.String)"/>
@@ -120,7 +120,7 @@ namespace Javax.Xml.Transform
         /// <returns><see cref="object"/></returns>
         public object GetParameter(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getParameter", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getOutputProperty(java.lang.String)"/>
@@ -130,14 +130,14 @@ namespace Javax.Xml.Transform
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public Java.Lang.String GetOutputProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getOutputProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getOutputProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#clearParameters()"/>
         /// </summary>
         public void ClearParameters()
         {
-            IExecuteWithSignature("clearParameters", "()V");
+            IExecute("clearParameters");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setOutputProperty(java.lang.String,java.lang.String)"/>
@@ -173,7 +173,7 @@ namespace Javax.Xml.Transform
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
 
         #endregion

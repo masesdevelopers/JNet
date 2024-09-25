@@ -121,7 +121,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.WeekFields"/></returns>
         public static Java.Time.Temporal.WeekFields Of(Java.Util.Locale arg0)
         {
-            return SExecuteWithSignature<Java.Time.Temporal.WeekFields>(LocalBridgeClazz, "of", "(Ljava/util/Locale;)Ljava/time/temporal/WeekFields;", arg0);
+            return SExecute<Java.Time.Temporal.WeekFields>(LocalBridgeClazz, "of", arg0);
         }
 
         #endregion
@@ -132,14 +132,14 @@ namespace Java.Time.Temporal
         /// </summary>
         public Java.Time.DayOfWeek FirstDayOfWeek
         {
-            get { return IExecuteWithSignature<Java.Time.DayOfWeek>("getFirstDayOfWeek", "()Ljava/time/DayOfWeek;"); }
+            get { return IExecute<Java.Time.DayOfWeek>("getFirstDayOfWeek"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#getMinimalDaysInFirstWeek()"/> 
         /// </summary>
         public int MinimalDaysInFirstWeek
         {
-            get { return IExecuteWithSignature<int>("getMinimalDaysInFirstWeek", "()I"); }
+            get { return IExecute<int>("getMinimalDaysInFirstWeek"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#dayOfWeek()"/>
@@ -147,7 +147,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField DayOfWeek()
         {
-            return IExecuteWithSignature<Java.Time.Temporal.TemporalField>("dayOfWeek", "()Ljava/time/temporal/TemporalField;");
+            return IExecute<Java.Time.Temporal.TemporalField>("dayOfWeek");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekBasedYear()"/>
@@ -155,7 +155,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekBasedYear()
         {
-            return IExecuteWithSignature<Java.Time.Temporal.TemporalField>("weekBasedYear", "()Ljava/time/temporal/TemporalField;");
+            return IExecute<Java.Time.Temporal.TemporalField>("weekBasedYear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfMonth()"/>
@@ -163,7 +163,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekOfMonth()
         {
-            return IExecuteWithSignature<Java.Time.Temporal.TemporalField>("weekOfMonth", "()Ljava/time/temporal/TemporalField;");
+            return IExecute<Java.Time.Temporal.TemporalField>("weekOfMonth");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfWeekBasedYear()"/>
@@ -171,7 +171,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekOfWeekBasedYear()
         {
-            return IExecuteWithSignature<Java.Time.Temporal.TemporalField>("weekOfWeekBasedYear", "()Ljava/time/temporal/TemporalField;");
+            return IExecute<Java.Time.Temporal.TemporalField>("weekOfWeekBasedYear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfYear()"/>
@@ -179,7 +179,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekOfYear()
         {
-            return IExecuteWithSignature<Java.Time.Temporal.TemporalField>("weekOfYear", "()Ljava/time/temporal/TemporalField;");
+            return IExecute<Java.Time.Temporal.TemporalField>("weekOfYear");
         }
 
         #endregion

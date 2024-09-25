@@ -106,7 +106,7 @@ namespace Javax.Crypto
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getObject(java.security.Key,java.lang.String)"/>
@@ -134,7 +134,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public object GetObject(Java.Security.Key arg0)
         {
-            return IExecuteWithSignature("getObject", "(Ljava/security/Key;)Ljava/lang/Object;", arg0);
+            return IExecute("getObject", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getObject(javax.crypto.Cipher)"/>
@@ -147,7 +147,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public object GetObject(Javax.Crypto.Cipher arg0)
         {
-            return IExecuteWithSignature("getObject", "(Ljavax/crypto/Cipher;)Ljava/lang/Object;", arg0);
+            return IExecute("getObject", arg0);
         }
 
         #endregion

@@ -161,7 +161,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="bool"/></returns>
         public bool RemoteEquals(Java.Rmi.Server.RemoteRef arg0)
         {
-            return IExecuteWithSignature<bool>("remoteEquals", "(Ljava/rmi/server/RemoteRef;)Z", arg0);
+            return IExecute<bool>("remoteEquals", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteHashCode()"/>
@@ -169,7 +169,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="int"/></returns>
         public int RemoteHashCode()
         {
-            return IExecuteWithSignature<int>("remoteHashCode", "()I");
+            return IExecute<int>("remoteHashCode");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#invoke(java.rmi.Remote,java.lang.reflect.Method,java.lang.Object[],long)"/>
@@ -191,7 +191,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetRefClass(Java.Io.ObjectOutput arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getRefClass", "(Ljava/io/ObjectOutput;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getRefClass", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()"/>
@@ -199,7 +199,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String RemoteToString()
         {
-            return IExecuteWithSignature<Java.Lang.String>("remoteToString", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("remoteToString");
         }
 
         #endregion

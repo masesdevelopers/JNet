@@ -197,7 +197,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.LongPredicate AndDefault(Java.Util.Function.LongPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.LongPredicate>("andDefault", "(Ljava/util/function/LongPredicate;)Ljava/util/function/LongPredicate;", arg0);
+            return IExecute<Java.Util.Function.LongPredicate>("andDefault", arg0);
         }
 
         /// <summary>
@@ -232,7 +232,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.LongPredicate NegateDefault()
         {
-            return IExecuteWithSignature<Java.Util.Function.LongPredicate>("negateDefault", "()Ljava/util/function/LongPredicate;");
+            return IExecute<Java.Util.Function.LongPredicate>("negateDefault");
         }
 
         /// <summary>
@@ -267,7 +267,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.LongPredicate OrDefault(Java.Util.Function.LongPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.LongPredicate>("orDefault", "(Ljava/util/function/LongPredicate;)Ljava/util/function/LongPredicate;", arg0);
+            return IExecute<Java.Util.Function.LongPredicate>("orDefault", arg0);
         }
 
         /// <summary>
@@ -333,7 +333,7 @@ namespace Java.Util.Function
         /// <returns><see cref="bool"/></returns>
         public override bool Test(long arg0)
         {
-            return IExecuteWithSignature<bool>("test", "(J)Z", arg0);
+            return IExecute<bool>("test", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
@@ -342,7 +342,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
         public override Java.Util.Function.LongPredicate And(Java.Util.Function.LongPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("and", "(Ljava/util/function/LongPredicate;)Ljava/util/function/LongPredicate;", arg0);
+            return IExecute<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("and", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()"/>
@@ -350,7 +350,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
         public override Java.Util.Function.LongPredicate Negate()
         {
-            return IExecuteWithSignature<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("negate", "()Ljava/util/function/LongPredicate;");
+            return IExecute<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
@@ -359,7 +359,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
         public override Java.Util.Function.LongPredicate Or(Java.Util.Function.LongPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("or", "(Ljava/util/function/LongPredicate;)Ljava/util/function/LongPredicate;", arg0);
+            return IExecute<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("or", arg0);
         }
 
         #endregion

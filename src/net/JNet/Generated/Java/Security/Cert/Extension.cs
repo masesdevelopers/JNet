@@ -134,14 +134,14 @@ namespace Java.Security.Cert
         /// </summary>
         public Java.Lang.String Id
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html#getValue()"/> 
         /// </summary>
         public byte[] Value
         {
-            get { return IExecuteWithSignatureArray<byte>("getValue", "()[B"); }
+            get { return IExecuteArray<byte>("getValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html#isCritical()"/>
@@ -149,7 +149,7 @@ namespace Java.Security.Cert
         /// <returns><see cref="bool"/></returns>
         public bool IsCritical()
         {
-            return IExecuteWithSignature<bool>("isCritical", "()Z");
+            return IExecute<bool>("isCritical");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html#encode(java.io.OutputStream)"/>
@@ -158,7 +158,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Io.IOException"/>
         public void Encode(Java.Io.OutputStream arg0)
         {
-            IExecuteWithSignature("encode", "(Ljava/io/OutputStream;)V", arg0);
+            IExecute("encode", arg0);
         }
 
         #endregion

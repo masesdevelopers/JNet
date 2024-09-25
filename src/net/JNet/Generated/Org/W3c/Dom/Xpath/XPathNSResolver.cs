@@ -123,7 +123,7 @@ namespace Org.W3c.Dom.Xpath
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String LookupNamespaceURI(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("lookupNamespaceURI", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("lookupNamespaceURI", arg0);
         }
 
         #endregion

@@ -103,28 +103,28 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// </summary>
         public Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable[] ACHuffmanTables
         {
-            get { return IExecuteWithSignatureArray<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("getACHuffmanTables", "()[Ljavax/imageio/plugins/jpeg/JPEGHuffmanTable;"); }
+            get { return IExecuteArray<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("getACHuffmanTables"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#getDCHuffmanTables()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable[] DCHuffmanTables
         {
-            get { return IExecuteWithSignatureArray<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("getDCHuffmanTables", "()[Ljavax/imageio/plugins/jpeg/JPEGHuffmanTable;"); }
+            get { return IExecuteArray<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("getDCHuffmanTables"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#getOptimizeHuffmanTables()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#setOptimizeHuffmanTables(boolean)"/>
         /// </summary>
         public bool OptimizeHuffmanTables
         {
-            get { return IExecuteWithSignature<bool>("getOptimizeHuffmanTables", "()Z"); } set { IExecuteWithSignature("setOptimizeHuffmanTables", "(Z)V", value); }
+            get { return IExecute<bool>("getOptimizeHuffmanTables"); } set { IExecute("setOptimizeHuffmanTables", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#getQTables()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Jpeg.JPEGQTable[] QTables
         {
-            get { return IExecuteWithSignatureArray<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("getQTables", "()[Ljavax/imageio/plugins/jpeg/JPEGQTable;"); }
+            get { return IExecuteArray<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("getQTables"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#areTablesSet()"/>
@@ -132,7 +132,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <returns><see cref="bool"/></returns>
         public bool AreTablesSet()
         {
-            return IExecuteWithSignature<bool>("areTablesSet", "()Z");
+            return IExecute<bool>("areTablesSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#setEncodeTables(javax.imageio.plugins.jpeg.JPEGQTable[],javax.imageio.plugins.jpeg.JPEGHuffmanTable[],javax.imageio.plugins.jpeg.JPEGHuffmanTable[])"/>
@@ -149,7 +149,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// </summary>
         public void UnsetEncodeTables()
         {
-            IExecuteWithSignature("unsetEncodeTables", "()V");
+            IExecute("unsetEncodeTables");
         }
 
         #endregion

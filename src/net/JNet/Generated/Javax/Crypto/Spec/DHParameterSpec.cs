@@ -114,21 +114,21 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public Java.Math.BigInteger G
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getG", "()Ljava/math/BigInteger;"); }
+            get { return IExecute<Java.Math.BigInteger>("getG"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#getL()"/> 
         /// </summary>
         public int L
         {
-            get { return IExecuteWithSignature<int>("getL", "()I"); }
+            get { return IExecute<int>("getL"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#getP()"/> 
         /// </summary>
         public Java.Math.BigInteger P
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getP", "()Ljava/math/BigInteger;"); }
+            get { return IExecute<Java.Math.BigInteger>("getP"); }
         }
 
         #endregion

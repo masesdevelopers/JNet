@@ -103,21 +103,21 @@ namespace Javax.Print.Attribute.Standard
         /// </summary>
         public Java.Lang.Class Category
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getCategory", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getCategory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogOwner.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogOwner.html#getOwner()"/> 
         /// </summary>
         public Java.Awt.Window Owner
         {
-            get { return IExecuteWithSignature<Java.Awt.Window>("getOwner", "()Ljava/awt/Window;"); }
+            get { return IExecute<Java.Awt.Window>("getOwner"); }
         }
 
         #endregion

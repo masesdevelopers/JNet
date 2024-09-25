@@ -147,28 +147,28 @@ namespace Org.W3c.Dom.Traversal
         /// </summary>
         public bool ExpandEntityReferences
         {
-            get { return IExecuteWithSignature<bool>("getExpandEntityReferences", "()Z"); }
+            get { return IExecute<bool>("getExpandEntityReferences"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getFilter()"/> 
         /// </summary>
         public Org.W3c.Dom.Traversal.NodeFilter Filter
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Traversal.NodeFilter>("getFilter", "()Lorg/w3c/dom/traversal/NodeFilter;"); }
+            get { return IExecute<Org.W3c.Dom.Traversal.NodeFilter>("getFilter"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getRoot()"/> 
         /// </summary>
         public Org.W3c.Dom.Node Root
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getRoot", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getRoot"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getWhatToShow()"/> 
         /// </summary>
         public int WhatToShow
         {
-            get { return IExecuteWithSignature<int>("getWhatToShow", "()I"); }
+            get { return IExecute<int>("getWhatToShow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#nextNode()"/>
@@ -177,7 +177,7 @@ namespace Org.W3c.Dom.Traversal
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node NextNode()
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Node>("nextNode", "()Lorg/w3c/dom/Node;");
+            return IExecute<Org.W3c.Dom.Node>("nextNode");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#previousNode()"/>
@@ -186,14 +186,14 @@ namespace Org.W3c.Dom.Traversal
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node PreviousNode()
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Node>("previousNode", "()Lorg/w3c/dom/Node;");
+            return IExecute<Org.W3c.Dom.Node>("previousNode");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#detach()"/>
         /// </summary>
         public void Detach()
         {
-            IExecuteWithSignature("detach", "()V");
+            IExecute("detach");
         }
 
         #endregion

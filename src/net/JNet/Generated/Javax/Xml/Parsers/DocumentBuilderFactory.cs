@@ -94,7 +94,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
         public static Javax.Xml.Parsers.DocumentBuilderFactory NewDefaultInstance()
         {
-            return SExecuteWithSignature<Javax.Xml.Parsers.DocumentBuilderFactory>(LocalBridgeClazz, "newDefaultInstance", "()Ljavax/xml/parsers/DocumentBuilderFactory;");
+            return SExecute<Javax.Xml.Parsers.DocumentBuilderFactory>(LocalBridgeClazz, "newDefaultInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newInstance()"/>
@@ -102,7 +102,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
         public static Javax.Xml.Parsers.DocumentBuilderFactory NewInstance()
         {
-            return SExecuteWithSignature<Javax.Xml.Parsers.DocumentBuilderFactory>(LocalBridgeClazz, "newInstance", "()Ljavax/xml/parsers/DocumentBuilderFactory;");
+            return SExecute<Javax.Xml.Parsers.DocumentBuilderFactory>(LocalBridgeClazz, "newInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)"/>
@@ -123,7 +123,7 @@ namespace Javax.Xml.Parsers
         /// </summary>
         public Javax.Xml.Validation.Schema Schema
         {
-            get { return IExecuteWithSignature<Javax.Xml.Validation.Schema>("getSchema", "()Ljavax/xml/validation/Schema;"); } set { IExecuteWithSignature("setSchema", "(Ljavax/xml/validation/Schema;)V", value); }
+            get { return IExecute<Javax.Xml.Validation.Schema>("getSchema"); } set { IExecute("setSchema", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#getFeature(java.lang.String)"/>
@@ -133,7 +133,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
         public bool GetFeature(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("getFeature", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#getAttribute(java.lang.String)"/>
@@ -143,7 +143,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public object GetAttribute(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDocumentBuilder()"/>
@@ -152,7 +152,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
         public Javax.Xml.Parsers.DocumentBuilder NewDocumentBuilder()
         {
-            return IExecuteWithSignature<Javax.Xml.Parsers.DocumentBuilder>("newDocumentBuilder", "()Ljavax/xml/parsers/DocumentBuilder;");
+            return IExecute<Javax.Xml.Parsers.DocumentBuilder>("newDocumentBuilder");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setAttribute(java.lang.String,java.lang.Object)"/>
@@ -180,7 +180,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsCoalescing()
         {
-            return IExecuteWithSignature<bool>("isCoalescing", "()Z");
+            return IExecute<bool>("isCoalescing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isExpandEntityReferences()"/>
@@ -188,7 +188,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsExpandEntityReferences()
         {
-            return IExecuteWithSignature<bool>("isExpandEntityReferences", "()Z");
+            return IExecute<bool>("isExpandEntityReferences");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringComments()"/>
@@ -196,7 +196,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsIgnoringComments()
         {
-            return IExecuteWithSignature<bool>("isIgnoringComments", "()Z");
+            return IExecute<bool>("isIgnoringComments");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringElementContentWhitespace()"/>
@@ -204,7 +204,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsIgnoringElementContentWhitespace()
         {
-            return IExecuteWithSignature<bool>("isIgnoringElementContentWhitespace", "()Z");
+            return IExecute<bool>("isIgnoringElementContentWhitespace");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isNamespaceAware()"/>
@@ -212,7 +212,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsNamespaceAware()
         {
-            return IExecuteWithSignature<bool>("isNamespaceAware", "()Z");
+            return IExecute<bool>("isNamespaceAware");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isValidating()"/>
@@ -220,7 +220,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsValidating()
         {
-            return IExecuteWithSignature<bool>("isValidating", "()Z");
+            return IExecute<bool>("isValidating");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isXIncludeAware()"/>
@@ -228,7 +228,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="bool"/></returns>
         public bool IsXIncludeAware()
         {
-            return IExecuteWithSignature<bool>("isXIncludeAware", "()Z");
+            return IExecute<bool>("isXIncludeAware");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setCoalescing(boolean)"/>
@@ -236,7 +236,7 @@ namespace Javax.Xml.Parsers
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetCoalescing(bool arg0)
         {
-            IExecuteWithSignature("setCoalescing", "(Z)V", arg0);
+            IExecute("setCoalescing", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setExpandEntityReferences(boolean)"/>
@@ -244,7 +244,7 @@ namespace Javax.Xml.Parsers
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetExpandEntityReferences(bool arg0)
         {
-            IExecuteWithSignature("setExpandEntityReferences", "(Z)V", arg0);
+            IExecute("setExpandEntityReferences", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setIgnoringComments(boolean)"/>
@@ -252,7 +252,7 @@ namespace Javax.Xml.Parsers
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetIgnoringComments(bool arg0)
         {
-            IExecuteWithSignature("setIgnoringComments", "(Z)V", arg0);
+            IExecute("setIgnoringComments", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setIgnoringElementContentWhitespace(boolean)"/>
@@ -260,7 +260,7 @@ namespace Javax.Xml.Parsers
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetIgnoringElementContentWhitespace(bool arg0)
         {
-            IExecuteWithSignature("setIgnoringElementContentWhitespace", "(Z)V", arg0);
+            IExecute("setIgnoringElementContentWhitespace", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setNamespaceAware(boolean)"/>
@@ -268,7 +268,7 @@ namespace Javax.Xml.Parsers
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetNamespaceAware(bool arg0)
         {
-            IExecuteWithSignature("setNamespaceAware", "(Z)V", arg0);
+            IExecute("setNamespaceAware", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setValidating(boolean)"/>
@@ -276,7 +276,7 @@ namespace Javax.Xml.Parsers
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetValidating(bool arg0)
         {
-            IExecuteWithSignature("setValidating", "(Z)V", arg0);
+            IExecute("setValidating", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setXIncludeAware(boolean)"/>
@@ -284,7 +284,7 @@ namespace Javax.Xml.Parsers
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetXIncludeAware(bool arg0)
         {
-            IExecuteWithSignature("setXIncludeAware", "(Z)V", arg0);
+            IExecute("setXIncludeAware", arg0);
         }
 
         #endregion

@@ -120,21 +120,21 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public Java.Lang.String DefaultText
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDefaultText", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDefaultText"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextInputCallback.html#getPrompt()"/> 
         /// </summary>
         public Java.Lang.String Prompt
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrompt", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPrompt"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextInputCallback.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextInputCallback.html#setText(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Text
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setText", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getText"); } set { IExecute("setText", value); }
         }
 
         #endregion

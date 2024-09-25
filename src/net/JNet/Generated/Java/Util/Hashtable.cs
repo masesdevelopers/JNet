@@ -181,7 +181,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsValue(object arg0)
         {
-            return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("containsValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#values()"/>
@@ -189,7 +189,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
+            return IExecute<Java.Util.Collection>("values");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#entrySet()"/>
@@ -197,7 +197,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set EntrySetMethod()
         {
-            return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set>("entrySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#keySet()"/>
@@ -205,7 +205,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set KeySetMethod()
         {
-            return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#contains(java.lang.Object)"/>
@@ -214,7 +214,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#containsKey(java.lang.Object)"/>
@@ -223,7 +223,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(object arg0)
         {
-            return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#remove(java.lang.Object,java.lang.Object)"/>
@@ -322,7 +322,7 @@ namespace Java.Util
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#forEach(java.util.function.BiConsumer)"/>
@@ -330,7 +330,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         public void ForEach(Java.Util.Function.BiConsumer arg0)
         {
-            IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
+            IExecute("forEach", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#putAll(java.util.Map)"/>
@@ -338,7 +338,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public void PutAll(Java.Util.Map arg0)
         {
-            IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
+            IExecute("putAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replaceAll(java.util.function.BiFunction)"/>
@@ -346,7 +346,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         public void ReplaceAll(Java.Util.Function.BiFunction arg0)
         {
-            IExecuteWithSignature("replaceAll", "(Ljava/util/function/BiFunction;)V", arg0);
+            IExecute("replaceAll", arg0);
         }
 
         #endregion
@@ -427,7 +427,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsValue(object arg0)
         {
-            return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("containsValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#values()"/>
@@ -435,7 +435,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<V> Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection<V>>("values", "()Ljava/util/Collection;");
+            return IExecute<Java.Util.Collection<V>>("values");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#entrySet()"/>
@@ -443,7 +443,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySetMethod()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#keySet()"/>
@@ -451,7 +451,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<K> KeySetMethod()
         {
-            return IExecuteWithSignature<Java.Util.Set<K>>("keySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<K>>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#contains(java.lang.Object)"/>
@@ -460,7 +460,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#containsKey(java.lang.Object)"/>
@@ -469,7 +469,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(object arg0)
         {
-            return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#remove(java.lang.Object,java.lang.Object)"/>
@@ -578,7 +578,7 @@ namespace Java.Util
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#forEach(java.util.function.BiConsumer)"/>
@@ -588,7 +588,7 @@ namespace Java.Util
         /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
         public void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V
         {
-            IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
+            IExecute("forEach", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#putAll(java.util.Map)"/>
@@ -598,7 +598,7 @@ namespace Java.Util
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         public void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
-            IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
+            IExecute("putAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replaceAll(java.util.function.BiFunction)"/>
@@ -609,7 +609,7 @@ namespace Java.Util
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         public void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V
         {
-            IExecuteWithSignature("replaceAll", "(Ljava/util/function/BiFunction;)V", arg0);
+            IExecute("replaceAll", arg0);
         }
 
         #endregion

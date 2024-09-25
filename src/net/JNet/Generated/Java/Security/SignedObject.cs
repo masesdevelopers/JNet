@@ -108,21 +108,21 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#getObject()"/> 
         /// </summary>
         public object Object
         {
-            get { return IExecuteWithSignature("getObject", "()Ljava/lang/Object;"); }
+            get { return IExecute("getObject"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#getSignature()"/> 
         /// </summary>
         public byte[] Signature
         {
-            get { return IExecuteWithSignatureArray<byte>("getSignature", "()[B"); }
+            get { return IExecuteArray<byte>("getSignature"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#verify(java.security.PublicKey,java.security.Signature)"/>

@@ -97,7 +97,7 @@ namespace Javax.Sound.Midi.Spi
         /// </summary>
         public int[] MidiFileTypes
         {
-            get { return IExecuteWithSignatureArray<int>("getMidiFileTypes", "()[I"); }
+            get { return IExecuteArray<int>("getMidiFileTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#write(javax.sound.midi.Sequence,int,java.io.File)"/>
@@ -130,7 +130,7 @@ namespace Javax.Sound.Midi.Spi
         /// <returns><see cref="int"/></returns>
         public int[] GetMidiFileTypes(Javax.Sound.Midi.Sequence arg0)
         {
-            return IExecuteWithSignatureArray<int>("getMidiFileTypes", "(Ljavax/sound/midi/Sequence;)[I", arg0);
+            return IExecuteArray<int>("getMidiFileTypes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#isFileTypeSupported(int,javax.sound.midi.Sequence)"/>
@@ -149,7 +149,7 @@ namespace Javax.Sound.Midi.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsFileTypeSupported(int arg0)
         {
-            return IExecuteWithSignature<bool>("isFileTypeSupported", "(I)Z", arg0);
+            return IExecute<bool>("isFileTypeSupported", arg0);
         }
 
         #endregion

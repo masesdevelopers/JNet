@@ -123,7 +123,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool Activate(Javax.Imageio.IIOParam arg0)
         {
-            return IExecuteWithSignature<bool>("activate", "(Ljavax/imageio/IIOParam;)Z", arg0);
+            return IExecute<bool>("activate", arg0);
         }
 
         #endregion

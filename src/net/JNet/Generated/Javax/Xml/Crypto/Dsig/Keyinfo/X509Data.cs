@@ -131,7 +131,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// </summary>
         public Java.Util.List<object> Content
         {
-            get { return IExecuteWithSignature<Java.Util.List<object>>("getContent", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<object>>("getContent"); }
         }
 
         #endregion

@@ -93,7 +93,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public static Javax.Sql.Rowset.RowSetFactory NewFactory()
         {
-            return SExecuteWithSignature<Javax.Sql.Rowset.RowSetFactory>(LocalBridgeClazz, "newFactory", "()Ljavax/sql/rowset/RowSetFactory;");
+            return SExecute<Javax.Sql.Rowset.RowSetFactory>(LocalBridgeClazz, "newFactory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetProvider.html#newFactory(java.lang.String,java.lang.ClassLoader)"/>

@@ -140,14 +140,14 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         public Java.Lang.String Data
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.html#getMethod()"/> 
         /// </summary>
         public Javax.Swing.Text.Html.FormSubmitEvent.MethodType Method
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>("getMethod", "()Ljavax/swing/text/html/FormSubmitEvent$MethodType;"); }
+            get { return IExecute<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>("getMethod"); }
         }
 
         #endregion

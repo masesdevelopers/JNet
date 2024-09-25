@@ -1526,385 +1526,385 @@ namespace Java.Sql
         /// </summary>
         public Java.Sql.ResultSet Catalogs
         {
-            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getCatalogs", "()Ljava/sql/ResultSet;"); }
+            get { return IExecute<Java.Sql.ResultSet>("getCatalogs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getCatalogSeparator()"/> 
         /// </summary>
         public Java.Lang.String CatalogSeparator
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCatalogSeparator", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCatalogSeparator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getCatalogTerm()"/> 
         /// </summary>
         public Java.Lang.String CatalogTerm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCatalogTerm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCatalogTerm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getClientInfoProperties()"/> 
         /// </summary>
         public Java.Sql.ResultSet ClientInfoProperties
         {
-            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getClientInfoProperties", "()Ljava/sql/ResultSet;"); }
+            get { return IExecute<Java.Sql.ResultSet>("getClientInfoProperties"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getConnection()"/> 
         /// </summary>
         public Java.Sql.Connection Connection
         {
-            get { return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "()Ljava/sql/Connection;"); }
+            get { return IExecute<Java.Sql.Connection>("getConnection"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDatabaseMajorVersion()"/> 
         /// </summary>
         public int DatabaseMajorVersion
         {
-            get { return IExecuteWithSignature<int>("getDatabaseMajorVersion", "()I"); }
+            get { return IExecute<int>("getDatabaseMajorVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDatabaseMinorVersion()"/> 
         /// </summary>
         public int DatabaseMinorVersion
         {
-            get { return IExecuteWithSignature<int>("getDatabaseMinorVersion", "()I"); }
+            get { return IExecute<int>("getDatabaseMinorVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDatabaseProductName()"/> 
         /// </summary>
         public Java.Lang.String DatabaseProductName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDatabaseProductName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDatabaseProductName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDatabaseProductVersion()"/> 
         /// </summary>
         public Java.Lang.String DatabaseProductVersion
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDatabaseProductVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDatabaseProductVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDefaultTransactionIsolation()"/> 
         /// </summary>
         public int DefaultTransactionIsolation
         {
-            get { return IExecuteWithSignature<int>("getDefaultTransactionIsolation", "()I"); }
+            get { return IExecute<int>("getDefaultTransactionIsolation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDriverMajorVersion()"/> 
         /// </summary>
         public int DriverMajorVersion
         {
-            get { return IExecuteWithSignature<int>("getDriverMajorVersion", "()I"); }
+            get { return IExecute<int>("getDriverMajorVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDriverMinorVersion()"/> 
         /// </summary>
         public int DriverMinorVersion
         {
-            get { return IExecuteWithSignature<int>("getDriverMinorVersion", "()I"); }
+            get { return IExecute<int>("getDriverMinorVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDriverName()"/> 
         /// </summary>
         public Java.Lang.String DriverName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDriverName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDriverName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDriverVersion()"/> 
         /// </summary>
         public Java.Lang.String DriverVersion
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDriverVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDriverVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getExtraNameCharacters()"/> 
         /// </summary>
         public Java.Lang.String ExtraNameCharacters
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getExtraNameCharacters", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getExtraNameCharacters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getIdentifierQuoteString()"/> 
         /// </summary>
         public Java.Lang.String IdentifierQuoteString
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getIdentifierQuoteString", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getIdentifierQuoteString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getJDBCMajorVersion()"/> 
         /// </summary>
         public int JDBCMajorVersion
         {
-            get { return IExecuteWithSignature<int>("getJDBCMajorVersion", "()I"); }
+            get { return IExecute<int>("getJDBCMajorVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getJDBCMinorVersion()"/> 
         /// </summary>
         public int JDBCMinorVersion
         {
-            get { return IExecuteWithSignature<int>("getJDBCMinorVersion", "()I"); }
+            get { return IExecute<int>("getJDBCMinorVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxBinaryLiteralLength()"/> 
         /// </summary>
         public int MaxBinaryLiteralLength
         {
-            get { return IExecuteWithSignature<int>("getMaxBinaryLiteralLength", "()I"); }
+            get { return IExecute<int>("getMaxBinaryLiteralLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxCatalogNameLength()"/> 
         /// </summary>
         public int MaxCatalogNameLength
         {
-            get { return IExecuteWithSignature<int>("getMaxCatalogNameLength", "()I"); }
+            get { return IExecute<int>("getMaxCatalogNameLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxCharLiteralLength()"/> 
         /// </summary>
         public int MaxCharLiteralLength
         {
-            get { return IExecuteWithSignature<int>("getMaxCharLiteralLength", "()I"); }
+            get { return IExecute<int>("getMaxCharLiteralLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxColumnNameLength()"/> 
         /// </summary>
         public int MaxColumnNameLength
         {
-            get { return IExecuteWithSignature<int>("getMaxColumnNameLength", "()I"); }
+            get { return IExecute<int>("getMaxColumnNameLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxColumnsInGroupBy()"/> 
         /// </summary>
         public int MaxColumnsInGroupBy
         {
-            get { return IExecuteWithSignature<int>("getMaxColumnsInGroupBy", "()I"); }
+            get { return IExecute<int>("getMaxColumnsInGroupBy"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxColumnsInIndex()"/> 
         /// </summary>
         public int MaxColumnsInIndex
         {
-            get { return IExecuteWithSignature<int>("getMaxColumnsInIndex", "()I"); }
+            get { return IExecute<int>("getMaxColumnsInIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxColumnsInOrderBy()"/> 
         /// </summary>
         public int MaxColumnsInOrderBy
         {
-            get { return IExecuteWithSignature<int>("getMaxColumnsInOrderBy", "()I"); }
+            get { return IExecute<int>("getMaxColumnsInOrderBy"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxColumnsInSelect()"/> 
         /// </summary>
         public int MaxColumnsInSelect
         {
-            get { return IExecuteWithSignature<int>("getMaxColumnsInSelect", "()I"); }
+            get { return IExecute<int>("getMaxColumnsInSelect"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxColumnsInTable()"/> 
         /// </summary>
         public int MaxColumnsInTable
         {
-            get { return IExecuteWithSignature<int>("getMaxColumnsInTable", "()I"); }
+            get { return IExecute<int>("getMaxColumnsInTable"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxConnections()"/> 
         /// </summary>
         public int MaxConnections
         {
-            get { return IExecuteWithSignature<int>("getMaxConnections", "()I"); }
+            get { return IExecute<int>("getMaxConnections"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxCursorNameLength()"/> 
         /// </summary>
         public int MaxCursorNameLength
         {
-            get { return IExecuteWithSignature<int>("getMaxCursorNameLength", "()I"); }
+            get { return IExecute<int>("getMaxCursorNameLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxIndexLength()"/> 
         /// </summary>
         public int MaxIndexLength
         {
-            get { return IExecuteWithSignature<int>("getMaxIndexLength", "()I"); }
+            get { return IExecute<int>("getMaxIndexLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxLogicalLobSize()"/> 
         /// </summary>
         public long MaxLogicalLobSize
         {
-            get { return IExecuteWithSignature<long>("getMaxLogicalLobSize", "()J"); }
+            get { return IExecute<long>("getMaxLogicalLobSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxProcedureNameLength()"/> 
         /// </summary>
         public int MaxProcedureNameLength
         {
-            get { return IExecuteWithSignature<int>("getMaxProcedureNameLength", "()I"); }
+            get { return IExecute<int>("getMaxProcedureNameLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxRowSize()"/> 
         /// </summary>
         public int MaxRowSize
         {
-            get { return IExecuteWithSignature<int>("getMaxRowSize", "()I"); }
+            get { return IExecute<int>("getMaxRowSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxSchemaNameLength()"/> 
         /// </summary>
         public int MaxSchemaNameLength
         {
-            get { return IExecuteWithSignature<int>("getMaxSchemaNameLength", "()I"); }
+            get { return IExecute<int>("getMaxSchemaNameLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxStatementLength()"/> 
         /// </summary>
         public int MaxStatementLength
         {
-            get { return IExecuteWithSignature<int>("getMaxStatementLength", "()I"); }
+            get { return IExecute<int>("getMaxStatementLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxStatements()"/> 
         /// </summary>
         public int MaxStatements
         {
-            get { return IExecuteWithSignature<int>("getMaxStatements", "()I"); }
+            get { return IExecute<int>("getMaxStatements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxTableNameLength()"/> 
         /// </summary>
         public int MaxTableNameLength
         {
-            get { return IExecuteWithSignature<int>("getMaxTableNameLength", "()I"); }
+            get { return IExecute<int>("getMaxTableNameLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxTablesInSelect()"/> 
         /// </summary>
         public int MaxTablesInSelect
         {
-            get { return IExecuteWithSignature<int>("getMaxTablesInSelect", "()I"); }
+            get { return IExecute<int>("getMaxTablesInSelect"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxUserNameLength()"/> 
         /// </summary>
         public int MaxUserNameLength
         {
-            get { return IExecuteWithSignature<int>("getMaxUserNameLength", "()I"); }
+            get { return IExecute<int>("getMaxUserNameLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getNumericFunctions()"/> 
         /// </summary>
         public Java.Lang.String NumericFunctions
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNumericFunctions", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getNumericFunctions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getProcedureTerm()"/> 
         /// </summary>
         public Java.Lang.String ProcedureTerm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProcedureTerm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getProcedureTerm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getResultSetHoldability()"/> 
         /// </summary>
         public int ResultSetHoldability
         {
-            get { return IExecuteWithSignature<int>("getResultSetHoldability", "()I"); }
+            get { return IExecute<int>("getResultSetHoldability"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getRowIdLifetime()"/> 
         /// </summary>
         public Java.Sql.RowIdLifetime RowIdLifetime
         {
-            get { return IExecuteWithSignature<Java.Sql.RowIdLifetime>("getRowIdLifetime", "()Ljava/sql/RowIdLifetime;"); }
+            get { return IExecute<Java.Sql.RowIdLifetime>("getRowIdLifetime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSchemas()"/> 
         /// </summary>
         public Java.Sql.ResultSet Schemas
         {
-            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getSchemas", "()Ljava/sql/ResultSet;"); }
+            get { return IExecute<Java.Sql.ResultSet>("getSchemas"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSchemaTerm()"/> 
         /// </summary>
         public Java.Lang.String SchemaTerm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSchemaTerm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSchemaTerm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSearchStringEscape()"/> 
         /// </summary>
         public Java.Lang.String SearchStringEscape
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSearchStringEscape", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSearchStringEscape"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSQLKeywords()"/> 
         /// </summary>
         public Java.Lang.String SQLKeywords
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSQLKeywords", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSQLKeywords"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSQLStateType()"/> 
         /// </summary>
         public int SQLStateType
         {
-            get { return IExecuteWithSignature<int>("getSQLStateType", "()I"); }
+            get { return IExecute<int>("getSQLStateType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getStringFunctions()"/> 
         /// </summary>
         public Java.Lang.String StringFunctions
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getStringFunctions", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getStringFunctions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSystemFunctions()"/> 
         /// </summary>
         public Java.Lang.String SystemFunctions
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemFunctions", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSystemFunctions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getTableTypes()"/> 
         /// </summary>
         public Java.Sql.ResultSet TableTypes
         {
-            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getTableTypes", "()Ljava/sql/ResultSet;"); }
+            get { return IExecute<Java.Sql.ResultSet>("getTableTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getTimeDateFunctions()"/> 
         /// </summary>
         public Java.Lang.String TimeDateFunctions
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTimeDateFunctions", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTimeDateFunctions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getTypeInfo()"/> 
         /// </summary>
         public Java.Sql.ResultSet TypeInfo
         {
-            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getTypeInfo", "()Ljava/sql/ResultSet;"); }
+            get { return IExecute<Java.Sql.ResultSet>("getTypeInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getURL()"/> 
         /// </summary>
         public Java.Lang.String URL
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getURL", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getURL"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getUserName()"/> 
         /// </summary>
         public Java.Lang.String UserName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUserName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getUserName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#allProceduresAreCallable()"/>
@@ -1913,7 +1913,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool AllProceduresAreCallable()
         {
-            return IExecuteWithSignature<bool>("allProceduresAreCallable", "()Z");
+            return IExecute<bool>("allProceduresAreCallable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#allTablesAreSelectable()"/>
@@ -1922,7 +1922,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool AllTablesAreSelectable()
         {
-            return IExecuteWithSignature<bool>("allTablesAreSelectable", "()Z");
+            return IExecute<bool>("allTablesAreSelectable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#autoCommitFailureClosesAllResultSets()"/>
@@ -1931,7 +1931,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool AutoCommitFailureClosesAllResultSets()
         {
-            return IExecuteWithSignature<bool>("autoCommitFailureClosesAllResultSets", "()Z");
+            return IExecute<bool>("autoCommitFailureClosesAllResultSets");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#dataDefinitionCausesTransactionCommit()"/>
@@ -1940,7 +1940,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool DataDefinitionCausesTransactionCommit()
         {
-            return IExecuteWithSignature<bool>("dataDefinitionCausesTransactionCommit", "()Z");
+            return IExecute<bool>("dataDefinitionCausesTransactionCommit");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#dataDefinitionIgnoredInTransactions()"/>
@@ -1949,7 +1949,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool DataDefinitionIgnoredInTransactions()
         {
-            return IExecuteWithSignature<bool>("dataDefinitionIgnoredInTransactions", "()Z");
+            return IExecute<bool>("dataDefinitionIgnoredInTransactions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#deletesAreDetected(int)"/>
@@ -1959,7 +1959,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool DeletesAreDetected(int arg0)
         {
-            return IExecuteWithSignature<bool>("deletesAreDetected", "(I)Z", arg0);
+            return IExecute<bool>("deletesAreDetected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#doesMaxRowSizeIncludeBlobs()"/>
@@ -1968,7 +1968,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool DoesMaxRowSizeIncludeBlobs()
         {
-            return IExecuteWithSignature<bool>("doesMaxRowSizeIncludeBlobs", "()Z");
+            return IExecute<bool>("doesMaxRowSizeIncludeBlobs");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#generatedKeyAlwaysReturned()"/>
@@ -1977,7 +1977,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool GeneratedKeyAlwaysReturned()
         {
-            return IExecuteWithSignature<bool>("generatedKeyAlwaysReturned", "()Z");
+            return IExecute<bool>("generatedKeyAlwaysReturned");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#insertsAreDetected(int)"/>
@@ -1987,7 +1987,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool InsertsAreDetected(int arg0)
         {
-            return IExecuteWithSignature<bool>("insertsAreDetected", "(I)Z", arg0);
+            return IExecute<bool>("insertsAreDetected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#isCatalogAtStart()"/>
@@ -1996,7 +1996,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsCatalogAtStart()
         {
-            return IExecuteWithSignature<bool>("isCatalogAtStart", "()Z");
+            return IExecute<bool>("isCatalogAtStart");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#isReadOnly()"/>
@@ -2005,7 +2005,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsReadOnly()
         {
-            return IExecuteWithSignature<bool>("isReadOnly", "()Z");
+            return IExecute<bool>("isReadOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#locatorsUpdateCopy()"/>
@@ -2014,7 +2014,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool LocatorsUpdateCopy()
         {
-            return IExecuteWithSignature<bool>("locatorsUpdateCopy", "()Z");
+            return IExecute<bool>("locatorsUpdateCopy");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#nullPlusNonNullIsNull()"/>
@@ -2023,7 +2023,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool NullPlusNonNullIsNull()
         {
-            return IExecuteWithSignature<bool>("nullPlusNonNullIsNull", "()Z");
+            return IExecute<bool>("nullPlusNonNullIsNull");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#nullsAreSortedAtEnd()"/>
@@ -2032,7 +2032,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool NullsAreSortedAtEnd()
         {
-            return IExecuteWithSignature<bool>("nullsAreSortedAtEnd", "()Z");
+            return IExecute<bool>("nullsAreSortedAtEnd");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#nullsAreSortedAtStart()"/>
@@ -2041,7 +2041,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool NullsAreSortedAtStart()
         {
-            return IExecuteWithSignature<bool>("nullsAreSortedAtStart", "()Z");
+            return IExecute<bool>("nullsAreSortedAtStart");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#nullsAreSortedHigh()"/>
@@ -2050,7 +2050,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool NullsAreSortedHigh()
         {
-            return IExecuteWithSignature<bool>("nullsAreSortedHigh", "()Z");
+            return IExecute<bool>("nullsAreSortedHigh");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#nullsAreSortedLow()"/>
@@ -2059,7 +2059,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool NullsAreSortedLow()
         {
-            return IExecuteWithSignature<bool>("nullsAreSortedLow", "()Z");
+            return IExecute<bool>("nullsAreSortedLow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#othersDeletesAreVisible(int)"/>
@@ -2069,7 +2069,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool OthersDeletesAreVisible(int arg0)
         {
-            return IExecuteWithSignature<bool>("othersDeletesAreVisible", "(I)Z", arg0);
+            return IExecute<bool>("othersDeletesAreVisible", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#othersInsertsAreVisible(int)"/>
@@ -2079,7 +2079,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool OthersInsertsAreVisible(int arg0)
         {
-            return IExecuteWithSignature<bool>("othersInsertsAreVisible", "(I)Z", arg0);
+            return IExecute<bool>("othersInsertsAreVisible", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#othersUpdatesAreVisible(int)"/>
@@ -2089,7 +2089,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool OthersUpdatesAreVisible(int arg0)
         {
-            return IExecuteWithSignature<bool>("othersUpdatesAreVisible", "(I)Z", arg0);
+            return IExecute<bool>("othersUpdatesAreVisible", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#ownDeletesAreVisible(int)"/>
@@ -2099,7 +2099,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool OwnDeletesAreVisible(int arg0)
         {
-            return IExecuteWithSignature<bool>("ownDeletesAreVisible", "(I)Z", arg0);
+            return IExecute<bool>("ownDeletesAreVisible", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#ownInsertsAreVisible(int)"/>
@@ -2109,7 +2109,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool OwnInsertsAreVisible(int arg0)
         {
-            return IExecuteWithSignature<bool>("ownInsertsAreVisible", "(I)Z", arg0);
+            return IExecute<bool>("ownInsertsAreVisible", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#ownUpdatesAreVisible(int)"/>
@@ -2119,7 +2119,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool OwnUpdatesAreVisible(int arg0)
         {
-            return IExecuteWithSignature<bool>("ownUpdatesAreVisible", "(I)Z", arg0);
+            return IExecute<bool>("ownUpdatesAreVisible", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#storesLowerCaseIdentifiers()"/>
@@ -2128,7 +2128,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool StoresLowerCaseIdentifiers()
         {
-            return IExecuteWithSignature<bool>("storesLowerCaseIdentifiers", "()Z");
+            return IExecute<bool>("storesLowerCaseIdentifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#storesLowerCaseQuotedIdentifiers()"/>
@@ -2137,7 +2137,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool StoresLowerCaseQuotedIdentifiers()
         {
-            return IExecuteWithSignature<bool>("storesLowerCaseQuotedIdentifiers", "()Z");
+            return IExecute<bool>("storesLowerCaseQuotedIdentifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#storesMixedCaseIdentifiers()"/>
@@ -2146,7 +2146,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool StoresMixedCaseIdentifiers()
         {
-            return IExecuteWithSignature<bool>("storesMixedCaseIdentifiers", "()Z");
+            return IExecute<bool>("storesMixedCaseIdentifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#storesMixedCaseQuotedIdentifiers()"/>
@@ -2155,7 +2155,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool StoresMixedCaseQuotedIdentifiers()
         {
-            return IExecuteWithSignature<bool>("storesMixedCaseQuotedIdentifiers", "()Z");
+            return IExecute<bool>("storesMixedCaseQuotedIdentifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#storesUpperCaseIdentifiers()"/>
@@ -2164,7 +2164,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool StoresUpperCaseIdentifiers()
         {
-            return IExecuteWithSignature<bool>("storesUpperCaseIdentifiers", "()Z");
+            return IExecute<bool>("storesUpperCaseIdentifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#storesUpperCaseQuotedIdentifiers()"/>
@@ -2173,7 +2173,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool StoresUpperCaseQuotedIdentifiers()
         {
-            return IExecuteWithSignature<bool>("storesUpperCaseQuotedIdentifiers", "()Z");
+            return IExecute<bool>("storesUpperCaseQuotedIdentifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsAlterTableWithAddColumn()"/>
@@ -2182,7 +2182,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsAlterTableWithAddColumn()
         {
-            return IExecuteWithSignature<bool>("supportsAlterTableWithAddColumn", "()Z");
+            return IExecute<bool>("supportsAlterTableWithAddColumn");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsAlterTableWithDropColumn()"/>
@@ -2191,7 +2191,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsAlterTableWithDropColumn()
         {
-            return IExecuteWithSignature<bool>("supportsAlterTableWithDropColumn", "()Z");
+            return IExecute<bool>("supportsAlterTableWithDropColumn");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsANSI92EntryLevelSQL()"/>
@@ -2200,7 +2200,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsANSI92EntryLevelSQL()
         {
-            return IExecuteWithSignature<bool>("supportsANSI92EntryLevelSQL", "()Z");
+            return IExecute<bool>("supportsANSI92EntryLevelSQL");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsANSI92FullSQL()"/>
@@ -2209,7 +2209,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsANSI92FullSQL()
         {
-            return IExecuteWithSignature<bool>("supportsANSI92FullSQL", "()Z");
+            return IExecute<bool>("supportsANSI92FullSQL");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsANSI92IntermediateSQL()"/>
@@ -2218,7 +2218,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsANSI92IntermediateSQL()
         {
-            return IExecuteWithSignature<bool>("supportsANSI92IntermediateSQL", "()Z");
+            return IExecute<bool>("supportsANSI92IntermediateSQL");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsBatchUpdates()"/>
@@ -2227,7 +2227,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsBatchUpdates()
         {
-            return IExecuteWithSignature<bool>("supportsBatchUpdates", "()Z");
+            return IExecute<bool>("supportsBatchUpdates");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCatalogsInDataManipulation()"/>
@@ -2236,7 +2236,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsCatalogsInDataManipulation()
         {
-            return IExecuteWithSignature<bool>("supportsCatalogsInDataManipulation", "()Z");
+            return IExecute<bool>("supportsCatalogsInDataManipulation");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCatalogsInIndexDefinitions()"/>
@@ -2245,7 +2245,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsCatalogsInIndexDefinitions()
         {
-            return IExecuteWithSignature<bool>("supportsCatalogsInIndexDefinitions", "()Z");
+            return IExecute<bool>("supportsCatalogsInIndexDefinitions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCatalogsInPrivilegeDefinitions()"/>
@@ -2254,7 +2254,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsCatalogsInPrivilegeDefinitions()
         {
-            return IExecuteWithSignature<bool>("supportsCatalogsInPrivilegeDefinitions", "()Z");
+            return IExecute<bool>("supportsCatalogsInPrivilegeDefinitions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCatalogsInProcedureCalls()"/>
@@ -2263,7 +2263,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsCatalogsInProcedureCalls()
         {
-            return IExecuteWithSignature<bool>("supportsCatalogsInProcedureCalls", "()Z");
+            return IExecute<bool>("supportsCatalogsInProcedureCalls");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCatalogsInTableDefinitions()"/>
@@ -2272,7 +2272,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsCatalogsInTableDefinitions()
         {
-            return IExecuteWithSignature<bool>("supportsCatalogsInTableDefinitions", "()Z");
+            return IExecute<bool>("supportsCatalogsInTableDefinitions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsColumnAliasing()"/>
@@ -2281,7 +2281,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsColumnAliasing()
         {
-            return IExecuteWithSignature<bool>("supportsColumnAliasing", "()Z");
+            return IExecute<bool>("supportsColumnAliasing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsConvert()"/>
@@ -2290,7 +2290,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsConvert()
         {
-            return IExecuteWithSignature<bool>("supportsConvert", "()Z");
+            return IExecute<bool>("supportsConvert");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsConvert(int,int)"/>
@@ -2310,7 +2310,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsCoreSQLGrammar()
         {
-            return IExecuteWithSignature<bool>("supportsCoreSQLGrammar", "()Z");
+            return IExecute<bool>("supportsCoreSQLGrammar");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCorrelatedSubqueries()"/>
@@ -2319,7 +2319,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsCorrelatedSubqueries()
         {
-            return IExecuteWithSignature<bool>("supportsCorrelatedSubqueries", "()Z");
+            return IExecute<bool>("supportsCorrelatedSubqueries");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsDataDefinitionAndDataManipulationTransactions()"/>
@@ -2328,7 +2328,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsDataDefinitionAndDataManipulationTransactions()
         {
-            return IExecuteWithSignature<bool>("supportsDataDefinitionAndDataManipulationTransactions", "()Z");
+            return IExecute<bool>("supportsDataDefinitionAndDataManipulationTransactions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsDataManipulationTransactionsOnly()"/>
@@ -2337,7 +2337,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsDataManipulationTransactionsOnly()
         {
-            return IExecuteWithSignature<bool>("supportsDataManipulationTransactionsOnly", "()Z");
+            return IExecute<bool>("supportsDataManipulationTransactionsOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsDifferentTableCorrelationNames()"/>
@@ -2346,7 +2346,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsDifferentTableCorrelationNames()
         {
-            return IExecuteWithSignature<bool>("supportsDifferentTableCorrelationNames", "()Z");
+            return IExecute<bool>("supportsDifferentTableCorrelationNames");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsExpressionsInOrderBy()"/>
@@ -2355,7 +2355,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsExpressionsInOrderBy()
         {
-            return IExecuteWithSignature<bool>("supportsExpressionsInOrderBy", "()Z");
+            return IExecute<bool>("supportsExpressionsInOrderBy");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsExtendedSQLGrammar()"/>
@@ -2364,7 +2364,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsExtendedSQLGrammar()
         {
-            return IExecuteWithSignature<bool>("supportsExtendedSQLGrammar", "()Z");
+            return IExecute<bool>("supportsExtendedSQLGrammar");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsFullOuterJoins()"/>
@@ -2373,7 +2373,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsFullOuterJoins()
         {
-            return IExecuteWithSignature<bool>("supportsFullOuterJoins", "()Z");
+            return IExecute<bool>("supportsFullOuterJoins");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsGetGeneratedKeys()"/>
@@ -2382,7 +2382,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsGetGeneratedKeys()
         {
-            return IExecuteWithSignature<bool>("supportsGetGeneratedKeys", "()Z");
+            return IExecute<bool>("supportsGetGeneratedKeys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsGroupBy()"/>
@@ -2391,7 +2391,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsGroupBy()
         {
-            return IExecuteWithSignature<bool>("supportsGroupBy", "()Z");
+            return IExecute<bool>("supportsGroupBy");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsGroupByBeyondSelect()"/>
@@ -2400,7 +2400,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsGroupByBeyondSelect()
         {
-            return IExecuteWithSignature<bool>("supportsGroupByBeyondSelect", "()Z");
+            return IExecute<bool>("supportsGroupByBeyondSelect");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsGroupByUnrelated()"/>
@@ -2409,7 +2409,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsGroupByUnrelated()
         {
-            return IExecuteWithSignature<bool>("supportsGroupByUnrelated", "()Z");
+            return IExecute<bool>("supportsGroupByUnrelated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsIntegrityEnhancementFacility()"/>
@@ -2418,7 +2418,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsIntegrityEnhancementFacility()
         {
-            return IExecuteWithSignature<bool>("supportsIntegrityEnhancementFacility", "()Z");
+            return IExecute<bool>("supportsIntegrityEnhancementFacility");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsLikeEscapeClause()"/>
@@ -2427,7 +2427,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsLikeEscapeClause()
         {
-            return IExecuteWithSignature<bool>("supportsLikeEscapeClause", "()Z");
+            return IExecute<bool>("supportsLikeEscapeClause");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsLimitedOuterJoins()"/>
@@ -2436,7 +2436,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsLimitedOuterJoins()
         {
-            return IExecuteWithSignature<bool>("supportsLimitedOuterJoins", "()Z");
+            return IExecute<bool>("supportsLimitedOuterJoins");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsMinimumSQLGrammar()"/>
@@ -2445,7 +2445,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsMinimumSQLGrammar()
         {
-            return IExecuteWithSignature<bool>("supportsMinimumSQLGrammar", "()Z");
+            return IExecute<bool>("supportsMinimumSQLGrammar");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsMixedCaseIdentifiers()"/>
@@ -2454,7 +2454,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsMixedCaseIdentifiers()
         {
-            return IExecuteWithSignature<bool>("supportsMixedCaseIdentifiers", "()Z");
+            return IExecute<bool>("supportsMixedCaseIdentifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsMixedCaseQuotedIdentifiers()"/>
@@ -2463,7 +2463,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsMixedCaseQuotedIdentifiers()
         {
-            return IExecuteWithSignature<bool>("supportsMixedCaseQuotedIdentifiers", "()Z");
+            return IExecute<bool>("supportsMixedCaseQuotedIdentifiers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsMultipleOpenResults()"/>
@@ -2472,7 +2472,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsMultipleOpenResults()
         {
-            return IExecuteWithSignature<bool>("supportsMultipleOpenResults", "()Z");
+            return IExecute<bool>("supportsMultipleOpenResults");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsMultipleResultSets()"/>
@@ -2481,7 +2481,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsMultipleResultSets()
         {
-            return IExecuteWithSignature<bool>("supportsMultipleResultSets", "()Z");
+            return IExecute<bool>("supportsMultipleResultSets");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsMultipleTransactions()"/>
@@ -2490,7 +2490,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsMultipleTransactions()
         {
-            return IExecuteWithSignature<bool>("supportsMultipleTransactions", "()Z");
+            return IExecute<bool>("supportsMultipleTransactions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsNamedParameters()"/>
@@ -2499,7 +2499,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsNamedParameters()
         {
-            return IExecuteWithSignature<bool>("supportsNamedParameters", "()Z");
+            return IExecute<bool>("supportsNamedParameters");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsNonNullableColumns()"/>
@@ -2508,7 +2508,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsNonNullableColumns()
         {
-            return IExecuteWithSignature<bool>("supportsNonNullableColumns", "()Z");
+            return IExecute<bool>("supportsNonNullableColumns");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsOpenCursorsAcrossCommit()"/>
@@ -2517,7 +2517,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsOpenCursorsAcrossCommit()
         {
-            return IExecuteWithSignature<bool>("supportsOpenCursorsAcrossCommit", "()Z");
+            return IExecute<bool>("supportsOpenCursorsAcrossCommit");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsOpenCursorsAcrossRollback()"/>
@@ -2526,7 +2526,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsOpenCursorsAcrossRollback()
         {
-            return IExecuteWithSignature<bool>("supportsOpenCursorsAcrossRollback", "()Z");
+            return IExecute<bool>("supportsOpenCursorsAcrossRollback");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsOpenStatementsAcrossCommit()"/>
@@ -2535,7 +2535,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsOpenStatementsAcrossCommit()
         {
-            return IExecuteWithSignature<bool>("supportsOpenStatementsAcrossCommit", "()Z");
+            return IExecute<bool>("supportsOpenStatementsAcrossCommit");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsOpenStatementsAcrossRollback()"/>
@@ -2544,7 +2544,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsOpenStatementsAcrossRollback()
         {
-            return IExecuteWithSignature<bool>("supportsOpenStatementsAcrossRollback", "()Z");
+            return IExecute<bool>("supportsOpenStatementsAcrossRollback");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsOrderByUnrelated()"/>
@@ -2553,7 +2553,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsOrderByUnrelated()
         {
-            return IExecuteWithSignature<bool>("supportsOrderByUnrelated", "()Z");
+            return IExecute<bool>("supportsOrderByUnrelated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsOuterJoins()"/>
@@ -2562,7 +2562,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsOuterJoins()
         {
-            return IExecuteWithSignature<bool>("supportsOuterJoins", "()Z");
+            return IExecute<bool>("supportsOuterJoins");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsPositionedDelete()"/>
@@ -2571,7 +2571,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsPositionedDelete()
         {
-            return IExecuteWithSignature<bool>("supportsPositionedDelete", "()Z");
+            return IExecute<bool>("supportsPositionedDelete");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsPositionedUpdate()"/>
@@ -2580,7 +2580,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsPositionedUpdate()
         {
-            return IExecuteWithSignature<bool>("supportsPositionedUpdate", "()Z");
+            return IExecute<bool>("supportsPositionedUpdate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsResultSetConcurrency(int,int)"/>
@@ -2601,7 +2601,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsResultSetHoldability(int arg0)
         {
-            return IExecuteWithSignature<bool>("supportsResultSetHoldability", "(I)Z", arg0);
+            return IExecute<bool>("supportsResultSetHoldability", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsResultSetType(int)"/>
@@ -2611,7 +2611,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsResultSetType(int arg0)
         {
-            return IExecuteWithSignature<bool>("supportsResultSetType", "(I)Z", arg0);
+            return IExecute<bool>("supportsResultSetType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSavepoints()"/>
@@ -2620,7 +2620,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsSavepoints()
         {
-            return IExecuteWithSignature<bool>("supportsSavepoints", "()Z");
+            return IExecute<bool>("supportsSavepoints");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSchemasInDataManipulation()"/>
@@ -2629,7 +2629,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsSchemasInDataManipulation()
         {
-            return IExecuteWithSignature<bool>("supportsSchemasInDataManipulation", "()Z");
+            return IExecute<bool>("supportsSchemasInDataManipulation");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSchemasInIndexDefinitions()"/>
@@ -2638,7 +2638,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsSchemasInIndexDefinitions()
         {
-            return IExecuteWithSignature<bool>("supportsSchemasInIndexDefinitions", "()Z");
+            return IExecute<bool>("supportsSchemasInIndexDefinitions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSchemasInPrivilegeDefinitions()"/>
@@ -2647,7 +2647,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsSchemasInPrivilegeDefinitions()
         {
-            return IExecuteWithSignature<bool>("supportsSchemasInPrivilegeDefinitions", "()Z");
+            return IExecute<bool>("supportsSchemasInPrivilegeDefinitions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSchemasInProcedureCalls()"/>
@@ -2656,7 +2656,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsSchemasInProcedureCalls()
         {
-            return IExecuteWithSignature<bool>("supportsSchemasInProcedureCalls", "()Z");
+            return IExecute<bool>("supportsSchemasInProcedureCalls");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSchemasInTableDefinitions()"/>
@@ -2665,7 +2665,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsSchemasInTableDefinitions()
         {
-            return IExecuteWithSignature<bool>("supportsSchemasInTableDefinitions", "()Z");
+            return IExecute<bool>("supportsSchemasInTableDefinitions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSelectForUpdate()"/>
@@ -2674,7 +2674,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsSelectForUpdate()
         {
-            return IExecuteWithSignature<bool>("supportsSelectForUpdate", "()Z");
+            return IExecute<bool>("supportsSelectForUpdate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsStatementPooling()"/>
@@ -2683,7 +2683,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsStatementPooling()
         {
-            return IExecuteWithSignature<bool>("supportsStatementPooling", "()Z");
+            return IExecute<bool>("supportsStatementPooling");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsStoredFunctionsUsingCallSyntax()"/>
@@ -2692,7 +2692,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsStoredFunctionsUsingCallSyntax()
         {
-            return IExecuteWithSignature<bool>("supportsStoredFunctionsUsingCallSyntax", "()Z");
+            return IExecute<bool>("supportsStoredFunctionsUsingCallSyntax");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsStoredProcedures()"/>
@@ -2701,7 +2701,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsStoredProcedures()
         {
-            return IExecuteWithSignature<bool>("supportsStoredProcedures", "()Z");
+            return IExecute<bool>("supportsStoredProcedures");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSubqueriesInComparisons()"/>
@@ -2710,7 +2710,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsSubqueriesInComparisons()
         {
-            return IExecuteWithSignature<bool>("supportsSubqueriesInComparisons", "()Z");
+            return IExecute<bool>("supportsSubqueriesInComparisons");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSubqueriesInExists()"/>
@@ -2719,7 +2719,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsSubqueriesInExists()
         {
-            return IExecuteWithSignature<bool>("supportsSubqueriesInExists", "()Z");
+            return IExecute<bool>("supportsSubqueriesInExists");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSubqueriesInIns()"/>
@@ -2728,7 +2728,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsSubqueriesInIns()
         {
-            return IExecuteWithSignature<bool>("supportsSubqueriesInIns", "()Z");
+            return IExecute<bool>("supportsSubqueriesInIns");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSubqueriesInQuantifieds()"/>
@@ -2737,7 +2737,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsSubqueriesInQuantifieds()
         {
-            return IExecuteWithSignature<bool>("supportsSubqueriesInQuantifieds", "()Z");
+            return IExecute<bool>("supportsSubqueriesInQuantifieds");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsTableCorrelationNames()"/>
@@ -2746,7 +2746,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsTableCorrelationNames()
         {
-            return IExecuteWithSignature<bool>("supportsTableCorrelationNames", "()Z");
+            return IExecute<bool>("supportsTableCorrelationNames");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsTransactionIsolationLevel(int)"/>
@@ -2756,7 +2756,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsTransactionIsolationLevel(int arg0)
         {
-            return IExecuteWithSignature<bool>("supportsTransactionIsolationLevel", "(I)Z", arg0);
+            return IExecute<bool>("supportsTransactionIsolationLevel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsTransactions()"/>
@@ -2765,7 +2765,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsTransactions()
         {
-            return IExecuteWithSignature<bool>("supportsTransactions", "()Z");
+            return IExecute<bool>("supportsTransactions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsUnion()"/>
@@ -2774,7 +2774,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsUnion()
         {
-            return IExecuteWithSignature<bool>("supportsUnion", "()Z");
+            return IExecute<bool>("supportsUnion");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsUnionAll()"/>
@@ -2783,7 +2783,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsUnionAll()
         {
-            return IExecuteWithSignature<bool>("supportsUnionAll", "()Z");
+            return IExecute<bool>("supportsUnionAll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#updatesAreDetected(int)"/>
@@ -2793,7 +2793,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool UpdatesAreDetected(int arg0)
         {
-            return IExecuteWithSignature<bool>("updatesAreDetected", "(I)Z", arg0);
+            return IExecute<bool>("updatesAreDetected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#usesLocalFilePerTable()"/>
@@ -2802,7 +2802,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool UsesLocalFilePerTable()
         {
-            return IExecuteWithSignature<bool>("usesLocalFilePerTable", "()Z");
+            return IExecute<bool>("usesLocalFilePerTable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#usesLocalFiles()"/>
@@ -2811,7 +2811,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool UsesLocalFiles()
         {
-            return IExecuteWithSignature<bool>("usesLocalFiles", "()Z");
+            return IExecute<bool>("usesLocalFiles");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getAttributes(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -3086,7 +3086,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsRefCursors()
         {
-            return IExecuteWithSignature<bool>("supportsRefCursors", "()Z");
+            return IExecute<bool>("supportsRefCursors");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSharding()"/>
@@ -3095,7 +3095,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsSharding()
         {
-            return IExecuteWithSignature<bool>("supportsSharding", "()Z");
+            return IExecute<bool>("supportsSharding");
         }
 
         #endregion

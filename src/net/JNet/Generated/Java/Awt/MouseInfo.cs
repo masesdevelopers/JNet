@@ -91,14 +91,14 @@ namespace Java.Awt
         /// </summary>
         public static int NumberOfButtons
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getNumberOfButtons", "()I"); }
+            get { return SExecute<int>(LocalBridgeClazz, "getNumberOfButtons"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MouseInfo.html#getPointerInfo()"/> 
         /// </summary>
         public static Java.Awt.PointerInfo PointerInfo
         {
-            get { return SExecuteWithSignature<Java.Awt.PointerInfo>(LocalBridgeClazz, "getPointerInfo", "()Ljava/awt/PointerInfo;"); }
+            get { return SExecute<Java.Awt.PointerInfo>(LocalBridgeClazz, "getPointerInfo"); }
         }
 
         #endregion

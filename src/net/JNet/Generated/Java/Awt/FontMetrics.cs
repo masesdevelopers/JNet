@@ -97,70 +97,70 @@ namespace Java.Awt
         /// </summary>
         public int Ascent
         {
-            get { return IExecuteWithSignature<int>("getAscent", "()I"); }
+            get { return IExecute<int>("getAscent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getDescent()"/> 
         /// </summary>
         public int Descent
         {
-            get { return IExecuteWithSignature<int>("getDescent", "()I"); }
+            get { return IExecute<int>("getDescent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getFont()"/> 
         /// </summary>
         public Java.Awt.Font Font
         {
-            get { return IExecuteWithSignature<Java.Awt.Font>("getFont", "()Ljava/awt/Font;"); }
+            get { return IExecute<Java.Awt.Font>("getFont"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getFontRenderContext()"/> 
         /// </summary>
         public Java.Awt.FontNs.FontRenderContext FontRenderContext
         {
-            get { return IExecuteWithSignature<Java.Awt.FontNs.FontRenderContext>("getFontRenderContext", "()Ljava/awt/font/FontRenderContext;"); }
+            get { return IExecute<Java.Awt.FontNs.FontRenderContext>("getFontRenderContext"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+            get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLeading()"/> 
         /// </summary>
         public int Leading
         {
-            get { return IExecuteWithSignature<int>("getLeading", "()I"); }
+            get { return IExecute<int>("getLeading"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxAdvance()"/> 
         /// </summary>
         public int MaxAdvance
         {
-            get { return IExecuteWithSignature<int>("getMaxAdvance", "()I"); }
+            get { return IExecute<int>("getMaxAdvance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxAscent()"/> 
         /// </summary>
         public int MaxAscent
         {
-            get { return IExecuteWithSignature<int>("getMaxAscent", "()I"); }
+            get { return IExecute<int>("getMaxAscent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxDescent()"/> 
         /// </summary>
         public int MaxDescent
         {
-            get { return IExecuteWithSignature<int>("getMaxDescent", "()I"); }
+            get { return IExecute<int>("getMaxDescent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getWidths()"/> 
         /// </summary>
         public int[] Widths
         {
-            get { return IExecuteWithSignatureArray<int>("getWidths", "()[I"); }
+            get { return IExecuteArray<int>("getWidths"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#hasUniformLineMetrics()"/>
@@ -168,7 +168,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool HasUniformLineMetrics()
         {
-            return IExecuteWithSignature<bool>("hasUniformLineMetrics", "()Z");
+            return IExecute<bool>("hasUniformLineMetrics");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#bytesWidth(byte[],int,int)"/>
@@ -199,7 +199,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int CharWidth(char arg0)
         {
-            return IExecuteWithSignature<int>("charWidth", "(C)I", arg0);
+            return IExecute<int>("charWidth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charWidth(int)"/>
@@ -208,7 +208,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int CharWidth(int arg0)
         {
-            return IExecuteWithSignature<int>("charWidth", "(I)I", arg0);
+            return IExecute<int>("charWidth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#stringWidth(java.lang.String)"/>
@@ -217,7 +217,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int StringWidth(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<int>("stringWidth", "(Ljava/lang/String;)I", arg0);
+            return IExecute<int>("stringWidth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(char[],int,int,java.awt.Graphics)"/>
@@ -272,7 +272,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetMaxCharBounds(Java.Awt.Graphics arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getMaxCharBounds", "(Ljava/awt/Graphics;)Ljava/awt/geom/Rectangle2D;", arg0);
+            return IExecute<Java.Awt.Geom.Rectangle2D>("getMaxCharBounds", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(char[],int,int,java.awt.Graphics)"/>

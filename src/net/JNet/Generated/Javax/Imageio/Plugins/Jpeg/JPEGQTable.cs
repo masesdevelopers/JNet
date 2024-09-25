@@ -127,7 +127,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// </summary>
         public int[] Table
         {
-            get { return IExecuteWithSignatureArray<int>("getTable", "()[I"); }
+            get { return IExecuteArray<int>("getTable"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#getScaledInstance(float,boolean)"/>

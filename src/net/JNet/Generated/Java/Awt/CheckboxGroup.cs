@@ -95,7 +95,7 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Checkbox SelectedCheckbox
         {
-            get { return IExecuteWithSignature<Java.Awt.Checkbox>("getSelectedCheckbox", "()Ljava/awt/Checkbox;"); } set { IExecuteWithSignature("setSelectedCheckbox", "(Ljava/awt/Checkbox;)V", value); }
+            get { return IExecute<Java.Awt.Checkbox>("getSelectedCheckbox"); } set { IExecute("setSelectedCheckbox", value); }
         }
 
         #endregion

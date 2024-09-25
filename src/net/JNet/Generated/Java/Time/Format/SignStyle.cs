@@ -123,7 +123,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.SignStyle"/></returns>
         public static Java.Time.Format.SignStyle ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Time.Format.SignStyle>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/format/SignStyle;", arg0);
+            return SExecute<Java.Time.Format.SignStyle>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#values()"/>
@@ -131,7 +131,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.SignStyle"/></returns>
         public static Java.Time.Format.SignStyle[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Time.Format.SignStyle>(LocalBridgeClazz, "values", "()[Ljava/time/format/SignStyle;");
+            return SExecuteArray<Java.Time.Format.SignStyle>(LocalBridgeClazz, "values");
         }
 
         #endregion

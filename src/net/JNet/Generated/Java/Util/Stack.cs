@@ -142,7 +142,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Empty()
         {
-            return IExecuteWithSignature<bool>("empty", "()Z");
+            return IExecute<bool>("empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#push(java.lang.Object)"/>
@@ -151,7 +151,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Push(object arg0)
         {
-            return IExecuteWithSignature("push", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("push", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#peek()"/>
@@ -159,7 +159,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Peek()
         {
-            return IExecuteWithSignature("peek", "()Ljava/lang/Object;");
+            return IExecute("peek");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#pop()"/>
@@ -167,7 +167,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Pop()
         {
-            return IExecuteWithSignature("pop", "()Ljava/lang/Object;");
+            return IExecute("pop");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#search(java.lang.Object)"/>
@@ -176,7 +176,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Search(object arg0)
         {
-            return IExecuteWithSignature<int>("search", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("search", arg0);
         }
 
         #endregion
@@ -219,7 +219,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Empty()
         {
-            return IExecuteWithSignature<bool>("empty", "()Z");
+            return IExecute<bool>("empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#push(java.lang.Object)"/>
@@ -228,7 +228,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Push(E arg0)
         {
-            return IExecuteWithSignature<E>("push", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<E>("push", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#peek()"/>
@@ -236,7 +236,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
         {
-            return IExecuteWithSignature<E>("peek", "()Ljava/lang/Object;");
+            return IExecute<E>("peek");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#pop()"/>
@@ -244,7 +244,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Pop()
         {
-            return IExecuteWithSignature<E>("pop", "()Ljava/lang/Object;");
+            return IExecute<E>("pop");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#search(java.lang.Object)"/>
@@ -253,7 +253,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Search(object arg0)
         {
-            return IExecuteWithSignature<int>("search", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("search", arg0);
         }
 
         #endregion

@@ -109,7 +109,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.StandardProtocolFamily"/></returns>
         public static Java.Net.StandardProtocolFamily ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/net/StandardProtocolFamily;", arg0);
+            return SExecute<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#values()"/>
@@ -117,7 +117,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.StandardProtocolFamily"/></returns>
         public static Java.Net.StandardProtocolFamily[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "values", "()[Ljava/net/StandardProtocolFamily;");
+            return SExecuteArray<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "values");
         }
 
         #endregion

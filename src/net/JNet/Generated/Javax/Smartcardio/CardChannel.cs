@@ -97,14 +97,14 @@ namespace Javax.Smartcardio
         /// </summary>
         public Javax.Smartcardio.Card Card
         {
-            get { return IExecuteWithSignature<Javax.Smartcardio.Card>("getCard", "()Ljavax/smartcardio/Card;"); }
+            get { return IExecute<Javax.Smartcardio.Card>("getCard"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#getChannelNumber()"/> 
         /// </summary>
         public int ChannelNumber
         {
-            get { return IExecuteWithSignature<int>("getChannelNumber", "()I"); }
+            get { return IExecute<int>("getChannelNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#transmit(java.nio.ByteBuffer,java.nio.ByteBuffer)"/>
@@ -125,7 +125,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public Javax.Smartcardio.ResponseAPDU Transmit(Javax.Smartcardio.CommandAPDU arg0)
         {
-            return IExecuteWithSignature<Javax.Smartcardio.ResponseAPDU>("transmit", "(Ljavax/smartcardio/CommandAPDU;)Ljavax/smartcardio/ResponseAPDU;", arg0);
+            return IExecute<Javax.Smartcardio.ResponseAPDU>("transmit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#close()"/>
@@ -133,7 +133,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
 
         #endregion

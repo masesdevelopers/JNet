@@ -234,7 +234,7 @@ namespace Java.Util.Prefs
         /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
         public override void ChildAdded(Java.Util.Prefs.NodeChangeEvent arg0)
         {
-            IExecuteWithSignature("childAdded", "(Ljava/util/prefs/NodeChangeEvent;)V", arg0);
+            IExecute("childAdded", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
@@ -242,7 +242,7 @@ namespace Java.Util.Prefs
         /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
         public override void ChildRemoved(Java.Util.Prefs.NodeChangeEvent arg0)
         {
-            IExecuteWithSignature("childRemoved", "(Ljava/util/prefs/NodeChangeEvent;)V", arg0);
+            IExecute("childRemoved", arg0);
         }
 
         #endregion

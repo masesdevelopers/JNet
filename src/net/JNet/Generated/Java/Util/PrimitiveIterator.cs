@@ -288,7 +288,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         public void ForEachRemaining(object arg0)
         {
-            IExecuteWithSignature("forEachRemaining", "(Ljava/lang/Object;)V", arg0);
+            IExecute("forEachRemaining", arg0);
         }
 
         #endregion
@@ -392,7 +392,7 @@ namespace Java.Util
             /// <returns><see cref="int"/></returns>
             public int NextInt()
             {
-                return IExecuteWithSignature<int>("nextInt", "()I");
+                return IExecute<int>("nextInt");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#next()"/>
@@ -400,7 +400,7 @@ namespace Java.Util
             /// <returns><see cref="object"/></returns>
             public object Next()
             {
-                return IExecuteWithSignature("next", "()Ljava/lang/Object;");
+                return IExecute("next");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.lang.Object)"/>
@@ -408,7 +408,7 @@ namespace Java.Util
             /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
             {
-                IExecuteWithSignature("forEachRemaining", "(Ljava/lang/Object;)V", arg0);
+                IExecute("forEachRemaining", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.Consumer)"/>
@@ -417,7 +417,7 @@ namespace Java.Util
             /// <typeparam name="Arg0objectSuperJava_Lang_Integer"><see cref="Java.Lang.Integer"/></typeparam>
             public void ForEachRemaining<Arg0objectSuperJava_Lang_Integer>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Integer> arg0) where Arg0objectSuperJava_Lang_Integer : Java.Lang.Integer
             {
-                IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
+                IExecute("forEachRemaining", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.IntConsumer)"/>
@@ -425,7 +425,7 @@ namespace Java.Util
             /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
             public void ForEachRemaining(Java.Util.Function.IntConsumer arg0)
             {
-                IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/IntConsumer;)V", arg0);
+                IExecute("forEachRemaining", arg0);
             }
 
             #endregion
@@ -464,7 +464,7 @@ namespace Java.Util
             /// <returns><see cref="long"/></returns>
             public long NextLong()
             {
-                return IExecuteWithSignature<long>("nextLong", "()J");
+                return IExecute<long>("nextLong");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#next()"/>
@@ -472,7 +472,7 @@ namespace Java.Util
             /// <returns><see cref="object"/></returns>
             public object Next()
             {
-                return IExecuteWithSignature("next", "()Ljava/lang/Object;");
+                return IExecute("next");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.lang.Object)"/>
@@ -480,7 +480,7 @@ namespace Java.Util
             /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
             {
-                IExecuteWithSignature("forEachRemaining", "(Ljava/lang/Object;)V", arg0);
+                IExecute("forEachRemaining", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.Consumer)"/>
@@ -489,7 +489,7 @@ namespace Java.Util
             /// <typeparam name="Arg0objectSuperJava_Lang_Long"><see cref="Java.Lang.Long"/></typeparam>
             public void ForEachRemaining<Arg0objectSuperJava_Lang_Long>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Long> arg0) where Arg0objectSuperJava_Lang_Long : Java.Lang.Long
             {
-                IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
+                IExecute("forEachRemaining", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.LongConsumer)"/>
@@ -497,7 +497,7 @@ namespace Java.Util
             /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
             public void ForEachRemaining(Java.Util.Function.LongConsumer arg0)
             {
-                IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/LongConsumer;)V", arg0);
+                IExecute("forEachRemaining", arg0);
             }
 
             #endregion
@@ -570,7 +570,7 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="T_CONS"/></param>
         public void ForEachRemaining(T_CONS arg0)
         {
-            IExecuteWithSignature("forEachRemaining", "(Ljava/lang/Object;)V", arg0);
+            IExecute("forEachRemaining", arg0);
         }
 
         #endregion

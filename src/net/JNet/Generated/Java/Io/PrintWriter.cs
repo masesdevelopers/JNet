@@ -200,7 +200,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool CheckError()
         {
-            return IExecuteWithSignature<bool>("checkError", "()Z");
+            return IExecute<bool>("checkError");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#format(java.lang.String,java.lang.Object[])"/>
@@ -250,7 +250,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="bool"/></param>
         public void Print(bool arg0)
         {
-            IExecuteWithSignature("print", "(Z)V", arg0);
+            IExecute("print", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#print(char)"/>
@@ -258,7 +258,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="char"/></param>
         public void Print(char arg0)
         {
-            IExecuteWithSignature("print", "(C)V", arg0);
+            IExecute("print", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#print(char[])"/>
@@ -266,7 +266,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="char"/></param>
         public void Print(char[] arg0)
         {
-            IExecuteWithSignature("print", "([C)V", new object[] { arg0 });
+            IExecute("print", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#print(double)"/>
@@ -274,7 +274,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="double"/></param>
         public void Print(double arg0)
         {
-            IExecuteWithSignature("print", "(D)V", arg0);
+            IExecute("print", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#print(float)"/>
@@ -282,7 +282,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="float"/></param>
         public void Print(float arg0)
         {
-            IExecuteWithSignature("print", "(F)V", arg0);
+            IExecute("print", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#print(int)"/>
@@ -290,7 +290,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="int"/></param>
         public void Print(int arg0)
         {
-            IExecuteWithSignature("print", "(I)V", arg0);
+            IExecute("print", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#print(java.lang.Object)"/>
@@ -298,7 +298,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="object"/></param>
         public void Print(object arg0)
         {
-            IExecuteWithSignature("print", "(Ljava/lang/Object;)V", arg0);
+            IExecute("print", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#print(java.lang.String)"/>
@@ -306,7 +306,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Print(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("print", "(Ljava/lang/String;)V", arg0);
+            IExecute("print", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#print(long)"/>
@@ -314,14 +314,14 @@ namespace Java.Io
         /// <param name="arg0"><see cref="long"/></param>
         public void Print(long arg0)
         {
-            IExecuteWithSignature("print", "(J)V", arg0);
+            IExecute("print", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#println()"/>
         /// </summary>
         public void Println()
         {
-            IExecuteWithSignature("println", "()V");
+            IExecute("println");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#println(boolean)"/>
@@ -329,7 +329,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="bool"/></param>
         public void Println(bool arg0)
         {
-            IExecuteWithSignature("println", "(Z)V", arg0);
+            IExecute("println", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#println(char)"/>
@@ -337,7 +337,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="char"/></param>
         public void Println(char arg0)
         {
-            IExecuteWithSignature("println", "(C)V", arg0);
+            IExecute("println", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#println(char[])"/>
@@ -345,7 +345,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="char"/></param>
         public void Println(char[] arg0)
         {
-            IExecuteWithSignature("println", "([C)V", new object[] { arg0 });
+            IExecute("println", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#println(double)"/>
@@ -353,7 +353,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="double"/></param>
         public void Println(double arg0)
         {
-            IExecuteWithSignature("println", "(D)V", arg0);
+            IExecute("println", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#println(float)"/>
@@ -361,7 +361,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="float"/></param>
         public void Println(float arg0)
         {
-            IExecuteWithSignature("println", "(F)V", arg0);
+            IExecute("println", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#println(int)"/>
@@ -369,7 +369,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="int"/></param>
         public void Println(int arg0)
         {
-            IExecuteWithSignature("println", "(I)V", arg0);
+            IExecute("println", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#println(java.lang.Object)"/>
@@ -377,7 +377,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="object"/></param>
         public void Println(object arg0)
         {
-            IExecuteWithSignature("println", "(Ljava/lang/Object;)V", arg0);
+            IExecute("println", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#println(java.lang.String)"/>
@@ -385,7 +385,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Println(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("println", "(Ljava/lang/String;)V", arg0);
+            IExecute("println", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#println(long)"/>
@@ -393,7 +393,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="long"/></param>
         public void Println(long arg0)
         {
-            IExecuteWithSignature("println", "(J)V", arg0);
+            IExecute("println", arg0);
         }
 
         #endregion

@@ -98,7 +98,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool IsVarargsCollector()
         {
-            return IExecuteWithSignature<bool>("isVarargsCollector", "()Z");
+            return IExecute<bool>("isVarargsCollector");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invoke(java.lang.Object[])"/>
@@ -108,7 +108,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Throwable"/>
         public object Invoke(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("invoke", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("invoke", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            if (arg0.Length == 0) return IExecute("invoke"); else return IExecute("invoke", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeExact(java.lang.Object[])"/>
@@ -118,7 +118,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Throwable"/>
         public object InvokeExact(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("invokeExact", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("invokeExact", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            if (arg0.Length == 0) return IExecute("invokeExact"); else return IExecute("invokeExact", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asCollector(int,java.lang.Class,int)"/>
@@ -147,7 +147,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle AsFixedArity()
         {
-            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("asFixedArity", "()Ljava/lang/invoke/MethodHandle;");
+            return IExecute<Java.Lang.Invoke.MethodHandle>("asFixedArity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asSpreader(int,java.lang.Class,int)"/>
@@ -177,7 +177,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle AsType(Java.Lang.Invoke.MethodType arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("asType", "(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;", arg0);
+            return IExecute<Java.Lang.Invoke.MethodHandle>("asType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asVarargsCollector(java.lang.Class)"/>
@@ -186,7 +186,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle AsVarargsCollector(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("asVarargsCollector", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
+            return IExecute<Java.Lang.Invoke.MethodHandle>("asVarargsCollector", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#bindTo(java.lang.Object)"/>
@@ -195,7 +195,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle BindTo(object arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("bindTo", "(Ljava/lang/Object;)Ljava/lang/invoke/MethodHandle;", arg0);
+            return IExecute<Java.Lang.Invoke.MethodHandle>("bindTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#withVarargs(boolean)"/>
@@ -204,7 +204,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle WithVarargs(bool arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("withVarargs", "(Z)Ljava/lang/invoke/MethodHandle;", arg0);
+            return IExecute<Java.Lang.Invoke.MethodHandle>("withVarargs", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#type()"/>
@@ -212,7 +212,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Type()
         {
-            return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("type", "()Ljava/lang/invoke/MethodType;");
+            return IExecute<Java.Lang.Invoke.MethodType>("type");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeWithArguments(java.lang.Object[])"/>
@@ -222,7 +222,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Throwable"/>
         public object InvokeWithArguments(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("invokeWithArguments", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("invokeWithArguments", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            if (arg0.Length == 0) return IExecute("invokeWithArguments"); else return IExecute("invokeWithArguments", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeWithArguments(java.util.List)"/>
@@ -232,7 +232,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Throwable"/>
         public object InvokeWithArguments(Java.Util.List<object> arg0)
         {
-            return IExecuteWithSignature("invokeWithArguments", "(Ljava/util/List;)Ljava/lang/Object;", arg0);
+            return IExecute("invokeWithArguments", arg0);
         }
 
         #endregion

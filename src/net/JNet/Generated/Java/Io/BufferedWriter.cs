@@ -113,7 +113,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void NewLine()
         {
-            IExecuteWithSignature("newLine", "()V");
+            IExecute("newLine");
         }
 
         #endregion

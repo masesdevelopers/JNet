@@ -91,7 +91,7 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public static Javax.Imageio.Spi.IIORegistry DefaultInstance
         {
-            get { return SExecuteWithSignature<Javax.Imageio.Spi.IIORegistry>(LocalBridgeClazz, "getDefaultInstance", "()Ljavax/imageio/spi/IIORegistry;"); }
+            get { return SExecute<Javax.Imageio.Spi.IIORegistry>(LocalBridgeClazz, "getDefaultInstance"); }
         }
 
         #endregion
@@ -102,7 +102,7 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public void RegisterApplicationClasspathSpis()
         {
-            IExecuteWithSignature("registerApplicationClasspathSpis", "()V");
+            IExecute("registerApplicationClasspathSpis");
         }
 
         #endregion

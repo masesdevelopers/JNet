@@ -127,14 +127,14 @@ namespace Javax.Management
         /// </summary>
         public Javax.Management.MBeanServerConnection MBeanServerConnection
         {
-            get { return IExecuteWithSignature<Javax.Management.MBeanServerConnection>("getMBeanServerConnection", "()Ljavax/management/MBeanServerConnection;"); }
+            get { return IExecute<Javax.Management.MBeanServerConnection>("getMBeanServerConnection"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#getObjectName()"/> 
         /// </summary>
         public Javax.Management.ObjectName ObjectName
         {
-            get { return IExecuteWithSignature<Javax.Management.ObjectName>("getObjectName", "()Ljavax/management/ObjectName;"); }
+            get { return IExecute<Javax.Management.ObjectName>("getObjectName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#isMXBean()"/>
@@ -142,7 +142,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsMXBean()
         {
-            return IExecuteWithSignature<bool>("isMXBean", "()Z");
+            return IExecute<bool>("isMXBean");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>

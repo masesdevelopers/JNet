@@ -97,21 +97,21 @@ namespace Javax.Sound.Midi
         /// </summary>
         public int Length
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            get { return IExecute<int>("getLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiMessage.html#getMessage()"/> 
         /// </summary>
         public byte[] Message
         {
-            get { return IExecuteWithSignatureArray<byte>("getMessage", "()[B"); }
+            get { return IExecuteArray<byte>("getMessage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiMessage.html#getStatus()"/> 
         /// </summary>
         public int Status
         {
-            get { return IExecuteWithSignature<int>("getStatus", "()I"); }
+            get { return IExecute<int>("getStatus"); }
         }
 
         #endregion

@@ -104,14 +104,14 @@ namespace Java.Security
         /// </summary>
         public Java.Security.Cert.CertPath SignerCertPath
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.CertPath>("getSignerCertPath", "()Ljava/security/cert/CertPath;"); }
+            get { return IExecute<Java.Security.Cert.CertPath>("getSignerCertPath"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSigner.html#getTimestamp()"/> 
         /// </summary>
         public Java.Security.Timestamp Timestamp
         {
-            get { return IExecuteWithSignature<Java.Security.Timestamp>("getTimestamp", "()Ljava/security/Timestamp;"); }
+            get { return IExecute<Java.Security.Timestamp>("getTimestamp"); }
         }
 
         #endregion

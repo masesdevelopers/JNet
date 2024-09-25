@@ -117,7 +117,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.PseudoColumnUsage"/></returns>
         public static Java.Sql.PseudoColumnUsage ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/PseudoColumnUsage;", arg0);
+            return SExecute<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#values()"/>
@@ -125,7 +125,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.PseudoColumnUsage"/></returns>
         public static Java.Sql.PseudoColumnUsage[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "values", "()[Ljava/sql/PseudoColumnUsage;");
+            return SExecuteArray<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "values");
         }
 
         #endregion

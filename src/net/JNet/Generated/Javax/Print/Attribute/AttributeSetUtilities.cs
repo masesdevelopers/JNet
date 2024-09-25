@@ -113,7 +113,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Javax.Print.Attribute.AttributeSet"/></returns>
         public static Javax.Print.Attribute.AttributeSet SynchronizedView(Javax.Print.Attribute.AttributeSet arg0)
         {
-            return SExecuteWithSignature<Javax.Print.Attribute.AttributeSet>(LocalBridgeClazz, "synchronizedView", "(Ljavax/print/attribute/AttributeSet;)Ljavax/print/attribute/AttributeSet;", arg0);
+            return SExecute<Javax.Print.Attribute.AttributeSet>(LocalBridgeClazz, "synchronizedView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.AttributeSet)"/>
@@ -122,7 +122,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Javax.Print.Attribute.AttributeSet"/></returns>
         public static Javax.Print.Attribute.AttributeSet UnmodifiableView(Javax.Print.Attribute.AttributeSet arg0)
         {
-            return SExecuteWithSignature<Javax.Print.Attribute.AttributeSet>(LocalBridgeClazz, "unmodifiableView", "(Ljavax/print/attribute/AttributeSet;)Ljavax/print/attribute/AttributeSet;", arg0);
+            return SExecute<Javax.Print.Attribute.AttributeSet>(LocalBridgeClazz, "unmodifiableView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.DocAttributeSet)"/>
@@ -131,7 +131,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Javax.Print.Attribute.DocAttributeSet"/></returns>
         public static Javax.Print.Attribute.DocAttributeSet SynchronizedView(Javax.Print.Attribute.DocAttributeSet arg0)
         {
-            return SExecuteWithSignature<Javax.Print.Attribute.DocAttributeSet>(LocalBridgeClazz, "synchronizedView", "(Ljavax/print/attribute/DocAttributeSet;)Ljavax/print/attribute/DocAttributeSet;", arg0);
+            return SExecute<Javax.Print.Attribute.DocAttributeSet>(LocalBridgeClazz, "synchronizedView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.DocAttributeSet)"/>
@@ -140,7 +140,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Javax.Print.Attribute.DocAttributeSet"/></returns>
         public static Javax.Print.Attribute.DocAttributeSet UnmodifiableView(Javax.Print.Attribute.DocAttributeSet arg0)
         {
-            return SExecuteWithSignature<Javax.Print.Attribute.DocAttributeSet>(LocalBridgeClazz, "unmodifiableView", "(Ljavax/print/attribute/DocAttributeSet;)Ljavax/print/attribute/DocAttributeSet;", arg0);
+            return SExecute<Javax.Print.Attribute.DocAttributeSet>(LocalBridgeClazz, "unmodifiableView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.PrintJobAttributeSet)"/>
@@ -149,7 +149,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Javax.Print.Attribute.PrintJobAttributeSet"/></returns>
         public static Javax.Print.Attribute.PrintJobAttributeSet SynchronizedView(Javax.Print.Attribute.PrintJobAttributeSet arg0)
         {
-            return SExecuteWithSignature<Javax.Print.Attribute.PrintJobAttributeSet>(LocalBridgeClazz, "synchronizedView", "(Ljavax/print/attribute/PrintJobAttributeSet;)Ljavax/print/attribute/PrintJobAttributeSet;", arg0);
+            return SExecute<Javax.Print.Attribute.PrintJobAttributeSet>(LocalBridgeClazz, "synchronizedView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.PrintJobAttributeSet)"/>
@@ -158,7 +158,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Javax.Print.Attribute.PrintJobAttributeSet"/></returns>
         public static Javax.Print.Attribute.PrintJobAttributeSet UnmodifiableView(Javax.Print.Attribute.PrintJobAttributeSet arg0)
         {
-            return SExecuteWithSignature<Javax.Print.Attribute.PrintJobAttributeSet>(LocalBridgeClazz, "unmodifiableView", "(Ljavax/print/attribute/PrintJobAttributeSet;)Ljavax/print/attribute/PrintJobAttributeSet;", arg0);
+            return SExecute<Javax.Print.Attribute.PrintJobAttributeSet>(LocalBridgeClazz, "unmodifiableView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.PrintRequestAttributeSet)"/>
@@ -167,7 +167,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></returns>
         public static Javax.Print.Attribute.PrintRequestAttributeSet SynchronizedView(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
-            return SExecuteWithSignature<Javax.Print.Attribute.PrintRequestAttributeSet>(LocalBridgeClazz, "synchronizedView", "(Ljavax/print/attribute/PrintRequestAttributeSet;)Ljavax/print/attribute/PrintRequestAttributeSet;", arg0);
+            return SExecute<Javax.Print.Attribute.PrintRequestAttributeSet>(LocalBridgeClazz, "synchronizedView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.PrintRequestAttributeSet)"/>
@@ -176,7 +176,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></returns>
         public static Javax.Print.Attribute.PrintRequestAttributeSet UnmodifiableView(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
-            return SExecuteWithSignature<Javax.Print.Attribute.PrintRequestAttributeSet>(LocalBridgeClazz, "unmodifiableView", "(Ljavax/print/attribute/PrintRequestAttributeSet;)Ljavax/print/attribute/PrintRequestAttributeSet;", arg0);
+            return SExecute<Javax.Print.Attribute.PrintRequestAttributeSet>(LocalBridgeClazz, "unmodifiableView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.PrintServiceAttributeSet)"/>
@@ -185,7 +185,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Javax.Print.Attribute.PrintServiceAttributeSet"/></returns>
         public static Javax.Print.Attribute.PrintServiceAttributeSet SynchronizedView(Javax.Print.Attribute.PrintServiceAttributeSet arg0)
         {
-            return SExecuteWithSignature<Javax.Print.Attribute.PrintServiceAttributeSet>(LocalBridgeClazz, "synchronizedView", "(Ljavax/print/attribute/PrintServiceAttributeSet;)Ljavax/print/attribute/PrintServiceAttributeSet;", arg0);
+            return SExecute<Javax.Print.Attribute.PrintServiceAttributeSet>(LocalBridgeClazz, "synchronizedView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.PrintServiceAttributeSet)"/>
@@ -194,7 +194,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Javax.Print.Attribute.PrintServiceAttributeSet"/></returns>
         public static Javax.Print.Attribute.PrintServiceAttributeSet UnmodifiableView(Javax.Print.Attribute.PrintServiceAttributeSet arg0)
         {
-            return SExecuteWithSignature<Javax.Print.Attribute.PrintServiceAttributeSet>(LocalBridgeClazz, "unmodifiableView", "(Ljavax/print/attribute/PrintServiceAttributeSet;)Ljavax/print/attribute/PrintServiceAttributeSet;", arg0);
+            return SExecute<Javax.Print.Attribute.PrintServiceAttributeSet>(LocalBridgeClazz, "unmodifiableView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#verifyCategoryForValue(java.lang.Class,javax.print.attribute.Attribute)"/>

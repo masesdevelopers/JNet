@@ -183,7 +183,7 @@ namespace Javax.Management.Openmbean
         /// </summary>
         public Javax.Management.Openmbean.TabularType TabularType
         {
-            get { return IExecuteWithSignature<Javax.Management.Openmbean.TabularType>("getTabularType", "()Ljavax/management/openmbean/TabularType;"); }
+            get { return IExecute<Javax.Management.Openmbean.TabularType>("getTabularType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#containsKey(java.lang.Object[])"/>
@@ -192,7 +192,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(object[] arg0)
         {
-            return IExecuteWithSignature<bool>("containsKey", "([Ljava/lang/Object;)Z", new object[] { arg0 });
+            return IExecute<bool>("containsKey", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#containsValue(javax.management.openmbean.CompositeData)"/>
@@ -201,7 +201,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool ContainsValue(Javax.Management.Openmbean.CompositeData arg0)
         {
-            return IExecuteWithSignature<bool>("containsValue", "(Ljavax/management/openmbean/CompositeData;)Z", arg0);
+            return IExecute<bool>("containsValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#isEmpty()"/>
@@ -209,7 +209,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#size()"/>
@@ -217,7 +217,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#calculateIndex(javax.management.openmbean.CompositeData)"/>
@@ -226,7 +226,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="object"/></returns>
         public object[] CalculateIndex(Javax.Management.Openmbean.CompositeData arg0)
         {
-            return IExecuteWithSignatureArray<object>("calculateIndex", "(Ljavax/management/openmbean/CompositeData;)[Ljava/lang/Object;", arg0);
+            return IExecuteArray<object>("calculateIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#values()"/>
@@ -234,7 +234,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<object> Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection<object>>("values", "()Ljava/util/Collection;");
+            return IExecute<Java.Util.Collection<object>>("values");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#keySet()"/>
@@ -242,7 +242,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<object> KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<object>>("keySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<object>>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#get(java.lang.Object[])"/>
@@ -251,7 +251,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Javax.Management.Openmbean.CompositeData"/></returns>
         public Javax.Management.Openmbean.CompositeData Get(object[] arg0)
         {
-            return IExecuteWithSignature<Javax.Management.Openmbean.CompositeData>("get", "([Ljava/lang/Object;)Ljavax/management/openmbean/CompositeData;", new object[] { arg0 });
+            return IExecute<Javax.Management.Openmbean.CompositeData>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#remove(java.lang.Object[])"/>
@@ -260,14 +260,14 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Javax.Management.Openmbean.CompositeData"/></returns>
         public Javax.Management.Openmbean.CompositeData Remove(object[] arg0)
         {
-            return IExecuteWithSignature<Javax.Management.Openmbean.CompositeData>("remove", "([Ljava/lang/Object;)Ljavax/management/openmbean/CompositeData;", new object[] { arg0 });
+            return IExecute<Javax.Management.Openmbean.CompositeData>("remove", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#put(javax.management.openmbean.CompositeData)"/>
@@ -275,7 +275,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
         public void Put(Javax.Management.Openmbean.CompositeData arg0)
         {
-            IExecuteWithSignature("put", "(Ljavax/management/openmbean/CompositeData;)V", arg0);
+            IExecute("put", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#putAll(javax.management.openmbean.CompositeData[])"/>
@@ -283,7 +283,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
         public void PutAll(Javax.Management.Openmbean.CompositeData[] arg0)
         {
-            IExecuteWithSignature("putAll", "([Ljavax/management/openmbean/CompositeData;)V", new object[] { arg0 });
+            IExecute("putAll", new object[] { arg0 });
         }
 
         #endregion

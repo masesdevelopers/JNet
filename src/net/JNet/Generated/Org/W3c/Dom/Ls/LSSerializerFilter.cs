@@ -119,7 +119,7 @@ namespace Org.W3c.Dom.Ls
         /// </summary>
         public int WhatToShow
         {
-            get { return IExecuteWithSignature<int>("getWhatToShow", "()I"); }
+            get { return IExecute<int>("getWhatToShow"); }
         }
 
         #endregion

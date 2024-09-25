@@ -99,7 +99,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public static Java.Nio.FloatBuffer Allocate(int arg0)
         {
-            return SExecuteWithSignature<Java.Nio.FloatBuffer>(LocalBridgeClazz, "allocate", "(I)Ljava/nio/FloatBuffer;", arg0);
+            return SExecute<Java.Nio.FloatBuffer>(LocalBridgeClazz, "allocate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#wrap(float[],int,int)"/>
@@ -119,7 +119,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public static Java.Nio.FloatBuffer Wrap(float[] arg0)
         {
-            return SExecuteWithSignature<Java.Nio.FloatBuffer>(LocalBridgeClazz, "wrap", "([F)Ljava/nio/FloatBuffer;", new object[] { arg0 });
+            return SExecute<Java.Nio.FloatBuffer>(LocalBridgeClazz, "wrap", new object[] { arg0 });
         }
 
         #endregion
@@ -131,7 +131,7 @@ namespace Java.Nio
         /// <returns><see cref="float"/></returns>
         public float Get()
         {
-            return IExecuteWithSignature<float>("get", "()F");
+            return IExecute<float>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#get(int)"/>
@@ -140,7 +140,7 @@ namespace Java.Nio
         /// <returns><see cref="float"/></returns>
         public float Get(int arg0)
         {
-            return IExecuteWithSignature<float>("get", "(I)F", arg0);
+            return IExecute<float>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#order()"/>
@@ -148,7 +148,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
         public Java.Nio.ByteOrder Order()
         {
-            return IExecuteWithSignature<Java.Nio.ByteOrder>("order", "()Ljava/nio/ByteOrder;");
+            return IExecute<Java.Nio.ByteOrder>("order");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#asReadOnlyBuffer()"/>
@@ -156,7 +156,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer AsReadOnlyBuffer()
         {
-            return IExecuteWithSignature<Java.Nio.FloatBuffer>("asReadOnlyBuffer", "()Ljava/nio/FloatBuffer;");
+            return IExecute<Java.Nio.FloatBuffer>("asReadOnlyBuffer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#compact()"/>
@@ -164,7 +164,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Compact()
         {
-            return IExecuteWithSignature<Java.Nio.FloatBuffer>("compact", "()Ljava/nio/FloatBuffer;");
+            return IExecute<Java.Nio.FloatBuffer>("compact");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#put(float)"/>
@@ -173,7 +173,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Put(float arg0)
         {
-            return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "(F)Ljava/nio/FloatBuffer;", arg0);
+            return IExecute<Java.Nio.FloatBuffer>("put", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#put(int,float)"/>
@@ -192,7 +192,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Put(float[] arg0)
         {
-            return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "([F)Ljava/nio/FloatBuffer;", new object[] { arg0 });
+            return IExecute<Java.Nio.FloatBuffer>("put", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#compareTo(java.lang.Object)"/>
@@ -201,7 +201,7 @@ namespace Java.Nio
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#compareTo(java.nio.FloatBuffer)"/>
@@ -210,7 +210,7 @@ namespace Java.Nio
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Nio.FloatBuffer arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/FloatBuffer;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#mismatch(java.nio.FloatBuffer)"/>
@@ -219,7 +219,7 @@ namespace Java.Nio
         /// <returns><see cref="int"/></returns>
         public int Mismatch(Java.Nio.FloatBuffer arg0)
         {
-            return IExecuteWithSignature<int>("mismatch", "(Ljava/nio/FloatBuffer;)I", arg0);
+            return IExecute<int>("mismatch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#get(float[],int,int)"/>
@@ -239,7 +239,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Get(float[] arg0)
         {
-            return IExecuteWithSignature<Java.Nio.FloatBuffer>("get", "([F)Ljava/nio/FloatBuffer;", new object[] { arg0 });
+            return IExecute<Java.Nio.FloatBuffer>("get", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#put(float[],int,int)"/>
@@ -259,7 +259,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Put(Java.Nio.FloatBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "(Ljava/nio/FloatBuffer;)Ljava/nio/FloatBuffer;", arg0);
+            return IExecute<Java.Nio.FloatBuffer>("put", arg0);
         }
 
         #endregion

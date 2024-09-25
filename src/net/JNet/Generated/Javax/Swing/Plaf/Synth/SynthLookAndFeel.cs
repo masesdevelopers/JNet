@@ -91,7 +91,7 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         public static Javax.Swing.Plaf.Synth.SynthStyleFactory StyleFactory
         {
-            get { return SExecuteWithSignature<Javax.Swing.Plaf.Synth.SynthStyleFactory>(LocalBridgeClazz, "getStyleFactory", "()Ljavax/swing/plaf/synth/SynthStyleFactory;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setStyleFactory", "(Ljavax/swing/plaf/synth/SynthStyleFactory;)V", value); }
+            get { return SExecute<Javax.Swing.Plaf.Synth.SynthStyleFactory>(LocalBridgeClazz, "getStyleFactory"); } set { SExecute(LocalBridgeClazz, "setStyleFactory", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#createUI(javax.swing.JComponent)"/>
@@ -100,7 +100,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Javax.Swing.Plaf.ComponentUI"/></returns>
         public static Javax.Swing.Plaf.ComponentUI CreateUI(Javax.Swing.JComponent arg0)
         {
-            return SExecuteWithSignature<Javax.Swing.Plaf.ComponentUI>(LocalBridgeClazz, "createUI", "(Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;", arg0);
+            return SExecute<Javax.Swing.Plaf.ComponentUI>(LocalBridgeClazz, "createUI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#getRegion(javax.swing.JComponent)"/>
@@ -109,7 +109,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Javax.Swing.Plaf.Synth.Region"/></returns>
         public static Javax.Swing.Plaf.Synth.Region GetRegion(Javax.Swing.JComponent arg0)
         {
-            return SExecuteWithSignature<Javax.Swing.Plaf.Synth.Region>(LocalBridgeClazz, "getRegion", "(Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/Region;", arg0);
+            return SExecute<Javax.Swing.Plaf.Synth.Region>(LocalBridgeClazz, "getRegion", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#getStyle(javax.swing.JComponent,javax.swing.plaf.synth.Region)"/>
@@ -127,7 +127,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public static void UpdateStyles(Java.Awt.Component arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "updateStyles", "(Ljava/awt/Component;)V", arg0);
+            SExecute(LocalBridgeClazz, "updateStyles", arg0);
         }
 
         #endregion
@@ -139,7 +139,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="bool"/></returns>
         public bool ShouldUpdateStyleOnAncestorChanged()
         {
-            return IExecuteWithSignature<bool>("shouldUpdateStyleOnAncestorChanged", "()Z");
+            return IExecute<bool>("shouldUpdateStyleOnAncestorChanged");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#load(java.io.InputStream,java.lang.Class)"/>
@@ -159,7 +159,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <exception cref="Java.Io.IOException"/>
         public void Load(Java.Net.URL arg0)
         {
-            IExecuteWithSignature("load", "(Ljava/net/URL;)V", arg0);
+            IExecute("load", arg0);
         }
 
         #endregion

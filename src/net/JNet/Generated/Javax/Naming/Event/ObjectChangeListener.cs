@@ -242,7 +242,7 @@ namespace Javax.Naming.Event
         /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
         public override void ObjectChanged(Javax.Naming.Event.NamingEvent arg0)
         {
-            IExecuteWithSignature("objectChanged", "(Ljavax/naming/event/NamingEvent;)V", arg0);
+            IExecute("objectChanged", arg0);
         }
 
         #endregion

@@ -103,7 +103,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public Java.Awt.ImageNs.BufferedImageOp BufferedImageOp
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImageOp>("getBufferedImageOp", "()Ljava/awt/image/BufferedImageOp;"); }
+            get { return IExecute<Java.Awt.ImageNs.BufferedImageOp>("getBufferedImageOp"); }
         }
 
         #endregion

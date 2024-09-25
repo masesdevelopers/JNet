@@ -164,14 +164,14 @@ namespace Javax.Security.Sasl
         /// </summary>
         public Java.Lang.String AuthorizationID
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAuthorizationID", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAuthorizationID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#getMechanismName()"/> 
         /// </summary>
         public Java.Lang.String MechanismName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMechanismName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMechanismName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#isComplete()"/>
@@ -179,7 +179,7 @@ namespace Javax.Security.Sasl
         /// <returns><see cref="bool"/></returns>
         public bool IsComplete()
         {
-            return IExecuteWithSignature<bool>("isComplete", "()Z");
+            return IExecute<bool>("isComplete");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#evaluateResponse(byte[])"/>
@@ -189,7 +189,7 @@ namespace Javax.Security.Sasl
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
         public byte[] EvaluateResponse(byte[] arg0)
         {
-            return IExecuteWithSignatureArray<byte>("evaluateResponse", "([B)[B", new object[] { arg0 });
+            return IExecuteArray<byte>("evaluateResponse", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#unwrap(byte[],int,int)"/>
@@ -222,7 +222,7 @@ namespace Javax.Security.Sasl
         /// <returns><see cref="object"/></returns>
         public object GetNegotiatedProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getNegotiatedProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getNegotiatedProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#dispose()"/>
@@ -230,7 +230,7 @@ namespace Javax.Security.Sasl
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
         public new void Dispose()
         {
-            IExecuteWithSignature("dispose", "()V");
+            IExecute("dispose");
         }
 
         #endregion

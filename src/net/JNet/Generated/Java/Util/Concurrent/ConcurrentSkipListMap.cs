@@ -179,7 +179,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public Java.Util.Comparator Comparator()
         {
-            return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
+            return IExecute<Java.Util.Comparator>("comparator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingMap()"/>
@@ -187,7 +187,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap DescendingMap()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap>("descendingMap", "()Ljava/util/concurrent/ConcurrentNavigableMap;");
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("descendingMap");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object,boolean)"/>
@@ -206,7 +206,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap HeadMap(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap>("headMap", "(Ljava/lang/Object;)Ljava/util/concurrent/ConcurrentNavigableMap;", arg0);
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("headMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
@@ -247,7 +247,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap TailMap(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap>("tailMap", "(Ljava/lang/Object;)Ljava/util/concurrent/ConcurrentNavigableMap;", arg0);
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("tailMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#clone()"/>
@@ -255,7 +255,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListMap"/></returns>
         public Java.Util.Concurrent.ConcurrentSkipListMap Clone()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentSkipListMap>("clone", "()Ljava/util/concurrent/ConcurrentSkipListMap;");
+            return IExecute<Java.Util.Concurrent.ConcurrentSkipListMap>("clone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#ceilingEntry(java.lang.Object)"/>
@@ -264,7 +264,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry CeilingEntry(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry>("ceilingEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
+            return IExecute<Java.Util.Map.Entry>("ceilingEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstEntry()"/>
@@ -272,7 +272,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry FirstEntry()
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry>("firstEntry", "()Ljava/util/Map$Entry;");
+            return IExecute<Java.Util.Map.Entry>("firstEntry");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#floorEntry(java.lang.Object)"/>
@@ -281,7 +281,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry FloorEntry(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry>("floorEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
+            return IExecute<Java.Util.Map.Entry>("floorEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#higherEntry(java.lang.Object)"/>
@@ -290,7 +290,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry HigherEntry(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry>("higherEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
+            return IExecute<Java.Util.Map.Entry>("higherEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastEntry()"/>
@@ -298,7 +298,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry LastEntry()
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry>("lastEntry", "()Ljava/util/Map$Entry;");
+            return IExecute<Java.Util.Map.Entry>("lastEntry");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lowerEntry(java.lang.Object)"/>
@@ -307,7 +307,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry LowerEntry(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry>("lowerEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
+            return IExecute<Java.Util.Map.Entry>("lowerEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollFirstEntry()"/>
@@ -315,7 +315,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry PollFirstEntry()
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry>("pollFirstEntry", "()Ljava/util/Map$Entry;");
+            return IExecute<Java.Util.Map.Entry>("pollFirstEntry");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollLastEntry()"/>
@@ -323,7 +323,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry PollLastEntry()
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry>("pollLastEntry", "()Ljava/util/Map$Entry;");
+            return IExecute<Java.Util.Map.Entry>("pollLastEntry");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingKeySet()"/>
@@ -331,7 +331,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet DescendingKeySet()
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet>("descendingKeySet", "()Ljava/util/NavigableSet;");
+            return IExecute<Java.Util.NavigableSet>("descendingKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#navigableKeySet()"/>
@@ -339,7 +339,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet NavigableKeySet()
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet>("navigableKeySet", "()Ljava/util/NavigableSet;");
+            return IExecute<Java.Util.NavigableSet>("navigableKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#ceilingKey(java.lang.Object)"/>
@@ -348,7 +348,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object CeilingKey(object arg0)
         {
-            return IExecuteWithSignature("ceilingKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("ceilingKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstKey()"/>
@@ -356,7 +356,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object FirstKey()
         {
-            return IExecuteWithSignature("firstKey", "()Ljava/lang/Object;");
+            return IExecute("firstKey");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#floorKey(java.lang.Object)"/>
@@ -365,7 +365,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object FloorKey(object arg0)
         {
-            return IExecuteWithSignature("floorKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("floorKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#higherKey(java.lang.Object)"/>
@@ -374,7 +374,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object HigherKey(object arg0)
         {
-            return IExecuteWithSignature("higherKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("higherKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastKey()"/>
@@ -382,7 +382,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object LastKey()
         {
-            return IExecuteWithSignature("lastKey", "()Ljava/lang/Object;");
+            return IExecute("lastKey");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lowerKey(java.lang.Object)"/>
@@ -391,7 +391,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object LowerKey(object arg0)
         {
-            return IExecuteWithSignature("lowerKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("lowerKey", arg0);
         }
 
         #endregion
@@ -471,7 +471,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public Java.Util.Comparator<ReturnobjectSuperK> Comparator<ReturnobjectSuperK>() where ReturnobjectSuperK : K
         {
-            return IExecuteWithSignature<Java.Util.Comparator<ReturnobjectSuperK>>("comparator", "()Ljava/util/Comparator;");
+            return IExecute<Java.Util.Comparator<ReturnobjectSuperK>>("comparator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingMap()"/>
@@ -479,7 +479,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> DescendingMap()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("descendingMap", "()Ljava/util/concurrent/ConcurrentNavigableMap;");
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("descendingMap");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#headMap(java.lang.Object,boolean)"/>
@@ -498,7 +498,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> HeadMap(K arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("headMap", "(Ljava/lang/Object;)Ljava/util/concurrent/ConcurrentNavigableMap;", arg0);
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("headMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
@@ -539,7 +539,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
         public Java.Util.Concurrent.ConcurrentNavigableMap<K, V> TailMap(K arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("tailMap", "(Ljava/lang/Object;)Ljava/util/concurrent/ConcurrentNavigableMap;", arg0);
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap<K, V>>("tailMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#clone()"/>
@@ -547,7 +547,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListMap"/></returns>
         public Java.Util.Concurrent.ConcurrentSkipListMap<K, V> Clone()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentSkipListMap<K, V>>("clone", "()Ljava/util/concurrent/ConcurrentSkipListMap;");
+            return IExecute<Java.Util.Concurrent.ConcurrentSkipListMap<K, V>>("clone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#ceilingEntry(java.lang.Object)"/>
@@ -556,7 +556,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> CeilingEntry(K arg0)
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("ceilingEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
+            return IExecute<Java.Util.Map.Entry<K, V>>("ceilingEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstEntry()"/>
@@ -564,7 +564,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> FirstEntry()
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("firstEntry", "()Ljava/util/Map$Entry;");
+            return IExecute<Java.Util.Map.Entry<K, V>>("firstEntry");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#floorEntry(java.lang.Object)"/>
@@ -573,7 +573,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> FloorEntry(K arg0)
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("floorEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
+            return IExecute<Java.Util.Map.Entry<K, V>>("floorEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#higherEntry(java.lang.Object)"/>
@@ -582,7 +582,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> HigherEntry(K arg0)
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("higherEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
+            return IExecute<Java.Util.Map.Entry<K, V>>("higherEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastEntry()"/>
@@ -590,7 +590,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> LastEntry()
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("lastEntry", "()Ljava/util/Map$Entry;");
+            return IExecute<Java.Util.Map.Entry<K, V>>("lastEntry");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lowerEntry(java.lang.Object)"/>
@@ -599,7 +599,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> LowerEntry(K arg0)
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("lowerEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0);
+            return IExecute<Java.Util.Map.Entry<K, V>>("lowerEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollFirstEntry()"/>
@@ -607,7 +607,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> PollFirstEntry()
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("pollFirstEntry", "()Ljava/util/Map$Entry;");
+            return IExecute<Java.Util.Map.Entry<K, V>>("pollFirstEntry");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollLastEntry()"/>
@@ -615,7 +615,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public Java.Util.Map.Entry<K, V> PollLastEntry()
         {
-            return IExecuteWithSignature<Java.Util.Map.Entry<K, V>>("pollLastEntry", "()Ljava/util/Map$Entry;");
+            return IExecute<Java.Util.Map.Entry<K, V>>("pollLastEntry");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingKeySet()"/>
@@ -623,7 +623,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<K> DescendingKeySet()
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet<K>>("descendingKeySet", "()Ljava/util/NavigableSet;");
+            return IExecute<Java.Util.NavigableSet<K>>("descendingKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#navigableKeySet()"/>
@@ -631,7 +631,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<K> NavigableKeySet()
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet<K>>("navigableKeySet", "()Ljava/util/NavigableSet;");
+            return IExecute<Java.Util.NavigableSet<K>>("navigableKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#ceilingKey(java.lang.Object)"/>
@@ -640,7 +640,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="K"/></returns>
         public K CeilingKey(K arg0)
         {
-            return IExecuteWithSignature<K>("ceilingKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<K>("ceilingKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstKey()"/>
@@ -648,7 +648,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="K"/></returns>
         public K FirstKey()
         {
-            return IExecuteWithSignature<K>("firstKey", "()Ljava/lang/Object;");
+            return IExecute<K>("firstKey");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#floorKey(java.lang.Object)"/>
@@ -657,7 +657,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="K"/></returns>
         public K FloorKey(K arg0)
         {
-            return IExecuteWithSignature<K>("floorKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<K>("floorKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#higherKey(java.lang.Object)"/>
@@ -666,7 +666,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="K"/></returns>
         public K HigherKey(K arg0)
         {
-            return IExecuteWithSignature<K>("higherKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<K>("higherKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastKey()"/>
@@ -674,7 +674,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="K"/></returns>
         public K LastKey()
         {
-            return IExecuteWithSignature<K>("lastKey", "()Ljava/lang/Object;");
+            return IExecute<K>("lastKey");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lowerKey(java.lang.Object)"/>
@@ -683,7 +683,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="K"/></returns>
         public K LowerKey(K arg0)
         {
-            return IExecuteWithSignature<K>("lowerKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<K>("lowerKey", arg0);
         }
 
         #endregion

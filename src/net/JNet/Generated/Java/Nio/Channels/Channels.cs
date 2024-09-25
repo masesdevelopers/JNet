@@ -93,7 +93,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public static Java.Io.InputStream NewInputStream(Java.Nio.Channels.AsynchronousByteChannel arg0)
         {
-            return SExecuteWithSignature<Java.Io.InputStream>(LocalBridgeClazz, "newInputStream", "(Ljava/nio/channels/AsynchronousByteChannel;)Ljava/io/InputStream;", arg0);
+            return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "newInputStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newInputStream(java.nio.channels.ReadableByteChannel)"/>
@@ -102,7 +102,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public static Java.Io.InputStream NewInputStream(Java.Nio.Channels.ReadableByteChannel arg0)
         {
-            return SExecuteWithSignature<Java.Io.InputStream>(LocalBridgeClazz, "newInputStream", "(Ljava/nio/channels/ReadableByteChannel;)Ljava/io/InputStream;", arg0);
+            return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "newInputStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newOutputStream(java.nio.channels.AsynchronousByteChannel)"/>
@@ -111,7 +111,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
         public static Java.Io.OutputStream NewOutputStream(Java.Nio.Channels.AsynchronousByteChannel arg0)
         {
-            return SExecuteWithSignature<Java.Io.OutputStream>(LocalBridgeClazz, "newOutputStream", "(Ljava/nio/channels/AsynchronousByteChannel;)Ljava/io/OutputStream;", arg0);
+            return SExecute<Java.Io.OutputStream>(LocalBridgeClazz, "newOutputStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newOutputStream(java.nio.channels.WritableByteChannel)"/>
@@ -120,7 +120,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
         public static Java.Io.OutputStream NewOutputStream(Java.Nio.Channels.WritableByteChannel arg0)
         {
-            return SExecuteWithSignature<Java.Io.OutputStream>(LocalBridgeClazz, "newOutputStream", "(Ljava/nio/channels/WritableByteChannel;)Ljava/io/OutputStream;", arg0);
+            return SExecute<Java.Io.OutputStream>(LocalBridgeClazz, "newOutputStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.lang.String)"/>
@@ -191,7 +191,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.ReadableByteChannel"/></returns>
         public static Java.Nio.Channels.ReadableByteChannel NewChannel(Java.Io.InputStream arg0)
         {
-            return SExecuteWithSignature<Java.Nio.Channels.ReadableByteChannel>(LocalBridgeClazz, "newChannel", "(Ljava/io/InputStream;)Ljava/nio/channels/ReadableByteChannel;", arg0);
+            return SExecute<Java.Nio.Channels.ReadableByteChannel>(LocalBridgeClazz, "newChannel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newChannel(java.io.OutputStream)"/>
@@ -200,7 +200,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.WritableByteChannel"/></returns>
         public static Java.Nio.Channels.WritableByteChannel NewChannel(Java.Io.OutputStream arg0)
         {
-            return SExecuteWithSignature<Java.Nio.Channels.WritableByteChannel>(LocalBridgeClazz, "newChannel", "(Ljava/io/OutputStream;)Ljava/nio/channels/WritableByteChannel;", arg0);
+            return SExecute<Java.Nio.Channels.WritableByteChannel>(LocalBridgeClazz, "newChannel", arg0);
         }
 
         #endregion

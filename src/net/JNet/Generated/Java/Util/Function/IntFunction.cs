@@ -251,7 +251,7 @@ namespace Java.Util.Function
         /// <returns><see cref="object"/></returns>
         public override object Apply(int arg0)
         {
-            return IExecuteWithSignature("apply", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("apply", arg0);
         }
 
         #endregion
@@ -379,7 +379,7 @@ namespace Java.Util.Function
         /// <returns><typeparamref name="R"/></returns>
         public override R Apply(int arg0)
         {
-            return IExecuteWithSignature<R>("apply", "(I)Ljava/lang/Object;", arg0);
+            return IExecute<R>("apply", arg0);
         }
 
         #endregion

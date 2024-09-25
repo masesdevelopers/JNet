@@ -109,7 +109,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoEra"/></returns>
         public static Java.Time.Chrono.MinguoEra Of(int arg0)
         {
-            return SExecuteWithSignature<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "of", "(I)Ljava/time/chrono/MinguoEra;", arg0);
+            return SExecute<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#valueOf(java.lang.String)"/>
@@ -118,7 +118,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoEra"/></returns>
         public static Java.Time.Chrono.MinguoEra ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/chrono/MinguoEra;", arg0);
+            return SExecute<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#values()"/>
@@ -126,7 +126,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoEra"/></returns>
         public static Java.Time.Chrono.MinguoEra[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "values", "()[Ljava/time/chrono/MinguoEra;");
+            return SExecuteArray<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "values");
         }
 
         #endregion
@@ -137,7 +137,7 @@ namespace Java.Time.Chrono
         /// </summary>
         public int Value
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); }
+            get { return IExecute<int>("getValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>

@@ -93,7 +93,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.Toolkit DefaultToolkit
         {
-            get { return SExecuteWithSignature<Java.Awt.Toolkit>(LocalBridgeClazz, "getDefaultToolkit", "()Ljava/awt/Toolkit;"); }
+            get { return SExecute<Java.Awt.Toolkit>(LocalBridgeClazz, "getDefaultToolkit"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getProperty(java.lang.String,java.lang.String)"/>
@@ -114,70 +114,70 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.EventNs.AWTEventListener[] AWTEventListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.AWTEventListener>("getAWTEventListeners", "()[Ljava/awt/event/AWTEventListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.AWTEventListener>("getAWTEventListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getColorModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.ColorModel ColorModel
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.ColorModel>("getColorModel", "()Ljava/awt/image/ColorModel;"); }
+            get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getMaximumCursorColors()"/> 
         /// </summary>
         public int MaximumCursorColors
         {
-            get { return IExecuteWithSignature<int>("getMaximumCursorColors", "()I"); }
+            get { return IExecute<int>("getMaximumCursorColors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getMenuShortcutKeyMaskEx()"/> 
         /// </summary>
         public int MenuShortcutKeyMaskEx
         {
-            get { return IExecuteWithSignature<int>("getMenuShortcutKeyMaskEx", "()I"); }
+            get { return IExecute<int>("getMenuShortcutKeyMaskEx"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getPropertyChangeListeners()"/> 
         /// </summary>
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;"); }
+            get { return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getScreenResolution()"/> 
         /// </summary>
         public int ScreenResolution
         {
-            get { return IExecuteWithSignature<int>("getScreenResolution", "()I"); }
+            get { return IExecute<int>("getScreenResolution"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getScreenSize()"/> 
         /// </summary>
         public Java.Awt.Dimension ScreenSize
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getScreenSize", "()Ljava/awt/Dimension;"); }
+            get { return IExecute<Java.Awt.Dimension>("getScreenSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getSystemClipboard()"/> 
         /// </summary>
         public Java.Awt.Datatransfer.Clipboard SystemClipboard
         {
-            get { return IExecuteWithSignature<Java.Awt.Datatransfer.Clipboard>("getSystemClipboard", "()Ljava/awt/datatransfer/Clipboard;"); }
+            get { return IExecute<Java.Awt.Datatransfer.Clipboard>("getSystemClipboard"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getSystemEventQueue()"/> 
         /// </summary>
         public Java.Awt.EventQueue SystemEventQueue
         {
-            get { return IExecuteWithSignature<Java.Awt.EventQueue>("getSystemEventQueue", "()Ljava/awt/EventQueue;"); }
+            get { return IExecute<Java.Awt.EventQueue>("getSystemEventQueue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getSystemSelection()"/> 
         /// </summary>
         public Java.Awt.Datatransfer.Clipboard SystemSelection
         {
-            get { return IExecuteWithSignature<Java.Awt.Datatransfer.Clipboard>("getSystemSelection", "()Ljava/awt/datatransfer/Clipboard;"); }
+            get { return IExecute<Java.Awt.Datatransfer.Clipboard>("getSystemSelection"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#createDragGestureRecognizer(java.lang.Class,java.awt.dnd.DragSource,java.awt.Component,int,java.awt.dnd.DragGestureListener)"/>
@@ -200,7 +200,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsModalExclusionTypeSupported(Java.Awt.Dialog.ModalExclusionType arg0)
         {
-            return IExecuteWithSignature<bool>("isModalExclusionTypeSupported", "(Ljava/awt/Dialog$ModalExclusionType;)Z", arg0);
+            return IExecute<bool>("isModalExclusionTypeSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isModalityTypeSupported(java.awt.Dialog.ModalityType)"/>
@@ -209,7 +209,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsModalityTypeSupported(Java.Awt.Dialog.ModalityType arg0)
         {
-            return IExecuteWithSignature<bool>("isModalityTypeSupported", "(Ljava/awt/Dialog$ModalityType;)Z", arg0);
+            return IExecute<bool>("isModalityTypeSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#prepareImage(java.awt.Image,int,int,java.awt.image.ImageObserver)"/>
@@ -253,7 +253,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image CreateImage(Java.Awt.ImageNs.ImageProducer arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Image>("createImage", "(Ljava/awt/image/ImageProducer;)Ljava/awt/Image;", arg0);
+            return IExecute<Java.Awt.Image>("createImage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#createImage(java.lang.String)"/>
@@ -262,7 +262,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image CreateImage(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Image>("createImage", "(Ljava/lang/String;)Ljava/awt/Image;", arg0);
+            return IExecute<Java.Awt.Image>("createImage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#createImage(java.net.URL)"/>
@@ -271,7 +271,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image CreateImage(Java.Net.URL arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Image>("createImage", "(Ljava/net/URL;)Ljava/awt/Image;", arg0);
+            return IExecute<Java.Awt.Image>("createImage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getImage(java.lang.String)"/>
@@ -280,7 +280,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetImage(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Image>("getImage", "(Ljava/lang/String;)Ljava/awt/Image;", arg0);
+            return IExecute<Java.Awt.Image>("getImage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getImage(java.net.URL)"/>
@@ -289,7 +289,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetImage(Java.Net.URL arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Image>("getImage", "(Ljava/net/URL;)Ljava/awt/Image;", arg0);
+            return IExecute<Java.Awt.Image>("getImage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getPrintJob(java.awt.Frame,java.lang.String,java.util.Properties)"/>
@@ -310,21 +310,21 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.HeadlessException"/>
         public Java.Util.Map<Java.Awt.FontNs.TextAttribute, object> MapInputMethodHighlight(Java.Awt.Im.InputMethodHighlight arg0)
         {
-            return IExecuteWithSignature<Java.Util.Map<Java.Awt.FontNs.TextAttribute, object>>("mapInputMethodHighlight", "(Ljava/awt/im/InputMethodHighlight;)Ljava/util/Map;", arg0);
+            return IExecute<Java.Util.Map<Java.Awt.FontNs.TextAttribute, object>>("mapInputMethodHighlight", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#beep()"/>
         /// </summary>
         public void Beep()
         {
-            IExecuteWithSignature("beep", "()V");
+            IExecute("beep");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#sync()"/>
         /// </summary>
         public void Sync()
         {
-            IExecuteWithSignature("sync", "()V");
+            IExecute("sync");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#areExtraMouseButtonsEnabled()"/>
@@ -333,7 +333,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool AreExtraMouseButtonsEnabled()
         {
-            return IExecuteWithSignature<bool>("areExtraMouseButtonsEnabled", "()Z");
+            return IExecute<bool>("areExtraMouseButtonsEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getLockingKeyState(int)"/>
@@ -343,7 +343,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.UnsupportedOperationException"/>
         public bool GetLockingKeyState(int arg0)
         {
-            return IExecuteWithSignature<bool>("getLockingKeyState", "(I)Z", arg0);
+            return IExecute<bool>("getLockingKeyState", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isAlwaysOnTopSupported()"/>
@@ -351,7 +351,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsAlwaysOnTopSupported()
         {
-            return IExecuteWithSignature<bool>("isAlwaysOnTopSupported", "()Z");
+            return IExecute<bool>("isAlwaysOnTopSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isDynamicLayoutActive()"/>
@@ -360,7 +360,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool IsDynamicLayoutActive()
         {
-            return IExecuteWithSignature<bool>("isDynamicLayoutActive", "()Z");
+            return IExecute<bool>("isDynamicLayoutActive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isFrameStateSupported(int)"/>
@@ -370,7 +370,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool IsFrameStateSupported(int arg0)
         {
-            return IExecuteWithSignature<bool>("isFrameStateSupported", "(I)Z", arg0);
+            return IExecute<bool>("isFrameStateSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getDesktopProperty(java.lang.String)"/>
@@ -379,7 +379,7 @@ namespace Java.Awt
         /// <returns><see cref="object"/></returns>
         public object GetDesktopProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getDesktopProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getDesktopProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#createCustomCursor(java.awt.Image,java.awt.Point,java.lang.String)"/>
@@ -412,7 +412,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.EventNs.AWTEventListener"/></returns>
         public Java.Awt.EventNs.AWTEventListener[] GetAWTEventListeners(long arg0)
         {
-            return IExecuteWithSignatureArray<Java.Awt.EventNs.AWTEventListener>("getAWTEventListeners", "(J)[Ljava/awt/event/AWTEventListener;", arg0);
+            return IExecuteArray<Java.Awt.EventNs.AWTEventListener>("getAWTEventListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#createImage(byte[])"/>
@@ -421,7 +421,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image CreateImage(byte[] arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Image>("createImage", "([B)Ljava/awt/Image;", new object[] { arg0 });
+            return IExecute<Java.Awt.Image>("createImage", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getScreenInsets(java.awt.GraphicsConfiguration)"/>
@@ -431,7 +431,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.HeadlessException"/>
         public Java.Awt.Insets GetScreenInsets(Java.Awt.GraphicsConfiguration arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Insets>("getScreenInsets", "(Ljava/awt/GraphicsConfiguration;)Ljava/awt/Insets;", arg0);
+            return IExecute<Java.Awt.Insets>("getScreenInsets", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getPrintJob(java.awt.Frame,java.lang.String,java.awt.JobAttributes,java.awt.PageAttributes)"/>
@@ -452,7 +452,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "(Ljava/lang/String;)[Ljava/beans/PropertyChangeListener;", arg0);
+            return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#addAWTEventListener(java.awt.event.AWTEventListener,long)"/>
@@ -478,7 +478,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.AWTEventListener"/></param>
         public void RemoveAWTEventListener(Java.Awt.EventNs.AWTEventListener arg0)
         {
-            IExecuteWithSignature("removeAWTEventListener", "(Ljava/awt/event/AWTEventListener;)V", arg0);
+            IExecute("removeAWTEventListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
@@ -496,7 +496,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.HeadlessException"/>
         public void SetDynamicLayout(bool arg0)
         {
-            IExecuteWithSignature("setDynamicLayout", "(Z)V", arg0);
+            IExecute("setDynamicLayout", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#setLockingKeyState(int,boolean)"/>

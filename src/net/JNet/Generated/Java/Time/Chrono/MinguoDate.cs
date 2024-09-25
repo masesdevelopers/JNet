@@ -100,7 +100,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoDate"/></returns>
         public static Java.Time.Chrono.MinguoDate Now()
         {
-            return SExecuteWithSignature<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "now", "()Ljava/time/chrono/MinguoDate;");
+            return SExecute<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoDate.html#now(java.time.Clock)"/>
@@ -109,7 +109,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoDate"/></returns>
         public static Java.Time.Chrono.MinguoDate Now(Java.Time.Clock arg0)
         {
-            return SExecuteWithSignature<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/chrono/MinguoDate;", arg0);
+            return SExecute<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoDate.html#now(java.time.ZoneId)"/>
@@ -118,7 +118,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoDate"/></returns>
         public static Java.Time.Chrono.MinguoDate Now(Java.Time.ZoneId arg0)
         {
-            return SExecuteWithSignature<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/chrono/MinguoDate;", arg0);
+            return SExecute<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoDate.html#of(int,int,int)"/>

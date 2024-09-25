@@ -161,7 +161,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="bool"/></returns>
         public bool IsDirectory()
         {
-            return IExecuteWithSignature<bool>("isDirectory", "()Z");
+            return IExecute<bool>("isDirectory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isOther()"/>
@@ -169,7 +169,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="bool"/></returns>
         public bool IsOther()
         {
-            return IExecuteWithSignature<bool>("isOther", "()Z");
+            return IExecute<bool>("isOther");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isRegularFile()"/>
@@ -177,7 +177,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="bool"/></returns>
         public bool IsRegularFile()
         {
-            return IExecuteWithSignature<bool>("isRegularFile", "()Z");
+            return IExecute<bool>("isRegularFile");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isSymbolicLink()"/>
@@ -185,7 +185,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="bool"/></returns>
         public bool IsSymbolicLink()
         {
-            return IExecuteWithSignature<bool>("isSymbolicLink", "()Z");
+            return IExecute<bool>("isSymbolicLink");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#fileKey()"/>
@@ -193,7 +193,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="object"/></returns>
         public object FileKey()
         {
-            return IExecuteWithSignature("fileKey", "()Ljava/lang/Object;");
+            return IExecute("fileKey");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#creationTime()"/>
@@ -201,7 +201,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
         public Java.Nio.File.Attribute.FileTime CreationTime()
         {
-            return IExecuteWithSignature<Java.Nio.File.Attribute.FileTime>("creationTime", "()Ljava/nio/file/attribute/FileTime;");
+            return IExecute<Java.Nio.File.Attribute.FileTime>("creationTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastAccessTime()"/>
@@ -209,7 +209,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
         public Java.Nio.File.Attribute.FileTime LastAccessTime()
         {
-            return IExecuteWithSignature<Java.Nio.File.Attribute.FileTime>("lastAccessTime", "()Ljava/nio/file/attribute/FileTime;");
+            return IExecute<Java.Nio.File.Attribute.FileTime>("lastAccessTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastModifiedTime()"/>
@@ -217,7 +217,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
         public Java.Nio.File.Attribute.FileTime LastModifiedTime()
         {
-            return IExecuteWithSignature<Java.Nio.File.Attribute.FileTime>("lastModifiedTime", "()Ljava/nio/file/attribute/FileTime;");
+            return IExecute<Java.Nio.File.Attribute.FileTime>("lastModifiedTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#size()"/>
@@ -225,7 +225,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="long"/></returns>
         public long Size()
         {
-            return IExecuteWithSignature<long>("size", "()J");
+            return IExecute<long>("size");
         }
 
         #endregion

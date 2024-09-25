@@ -104,7 +104,7 @@ namespace Javax.Swing.Event
         /// </summary>
         public Javax.Swing.Undo.UndoableEdit Edit
         {
-            get { return IExecuteWithSignature<Javax.Swing.Undo.UndoableEdit>("getEdit", "()Ljavax/swing/undo/UndoableEdit;"); }
+            get { return IExecute<Javax.Swing.Undo.UndoableEdit>("getEdit"); }
         }
 
         #endregion

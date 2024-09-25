@@ -355,7 +355,7 @@ namespace Javax.Naming.Directory
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Directory.Attributes GetAttributes(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Directory.Attributes>("getAttributes", "(Ljava/lang/String;)Ljavax/naming/directory/Attributes;", arg0);
+            return IExecute<Javax.Naming.Directory.Attributes>("getAttributes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#getAttributes(javax.naming.Name,java.lang.String[])"/>
@@ -376,7 +376,7 @@ namespace Javax.Naming.Directory
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Directory.Attributes GetAttributes(Javax.Naming.Name arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Directory.Attributes>("getAttributes", "(Ljavax/naming/Name;)Ljavax/naming/directory/Attributes;", arg0);
+            return IExecute<Javax.Naming.Directory.Attributes>("getAttributes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#createSubcontext(java.lang.String,javax.naming.directory.Attributes)"/>
@@ -408,7 +408,7 @@ namespace Javax.Naming.Directory
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Directory.DirContext GetSchema(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Directory.DirContext>("getSchema", "(Ljava/lang/String;)Ljavax/naming/directory/DirContext;", arg0);
+            return IExecute<Javax.Naming.Directory.DirContext>("getSchema", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#getSchema(javax.naming.Name)"/>
@@ -418,7 +418,7 @@ namespace Javax.Naming.Directory
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Directory.DirContext GetSchema(Javax.Naming.Name arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Directory.DirContext>("getSchema", "(Ljavax/naming/Name;)Ljavax/naming/directory/DirContext;", arg0);
+            return IExecute<Javax.Naming.Directory.DirContext>("getSchema", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#getSchemaClassDefinition(java.lang.String)"/>
@@ -428,7 +428,7 @@ namespace Javax.Naming.Directory
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Directory.DirContext GetSchemaClassDefinition(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Directory.DirContext>("getSchemaClassDefinition", "(Ljava/lang/String;)Ljavax/naming/directory/DirContext;", arg0);
+            return IExecute<Javax.Naming.Directory.DirContext>("getSchemaClassDefinition", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#getSchemaClassDefinition(javax.naming.Name)"/>
@@ -438,7 +438,7 @@ namespace Javax.Naming.Directory
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Directory.DirContext GetSchemaClassDefinition(Javax.Naming.Name arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Directory.DirContext>("getSchemaClassDefinition", "(Ljavax/naming/Name;)Ljavax/naming/directory/DirContext;", arg0);
+            return IExecute<Javax.Naming.Directory.DirContext>("getSchemaClassDefinition", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#search(java.lang.String,java.lang.String,java.lang.Object[],javax.naming.directory.SearchControls)"/>

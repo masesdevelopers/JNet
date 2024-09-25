@@ -97,7 +97,7 @@ namespace Java.Util.Spi
         /// </summary>
         public Java.Util.Locale[] AvailableLocales
         {
-            get { return IExecuteWithSignatureArray<Java.Util.Locale>("getAvailableLocales", "()[Ljava/util/Locale;"); }
+            get { return IExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/LocaleServiceProvider.html#isSupportedLocale(java.util.Locale)"/>
@@ -106,7 +106,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsSupportedLocale(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<bool>("isSupportedLocale", "(Ljava/util/Locale;)Z", arg0);
+            return IExecute<bool>("isSupportedLocale", arg0);
         }
 
         #endregion

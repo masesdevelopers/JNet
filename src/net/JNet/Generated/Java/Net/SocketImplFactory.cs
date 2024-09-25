@@ -121,7 +121,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.SocketImpl"/></returns>
         public Java.Net.SocketImpl CreateSocketImpl()
         {
-            return IExecuteWithSignature<Java.Net.SocketImpl>("createSocketImpl", "()Ljava/net/SocketImpl;");
+            return IExecute<Java.Net.SocketImpl>("createSocketImpl");
         }
 
         #endregion

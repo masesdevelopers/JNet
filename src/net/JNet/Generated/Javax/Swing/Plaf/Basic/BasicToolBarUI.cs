@@ -99,14 +99,14 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Java.Awt.Color DockingColor
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getDockingColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setDockingColor", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getDockingColor"); } set { IExecute("setDockingColor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#getFloatingColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setFloatingColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color FloatingColor
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getFloatingColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setFloatingColor", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getFloatingColor"); } set { IExecute("setFloatingColor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#canDock(java.awt.Component,java.awt.Point)"/>
@@ -124,7 +124,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="bool"/></returns>
         public bool IsFloating()
         {
-            return IExecuteWithSignature<bool>("isFloating", "()Z");
+            return IExecute<bool>("isFloating");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isRolloverBorders()"/>
@@ -132,7 +132,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="bool"/></returns>
         public bool IsRolloverBorders()
         {
-            return IExecuteWithSignature<bool>("isRolloverBorders", "()Z");
+            return IExecute<bool>("isRolloverBorders");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setFloating(boolean,java.awt.Point)"/>
@@ -158,7 +158,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="int"/></param>
         public void SetOrientation(int arg0)
         {
-            IExecuteWithSignature("setOrientation", "(I)V", arg0);
+            IExecute("setOrientation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setRolloverBorders(boolean)"/>
@@ -166,7 +166,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetRolloverBorders(bool arg0)
         {
-            IExecuteWithSignature("setRolloverBorders", "(Z)V", arg0);
+            IExecute("setRolloverBorders", arg0);
         }
 
         #endregion

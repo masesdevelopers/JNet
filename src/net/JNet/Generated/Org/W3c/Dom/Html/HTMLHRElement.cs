@@ -131,28 +131,28 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Align
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlign", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHRElement.html#getNoShade()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHRElement.html#setNoShade(boolean)"/>
         /// </summary>
         public bool NoShade
         {
-            get { return IExecuteWithSignature<bool>("getNoShade", "()Z"); } set { IExecuteWithSignature("setNoShade", "(Z)V", value); }
+            get { return IExecute<bool>("getNoShade"); } set { IExecute("setNoShade", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHRElement.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHRElement.html#setSize(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Size
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSize", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSize", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSize"); } set { IExecute("setSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHRElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHRElement.html#setWidth(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Width
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWidth", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setWidth", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getWidth"); } set { IExecute("setWidth", value); }
         }
 
         #endregion

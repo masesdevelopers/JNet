@@ -149,7 +149,7 @@ namespace Javax.Swing.Table
         /// </summary>
         public Javax.Swing.Table.TableStringConverter StringConverter
         {
-            get { return IExecuteWithSignature<Javax.Swing.Table.TableStringConverter>("getStringConverter", "()Ljavax/swing/table/TableStringConverter;"); } set { IExecuteWithSignature("setStringConverter", "(Ljavax/swing/table/TableStringConverter;)V", value); }
+            get { return IExecute<Javax.Swing.Table.TableStringConverter>("getStringConverter"); } set { IExecute("setStringConverter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#setModel(javax.swing.table.TableModel)"/>
@@ -157,7 +157,7 @@ namespace Javax.Swing.Table
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
         public void SetModel(Javax.Swing.Table.TableModel arg0)
         {
-            IExecuteWithSignature("setModel", "(Ljavax/swing/table/TableModel;)V", arg0);
+            IExecute("setModel", arg0);
         }
 
         #endregion
@@ -207,7 +207,7 @@ namespace Javax.Swing.Table
         /// </summary>
         public Javax.Swing.Table.TableStringConverter StringConverter
         {
-            get { return IExecuteWithSignature<Javax.Swing.Table.TableStringConverter>("getStringConverter", "()Ljavax/swing/table/TableStringConverter;"); } set { IExecuteWithSignature("setStringConverter", "(Ljavax/swing/table/TableStringConverter;)V", value); }
+            get { return IExecute<Javax.Swing.Table.TableStringConverter>("getStringConverter"); } set { IExecute("setStringConverter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#setModel(javax.swing.table.TableModel)"/>
@@ -215,7 +215,7 @@ namespace Javax.Swing.Table
         /// <param name="arg0"><typeparamref name="M"/></param>
         public void SetModel(M arg0)
         {
-            IExecuteWithSignature("setModel", "(Ljavax/swing/table/TableModel;)V", arg0);
+            IExecute("setModel", arg0);
         }
 
         #endregion

@@ -122,14 +122,14 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public int EffectiveKeyBits
         {
-            get { return IExecuteWithSignature<int>("getEffectiveKeyBits", "()I"); }
+            get { return IExecute<int>("getEffectiveKeyBits"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html#getIV()"/> 
         /// </summary>
         public byte[] IV
         {
-            get { return IExecuteWithSignatureArray<byte>("getIV", "()[B"); }
+            get { return IExecuteArray<byte>("getIV"); }
         }
 
         #endregion

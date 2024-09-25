@@ -204,28 +204,28 @@ namespace Org.Ietf.Jgss
         /// </summary>
         public Org.Ietf.Jgss.Oid[] Mechs
         {
-            get { return IExecuteWithSignatureArray<Org.Ietf.Jgss.Oid>("getMechs", "()[Lorg/ietf/jgss/Oid;"); }
+            get { return IExecuteArray<Org.Ietf.Jgss.Oid>("getMechs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getName()"/> 
         /// </summary>
         public Org.Ietf.Jgss.GSSName Name
         {
-            get { return IExecuteWithSignature<Org.Ietf.Jgss.GSSName>("getName", "()Lorg/ietf/jgss/GSSName;"); }
+            get { return IExecute<Org.Ietf.Jgss.GSSName>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingLifetime()"/> 
         /// </summary>
         public int RemainingLifetime
         {
-            get { return IExecuteWithSignature<int>("getRemainingLifetime", "()I"); }
+            get { return IExecute<int>("getRemainingLifetime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getUsage()"/> 
         /// </summary>
         public int Usage
         {
-            get { return IExecuteWithSignature<int>("getUsage", "()I"); }
+            get { return IExecute<int>("getUsage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingAcceptLifetime(org.ietf.jgss.Oid)"/>
@@ -235,7 +235,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public int GetRemainingAcceptLifetime(Org.Ietf.Jgss.Oid arg0)
         {
-            return IExecuteWithSignature<int>("getRemainingAcceptLifetime", "(Lorg/ietf/jgss/Oid;)I", arg0);
+            return IExecute<int>("getRemainingAcceptLifetime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingInitLifetime(org.ietf.jgss.Oid)"/>
@@ -245,7 +245,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public int GetRemainingInitLifetime(Org.Ietf.Jgss.Oid arg0)
         {
-            return IExecuteWithSignature<int>("getRemainingInitLifetime", "(Lorg/ietf/jgss/Oid;)I", arg0);
+            return IExecute<int>("getRemainingInitLifetime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getUsage(org.ietf.jgss.Oid)"/>
@@ -255,7 +255,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public int GetUsage(Org.Ietf.Jgss.Oid arg0)
         {
-            return IExecuteWithSignature<int>("getUsage", "(Lorg/ietf/jgss/Oid;)I", arg0);
+            return IExecute<int>("getUsage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getName(org.ietf.jgss.Oid)"/>
@@ -265,7 +265,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public Org.Ietf.Jgss.GSSName GetName(Org.Ietf.Jgss.Oid arg0)
         {
-            return IExecuteWithSignature<Org.Ietf.Jgss.GSSName>("getName", "(Lorg/ietf/jgss/Oid;)Lorg/ietf/jgss/GSSName;", arg0);
+            return IExecute<Org.Ietf.Jgss.GSSName>("getName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#add(org.ietf.jgss.GSSName,int,int,org.ietf.jgss.Oid,int)"/>
@@ -286,7 +286,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public new void Dispose()
         {
-            IExecuteWithSignature("dispose", "()V");
+            IExecute("dispose");
         }
 
         #endregion

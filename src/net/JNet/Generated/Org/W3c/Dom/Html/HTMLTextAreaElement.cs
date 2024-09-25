@@ -171,98 +171,98 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String AccessKey
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAccessKey", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAccessKey", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAccessKey"); } set { IExecute("setAccessKey", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getCols()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setCols(int)"/>
         /// </summary>
         public int Cols
         {
-            get { return IExecuteWithSignature<int>("getCols", "()I"); } set { IExecuteWithSignature("setCols", "(I)V", value); }
+            get { return IExecute<int>("getCols"); } set { IExecute("setCols", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getDefaultValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setDefaultValue(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String DefaultValue
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDefaultValue", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDefaultValue", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getDefaultValue"); } set { IExecute("setDefaultValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getDisabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setDisabled(boolean)"/>
         /// </summary>
         public bool Disabled
         {
-            get { return IExecuteWithSignature<bool>("getDisabled", "()Z"); } set { IExecuteWithSignature("setDisabled", "(Z)V", value); }
+            get { return IExecute<bool>("getDisabled"); } set { IExecute("setDisabled", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getForm()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLFormElement Form
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLFormElement>("getForm", "()Lorg/w3c/dom/html/HTMLFormElement;"); }
+            get { return IExecute<Org.W3c.Dom.Html.HTMLFormElement>("getForm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getReadOnly()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setReadOnly(boolean)"/>
         /// </summary>
         public bool ReadOnly
         {
-            get { return IExecuteWithSignature<bool>("getReadOnly", "()Z"); } set { IExecuteWithSignature("setReadOnly", "(Z)V", value); }
+            get { return IExecute<bool>("getReadOnly"); } set { IExecute("setReadOnly", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setRows(int)"/>
         /// </summary>
         public int Rows
         {
-            get { return IExecuteWithSignature<int>("getRows", "()I"); } set { IExecuteWithSignature("setRows", "(I)V", value); }
+            get { return IExecute<int>("getRows"); } set { IExecute("setRows", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getTabIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setTabIndex(int)"/>
         /// </summary>
         public int TabIndex
         {
-            get { return IExecuteWithSignature<int>("getTabIndex", "()I"); } set { IExecuteWithSignature("setTabIndex", "(I)V", value); }
+            get { return IExecute<int>("getTabIndex"); } set { IExecute("setTabIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setValue(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Value
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#blur()"/>
         /// </summary>
         public void Blur()
         {
-            IExecuteWithSignature("blur", "()V");
+            IExecute("blur");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#focus()"/>
         /// </summary>
         public void Focus()
         {
-            IExecuteWithSignature("focus", "()V");
+            IExecute("focus");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#select()"/>
         /// </summary>
         public void Select()
         {
-            IExecuteWithSignature("select", "()V");
+            IExecute("select");
         }
 
         #endregion

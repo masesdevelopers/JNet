@@ -98,7 +98,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
-            return IExecuteWithSignature<bool>("isValid", "()Z");
+            return IExecute<bool>("isValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#group()"/>
@@ -106,7 +106,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         public Java.Net.InetAddress Group()
         {
-            return IExecuteWithSignature<Java.Net.InetAddress>("group", "()Ljava/net/InetAddress;");
+            return IExecute<Java.Net.InetAddress>("group");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#sourceAddress()"/>
@@ -114,7 +114,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         public Java.Net.InetAddress SourceAddress()
         {
-            return IExecuteWithSignature<Java.Net.InetAddress>("sourceAddress", "()Ljava/net/InetAddress;");
+            return IExecute<Java.Net.InetAddress>("sourceAddress");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#networkInterface()"/>
@@ -122,7 +122,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
         public Java.Net.NetworkInterface NetworkInterface()
         {
-            return IExecuteWithSignature<Java.Net.NetworkInterface>("networkInterface", "()Ljava/net/NetworkInterface;");
+            return IExecute<Java.Net.NetworkInterface>("networkInterface");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#block(java.net.InetAddress)"/>
@@ -132,7 +132,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.MembershipKey Block(Java.Net.InetAddress arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Channels.MembershipKey>("block", "(Ljava/net/InetAddress;)Ljava/nio/channels/MembershipKey;", arg0);
+            return IExecute<Java.Nio.Channels.MembershipKey>("block", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#unblock(java.net.InetAddress)"/>
@@ -141,7 +141,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.MembershipKey"/></returns>
         public Java.Nio.Channels.MembershipKey Unblock(Java.Net.InetAddress arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Channels.MembershipKey>("unblock", "(Ljava/net/InetAddress;)Ljava/nio/channels/MembershipKey;", arg0);
+            return IExecute<Java.Nio.Channels.MembershipKey>("unblock", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#channel()"/>
@@ -149,14 +149,14 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.MulticastChannel"/></returns>
         public Java.Nio.Channels.MulticastChannel Channel()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.MulticastChannel>("channel", "()Ljava/nio/channels/MulticastChannel;");
+            return IExecute<Java.Nio.Channels.MulticastChannel>("channel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#drop()"/>
         /// </summary>
         public void Drop()
         {
-            IExecuteWithSignature("drop", "()V");
+            IExecute("drop");
         }
 
         #endregion

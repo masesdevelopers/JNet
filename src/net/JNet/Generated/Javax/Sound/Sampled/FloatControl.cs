@@ -142,63 +142,63 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public float Maximum
         {
-            get { return IExecuteWithSignature<float>("getMaximum", "()F"); }
+            get { return IExecute<float>("getMaximum"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMaxLabel()"/> 
         /// </summary>
         public Java.Lang.String MaxLabel
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMaxLabel", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMaxLabel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMidLabel()"/> 
         /// </summary>
         public Java.Lang.String MidLabel
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMidLabel", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMidLabel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMinimum()"/> 
         /// </summary>
         public float Minimum
         {
-            get { return IExecuteWithSignature<float>("getMinimum", "()F"); }
+            get { return IExecute<float>("getMinimum"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMinLabel()"/> 
         /// </summary>
         public Java.Lang.String MinLabel
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMinLabel", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMinLabel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getPrecision()"/> 
         /// </summary>
         public float Precision
         {
-            get { return IExecuteWithSignature<float>("getPrecision", "()F"); }
+            get { return IExecute<float>("getPrecision"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getUnits()"/> 
         /// </summary>
         public Java.Lang.String Units
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUnits", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getUnits"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getUpdatePeriod()"/> 
         /// </summary>
         public int UpdatePeriod
         {
-            get { return IExecuteWithSignature<int>("getUpdatePeriod", "()I"); }
+            get { return IExecute<int>("getUpdatePeriod"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#setValue(float)"/>
         /// </summary>
         public float Value
         {
-            get { return IExecuteWithSignature<float>("getValue", "()F"); } set { IExecuteWithSignature("setValue", "(F)V", value); }
+            get { return IExecute<float>("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#shift(float,float,int)"/>

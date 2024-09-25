@@ -124,14 +124,14 @@ namespace Javax.Print.Attribute.Standard
         /// </summary>
         public Java.Lang.Class Category
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getCategory", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getCategory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#printerStateReasonSet(javax.print.attribute.standard.Severity)"/>
@@ -140,7 +140,7 @@ namespace Javax.Print.Attribute.Standard
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Javax.Print.Attribute.Standard.PrinterStateReason> PrinterStateReasonSetMethod(Javax.Print.Attribute.Standard.Severity arg0)
         {
-            return IExecuteWithSignature<Java.Util.Set<Javax.Print.Attribute.Standard.PrinterStateReason>>("printerStateReasonSet", "(Ljavax/print/attribute/standard/Severity;)Ljava/util/Set;", arg0);
+            return IExecute<Java.Util.Set<Javax.Print.Attribute.Standard.PrinterStateReason>>("printerStateReasonSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#put(javax.print.attribute.standard.PrinterStateReason,javax.print.attribute.standard.Severity)"/>

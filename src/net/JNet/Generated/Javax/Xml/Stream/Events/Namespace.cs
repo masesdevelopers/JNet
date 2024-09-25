@@ -128,14 +128,14 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         public Java.Lang.String NamespaceURI
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespaceURI", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getNamespaceURI"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#getPrefix()"/> 
         /// </summary>
         public Java.Lang.String Prefix
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrefix", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPrefix"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#isDefaultNamespaceDeclaration()"/>
@@ -143,7 +143,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsDefaultNamespaceDeclaration()
         {
-            return IExecuteWithSignature<bool>("isDefaultNamespaceDeclaration", "()Z");
+            return IExecute<bool>("isDefaultNamespaceDeclaration");
         }
 
         #endregion

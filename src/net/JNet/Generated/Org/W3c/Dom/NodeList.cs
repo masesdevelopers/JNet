@@ -125,7 +125,7 @@ namespace Org.W3c.Dom
         /// </summary>
         public int Length
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            get { return IExecute<int>("getLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NodeList.html#item(int)"/>
@@ -134,7 +134,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node Item(int arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Node>("item", "(I)Lorg/w3c/dom/Node;", arg0);
+            return IExecute<Org.W3c.Dom.Node>("item", arg0);
         }
 
         #endregion

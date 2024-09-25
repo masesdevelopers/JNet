@@ -130,14 +130,14 @@ namespace Javax.Swing
         /// </summary>
         public char EchoChar
         {
-            get { return IExecuteWithSignature<char>("getEchoChar", "()C"); } set { IExecuteWithSignature("setEchoChar", "(C)V", value); }
+            get { return IExecute<char>("getEchoChar"); } set { IExecute("setEchoChar", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html#getPassword()"/> 
         /// </summary>
         public char[] Password
         {
-            get { return IExecuteWithSignatureArray<char>("getPassword", "()[C"); }
+            get { return IExecuteArray<char>("getPassword"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html#echoCharIsSet()"/>
@@ -145,7 +145,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool EchoCharIsSet()
         {
-            return IExecuteWithSignature<bool>("echoCharIsSet", "()Z");
+            return IExecute<bool>("echoCharIsSet");
         }
 
         #endregion

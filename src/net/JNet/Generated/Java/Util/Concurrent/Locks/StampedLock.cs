@@ -93,7 +93,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public static bool IsLockStamp(long arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLockStamp", "(J)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isLockStamp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#isOptimisticReadStamp(long)"/>
@@ -102,7 +102,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public static bool IsOptimisticReadStamp(long arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isOptimisticReadStamp", "(J)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isOptimisticReadStamp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#isReadLockStamp(long)"/>
@@ -111,7 +111,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public static bool IsReadLockStamp(long arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isReadLockStamp", "(J)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isReadLockStamp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#isWriteLockStamp(long)"/>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public static bool IsWriteLockStamp(long arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isWriteLockStamp", "(J)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isWriteLockStamp", arg0);
         }
 
         #endregion
@@ -131,7 +131,7 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         public int ReadLockCount
         {
-            get { return IExecuteWithSignature<int>("getReadLockCount", "()I"); }
+            get { return IExecute<int>("getReadLockCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#isReadLocked()"/>
@@ -139,7 +139,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool IsReadLocked()
         {
-            return IExecuteWithSignature<bool>("isReadLocked", "()Z");
+            return IExecute<bool>("isReadLocked");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#isWriteLocked()"/>
@@ -147,7 +147,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool IsWriteLocked()
         {
-            return IExecuteWithSignature<bool>("isWriteLocked", "()Z");
+            return IExecute<bool>("isWriteLocked");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryUnlockRead()"/>
@@ -155,7 +155,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool TryUnlockRead()
         {
-            return IExecuteWithSignature<bool>("tryUnlockRead", "()Z");
+            return IExecute<bool>("tryUnlockRead");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryUnlockWrite()"/>
@@ -163,7 +163,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool TryUnlockWrite()
         {
-            return IExecuteWithSignature<bool>("tryUnlockWrite", "()Z");
+            return IExecute<bool>("tryUnlockWrite");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#validate(long)"/>
@@ -172,7 +172,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool Validate(long arg0)
         {
-            return IExecuteWithSignature<bool>("validate", "(J)Z", arg0);
+            return IExecute<bool>("validate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#asReadLock()"/>
@@ -180,7 +180,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock AsReadLock()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Locks.Lock>("asReadLock", "()Ljava/util/concurrent/locks/Lock;");
+            return IExecute<Java.Util.Concurrent.Locks.Lock>("asReadLock");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#asWriteLock()"/>
@@ -188,7 +188,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock AsWriteLock()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Locks.Lock>("asWriteLock", "()Ljava/util/concurrent/locks/Lock;");
+            return IExecute<Java.Util.Concurrent.Locks.Lock>("asWriteLock");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#asReadWriteLock()"/>
@@ -196,7 +196,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="Java.Util.Concurrent.Locks.ReadWriteLock"/></returns>
         public Java.Util.Concurrent.Locks.ReadWriteLock AsReadWriteLock()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Locks.ReadWriteLock>("asReadWriteLock", "()Ljava/util/concurrent/locks/ReadWriteLock;");
+            return IExecute<Java.Util.Concurrent.Locks.ReadWriteLock>("asReadWriteLock");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#readLock()"/>
@@ -204,7 +204,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="long"/></returns>
         public long ReadLock()
         {
-            return IExecuteWithSignature<long>("readLock", "()J");
+            return IExecute<long>("readLock");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#readLockInterruptibly()"/>
@@ -213,7 +213,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public long ReadLockInterruptibly()
         {
-            return IExecuteWithSignature<long>("readLockInterruptibly", "()J");
+            return IExecute<long>("readLockInterruptibly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryConvertToOptimisticRead(long)"/>
@@ -222,7 +222,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="long"/></returns>
         public long TryConvertToOptimisticRead(long arg0)
         {
-            return IExecuteWithSignature<long>("tryConvertToOptimisticRead", "(J)J", arg0);
+            return IExecute<long>("tryConvertToOptimisticRead", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryConvertToReadLock(long)"/>
@@ -231,7 +231,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="long"/></returns>
         public long TryConvertToReadLock(long arg0)
         {
-            return IExecuteWithSignature<long>("tryConvertToReadLock", "(J)J", arg0);
+            return IExecute<long>("tryConvertToReadLock", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryConvertToWriteLock(long)"/>
@@ -240,7 +240,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="long"/></returns>
         public long TryConvertToWriteLock(long arg0)
         {
-            return IExecuteWithSignature<long>("tryConvertToWriteLock", "(J)J", arg0);
+            return IExecute<long>("tryConvertToWriteLock", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryOptimisticRead()"/>
@@ -248,7 +248,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="long"/></returns>
         public long TryOptimisticRead()
         {
-            return IExecuteWithSignature<long>("tryOptimisticRead", "()J");
+            return IExecute<long>("tryOptimisticRead");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryReadLock()"/>
@@ -256,7 +256,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="long"/></returns>
         public long TryReadLock()
         {
-            return IExecuteWithSignature<long>("tryReadLock", "()J");
+            return IExecute<long>("tryReadLock");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryReadLock(long,java.util.concurrent.TimeUnit)"/>
@@ -275,7 +275,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="long"/></returns>
         public long TryWriteLock()
         {
-            return IExecuteWithSignature<long>("tryWriteLock", "()J");
+            return IExecute<long>("tryWriteLock");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryWriteLock(long,java.util.concurrent.TimeUnit)"/>
@@ -294,7 +294,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="long"/></returns>
         public long WriteLock()
         {
-            return IExecuteWithSignature<long>("writeLock", "()J");
+            return IExecute<long>("writeLock");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#writeLockInterruptibly()"/>
@@ -303,7 +303,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public long WriteLockInterruptibly()
         {
-            return IExecuteWithSignature<long>("writeLockInterruptibly", "()J");
+            return IExecute<long>("writeLockInterruptibly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#unlock(long)"/>
@@ -311,7 +311,7 @@ namespace Java.Util.Concurrent.Locks
         /// <param name="arg0"><see cref="long"/></param>
         public void Unlock(long arg0)
         {
-            IExecuteWithSignature("unlock", "(J)V", arg0);
+            IExecute("unlock", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#unlockRead(long)"/>
@@ -319,7 +319,7 @@ namespace Java.Util.Concurrent.Locks
         /// <param name="arg0"><see cref="long"/></param>
         public void UnlockRead(long arg0)
         {
-            IExecuteWithSignature("unlockRead", "(J)V", arg0);
+            IExecute("unlockRead", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#unlockWrite(long)"/>
@@ -327,7 +327,7 @@ namespace Java.Util.Concurrent.Locks
         /// <param name="arg0"><see cref="long"/></param>
         public void UnlockWrite(long arg0)
         {
-            IExecuteWithSignature("unlockWrite", "(J)V", arg0);
+            IExecute("unlockWrite", arg0);
         }
 
         #endregion

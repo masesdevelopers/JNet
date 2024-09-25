@@ -107,21 +107,21 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Javax.Swing.Plaf.Basic.BasicSplitPaneUI BasicSplitPaneUI
         {
-            get { return IExecuteWithSignature<Javax.Swing.Plaf.Basic.BasicSplitPaneUI>("getBasicSplitPaneUI", "()Ljavax/swing/plaf/basic/BasicSplitPaneUI;"); } set { IExecuteWithSignature("setBasicSplitPaneUI", "(Ljavax/swing/plaf/basic/BasicSplitPaneUI;)V", value); }
+            get { return IExecute<Javax.Swing.Plaf.Basic.BasicSplitPaneUI>("getBasicSplitPaneUI"); } set { IExecute("setBasicSplitPaneUI", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html#getBorder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html#setBorder(javax.swing.border.Border)"/>
         /// </summary>
         public Javax.Swing.Border.Border Border
         {
-            get { return IExecuteWithSignature<Javax.Swing.Border.Border>("getBorder", "()Ljavax/swing/border/Border;"); } set { IExecuteWithSignature("setBorder", "(Ljavax/swing/border/Border;)V", value); }
+            get { return IExecute<Javax.Swing.Border.Border>("getBorder"); } set { IExecute("setBorder", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html#getDividerSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html#setDividerSize(int)"/>
         /// </summary>
         public int DividerSize
         {
-            get { return IExecuteWithSignature<int>("getDividerSize", "()I"); } set { IExecuteWithSignature("setDividerSize", "(I)V", value); }
+            get { return IExecute<int>("getDividerSize"); } set { IExecute("setDividerSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html#isMouseOver()"/>
@@ -129,7 +129,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="bool"/></returns>
         public bool IsMouseOver()
         {
-            return IExecuteWithSignature<bool>("isMouseOver", "()Z");
+            return IExecute<bool>("isMouseOver");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html#propertyChange(java.beans.PropertyChangeEvent)"/>
@@ -137,7 +137,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
-            IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
+            IExecute("propertyChange", arg0);
         }
 
         #endregion

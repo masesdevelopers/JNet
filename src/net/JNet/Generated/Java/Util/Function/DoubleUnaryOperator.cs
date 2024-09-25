@@ -151,7 +151,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.DoubleUnaryOperator Identity()
         {
-            return SExecuteWithSignature<Java.Util.Function.DoubleUnaryOperator>(LocalBridgeClazz, "identity", "()Ljava/util/function/DoubleUnaryOperator;");
+            return SExecute<Java.Util.Function.DoubleUnaryOperator>(LocalBridgeClazz, "identity");
         }
 
         #endregion
@@ -200,7 +200,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoubleUnaryOperator AndThenDefault(Java.Util.Function.DoubleUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperator>("andThenDefault", "(Ljava/util/function/DoubleUnaryOperator;)Ljava/util/function/DoubleUnaryOperator;", arg0);
+            return IExecute<Java.Util.Function.DoubleUnaryOperator>("andThenDefault", arg0);
         }
 
         /// <summary>
@@ -236,7 +236,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoubleUnaryOperator ComposeDefault(Java.Util.Function.DoubleUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperator>("composeDefault", "(Ljava/util/function/DoubleUnaryOperator;)Ljava/util/function/DoubleUnaryOperator;", arg0);
+            return IExecute<Java.Util.Function.DoubleUnaryOperator>("composeDefault", arg0);
         }
 
         /// <summary>
@@ -302,7 +302,7 @@ namespace Java.Util.Function
         /// <returns><see cref="double"/></returns>
         public override double ApplyAsDouble(double arg0)
         {
-            return IExecuteWithSignature<double>("applyAsDouble", "(D)D", arg0);
+            return IExecute<double>("applyAsDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#andThen(java.util.function.DoubleUnaryOperator)"/>
@@ -311,7 +311,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
         public override Java.Util.Function.DoubleUnaryOperator AndThen(Java.Util.Function.DoubleUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperatorDirect, Java.Util.Function.DoubleUnaryOperator>("andThen", "(Ljava/util/function/DoubleUnaryOperator;)Ljava/util/function/DoubleUnaryOperator;", arg0);
+            return IExecute<Java.Util.Function.DoubleUnaryOperatorDirect, Java.Util.Function.DoubleUnaryOperator>("andThen", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#compose(java.util.function.DoubleUnaryOperator)"/>
@@ -320,7 +320,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
         public override Java.Util.Function.DoubleUnaryOperator Compose(Java.Util.Function.DoubleUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperatorDirect, Java.Util.Function.DoubleUnaryOperator>("compose", "(Ljava/util/function/DoubleUnaryOperator;)Ljava/util/function/DoubleUnaryOperator;", arg0);
+            return IExecute<Java.Util.Function.DoubleUnaryOperatorDirect, Java.Util.Function.DoubleUnaryOperator>("compose", arg0);
         }
 
         #endregion

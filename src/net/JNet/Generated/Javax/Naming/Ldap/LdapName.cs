@@ -112,14 +112,14 @@ namespace Javax.Naming.Ldap
         /// </summary>
         public Java.Util.Enumeration<Java.Lang.String> All
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getAll", "()Ljava/util/Enumeration;"); }
+            get { return IExecute<Java.Util.Enumeration<Java.Lang.String>>("getAll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#getRdns()"/> 
         /// </summary>
         public Java.Util.List<Javax.Naming.Ldap.Rdn> Rdns
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Naming.Ldap.Rdn>>("getRdns", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Javax.Naming.Ldap.Rdn>>("getRdns"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#endsWith(java.util.List)"/>
@@ -128,7 +128,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="bool"/></returns>
         public bool EndsWith(Java.Util.List<Javax.Naming.Ldap.Rdn> arg0)
         {
-            return IExecuteWithSignature<bool>("endsWith", "(Ljava/util/List;)Z", arg0);
+            return IExecute<bool>("endsWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#endsWith(javax.naming.Name)"/>
@@ -137,7 +137,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="bool"/></returns>
         public bool EndsWith(Javax.Naming.Name arg0)
         {
-            return IExecuteWithSignature<bool>("endsWith", "(Ljavax/naming/Name;)Z", arg0);
+            return IExecute<bool>("endsWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#isEmpty()"/>
@@ -145,7 +145,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#startsWith(java.util.List)"/>
@@ -154,7 +154,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="bool"/></returns>
         public bool StartsWith(Java.Util.List<Javax.Naming.Ldap.Rdn> arg0)
         {
-            return IExecuteWithSignature<bool>("startsWith", "(Ljava/util/List;)Z", arg0);
+            return IExecute<bool>("startsWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#startsWith(javax.naming.Name)"/>
@@ -163,7 +163,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="bool"/></returns>
         public bool StartsWith(Javax.Naming.Name arg0)
         {
-            return IExecuteWithSignature<bool>("startsWith", "(Ljavax/naming/Name;)Z", arg0);
+            return IExecute<bool>("startsWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#compareTo(java.lang.Object)"/>
@@ -172,7 +172,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#size()"/>
@@ -180,7 +180,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#remove(int)"/>
@@ -190,7 +190,7 @@ namespace Javax.Naming.Ldap
         /// <exception cref="Javax.Naming.InvalidNameException"/>
         public object Remove(int arg0)
         {
-            return IExecuteWithSignature("remove", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#get(int)"/>
@@ -199,7 +199,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Get(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("get", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#getRdn(int)"/>
@@ -208,7 +208,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="Javax.Naming.Ldap.Rdn"/></returns>
         public Javax.Naming.Ldap.Rdn GetRdn(int arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Ldap.Rdn>("getRdn", "(I)Ljavax/naming/ldap/Rdn;", arg0);
+            return IExecute<Javax.Naming.Ldap.Rdn>("getRdn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#add(int,java.lang.String)"/>
@@ -239,7 +239,7 @@ namespace Javax.Naming.Ldap
         /// <exception cref="Javax.Naming.InvalidNameException"/>
         public Javax.Naming.Name Add(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Name>("add", "(Ljava/lang/String;)Ljavax/naming/Name;", arg0);
+            return IExecute<Javax.Naming.Name>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#add(javax.naming.ldap.Rdn)"/>
@@ -248,7 +248,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="Javax.Naming.Name"/></returns>
         public Javax.Naming.Name Add(Javax.Naming.Ldap.Rdn arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Name>("add", "(Ljavax/naming/ldap/Rdn;)Ljavax/naming/Name;", arg0);
+            return IExecute<Javax.Naming.Name>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(int,java.util.List)"/>
@@ -278,7 +278,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="Javax.Naming.Name"/></returns>
         public Javax.Naming.Name AddAll(Java.Util.List<Javax.Naming.Ldap.Rdn> arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Name>("addAll", "(Ljava/util/List;)Ljavax/naming/Name;", arg0);
+            return IExecute<Javax.Naming.Name>("addAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(javax.naming.Name)"/>
@@ -288,7 +288,7 @@ namespace Javax.Naming.Ldap
         /// <exception cref="Javax.Naming.InvalidNameException"/>
         public Javax.Naming.Name AddAll(Javax.Naming.Name arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Name>("addAll", "(Ljavax/naming/Name;)Ljavax/naming/Name;", arg0);
+            return IExecute<Javax.Naming.Name>("addAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#getPrefix(int)"/>
@@ -297,7 +297,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="Javax.Naming.Name"/></returns>
         public Javax.Naming.Name GetPrefix(int arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Name>("getPrefix", "(I)Ljavax/naming/Name;", arg0);
+            return IExecute<Javax.Naming.Name>("getPrefix", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#getSuffix(int)"/>
@@ -306,7 +306,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="Javax.Naming.Name"/></returns>
         public Javax.Naming.Name GetSuffix(int arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Name>("getSuffix", "(I)Ljavax/naming/Name;", arg0);
+            return IExecute<Javax.Naming.Name>("getSuffix", arg0);
         }
 
         #endregion

@@ -104,14 +104,14 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html#getSession()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSession Session
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getSession", "()Ljavax/net/ssl/SSLSession;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLSession>("getSession"); }
         }
 
         #endregion

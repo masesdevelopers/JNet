@@ -118,21 +118,21 @@ namespace Javax.Rmi.Ssl
         /// </summary>
         public Java.Lang.String[] EnabledCipherSuites
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getEnabledCipherSuites", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getEnabledCipherSuites"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#getEnabledProtocols()"/> 
         /// </summary>
         public Java.Lang.String[] EnabledProtocols
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getEnabledProtocols", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getEnabledProtocols"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#getNeedClientAuth()"/> 
         /// </summary>
         public bool NeedClientAuth
         {
-            get { return IExecuteWithSignature<bool>("getNeedClientAuth", "()Z"); }
+            get { return IExecute<bool>("getNeedClientAuth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#createServerSocket(int)"/>
@@ -142,7 +142,7 @@ namespace Javax.Rmi.Ssl
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.ServerSocket CreateServerSocket(int arg0)
         {
-            return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "(I)Ljava/net/ServerSocket;", arg0);
+            return IExecute<Java.Net.ServerSocket>("createServerSocket", arg0);
         }
 
         #endregion

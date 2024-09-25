@@ -155,7 +155,7 @@ namespace Org.W3c.Dom.Ls
         /// </summary>
         public int WhatToShow
         {
-            get { return IExecuteWithSignature<int>("getWhatToShow", "()I"); }
+            get { return IExecute<int>("getWhatToShow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#acceptNode(org.w3c.dom.Node)"/>
@@ -164,7 +164,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="short"/></returns>
         public short AcceptNode(Org.W3c.Dom.Node arg0)
         {
-            return IExecuteWithSignature<short>("acceptNode", "(Lorg/w3c/dom/Node;)S", arg0);
+            return IExecute<short>("acceptNode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#startElement(org.w3c.dom.Element)"/>
@@ -173,7 +173,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="short"/></returns>
         public short StartElement(Org.W3c.Dom.Element arg0)
         {
-            return IExecuteWithSignature<short>("startElement", "(Lorg/w3c/dom/Element;)S", arg0);
+            return IExecute<short>("startElement", arg0);
         }
 
         #endregion

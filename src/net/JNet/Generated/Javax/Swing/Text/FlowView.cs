@@ -151,7 +151,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public int FlowAxis
         {
-            get { return IExecuteWithSignature<int>("getFlowAxis", "()I"); }
+            get { return IExecute<int>("getFlowAxis"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/FlowView.html#getFlowSpan(int)"/>
@@ -160,7 +160,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int GetFlowSpan(int arg0)
         {
-            return IExecuteWithSignature<int>("getFlowSpan", "(I)I", arg0);
+            return IExecute<int>("getFlowSpan", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/FlowView.html#getFlowStart(int)"/>
@@ -169,7 +169,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int GetFlowStart(int arg0)
         {
-            return IExecuteWithSignature<int>("getFlowStart", "(I)I", arg0);
+            return IExecute<int>("getFlowStart", arg0);
         }
 
         #endregion

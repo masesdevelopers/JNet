@@ -215,42 +215,42 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public int BufferSize
         {
-            get { return IExecuteWithSignature<int>("getBufferSize", "()I"); }
+            get { return IExecute<int>("getBufferSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getFormat()"/> 
         /// </summary>
         public Javax.Sound.Sampled.AudioFormat Format
         {
-            get { return IExecuteWithSignature<Javax.Sound.Sampled.AudioFormat>("getFormat", "()Ljavax/sound/sampled/AudioFormat;"); }
+            get { return IExecute<Javax.Sound.Sampled.AudioFormat>("getFormat"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getFramePosition()"/> 
         /// </summary>
         public int FramePosition
         {
-            get { return IExecuteWithSignature<int>("getFramePosition", "()I"); }
+            get { return IExecute<int>("getFramePosition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getLevel()"/> 
         /// </summary>
         public float Level
         {
-            get { return IExecuteWithSignature<float>("getLevel", "()F"); }
+            get { return IExecute<float>("getLevel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getLongFramePosition()"/> 
         /// </summary>
         public long LongFramePosition
         {
-            get { return IExecuteWithSignature<long>("getLongFramePosition", "()J"); }
+            get { return IExecute<long>("getLongFramePosition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getMicrosecondPosition()"/> 
         /// </summary>
         public long MicrosecondPosition
         {
-            get { return IExecuteWithSignature<long>("getMicrosecondPosition", "()J"); }
+            get { return IExecute<long>("getMicrosecondPosition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()"/>
@@ -258,7 +258,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
-            return IExecuteWithSignature<bool>("isActive", "()Z");
+            return IExecute<bool>("isActive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()"/>
@@ -266,7 +266,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="bool"/></returns>
         public bool IsRunning()
         {
-            return IExecuteWithSignature<bool>("isRunning", "()Z");
+            return IExecute<bool>("isRunning");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()"/>
@@ -274,35 +274,35 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="int"/></returns>
         public int Available()
         {
-            return IExecuteWithSignature<int>("available", "()I");
+            return IExecute<int>("available");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#drain()"/>
         /// </summary>
         public void Drain()
         {
-            IExecuteWithSignature("drain", "()V");
+            IExecute("drain");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#flush()"/>
         /// </summary>
         public void Flush()
         {
-            IExecuteWithSignature("flush", "()V");
+            IExecute("flush");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#start()"/>
         /// </summary>
         public void Start()
         {
-            IExecuteWithSignature("start", "()V");
+            IExecute("start");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#stop()"/>
         /// </summary>
         public void Stop()
         {
-            IExecuteWithSignature("stop", "()V");
+            IExecute("stop");
         }
 
         #endregion

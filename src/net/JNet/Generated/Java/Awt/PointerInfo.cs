@@ -95,14 +95,14 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.GraphicsDevice Device
         {
-            get { return IExecuteWithSignature<Java.Awt.GraphicsDevice>("getDevice", "()Ljava/awt/GraphicsDevice;"); }
+            get { return IExecute<Java.Awt.GraphicsDevice>("getDevice"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PointerInfo.html#getLocation()"/> 
         /// </summary>
         public Java.Awt.Point Location
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getLocation", "()Ljava/awt/Point;"); }
+            get { return IExecute<Java.Awt.Point>("getLocation"); }
         }
 
         #endregion

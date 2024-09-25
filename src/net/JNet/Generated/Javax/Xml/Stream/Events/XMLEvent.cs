@@ -193,21 +193,21 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         public int EventType
         {
-            get { return IExecuteWithSignature<int>("getEventType", "()I"); }
+            get { return IExecute<int>("getEventType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#getLocation()"/> 
         /// </summary>
         public Javax.Xml.Stream.Location Location
         {
-            get { return IExecuteWithSignature<Javax.Xml.Stream.Location>("getLocation", "()Ljavax/xml/stream/Location;"); }
+            get { return IExecute<Javax.Xml.Stream.Location>("getLocation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#getSchemaType()"/> 
         /// </summary>
         public Javax.Xml.Namespace.QName SchemaType
         {
-            get { return IExecuteWithSignature<Javax.Xml.Namespace.QName>("getSchemaType", "()Ljavax/xml/namespace/QName;"); }
+            get { return IExecute<Javax.Xml.Namespace.QName>("getSchemaType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isAttribute()"/>
@@ -215,7 +215,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsAttribute()
         {
-            return IExecuteWithSignature<bool>("isAttribute", "()Z");
+            return IExecute<bool>("isAttribute");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isCharacters()"/>
@@ -223,7 +223,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsCharacters()
         {
-            return IExecuteWithSignature<bool>("isCharacters", "()Z");
+            return IExecute<bool>("isCharacters");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isEndDocument()"/>
@@ -231,7 +231,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsEndDocument()
         {
-            return IExecuteWithSignature<bool>("isEndDocument", "()Z");
+            return IExecute<bool>("isEndDocument");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isEndElement()"/>
@@ -239,7 +239,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsEndElement()
         {
-            return IExecuteWithSignature<bool>("isEndElement", "()Z");
+            return IExecute<bool>("isEndElement");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isEntityReference()"/>
@@ -247,7 +247,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsEntityReference()
         {
-            return IExecuteWithSignature<bool>("isEntityReference", "()Z");
+            return IExecute<bool>("isEntityReference");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isNamespace()"/>
@@ -255,7 +255,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsNamespace()
         {
-            return IExecuteWithSignature<bool>("isNamespace", "()Z");
+            return IExecute<bool>("isNamespace");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isProcessingInstruction()"/>
@@ -263,7 +263,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsProcessingInstruction()
         {
-            return IExecuteWithSignature<bool>("isProcessingInstruction", "()Z");
+            return IExecute<bool>("isProcessingInstruction");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isStartDocument()"/>
@@ -271,7 +271,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsStartDocument()
         {
-            return IExecuteWithSignature<bool>("isStartDocument", "()Z");
+            return IExecute<bool>("isStartDocument");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isStartElement()"/>
@@ -279,7 +279,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsStartElement()
         {
-            return IExecuteWithSignature<bool>("isStartElement", "()Z");
+            return IExecute<bool>("isStartElement");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#asCharacters()"/>
@@ -287,7 +287,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="Javax.Xml.Stream.Events.Characters"/></returns>
         public Javax.Xml.Stream.Events.Characters AsCharacters()
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.Characters>("asCharacters", "()Ljavax/xml/stream/events/Characters;");
+            return IExecute<Javax.Xml.Stream.Events.Characters>("asCharacters");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#asEndElement()"/>
@@ -295,7 +295,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="Javax.Xml.Stream.Events.EndElement"/></returns>
         public Javax.Xml.Stream.Events.EndElement AsEndElement()
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.EndElement>("asEndElement", "()Ljavax/xml/stream/events/EndElement;");
+            return IExecute<Javax.Xml.Stream.Events.EndElement>("asEndElement");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#asStartElement()"/>
@@ -303,7 +303,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="Javax.Xml.Stream.Events.StartElement"/></returns>
         public Javax.Xml.Stream.Events.StartElement AsStartElement()
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.StartElement>("asStartElement", "()Ljavax/xml/stream/events/StartElement;");
+            return IExecute<Javax.Xml.Stream.Events.StartElement>("asStartElement");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#writeAsEncodedUnicode(java.io.Writer)"/>
@@ -312,7 +312,7 @@ namespace Javax.Xml.Stream.Events
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteAsEncodedUnicode(Java.Io.Writer arg0)
         {
-            IExecuteWithSignature("writeAsEncodedUnicode", "(Ljava/io/Writer;)V", arg0);
+            IExecute("writeAsEncodedUnicode", arg0);
         }
 
         #endregion

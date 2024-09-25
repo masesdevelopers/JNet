@@ -152,7 +152,7 @@ namespace Javax.Security.Auth
         /// <returns><see cref="Javax.Security.Auth.Subject"/></returns>
         public static Javax.Security.Auth.Subject GetSubject(Java.Security.AccessControlContext arg0)
         {
-            return SExecuteWithSignature<Javax.Security.Auth.Subject>(LocalBridgeClazz, "getSubject", "(Ljava/security/AccessControlContext;)Ljavax/security/auth/Subject;", arg0);
+            return SExecute<Javax.Security.Auth.Subject>(LocalBridgeClazz, "getSubject", arg0);
         }
 
         #endregion
@@ -163,21 +163,21 @@ namespace Javax.Security.Auth
         /// </summary>
         public Java.Util.Set<Java.Security.Principal> Principals
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Security.Principal>>("getPrincipals", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set<Java.Security.Principal>>("getPrincipals"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrivateCredentials()"/> 
         /// </summary>
         public Java.Util.Set<object> PrivateCredentials
         {
-            get { return IExecuteWithSignature<Java.Util.Set<object>>("getPrivateCredentials", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set<object>>("getPrivateCredentials"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPublicCredentials()"/> 
         /// </summary>
         public Java.Util.Set<object> PublicCredentials
         {
-            get { return IExecuteWithSignature<Java.Util.Set<object>>("getPublicCredentials", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set<object>>("getPublicCredentials"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrincipals(java.lang.Class)"/>
@@ -197,7 +197,7 @@ namespace Javax.Security.Auth
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<T> GetPrivateCredentials<T>(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<Java.Util.Set<T>>("getPrivateCredentials", "(Ljava/lang/Class;)Ljava/util/Set;", arg0);
+            return IExecute<Java.Util.Set<T>>("getPrivateCredentials", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPublicCredentials(java.lang.Class)"/>
@@ -207,7 +207,7 @@ namespace Javax.Security.Auth
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<T> GetPublicCredentials<T>(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<Java.Util.Set<T>>("getPublicCredentials", "(Ljava/lang/Class;)Ljava/util/Set;", arg0);
+            return IExecute<Java.Util.Set<T>>("getPublicCredentials", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#isReadOnly()"/>
@@ -215,14 +215,14 @@ namespace Javax.Security.Auth
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
-            return IExecuteWithSignature<bool>("isReadOnly", "()Z");
+            return IExecute<bool>("isReadOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#setReadOnly()"/>
         /// </summary>
         public void SetReadOnly()
         {
-            IExecuteWithSignature("setReadOnly", "()V");
+            IExecute("setReadOnly");
         }
 
         #endregion

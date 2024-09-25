@@ -147,7 +147,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object[] ToArray(object[] arg0)
         {
-            return IExecuteWithSignatureArray<object>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
+            return IExecuteArray<object>("toArray", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#add(java.lang.Object)"/>
@@ -156,7 +156,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Add(object arg0)
         {
-            return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#addAll(java.util.Collection)"/>
@@ -165,7 +165,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool AddAll(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("addAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#contains(java.lang.Object)"/>
@@ -174,7 +174,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#containsAll(java.util.Collection)"/>
@@ -183,7 +183,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsAll(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("containsAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#isEmpty()"/>
@@ -191,7 +191,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#remove(java.lang.Object)"/>
@@ -200,7 +200,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0)
         {
-            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#removeAll(java.util.Collection)"/>
@@ -209,7 +209,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAll(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("removeAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#retainAll(java.util.Collection)"/>
@@ -218,7 +218,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool RetainAll(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("retainAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#size()"/>
@@ -226,7 +226,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray()"/>
@@ -234,7 +234,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
-            return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
+            return IExecuteArray<object>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#iterator()"/>
@@ -242,14 +242,14 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray(java.util.function.IntFunction)"/>
@@ -258,7 +258,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object[] ToArray(Java.Util.Function.IntFunction arg0)
         {
-            return IExecuteWithSignatureArray<object>("toArray", "(Ljava/util/function/IntFunction;)[Ljava/lang/Object;", arg0);
+            return IExecuteArray<object>("toArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#removeIf(java.util.function.Predicate)"/>
@@ -267,7 +267,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveIf(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<bool>("removeIf", "(Ljava/util/function/Predicate;)Z", arg0);
+            return IExecute<bool>("removeIf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#spliterator()"/>
@@ -275,7 +275,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
         {
-            return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
+            return IExecute<Java.Util.Spliterator>("spliterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#parallelStream()"/>
@@ -283,7 +283,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream ParallelStream()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("parallelStream", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream>("parallelStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#stream()"/>
@@ -291,7 +291,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Stream()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("stream", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream>("stream");
         }
 
         #endregion
@@ -457,7 +457,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public T[] ToArray<T>(T[] arg0)
         {
-            return IExecuteWithSignatureArray<T>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
+            return IExecuteArray<T>("toArray", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#add(java.lang.Object)"/>
@@ -466,7 +466,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Add(E arg0)
         {
-            return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#addAll(java.util.Collection)"/>
@@ -476,7 +476,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
-            return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("addAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#contains(java.lang.Object)"/>
@@ -485,7 +485,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#containsAll(java.util.Collection)"/>
@@ -494,7 +494,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsAll(Java.Util.Collection<object> arg0)
         {
-            return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("containsAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#isEmpty()"/>
@@ -502,7 +502,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#remove(java.lang.Object)"/>
@@ -511,7 +511,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0)
         {
-            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#removeAll(java.util.Collection)"/>
@@ -520,7 +520,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAll(Java.Util.Collection<object> arg0)
         {
-            return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("removeAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#retainAll(java.util.Collection)"/>
@@ -529,7 +529,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool RetainAll(Java.Util.Collection<object> arg0)
         {
-            return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("retainAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#size()"/>
@@ -537,7 +537,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray()"/>
@@ -545,7 +545,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
-            return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
+            return IExecuteArray<object>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#iterator()"/>
@@ -553,14 +553,14 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("iterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator<E>>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray(java.util.function.IntFunction)"/>
@@ -570,7 +570,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public T[] ToArray<T>(Java.Util.Function.IntFunction<T[]> arg0)
         {
-            return IExecuteWithSignatureArray<T>("toArray", "(Ljava/util/function/IntFunction;)[Ljava/lang/Object;", arg0);
+            return IExecuteArray<T>("toArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#removeIf(java.util.function.Predicate)"/>
@@ -580,7 +580,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
-            return IExecuteWithSignature<bool>("removeIf", "(Ljava/util/function/Predicate;)Z", arg0);
+            return IExecute<bool>("removeIf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#spliterator()"/>
@@ -588,7 +588,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator<E> Spliterator()
         {
-            return IExecuteWithSignature<Java.Util.Spliterator<E>>("spliterator", "()Ljava/util/Spliterator;");
+            return IExecute<Java.Util.Spliterator<E>>("spliterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#parallelStream()"/>
@@ -596,7 +596,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<E> ParallelStream()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<E>>("parallelStream", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream<E>>("parallelStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#stream()"/>
@@ -604,7 +604,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<E> Stream()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<E>>("stream", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream<E>>("stream");
         }
 
         #endregion

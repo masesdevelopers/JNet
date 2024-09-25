@@ -346,91 +346,91 @@ namespace Java.Awt
         /// </summary>
         public int Copies
         {
-            get { return IExecuteWithSignature<int>("getCopies", "()I"); } set { IExecuteWithSignature("setCopies", "(I)V", value); }
+            get { return IExecute<int>("getCopies"); } set { IExecute("setCopies", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#getDefaultSelection()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setDefaultSelection(java.awt.JobAttributes.DefaultSelectionType)"/>
         /// </summary>
         public Java.Awt.JobAttributes.DefaultSelectionType DefaultSelection
         {
-            get { return IExecuteWithSignature<Java.Awt.JobAttributes.DefaultSelectionType>("getDefaultSelection", "()Ljava/awt/JobAttributes$DefaultSelectionType;"); } set { IExecuteWithSignature("setDefaultSelection", "(Ljava/awt/JobAttributes$DefaultSelectionType;)V", value); }
+            get { return IExecute<Java.Awt.JobAttributes.DefaultSelectionType>("getDefaultSelection"); } set { IExecute("setDefaultSelection", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#getDestination()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setDestination(java.awt.JobAttributes.DestinationType)"/>
         /// </summary>
         public Java.Awt.JobAttributes.DestinationType Destination
         {
-            get { return IExecuteWithSignature<Java.Awt.JobAttributes.DestinationType>("getDestination", "()Ljava/awt/JobAttributes$DestinationType;"); } set { IExecuteWithSignature("setDestination", "(Ljava/awt/JobAttributes$DestinationType;)V", value); }
+            get { return IExecute<Java.Awt.JobAttributes.DestinationType>("getDestination"); } set { IExecute("setDestination", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#getDialog()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setDialog(java.awt.JobAttributes.DialogType)"/>
         /// </summary>
         public Java.Awt.JobAttributes.DialogType Dialog
         {
-            get { return IExecuteWithSignature<Java.Awt.JobAttributes.DialogType>("getDialog", "()Ljava/awt/JobAttributes$DialogType;"); } set { IExecuteWithSignature("setDialog", "(Ljava/awt/JobAttributes$DialogType;)V", value); }
+            get { return IExecute<Java.Awt.JobAttributes.DialogType>("getDialog"); } set { IExecute("setDialog", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#getFileName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setFileName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String FileName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFileName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFileName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getFileName"); } set { IExecute("setFileName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#getFromPage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setFromPage(int)"/>
         /// </summary>
         public int FromPage
         {
-            get { return IExecuteWithSignature<int>("getFromPage", "()I"); } set { IExecuteWithSignature("setFromPage", "(I)V", value); }
+            get { return IExecute<int>("getFromPage"); } set { IExecute("setFromPage", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#getMaxPage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setMaxPage(int)"/>
         /// </summary>
         public int MaxPage
         {
-            get { return IExecuteWithSignature<int>("getMaxPage", "()I"); } set { IExecuteWithSignature("setMaxPage", "(I)V", value); }
+            get { return IExecute<int>("getMaxPage"); } set { IExecute("setMaxPage", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#getMinPage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setMinPage(int)"/>
         /// </summary>
         public int MinPage
         {
-            get { return IExecuteWithSignature<int>("getMinPage", "()I"); } set { IExecuteWithSignature("setMinPage", "(I)V", value); }
+            get { return IExecute<int>("getMinPage"); } set { IExecute("setMinPage", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#getMultipleDocumentHandling()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setMultipleDocumentHandling(java.awt.JobAttributes.MultipleDocumentHandlingType)"/>
         /// </summary>
         public Java.Awt.JobAttributes.MultipleDocumentHandlingType MultipleDocumentHandling
         {
-            get { return IExecuteWithSignature<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("getMultipleDocumentHandling", "()Ljava/awt/JobAttributes$MultipleDocumentHandlingType;"); } set { IExecuteWithSignature("setMultipleDocumentHandling", "(Ljava/awt/JobAttributes$MultipleDocumentHandlingType;)V", value); }
+            get { return IExecute<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("getMultipleDocumentHandling"); } set { IExecute("setMultipleDocumentHandling", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#getPageRanges()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setPageRanges(int[][])"/>
         /// </summary>
         public int[] PageRanges
         {
-            get { return IExecuteWithSignatureArray<int>("getPageRanges", "()[[I"); } set { IExecuteWithSignature("setPageRanges", "([[I)V", value); }
+            get { return IExecuteArray<int>("getPageRanges"); } set { IExecute("setPageRanges", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#getPrinter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setPrinter(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Printer
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrinter", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPrinter", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getPrinter"); } set { IExecute("setPrinter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#getSides()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setSides(java.awt.JobAttributes.SidesType)"/>
         /// </summary>
         public Java.Awt.JobAttributes.SidesType Sides
         {
-            get { return IExecuteWithSignature<Java.Awt.JobAttributes.SidesType>("getSides", "()Ljava/awt/JobAttributes$SidesType;"); } set { IExecuteWithSignature("setSides", "(Ljava/awt/JobAttributes$SidesType;)V", value); }
+            get { return IExecute<Java.Awt.JobAttributes.SidesType>("getSides"); } set { IExecute("setSides", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#getToPage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setToPage(int)"/>
         /// </summary>
         public int ToPage
         {
-            get { return IExecuteWithSignature<int>("getToPage", "()I"); } set { IExecuteWithSignature("setToPage", "(I)V", value); }
+            get { return IExecute<int>("getToPage"); } set { IExecute("setToPage", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#set(java.awt.JobAttributes)"/>
@@ -438,28 +438,28 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.JobAttributes"/></param>
         public void Set(Java.Awt.JobAttributes arg0)
         {
-            IExecuteWithSignature("set", "(Ljava/awt/JobAttributes;)V", arg0);
+            IExecute("set", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setCopiesToDefault()"/>
         /// </summary>
         public void SetCopiesToDefault()
         {
-            IExecuteWithSignature("setCopiesToDefault", "()V");
+            IExecute("setCopiesToDefault");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setMultipleDocumentHandlingToDefault()"/>
         /// </summary>
         public void SetMultipleDocumentHandlingToDefault()
         {
-            IExecuteWithSignature("setMultipleDocumentHandlingToDefault", "()V");
+            IExecute("setMultipleDocumentHandlingToDefault");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#setSidesToDefault()"/>
         /// </summary>
         public void SetSidesToDefault()
         {
-            IExecuteWithSignature("setSidesToDefault", "()V");
+            IExecute("setSidesToDefault");
         }
 
         #endregion

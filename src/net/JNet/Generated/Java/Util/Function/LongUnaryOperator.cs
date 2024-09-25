@@ -151,7 +151,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.LongUnaryOperator Identity()
         {
-            return SExecuteWithSignature<Java.Util.Function.LongUnaryOperator>(LocalBridgeClazz, "identity", "()Ljava/util/function/LongUnaryOperator;");
+            return SExecute<Java.Util.Function.LongUnaryOperator>(LocalBridgeClazz, "identity");
         }
 
         #endregion
@@ -200,7 +200,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.LongUnaryOperator AndThenDefault(Java.Util.Function.LongUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.LongUnaryOperator>("andThenDefault", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/function/LongUnaryOperator;", arg0);
+            return IExecute<Java.Util.Function.LongUnaryOperator>("andThenDefault", arg0);
         }
 
         /// <summary>
@@ -236,7 +236,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.LongUnaryOperator ComposeDefault(Java.Util.Function.LongUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.LongUnaryOperator>("composeDefault", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/function/LongUnaryOperator;", arg0);
+            return IExecute<Java.Util.Function.LongUnaryOperator>("composeDefault", arg0);
         }
 
         /// <summary>
@@ -302,7 +302,7 @@ namespace Java.Util.Function
         /// <returns><see cref="long"/></returns>
         public override long ApplyAsLong(long arg0)
         {
-            return IExecuteWithSignature<long>("applyAsLong", "(J)J", arg0);
+            return IExecute<long>("applyAsLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#andThen(java.util.function.LongUnaryOperator)"/>
@@ -311,7 +311,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
         public override Java.Util.Function.LongUnaryOperator AndThen(Java.Util.Function.LongUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.LongUnaryOperatorDirect, Java.Util.Function.LongUnaryOperator>("andThen", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/function/LongUnaryOperator;", arg0);
+            return IExecute<Java.Util.Function.LongUnaryOperatorDirect, Java.Util.Function.LongUnaryOperator>("andThen", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#compose(java.util.function.LongUnaryOperator)"/>
@@ -320,7 +320,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
         public override Java.Util.Function.LongUnaryOperator Compose(Java.Util.Function.LongUnaryOperator arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.LongUnaryOperatorDirect, Java.Util.Function.LongUnaryOperator>("compose", "(Ljava/util/function/LongUnaryOperator;)Ljava/util/function/LongUnaryOperator;", arg0);
+            return IExecute<Java.Util.Function.LongUnaryOperatorDirect, Java.Util.Function.LongUnaryOperator>("compose", arg0);
         }
 
         #endregion

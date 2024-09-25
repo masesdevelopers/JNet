@@ -136,7 +136,7 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         public static Javax.Swing.Text.Html.CSS.Attribute[] AllAttributeKeys
         {
-            get { return SExecuteWithSignatureArray<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "getAllAttributeKeys", "()[Ljavax/swing/text/html/CSS$Attribute;"); }
+            get { return SExecuteArray<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "getAllAttributeKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.html#getAttribute(java.lang.String)"/>
@@ -145,7 +145,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></returns>
         public static Javax.Swing.Text.Html.CSS.Attribute GetAttribute(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "getAttribute", "(Ljava/lang/String;)Ljavax/swing/text/html/CSS$Attribute;", arg0);
+            return SExecute<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "getAttribute", arg0);
         }
 
         #endregion

@@ -103,7 +103,7 @@ namespace Javax.Xml.Crypto.Dom
         /// </summary>
         public Org.W3c.Dom.Node Node
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getNode", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getNode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMStructure.html#isFeatureSupported(java.lang.String)"/>
@@ -112,7 +112,7 @@ namespace Javax.Xml.Crypto.Dom
         /// <returns><see cref="bool"/></returns>
         public bool IsFeatureSupported(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("isFeatureSupported", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("isFeatureSupported", arg0);
         }
 
         #endregion

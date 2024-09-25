@@ -127,7 +127,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public int[] Masks
         {
-            get { return IExecuteWithSignatureArray<int>("getMasks", "()[I"); }
+            get { return IExecuteArray<int>("getMasks"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PackedColorModel.html#getMask(int)"/>
@@ -136,7 +136,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetMask(int arg0)
         {
-            return IExecuteWithSignature<int>("getMask", "(I)I", arg0);
+            return IExecute<int>("getMask", arg0);
         }
 
         #endregion

@@ -169,49 +169,49 @@ namespace Javax.Management.Openmbean
         /// </summary>
         public object DefaultValue
         {
-            get { return IExecuteWithSignature("getDefaultValue", "()Ljava/lang/Object;"); }
+            get { return IExecute("getDefaultValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getDescription()"/> 
         /// </summary>
         public Java.Lang.String Description
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDescription"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getLegalValues()"/> 
         /// </summary>
         public Java.Util.Set<object> LegalValues
         {
-            get { return IExecuteWithSignature<Java.Util.Set<object>>("getLegalValues", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set<object>>("getLegalValues"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getMaxValue()"/> 
         /// </summary>
         public Java.Lang.Comparable<object> MaxValue
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<object>>("getMaxValue", "()Ljava/lang/Comparable;"); }
+            get { return IExecute<Java.Lang.Comparable<object>>("getMaxValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getMinValue()"/> 
         /// </summary>
         public Java.Lang.Comparable<object> MinValue
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<object>>("getMinValue", "()Ljava/lang/Comparable;"); }
+            get { return IExecute<Java.Lang.Comparable<object>>("getMinValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getOpenType()"/> 
         /// </summary>
         public Javax.Management.Openmbean.OpenType<object> OpenType
         {
-            get { return IExecuteWithSignature<Javax.Management.Openmbean.OpenType<object>>("getOpenType", "()Ljavax/management/openmbean/OpenType;"); }
+            get { return IExecute<Javax.Management.Openmbean.OpenType<object>>("getOpenType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasDefaultValue()"/>
@@ -219,7 +219,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool HasDefaultValue()
         {
-            return IExecuteWithSignature<bool>("hasDefaultValue", "()Z");
+            return IExecute<bool>("hasDefaultValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasLegalValues()"/>
@@ -227,7 +227,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool HasLegalValues()
         {
-            return IExecuteWithSignature<bool>("hasLegalValues", "()Z");
+            return IExecute<bool>("hasLegalValues");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMaxValue()"/>
@@ -235,7 +235,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool HasMaxValue()
         {
-            return IExecuteWithSignature<bool>("hasMaxValue", "()Z");
+            return IExecute<bool>("hasMaxValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMinValue()"/>
@@ -243,7 +243,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool HasMinValue()
         {
-            return IExecuteWithSignature<bool>("hasMinValue", "()Z");
+            return IExecute<bool>("hasMinValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#isValue(java.lang.Object)"/>
@@ -252,7 +252,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool IsValue(object arg0)
         {
-            return IExecuteWithSignature<bool>("isValue", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("isValue", arg0);
         }
 
         #endregion

@@ -104,7 +104,7 @@ namespace Java.Io
         /// <returns><see cref="char"/></returns>
         public char[] ToCharArray()
         {
-            return IExecuteWithSignatureArray<char>("toCharArray", "()[C");
+            return IExecuteArray<char>("toCharArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#size()"/>
@@ -112,14 +112,14 @@ namespace Java.Io
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#writeTo(java.io.Writer)"/>
@@ -128,7 +128,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteTo(Java.Io.Writer arg0)
         {
-            IExecuteWithSignature("writeTo", "(Ljava/io/Writer;)V", arg0);
+            IExecute("writeTo", arg0);
         }
 
         #endregion

@@ -204,7 +204,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionEvent"/></param>
         public override void ValueChanged(Javax.Swing.Event.TreeSelectionEvent arg0)
         {
-            IExecuteWithSignature("valueChanged", "(Ljavax/swing/event/TreeSelectionEvent;)V", arg0);
+            IExecute("valueChanged", arg0);
         }
 
         #endregion

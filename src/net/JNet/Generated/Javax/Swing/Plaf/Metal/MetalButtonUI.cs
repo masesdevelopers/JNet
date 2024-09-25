@@ -96,7 +96,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg0"><see cref="Javax.Swing.AbstractButton"/></param>
         public void InstallDefaults(Javax.Swing.AbstractButton arg0)
         {
-            IExecuteWithSignature("installDefaults", "(Ljavax/swing/AbstractButton;)V", arg0);
+            IExecute("installDefaults", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalButtonUI.html#uninstallDefaults(javax.swing.AbstractButton)"/>
@@ -104,7 +104,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg0"><see cref="Javax.Swing.AbstractButton"/></param>
         public void UninstallDefaults(Javax.Swing.AbstractButton arg0)
         {
-            IExecuteWithSignature("uninstallDefaults", "(Ljavax/swing/AbstractButton;)V", arg0);
+            IExecute("uninstallDefaults", arg0);
         }
 
         #endregion

@@ -145,7 +145,7 @@ namespace Java.Security.Spec
         /// </summary>
         public Java.Lang.String DigestAlgorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDigestAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDigestAlgorithm"); }
         }
 
         #endregion

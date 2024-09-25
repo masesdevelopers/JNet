@@ -107,21 +107,21 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Java.Util.Vector<Java.Io.File> Directories
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<Java.Io.File>>("getDirectories", "()Ljava/util/Vector;"); }
+            get { return IExecute<Java.Util.Vector<Java.Io.File>>("getDirectories"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#getFiles()"/> 
         /// </summary>
         public Java.Util.Vector<Java.Io.File> Files
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<Java.Io.File>>("getFiles", "()Ljava/util/Vector;"); }
+            get { return IExecute<Java.Util.Vector<Java.Io.File>>("getFiles"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#getPropertyChangeListeners()"/> 
         /// </summary>
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;"); }
+            get { return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#contains(java.lang.Object)"/>
@@ -130,7 +130,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#renameFile(java.io.File,java.io.File)"/>
@@ -149,7 +149,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="int"/></returns>
         public int IndexOf(object arg0)
         {
-            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("indexOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -157,14 +157,14 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("addPropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#fireContentsChanged()"/>
         /// </summary>
         public void FireContentsChanged()
         {
-            IExecuteWithSignature("fireContentsChanged", "()V");
+            IExecute("fireContentsChanged");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
@@ -172,7 +172,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
         {
-            IExecuteWithSignature("intervalAdded", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+            IExecute("intervalAdded", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
@@ -180,14 +180,14 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
         {
-            IExecuteWithSignature("intervalRemoved", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+            IExecute("intervalRemoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#invalidateFileCache()"/>
         /// </summary>
         public void InvalidateFileCache()
         {
-            IExecuteWithSignature("invalidateFileCache", "()V");
+            IExecute("invalidateFileCache");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#propertyChange(java.beans.PropertyChangeEvent)"/>
@@ -195,7 +195,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
-            IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
+            IExecute("propertyChange", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -203,14 +203,14 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("removePropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#validateFileCache()"/>
         /// </summary>
         public void ValidateFileCache()
         {
-            IExecuteWithSignature("validateFileCache", "()V");
+            IExecute("validateFileCache");
         }
 
         #endregion

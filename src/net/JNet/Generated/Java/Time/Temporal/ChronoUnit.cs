@@ -193,7 +193,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ChronoUnit"/></returns>
         public static Java.Time.Temporal.ChronoUnit ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Time.Temporal.ChronoUnit>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/temporal/ChronoUnit;", arg0);
+            return SExecute<Java.Time.Temporal.ChronoUnit>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#values()"/>
@@ -201,7 +201,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ChronoUnit"/></returns>
         public static Java.Time.Temporal.ChronoUnit[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Time.Temporal.ChronoUnit>(LocalBridgeClazz, "values", "()[Ljava/time/temporal/ChronoUnit;");
+            return SExecuteArray<Java.Time.Temporal.ChronoUnit>(LocalBridgeClazz, "values");
         }
 
         #endregion
@@ -212,7 +212,7 @@ namespace Java.Time.Temporal
         /// </summary>
         public Java.Time.Duration Duration
         {
-            get { return IExecuteWithSignature<Java.Time.Duration>("getDuration", "()Ljava/time/Duration;"); }
+            get { return IExecute<Java.Time.Duration>("getDuration"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#addTo(java.time.temporal.Temporal,long)"/>
@@ -231,7 +231,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsDateBased()
         {
-            return IExecuteWithSignature<bool>("isDateBased", "()Z");
+            return IExecute<bool>("isDateBased");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isDurationEstimated()"/>
@@ -239,7 +239,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsDurationEstimated()
         {
-            return IExecuteWithSignature<bool>("isDurationEstimated", "()Z");
+            return IExecute<bool>("isDurationEstimated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isSupportedBy(java.time.temporal.Temporal)"/>
@@ -248,7 +248,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsSupportedBy(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecuteWithSignature<bool>("isSupportedBy", "(Ljava/time/temporal/Temporal;)Z", arg0);
+            return IExecute<bool>("isSupportedBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#isTimeBased()"/>
@@ -256,7 +256,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsTimeBased()
         {
-            return IExecuteWithSignature<bool>("isTimeBased", "()Z");
+            return IExecute<bool>("isTimeBased");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoUnit.html#between(java.time.temporal.Temporal,java.time.temporal.Temporal)"/>

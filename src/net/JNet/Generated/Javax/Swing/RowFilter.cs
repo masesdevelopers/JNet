@@ -348,7 +348,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool Include(Javax.Swing.RowFilter.Entry arg0)
         {
-            return IExecuteWithSignature<bool>("include", "(Ljavax/swing/RowFilter$Entry;)Z", arg0);
+            return IExecute<bool>("include", arg0);
         }
 
         #endregion
@@ -451,21 +451,21 @@ namespace Javax.Swing
             /// </summary>
             public object Identifier
             {
-                get { return IExecuteWithSignature("getIdentifier", "()Ljava/lang/Object;"); }
+                get { return IExecute("getIdentifier"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getModel()"/> 
             /// </summary>
             public object Model
             {
-                get { return IExecuteWithSignature("getModel", "()Ljava/lang/Object;"); }
+                get { return IExecute("getModel"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValueCount()"/> 
             /// </summary>
             public int ValueCount
             {
-                get { return IExecuteWithSignature<int>("getValueCount", "()I"); }
+                get { return IExecute<int>("getValueCount"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValue(int)"/>
@@ -474,7 +474,7 @@ namespace Javax.Swing
             /// <returns><see cref="object"/></returns>
             public object GetValue(int arg0)
             {
-                return IExecuteWithSignature("getValue", "(I)Ljava/lang/Object;", arg0);
+                return IExecute("getValue", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getStringValue(int)"/>
@@ -483,7 +483,7 @@ namespace Javax.Swing
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String GetStringValue(int arg0)
             {
-                return IExecuteWithSignature<Java.Lang.String>("getStringValue", "(I)Ljava/lang/String;", arg0);
+                return IExecute<Java.Lang.String>("getStringValue", arg0);
             }
 
             #endregion
@@ -525,21 +525,21 @@ namespace Javax.Swing
             /// </summary>
             public I Identifier
             {
-                get { return IExecuteWithSignature<I>("getIdentifier", "()Ljava/lang/Object;"); }
+                get { return IExecute<I>("getIdentifier"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getModel()"/> 
             /// </summary>
             public M Model
             {
-                get { return IExecuteWithSignature<M>("getModel", "()Ljava/lang/Object;"); }
+                get { return IExecute<M>("getModel"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValueCount()"/> 
             /// </summary>
             public int ValueCount
             {
-                get { return IExecuteWithSignature<int>("getValueCount", "()I"); }
+                get { return IExecute<int>("getValueCount"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValue(int)"/>
@@ -548,7 +548,7 @@ namespace Javax.Swing
             /// <returns><see cref="object"/></returns>
             public object GetValue(int arg0)
             {
-                return IExecuteWithSignature("getValue", "(I)Ljava/lang/Object;", arg0);
+                return IExecute("getValue", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getStringValue(int)"/>
@@ -557,7 +557,7 @@ namespace Javax.Swing
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String GetStringValue(int arg0)
             {
-                return IExecuteWithSignature<Java.Lang.String>("getStringValue", "(I)Ljava/lang/String;", arg0);
+                return IExecute<Java.Lang.String>("getStringValue", arg0);
             }
 
             #endregion
@@ -675,7 +675,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool Include<Arg0ExtendsM, Arg0ExtendsI>(Javax.Swing.RowFilter.Entry<Arg0ExtendsM, Arg0ExtendsI> arg0) where Arg0ExtendsM : M where Arg0ExtendsI : I
         {
-            return IExecuteWithSignature<bool>("include", "(Ljavax/swing/RowFilter$Entry;)Z", arg0);
+            return IExecute<bool>("include", arg0);
         }
 
         #endregion

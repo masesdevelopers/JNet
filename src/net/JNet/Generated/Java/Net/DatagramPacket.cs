@@ -158,42 +158,42 @@ namespace Java.Net
         /// </summary>
         public Java.Net.InetAddress Address
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;"); } set { IExecuteWithSignature("setAddress", "(Ljava/net/InetAddress;)V", value); }
+            get { return IExecute<Java.Net.InetAddress>("getAddress"); } set { IExecute("setAddress", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setData(byte[])"/>
         /// </summary>
         public byte[] Data
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); } set { IExecuteWithSignature("setData", "([B)V", value); }
+            get { return IExecuteArray<byte>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getLength()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setLength(int)"/>
         /// </summary>
         public int Length
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); } set { IExecuteWithSignature("setLength", "(I)V", value); }
+            get { return IExecute<int>("getLength"); } set { IExecute("setLength", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getOffset()"/> 
         /// </summary>
         public int Offset
         {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
+            get { return IExecute<int>("getOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getPort()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setPort(int)"/>
         /// </summary>
         public int Port
         {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); } set { IExecuteWithSignature("setPort", "(I)V", value); }
+            get { return IExecute<int>("getPort"); } set { IExecute("setPort", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getSocketAddress()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setSocketAddress(java.net.SocketAddress)"/>
         /// </summary>
         public Java.Net.SocketAddress SocketAddress
         {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getSocketAddress", "()Ljava/net/SocketAddress;"); } set { IExecuteWithSignature("setSocketAddress", "(Ljava/net/SocketAddress;)V", value); }
+            get { return IExecute<Java.Net.SocketAddress>("getSocketAddress"); } set { IExecute("setSocketAddress", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setData(byte[],int,int)"/>

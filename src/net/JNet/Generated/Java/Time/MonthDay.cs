@@ -109,7 +109,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/MonthDay;", arg0);
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#now()"/>
@@ -117,7 +117,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Now()
         {
-            return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "now", "()Ljava/time/MonthDay;");
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#now(java.time.Clock)"/>
@@ -126,7 +126,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Now(Java.Time.Clock arg0)
         {
-            return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/MonthDay;", arg0);
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#now(java.time.ZoneId)"/>
@@ -135,7 +135,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Now(Java.Time.ZoneId arg0)
         {
-            return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/MonthDay;", arg0);
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#of(int,int)"/>
@@ -174,7 +174,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Parse(Java.Lang.CharSequence arg0)
         {
-            return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;)Ljava/time/MonthDay;", arg0);
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "parse", arg0);
         }
 
         #endregion
@@ -185,21 +185,21 @@ namespace Java.Time
         /// </summary>
         public int DayOfMonth
         {
-            get { return IExecuteWithSignature<int>("getDayOfMonth", "()I"); }
+            get { return IExecute<int>("getDayOfMonth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#getMonth()"/> 
         /// </summary>
         public Java.Time.Month Month
         {
-            get { return IExecuteWithSignature<Java.Time.Month>("getMonth", "()Ljava/time/Month;"); }
+            get { return IExecute<Java.Time.Month>("getMonth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#getMonthValue()"/> 
         /// </summary>
         public int MonthValue
         {
-            get { return IExecuteWithSignature<int>("getMonthValue", "()I"); }
+            get { return IExecute<int>("getMonthValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#query(java.time.temporal.TemporalQuery)"/>
@@ -209,7 +209,7 @@ namespace Java.Time
         /// <returns><typeparamref name="R"/></returns>
         public R Query<R>(Java.Time.Temporal.TemporalQuery<R> arg0)
         {
-            return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
+            return IExecute<R>("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#isAfter(java.time.MonthDay)"/>
@@ -218,7 +218,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsAfter(Java.Time.MonthDay arg0)
         {
-            return IExecuteWithSignature<bool>("isAfter", "(Ljava/time/MonthDay;)Z", arg0);
+            return IExecute<bool>("isAfter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#isBefore(java.time.MonthDay)"/>
@@ -227,7 +227,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsBefore(Java.Time.MonthDay arg0)
         {
-            return IExecuteWithSignature<bool>("isBefore", "(Ljava/time/MonthDay;)Z", arg0);
+            return IExecute<bool>("isBefore", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#isSupported(java.time.temporal.TemporalField)"/>
@@ -236,7 +236,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
+            return IExecute<bool>("isSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#isValidYear(int)"/>
@@ -245,7 +245,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsValidYear(int arg0)
         {
-            return IExecuteWithSignature<bool>("isValidYear", "(I)Z", arg0);
+            return IExecute<bool>("isValidYear", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#compareTo(java.lang.Object)"/>
@@ -254,7 +254,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#compareTo(java.time.MonthDay)"/>
@@ -263,7 +263,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Time.MonthDay arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/time/MonthDay;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#get(java.time.temporal.TemporalField)"/>
@@ -272,7 +272,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int Get(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
+            return IExecute<int>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#format(java.time.format.DateTimeFormatter)"/>
@@ -281,7 +281,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Format(Java.Time.Format.DateTimeFormatter arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("format", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#atYear(int)"/>
@@ -290,7 +290,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate AtYear(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.LocalDate>("atYear", "(I)Ljava/time/LocalDate;", arg0);
+            return IExecute<Java.Time.LocalDate>("atYear", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#with(java.time.Month)"/>
@@ -299,7 +299,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public Java.Time.MonthDay With(Java.Time.Month arg0)
         {
-            return IExecuteWithSignature<Java.Time.MonthDay>("with", "(Ljava/time/Month;)Ljava/time/MonthDay;", arg0);
+            return IExecute<Java.Time.MonthDay>("with", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#withDayOfMonth(int)"/>
@@ -308,7 +308,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public Java.Time.MonthDay WithDayOfMonth(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.MonthDay>("withDayOfMonth", "(I)Ljava/time/MonthDay;", arg0);
+            return IExecute<Java.Time.MonthDay>("withDayOfMonth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#withMonth(int)"/>
@@ -317,7 +317,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public Java.Time.MonthDay WithMonth(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.MonthDay>("withMonth", "(I)Ljava/time/MonthDay;", arg0);
+            return IExecute<Java.Time.MonthDay>("withMonth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#adjustInto(java.time.temporal.Temporal)"/>
@@ -326,7 +326,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("adjustInto", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("adjustInto", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#range(java.time.temporal.TemporalField)"/>
@@ -335,7 +335,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
+            return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#getLong(java.time.temporal.TemporalField)"/>
@@ -344,7 +344,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long GetLong(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
+            return IExecute<long>("getLong", arg0);
         }
 
         #endregion

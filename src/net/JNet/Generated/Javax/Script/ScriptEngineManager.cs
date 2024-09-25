@@ -103,14 +103,14 @@ namespace Javax.Script
         /// </summary>
         public Javax.Script.Bindings Bindings
         {
-            get { return IExecuteWithSignature<Javax.Script.Bindings>("getBindings", "()Ljavax/script/Bindings;"); } set { IExecuteWithSignature("setBindings", "(Ljavax/script/Bindings;)V", value); }
+            get { return IExecute<Javax.Script.Bindings>("getBindings"); } set { IExecute("setBindings", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#getEngineFactories()"/> 
         /// </summary>
         public Java.Util.List<Javax.Script.ScriptEngineFactory> EngineFactories
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Script.ScriptEngineFactory>>("getEngineFactories", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Javax.Script.ScriptEngineFactory>>("getEngineFactories"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#get(java.lang.String)"/>
@@ -119,7 +119,7 @@ namespace Javax.Script
         /// <returns><see cref="object"/></returns>
         public object Get(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("get", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#getEngineByExtension(java.lang.String)"/>
@@ -128,7 +128,7 @@ namespace Javax.Script
         /// <returns><see cref="Javax.Script.ScriptEngine"/></returns>
         public Javax.Script.ScriptEngine GetEngineByExtension(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Script.ScriptEngine>("getEngineByExtension", "(Ljava/lang/String;)Ljavax/script/ScriptEngine;", arg0);
+            return IExecute<Javax.Script.ScriptEngine>("getEngineByExtension", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#getEngineByMimeType(java.lang.String)"/>
@@ -137,7 +137,7 @@ namespace Javax.Script
         /// <returns><see cref="Javax.Script.ScriptEngine"/></returns>
         public Javax.Script.ScriptEngine GetEngineByMimeType(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Script.ScriptEngine>("getEngineByMimeType", "(Ljava/lang/String;)Ljavax/script/ScriptEngine;", arg0);
+            return IExecute<Javax.Script.ScriptEngine>("getEngineByMimeType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#getEngineByName(java.lang.String)"/>
@@ -146,7 +146,7 @@ namespace Javax.Script
         /// <returns><see cref="Javax.Script.ScriptEngine"/></returns>
         public Javax.Script.ScriptEngine GetEngineByName(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Script.ScriptEngine>("getEngineByName", "(Ljava/lang/String;)Ljavax/script/ScriptEngine;", arg0);
+            return IExecute<Javax.Script.ScriptEngine>("getEngineByName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#put(java.lang.String,java.lang.Object)"/>

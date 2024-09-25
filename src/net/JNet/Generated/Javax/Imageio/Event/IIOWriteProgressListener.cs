@@ -394,7 +394,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
         public override void ImageComplete(Javax.Imageio.ImageWriter arg0)
         {
-            IExecuteWithSignature("imageComplete", "(Ljavax/imageio/ImageWriter;)V", arg0);
+            IExecute("imageComplete", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageProgress(javax.imageio.ImageWriter,float)"/>
@@ -420,7 +420,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
         public override void ThumbnailComplete(Javax.Imageio.ImageWriter arg0)
         {
-            IExecuteWithSignature("thumbnailComplete", "(Ljavax/imageio/ImageWriter;)V", arg0);
+            IExecute("thumbnailComplete", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailProgress(javax.imageio.ImageWriter,float)"/>
@@ -447,7 +447,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
         public override void WriteAborted(Javax.Imageio.ImageWriter arg0)
         {
-            IExecuteWithSignature("writeAborted", "(Ljavax/imageio/ImageWriter;)V", arg0);
+            IExecute("writeAborted", arg0);
         }
 
         #endregion

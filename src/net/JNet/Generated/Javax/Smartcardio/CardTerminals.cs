@@ -145,7 +145,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public bool WaitForChange(long arg0)
         {
-            return IExecuteWithSignature<bool>("waitForChange", "(J)Z", arg0);
+            return IExecute<bool>("waitForChange", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#list(javax.smartcardio.CardTerminals.State)"/>
@@ -155,7 +155,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public Java.Util.List<Javax.Smartcardio.CardTerminal> List(Javax.Smartcardio.CardTerminals.State arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Javax.Smartcardio.CardTerminal>>("list", "(Ljavax/smartcardio/CardTerminals$State;)Ljava/util/List;", arg0);
+            return IExecute<Java.Util.List<Javax.Smartcardio.CardTerminal>>("list", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#list()"/>
@@ -164,7 +164,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public Java.Util.List<Javax.Smartcardio.CardTerminal> List()
         {
-            return IExecuteWithSignature<Java.Util.List<Javax.Smartcardio.CardTerminal>>("list", "()Ljava/util/List;");
+            return IExecute<Java.Util.List<Javax.Smartcardio.CardTerminal>>("list");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#getTerminal(java.lang.String)"/>
@@ -173,7 +173,7 @@ namespace Javax.Smartcardio
         /// <returns><see cref="Javax.Smartcardio.CardTerminal"/></returns>
         public Javax.Smartcardio.CardTerminal GetTerminal(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Smartcardio.CardTerminal>("getTerminal", "(Ljava/lang/String;)Ljavax/smartcardio/CardTerminal;", arg0);
+            return IExecute<Javax.Smartcardio.CardTerminal>("getTerminal", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#waitForChange()"/>
@@ -181,7 +181,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public void WaitForChange()
         {
-            IExecuteWithSignature("waitForChange", "()V");
+            IExecute("waitForChange");
         }
 
         #endregion

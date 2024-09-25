@@ -119,35 +119,35 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public Java.Awt.ImageCapabilities Capabilities
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageCapabilities>("getCapabilities", "()Ljava/awt/ImageCapabilities;"); }
+            get { return IExecute<Java.Awt.ImageCapabilities>("getCapabilities"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+            get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#getSnapshot()"/> 
         /// </summary>
         public Java.Awt.ImageNs.BufferedImage Snapshot
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("getSnapshot", "()Ljava/awt/image/BufferedImage;"); }
+            get { return IExecute<Java.Awt.ImageNs.BufferedImage>("getSnapshot"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#getTransparency()"/> 
         /// </summary>
         public int Transparency
         {
-            get { return IExecuteWithSignature<int>("getTransparency", "()I"); }
+            get { return IExecute<int>("getTransparency"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#contentsLost()"/>
@@ -155,7 +155,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool ContentsLost()
         {
-            return IExecuteWithSignature<bool>("contentsLost", "()Z");
+            return IExecute<bool>("contentsLost");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#validate(java.awt.GraphicsConfiguration)"/>
@@ -164,7 +164,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int Validate(Java.Awt.GraphicsConfiguration arg0)
         {
-            return IExecuteWithSignature<int>("validate", "(Ljava/awt/GraphicsConfiguration;)I", arg0);
+            return IExecute<int>("validate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#createGraphics()"/>
@@ -172,7 +172,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
         public Java.Awt.Graphics2D CreateGraphics()
         {
-            return IExecuteWithSignature<Java.Awt.Graphics2D>("createGraphics", "()Ljava/awt/Graphics2D;");
+            return IExecute<Java.Awt.Graphics2D>("createGraphics");
         }
 
         #endregion

@@ -219,154 +219,154 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public Java.Awt.ImageNs.WritableRaster AlphaRaster
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("getAlphaRaster", "()Ljava/awt/image/WritableRaster;"); }
+            get { return IExecute<Java.Awt.ImageNs.WritableRaster>("getAlphaRaster"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getColorModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.ColorModel ColorModel
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.ColorModel>("getColorModel", "()Ljava/awt/image/ColorModel;"); }
+            get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#setData(java.awt.image.Raster)"/>
         /// </summary>
         public Java.Awt.ImageNs.Raster Data
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("getData", "()Ljava/awt/image/Raster;"); } set { IExecuteWithSignature("setData", "(Ljava/awt/image/Raster;)V", value); }
+            get { return IExecute<Java.Awt.ImageNs.Raster>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+            get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinTileX()"/> 
         /// </summary>
         public int MinTileX
         {
-            get { return IExecuteWithSignature<int>("getMinTileX", "()I"); }
+            get { return IExecute<int>("getMinTileX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinTileY()"/> 
         /// </summary>
         public int MinTileY
         {
-            get { return IExecuteWithSignature<int>("getMinTileY", "()I"); }
+            get { return IExecute<int>("getMinTileY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinX()"/> 
         /// </summary>
         public int MinX
         {
-            get { return IExecuteWithSignature<int>("getMinX", "()I"); }
+            get { return IExecute<int>("getMinX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinY()"/> 
         /// </summary>
         public int MinY
         {
-            get { return IExecuteWithSignature<int>("getMinY", "()I"); }
+            get { return IExecute<int>("getMinY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getNumXTiles()"/> 
         /// </summary>
         public int NumXTiles
         {
-            get { return IExecuteWithSignature<int>("getNumXTiles", "()I"); }
+            get { return IExecute<int>("getNumXTiles"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getNumYTiles()"/> 
         /// </summary>
         public int NumYTiles
         {
-            get { return IExecuteWithSignature<int>("getNumYTiles", "()I"); }
+            get { return IExecute<int>("getNumYTiles"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getPropertyNames()"/> 
         /// </summary>
         public Java.Lang.String[] PropertyNames
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getPropertyNames", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getPropertyNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getRaster()"/> 
         /// </summary>
         public Java.Awt.ImageNs.WritableRaster Raster
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("getRaster", "()Ljava/awt/image/WritableRaster;"); }
+            get { return IExecute<Java.Awt.ImageNs.WritableRaster>("getRaster"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getSampleModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.SampleModel SampleModel
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.SampleModel>("getSampleModel", "()Ljava/awt/image/SampleModel;"); }
+            get { return IExecute<Java.Awt.ImageNs.SampleModel>("getSampleModel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getSources()"/> 
         /// </summary>
         public Java.Util.Vector<Java.Awt.ImageNs.RenderedImage> Sources
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<Java.Awt.ImageNs.RenderedImage>>("getSources", "()Ljava/util/Vector;"); }
+            get { return IExecute<Java.Util.Vector<Java.Awt.ImageNs.RenderedImage>>("getSources"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileGridXOffset()"/> 
         /// </summary>
         public int TileGridXOffset
         {
-            get { return IExecuteWithSignature<int>("getTileGridXOffset", "()I"); }
+            get { return IExecute<int>("getTileGridXOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileGridYOffset()"/> 
         /// </summary>
         public int TileGridYOffset
         {
-            get { return IExecuteWithSignature<int>("getTileGridYOffset", "()I"); }
+            get { return IExecute<int>("getTileGridYOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileHeight()"/> 
         /// </summary>
         public int TileHeight
         {
-            get { return IExecuteWithSignature<int>("getTileHeight", "()I"); }
+            get { return IExecute<int>("getTileHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileWidth()"/> 
         /// </summary>
         public int TileWidth
         {
-            get { return IExecuteWithSignature<int>("getTileWidth", "()I"); }
+            get { return IExecute<int>("getTileWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTransparency()"/> 
         /// </summary>
         public int Transparency
         {
-            get { return IExecuteWithSignature<int>("getTransparency", "()I"); }
+            get { return IExecute<int>("getTransparency"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            get { return IExecute<int>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getWritableTileIndices()"/> 
         /// </summary>
         public Java.Awt.Point[] WritableTileIndices
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.Point>("getWritableTileIndices", "()[Ljava/awt/Point;"); }
+            get { return IExecuteArray<Java.Awt.Point>("getWritableTileIndices"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#hasTileWriters()"/>
@@ -374,7 +374,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool HasTileWriters()
         {
-            return IExecuteWithSignature<bool>("hasTileWriters", "()Z");
+            return IExecute<bool>("hasTileWriters");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#isAlphaPremultiplied()"/>
@@ -382,7 +382,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool IsAlphaPremultiplied()
         {
-            return IExecuteWithSignature<bool>("isAlphaPremultiplied", "()Z");
+            return IExecute<bool>("isAlphaPremultiplied");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#isTileWritable(int,int)"/>
@@ -425,7 +425,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
         public Java.Awt.Graphics2D CreateGraphics()
         {
-            return IExecuteWithSignature<Java.Awt.Graphics2D>("createGraphics", "()Ljava/awt/Graphics2D;");
+            return IExecute<Java.Awt.Graphics2D>("createGraphics");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getSubimage(int,int,int,int)"/>
@@ -446,7 +446,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
         public Java.Awt.ImageNs.Raster GetData(Java.Awt.Rectangle arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("getData", "(Ljava/awt/Rectangle;)Ljava/awt/image/Raster;", arg0);
+            return IExecute<Java.Awt.ImageNs.Raster>("getData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTile(int,int)"/>
@@ -465,7 +465,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CopyData(Java.Awt.ImageNs.WritableRaster arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("copyData", "(Ljava/awt/image/WritableRaster;)Ljava/awt/image/WritableRaster;", arg0);
+            return IExecute<Java.Awt.ImageNs.WritableRaster>("copyData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getWritableTile(int,int)"/>
@@ -484,7 +484,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="object"/></returns>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#addTileObserver(java.awt.image.TileObserver)"/>
@@ -492,7 +492,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.TileObserver"/></param>
         public void AddTileObserver(Java.Awt.ImageNs.TileObserver arg0)
         {
-            IExecuteWithSignature("addTileObserver", "(Ljava/awt/image/TileObserver;)V", arg0);
+            IExecute("addTileObserver", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#coerceData(boolean)"/>
@@ -500,7 +500,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="bool"/></param>
         public void CoerceData(bool arg0)
         {
-            IExecuteWithSignature("coerceData", "(Z)V", arg0);
+            IExecute("coerceData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#releaseWritableTile(int,int)"/>
@@ -517,7 +517,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.TileObserver"/></param>
         public void RemoveTileObserver(Java.Awt.ImageNs.TileObserver arg0)
         {
-            IExecuteWithSignature("removeTileObserver", "(Ljava/awt/image/TileObserver;)V", arg0);
+            IExecute("removeTileObserver", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#setRGB(int,int,int,int,int[],int,int)"/>

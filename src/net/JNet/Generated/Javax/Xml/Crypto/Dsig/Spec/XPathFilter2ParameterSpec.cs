@@ -103,7 +103,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         public Java.Util.List<Javax.Xml.Crypto.Dsig.Spec.XPathType> XPathList
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.Dsig.Spec.XPathType>>("getXPathList", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.Dsig.Spec.XPathType>>("getXPathList"); }
         }
 
         #endregion

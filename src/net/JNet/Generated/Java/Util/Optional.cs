@@ -138,7 +138,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional Empty()
         {
-            return SExecuteWithSignature<Java.Util.Optional>(LocalBridgeClazz, "empty", "()Ljava/util/Optional;");
+            return SExecute<Java.Util.Optional>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#of(java.lang.Object)"/>
@@ -147,7 +147,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional Of(object arg0)
         {
-            return SExecuteWithSignature<Java.Util.Optional>(LocalBridgeClazz, "of", "(Ljava/lang/Object;)Ljava/util/Optional;", arg0);
+            return SExecute<Java.Util.Optional>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ofNullable(java.lang.Object)"/>
@@ -156,7 +156,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional OfNullable(object arg0)
         {
-            return SExecuteWithSignature<Java.Util.Optional>(LocalBridgeClazz, "ofNullable", "(Ljava/lang/Object;)Ljava/util/Optional;", arg0);
+            return SExecute<Java.Util.Optional>(LocalBridgeClazz, "ofNullable", arg0);
         }
 
         #endregion
@@ -169,7 +169,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional FlatMap(Java.Util.Function.Function arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional>("flatMap", "(Ljava/util/function/Function;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional>("flatMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#map(java.util.function.Function)"/>
@@ -178,7 +178,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional Map(Java.Util.Function.Function arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional>("map", "(Ljava/util/function/Function;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional>("map", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseThrow(java.util.function.Supplier)"/>
@@ -196,7 +196,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()"/>
@@ -204,7 +204,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
         {
-            return IExecuteWithSignature<bool>("isPresent", "()Z");
+            return IExecute<bool>("isPresent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#filter(java.util.function.Predicate)"/>
@@ -213,7 +213,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional Filter(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional>("filter", "(Ljava/util/function/Predicate;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional>("filter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#or(java.util.function.Supplier)"/>
@@ -222,7 +222,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional Or(Java.Util.Function.Supplier arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional>("or", "(Ljava/util/function/Supplier;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional>("or", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#stream()"/>
@@ -230,7 +230,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream Stream()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream>("stream", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#get()"/>
@@ -238,7 +238,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Get()
         {
-            return IExecuteWithSignature("get", "()Ljava/lang/Object;");
+            return IExecute("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElse(java.lang.Object)"/>
@@ -247,7 +247,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object OrElse(object arg0)
         {
-            return IExecuteWithSignature("orElse", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("orElse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseGet(java.util.function.Supplier)"/>
@@ -256,7 +256,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object OrElseGet(Java.Util.Function.Supplier arg0)
         {
-            return IExecuteWithSignature("orElseGet", "(Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0);
+            return IExecute("orElseGet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseThrow()"/>
@@ -264,7 +264,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object OrElseThrow()
         {
-            return IExecuteWithSignature("orElseThrow", "()Ljava/lang/Object;");
+            return IExecute("orElseThrow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ifPresent(java.util.function.Consumer)"/>
@@ -272,7 +272,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         public void IfPresent(Java.Util.Function.Consumer arg0)
         {
-            IExecuteWithSignature("ifPresent", "(Ljava/util/function/Consumer;)V", arg0);
+            IExecute("ifPresent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ifPresentOrElse(java.util.function.Consumer,java.lang.Runnable)"/>
@@ -320,7 +320,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional<T> Empty()
         {
-            return SExecuteWithSignature<Java.Util.Optional<T>>(LocalBridgeClazz, "empty", "()Ljava/util/Optional;");
+            return SExecute<Java.Util.Optional<T>>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#of(java.lang.Object)"/>
@@ -329,7 +329,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional<T> Of(T arg0)
         {
-            return SExecuteWithSignature<Java.Util.Optional<T>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;)Ljava/util/Optional;", arg0);
+            return SExecute<Java.Util.Optional<T>>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ofNullable(java.lang.Object)"/>
@@ -338,7 +338,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional<T> OfNullable(T arg0)
         {
-            return SExecuteWithSignature<Java.Util.Optional<T>>(LocalBridgeClazz, "ofNullable", "(Ljava/lang/Object;)Ljava/util/Optional;", arg0);
+            return SExecute<Java.Util.Optional<T>>(LocalBridgeClazz, "ofNullable", arg0);
         }
 
         #endregion
@@ -355,7 +355,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<U> FlatMap<U, Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_> arg0) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_ : Java.Util.Optional<Arg0ExtendsU> where Arg0ExtendsU : U
         {
-            return IExecuteWithSignature<Java.Util.Optional<U>>("flatMap", "(Ljava/util/function/Function;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<U>>("flatMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#map(java.util.function.Function)"/>
@@ -367,7 +367,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<U> Map<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0) where Arg0objectSuperT : T where Arg0ExtendsU : U
         {
-            return IExecuteWithSignature<Java.Util.Optional<U>>("map", "(Ljava/util/function/Function;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<U>>("map", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseThrow(java.util.function.Supplier)"/>
@@ -387,7 +387,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()"/>
@@ -395,7 +395,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
         {
-            return IExecuteWithSignature<bool>("isPresent", "()Z");
+            return IExecute<bool>("isPresent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#filter(java.util.function.Predicate)"/>
@@ -405,7 +405,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<T> Filter<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Optional<T>>("filter", "(Ljava/util/function/Predicate;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<T>>("filter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#or(java.util.function.Supplier)"/>
@@ -416,7 +416,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<T> Or<Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_, Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_> arg0) where Arg0ExtendsJava_Util_Optional_Arg0ExtendsT_ : Java.Util.Optional<Arg0ExtendsT> where Arg0ExtendsT : T
         {
-            return IExecuteWithSignature<Java.Util.Optional<T>>("or", "(Ljava/util/function/Supplier;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<T>>("or", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#stream()"/>
@@ -424,7 +424,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<T> Stream()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("stream", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream<T>>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#get()"/>
@@ -432,7 +432,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public T Get()
         {
-            return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
+            return IExecute<T>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElse(java.lang.Object)"/>
@@ -441,7 +441,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public T OrElse(T arg0)
         {
-            return IExecuteWithSignature<T>("orElse", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<T>("orElse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseGet(java.util.function.Supplier)"/>
@@ -451,7 +451,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public T OrElseGet<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
-            return IExecuteWithSignature<T>("orElseGet", "(Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0);
+            return IExecute<T>("orElseGet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseThrow()"/>
@@ -459,7 +459,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public T OrElseThrow()
         {
-            return IExecuteWithSignature<T>("orElseThrow", "()Ljava/lang/Object;");
+            return IExecute<T>("orElseThrow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ifPresent(java.util.function.Consumer)"/>
@@ -468,7 +468,7 @@ namespace Java.Util
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         public void IfPresent<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            IExecuteWithSignature("ifPresent", "(Ljava/util/function/Consumer;)V", arg0);
+            IExecute("ifPresent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ifPresentOrElse(java.util.function.Consumer,java.lang.Runnable)"/>

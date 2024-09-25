@@ -155,21 +155,21 @@ namespace Java.Sql
         /// </summary>
         public int MajorVersion
         {
-            get { return IExecuteWithSignature<int>("getMajorVersion", "()I"); }
+            get { return IExecute<int>("getMajorVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getMinorVersion()"/> 
         /// </summary>
         public int MinorVersion
         {
-            get { return IExecuteWithSignature<int>("getMinorVersion", "()I"); }
+            get { return IExecute<int>("getMinorVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getParentLogger()"/> 
         /// </summary>
         public Java.Util.Logging.Logger ParentLogger
         {
-            get { return IExecuteWithSignature<Java.Util.Logging.Logger>("getParentLogger", "()Ljava/util/logging/Logger;"); }
+            get { return IExecute<Java.Util.Logging.Logger>("getParentLogger"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#acceptsURL(java.lang.String)"/>
@@ -179,7 +179,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool AcceptsURL(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("acceptsURL", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("acceptsURL", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#jdbcCompliant()"/>
@@ -187,7 +187,7 @@ namespace Java.Sql
         /// <returns><see cref="bool"/></returns>
         public bool JdbcCompliant()
         {
-            return IExecuteWithSignature<bool>("jdbcCompliant", "()Z");
+            return IExecute<bool>("jdbcCompliant");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#connect(java.lang.String,java.util.Properties)"/>

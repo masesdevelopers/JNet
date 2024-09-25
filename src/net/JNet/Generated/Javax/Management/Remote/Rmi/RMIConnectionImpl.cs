@@ -115,7 +115,7 @@ namespace Javax.Management.Remote.Rmi
         /// </summary>
         public Java.Lang.String ConnectionId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getConnectionId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getConnectionId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)"/>
@@ -149,7 +149,7 @@ namespace Javax.Management.Remote.Rmi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Integer GetMBeanCount(Javax.Security.Auth.Subject arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Integer>("getMBeanCount", "(Ljavax/security/auth/Subject;)Ljava/lang/Integer;", arg0);
+            return IExecute<Java.Lang.Integer>("getMBeanCount", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])"/>
@@ -205,7 +205,7 @@ namespace Javax.Management.Remote.Rmi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String GetDefaultDomain(Javax.Security.Auth.Subject arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDefaultDomain", "(Ljavax/security/auth/Subject;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getDefaultDomain", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getDomains(javax.security.auth.Subject)"/>
@@ -215,7 +215,7 @@ namespace Javax.Management.Remote.Rmi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String[] GetDomains(Javax.Security.Auth.Subject arg0)
         {
-            return IExecuteWithSignatureArray<Java.Lang.String>("getDomains", "(Ljavax/security/auth/Subject;)[Ljava/lang/String;", arg0);
+            return IExecuteArray<Java.Lang.String>("getDomains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#queryMBeans(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
@@ -403,7 +403,7 @@ namespace Javax.Management.Remote.Rmi
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
@@ -467,7 +467,7 @@ namespace Javax.Management.Remote.Rmi
         /// </summary>
         public void Unreferenced()
         {
-            IExecuteWithSignature("unreferenced", "()V");
+            IExecute("unreferenced");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#unregisterMBean(javax.management.ObjectName,javax.security.auth.Subject)"/>

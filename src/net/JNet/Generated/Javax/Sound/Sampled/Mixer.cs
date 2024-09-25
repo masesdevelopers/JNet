@@ -229,35 +229,35 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public Javax.Sound.Sampled.Mixer.Info MixerInfo
         {
-            get { return IExecuteWithSignature<Javax.Sound.Sampled.Mixer.Info>("getMixerInfo", "()Ljavax/sound/sampled/Mixer$Info;"); }
+            get { return IExecute<Javax.Sound.Sampled.Mixer.Info>("getMixerInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getSourceLineInfo()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line.Info[] SourceLineInfo
         {
-            get { return IExecuteWithSignatureArray<Javax.Sound.Sampled.Line.Info>("getSourceLineInfo", "()[Ljavax/sound/sampled/Line$Info;"); }
+            get { return IExecuteArray<Javax.Sound.Sampled.Line.Info>("getSourceLineInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getSourceLines()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line[] SourceLines
         {
-            get { return IExecuteWithSignatureArray<Javax.Sound.Sampled.Line>("getSourceLines", "()[Ljavax/sound/sampled/Line;"); }
+            get { return IExecuteArray<Javax.Sound.Sampled.Line>("getSourceLines"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getTargetLineInfo()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line.Info[] TargetLineInfo
         {
-            get { return IExecuteWithSignatureArray<Javax.Sound.Sampled.Line.Info>("getTargetLineInfo", "()[Ljavax/sound/sampled/Line$Info;"); }
+            get { return IExecuteArray<Javax.Sound.Sampled.Line.Info>("getTargetLineInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getTargetLines()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line[] TargetLines
         {
-            get { return IExecuteWithSignatureArray<Javax.Sound.Sampled.Line>("getTargetLines", "()[Ljavax/sound/sampled/Line;"); }
+            get { return IExecuteArray<Javax.Sound.Sampled.Line>("getTargetLines"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#isLineSupported(javax.sound.sampled.Line.Info)"/>
@@ -266,7 +266,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="bool"/></returns>
         public bool IsLineSupported(Javax.Sound.Sampled.Line.Info arg0)
         {
-            return IExecuteWithSignature<bool>("isLineSupported", "(Ljavax/sound/sampled/Line$Info;)Z", arg0);
+            return IExecute<bool>("isLineSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#isSynchronizationSupported(javax.sound.sampled.Line[],boolean)"/>
@@ -285,7 +285,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="int"/></returns>
         public int GetMaxLines(Javax.Sound.Sampled.Line.Info arg0)
         {
-            return IExecuteWithSignature<int>("getMaxLines", "(Ljavax/sound/sampled/Line$Info;)I", arg0);
+            return IExecute<int>("getMaxLines", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getLine(javax.sound.sampled.Line.Info)"/>
@@ -295,7 +295,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public Javax.Sound.Sampled.Line GetLine(Javax.Sound.Sampled.Line.Info arg0)
         {
-            return IExecuteWithSignature<Javax.Sound.Sampled.Line>("getLine", "(Ljavax/sound/sampled/Line$Info;)Ljavax/sound/sampled/Line;", arg0);
+            return IExecute<Javax.Sound.Sampled.Line>("getLine", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getSourceLineInfo(javax.sound.sampled.Line.Info)"/>
@@ -304,7 +304,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="Javax.Sound.Sampled.Line.Info"/></returns>
         public Javax.Sound.Sampled.Line.Info[] GetSourceLineInfo(Javax.Sound.Sampled.Line.Info arg0)
         {
-            return IExecuteWithSignatureArray<Javax.Sound.Sampled.Line.Info>("getSourceLineInfo", "(Ljavax/sound/sampled/Line$Info;)[Ljavax/sound/sampled/Line$Info;", arg0);
+            return IExecuteArray<Javax.Sound.Sampled.Line.Info>("getSourceLineInfo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getTargetLineInfo(javax.sound.sampled.Line.Info)"/>
@@ -313,7 +313,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="Javax.Sound.Sampled.Line.Info"/></returns>
         public Javax.Sound.Sampled.Line.Info[] GetTargetLineInfo(Javax.Sound.Sampled.Line.Info arg0)
         {
-            return IExecuteWithSignatureArray<Javax.Sound.Sampled.Line.Info>("getTargetLineInfo", "(Ljavax/sound/sampled/Line$Info;)[Ljavax/sound/sampled/Line$Info;", arg0);
+            return IExecuteArray<Javax.Sound.Sampled.Line.Info>("getTargetLineInfo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#synchronize(javax.sound.sampled.Line[],boolean)"/>
@@ -330,7 +330,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
         public void Unsynchronize(Javax.Sound.Sampled.Line[] arg0)
         {
-            IExecuteWithSignature("unsynchronize", "([Ljavax/sound/sampled/Line;)V", new object[] { arg0 });
+            IExecute("unsynchronize", new object[] { arg0 });
         }
 
         #endregion

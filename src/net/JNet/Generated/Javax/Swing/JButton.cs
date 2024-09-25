@@ -133,7 +133,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsDefaultButton()
         {
-            return IExecuteWithSignature<bool>("isDefaultButton", "()Z");
+            return IExecute<bool>("isDefaultButton");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#isDefaultCapable()"/>
@@ -141,7 +141,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsDefaultCapable()
         {
-            return IExecuteWithSignature<bool>("isDefaultCapable", "()Z");
+            return IExecute<bool>("isDefaultCapable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#setDefaultCapable(boolean)"/>
@@ -149,7 +149,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDefaultCapable(bool arg0)
         {
-            IExecuteWithSignature("setDefaultCapable", "(Z)V", arg0);
+            IExecute("setDefaultCapable", arg0);
         }
 
         #endregion

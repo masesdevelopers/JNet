@@ -154,7 +154,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int End()
         {
-            return IExecuteWithSignature<int>("end", "()I");
+            return IExecute<int>("end");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#end(int)"/>
@@ -163,7 +163,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int End(int arg0)
         {
-            return IExecuteWithSignature<int>("end", "(I)I", arg0);
+            return IExecute<int>("end", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#groupCount()"/>
@@ -171,7 +171,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int GroupCount()
         {
-            return IExecuteWithSignature<int>("groupCount", "()I");
+            return IExecute<int>("groupCount");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#start()"/>
@@ -179,7 +179,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int Start()
         {
-            return IExecuteWithSignature<int>("start", "()I");
+            return IExecute<int>("start");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#start(int)"/>
@@ -188,7 +188,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="int"/></returns>
         public int Start(int arg0)
         {
-            return IExecuteWithSignature<int>("start", "(I)I", arg0);
+            return IExecute<int>("start", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#group()"/>
@@ -196,7 +196,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Group()
         {
-            return IExecuteWithSignature<Java.Lang.String>("group", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("group");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html#group(int)"/>
@@ -205,7 +205,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Group(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("group", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("group", arg0);
         }
 
         #endregion

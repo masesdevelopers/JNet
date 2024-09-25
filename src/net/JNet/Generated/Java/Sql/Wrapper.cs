@@ -134,7 +134,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public T Unwrap<T>(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<T>("unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", arg0);
+            return IExecute<T>("unwrap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Wrapper.html#isWrapperFor(java.lang.Class)"/>
@@ -144,7 +144,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsWrapperFor(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<bool>("isWrapperFor", "(Ljava/lang/Class;)Z", arg0);
+            return IExecute<bool>("isWrapperFor", arg0);
         }
 
         #endregion

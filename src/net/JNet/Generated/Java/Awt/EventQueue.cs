@@ -91,14 +91,14 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.AWTEvent CurrentEvent
         {
-            get { return SExecuteWithSignature<Java.Awt.AWTEvent>(LocalBridgeClazz, "getCurrentEvent", "()Ljava/awt/AWTEvent;"); }
+            get { return SExecute<Java.Awt.AWTEvent>(LocalBridgeClazz, "getCurrentEvent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#getMostRecentEventTime()"/> 
         /// </summary>
         public static long MostRecentEventTime
         {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getMostRecentEventTime", "()J"); }
+            get { return SExecute<long>(LocalBridgeClazz, "getMostRecentEventTime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#isDispatchThread()"/>
@@ -106,7 +106,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public static bool IsDispatchThread()
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDispatchThread", "()Z");
+            return SExecute<bool>(LocalBridgeClazz, "isDispatchThread");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#invokeAndWait(java.lang.Runnable)"/>
@@ -116,7 +116,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
         public static void InvokeAndWait(Java.Lang.Runnable arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "invokeAndWait", "(Ljava/lang/Runnable;)V", arg0);
+            SExecute(LocalBridgeClazz, "invokeAndWait", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#invokeLater(java.lang.Runnable)"/>
@@ -124,7 +124,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         public static void InvokeLater(Java.Lang.Runnable arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "invokeLater", "(Ljava/lang/Runnable;)V", arg0);
+            SExecute(LocalBridgeClazz, "invokeLater", arg0);
         }
 
         #endregion
@@ -135,7 +135,7 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.AWTEvent NextEvent
         {
-            get { return IExecuteWithSignature<Java.Awt.AWTEvent>("getNextEvent", "()Ljava/awt/AWTEvent;"); }
+            get { return IExecute<Java.Awt.AWTEvent>("getNextEvent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#peekEvent()"/>
@@ -143,7 +143,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.AWTEvent"/></returns>
         public Java.Awt.AWTEvent PeekEvent()
         {
-            return IExecuteWithSignature<Java.Awt.AWTEvent>("peekEvent", "()Ljava/awt/AWTEvent;");
+            return IExecute<Java.Awt.AWTEvent>("peekEvent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#peekEvent(int)"/>
@@ -152,7 +152,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.AWTEvent"/></returns>
         public Java.Awt.AWTEvent PeekEvent(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.AWTEvent>("peekEvent", "(I)Ljava/awt/AWTEvent;", arg0);
+            return IExecute<Java.Awt.AWTEvent>("peekEvent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#createSecondaryLoop()"/>
@@ -160,7 +160,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.SecondaryLoop"/></returns>
         public Java.Awt.SecondaryLoop CreateSecondaryLoop()
         {
-            return IExecuteWithSignature<Java.Awt.SecondaryLoop>("createSecondaryLoop", "()Ljava/awt/SecondaryLoop;");
+            return IExecute<Java.Awt.SecondaryLoop>("createSecondaryLoop");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#postEvent(java.awt.AWTEvent)"/>
@@ -168,7 +168,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
         public void PostEvent(Java.Awt.AWTEvent arg0)
         {
-            IExecuteWithSignature("postEvent", "(Ljava/awt/AWTEvent;)V", arg0);
+            IExecute("postEvent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#push(java.awt.EventQueue)"/>
@@ -176,7 +176,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventQueue"/></param>
         public void Push(Java.Awt.EventQueue arg0)
         {
-            IExecuteWithSignature("push", "(Ljava/awt/EventQueue;)V", arg0);
+            IExecute("push", arg0);
         }
 
         #endregion

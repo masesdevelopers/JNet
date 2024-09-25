@@ -298,7 +298,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.AnnotationValue arg0)
         {
-            return IExecuteWithSignature("visit", "(Ljavax/lang/model/element/AnnotationValue;)Ljava/lang/Object;", arg0);
+            return IExecute("visit", arg0);
         }
 
         #endregion
@@ -623,7 +623,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><typeparamref name="R"/></returns>
         public R Visit(Javax.Lang.Model.Element.AnnotationValue arg0)
         {
-            return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/element/AnnotationValue;)Ljava/lang/Object;", arg0);
+            return IExecute<R>("visit", arg0);
         }
 
         #endregion

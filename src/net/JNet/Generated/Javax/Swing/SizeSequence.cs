@@ -120,7 +120,7 @@ namespace Javax.Swing
         /// </summary>
         public int[] Sizes
         {
-            get { return IExecuteWithSignatureArray<int>("getSizes", "()[I"); } set { IExecuteWithSignature("setSizes", "([I)V", value); }
+            get { return IExecuteArray<int>("getSizes"); } set { IExecute("setSizes", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeSequence.html#getIndex(int)"/>
@@ -129,7 +129,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetIndex(int arg0)
         {
-            return IExecuteWithSignature<int>("getIndex", "(I)I", arg0);
+            return IExecute<int>("getIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeSequence.html#getPosition(int)"/>
@@ -138,7 +138,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetPosition(int arg0)
         {
-            return IExecuteWithSignature<int>("getPosition", "(I)I", arg0);
+            return IExecute<int>("getPosition", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeSequence.html#getSize(int)"/>
@@ -147,7 +147,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetSize(int arg0)
         {
-            return IExecuteWithSignature<int>("getSize", "(I)I", arg0);
+            return IExecute<int>("getSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeSequence.html#insertEntries(int,int,int)"/>

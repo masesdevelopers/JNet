@@ -159,14 +159,14 @@ namespace Org.W3c.Dom
         /// </summary>
         public Java.Lang.String Data
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setData", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#getLength()"/> 
         /// </summary>
         public int Length
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            get { return IExecute<int>("getLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#substringData(int,int)"/>
@@ -186,7 +186,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void AppendData(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("appendData", "(Ljava/lang/String;)V", arg0);
+            IExecute("appendData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#deleteData(int,int)"/>

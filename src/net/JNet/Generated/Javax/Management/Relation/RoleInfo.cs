@@ -154,35 +154,35 @@ namespace Javax.Management.Relation
         /// </summary>
         public Java.Lang.String Description
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDescription"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getMaxDegree()"/> 
         /// </summary>
         public int MaxDegree
         {
-            get { return IExecuteWithSignature<int>("getMaxDegree", "()I"); }
+            get { return IExecute<int>("getMaxDegree"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getMinDegree()"/> 
         /// </summary>
         public int MinDegree
         {
-            get { return IExecuteWithSignature<int>("getMinDegree", "()I"); }
+            get { return IExecute<int>("getMinDegree"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getRefMBeanClassName()"/> 
         /// </summary>
         public Java.Lang.String RefMBeanClassName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRefMBeanClassName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getRefMBeanClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#checkMaxDegree(int)"/>
@@ -191,7 +191,7 @@ namespace Javax.Management.Relation
         /// <returns><see cref="bool"/></returns>
         public bool CheckMaxDegree(int arg0)
         {
-            return IExecuteWithSignature<bool>("checkMaxDegree", "(I)Z", arg0);
+            return IExecute<bool>("checkMaxDegree", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#checkMinDegree(int)"/>
@@ -200,7 +200,7 @@ namespace Javax.Management.Relation
         /// <returns><see cref="bool"/></returns>
         public bool CheckMinDegree(int arg0)
         {
-            return IExecuteWithSignature<bool>("checkMinDegree", "(I)Z", arg0);
+            return IExecute<bool>("checkMinDegree", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isReadable()"/>
@@ -208,7 +208,7 @@ namespace Javax.Management.Relation
         /// <returns><see cref="bool"/></returns>
         public bool IsReadable()
         {
-            return IExecuteWithSignature<bool>("isReadable", "()Z");
+            return IExecute<bool>("isReadable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isWritable()"/>
@@ -216,7 +216,7 @@ namespace Javax.Management.Relation
         /// <returns><see cref="bool"/></returns>
         public bool IsWritable()
         {
-            return IExecuteWithSignature<bool>("isWritable", "()Z");
+            return IExecute<bool>("isWritable");
         }
 
         #endregion

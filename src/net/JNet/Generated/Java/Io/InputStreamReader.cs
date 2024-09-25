@@ -131,7 +131,7 @@ namespace Java.Io
         /// </summary>
         public Java.Lang.String Encoding
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getEncoding"); }
         }
 
         #endregion

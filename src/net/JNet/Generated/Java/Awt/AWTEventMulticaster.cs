@@ -855,7 +855,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
         public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
         {
-            IExecuteWithSignature("actionPerformed", "(Ljava/awt/event/ActionEvent;)V", arg0);
+            IExecute("actionPerformed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
@@ -863,7 +863,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentEvent"/></param>
         public void AdjustmentValueChanged(Java.Awt.EventNs.AdjustmentEvent arg0)
         {
-            IExecuteWithSignature("adjustmentValueChanged", "(Ljava/awt/event/AdjustmentEvent;)V", arg0);
+            IExecute("adjustmentValueChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#ancestorMoved(java.awt.event.HierarchyEvent)"/>
@@ -871,7 +871,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
         public void AncestorMoved(Java.Awt.EventNs.HierarchyEvent arg0)
         {
-            IExecuteWithSignature("ancestorMoved", "(Ljava/awt/event/HierarchyEvent;)V", arg0);
+            IExecute("ancestorMoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#ancestorResized(java.awt.event.HierarchyEvent)"/>
@@ -879,7 +879,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
         public void AncestorResized(Java.Awt.EventNs.HierarchyEvent arg0)
         {
-            IExecuteWithSignature("ancestorResized", "(Ljava/awt/event/HierarchyEvent;)V", arg0);
+            IExecute("ancestorResized", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
@@ -887,7 +887,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
         public void CaretPositionChanged(Java.Awt.EventNs.InputMethodEvent arg0)
         {
-            IExecuteWithSignature("caretPositionChanged", "(Ljava/awt/event/InputMethodEvent;)V", arg0);
+            IExecute("caretPositionChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentAdded(java.awt.event.ContainerEvent)"/>
@@ -895,7 +895,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerEvent"/></param>
         public void ComponentAdded(Java.Awt.EventNs.ContainerEvent arg0)
         {
-            IExecuteWithSignature("componentAdded", "(Ljava/awt/event/ContainerEvent;)V", arg0);
+            IExecute("componentAdded", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentHidden(java.awt.event.ComponentEvent)"/>
@@ -903,7 +903,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public void ComponentHidden(Java.Awt.EventNs.ComponentEvent arg0)
         {
-            IExecuteWithSignature("componentHidden", "(Ljava/awt/event/ComponentEvent;)V", arg0);
+            IExecute("componentHidden", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentMoved(java.awt.event.ComponentEvent)"/>
@@ -911,7 +911,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public void ComponentMoved(Java.Awt.EventNs.ComponentEvent arg0)
         {
-            IExecuteWithSignature("componentMoved", "(Ljava/awt/event/ComponentEvent;)V", arg0);
+            IExecute("componentMoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentRemoved(java.awt.event.ContainerEvent)"/>
@@ -919,7 +919,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerEvent"/></param>
         public void ComponentRemoved(Java.Awt.EventNs.ContainerEvent arg0)
         {
-            IExecuteWithSignature("componentRemoved", "(Ljava/awt/event/ContainerEvent;)V", arg0);
+            IExecute("componentRemoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentResized(java.awt.event.ComponentEvent)"/>
@@ -927,7 +927,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public void ComponentResized(Java.Awt.EventNs.ComponentEvent arg0)
         {
-            IExecuteWithSignature("componentResized", "(Ljava/awt/event/ComponentEvent;)V", arg0);
+            IExecute("componentResized", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentShown(java.awt.event.ComponentEvent)"/>
@@ -935,7 +935,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public void ComponentShown(Java.Awt.EventNs.ComponentEvent arg0)
         {
-            IExecuteWithSignature("componentShown", "(Ljava/awt/event/ComponentEvent;)V", arg0);
+            IExecute("componentShown", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#focusGained(java.awt.event.FocusEvent)"/>
@@ -943,7 +943,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
         public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
         {
-            IExecuteWithSignature("focusGained", "(Ljava/awt/event/FocusEvent;)V", arg0);
+            IExecute("focusGained", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#focusLost(java.awt.event.FocusEvent)"/>
@@ -951,7 +951,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
         public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
         {
-            IExecuteWithSignature("focusLost", "(Ljava/awt/event/FocusEvent;)V", arg0);
+            IExecute("focusLost", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#hierarchyChanged(java.awt.event.HierarchyEvent)"/>
@@ -959,7 +959,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
         public void HierarchyChanged(Java.Awt.EventNs.HierarchyEvent arg0)
         {
-            IExecuteWithSignature("hierarchyChanged", "(Ljava/awt/event/HierarchyEvent;)V", arg0);
+            IExecute("hierarchyChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
@@ -967,7 +967,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
         public void InputMethodTextChanged(Java.Awt.EventNs.InputMethodEvent arg0)
         {
-            IExecuteWithSignature("inputMethodTextChanged", "(Ljava/awt/event/InputMethodEvent;)V", arg0);
+            IExecute("inputMethodTextChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#itemStateChanged(java.awt.event.ItemEvent)"/>
@@ -975,7 +975,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
         public void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
         {
-            IExecuteWithSignature("itemStateChanged", "(Ljava/awt/event/ItemEvent;)V", arg0);
+            IExecute("itemStateChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#keyPressed(java.awt.event.KeyEvent)"/>
@@ -983,7 +983,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public void KeyPressed(Java.Awt.EventNs.KeyEvent arg0)
         {
-            IExecuteWithSignature("keyPressed", "(Ljava/awt/event/KeyEvent;)V", arg0);
+            IExecute("keyPressed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#keyReleased(java.awt.event.KeyEvent)"/>
@@ -991,7 +991,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public void KeyReleased(Java.Awt.EventNs.KeyEvent arg0)
         {
-            IExecuteWithSignature("keyReleased", "(Ljava/awt/event/KeyEvent;)V", arg0);
+            IExecute("keyReleased", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#keyTyped(java.awt.event.KeyEvent)"/>
@@ -999,7 +999,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public void KeyTyped(Java.Awt.EventNs.KeyEvent arg0)
         {
-            IExecuteWithSignature("keyTyped", "(Ljava/awt/event/KeyEvent;)V", arg0);
+            IExecute("keyTyped", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseClicked(java.awt.event.MouseEvent)"/>
@@ -1007,7 +1007,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
         {
-            IExecuteWithSignature("mouseClicked", "(Ljava/awt/event/MouseEvent;)V", arg0);
+            IExecute("mouseClicked", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseDragged(java.awt.event.MouseEvent)"/>
@@ -1015,7 +1015,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
         {
-            IExecuteWithSignature("mouseDragged", "(Ljava/awt/event/MouseEvent;)V", arg0);
+            IExecute("mouseDragged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseEntered(java.awt.event.MouseEvent)"/>
@@ -1023,7 +1023,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
         {
-            IExecuteWithSignature("mouseEntered", "(Ljava/awt/event/MouseEvent;)V", arg0);
+            IExecute("mouseEntered", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseExited(java.awt.event.MouseEvent)"/>
@@ -1031,7 +1031,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
         {
-            IExecuteWithSignature("mouseExited", "(Ljava/awt/event/MouseEvent;)V", arg0);
+            IExecute("mouseExited", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseMoved(java.awt.event.MouseEvent)"/>
@@ -1039,7 +1039,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
         {
-            IExecuteWithSignature("mouseMoved", "(Ljava/awt/event/MouseEvent;)V", arg0);
+            IExecute("mouseMoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mousePressed(java.awt.event.MouseEvent)"/>
@@ -1047,7 +1047,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
         {
-            IExecuteWithSignature("mousePressed", "(Ljava/awt/event/MouseEvent;)V", arg0);
+            IExecute("mousePressed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseReleased(java.awt.event.MouseEvent)"/>
@@ -1055,7 +1055,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
         {
-            IExecuteWithSignature("mouseReleased", "(Ljava/awt/event/MouseEvent;)V", arg0);
+            IExecute("mouseReleased", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
@@ -1063,7 +1063,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelEvent"/></param>
         public void MouseWheelMoved(Java.Awt.EventNs.MouseWheelEvent arg0)
         {
-            IExecuteWithSignature("mouseWheelMoved", "(Ljava/awt/event/MouseWheelEvent;)V", arg0);
+            IExecute("mouseWheelMoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#textValueChanged(java.awt.event.TextEvent)"/>
@@ -1071,7 +1071,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.TextEvent"/></param>
         public void TextValueChanged(Java.Awt.EventNs.TextEvent arg0)
         {
-            IExecuteWithSignature("textValueChanged", "(Ljava/awt/event/TextEvent;)V", arg0);
+            IExecute("textValueChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowActivated(java.awt.event.WindowEvent)"/>
@@ -1079,7 +1079,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowActivated(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowActivated", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowActivated", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowClosed(java.awt.event.WindowEvent)"/>
@@ -1087,7 +1087,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowClosed(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowClosed", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowClosed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowClosing(java.awt.event.WindowEvent)"/>
@@ -1095,7 +1095,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowClosing(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowClosing", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowClosing", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowDeactivated(java.awt.event.WindowEvent)"/>
@@ -1103,7 +1103,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowDeactivated(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowDeactivated", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowDeactivated", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowDeiconified(java.awt.event.WindowEvent)"/>
@@ -1111,7 +1111,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowDeiconified(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowDeiconified", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowDeiconified", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
@@ -1119,7 +1119,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowGainedFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowGainedFocus", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowGainedFocus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowIconified(java.awt.event.WindowEvent)"/>
@@ -1127,7 +1127,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowIconified(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowIconified", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowIconified", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowLostFocus(java.awt.event.WindowEvent)"/>
@@ -1135,7 +1135,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowLostFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowLostFocus", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowLostFocus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowOpened(java.awt.event.WindowEvent)"/>
@@ -1143,7 +1143,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowOpened(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowOpened", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowOpened", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowStateChanged(java.awt.event.WindowEvent)"/>
@@ -1151,7 +1151,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowStateChanged", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowStateChanged", arg0);
         }
 
         #endregion

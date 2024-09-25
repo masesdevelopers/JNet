@@ -123,14 +123,14 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         public void CancelQuit()
         {
-            IExecuteWithSignature("cancelQuit", "()V");
+            IExecute("cancelQuit");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitResponse.html#performQuit()"/>
         /// </summary>
         public void PerformQuit()
         {
-            IExecuteWithSignature("performQuit", "()V");
+            IExecute("performQuit");
         }
 
         #endregion

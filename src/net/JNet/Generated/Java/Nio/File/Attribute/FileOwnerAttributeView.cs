@@ -124,7 +124,7 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public Java.Nio.File.Attribute.UserPrincipal Owner
         {
-            get { return IExecuteWithSignature<Java.Nio.File.Attribute.UserPrincipal>("getOwner", "()Ljava/nio/file/attribute/UserPrincipal;"); } set { IExecuteWithSignature("setOwner", "(Ljava/nio/file/attribute/UserPrincipal;)V", value); }
+            get { return IExecute<Java.Nio.File.Attribute.UserPrincipal>("getOwner"); } set { IExecute("setOwner", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#name()"/>
@@ -132,7 +132,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
 
         #endregion

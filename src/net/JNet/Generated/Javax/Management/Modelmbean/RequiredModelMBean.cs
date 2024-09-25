@@ -117,14 +117,14 @@ namespace Javax.Management.Modelmbean
         /// </summary>
         public Javax.Management.MBeanInfo MBeanInfo
         {
-            get { return IExecuteWithSignature<Javax.Management.MBeanInfo>("getMBeanInfo", "()Ljavax/management/MBeanInfo;"); }
+            get { return IExecute<Javax.Management.MBeanInfo>("getMBeanInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#getNotificationInfo()"/> 
         /// </summary>
         public Javax.Management.MBeanNotificationInfo[] NotificationInfo
         {
-            get { return IExecuteWithSignatureArray<Javax.Management.MBeanNotificationInfo>("getNotificationInfo", "()[Ljavax/management/MBeanNotificationInfo;"); }
+            get { return IExecuteArray<Javax.Management.MBeanNotificationInfo>("getNotificationInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#getAttribute(java.lang.String)"/>
@@ -136,7 +136,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.ReflectionException"/>
         public object GetAttribute(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#invoke(java.lang.String,java.lang.Object[],java.lang.String[])"/>
@@ -158,7 +158,7 @@ namespace Javax.Management.Modelmbean
         /// <returns><see cref="Javax.Management.AttributeList"/></returns>
         public Javax.Management.AttributeList GetAttributes(Java.Lang.String[] arg0)
         {
-            return IExecuteWithSignature<Javax.Management.AttributeList>("getAttributes", "([Ljava/lang/String;)Ljavax/management/AttributeList;", new object[] { arg0 });
+            return IExecute<Javax.Management.AttributeList>("getAttributes", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#setAttributes(javax.management.AttributeList)"/>
@@ -167,7 +167,7 @@ namespace Javax.Management.Modelmbean
         /// <returns><see cref="Javax.Management.AttributeList"/></returns>
         public Javax.Management.AttributeList SetAttributes(Javax.Management.AttributeList arg0)
         {
-            return IExecuteWithSignature<Javax.Management.AttributeList>("setAttributes", "(Ljavax/management/AttributeList;)Ljavax/management/AttributeList;", arg0);
+            return IExecute<Javax.Management.AttributeList>("setAttributes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
@@ -212,14 +212,14 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void Load()
         {
-            IExecuteWithSignature("load", "()V");
+            IExecute("load");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#postDeregister()"/>
         /// </summary>
         public void PostDeregister()
         {
-            IExecuteWithSignature("postDeregister", "()V");
+            IExecute("postDeregister");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#postRegister(java.lang.Boolean)"/>
@@ -227,7 +227,7 @@ namespace Javax.Management.Modelmbean
         /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
         public void PostRegister(Java.Lang.Boolean arg0)
         {
-            IExecuteWithSignature("postRegister", "(Ljava/lang/Boolean;)V", arg0);
+            IExecute("postRegister", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#preDeregister()"/>
@@ -235,7 +235,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
-            IExecuteWithSignature("preDeregister", "()V");
+            IExecute("preDeregister");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#removeAttributeChangeNotificationListener(javax.management.NotificationListener,java.lang.String)"/>
@@ -267,7 +267,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0)
         {
-            IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/NotificationListener;)V", arg0);
+            IExecute("removeNotificationListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#sendAttributeChangeNotification(javax.management.Attribute,javax.management.Attribute)"/>
@@ -288,7 +288,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendAttributeChangeNotification(Javax.Management.AttributeChangeNotification arg0)
         {
-            IExecuteWithSignature("sendAttributeChangeNotification", "(Ljavax/management/AttributeChangeNotification;)V", arg0);
+            IExecute("sendAttributeChangeNotification", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#sendNotification(java.lang.String)"/>
@@ -298,7 +298,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendNotification(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("sendNotification", "(Ljava/lang/String;)V", arg0);
+            IExecute("sendNotification", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#sendNotification(javax.management.Notification)"/>
@@ -308,7 +308,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendNotification(Javax.Management.Notification arg0)
         {
-            IExecuteWithSignature("sendNotification", "(Ljavax/management/Notification;)V", arg0);
+            IExecute("sendNotification", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#setAttribute(javax.management.Attribute)"/>
@@ -320,7 +320,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.ReflectionException"/>
         public void SetAttribute(Javax.Management.Attribute arg0)
         {
-            IExecuteWithSignature("setAttribute", "(Ljavax/management/Attribute;)V", arg0);
+            IExecute("setAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#setManagedResource(java.lang.Object,java.lang.String)"/>
@@ -343,7 +343,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetModelMBeanInfo(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
         {
-            IExecuteWithSignature("setModelMBeanInfo", "(Ljavax/management/modelmbean/ModelMBeanInfo;)V", arg0);
+            IExecute("setModelMBeanInfo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#store()"/>
@@ -353,7 +353,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void Store()
         {
-            IExecuteWithSignature("store", "()V");
+            IExecute("store");
         }
 
         #endregion

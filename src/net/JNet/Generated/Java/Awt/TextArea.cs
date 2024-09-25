@@ -161,21 +161,21 @@ namespace Java.Awt
         /// </summary>
         public int Columns
         {
-            get { return IExecuteWithSignature<int>("getColumns", "()I"); } set { IExecuteWithSignature("setColumns", "(I)V", value); }
+            get { return IExecute<int>("getColumns"); } set { IExecute("setColumns", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#setRows(int)"/>
         /// </summary>
         public int Rows
         {
-            get { return IExecuteWithSignature<int>("getRows", "()I"); } set { IExecuteWithSignature("setRows", "(I)V", value); }
+            get { return IExecute<int>("getRows"); } set { IExecute("setRows", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getScrollbarVisibility()"/> 
         /// </summary>
         public int ScrollbarVisibility
         {
-            get { return IExecuteWithSignature<int>("getScrollbarVisibility", "()I"); }
+            get { return IExecute<int>("getScrollbarVisibility"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getMinimumSize(int,int)"/>
@@ -203,7 +203,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Append(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("append", "(Ljava/lang/String;)V", arg0);
+            IExecute("append", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#insert(java.lang.String,int)"/>

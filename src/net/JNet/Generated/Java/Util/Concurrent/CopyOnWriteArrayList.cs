@@ -167,7 +167,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object[] ToArray(object[] arg0)
         {
-            return IExecuteWithSignatureArray<object>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
+            return IExecuteArray<object>("toArray", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(java.lang.Object)"/>
@@ -176,7 +176,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Add(object arg0)
         {
-            return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAll(int,java.util.Collection)"/>
@@ -195,7 +195,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool AddAll(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("addAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addIfAbsent(java.lang.Object)"/>
@@ -204,7 +204,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool AddIfAbsent(object arg0)
         {
-            return IExecuteWithSignature<bool>("addIfAbsent", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("addIfAbsent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#contains(java.lang.Object)"/>
@@ -213,7 +213,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#containsAll(java.util.Collection)"/>
@@ -222,7 +222,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool ContainsAll(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("containsAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#isEmpty()"/>
@@ -230,7 +230,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#remove(java.lang.Object)"/>
@@ -239,7 +239,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0)
         {
-            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeAll(java.util.Collection)"/>
@@ -248,7 +248,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAll(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("removeAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeIf(java.util.function.Predicate)"/>
@@ -257,7 +257,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool RemoveIf(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<bool>("removeIf", "(Ljava/util/function/Predicate;)Z", arg0);
+            return IExecute<bool>("removeIf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#retainAll(java.util.Collection)"/>
@@ -266,7 +266,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool RetainAll(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("retainAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#get(int)"/>
@@ -275,7 +275,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object Get(int arg0)
         {
-            return IExecuteWithSignature("get", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#remove(int)"/>
@@ -284,7 +284,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object Remove(int arg0)
         {
-            return IExecuteWithSignature("remove", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#set(int,java.lang.Object)"/>
@@ -303,7 +303,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int AddAllAbsent(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<int>("addAllAbsent", "(Ljava/util/Collection;)I", arg0);
+            return IExecute<int>("addAllAbsent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object,int)"/>
@@ -322,7 +322,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int IndexOf(object arg0)
         {
-            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("indexOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object,int)"/>
@@ -341,7 +341,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int LastIndexOf(object arg0)
         {
-            return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("lastIndexOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#size()"/>
@@ -349,7 +349,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#toArray()"/>
@@ -357,7 +357,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
-            return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
+            return IExecuteArray<object>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#iterator()"/>
@@ -365,7 +365,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#subList(int,int)"/>
@@ -383,7 +383,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator ListIterator()
         {
-            return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "()Ljava/util/ListIterator;");
+            return IExecute<Java.Util.ListIterator>("listIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#listIterator(int)"/>
@@ -392,7 +392,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator ListIterator(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
+            return IExecute<Java.Util.ListIterator>("listIterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#spliterator()"/>
@@ -400,7 +400,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
         {
-            return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
+            return IExecute<Java.Util.Spliterator>("spliterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(int,java.lang.Object)"/>
@@ -416,7 +416,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#forEach(java.util.function.Consumer)"/>
@@ -424,7 +424,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         public void ForEach(Java.Util.Function.Consumer arg0)
         {
-            IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
+            IExecute("forEach", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#replaceAll(java.util.function.UnaryOperator)"/>
@@ -432,7 +432,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         public void ReplaceAll(Java.Util.Function.UnaryOperator arg0)
         {
-            IExecuteWithSignature("replaceAll", "(Ljava/util/function/UnaryOperator;)V", arg0);
+            IExecute("replaceAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#sort(java.util.Comparator)"/>
@@ -440,7 +440,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
         public void Sort(Java.Util.Comparator arg0)
         {
-            IExecuteWithSignature("sort", "(Ljava/util/Comparator;)V", arg0);
+            IExecute("sort", arg0);
         }
 
         #endregion
@@ -517,7 +517,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="T"/></returns>
         public T[] ToArray<T>(T[] arg0)
         {
-            return IExecuteWithSignatureArray<T>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
+            return IExecuteArray<T>("toArray", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(java.lang.Object)"/>
@@ -526,7 +526,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Add(E arg0)
         {
-            return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAll(int,java.util.Collection)"/>
@@ -547,7 +547,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
-            return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("addAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addIfAbsent(java.lang.Object)"/>
@@ -556,7 +556,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool AddIfAbsent(E arg0)
         {
-            return IExecuteWithSignature<bool>("addIfAbsent", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("addIfAbsent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#contains(java.lang.Object)"/>
@@ -565,7 +565,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#containsAll(java.util.Collection)"/>
@@ -574,7 +574,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool ContainsAll(Java.Util.Collection<object> arg0)
         {
-            return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("containsAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#isEmpty()"/>
@@ -582,7 +582,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#remove(java.lang.Object)"/>
@@ -591,7 +591,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0)
         {
-            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeAll(java.util.Collection)"/>
@@ -600,7 +600,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAll(Java.Util.Collection<object> arg0)
         {
-            return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("removeAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeIf(java.util.function.Predicate)"/>
@@ -610,7 +610,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
-            return IExecuteWithSignature<bool>("removeIf", "(Ljava/util/function/Predicate;)Z", arg0);
+            return IExecute<bool>("removeIf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#retainAll(java.util.Collection)"/>
@@ -619,7 +619,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool RetainAll(Java.Util.Collection<object> arg0)
         {
-            return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("retainAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#get(int)"/>
@@ -628,7 +628,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E Get(int arg0)
         {
-            return IExecuteWithSignature<E>("get", "(I)Ljava/lang/Object;", arg0);
+            return IExecute<E>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#remove(int)"/>
@@ -637,7 +637,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E Remove(int arg0)
         {
-            return IExecuteWithSignature<E>("remove", "(I)Ljava/lang/Object;", arg0);
+            return IExecute<E>("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#set(int,java.lang.Object)"/>
@@ -657,7 +657,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int AddAllAbsent<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
-            return IExecuteWithSignature<int>("addAllAbsent", "(Ljava/util/Collection;)I", arg0);
+            return IExecute<int>("addAllAbsent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(java.lang.Object,int)"/>
@@ -676,7 +676,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int IndexOf(object arg0)
         {
-            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("indexOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#lastIndexOf(java.lang.Object,int)"/>
@@ -695,7 +695,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int LastIndexOf(object arg0)
         {
-            return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("lastIndexOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#size()"/>
@@ -703,7 +703,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#toArray()"/>
@@ -711,7 +711,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
-            return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
+            return IExecuteArray<object>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#iterator()"/>
@@ -719,7 +719,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("iterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator<E>>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#subList(int,int)"/>
@@ -737,7 +737,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator<E> ListIterator()
         {
-            return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "()Ljava/util/ListIterator;");
+            return IExecute<Java.Util.ListIterator<E>>("listIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#listIterator(int)"/>
@@ -746,7 +746,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator<E> ListIterator(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
+            return IExecute<Java.Util.ListIterator<E>>("listIterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#spliterator()"/>
@@ -754,7 +754,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator<E> Spliterator()
         {
-            return IExecuteWithSignature<Java.Util.Spliterator<E>>("spliterator", "()Ljava/util/Spliterator;");
+            return IExecute<Java.Util.Spliterator<E>>("spliterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(int,java.lang.Object)"/>
@@ -770,7 +770,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#forEach(java.util.function.Consumer)"/>
@@ -779,7 +779,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         public void ForEach<Arg0objectSuperE>(Java.Util.Function.Consumer<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
-            IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
+            IExecute("forEach", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#replaceAll(java.util.function.UnaryOperator)"/>
@@ -787,7 +787,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         public void ReplaceAll(Java.Util.Function.UnaryOperator<E> arg0)
         {
-            IExecuteWithSignature("replaceAll", "(Ljava/util/function/UnaryOperator;)V", arg0);
+            IExecute("replaceAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#sort(java.util.Comparator)"/>
@@ -796,7 +796,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         public void Sort<Arg0objectSuperE>(Java.Util.Comparator<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
-            IExecuteWithSignature("sort", "(Ljava/util/Comparator;)V", arg0);
+            IExecute("sort", arg0);
         }
 
         #endregion

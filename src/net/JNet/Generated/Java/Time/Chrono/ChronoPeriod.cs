@@ -189,14 +189,14 @@ namespace Java.Time.Chrono
         /// </summary>
         public Java.Time.Chrono.Chronology Chronology
         {
-            get { return IExecuteWithSignature<Java.Time.Chrono.Chronology>("getChronology", "()Ljava/time/chrono/Chronology;"); }
+            get { return IExecute<Java.Time.Chrono.Chronology>("getChronology"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#getUnits()"/> 
         /// </summary>
         public Java.Util.List<Java.Time.Temporal.TemporalUnit> Units
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Time.Temporal.TemporalUnit>>("getUnits", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Java.Time.Temporal.TemporalUnit>>("getUnits"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#minus(java.time.temporal.TemporalAmount)"/>
@@ -205,7 +205,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Minus(Java.Time.Temporal.TemporalAmount arg0)
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("minus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/chrono/ChronoPeriod;", arg0);
+            return IExecute<Java.Time.Chrono.ChronoPeriod>("minus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#multipliedBy(int)"/>
@@ -214,7 +214,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod MultipliedBy(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("multipliedBy", "(I)Ljava/time/chrono/ChronoPeriod;", arg0);
+            return IExecute<Java.Time.Chrono.ChronoPeriod>("multipliedBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#normalized()"/>
@@ -222,7 +222,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Normalized()
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("normalized", "()Ljava/time/chrono/ChronoPeriod;");
+            return IExecute<Java.Time.Chrono.ChronoPeriod>("normalized");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#plus(java.time.temporal.TemporalAmount)"/>
@@ -231,7 +231,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Plus(Java.Time.Temporal.TemporalAmount arg0)
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("plus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/chrono/ChronoPeriod;", arg0);
+            return IExecute<Java.Time.Chrono.ChronoPeriod>("plus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#addTo(java.time.temporal.Temporal)"/>
@@ -240,7 +240,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AddTo(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("addTo", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("addTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#subtractFrom(java.time.temporal.Temporal)"/>
@@ -249,7 +249,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal SubtractFrom(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("subtractFrom", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("subtractFrom", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#get(java.time.temporal.TemporalUnit)"/>
@@ -258,7 +258,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="long"/></returns>
         public long Get(Java.Time.Temporal.TemporalUnit arg0)
         {
-            return IExecuteWithSignature<long>("get", "(Ljava/time/temporal/TemporalUnit;)J", arg0);
+            return IExecute<long>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isNegative()"/>
@@ -266,7 +266,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="bool"/></returns>
         public bool IsNegative()
         {
-            return IExecuteWithSignature<bool>("isNegative", "()Z");
+            return IExecute<bool>("isNegative");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isZero()"/>
@@ -274,7 +274,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="bool"/></returns>
         public bool IsZero()
         {
-            return IExecuteWithSignature<bool>("isZero", "()Z");
+            return IExecute<bool>("isZero");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#negated()"/>
@@ -282,7 +282,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Negated()
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("negated", "()Ljava/time/chrono/ChronoPeriod;");
+            return IExecute<Java.Time.Chrono.ChronoPeriod>("negated");
         }
 
         #endregion

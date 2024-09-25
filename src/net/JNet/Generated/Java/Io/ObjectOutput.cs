@@ -160,7 +160,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutput.html#flush()"/>
@@ -168,7 +168,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
-            IExecuteWithSignature("flush", "()V");
+            IExecute("flush");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutput.html#write(byte[],int,int)"/>
@@ -188,7 +188,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(byte[] arg0)
         {
-            IExecuteWithSignature("write", "([B)V", new object[] { arg0 });
+            IExecute("write", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutput.html#write(int)"/>
@@ -197,7 +197,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(int arg0)
         {
-            IExecuteWithSignature("write", "(I)V", arg0);
+            IExecute("write", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutput.html#writeObject(java.lang.Object)"/>
@@ -206,7 +206,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteObject(object arg0)
         {
-            IExecuteWithSignature("writeObject", "(Ljava/lang/Object;)V", arg0);
+            IExecute("writeObject", arg0);
         }
 
         #endregion

@@ -207,7 +207,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public override bool IsNotificationEnabled(Javax.Management.Notification arg0)
         {
-            return IExecuteWithSignature<bool>("isNotificationEnabled", "(Ljavax/management/Notification;)Z", arg0);
+            return IExecute<bool>("isNotificationEnabled", arg0);
         }
 
         #endregion

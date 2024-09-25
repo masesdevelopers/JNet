@@ -142,21 +142,21 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         public Java.Lang.String CharacterEncodingScheme
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCharacterEncodingScheme", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCharacterEncodingScheme"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#getSystemId()"/> 
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#getVersion()"/> 
         /// </summary>
         public Java.Lang.String Version
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#encodingSet()"/>
@@ -164,7 +164,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool EncodingSet()
         {
-            return IExecuteWithSignature<bool>("encodingSet", "()Z");
+            return IExecute<bool>("encodingSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#isStandalone()"/>
@@ -172,7 +172,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsStandalone()
         {
-            return IExecuteWithSignature<bool>("isStandalone", "()Z");
+            return IExecute<bool>("isStandalone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#standaloneSet()"/>
@@ -180,7 +180,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool StandaloneSet()
         {
-            return IExecuteWithSignature<bool>("standaloneSet", "()Z");
+            return IExecute<bool>("standaloneSet");
         }
 
         #endregion

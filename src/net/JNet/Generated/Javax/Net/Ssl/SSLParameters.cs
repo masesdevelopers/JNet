@@ -112,84 +112,84 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Security.AlgorithmConstraints AlgorithmConstraints
         {
-            get { return IExecuteWithSignature<Java.Security.AlgorithmConstraints>("getAlgorithmConstraints", "()Ljava/security/AlgorithmConstraints;"); } set { IExecuteWithSignature("setAlgorithmConstraints", "(Ljava/security/AlgorithmConstraints;)V", value); }
+            get { return IExecute<Java.Security.AlgorithmConstraints>("getAlgorithmConstraints"); } set { IExecute("setAlgorithmConstraints", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getApplicationProtocols()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setApplicationProtocols(java.lang.String[])"/>
         /// </summary>
         public Java.Lang.String[] ApplicationProtocols
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getApplicationProtocols", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setApplicationProtocols", "([Ljava/lang/String;)V", value); }
+            get { return IExecuteArray<Java.Lang.String>("getApplicationProtocols"); } set { IExecute("setApplicationProtocols", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getCipherSuites()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setCipherSuites(java.lang.String[])"/>
         /// </summary>
         public Java.Lang.String[] CipherSuites
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getCipherSuites", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setCipherSuites", "([Ljava/lang/String;)V", value); }
+            get { return IExecuteArray<Java.Lang.String>("getCipherSuites"); } set { IExecute("setCipherSuites", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getEnableRetransmissions()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setEnableRetransmissions(boolean)"/>
         /// </summary>
         public bool EnableRetransmissions
         {
-            get { return IExecuteWithSignature<bool>("getEnableRetransmissions", "()Z"); } set { IExecuteWithSignature("setEnableRetransmissions", "(Z)V", value); }
+            get { return IExecute<bool>("getEnableRetransmissions"); } set { IExecute("setEnableRetransmissions", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getEndpointIdentificationAlgorithm()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setEndpointIdentificationAlgorithm(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String EndpointIdentificationAlgorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEndpointIdentificationAlgorithm", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEndpointIdentificationAlgorithm", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getEndpointIdentificationAlgorithm"); } set { IExecute("setEndpointIdentificationAlgorithm", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getMaximumPacketSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setMaximumPacketSize(int)"/>
         /// </summary>
         public int MaximumPacketSize
         {
-            get { return IExecuteWithSignature<int>("getMaximumPacketSize", "()I"); } set { IExecuteWithSignature("setMaximumPacketSize", "(I)V", value); }
+            get { return IExecute<int>("getMaximumPacketSize"); } set { IExecute("setMaximumPacketSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getNeedClientAuth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setNeedClientAuth(boolean)"/>
         /// </summary>
         public bool NeedClientAuth
         {
-            get { return IExecuteWithSignature<bool>("getNeedClientAuth", "()Z"); } set { IExecuteWithSignature("setNeedClientAuth", "(Z)V", value); }
+            get { return IExecute<bool>("getNeedClientAuth"); } set { IExecute("setNeedClientAuth", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getProtocols()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setProtocols(java.lang.String[])"/>
         /// </summary>
         public Java.Lang.String[] Protocols
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getProtocols", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setProtocols", "([Ljava/lang/String;)V", value); }
+            get { return IExecuteArray<Java.Lang.String>("getProtocols"); } set { IExecute("setProtocols", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getServerNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setServerNames(java.util.List)"/>
         /// </summary>
         public Java.Util.List<Javax.Net.Ssl.SNIServerName> ServerNames
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Net.Ssl.SNIServerName>>("getServerNames", "()Ljava/util/List;"); } set { IExecuteWithSignature("setServerNames", "(Ljava/util/List;)V", value); }
+            get { return IExecute<Java.Util.List<Javax.Net.Ssl.SNIServerName>>("getServerNames"); } set { IExecute("setServerNames", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getSNIMatchers()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setSNIMatchers(java.util.Collection)"/>
         /// </summary>
         public Java.Util.Collection<Javax.Net.Ssl.SNIMatcher> SNIMatchers
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Javax.Net.Ssl.SNIMatcher>>("getSNIMatchers", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setSNIMatchers", "(Ljava/util/Collection;)V", value); }
+            get { return IExecute<Java.Util.Collection<Javax.Net.Ssl.SNIMatcher>>("getSNIMatchers"); } set { IExecute("setSNIMatchers", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getUseCipherSuitesOrder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setUseCipherSuitesOrder(boolean)"/>
         /// </summary>
         public bool UseCipherSuitesOrder
         {
-            get { return IExecuteWithSignature<bool>("getUseCipherSuitesOrder", "()Z"); } set { IExecuteWithSignature("setUseCipherSuitesOrder", "(Z)V", value); }
+            get { return IExecute<bool>("getUseCipherSuitesOrder"); } set { IExecute("setUseCipherSuitesOrder", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getWantClientAuth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setWantClientAuth(boolean)"/>
         /// </summary>
         public bool WantClientAuth
         {
-            get { return IExecuteWithSignature<bool>("getWantClientAuth", "()Z"); } set { IExecuteWithSignature("setWantClientAuth", "(Z)V", value); }
+            get { return IExecute<bool>("getWantClientAuth"); } set { IExecute("setWantClientAuth", value); }
         }
 
         #endregion

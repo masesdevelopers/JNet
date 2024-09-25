@@ -201,7 +201,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object Take()
         {
-            return IExecuteWithSignature("take", "()Ljava/lang/Object;");
+            return IExecute("take");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html#drainTo(java.util.Collection,int)"/>
@@ -220,7 +220,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainTo(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
+            return IExecute<int>("drainTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html#remainingCapacity()"/>
@@ -228,7 +228,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int RemainingCapacity()
         {
-            return IExecuteWithSignature<int>("remainingCapacity", "()I");
+            return IExecute<int>("remainingCapacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html#put(java.lang.Object)"/>
@@ -237,7 +237,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Put(object arg0)
         {
-            IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
+            IExecute("put", arg0);
         }
 
         #endregion
@@ -339,7 +339,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public E Take()
         {
-            return IExecuteWithSignature<E>("take", "()Ljava/lang/Object;");
+            return IExecute<E>("take");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html#drainTo(java.util.Collection,int)"/>
@@ -360,7 +360,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
-            return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
+            return IExecute<int>("drainTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html#remainingCapacity()"/>
@@ -368,7 +368,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int RemainingCapacity()
         {
-            return IExecuteWithSignature<int>("remainingCapacity", "()I");
+            return IExecute<int>("remainingCapacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html#put(java.lang.Object)"/>
@@ -377,7 +377,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Put(E arg0)
         {
-            IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
+            IExecute("put", arg0);
         }
 
         #endregion

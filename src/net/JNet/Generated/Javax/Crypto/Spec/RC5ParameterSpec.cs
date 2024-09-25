@@ -128,28 +128,28 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public byte[] IV
         {
-            get { return IExecuteWithSignatureArray<byte>("getIV", "()[B"); }
+            get { return IExecuteArray<byte>("getIV"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#getRounds()"/> 
         /// </summary>
         public int Rounds
         {
-            get { return IExecuteWithSignature<int>("getRounds", "()I"); }
+            get { return IExecute<int>("getRounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#getVersion()"/> 
         /// </summary>
         public int Version
         {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
+            get { return IExecute<int>("getVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#getWordSize()"/> 
         /// </summary>
         public int WordSize
         {
-            get { return IExecuteWithSignature<int>("getWordSize", "()I"); }
+            get { return IExecute<int>("getWordSize"); }
         }
 
         #endregion

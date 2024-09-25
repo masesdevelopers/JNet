@@ -197,21 +197,21 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Geom.Point2D CenterPoint
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getCenterPoint", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getCenterPoint"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#getFocusPoint()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D FocusPoint
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getFocusPoint", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getFocusPoint"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#getRadius()"/> 
         /// </summary>
         public float Radius
         {
-            get { return IExecuteWithSignature<float>("getRadius", "()F"); }
+            get { return IExecute<float>("getRadius"); }
         }
 
         #endregion

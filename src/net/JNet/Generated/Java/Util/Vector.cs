@@ -179,7 +179,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Elements()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration>("elements", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration>("elements");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElement(java.lang.Object)"/>
@@ -188,7 +188,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveElement(object arg0)
         {
-            return IExecuteWithSignature<bool>("removeElement", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("removeElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elementAt(int)"/>
@@ -197,7 +197,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object ElementAt(int arg0)
         {
-            return IExecuteWithSignature("elementAt", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("elementAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#firstElement()"/>
@@ -205,7 +205,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object FirstElement()
         {
-            return IExecuteWithSignature("firstElement", "()Ljava/lang/Object;");
+            return IExecute("firstElement");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastElement()"/>
@@ -213,7 +213,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object LastElement()
         {
-            return IExecuteWithSignature("lastElement", "()Ljava/lang/Object;");
+            return IExecute("lastElement");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#capacity()"/>
@@ -221,7 +221,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Capacity()
         {
-            return IExecuteWithSignature<int>("capacity", "()I");
+            return IExecute<int>("capacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#indexOf(java.lang.Object,int)"/>
@@ -249,7 +249,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         public void AddElement(object arg0)
         {
-            IExecuteWithSignature("addElement", "(Ljava/lang/Object;)V", arg0);
+            IExecute("addElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#copyInto(java.lang.Object[])"/>
@@ -257,7 +257,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         public void CopyInto(object[] arg0)
         {
-            IExecuteWithSignature("copyInto", "([Ljava/lang/Object;)V", new object[] { arg0 });
+            IExecute("copyInto", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#ensureCapacity(int)"/>
@@ -265,7 +265,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void EnsureCapacity(int arg0)
         {
-            IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
+            IExecute("ensureCapacity", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#insertElementAt(java.lang.Object,int)"/>
@@ -281,7 +281,7 @@ namespace Java.Util
         /// </summary>
         public void RemoveAllElements()
         {
-            IExecuteWithSignature("removeAllElements", "()V");
+            IExecute("removeAllElements");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElementAt(int)"/>
@@ -289,7 +289,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveElementAt(int arg0)
         {
-            IExecuteWithSignature("removeElementAt", "(I)V", arg0);
+            IExecute("removeElementAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#setElementAt(java.lang.Object,int)"/>
@@ -306,14 +306,14 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void SetSize(int arg0)
         {
-            IExecuteWithSignature("setSize", "(I)V", arg0);
+            IExecute("setSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#trimToSize()"/>
         /// </summary>
         public void TrimToSize()
         {
-            IExecuteWithSignature("trimToSize", "()V");
+            IExecute("trimToSize");
         }
 
         #endregion
@@ -393,7 +393,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<E> Elements()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<E>>("elements", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration<E>>("elements");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElement(java.lang.Object)"/>
@@ -402,7 +402,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveElement(object arg0)
         {
-            return IExecuteWithSignature<bool>("removeElement", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("removeElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elementAt(int)"/>
@@ -411,7 +411,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E ElementAt(int arg0)
         {
-            return IExecuteWithSignature<E>("elementAt", "(I)Ljava/lang/Object;", arg0);
+            return IExecute<E>("elementAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#firstElement()"/>
@@ -419,7 +419,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E FirstElement()
         {
-            return IExecuteWithSignature<E>("firstElement", "()Ljava/lang/Object;");
+            return IExecute<E>("firstElement");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastElement()"/>
@@ -427,7 +427,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E LastElement()
         {
-            return IExecuteWithSignature<E>("lastElement", "()Ljava/lang/Object;");
+            return IExecute<E>("lastElement");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#capacity()"/>
@@ -435,7 +435,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Capacity()
         {
-            return IExecuteWithSignature<int>("capacity", "()I");
+            return IExecute<int>("capacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#indexOf(java.lang.Object,int)"/>
@@ -463,7 +463,7 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddElement(E arg0)
         {
-            IExecuteWithSignature("addElement", "(Ljava/lang/Object;)V", arg0);
+            IExecute("addElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#copyInto(java.lang.Object[])"/>
@@ -471,7 +471,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         public void CopyInto(object[] arg0)
         {
-            IExecuteWithSignature("copyInto", "([Ljava/lang/Object;)V", new object[] { arg0 });
+            IExecute("copyInto", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#ensureCapacity(int)"/>
@@ -479,7 +479,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void EnsureCapacity(int arg0)
         {
-            IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
+            IExecute("ensureCapacity", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#insertElementAt(java.lang.Object,int)"/>
@@ -495,7 +495,7 @@ namespace Java.Util
         /// </summary>
         public void RemoveAllElements()
         {
-            IExecuteWithSignature("removeAllElements", "()V");
+            IExecute("removeAllElements");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElementAt(int)"/>
@@ -503,7 +503,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveElementAt(int arg0)
         {
-            IExecuteWithSignature("removeElementAt", "(I)V", arg0);
+            IExecute("removeElementAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#setElementAt(java.lang.Object,int)"/>
@@ -520,14 +520,14 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void SetSize(int arg0)
         {
-            IExecuteWithSignature("setSize", "(I)V", arg0);
+            IExecute("setSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#trimToSize()"/>
         /// </summary>
         public void TrimToSize()
         {
-            IExecuteWithSignature("trimToSize", "()V");
+            IExecute("trimToSize");
         }
 
         #endregion

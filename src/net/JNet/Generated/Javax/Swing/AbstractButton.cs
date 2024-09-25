@@ -219,175 +219,175 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Action Action
         {
-            get { return IExecuteWithSignature<Javax.Swing.Action>("getAction", "()Ljavax/swing/Action;"); } set { IExecuteWithSignature("setAction", "(Ljavax/swing/Action;)V", value); }
+            get { return IExecute<Javax.Swing.Action>("getAction"); } set { IExecute("setAction", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getActionCommand()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setActionCommand(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String ActionCommand
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getActionCommand", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setActionCommand", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getActionCommand"); } set { IExecute("setActionCommand", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getActionListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ActionListener[] ActionListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ActionListener>("getActionListeners", "()[Ljava/awt/event/ActionListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.ActionListener>("getActionListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getChangeListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.ChangeListener[] ChangeListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.ChangeListener>("getChangeListeners", "()[Ljavax/swing/event/ChangeListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.ChangeListener>("getChangeListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getDisabledIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setDisabledIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon DisabledIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getDisabledIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setDisabledIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getDisabledIcon"); } set { IExecute("setDisabledIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getDisabledSelectedIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setDisabledSelectedIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon DisabledSelectedIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getDisabledSelectedIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setDisabledSelectedIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getDisabledSelectedIcon"); } set { IExecute("setDisabledSelectedIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getDisplayedMnemonicIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setDisplayedMnemonicIndex(int)"/>
         /// </summary>
         public int DisplayedMnemonicIndex
         {
-            get { return IExecuteWithSignature<int>("getDisplayedMnemonicIndex", "()I"); } set { IExecuteWithSignature("setDisplayedMnemonicIndex", "(I)V", value); }
+            get { return IExecute<int>("getDisplayedMnemonicIndex"); } set { IExecute("setDisplayedMnemonicIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getHideActionText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setHideActionText(boolean)"/>
         /// </summary>
         public bool HideActionText
         {
-            get { return IExecuteWithSignature<bool>("getHideActionText", "()Z"); } set { IExecuteWithSignature("setHideActionText", "(Z)V", value); }
+            get { return IExecute<bool>("getHideActionText"); } set { IExecute("setHideActionText", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getHorizontalAlignment()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setHorizontalAlignment(int)"/>
         /// </summary>
         public int HorizontalAlignment
         {
-            get { return IExecuteWithSignature<int>("getHorizontalAlignment", "()I"); } set { IExecuteWithSignature("setHorizontalAlignment", "(I)V", value); }
+            get { return IExecute<int>("getHorizontalAlignment"); } set { IExecute("setHorizontalAlignment", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getHorizontalTextPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setHorizontalTextPosition(int)"/>
         /// </summary>
         public int HorizontalTextPosition
         {
-            get { return IExecuteWithSignature<int>("getHorizontalTextPosition", "()I"); } set { IExecuteWithSignature("setHorizontalTextPosition", "(I)V", value); }
+            get { return IExecute<int>("getHorizontalTextPosition"); } set { IExecute("setHorizontalTextPosition", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon Icon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getIcon"); } set { IExecute("setIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getIconTextGap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setIconTextGap(int)"/>
         /// </summary>
         public int IconTextGap
         {
-            get { return IExecuteWithSignature<int>("getIconTextGap", "()I"); } set { IExecuteWithSignature("setIconTextGap", "(I)V", value); }
+            get { return IExecute<int>("getIconTextGap"); } set { IExecute("setIconTextGap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getItemListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ItemListener[] ItemListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ItemListener>("getItemListeners", "()[Ljava/awt/event/ItemListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.ItemListener>("getItemListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getMargin()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMargin(java.awt.Insets)"/>
         /// </summary>
         public Java.Awt.Insets Margin
         {
-            get { return IExecuteWithSignature<Java.Awt.Insets>("getMargin", "()Ljava/awt/Insets;"); } set { IExecuteWithSignature("setMargin", "(Ljava/awt/Insets;)V", value); }
+            get { return IExecute<Java.Awt.Insets>("getMargin"); } set { IExecute("setMargin", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getMnemonic()"/> 
         /// </summary>
         public int Mnemonic
         {
-            get { return IExecuteWithSignature<int>("getMnemonic", "()I"); }
+            get { return IExecute<int>("getMnemonic"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setModel(javax.swing.ButtonModel)"/>
         /// </summary>
         public Javax.Swing.ButtonModel Model
         {
-            get { return IExecuteWithSignature<Javax.Swing.ButtonModel>("getModel", "()Ljavax/swing/ButtonModel;"); } set { IExecuteWithSignature("setModel", "(Ljavax/swing/ButtonModel;)V", value); }
+            get { return IExecute<Javax.Swing.ButtonModel>("getModel"); } set { IExecute("setModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getMultiClickThreshhold()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMultiClickThreshhold(long)"/>
         /// </summary>
         public long MultiClickThreshhold
         {
-            get { return IExecuteWithSignature<long>("getMultiClickThreshhold", "()J"); } set { IExecuteWithSignature("setMultiClickThreshhold", "(J)V", value); }
+            get { return IExecute<long>("getMultiClickThreshhold"); } set { IExecute("setMultiClickThreshhold", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getPressedIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setPressedIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon PressedIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getPressedIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setPressedIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getPressedIcon"); } set { IExecute("setPressedIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getRolloverIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setRolloverIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon RolloverIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getRolloverIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setRolloverIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getRolloverIcon"); } set { IExecute("setRolloverIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getRolloverSelectedIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setRolloverSelectedIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon RolloverSelectedIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getRolloverSelectedIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setRolloverSelectedIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getRolloverSelectedIcon"); } set { IExecute("setRolloverSelectedIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getSelectedIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setSelectedIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon SelectedIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getSelectedIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setSelectedIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getSelectedIcon"); } set { IExecute("setSelectedIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getSelectedObjects()"/> 
         /// </summary>
         public object[] SelectedObjects
         {
-            get { return IExecuteWithSignatureArray<object>("getSelectedObjects", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getSelectedObjects"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setText(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Text
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setText", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getText"); } set { IExecute("setText", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getVerticalAlignment()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setVerticalAlignment(int)"/>
         /// </summary>
         public int VerticalAlignment
         {
-            get { return IExecuteWithSignature<int>("getVerticalAlignment", "()I"); } set { IExecuteWithSignature("setVerticalAlignment", "(I)V", value); }
+            get { return IExecute<int>("getVerticalAlignment"); } set { IExecute("setVerticalAlignment", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getVerticalTextPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setVerticalTextPosition(int)"/>
         /// </summary>
         public int VerticalTextPosition
         {
-            get { return IExecuteWithSignature<int>("getVerticalTextPosition", "()I"); } set { IExecuteWithSignature("setVerticalTextPosition", "(I)V", value); }
+            get { return IExecute<int>("getVerticalTextPosition"); } set { IExecute("setVerticalTextPosition", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isBorderPainted()"/>
@@ -395,7 +395,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsBorderPainted()
         {
-            return IExecuteWithSignature<bool>("isBorderPainted", "()Z");
+            return IExecute<bool>("isBorderPainted");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isContentAreaFilled()"/>
@@ -403,7 +403,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsContentAreaFilled()
         {
-            return IExecuteWithSignature<bool>("isContentAreaFilled", "()Z");
+            return IExecute<bool>("isContentAreaFilled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isFocusPainted()"/>
@@ -411,7 +411,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusPainted()
         {
-            return IExecuteWithSignature<bool>("isFocusPainted", "()Z");
+            return IExecute<bool>("isFocusPainted");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isRolloverEnabled()"/>
@@ -419,7 +419,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsRolloverEnabled()
         {
-            return IExecuteWithSignature<bool>("isRolloverEnabled", "()Z");
+            return IExecute<bool>("isRolloverEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isSelected()"/>
@@ -427,7 +427,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSelected()
         {
-            return IExecuteWithSignature<bool>("isSelected", "()Z");
+            return IExecute<bool>("isSelected");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addActionListener(java.awt.event.ActionListener)"/>
@@ -435,7 +435,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
+            IExecute("addActionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addChangeListener(javax.swing.event.ChangeListener)"/>
@@ -443,7 +443,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("addChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addItemListener(java.awt.event.ItemListener)"/>
@@ -451,14 +451,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecuteWithSignature("addItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
+            IExecute("addItemListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#doClick()"/>
         /// </summary>
         public void DoClick()
         {
-            IExecuteWithSignature("doClick", "()V");
+            IExecute("doClick");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#doClick(int)"/>
@@ -466,7 +466,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void DoClick(int arg0)
         {
-            IExecuteWithSignature("doClick", "(I)V", arg0);
+            IExecute("doClick", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#removeActionListener(java.awt.event.ActionListener)"/>
@@ -474,7 +474,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
+            IExecute("removeActionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
@@ -482,7 +482,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("removeChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#removeItemListener(java.awt.event.ItemListener)"/>
@@ -490,7 +490,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecuteWithSignature("removeItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
+            IExecute("removeItemListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setBorderPainted(boolean)"/>
@@ -498,7 +498,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetBorderPainted(bool arg0)
         {
-            IExecuteWithSignature("setBorderPainted", "(Z)V", arg0);
+            IExecute("setBorderPainted", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setContentAreaFilled(boolean)"/>
@@ -506,7 +506,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetContentAreaFilled(bool arg0)
         {
-            IExecuteWithSignature("setContentAreaFilled", "(Z)V", arg0);
+            IExecute("setContentAreaFilled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setFocusPainted(boolean)"/>
@@ -514,7 +514,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetFocusPainted(bool arg0)
         {
-            IExecuteWithSignature("setFocusPainted", "(Z)V", arg0);
+            IExecute("setFocusPainted", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMnemonic(char)"/>
@@ -522,7 +522,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="char"/></param>
         public void SetMnemonic(char arg0)
         {
-            IExecuteWithSignature("setMnemonic", "(C)V", arg0);
+            IExecute("setMnemonic", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMnemonic(int)"/>
@@ -530,7 +530,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void SetMnemonic(int arg0)
         {
-            IExecuteWithSignature("setMnemonic", "(I)V", arg0);
+            IExecute("setMnemonic", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setRolloverEnabled(boolean)"/>
@@ -538,7 +538,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetRolloverEnabled(bool arg0)
         {
-            IExecuteWithSignature("setRolloverEnabled", "(Z)V", arg0);
+            IExecute("setRolloverEnabled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setSelected(boolean)"/>
@@ -546,7 +546,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetSelected(bool arg0)
         {
-            IExecuteWithSignature("setSelected", "(Z)V", arg0);
+            IExecute("setSelected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setUI(javax.swing.plaf.ButtonUI)"/>
@@ -554,7 +554,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.ButtonUI"/></param>
         public void SetUI(Javax.Swing.Plaf.ButtonUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ButtonUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
 
         #endregion

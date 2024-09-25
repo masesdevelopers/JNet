@@ -171,14 +171,14 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", "(Ljava/lang/String;)Ljava/util/ResourceBundle;", arg0);
+            return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#clearCache()"/>
         /// </summary>
         public static void ClearCache()
         {
-            SExecuteWithSignature(LocalBridgeClazz, "clearCache", "()V");
+            SExecute(LocalBridgeClazz, "clearCache");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#clearCache(java.lang.ClassLoader)"/>
@@ -186,7 +186,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         public static void ClearCache(Java.Lang.ClassLoader arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "clearCache", "(Ljava/lang/ClassLoader;)V", arg0);
+            SExecute(LocalBridgeClazz, "clearCache", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.lang.Module)"/>
@@ -241,21 +241,21 @@ namespace Java.Util
         /// </summary>
         public Java.Lang.String BaseBundleName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBaseBundleName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getBaseBundleName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getKeys()"/> 
         /// </summary>
         public Java.Util.Enumeration<Java.Lang.String> Keys
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getKeys", "()Ljava/util/Enumeration;"); }
+            get { return IExecute<Java.Util.Enumeration<Java.Lang.String>>("getKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getLocale()"/> 
         /// </summary>
         public Java.Util.Locale Locale
         {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
+            get { return IExecute<Java.Util.Locale>("getLocale"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#containsKey(java.lang.String)"/>
@@ -264,7 +264,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getObject(java.lang.String)"/>
@@ -273,7 +273,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object GetObject(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getObject", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getObject", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getString(java.lang.String)"/>
@@ -282,7 +282,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetString(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getStringArray(java.lang.String)"/>
@@ -291,7 +291,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetStringArray(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<Java.Lang.String>("getStringArray", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
+            return IExecuteArray<Java.Lang.String>("getStringArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#keySet()"/>
@@ -299,7 +299,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("keySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Lang.String>>("keySet");
         }
 
         #endregion

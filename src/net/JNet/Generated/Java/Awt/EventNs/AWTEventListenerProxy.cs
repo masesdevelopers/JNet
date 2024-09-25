@@ -108,7 +108,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         public long EventMask
         {
-            get { return IExecuteWithSignature<long>("getEventMask", "()J"); }
+            get { return IExecute<long>("getEventMask"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html#eventDispatched(java.awt.AWTEvent)"/>
@@ -116,7 +116,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
         public void EventDispatched(Java.Awt.AWTEvent arg0)
         {
-            IExecuteWithSignature("eventDispatched", "(Ljava/awt/AWTEvent;)V", arg0);
+            IExecute("eventDispatched", arg0);
         }
 
         #endregion

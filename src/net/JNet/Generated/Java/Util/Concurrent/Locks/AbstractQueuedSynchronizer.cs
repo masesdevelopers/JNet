@@ -142,35 +142,35 @@ namespace Java.Util.Concurrent.Locks
         /// </summary>
         public Java.Util.Collection<Java.Lang.Thread> ExclusiveQueuedThreads
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Lang.Thread>>("getExclusiveQueuedThreads", "()Ljava/util/Collection;"); }
+            get { return IExecute<Java.Util.Collection<Java.Lang.Thread>>("getExclusiveQueuedThreads"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getFirstQueuedThread()"/> 
         /// </summary>
         public Java.Lang.Thread FirstQueuedThread
         {
-            get { return IExecuteWithSignature<Java.Lang.Thread>("getFirstQueuedThread", "()Ljava/lang/Thread;"); }
+            get { return IExecute<Java.Lang.Thread>("getFirstQueuedThread"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getQueuedThreads()"/> 
         /// </summary>
         public Java.Util.Collection<Java.Lang.Thread> QueuedThreads
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Lang.Thread>>("getQueuedThreads", "()Ljava/util/Collection;"); }
+            get { return IExecute<Java.Util.Collection<Java.Lang.Thread>>("getQueuedThreads"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getQueueLength()"/> 
         /// </summary>
         public int QueueLength
         {
-            get { return IExecuteWithSignature<int>("getQueueLength", "()I"); }
+            get { return IExecute<int>("getQueueLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getSharedQueuedThreads()"/> 
         /// </summary>
         public Java.Util.Collection<Java.Lang.Thread> SharedQueuedThreads
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Lang.Thread>>("getSharedQueuedThreads", "()Ljava/util/Collection;"); }
+            get { return IExecute<Java.Util.Collection<Java.Lang.Thread>>("getSharedQueuedThreads"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasContended()"/>
@@ -178,7 +178,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool HasContended()
         {
-            return IExecuteWithSignature<bool>("hasContended", "()Z");
+            return IExecute<bool>("hasContended");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasQueuedPredecessors()"/>
@@ -186,7 +186,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedPredecessors()
         {
-            return IExecuteWithSignature<bool>("hasQueuedPredecessors", "()Z");
+            return IExecute<bool>("hasQueuedPredecessors");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasQueuedThreads()"/>
@@ -194,7 +194,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThreads()
         {
-            return IExecuteWithSignature<bool>("hasQueuedThreads", "()Z");
+            return IExecute<bool>("hasQueuedThreads");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasWaiters(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject)"/>
@@ -203,7 +203,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool HasWaiters(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject arg0)
         {
-            return IExecuteWithSignature<bool>("hasWaiters", "(Ljava/util/concurrent/locks/AbstractQueuedSynchronizer$ConditionObject;)Z", arg0);
+            return IExecute<bool>("hasWaiters", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#isQueued(java.lang.Thread)"/>
@@ -212,7 +212,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool IsQueued(Java.Lang.Thread arg0)
         {
-            return IExecuteWithSignature<bool>("isQueued", "(Ljava/lang/Thread;)Z", arg0);
+            return IExecute<bool>("isQueued", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#owns(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject)"/>
@@ -221,7 +221,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool Owns(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject arg0)
         {
-            return IExecuteWithSignature<bool>("owns", "(Ljava/util/concurrent/locks/AbstractQueuedSynchronizer$ConditionObject;)Z", arg0);
+            return IExecute<bool>("owns", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#release(int)"/>
@@ -230,7 +230,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool Release(int arg0)
         {
-            return IExecuteWithSignature<bool>("release", "(I)Z", arg0);
+            return IExecute<bool>("release", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#releaseShared(int)"/>
@@ -239,7 +239,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         public bool ReleaseShared(int arg0)
         {
-            return IExecuteWithSignature<bool>("releaseShared", "(I)Z", arg0);
+            return IExecute<bool>("releaseShared", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#tryAcquireNanos(int,long)"/>
@@ -270,7 +270,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="int"/></returns>
         public int GetWaitQueueLength(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject arg0)
         {
-            return IExecuteWithSignature<int>("getWaitQueueLength", "(Ljava/util/concurrent/locks/AbstractQueuedSynchronizer$ConditionObject;)I", arg0);
+            return IExecute<int>("getWaitQueueLength", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getWaitingThreads(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject)"/>
@@ -279,7 +279,7 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<Java.Lang.Thread> GetWaitingThreads(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer.ConditionObject arg0)
         {
-            return IExecuteWithSignature<Java.Util.Collection<Java.Lang.Thread>>("getWaitingThreads", "(Ljava/util/concurrent/locks/AbstractQueuedSynchronizer$ConditionObject;)Ljava/util/Collection;", arg0);
+            return IExecute<Java.Util.Collection<Java.Lang.Thread>>("getWaitingThreads", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#acquire(int)"/>
@@ -287,7 +287,7 @@ namespace Java.Util.Concurrent.Locks
         /// <param name="arg0"><see cref="int"/></param>
         public void Acquire(int arg0)
         {
-            IExecuteWithSignature("acquire", "(I)V", arg0);
+            IExecute("acquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#acquireInterruptibly(int)"/>
@@ -296,7 +296,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void AcquireInterruptibly(int arg0)
         {
-            IExecuteWithSignature("acquireInterruptibly", "(I)V", arg0);
+            IExecute("acquireInterruptibly", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#acquireShared(int)"/>
@@ -304,7 +304,7 @@ namespace Java.Util.Concurrent.Locks
         /// <param name="arg0"><see cref="int"/></param>
         public void AcquireShared(int arg0)
         {
-            IExecuteWithSignature("acquireShared", "(I)V", arg0);
+            IExecute("acquireShared", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#acquireSharedInterruptibly(int)"/>
@@ -313,7 +313,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void AcquireSharedInterruptibly(int arg0)
         {
-            IExecuteWithSignature("acquireSharedInterruptibly", "(I)V", arg0);
+            IExecute("acquireSharedInterruptibly", arg0);
         }
 
         #endregion

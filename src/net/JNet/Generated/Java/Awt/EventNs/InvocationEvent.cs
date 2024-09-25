@@ -148,21 +148,21 @@ namespace Java.Awt.EventNs
         /// </summary>
         public Java.Lang.Exception Exception
         {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException", "()Ljava/lang/Exception;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Exception>(obj); }
+            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Exception>(obj); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#getThrowable()"/> 
         /// </summary>
         public Java.Lang.Throwable Throwable
         {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getThrowable", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
+            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getThrowable"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#getWhen()"/> 
         /// </summary>
         public long When
         {
-            get { return IExecuteWithSignature<long>("getWhen", "()J"); }
+            get { return IExecute<long>("getWhen"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#isDispatched()"/>
@@ -170,14 +170,14 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="bool"/></returns>
         public bool IsDispatched()
         {
-            return IExecuteWithSignature<bool>("isDispatched", "()Z");
+            return IExecute<bool>("isDispatched");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#dispatch()"/>
         /// </summary>
         public void Dispatch()
         {
-            IExecuteWithSignature("dispatch", "()V");
+            IExecute("dispatch");
         }
 
         #endregion

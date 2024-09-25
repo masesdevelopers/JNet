@@ -120,7 +120,7 @@ namespace Java.Text
         /// <returns><see cref="double"/></returns>
         public static double NextDouble(double arg0)
         {
-            return SExecuteWithSignature<double>(LocalBridgeClazz, "nextDouble", "(D)D", arg0);
+            return SExecute<double>(LocalBridgeClazz, "nextDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#previousDouble(double)"/>
@@ -129,7 +129,7 @@ namespace Java.Text
         /// <returns><see cref="double"/></returns>
         public static double PreviousDouble(double arg0)
         {
-            return SExecuteWithSignature<double>(LocalBridgeClazz, "previousDouble", "(D)D", arg0);
+            return SExecute<double>(LocalBridgeClazz, "previousDouble", arg0);
         }
 
         #endregion
@@ -140,14 +140,14 @@ namespace Java.Text
         /// </summary>
         public object[] Formats
         {
-            get { return IExecuteWithSignatureArray<object>("getFormats", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getFormats"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#getLimits()"/> 
         /// </summary>
         public double[] Limits
         {
-            get { return IExecuteWithSignatureArray<double>("getLimits", "()[D"); }
+            get { return IExecuteArray<double>("getLimits"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#toPattern()"/>
@@ -155,7 +155,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToPattern()
         {
-            return IExecuteWithSignature<Java.Lang.String>("toPattern", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("toPattern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#applyPattern(java.lang.String)"/>
@@ -163,7 +163,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void ApplyPattern(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("applyPattern", "(Ljava/lang/String;)V", arg0);
+            IExecute("applyPattern", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#setChoices(double[],java.lang.String[])"/>

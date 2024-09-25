@@ -116,28 +116,28 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String AttributeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAttributeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAttributeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotification.html#getAttributeType()"/> 
         /// </summary>
         public Java.Lang.String AttributeType
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAttributeType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAttributeType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotification.html#getNewValue()"/> 
         /// </summary>
         public object NewValue
         {
-            get { return IExecuteWithSignature("getNewValue", "()Ljava/lang/Object;"); }
+            get { return IExecute("getNewValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotification.html#getOldValue()"/> 
         /// </summary>
         public object OldValue
         {
-            get { return IExecuteWithSignature("getOldValue", "()Ljava/lang/Object;"); }
+            get { return IExecute("getOldValue"); }
         }
 
         #endregion

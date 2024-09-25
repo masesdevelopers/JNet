@@ -93,7 +93,7 @@ namespace Javax.Net
         /// </summary>
         public static Javax.Net.ServerSocketFactory Default
         {
-            get { return SExecuteWithSignature<Javax.Net.ServerSocketFactory>(LocalBridgeClazz, "getDefault", "()Ljavax/net/ServerSocketFactory;"); }
+            get { return SExecute<Javax.Net.ServerSocketFactory>(LocalBridgeClazz, "getDefault"); }
         }
 
         #endregion
@@ -130,7 +130,7 @@ namespace Javax.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.ServerSocket CreateServerSocket(int arg0)
         {
-            return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "(I)Ljava/net/ServerSocket;", arg0);
+            return IExecute<Java.Net.ServerSocket>("createServerSocket", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ServerSocketFactory.html#createServerSocket()"/>
@@ -139,7 +139,7 @@ namespace Javax.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.ServerSocket CreateServerSocket()
         {
-            return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "()Ljava/net/ServerSocket;");
+            return IExecute<Java.Net.ServerSocket>("createServerSocket");
         }
 
         #endregion

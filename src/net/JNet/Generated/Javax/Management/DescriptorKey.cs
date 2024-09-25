@@ -121,7 +121,7 @@ namespace Javax.Management
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Value()
         {
-            return IExecuteWithSignature<Java.Lang.String>("value", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("value");
         }
 
         #endregion

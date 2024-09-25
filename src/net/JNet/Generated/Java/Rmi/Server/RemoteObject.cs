@@ -104,7 +104,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Rmi.NoSuchObjectException"/>
         public static Java.Rmi.Remote ToStub(Java.Rmi.Remote arg0)
         {
-            return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "toStub", "(Ljava/rmi/Remote;)Ljava/rmi/Remote;", arg0);
+            return SExecute<Java.Rmi.Remote>(LocalBridgeClazz, "toStub", arg0);
         }
 
         #endregion
@@ -115,7 +115,7 @@ namespace Java.Rmi.Server
         /// </summary>
         public Java.Rmi.Server.RemoteRef Ref
         {
-            get { return IExecuteWithSignature<Java.Rmi.Server.RemoteRef>("getRef", "()Ljava/rmi/server/RemoteRef;"); }
+            get { return IExecute<Java.Rmi.Server.RemoteRef>("getRef"); }
         }
 
         #endregion

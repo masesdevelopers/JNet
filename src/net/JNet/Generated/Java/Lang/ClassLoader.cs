@@ -93,14 +93,14 @@ namespace Java.Lang
         /// </summary>
         public static Java.Lang.ClassLoader PlatformClassLoader
         {
-            get { return SExecuteWithSignature<Java.Lang.ClassLoader>(LocalBridgeClazz, "getPlatformClassLoader", "()Ljava/lang/ClassLoader;"); }
+            get { return SExecute<Java.Lang.ClassLoader>(LocalBridgeClazz, "getPlatformClassLoader"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getSystemClassLoader()"/> 
         /// </summary>
         public static Java.Lang.ClassLoader SystemClassLoader
         {
-            get { return SExecuteWithSignature<Java.Lang.ClassLoader>(LocalBridgeClazz, "getSystemClassLoader", "()Ljava/lang/ClassLoader;"); }
+            get { return SExecute<Java.Lang.ClassLoader>(LocalBridgeClazz, "getSystemClassLoader"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getSystemResourceAsStream(java.lang.String)"/>
@@ -109,7 +109,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public static Java.Io.InputStream GetSystemResourceAsStream(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Io.InputStream>(LocalBridgeClazz, "getSystemResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
+            return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "getSystemResourceAsStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getSystemResource(java.lang.String)"/>
@@ -118,7 +118,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Net.URL"/></returns>
         public static Java.Net.URL GetSystemResource(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Net.URL>(LocalBridgeClazz, "getSystemResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
+            return SExecute<Java.Net.URL>(LocalBridgeClazz, "getSystemResource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getSystemResources(java.lang.String)"/>
@@ -128,7 +128,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.Enumeration<Java.Net.URL> GetSystemResources(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.Enumeration<Java.Net.URL>>(LocalBridgeClazz, "getSystemResources", "(Ljava/lang/String;)Ljava/util/Enumeration;", arg0);
+            return SExecute<Java.Util.Enumeration<Java.Net.URL>>(LocalBridgeClazz, "getSystemResources", arg0);
         }
 
         #endregion
@@ -139,28 +139,28 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.Package[] DefinedPackages
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Package>("getDefinedPackages", "()[Ljava/lang/Package;"); }
+            get { return IExecuteArray<Java.Lang.Package>("getDefinedPackages"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getParent()"/> 
         /// </summary>
         public Java.Lang.ClassLoader Parent
         {
-            get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getParent", "()Ljava/lang/ClassLoader;"); }
+            get { return IExecute<Java.Lang.ClassLoader>("getParent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getUnnamedModule()"/> 
         /// </summary>
         public Java.Lang.Module UnnamedModule
         {
-            get { return IExecuteWithSignature<Java.Lang.Module>("getUnnamedModule", "()Ljava/lang/Module;"); }
+            get { return IExecute<Java.Lang.Module>("getUnnamedModule"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#isRegisteredAsParallelCapable()"/>
@@ -168,7 +168,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsRegisteredAsParallelCapable()
         {
-            return IExecuteWithSignature<bool>("isRegisteredAsParallelCapable", "()Z");
+            return IExecute<bool>("isRegisteredAsParallelCapable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getDefinedPackage(java.lang.String)"/>
@@ -177,7 +177,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Package"/></returns>
         public Java.Lang.Package GetDefinedPackage(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Package>("getDefinedPackage", "(Ljava/lang/String;)Ljava/lang/Package;", arg0);
+            return IExecute<Java.Lang.Package>("getDefinedPackage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getResourceAsStream(java.lang.String)"/>
@@ -186,7 +186,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public Java.Io.InputStream GetResourceAsStream(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Io.InputStream>("getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
+            return IExecute<Java.Io.InputStream>("getResourceAsStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#loadClass(java.lang.String)"/>
@@ -196,7 +196,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public Java.Lang.Class LoadClass(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Class>("loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", arg0);
+            return IExecute<Java.Lang.Class>("loadClass", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getResource(java.lang.String)"/>
@@ -205,7 +205,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Net.URL"/></returns>
         public Java.Net.URL GetResource(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Net.URL>("getResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
+            return IExecute<Java.Net.URL>("getResource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getResources(java.lang.String)"/>
@@ -215,7 +215,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Enumeration<Java.Net.URL> GetResources(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Java.Net.URL>>("getResources", "(Ljava/lang/String;)Ljava/util/Enumeration;", arg0);
+            return IExecute<Java.Util.Enumeration<Java.Net.URL>>("getResources", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#resources(java.lang.String)"/>
@@ -224,14 +224,14 @@ namespace Java.Lang
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Net.URL> Resources(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Net.URL>>("resources", "(Ljava/lang/String;)Ljava/util/stream/Stream;", arg0);
+            return IExecute<Java.Util.Stream.Stream<Java.Net.URL>>("resources", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#clearAssertionStatus()"/>
         /// </summary>
         public void ClearAssertionStatus()
         {
-            IExecuteWithSignature("clearAssertionStatus", "()V");
+            IExecute("clearAssertionStatus");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#setClassAssertionStatus(java.lang.String,boolean)"/>
@@ -248,7 +248,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDefaultAssertionStatus(bool arg0)
         {
-            IExecuteWithSignature("setDefaultAssertionStatus", "(Z)V", arg0);
+            IExecute("setDefaultAssertionStatus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#setPackageAssertionStatus(java.lang.String,boolean)"/>

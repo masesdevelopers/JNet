@@ -204,7 +204,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Lang.Exception"/></param>
         public override void ExceptionThrown(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
-            IExecuteWithSignature("exceptionThrown", "(Ljava/lang/Exception;)V", arg0);
+            IExecute("exceptionThrown", arg0);
         }
 
         #endregion

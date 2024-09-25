@@ -437,7 +437,7 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#isSubregion()"/>
@@ -445,7 +445,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="bool"/></returns>
         public bool IsSubregion()
         {
-            return IExecuteWithSignature<bool>("isSubregion", "()Z");
+            return IExecute<bool>("isSubregion");
         }
 
         #endregion

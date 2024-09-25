@@ -331,7 +331,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set EntrySet()
         {
-            return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set>("entrySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#containsKey(java.lang.Object)"/>
@@ -340,7 +340,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(object arg0)
         {
-            return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#containsValue(java.lang.Object)"/>
@@ -349,7 +349,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsValue(object arg0)
         {
-            return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("containsValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#isEmpty()"/>
@@ -357,7 +357,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#size()"/>
@@ -365,7 +365,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#values()"/>
@@ -373,7 +373,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
+            return IExecute<Java.Util.Collection>("values");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#keySet()"/>
@@ -381,7 +381,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#get(java.lang.Object)"/>
@@ -390,7 +390,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Get(object arg0)
         {
-            return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#put(java.lang.Object,java.lang.Object)"/>
@@ -409,14 +409,14 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Remove(object arg0)
         {
-            return IExecuteWithSignature("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#putAll(java.util.Map)"/>
@@ -424,7 +424,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public void PutAll(Java.Util.Map arg0)
         {
-            IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
+            IExecute("putAll", arg0);
         }
 
         #endregion
@@ -630,14 +630,14 @@ namespace Java.Util
             /// </summary>
             public object Key
             {
-                get { return IExecuteWithSignature("getKey", "()Ljava/lang/Object;"); }
+                get { return IExecute("getKey"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#getValue()"/> 
             /// </summary>
             public object Value
             {
-                get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); }
+                get { return IExecute("getValue"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#setValue(java.lang.Object)"/>
@@ -646,7 +646,7 @@ namespace Java.Util
             /// <returns><see cref="object"/></returns>
             public object SetValue(object arg0)
             {
-                return IExecuteWithSignature("setValue", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+                return IExecute("setValue", arg0);
             }
 
             #endregion
@@ -709,14 +709,14 @@ namespace Java.Util
             /// </summary>
             public K Key
             {
-                get { return IExecuteWithSignature<K>("getKey", "()Ljava/lang/Object;"); }
+                get { return IExecute<K>("getKey"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#getValue()"/> 
             /// </summary>
             public V Value
             {
-                get { return IExecuteWithSignature<V>("getValue", "()Ljava/lang/Object;"); }
+                get { return IExecute<V>("getValue"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#setValue(java.lang.Object)"/>
@@ -725,7 +725,7 @@ namespace Java.Util
             /// <returns><typeparamref name="V"/></returns>
             public V SetValue(V arg0)
             {
-                return IExecuteWithSignature<V>("setValue", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+                return IExecute<V>("setValue", arg0);
             }
 
             #endregion
@@ -775,7 +775,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#containsKey(java.lang.Object)"/>
@@ -784,7 +784,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(object arg0)
         {
-            return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#containsValue(java.lang.Object)"/>
@@ -793,7 +793,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool ContainsValue(object arg0)
         {
-            return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("containsValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#isEmpty()"/>
@@ -801,7 +801,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#size()"/>
@@ -809,7 +809,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#values()"/>
@@ -817,7 +817,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<V> Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection<V>>("values", "()Ljava/util/Collection;");
+            return IExecute<Java.Util.Collection<V>>("values");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#keySet()"/>
@@ -825,7 +825,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<K> KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<K>>("keySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<K>>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#get(java.lang.Object)"/>
@@ -834,7 +834,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Get(object arg0)
         {
-            return IExecuteWithSignature<V>("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<V>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#put(java.lang.Object,java.lang.Object)"/>
@@ -853,14 +853,14 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Remove(object arg0)
         {
-            return IExecuteWithSignature<V>("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<V>("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#putAll(java.util.Map)"/>
@@ -870,7 +870,7 @@ namespace Java.Util
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         public void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
-            IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
+            IExecute("putAll", arg0);
         }
 
         #endregion

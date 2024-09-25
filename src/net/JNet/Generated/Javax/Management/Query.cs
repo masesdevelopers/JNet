@@ -157,7 +157,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.AttributeValueExp"/></returns>
         public static Javax.Management.AttributeValueExp Attr(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Management.AttributeValueExp>(LocalBridgeClazz, "attr", "(Ljava/lang/String;)Ljavax/management/AttributeValueExp;", arg0);
+            return SExecute<Javax.Management.AttributeValueExp>(LocalBridgeClazz, "attr", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#classattr()"/>
@@ -265,7 +265,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp IsInstanceOf(Javax.Management.StringValueExp arg0)
         {
-            return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "isInstanceOf", "(Ljavax/management/StringValueExp;)Ljavax/management/QueryExp;", arg0);
+            return SExecute<Javax.Management.QueryExp>(LocalBridgeClazz, "isInstanceOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#leq(javax.management.ValueExp,javax.management.ValueExp)"/>
@@ -304,7 +304,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp Not(Javax.Management.QueryExp arg0)
         {
-            return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "not", "(Ljavax/management/QueryExp;)Ljavax/management/QueryExp;", arg0);
+            return SExecute<Javax.Management.QueryExp>(LocalBridgeClazz, "not", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#or(javax.management.QueryExp,javax.management.QueryExp)"/>
@@ -323,7 +323,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.StringValueExp"/></returns>
         public static Javax.Management.StringValueExp Value(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Management.StringValueExp>(LocalBridgeClazz, "value", "(Ljava/lang/String;)Ljavax/management/StringValueExp;", arg0);
+            return SExecute<Javax.Management.StringValueExp>(LocalBridgeClazz, "value", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#div(javax.management.ValueExp,javax.management.ValueExp)"/>
@@ -372,7 +372,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Value(bool arg0)
         {
-            return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "value", "(Z)Ljavax/management/ValueExp;", arg0);
+            return SExecute<Javax.Management.ValueExp>(LocalBridgeClazz, "value", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(double)"/>
@@ -381,7 +381,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Value(double arg0)
         {
-            return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "value", "(D)Ljavax/management/ValueExp;", arg0);
+            return SExecute<Javax.Management.ValueExp>(LocalBridgeClazz, "value", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(float)"/>
@@ -390,7 +390,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Value(float arg0)
         {
-            return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "value", "(F)Ljavax/management/ValueExp;", arg0);
+            return SExecute<Javax.Management.ValueExp>(LocalBridgeClazz, "value", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(int)"/>
@@ -399,7 +399,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Value(int arg0)
         {
-            return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "value", "(I)Ljavax/management/ValueExp;", arg0);
+            return SExecute<Javax.Management.ValueExp>(LocalBridgeClazz, "value", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(java.lang.Number)"/>
@@ -408,7 +408,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Value(Java.Lang.Number arg0)
         {
-            return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "value", "(Ljava/lang/Number;)Ljavax/management/ValueExp;", arg0);
+            return SExecute<Javax.Management.ValueExp>(LocalBridgeClazz, "value", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(long)"/>
@@ -417,7 +417,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Value(long arg0)
         {
-            return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "value", "(J)Ljavax/management/ValueExp;", arg0);
+            return SExecute<Javax.Management.ValueExp>(LocalBridgeClazz, "value", arg0);
         }
 
         #endregion

@@ -145,35 +145,35 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Color Color1
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getColor1", "()Ljava/awt/Color;"); }
+            get { return IExecute<Java.Awt.Color>("getColor1"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getColor2()"/> 
         /// </summary>
         public Java.Awt.Color Color2
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getColor2", "()Ljava/awt/Color;"); }
+            get { return IExecute<Java.Awt.Color>("getColor2"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getPoint1()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D Point1
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getPoint1", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getPoint1"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getPoint2()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D Point2
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getPoint2", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getPoint2"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getTransparency()"/> 
         /// </summary>
         public int Transparency
         {
-            get { return IExecuteWithSignature<int>("getTransparency", "()I"); }
+            get { return IExecute<int>("getTransparency"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#isCyclic()"/>
@@ -181,7 +181,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsCyclic()
         {
-            return IExecuteWithSignature<bool>("isCyclic", "()Z");
+            return IExecute<bool>("isCyclic");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#createContext(java.awt.image.ColorModel,java.awt.Rectangle,java.awt.geom.Rectangle2D,java.awt.geom.AffineTransform,java.awt.RenderingHints)"/>

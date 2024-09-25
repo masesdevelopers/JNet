@@ -125,14 +125,14 @@ namespace Java.Awt.Dnd
         /// </summary>
         public int DropAction
         {
-            get { return IExecuteWithSignature<int>("getDropAction", "()I"); }
+            get { return IExecute<int>("getDropAction"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#getDropSuccess()"/> 
         /// </summary>
         public bool DropSuccess
         {
-            get { return IExecuteWithSignature<bool>("getDropSuccess", "()Z"); }
+            get { return IExecute<bool>("getDropSuccess"); }
         }
 
         #endregion

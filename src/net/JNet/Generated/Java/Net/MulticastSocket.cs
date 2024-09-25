@@ -113,28 +113,28 @@ namespace Java.Net
         /// </summary>
         public Java.Net.InetAddress Interface
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getInterface", "()Ljava/net/InetAddress;"); } set { IExecuteWithSignature("setInterface", "(Ljava/net/InetAddress;)V", value); }
+            get { return IExecute<Java.Net.InetAddress>("getInterface"); } set { IExecute("setInterface", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#getLoopbackMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#setLoopbackMode(boolean)"/>
         /// </summary>
         public bool LoopbackMode
         {
-            get { return IExecuteWithSignature<bool>("getLoopbackMode", "()Z"); } set { IExecuteWithSignature("setLoopbackMode", "(Z)V", value); }
+            get { return IExecute<bool>("getLoopbackMode"); } set { IExecute("setLoopbackMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#getNetworkInterface()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#setNetworkInterface(java.net.NetworkInterface)"/>
         /// </summary>
         public Java.Net.NetworkInterface NetworkInterface
         {
-            get { return IExecuteWithSignature<Java.Net.NetworkInterface>("getNetworkInterface", "()Ljava/net/NetworkInterface;"); } set { IExecuteWithSignature("setNetworkInterface", "(Ljava/net/NetworkInterface;)V", value); }
+            get { return IExecute<Java.Net.NetworkInterface>("getNetworkInterface"); } set { IExecute("setNetworkInterface", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#getTimeToLive()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#setTimeToLive(int)"/>
         /// </summary>
         public int TimeToLive
         {
-            get { return IExecuteWithSignature<int>("getTimeToLive", "()I"); } set { IExecuteWithSignature("setTimeToLive", "(I)V", value); }
+            get { return IExecute<int>("getTimeToLive"); } set { IExecute("setTimeToLive", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.InetAddress)"/>
@@ -143,7 +143,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void JoinGroup(Java.Net.InetAddress arg0)
         {
-            IExecuteWithSignature("joinGroup", "(Ljava/net/InetAddress;)V", arg0);
+            IExecute("joinGroup", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.SocketAddress,java.net.NetworkInterface)"/>
@@ -162,7 +162,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void LeaveGroup(Java.Net.InetAddress arg0)
         {
-            IExecuteWithSignature("leaveGroup", "(Ljava/net/InetAddress;)V", arg0);
+            IExecute("leaveGroup", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.SocketAddress,java.net.NetworkInterface)"/>

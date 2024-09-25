@@ -147,49 +147,49 @@ namespace Java.Awt.FontNs
         /// </summary>
         public float Advance
         {
-            get { return IExecuteWithSignature<float>("getAdvance", "()F"); }
+            get { return IExecute<float>("getAdvance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#getAdvanceX()"/> 
         /// </summary>
         public float AdvanceX
         {
-            get { return IExecuteWithSignature<float>("getAdvanceX", "()F"); }
+            get { return IExecute<float>("getAdvanceX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#getAdvanceY()"/> 
         /// </summary>
         public float AdvanceY
         {
-            get { return IExecuteWithSignature<float>("getAdvanceY", "()F"); }
+            get { return IExecute<float>("getAdvanceY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#getBounds2D()"/> 
         /// </summary>
         public Java.Awt.Geom.Rectangle2D Bounds2D
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getBounds2D", "()Ljava/awt/geom/Rectangle2D;"); }
+            get { return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds2D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#getLSB()"/> 
         /// </summary>
         public float LSB
         {
-            get { return IExecuteWithSignature<float>("getLSB", "()F"); }
+            get { return IExecute<float>("getLSB"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#getRSB()"/> 
         /// </summary>
         public float RSB
         {
-            get { return IExecuteWithSignature<float>("getRSB", "()F"); }
+            get { return IExecute<float>("getRSB"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            get { return IExecute<int>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isCombining()"/>
@@ -197,7 +197,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="bool"/></returns>
         public bool IsCombining()
         {
-            return IExecuteWithSignature<bool>("isCombining", "()Z");
+            return IExecute<bool>("isCombining");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isComponent()"/>
@@ -205,7 +205,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="bool"/></returns>
         public bool IsComponent()
         {
-            return IExecuteWithSignature<bool>("isComponent", "()Z");
+            return IExecute<bool>("isComponent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isLigature()"/>
@@ -213,7 +213,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="bool"/></returns>
         public bool IsLigature()
         {
-            return IExecuteWithSignature<bool>("isLigature", "()Z");
+            return IExecute<bool>("isLigature");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isStandard()"/>
@@ -221,7 +221,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="bool"/></returns>
         public bool IsStandard()
         {
-            return IExecuteWithSignature<bool>("isStandard", "()Z");
+            return IExecute<bool>("isStandard");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isWhitespace()"/>
@@ -229,7 +229,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="bool"/></returns>
         public bool IsWhitespace()
         {
-            return IExecuteWithSignature<bool>("isWhitespace", "()Z");
+            return IExecute<bool>("isWhitespace");
         }
 
         #endregion

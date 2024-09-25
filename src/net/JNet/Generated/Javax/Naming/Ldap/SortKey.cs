@@ -113,14 +113,14 @@ namespace Javax.Naming.Ldap
         /// </summary>
         public Java.Lang.String AttributeID
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAttributeID", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAttributeID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#getMatchingRuleID()"/> 
         /// </summary>
         public Java.Lang.String MatchingRuleID
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMatchingRuleID", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMatchingRuleID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#isAscending()"/>
@@ -128,7 +128,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="bool"/></returns>
         public bool IsAscending()
         {
-            return IExecuteWithSignature<bool>("isAscending", "()Z");
+            return IExecute<bool>("isAscending");
         }
 
         #endregion

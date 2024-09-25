@@ -113,7 +113,7 @@ namespace Javax.Swing.Event
         /// <returns><see cref="bool"/></returns>
         public bool IsNotifyOnEDT()
         {
-            return IExecuteWithSignature<bool>("isNotifyOnEDT", "()Z");
+            return IExecute<bool>("isNotifyOnEDT");
         }
 
         #endregion

@@ -190,28 +190,28 @@ namespace Javax.Swing
         /// </summary>
         public object Model
         {
-            get { return IExecuteWithSignature("getModel", "()Ljava/lang/Object;"); }
+            get { return IExecute("getModel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#getModelRowCount()"/> 
         /// </summary>
         public int ModelRowCount
         {
-            get { return IExecuteWithSignature<int>("getModelRowCount", "()I"); }
+            get { return IExecute<int>("getModelRowCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#getSortKeys()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#setSortKeys(java.util.List)"/>
         /// </summary>
         public Java.Util.List SortKeys
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getSortKeys", "()Ljava/util/List;"); } set { IExecuteWithSignature("setSortKeys", "(Ljava/util/List;)V", value); }
+            get { return IExecute<Java.Util.List>("getSortKeys"); } set { IExecute("setSortKeys", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#getViewRowCount()"/> 
         /// </summary>
         public int ViewRowCount
         {
-            get { return IExecuteWithSignature<int>("getViewRowCount", "()I"); }
+            get { return IExecute<int>("getViewRowCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#convertRowIndexToModel(int)"/>
@@ -220,7 +220,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int ConvertRowIndexToModel(int arg0)
         {
-            return IExecuteWithSignature<int>("convertRowIndexToModel", "(I)I", arg0);
+            return IExecute<int>("convertRowIndexToModel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#convertRowIndexToView(int)"/>
@@ -229,21 +229,21 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int ConvertRowIndexToView(int arg0)
         {
-            return IExecuteWithSignature<int>("convertRowIndexToView", "(I)I", arg0);
+            return IExecute<int>("convertRowIndexToView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#allRowsChanged()"/>
         /// </summary>
         public void AllRowsChanged()
         {
-            IExecuteWithSignature("allRowsChanged", "()V");
+            IExecute("allRowsChanged");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#modelStructureChanged()"/>
         /// </summary>
         public void ModelStructureChanged()
         {
-            IExecuteWithSignature("modelStructureChanged", "()V");
+            IExecute("modelStructureChanged");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsDeleted(int,int)"/>
@@ -288,7 +288,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void ToggleSortOrder(int arg0)
         {
-            IExecuteWithSignature("toggleSortOrder", "(I)V", arg0);
+            IExecute("toggleSortOrder", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#addRowSorterListener(javax.swing.event.RowSorterListener)"/>
@@ -296,7 +296,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterListener"/></param>
         public void AddRowSorterListener(Javax.Swing.Event.RowSorterListener arg0)
         {
-            IExecuteWithSignature("addRowSorterListener", "(Ljavax/swing/event/RowSorterListener;)V", arg0);
+            IExecute("addRowSorterListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#removeRowSorterListener(javax.swing.event.RowSorterListener)"/>
@@ -304,7 +304,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterListener"/></param>
         public void RemoveRowSorterListener(Javax.Swing.Event.RowSorterListener arg0)
         {
-            IExecuteWithSignature("removeRowSorterListener", "(Ljavax/swing/event/RowSorterListener;)V", arg0);
+            IExecute("removeRowSorterListener", arg0);
         }
 
         #endregion
@@ -400,28 +400,28 @@ namespace Javax.Swing
         /// </summary>
         public M Model
         {
-            get { return IExecuteWithSignature<M>("getModel", "()Ljava/lang/Object;"); }
+            get { return IExecute<M>("getModel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#getModelRowCount()"/> 
         /// </summary>
         public int ModelRowCount
         {
-            get { return IExecuteWithSignature<int>("getModelRowCount", "()I"); }
+            get { return IExecute<int>("getModelRowCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#getSortKeys()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#setSortKeys(java.util.List)"/>
         /// </summary>
         public Java.Util.List SortKeys
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getSortKeys", "()Ljava/util/List;"); } set { IExecuteWithSignature("setSortKeys", "(Ljava/util/List;)V", value); }
+            get { return IExecute<Java.Util.List>("getSortKeys"); } set { IExecute("setSortKeys", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#getViewRowCount()"/> 
         /// </summary>
         public int ViewRowCount
         {
-            get { return IExecuteWithSignature<int>("getViewRowCount", "()I"); }
+            get { return IExecute<int>("getViewRowCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#convertRowIndexToModel(int)"/>
@@ -430,7 +430,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int ConvertRowIndexToModel(int arg0)
         {
-            return IExecuteWithSignature<int>("convertRowIndexToModel", "(I)I", arg0);
+            return IExecute<int>("convertRowIndexToModel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#convertRowIndexToView(int)"/>
@@ -439,21 +439,21 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int ConvertRowIndexToView(int arg0)
         {
-            return IExecuteWithSignature<int>("convertRowIndexToView", "(I)I", arg0);
+            return IExecute<int>("convertRowIndexToView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#allRowsChanged()"/>
         /// </summary>
         public void AllRowsChanged()
         {
-            IExecuteWithSignature("allRowsChanged", "()V");
+            IExecute("allRowsChanged");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#modelStructureChanged()"/>
         /// </summary>
         public void ModelStructureChanged()
         {
-            IExecuteWithSignature("modelStructureChanged", "()V");
+            IExecute("modelStructureChanged");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsDeleted(int,int)"/>
@@ -498,7 +498,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void ToggleSortOrder(int arg0)
         {
-            IExecuteWithSignature("toggleSortOrder", "(I)V", arg0);
+            IExecute("toggleSortOrder", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#addRowSorterListener(javax.swing.event.RowSorterListener)"/>
@@ -506,7 +506,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterListener"/></param>
         public void AddRowSorterListener(Javax.Swing.Event.RowSorterListener arg0)
         {
-            IExecuteWithSignature("addRowSorterListener", "(Ljavax/swing/event/RowSorterListener;)V", arg0);
+            IExecute("addRowSorterListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#removeRowSorterListener(javax.swing.event.RowSorterListener)"/>
@@ -514,7 +514,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterListener"/></param>
         public void RemoveRowSorterListener(Javax.Swing.Event.RowSorterListener arg0)
         {
-            IExecuteWithSignature("removeRowSorterListener", "(Ljavax/swing/event/RowSorterListener;)V", arg0);
+            IExecute("removeRowSorterListener", arg0);
         }
 
         #endregion

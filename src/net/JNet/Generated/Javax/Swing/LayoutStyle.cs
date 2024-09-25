@@ -138,7 +138,7 @@ namespace Javax.Swing
         /// </summary>
         public static Javax.Swing.LayoutStyle Instance
         {
-            get { return SExecuteWithSignature<Javax.Swing.LayoutStyle>(LocalBridgeClazz, "getInstance", "()Ljavax/swing/LayoutStyle;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setInstance", "(Ljavax/swing/LayoutStyle;)V", value); }
+            get { return SExecute<Javax.Swing.LayoutStyle>(LocalBridgeClazz, "getInstance"); } set { SExecute(LocalBridgeClazz, "setInstance", value); }
         }
 
         #endregion

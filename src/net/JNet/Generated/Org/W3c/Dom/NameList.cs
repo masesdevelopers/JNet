@@ -144,7 +144,7 @@ namespace Org.W3c.Dom
         /// </summary>
         public int Length
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            get { return IExecute<int>("getLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NameList.html#contains(java.lang.String)"/>
@@ -153,7 +153,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NameList.html#containsNS(java.lang.String,java.lang.String)"/>
@@ -172,7 +172,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getName", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NameList.html#getNamespaceURI(int)"/>
@@ -181,7 +181,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetNamespaceURI(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getNamespaceURI", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getNamespaceURI", arg0);
         }
 
         #endregion

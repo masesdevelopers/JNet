@@ -98,7 +98,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
-            return IExecuteWithSignature<bool>("isValid", "()Z");
+            return IExecute<bool>("isValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#release()"/>
@@ -106,7 +106,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public void Release()
         {
-            IExecuteWithSignature("release", "()V");
+            IExecute("release");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#isShared()"/>
@@ -114,7 +114,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsShared()
         {
-            return IExecuteWithSignature<bool>("isShared", "()Z");
+            return IExecute<bool>("isShared");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#overlaps(long,long)"/>
@@ -132,7 +132,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
         public Java.Nio.Channels.FileChannel Channel()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.FileChannel>("channel", "()Ljava/nio/channels/FileChannel;");
+            return IExecute<Java.Nio.Channels.FileChannel>("channel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#position()"/>
@@ -140,7 +140,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="long"/></returns>
         public long Position()
         {
-            return IExecuteWithSignature<long>("position", "()J");
+            return IExecute<long>("position");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#size()"/>
@@ -148,7 +148,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="long"/></returns>
         public long Size()
         {
-            return IExecuteWithSignature<long>("size", "()J");
+            return IExecute<long>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#close()"/>
@@ -156,7 +156,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#acquiredBy()"/>
@@ -164,7 +164,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.Channel"/></returns>
         public Java.Nio.Channels.Channel AcquiredBy()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.Channel>("acquiredBy", "()Ljava/nio/channels/Channel;");
+            return IExecute<Java.Nio.Channels.Channel>("acquiredBy");
         }
 
         #endregion

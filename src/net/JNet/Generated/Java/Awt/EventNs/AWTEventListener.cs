@@ -204,7 +204,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
         public override void EventDispatched(Java.Awt.AWTEvent arg0)
         {
-            IExecuteWithSignature("eventDispatched", "(Ljava/awt/AWTEvent;)V", arg0);
+            IExecute("eventDispatched", arg0);
         }
 
         #endregion

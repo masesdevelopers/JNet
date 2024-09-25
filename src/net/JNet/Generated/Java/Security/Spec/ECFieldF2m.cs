@@ -121,28 +121,28 @@ namespace Java.Security.Spec
         /// </summary>
         public int FieldSize
         {
-            get { return IExecuteWithSignature<int>("getFieldSize", "()I"); }
+            get { return IExecute<int>("getFieldSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#getM()"/> 
         /// </summary>
         public int M
         {
-            get { return IExecuteWithSignature<int>("getM", "()I"); }
+            get { return IExecute<int>("getM"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#getMidTermsOfReductionPolynomial()"/> 
         /// </summary>
         public int[] MidTermsOfReductionPolynomial
         {
-            get { return IExecuteWithSignatureArray<int>("getMidTermsOfReductionPolynomial", "()[I"); }
+            get { return IExecuteArray<int>("getMidTermsOfReductionPolynomial"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#getReductionPolynomial()"/> 
         /// </summary>
         public Java.Math.BigInteger ReductionPolynomial
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getReductionPolynomial", "()Ljava/math/BigInteger;"); }
+            get { return IExecute<Java.Math.BigInteger>("getReductionPolynomial"); }
         }
 
         #endregion

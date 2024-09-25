@@ -105,21 +105,21 @@ namespace Java.Util.Prefs
         /// </summary>
         public Java.Lang.String Key
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getKey"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html#getNewValue()"/> 
         /// </summary>
         public Java.Lang.String NewValue
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNewValue", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getNewValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html#getNode()"/> 
         /// </summary>
         public Java.Util.Prefs.Preferences Node
         {
-            get { return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getNode", "()Ljava/util/prefs/Preferences;"); }
+            get { return IExecute<Java.Util.Prefs.Preferences>("getNode"); }
         }
 
         #endregion

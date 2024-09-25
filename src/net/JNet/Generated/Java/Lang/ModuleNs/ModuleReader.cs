@@ -155,7 +155,7 @@ namespace Java.Lang.ModuleNs
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Optional<Java.Net.URI> Find(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Net.URI>>("find", "(Ljava/lang/String;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<Java.Net.URI>>("find", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#list()"/>
@@ -164,7 +164,7 @@ namespace Java.Lang.ModuleNs
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Stream.Stream<Java.Lang.String> List()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.String>>("list", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream<Java.Lang.String>>("list");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#close()"/>
@@ -172,7 +172,7 @@ namespace Java.Lang.ModuleNs
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#open(java.lang.String)"/>
@@ -182,7 +182,7 @@ namespace Java.Lang.ModuleNs
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Optional<Java.Io.InputStream> Open(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Io.InputStream>>("open", "(Ljava/lang/String;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<Java.Io.InputStream>>("open", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#read(java.lang.String)"/>
@@ -192,7 +192,7 @@ namespace Java.Lang.ModuleNs
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Optional<Java.Nio.ByteBuffer> Read(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Nio.ByteBuffer>>("read", "(Ljava/lang/String;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<Java.Nio.ByteBuffer>>("read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#release(java.nio.ByteBuffer)"/>
@@ -200,7 +200,7 @@ namespace Java.Lang.ModuleNs
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void Release(Java.Nio.ByteBuffer arg0)
         {
-            IExecuteWithSignature("release", "(Ljava/nio/ByteBuffer;)V", arg0);
+            IExecute("release", arg0);
         }
 
         #endregion

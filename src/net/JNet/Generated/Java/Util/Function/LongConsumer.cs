@@ -182,7 +182,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.LongConsumer AndThenDefault(Java.Util.Function.LongConsumer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.LongConsumer>("andThenDefault", "(Ljava/util/function/LongConsumer;)Ljava/util/function/LongConsumer;", arg0);
+            return IExecute<Java.Util.Function.LongConsumer>("andThenDefault", arg0);
         }
 
         /// <summary>
@@ -247,7 +247,7 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="long"/></param>
         public override void Accept(long arg0)
         {
-            IExecuteWithSignature("accept", "(J)V", arg0);
+            IExecute("accept", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
@@ -256,7 +256,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
         public override Java.Util.Function.LongConsumer AndThen(Java.Util.Function.LongConsumer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.LongConsumerDirect, Java.Util.Function.LongConsumer>("andThen", "(Ljava/util/function/LongConsumer;)Ljava/util/function/LongConsumer;", arg0);
+            return IExecute<Java.Util.Function.LongConsumerDirect, Java.Util.Function.LongConsumer>("andThen", arg0);
         }
 
         #endregion

@@ -151,14 +151,14 @@ namespace Javax.Print
         /// </summary>
         public Javax.Print.Attribute.PrintJobAttributeSet Attributes
         {
-            get { return IExecuteWithSignature<Javax.Print.Attribute.PrintJobAttributeSet>("getAttributes", "()Ljavax/print/attribute/PrintJobAttributeSet;"); }
+            get { return IExecute<Javax.Print.Attribute.PrintJobAttributeSet>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#getPrintService()"/> 
         /// </summary>
         public Javax.Print.PrintService PrintService
         {
-            get { return IExecuteWithSignature<Javax.Print.PrintService>("getPrintService", "()Ljavax/print/PrintService;"); }
+            get { return IExecute<Javax.Print.PrintService>("getPrintService"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#addPrintJobAttributeListener(javax.print.event.PrintJobAttributeListener,javax.print.attribute.PrintJobAttributeSet)"/>
@@ -175,7 +175,7 @@ namespace Javax.Print
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobListener"/></param>
         public void AddPrintJobListener(Javax.Print.Event.PrintJobListener arg0)
         {
-            IExecuteWithSignature("addPrintJobListener", "(Ljavax/print/event/PrintJobListener;)V", arg0);
+            IExecute("addPrintJobListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#print(javax.print.Doc,javax.print.attribute.PrintRequestAttributeSet)"/>
@@ -193,7 +193,7 @@ namespace Javax.Print
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobAttributeListener"/></param>
         public void RemovePrintJobAttributeListener(Javax.Print.Event.PrintJobAttributeListener arg0)
         {
-            IExecuteWithSignature("removePrintJobAttributeListener", "(Ljavax/print/event/PrintJobAttributeListener;)V", arg0);
+            IExecute("removePrintJobAttributeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#removePrintJobListener(javax.print.event.PrintJobListener)"/>
@@ -201,7 +201,7 @@ namespace Javax.Print
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobListener"/></param>
         public void RemovePrintJobListener(Javax.Print.Event.PrintJobListener arg0)
         {
-            IExecuteWithSignature("removePrintJobListener", "(Ljavax/print/event/PrintJobListener;)V", arg0);
+            IExecute("removePrintJobListener", arg0);
         }
 
         #endregion

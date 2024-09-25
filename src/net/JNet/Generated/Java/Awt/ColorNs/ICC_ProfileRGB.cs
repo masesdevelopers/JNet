@@ -113,14 +113,14 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public float[] Matrix
         {
-            get { return IExecuteWithSignatureArray<float>("getMatrix", "()[[F"); }
+            get { return IExecuteArray<float>("getMatrix"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html#getMediaWhitePoint()"/> 
         /// </summary>
         public float[] MediaWhitePoint
         {
-            get { return IExecuteWithSignatureArray<float>("getMediaWhitePoint", "()[F"); }
+            get { return IExecuteArray<float>("getMediaWhitePoint"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html#getGamma(int)"/>
@@ -129,7 +129,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="float"/></returns>
         public float GetGamma(int arg0)
         {
-            return IExecuteWithSignature<float>("getGamma", "(I)F", arg0);
+            return IExecute<float>("getGamma", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html#getTRC(int)"/>
@@ -138,7 +138,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="short"/></returns>
         public short[] GetTRC(int arg0)
         {
-            return IExecuteWithSignatureArray<short>("getTRC", "(I)[S", arg0);
+            return IExecuteArray<short>("getTRC", arg0);
         }
 
         #endregion

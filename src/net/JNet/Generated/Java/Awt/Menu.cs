@@ -118,7 +118,7 @@ namespace Java.Awt
         /// </summary>
         public int ItemCount
         {
-            get { return IExecuteWithSignature<int>("getItemCount", "()I"); }
+            get { return IExecute<int>("getItemCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#isTearOff()"/>
@@ -126,7 +126,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsTearOff()
         {
-            return IExecuteWithSignature<bool>("isTearOff", "()Z");
+            return IExecute<bool>("isTearOff");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#add(java.awt.MenuItem)"/>
@@ -135,7 +135,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.MenuItem"/></returns>
         public Java.Awt.MenuItem Add(Java.Awt.MenuItem arg0)
         {
-            return IExecuteWithSignature<Java.Awt.MenuItem>("add", "(Ljava/awt/MenuItem;)Ljava/awt/MenuItem;", arg0);
+            return IExecute<Java.Awt.MenuItem>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#getItem(int)"/>
@@ -144,7 +144,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.MenuItem"/></returns>
         public Java.Awt.MenuItem GetItem(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.MenuItem>("getItem", "(I)Ljava/awt/MenuItem;", arg0);
+            return IExecute<Java.Awt.MenuItem>("getItem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#add(java.lang.String)"/>
@@ -152,14 +152,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Add(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("add", "(Ljava/lang/String;)V", arg0);
+            IExecute("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#addSeparator()"/>
         /// </summary>
         public void AddSeparator()
         {
-            IExecuteWithSignature("addSeparator", "()V");
+            IExecute("addSeparator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#insert(java.awt.MenuItem,int)"/>
@@ -185,7 +185,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void InsertSeparator(int arg0)
         {
-            IExecuteWithSignature("insertSeparator", "(I)V", arg0);
+            IExecute("insertSeparator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#remove(int)"/>
@@ -193,7 +193,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void Remove(int arg0)
         {
-            IExecuteWithSignature("remove", "(I)V", arg0);
+            IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#remove(java.awt.MenuComponent)"/>
@@ -201,14 +201,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.MenuComponent"/></param>
         public void Remove(Java.Awt.MenuComponent arg0)
         {
-            IExecuteWithSignature("remove", "(Ljava/awt/MenuComponent;)V", arg0);
+            IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#removeAll()"/>
         /// </summary>
         public void RemoveAll()
         {
-            IExecuteWithSignature("removeAll", "()V");
+            IExecute("removeAll");
         }
 
         #endregion

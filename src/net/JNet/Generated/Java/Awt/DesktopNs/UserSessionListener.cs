@@ -234,7 +234,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.UserSessionEvent"/></param>
         public override void UserSessionActivated(Java.Awt.DesktopNs.UserSessionEvent arg0)
         {
-            IExecuteWithSignature("userSessionActivated", "(Ljava/awt/desktop/UserSessionEvent;)V", arg0);
+            IExecute("userSessionActivated", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionDeactivated(java.awt.desktop.UserSessionEvent)"/>
@@ -242,7 +242,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.UserSessionEvent"/></param>
         public override void UserSessionDeactivated(Java.Awt.DesktopNs.UserSessionEvent arg0)
         {
-            IExecuteWithSignature("userSessionDeactivated", "(Ljava/awt/desktop/UserSessionEvent;)V", arg0);
+            IExecute("userSessionDeactivated", arg0);
         }
 
         #endregion

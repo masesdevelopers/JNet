@@ -807,7 +807,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="Java.Awt.ColorNs.ICC_Profile"/></returns>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(byte[] arg0)
         {
-            return SExecuteWithSignature<Java.Awt.ColorNs.ICC_Profile>(LocalBridgeClazz, "getInstance", "([B)Ljava/awt/color/ICC_Profile;", new object[] { arg0 });
+            return SExecute<Java.Awt.ColorNs.ICC_Profile>(LocalBridgeClazz, "getInstance", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getInstance(int)"/>
@@ -816,7 +816,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="Java.Awt.ColorNs.ICC_Profile"/></returns>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(int arg0)
         {
-            return SExecuteWithSignature<Java.Awt.ColorNs.ICC_Profile>(LocalBridgeClazz, "getInstance", "(I)Ljava/awt/color/ICC_Profile;", arg0);
+            return SExecute<Java.Awt.ColorNs.ICC_Profile>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getInstance(java.io.InputStream)"/>
@@ -826,7 +826,7 @@ namespace Java.Awt.ColorNs
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(Java.Io.InputStream arg0)
         {
-            return SExecuteWithSignature<Java.Awt.ColorNs.ICC_Profile>(LocalBridgeClazz, "getInstance", "(Ljava/io/InputStream;)Ljava/awt/color/ICC_Profile;", arg0);
+            return SExecute<Java.Awt.ColorNs.ICC_Profile>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getInstance(java.lang.String)"/>
@@ -836,7 +836,7 @@ namespace Java.Awt.ColorNs
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Awt.ColorNs.ICC_Profile>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/awt/color/ICC_Profile;", arg0);
+            return SExecute<Java.Awt.ColorNs.ICC_Profile>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -847,49 +847,49 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public int ColorSpaceType
         {
-            get { return IExecuteWithSignature<int>("getColorSpaceType", "()I"); }
+            get { return IExecute<int>("getColorSpaceType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getData()"/> 
         /// </summary>
         public byte[] Data
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
+            get { return IExecuteArray<byte>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getMajorVersion()"/> 
         /// </summary>
         public int MajorVersion
         {
-            get { return IExecuteWithSignature<int>("getMajorVersion", "()I"); }
+            get { return IExecute<int>("getMajorVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getMinorVersion()"/> 
         /// </summary>
         public int MinorVersion
         {
-            get { return IExecuteWithSignature<int>("getMinorVersion", "()I"); }
+            get { return IExecute<int>("getMinorVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getNumComponents()"/> 
         /// </summary>
         public int NumComponents
         {
-            get { return IExecuteWithSignature<int>("getNumComponents", "()I"); }
+            get { return IExecute<int>("getNumComponents"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getPCSType()"/> 
         /// </summary>
         public int PCSType
         {
-            get { return IExecuteWithSignature<int>("getPCSType", "()I"); }
+            get { return IExecute<int>("getPCSType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getProfileClass()"/> 
         /// </summary>
         public int ProfileClass
         {
-            get { return IExecuteWithSignature<int>("getProfileClass", "()I"); }
+            get { return IExecute<int>("getProfileClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getData(int)"/>
@@ -898,7 +898,7 @@ namespace Java.Awt.ColorNs
         /// <returns><see cref="byte"/></returns>
         public byte[] GetData(int arg0)
         {
-            return IExecuteWithSignatureArray<byte>("getData", "(I)[B", arg0);
+            return IExecuteArray<byte>("getData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#setData(int,byte[])"/>
@@ -916,7 +916,7 @@ namespace Java.Awt.ColorNs
         /// <exception cref="Java.Io.IOException"/>
         public void Write(Java.Io.OutputStream arg0)
         {
-            IExecuteWithSignature("write", "(Ljava/io/OutputStream;)V", arg0);
+            IExecute("write", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#write(java.lang.String)"/>
@@ -925,7 +925,7 @@ namespace Java.Awt.ColorNs
         /// <exception cref="Java.Io.IOException"/>
         public void Write(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("write", "(Ljava/lang/String;)V", arg0);
+            IExecute("write", arg0);
         }
 
         #endregion

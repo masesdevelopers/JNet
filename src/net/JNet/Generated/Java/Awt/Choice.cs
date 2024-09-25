@@ -103,35 +103,35 @@ namespace Java.Awt
         /// </summary>
         public int ItemCount
         {
-            get { return IExecuteWithSignature<int>("getItemCount", "()I"); }
+            get { return IExecute<int>("getItemCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#getItemListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ItemListener[] ItemListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ItemListener>("getItemListeners", "()[Ljava/awt/event/ItemListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.ItemListener>("getItemListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#getSelectedIndex()"/> 
         /// </summary>
         public int SelectedIndex
         {
-            get { return IExecuteWithSignature<int>("getSelectedIndex", "()I"); }
+            get { return IExecute<int>("getSelectedIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#getSelectedItem()"/> 
         /// </summary>
         public Java.Lang.String SelectedItem
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSelectedItem", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSelectedItem"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#getSelectedObjects()"/> 
         /// </summary>
         public object[] SelectedObjects
         {
-            get { return IExecuteWithSignatureArray<object>("getSelectedObjects", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getSelectedObjects"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#getItem(int)"/>
@@ -140,7 +140,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetItem(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getItem", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getItem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#addItemListener(java.awt.event.ItemListener)"/>
@@ -148,7 +148,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecuteWithSignature("addItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
+            IExecute("addItemListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#removeItemListener(java.awt.event.ItemListener)"/>
@@ -156,7 +156,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecuteWithSignature("removeItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
+            IExecute("removeItemListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#select(int)"/>
@@ -164,7 +164,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void Select(int arg0)
         {
-            IExecuteWithSignature("select", "(I)V", arg0);
+            IExecute("select", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#select(java.lang.String)"/>
@@ -172,7 +172,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Select(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("select", "(Ljava/lang/String;)V", arg0);
+            IExecute("select", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#add(java.lang.String)"/>
@@ -180,7 +180,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Add(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("add", "(Ljava/lang/String;)V", arg0);
+            IExecute("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#addItem(java.lang.String)"/>
@@ -188,7 +188,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void AddItem(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("addItem", "(Ljava/lang/String;)V", arg0);
+            IExecute("addItem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#insert(java.lang.String,int)"/>
@@ -205,7 +205,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void Remove(int arg0)
         {
-            IExecuteWithSignature("remove", "(I)V", arg0);
+            IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#remove(java.lang.String)"/>
@@ -213,14 +213,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Remove(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("remove", "(Ljava/lang/String;)V", arg0);
+            IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#removeAll()"/>
         /// </summary>
         public void RemoveAll()
         {
-            IExecuteWithSignature("removeAll", "()V");
+            IExecute("removeAll");
         }
 
         #endregion

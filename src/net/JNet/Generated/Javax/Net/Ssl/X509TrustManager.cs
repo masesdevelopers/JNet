@@ -133,7 +133,7 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Security.Cert.X509Certificate[] AcceptedIssuers
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>("getAcceptedIssuers", "()[Ljava/security/cert/X509Certificate;"); }
+            get { return IExecuteArray<Java.Security.Cert.X509Certificate>("getAcceptedIssuers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html#checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>

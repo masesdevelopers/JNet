@@ -133,21 +133,21 @@ namespace Javax.Xml.Crypto.Dsig
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getMechanismType()"/> 
         /// </summary>
         public Java.Lang.String MechanismType
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMechanismType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMechanismType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#init(javax.xml.crypto.dsig.spec.TransformParameterSpec)"/>
@@ -156,7 +156,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec arg0)
         {
-            IExecuteWithSignature("init", "(Ljavax/xml/crypto/dsig/spec/TransformParameterSpec;)V", arg0);
+            IExecute("init", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#init(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext)"/>

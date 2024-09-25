@@ -216,28 +216,28 @@ namespace Javax.Swing.Tree
         /// </summary>
         public Java.Awt.Color BorderSelectionColor
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getBorderSelectionColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setBorderSelectionColor", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getBorderSelectionColor"); } set { IExecute("setBorderSelectionColor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getCellEditorListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.CellEditorListener[] CellEditorListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.CellEditorListener>("getCellEditorListeners", "()[Ljavax/swing/event/CellEditorListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.CellEditorListener>("getCellEditorListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getCellEditorValue()"/> 
         /// </summary>
         public object CellEditorValue
         {
-            get { return IExecuteWithSignature("getCellEditorValue", "()Ljava/lang/Object;"); }
+            get { return IExecute("getCellEditorValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getFont()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#setFont(java.awt.Font)"/>
         /// </summary>
         public Java.Awt.Font Font
         {
-            get { return IExecuteWithSignature<Java.Awt.Font>("getFont", "()Ljava/awt/Font;"); } set { IExecuteWithSignature("setFont", "(Ljava/awt/Font;)V", value); }
+            get { return IExecute<Java.Awt.Font>("getFont"); } set { IExecute("setFont", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#isCellEditable(java.util.EventObject)"/>
@@ -246,7 +246,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="bool"/></returns>
         public bool IsCellEditable(Java.Util.EventObject arg0)
         {
-            return IExecuteWithSignature<bool>("isCellEditable", "(Ljava/util/EventObject;)Z", arg0);
+            return IExecute<bool>("isCellEditable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#shouldSelectCell(java.util.EventObject)"/>
@@ -255,7 +255,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="bool"/></returns>
         public bool ShouldSelectCell(Java.Util.EventObject arg0)
         {
-            return IExecuteWithSignature<bool>("shouldSelectCell", "(Ljava/util/EventObject;)Z", arg0);
+            return IExecute<bool>("shouldSelectCell", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#stopCellEditing()"/>
@@ -263,7 +263,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="bool"/></returns>
         public bool StopCellEditing()
         {
-            return IExecuteWithSignature<bool>("stopCellEditing", "()Z");
+            return IExecute<bool>("stopCellEditing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getTreeCellEditorComponent(javax.swing.JTree,java.lang.Object,boolean,boolean,boolean,int)"/>
@@ -285,7 +285,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
         public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
         {
-            IExecuteWithSignature("actionPerformed", "(Ljava/awt/event/ActionEvent;)V", arg0);
+            IExecute("actionPerformed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#addCellEditorListener(javax.swing.event.CellEditorListener)"/>
@@ -293,14 +293,14 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Event.CellEditorListener"/></param>
         public void AddCellEditorListener(Javax.Swing.Event.CellEditorListener arg0)
         {
-            IExecuteWithSignature("addCellEditorListener", "(Ljavax/swing/event/CellEditorListener;)V", arg0);
+            IExecute("addCellEditorListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#cancelCellEditing()"/>
         /// </summary>
         public void CancelCellEditing()
         {
-            IExecuteWithSignature("cancelCellEditing", "()V");
+            IExecute("cancelCellEditing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#removeCellEditorListener(javax.swing.event.CellEditorListener)"/>
@@ -308,7 +308,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Event.CellEditorListener"/></param>
         public void RemoveCellEditorListener(Javax.Swing.Event.CellEditorListener arg0)
         {
-            IExecuteWithSignature("removeCellEditorListener", "(Ljavax/swing/event/CellEditorListener;)V", arg0);
+            IExecute("removeCellEditorListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#valueChanged(javax.swing.event.TreeSelectionEvent)"/>
@@ -316,7 +316,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionEvent"/></param>
         public void ValueChanged(Javax.Swing.Event.TreeSelectionEvent arg0)
         {
-            IExecuteWithSignature("valueChanged", "(Ljavax/swing/event/TreeSelectionEvent;)V", arg0);
+            IExecute("valueChanged", arg0);
         }
 
         #endregion
@@ -395,7 +395,7 @@ namespace Javax.Swing.Tree
             /// </summary>
             public void EditorContainerMethod()
             {
-                IExecuteWithSignature("EditorContainer", "()V");
+                IExecute("EditorContainer");
             }
 
             #endregion

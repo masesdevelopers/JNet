@@ -111,7 +111,7 @@ namespace Java.Lang.Annotation
         /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
         public static Java.Lang.Annotation.RetentionPolicy ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Annotation.RetentionPolicy>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/annotation/RetentionPolicy;", arg0);
+            return SExecute<Java.Lang.Annotation.RetentionPolicy>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#values()"/>
@@ -119,7 +119,7 @@ namespace Java.Lang.Annotation
         /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
         public static Java.Lang.Annotation.RetentionPolicy[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Lang.Annotation.RetentionPolicy>(LocalBridgeClazz, "values", "()[Ljava/lang/annotation/RetentionPolicy;");
+            return SExecuteArray<Java.Lang.Annotation.RetentionPolicy>(LocalBridgeClazz, "values");
         }
 
         #endregion

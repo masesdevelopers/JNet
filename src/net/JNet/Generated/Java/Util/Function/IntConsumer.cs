@@ -182,7 +182,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.IntConsumer AndThenDefault(Java.Util.Function.IntConsumer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.IntConsumer>("andThenDefault", "(Ljava/util/function/IntConsumer;)Ljava/util/function/IntConsumer;", arg0);
+            return IExecute<Java.Util.Function.IntConsumer>("andThenDefault", arg0);
         }
 
         /// <summary>
@@ -247,7 +247,7 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="int"/></param>
         public override void Accept(int arg0)
         {
-            IExecuteWithSignature("accept", "(I)V", arg0);
+            IExecute("accept", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
@@ -256,7 +256,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
         public override Java.Util.Function.IntConsumer AndThen(Java.Util.Function.IntConsumer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.IntConsumerDirect, Java.Util.Function.IntConsumer>("andThen", "(Ljava/util/function/IntConsumer;)Ljava/util/function/IntConsumer;", arg0);
+            return IExecute<Java.Util.Function.IntConsumerDirect, Java.Util.Function.IntConsumer>("andThen", arg0);
         }
 
         #endregion

@@ -100,7 +100,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="Javax.Xml.Stream.XMLOutputFactory"/></returns>
         public static Javax.Xml.Stream.XMLOutputFactory NewDefaultFactory()
         {
-            return SExecuteWithSignature<Javax.Xml.Stream.XMLOutputFactory>(LocalBridgeClazz, "newDefaultFactory", "()Ljavax/xml/stream/XMLOutputFactory;");
+            return SExecute<Javax.Xml.Stream.XMLOutputFactory>(LocalBridgeClazz, "newDefaultFactory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newFactory()"/>
@@ -109,7 +109,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLOutputFactory NewFactory()
         {
-            return SExecuteWithSignature<Javax.Xml.Stream.XMLOutputFactory>(LocalBridgeClazz, "newFactory", "()Ljavax/xml/stream/XMLOutputFactory;");
+            return SExecute<Javax.Xml.Stream.XMLOutputFactory>(LocalBridgeClazz, "newFactory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newFactory(java.lang.String,java.lang.ClassLoader)"/>
@@ -129,7 +129,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLOutputFactory NewInstance()
         {
-            return SExecuteWithSignature<Javax.Xml.Stream.XMLOutputFactory>(LocalBridgeClazz, "newInstance", "()Ljavax/xml/stream/XMLOutputFactory;");
+            return SExecute<Javax.Xml.Stream.XMLOutputFactory>(LocalBridgeClazz, "newInstance");
         }
 
         #endregion
@@ -142,7 +142,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="bool"/></returns>
         public bool IsPropertySupported(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("isPropertySupported", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("isPropertySupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#getProperty(java.lang.String)"/>
@@ -152,7 +152,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLEventWriter(java.io.OutputStream,java.lang.String)"/>
@@ -173,7 +173,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLEventWriter CreateXMLEventWriter(Java.Io.OutputStream arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.XMLEventWriter>("createXMLEventWriter", "(Ljava/io/OutputStream;)Ljavax/xml/stream/XMLEventWriter;", arg0);
+            return IExecute<Javax.Xml.Stream.XMLEventWriter>("createXMLEventWriter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLEventWriter(java.io.Writer)"/>
@@ -183,7 +183,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLEventWriter CreateXMLEventWriter(Java.Io.Writer arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.XMLEventWriter>("createXMLEventWriter", "(Ljava/io/Writer;)Ljavax/xml/stream/XMLEventWriter;", arg0);
+            return IExecute<Javax.Xml.Stream.XMLEventWriter>("createXMLEventWriter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLEventWriter(javax.xml.transform.Result)"/>
@@ -193,7 +193,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLEventWriter CreateXMLEventWriter(Javax.Xml.Transform.Result arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.XMLEventWriter>("createXMLEventWriter", "(Ljavax/xml/transform/Result;)Ljavax/xml/stream/XMLEventWriter;", arg0);
+            return IExecute<Javax.Xml.Stream.XMLEventWriter>("createXMLEventWriter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLStreamWriter(java.io.OutputStream,java.lang.String)"/>
@@ -214,7 +214,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLStreamWriter CreateXMLStreamWriter(Java.Io.OutputStream arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamWriter>("createXMLStreamWriter", "(Ljava/io/OutputStream;)Ljavax/xml/stream/XMLStreamWriter;", arg0);
+            return IExecute<Javax.Xml.Stream.XMLStreamWriter>("createXMLStreamWriter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLStreamWriter(java.io.Writer)"/>
@@ -224,7 +224,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLStreamWriter CreateXMLStreamWriter(Java.Io.Writer arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamWriter>("createXMLStreamWriter", "(Ljava/io/Writer;)Ljavax/xml/stream/XMLStreamWriter;", arg0);
+            return IExecute<Javax.Xml.Stream.XMLStreamWriter>("createXMLStreamWriter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLStreamWriter(javax.xml.transform.Result)"/>
@@ -234,7 +234,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLStreamWriter CreateXMLStreamWriter(Javax.Xml.Transform.Result arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamWriter>("createXMLStreamWriter", "(Ljavax/xml/transform/Result;)Ljavax/xml/stream/XMLStreamWriter;", arg0);
+            return IExecute<Javax.Xml.Stream.XMLStreamWriter>("createXMLStreamWriter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#setProperty(java.lang.String,java.lang.Object)"/>

@@ -147,7 +147,7 @@ namespace Java.Security
         /// <exception cref="Java.Lang.Exception"/>
         public object Run()
         {
-            return IExecuteWithSignature("run", "()Ljava/lang/Object;");
+            return IExecute("run");
         }
 
         #endregion
@@ -215,7 +215,7 @@ namespace Java.Security
         /// <exception cref="Java.Lang.Exception"/>
         public T Run()
         {
-            return IExecuteWithSignature<T>("run", "()Ljava/lang/Object;");
+            return IExecute<T>("run");
         }
 
         #endregion

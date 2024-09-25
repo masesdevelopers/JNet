@@ -125,14 +125,14 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
-            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "()Ljava/awt/Rectangle;"); }
+            get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Polygon.html#getBounds2D()"/> 
         /// </summary>
         public Java.Awt.Geom.Rectangle2D Bounds2D
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getBounds2D", "()Ljava/awt/geom/Rectangle2D;"); }
+            get { return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds2D"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Polygon.html#contains(double,double,double,double)"/>
@@ -173,7 +173,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Point2D;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Polygon.html#contains(java.awt.geom.Rectangle2D)"/>
@@ -182,7 +182,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Rectangle2D arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Polygon.html#contains(java.awt.Point)"/>
@@ -191,7 +191,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/Point;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Polygon.html#intersects(double,double,double,double)"/>
@@ -212,7 +212,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Intersects(Java.Awt.Geom.Rectangle2D arg0)
         {
-            return IExecuteWithSignature<bool>("intersects", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
+            return IExecute<bool>("intersects", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Polygon.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
@@ -231,7 +231,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;)Ljava/awt/geom/PathIterator;", arg0);
+            return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Polygon.html#addPoint(int,int)"/>
@@ -247,14 +247,14 @@ namespace Java.Awt
         /// </summary>
         public void Invalidate()
         {
-            IExecuteWithSignature("invalidate", "()V");
+            IExecute("invalidate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Polygon.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Polygon.html#translate(int,int)"/>

@@ -123,14 +123,14 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Org.W3c.Dom.Html.HTMLCollection Areas
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLCollection>("getAreas", "()Lorg/w3c/dom/html/HTMLCollection;"); }
+            get { return IExecute<Org.W3c.Dom.Html.HTMLCollection>("getAreas"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMapElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMapElement.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
 
         #endregion

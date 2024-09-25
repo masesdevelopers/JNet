@@ -157,7 +157,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object Exchange(object arg0)
         {
-            return IExecuteWithSignature("exchange", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("exchange", arg0);
         }
 
         #endregion
@@ -215,7 +215,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public V Exchange(V arg0)
         {
-            return IExecuteWithSignature<V>("exchange", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<V>("exchange", arg0);
         }
 
         #endregion

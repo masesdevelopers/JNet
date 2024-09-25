@@ -126,7 +126,7 @@ namespace Javax.Security.Auth
         /// <returns><see cref="bool"/></returns>
         public bool IsCurrent()
         {
-            return IExecuteWithSignature<bool>("isCurrent", "()Z");
+            return IExecute<bool>("isCurrent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#refresh()"/>
@@ -134,7 +134,7 @@ namespace Javax.Security.Auth
         /// <exception cref="Javax.Security.Auth.RefreshFailedException"/>
         public void Refresh()
         {
-            IExecuteWithSignature("refresh", "()V");
+            IExecute("refresh");
         }
 
         #endregion

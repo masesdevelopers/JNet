@@ -104,14 +104,14 @@ namespace Javax.Print.Event
         /// </summary>
         public Javax.Print.Attribute.PrintJobAttributeSet Attributes
         {
-            get { return IExecuteWithSignature<Javax.Print.Attribute.PrintJobAttributeSet>("getAttributes", "()Ljavax/print/attribute/PrintJobAttributeSet;"); }
+            get { return IExecute<Javax.Print.Attribute.PrintJobAttributeSet>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAttributeEvent.html#getPrintJob()"/> 
         /// </summary>
         public Javax.Print.DocPrintJob PrintJob
         {
-            get { return IExecuteWithSignature<Javax.Print.DocPrintJob>("getPrintJob", "()Ljavax/print/DocPrintJob;"); }
+            get { return IExecute<Javax.Print.DocPrintJob>("getPrintJob"); }
         }
 
         #endregion

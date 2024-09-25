@@ -167,91 +167,91 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Align
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlign", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getAlt()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setAlt(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Alt
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlt", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlt", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAlt"); } set { IExecute("setAlt", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getBorder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setBorder(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Border
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBorder", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setBorder", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getBorder"); } set { IExecute("setBorder", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setHeight(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Height
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHeight", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHeight", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getHeight"); } set { IExecute("setHeight", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getHspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setHspace(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Hspace
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHspace", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHspace", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getHspace"); } set { IExecute("setHspace", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getIsMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setIsMap(boolean)"/>
         /// </summary>
         public bool IsMap
         {
-            get { return IExecuteWithSignature<bool>("getIsMap", "()Z"); } set { IExecuteWithSignature("setIsMap", "(Z)V", value); }
+            get { return IExecute<bool>("getIsMap"); } set { IExecute("setIsMap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getLongDesc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setLongDesc(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String LongDesc
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLongDesc", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLongDesc", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getLongDesc"); } set { IExecute("setLongDesc", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getLowSrc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setLowSrc(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String LowSrc
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLowSrc", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLowSrc", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getLowSrc"); } set { IExecute("setLowSrc", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getSrc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setSrc(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Src
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSrc", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSrc", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSrc"); } set { IExecute("setSrc", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getUseMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setUseMap(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String UseMap
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUseMap", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setUseMap", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getUseMap"); } set { IExecute("setUseMap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getVspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setVspace(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Vspace
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVspace", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setVspace", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getVspace"); } set { IExecute("setVspace", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLImageElement.html#setWidth(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Width
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWidth", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setWidth", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getWidth"); } set { IExecute("setWidth", value); }
         }
 
         #endregion

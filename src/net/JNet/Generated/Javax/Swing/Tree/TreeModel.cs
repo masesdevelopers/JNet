@@ -161,7 +161,7 @@ namespace Javax.Swing.Tree
         /// </summary>
         public object Root
         {
-            get { return IExecuteWithSignature("getRoot", "()Ljava/lang/Object;"); }
+            get { return IExecute("getRoot"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#isLeaf(java.lang.Object)"/>
@@ -170,7 +170,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="bool"/></returns>
         public bool IsLeaf(object arg0)
         {
-            return IExecuteWithSignature<bool>("isLeaf", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("isLeaf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#getChildCount(java.lang.Object)"/>
@@ -179,7 +179,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="int"/></returns>
         public int GetChildCount(object arg0)
         {
-            return IExecuteWithSignature<int>("getChildCount", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("getChildCount", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#getIndexOfChild(java.lang.Object,java.lang.Object)"/>
@@ -207,7 +207,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelListener"/></param>
         public void AddTreeModelListener(Javax.Swing.Event.TreeModelListener arg0)
         {
-            IExecuteWithSignature("addTreeModelListener", "(Ljavax/swing/event/TreeModelListener;)V", arg0);
+            IExecute("addTreeModelListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#removeTreeModelListener(javax.swing.event.TreeModelListener)"/>
@@ -215,7 +215,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelListener"/></param>
         public void RemoveTreeModelListener(Javax.Swing.Event.TreeModelListener arg0)
         {
-            IExecuteWithSignature("removeTreeModelListener", "(Ljavax/swing/event/TreeModelListener;)V", arg0);
+            IExecute("removeTreeModelListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#valueForPathChanged(javax.swing.tree.TreePath,java.lang.Object)"/>

@@ -119,28 +119,28 @@ namespace Javax.Swing.Event
         /// </summary>
         public Javax.Swing.Tree.TreePath NewLeadSelectionPath
         {
-            get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getNewLeadSelectionPath", "()Ljavax/swing/tree/TreePath;"); }
+            get { return IExecute<Javax.Swing.Tree.TreePath>("getNewLeadSelectionPath"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#getOldLeadSelectionPath()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath OldLeadSelectionPath
         {
-            get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getOldLeadSelectionPath", "()Ljavax/swing/tree/TreePath;"); }
+            get { return IExecute<Javax.Swing.Tree.TreePath>("getOldLeadSelectionPath"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#getPath()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath Path
         {
-            get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getPath", "()Ljavax/swing/tree/TreePath;"); }
+            get { return IExecute<Javax.Swing.Tree.TreePath>("getPath"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#getPaths()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath[] Paths
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Tree.TreePath>("getPaths", "()[Ljavax/swing/tree/TreePath;"); }
+            get { return IExecuteArray<Javax.Swing.Tree.TreePath>("getPaths"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#isAddedPath()"/>
@@ -148,7 +148,7 @@ namespace Javax.Swing.Event
         /// <returns><see cref="bool"/></returns>
         public bool IsAddedPath()
         {
-            return IExecuteWithSignature<bool>("isAddedPath", "()Z");
+            return IExecute<bool>("isAddedPath");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#isAddedPath(int)"/>
@@ -157,7 +157,7 @@ namespace Javax.Swing.Event
         /// <returns><see cref="bool"/></returns>
         public bool IsAddedPath(int arg0)
         {
-            return IExecuteWithSignature<bool>("isAddedPath", "(I)Z", arg0);
+            return IExecute<bool>("isAddedPath", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#isAddedPath(javax.swing.tree.TreePath)"/>
@@ -166,7 +166,7 @@ namespace Javax.Swing.Event
         /// <returns><see cref="bool"/></returns>
         public bool IsAddedPath(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecuteWithSignature<bool>("isAddedPath", "(Ljavax/swing/tree/TreePath;)Z", arg0);
+            return IExecute<bool>("isAddedPath", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#cloneWithSource(java.lang.Object)"/>
@@ -175,7 +175,7 @@ namespace Javax.Swing.Event
         /// <returns><see cref="object"/></returns>
         public object CloneWithSource(object arg0)
         {
-            return IExecuteWithSignature("cloneWithSource", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("cloneWithSource", arg0);
         }
 
         #endregion

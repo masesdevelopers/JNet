@@ -91,42 +91,42 @@ namespace Javax.Sound.Midi
         /// </summary>
         public static Javax.Sound.Midi.MidiDevice.Info[] MidiDeviceInfo
         {
-            get { return SExecuteWithSignatureArray<Javax.Sound.Midi.MidiDevice.Info>(LocalBridgeClazz, "getMidiDeviceInfo", "()[Ljavax/sound/midi/MidiDevice$Info;"); }
+            get { return SExecuteArray<Javax.Sound.Midi.MidiDevice.Info>(LocalBridgeClazz, "getMidiDeviceInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getMidiFileTypes()"/> 
         /// </summary>
         public static int[] MidiFileTypes
         {
-            get { return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "getMidiFileTypes", "()[I"); }
+            get { return SExecuteArray<int>(LocalBridgeClazz, "getMidiFileTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getReceiver()"/> 
         /// </summary>
         public static Javax.Sound.Midi.Receiver Receiver
         {
-            get { return SExecuteWithSignature<Javax.Sound.Midi.Receiver>(LocalBridgeClazz, "getReceiver", "()Ljavax/sound/midi/Receiver;"); }
+            get { return SExecute<Javax.Sound.Midi.Receiver>(LocalBridgeClazz, "getReceiver"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSequencer()"/> 
         /// </summary>
         public static Javax.Sound.Midi.Sequencer Sequencer
         {
-            get { return SExecuteWithSignature<Javax.Sound.Midi.Sequencer>(LocalBridgeClazz, "getSequencer", "()Ljavax/sound/midi/Sequencer;"); }
+            get { return SExecute<Javax.Sound.Midi.Sequencer>(LocalBridgeClazz, "getSequencer"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSynthesizer()"/> 
         /// </summary>
         public static Javax.Sound.Midi.Synthesizer Synthesizer
         {
-            get { return SExecuteWithSignature<Javax.Sound.Midi.Synthesizer>(LocalBridgeClazz, "getSynthesizer", "()Ljavax/sound/midi/Synthesizer;"); }
+            get { return SExecute<Javax.Sound.Midi.Synthesizer>(LocalBridgeClazz, "getSynthesizer"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getTransmitter()"/> 
         /// </summary>
         public static Javax.Sound.Midi.Transmitter Transmitter
         {
-            get { return SExecuteWithSignature<Javax.Sound.Midi.Transmitter>(LocalBridgeClazz, "getTransmitter", "()Ljavax/sound/midi/Transmitter;"); }
+            get { return SExecute<Javax.Sound.Midi.Transmitter>(LocalBridgeClazz, "getTransmitter"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#isFileTypeSupported(int,javax.sound.midi.Sequence)"/>
@@ -145,7 +145,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="bool"/></returns>
         public static bool IsFileTypeSupported(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isFileTypeSupported", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isFileTypeSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#write(javax.sound.midi.Sequence,int,java.io.File)"/>
@@ -178,7 +178,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="int"/></returns>
         public static int[] GetMidiFileTypes(Javax.Sound.Midi.Sequence arg0)
         {
-            return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "getMidiFileTypes", "(Ljavax/sound/midi/Sequence;)[I", arg0);
+            return SExecuteArray<int>(LocalBridgeClazz, "getMidiFileTypes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getMidiDevice(javax.sound.midi.MidiDevice.Info)"/>
@@ -188,7 +188,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Javax.Sound.Midi.MidiUnavailableException"/>
         public static Javax.Sound.Midi.MidiDevice GetMidiDevice(Javax.Sound.Midi.MidiDevice.Info arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Midi.MidiDevice>(LocalBridgeClazz, "getMidiDevice", "(Ljavax/sound/midi/MidiDevice$Info;)Ljavax/sound/midi/MidiDevice;", arg0);
+            return SExecute<Javax.Sound.Midi.MidiDevice>(LocalBridgeClazz, "getMidiDevice", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getMidiFileFormat(java.io.File)"/>
@@ -199,7 +199,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Midi.MidiFileFormat GetMidiFileFormat(Java.Io.File arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Midi.MidiFileFormat>(LocalBridgeClazz, "getMidiFileFormat", "(Ljava/io/File;)Ljavax/sound/midi/MidiFileFormat;", arg0);
+            return SExecute<Javax.Sound.Midi.MidiFileFormat>(LocalBridgeClazz, "getMidiFileFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getMidiFileFormat(java.io.InputStream)"/>
@@ -210,7 +210,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Midi.MidiFileFormat GetMidiFileFormat(Java.Io.InputStream arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Midi.MidiFileFormat>(LocalBridgeClazz, "getMidiFileFormat", "(Ljava/io/InputStream;)Ljavax/sound/midi/MidiFileFormat;", arg0);
+            return SExecute<Javax.Sound.Midi.MidiFileFormat>(LocalBridgeClazz, "getMidiFileFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getMidiFileFormat(java.net.URL)"/>
@@ -221,7 +221,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Midi.MidiFileFormat GetMidiFileFormat(Java.Net.URL arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Midi.MidiFileFormat>(LocalBridgeClazz, "getMidiFileFormat", "(Ljava/net/URL;)Ljavax/sound/midi/MidiFileFormat;", arg0);
+            return SExecute<Javax.Sound.Midi.MidiFileFormat>(LocalBridgeClazz, "getMidiFileFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSequence(java.io.File)"/>
@@ -232,7 +232,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Midi.Sequence GetSequence(Java.Io.File arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Midi.Sequence>(LocalBridgeClazz, "getSequence", "(Ljava/io/File;)Ljavax/sound/midi/Sequence;", arg0);
+            return SExecute<Javax.Sound.Midi.Sequence>(LocalBridgeClazz, "getSequence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSequence(java.io.InputStream)"/>
@@ -243,7 +243,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Midi.Sequence GetSequence(Java.Io.InputStream arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Midi.Sequence>(LocalBridgeClazz, "getSequence", "(Ljava/io/InputStream;)Ljavax/sound/midi/Sequence;", arg0);
+            return SExecute<Javax.Sound.Midi.Sequence>(LocalBridgeClazz, "getSequence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSequence(java.net.URL)"/>
@@ -254,7 +254,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Midi.Sequence GetSequence(Java.Net.URL arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Midi.Sequence>(LocalBridgeClazz, "getSequence", "(Ljava/net/URL;)Ljavax/sound/midi/Sequence;", arg0);
+            return SExecute<Javax.Sound.Midi.Sequence>(LocalBridgeClazz, "getSequence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSequencer(boolean)"/>
@@ -264,7 +264,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Javax.Sound.Midi.MidiUnavailableException"/>
         public static Javax.Sound.Midi.Sequencer GetSequencer(bool arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Midi.Sequencer>(LocalBridgeClazz, "getSequencer", "(Z)Ljavax/sound/midi/Sequencer;", arg0);
+            return SExecute<Javax.Sound.Midi.Sequencer>(LocalBridgeClazz, "getSequencer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSoundbank(java.io.File)"/>
@@ -275,7 +275,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Midi.Soundbank GetSoundbank(Java.Io.File arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Midi.Soundbank>(LocalBridgeClazz, "getSoundbank", "(Ljava/io/File;)Ljavax/sound/midi/Soundbank;", arg0);
+            return SExecute<Javax.Sound.Midi.Soundbank>(LocalBridgeClazz, "getSoundbank", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSoundbank(java.io.InputStream)"/>
@@ -286,7 +286,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Midi.Soundbank GetSoundbank(Java.Io.InputStream arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Midi.Soundbank>(LocalBridgeClazz, "getSoundbank", "(Ljava/io/InputStream;)Ljavax/sound/midi/Soundbank;", arg0);
+            return SExecute<Javax.Sound.Midi.Soundbank>(LocalBridgeClazz, "getSoundbank", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSoundbank(java.net.URL)"/>
@@ -297,7 +297,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Midi.Soundbank GetSoundbank(Java.Net.URL arg0)
         {
-            return SExecuteWithSignature<Javax.Sound.Midi.Soundbank>(LocalBridgeClazz, "getSoundbank", "(Ljava/net/URL;)Ljavax/sound/midi/Soundbank;", arg0);
+            return SExecute<Javax.Sound.Midi.Soundbank>(LocalBridgeClazz, "getSoundbank", arg0);
         }
 
         #endregion

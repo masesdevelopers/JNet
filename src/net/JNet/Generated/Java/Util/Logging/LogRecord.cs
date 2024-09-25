@@ -104,91 +104,91 @@ namespace Java.Util.Logging
         /// </summary>
         public Java.Time.Instant Instant
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getInstant", "()Ljava/time/Instant;"); } set { IExecuteWithSignature("setInstant", "(Ljava/time/Instant;)V", value); }
+            get { return IExecute<Java.Time.Instant>("getInstant"); } set { IExecute("setInstant", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#getLevel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#setLevel(java.util.logging.Level)"/>
         /// </summary>
         public Java.Util.Logging.Level Level
         {
-            get { return IExecuteWithSignature<Java.Util.Logging.Level>("getLevel", "()Ljava/util/logging/Level;"); } set { IExecuteWithSignature("setLevel", "(Ljava/util/logging/Level;)V", value); }
+            get { return IExecute<Java.Util.Logging.Level>("getLevel"); } set { IExecute("setLevel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#getLoggerName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#setLoggerName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String LoggerName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLoggerName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLoggerName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getLoggerName"); } set { IExecute("setLoggerName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#getMessage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#setMessage(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Message
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setMessage", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getMessage"); } set { IExecute("setMessage", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#getMillis()"/> 
         /// </summary>
         public long Millis
         {
-            get { return IExecuteWithSignature<long>("getMillis", "()J"); }
+            get { return IExecute<long>("getMillis"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#getParameters()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#setParameters(java.lang.Object[])"/>
         /// </summary>
         public object[] Parameters
         {
-            get { return IExecuteWithSignatureArray<object>("getParameters", "()[Ljava/lang/Object;"); } set { IExecuteWithSignature("setParameters", "([Ljava/lang/Object;)V", value); }
+            get { return IExecuteArray<object>("getParameters"); } set { IExecute("setParameters", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#getResourceBundle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#setResourceBundle(java.util.ResourceBundle)"/>
         /// </summary>
         public Java.Util.ResourceBundle ResourceBundle
         {
-            get { return IExecuteWithSignature<Java.Util.ResourceBundle>("getResourceBundle", "()Ljava/util/ResourceBundle;"); } set { IExecuteWithSignature("setResourceBundle", "(Ljava/util/ResourceBundle;)V", value); }
+            get { return IExecute<Java.Util.ResourceBundle>("getResourceBundle"); } set { IExecute("setResourceBundle", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#getResourceBundleName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#setResourceBundleName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String ResourceBundleName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getResourceBundleName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setResourceBundleName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getResourceBundleName"); } set { IExecute("setResourceBundleName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#getSequenceNumber()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#setSequenceNumber(long)"/>
         /// </summary>
         public long SequenceNumber
         {
-            get { return IExecuteWithSignature<long>("getSequenceNumber", "()J"); } set { IExecuteWithSignature("setSequenceNumber", "(J)V", value); }
+            get { return IExecute<long>("getSequenceNumber"); } set { IExecute("setSequenceNumber", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#getSourceClassName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#setSourceClassName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String SourceClassName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSourceClassName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSourceClassName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSourceClassName"); } set { IExecute("setSourceClassName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#getSourceMethodName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#setSourceMethodName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String SourceMethodName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSourceMethodName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSourceMethodName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSourceMethodName"); } set { IExecute("setSourceMethodName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#getThreadID()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#setThreadID(int)"/>
         /// </summary>
         public int ThreadID
         {
-            get { return IExecuteWithSignature<int>("getThreadID", "()I"); } set { IExecuteWithSignature("setThreadID", "(I)V", value); }
+            get { return IExecute<int>("getThreadID"); } set { IExecute("setThreadID", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#getThrown()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html#setThrown(java.lang.Throwable)"/>
         /// </summary>
         public Java.Lang.Throwable Thrown
         {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getThrown", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); } set { IExecuteWithSignature("setThrown", "(Ljava/lang/Throwable;)V", value); }
+            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getThrown"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); } set { IExecute("setThrown", value); }
         }
 
         #endregion

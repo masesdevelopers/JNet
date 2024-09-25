@@ -214,7 +214,7 @@ namespace Java.Lang.Instrument
         /// </summary>
         public Java.Lang.Class[] AllLoadedClasses
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getAllLoadedClasses", "()[Ljava/lang/Class;"); }
+            get { return IExecuteArray<Java.Lang.Class>("getAllLoadedClasses"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableClass(java.lang.Class)"/>
@@ -223,7 +223,7 @@ namespace Java.Lang.Instrument
         /// <returns><see cref="bool"/></returns>
         public bool IsModifiableClass(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<bool>("isModifiableClass", "(Ljava/lang/Class;)Z", arg0);
+            return IExecute<bool>("isModifiableClass", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableModule(java.lang.Module)"/>
@@ -232,7 +232,7 @@ namespace Java.Lang.Instrument
         /// <returns><see cref="bool"/></returns>
         public bool IsModifiableModule(Java.Lang.Module arg0)
         {
-            return IExecuteWithSignature<bool>("isModifiableModule", "(Ljava/lang/Module;)Z", arg0);
+            return IExecute<bool>("isModifiableModule", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()"/>
@@ -240,7 +240,7 @@ namespace Java.Lang.Instrument
         /// <returns><see cref="bool"/></returns>
         public bool IsNativeMethodPrefixSupported()
         {
-            return IExecuteWithSignature<bool>("isNativeMethodPrefixSupported", "()Z");
+            return IExecute<bool>("isNativeMethodPrefixSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()"/>
@@ -248,7 +248,7 @@ namespace Java.Lang.Instrument
         /// <returns><see cref="bool"/></returns>
         public bool IsRedefineClassesSupported()
         {
-            return IExecuteWithSignature<bool>("isRedefineClassesSupported", "()Z");
+            return IExecute<bool>("isRedefineClassesSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()"/>
@@ -256,7 +256,7 @@ namespace Java.Lang.Instrument
         /// <returns><see cref="bool"/></returns>
         public bool IsRetransformClassesSupported()
         {
-            return IExecuteWithSignature<bool>("isRetransformClassesSupported", "()Z");
+            return IExecute<bool>("isRetransformClassesSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#removeTransformer(java.lang.instrument.ClassFileTransformer)"/>
@@ -265,7 +265,7 @@ namespace Java.Lang.Instrument
         /// <returns><see cref="bool"/></returns>
         public bool RemoveTransformer(Java.Lang.Instrument.ClassFileTransformer arg0)
         {
-            return IExecuteWithSignature<bool>("removeTransformer", "(Ljava/lang/instrument/ClassFileTransformer;)Z", arg0);
+            return IExecute<bool>("removeTransformer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getInitiatedClasses(java.lang.ClassLoader)"/>
@@ -274,7 +274,7 @@ namespace Java.Lang.Instrument
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class[] GetInitiatedClasses(Java.Lang.ClassLoader arg0)
         {
-            return IExecuteWithSignatureArray<Java.Lang.Class>("getInitiatedClasses", "(Ljava/lang/ClassLoader;)[Ljava/lang/Class;", arg0);
+            return IExecuteArray<Java.Lang.Class>("getInitiatedClasses", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getObjectSize(java.lang.Object)"/>
@@ -283,7 +283,7 @@ namespace Java.Lang.Instrument
         /// <returns><see cref="long"/></returns>
         public long GetObjectSize(object arg0)
         {
-            return IExecuteWithSignature<long>("getObjectSize", "(Ljava/lang/Object;)J", arg0);
+            return IExecute<long>("getObjectSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer,boolean)"/>
@@ -300,7 +300,7 @@ namespace Java.Lang.Instrument
         /// <param name="arg0"><see cref="Java.Lang.Instrument.ClassFileTransformer"/></param>
         public void AddTransformer(Java.Lang.Instrument.ClassFileTransformer arg0)
         {
-            IExecuteWithSignature("addTransformer", "(Ljava/lang/instrument/ClassFileTransformer;)V", arg0);
+            IExecute("addTransformer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#appendToBootstrapClassLoaderSearch(java.util.jar.JarFile)"/>
@@ -308,7 +308,7 @@ namespace Java.Lang.Instrument
         /// <param name="arg0"><see cref="Java.Util.Jar.JarFile"/></param>
         public void AppendToBootstrapClassLoaderSearch(Java.Util.Jar.JarFile arg0)
         {
-            IExecuteWithSignature("appendToBootstrapClassLoaderSearch", "(Ljava/util/jar/JarFile;)V", arg0);
+            IExecute("appendToBootstrapClassLoaderSearch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#appendToSystemClassLoaderSearch(java.util.jar.JarFile)"/>
@@ -316,7 +316,7 @@ namespace Java.Lang.Instrument
         /// <param name="arg0"><see cref="Java.Util.Jar.JarFile"/></param>
         public void AppendToSystemClassLoaderSearch(Java.Util.Jar.JarFile arg0)
         {
-            IExecuteWithSignature("appendToSystemClassLoaderSearch", "(Ljava/util/jar/JarFile;)V", arg0);
+            IExecute("appendToSystemClassLoaderSearch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineClasses(java.lang.instrument.ClassDefinition[])"/>
@@ -326,7 +326,7 @@ namespace Java.Lang.Instrument
         /// <exception cref="Java.Lang.Instrument.UnmodifiableClassException"/>
         public void RedefineClasses(params Java.Lang.Instrument.ClassDefinition[] arg0)
         {
-            if (arg0.Length == 0) IExecuteWithSignature("redefineClasses", "([Ljava/lang/instrument/ClassDefinition;)V"); else IExecuteWithSignature("redefineClasses", "([Ljava/lang/instrument/ClassDefinition;)V", arg0);
+            if (arg0.Length == 0) IExecute("redefineClasses"); else IExecute("redefineClasses", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineModule(java.lang.Module,java.util.Set,java.util.Map,java.util.Map,java.util.Set,java.util.Map)"/>
@@ -348,7 +348,7 @@ namespace Java.Lang.Instrument
         /// <exception cref="Java.Lang.Instrument.UnmodifiableClassException"/>
         public void RetransformClasses(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) IExecuteWithSignature("retransformClasses", "([Ljava/lang/Class;)V"); else IExecuteWithSignature("retransformClasses", "([Ljava/lang/Class;)V", arg0);
+            if (arg0.Length == 0) IExecute("retransformClasses"); else IExecute("retransformClasses", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer,java.lang.String)"/>

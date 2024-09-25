@@ -425,7 +425,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public static int DefaultBufferSize()
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "defaultBufferSize", "()I");
+            return SExecute<int>(LocalBridgeClazz, "defaultBufferSize");
         }
 
         #endregion
@@ -527,7 +527,7 @@ namespace Java.Util.Concurrent
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
             public void Subscribe(Java.Util.Concurrent.Flow.Subscriber arg0)
             {
-                IExecuteWithSignature("subscribe", "(Ljava/util/concurrent/Flow$Subscriber;)V", arg0);
+                IExecute("subscribe", arg0);
             }
 
             #endregion
@@ -571,7 +571,7 @@ namespace Java.Util.Concurrent
             /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
             public void Subscribe<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
             {
-                IExecuteWithSignature("subscribe", "(Ljava/util/concurrent/Flow$Subscriber;)V", arg0);
+                IExecute("subscribe", arg0);
             }
 
             #endregion
@@ -609,7 +609,7 @@ namespace Java.Util.Concurrent
             /// </summary>
             public void OnComplete()
             {
-                IExecuteWithSignature("onComplete", "()V");
+                IExecute("onComplete");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onError(java.lang.Throwable)"/>
@@ -617,7 +617,7 @@ namespace Java.Util.Concurrent
             /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
             public void OnError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
             {
-                IExecuteWithSignature("onError", "(Ljava/lang/Throwable;)V", arg0);
+                IExecute("onError", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onNext(java.lang.Object)"/>
@@ -625,7 +625,7 @@ namespace Java.Util.Concurrent
             /// <param name="arg0"><see cref="object"/></param>
             public void OnNext(object arg0)
             {
-                IExecuteWithSignature("onNext", "(Ljava/lang/Object;)V", arg0);
+                IExecute("onNext", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onSubscribe(java.util.concurrent.Flow.Subscription)"/>
@@ -633,7 +633,7 @@ namespace Java.Util.Concurrent
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscription"/></param>
             public void OnSubscribe(Java.Util.Concurrent.Flow.Subscription arg0)
             {
-                IExecuteWithSignature("onSubscribe", "(Ljava/util/concurrent/Flow$Subscription;)V", arg0);
+                IExecute("onSubscribe", arg0);
             }
 
             #endregion
@@ -675,7 +675,7 @@ namespace Java.Util.Concurrent
             /// </summary>
             public void OnComplete()
             {
-                IExecuteWithSignature("onComplete", "()V");
+                IExecute("onComplete");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onError(java.lang.Throwable)"/>
@@ -683,7 +683,7 @@ namespace Java.Util.Concurrent
             /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
             public void OnError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
             {
-                IExecuteWithSignature("onError", "(Ljava/lang/Throwable;)V", arg0);
+                IExecute("onError", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onNext(java.lang.Object)"/>
@@ -691,7 +691,7 @@ namespace Java.Util.Concurrent
             /// <param name="arg0"><typeparamref name="T"/></param>
             public void OnNext(T arg0)
             {
-                IExecuteWithSignature("onNext", "(Ljava/lang/Object;)V", arg0);
+                IExecute("onNext", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onSubscribe(java.util.concurrent.Flow.Subscription)"/>
@@ -699,7 +699,7 @@ namespace Java.Util.Concurrent
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscription"/></param>
             public void OnSubscribe(Java.Util.Concurrent.Flow.Subscription arg0)
             {
-                IExecuteWithSignature("onSubscribe", "(Ljava/util/concurrent/Flow$Subscription;)V", arg0);
+                IExecute("onSubscribe", arg0);
             }
 
             #endregion
@@ -737,7 +737,7 @@ namespace Java.Util.Concurrent
             /// </summary>
             public void Cancel()
             {
-                IExecuteWithSignature("cancel", "()V");
+                IExecute("cancel");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscription.html#request(long)"/>
@@ -745,7 +745,7 @@ namespace Java.Util.Concurrent
             /// <param name="arg0"><see cref="long"/></param>
             public void Request(long arg0)
             {
-                IExecuteWithSignature("request", "(J)V", arg0);
+                IExecute("request", arg0);
             }
 
             #endregion

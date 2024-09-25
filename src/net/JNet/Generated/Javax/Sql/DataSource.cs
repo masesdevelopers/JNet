@@ -149,21 +149,21 @@ namespace Javax.Sql
         /// </summary>
         public Java.Sql.Connection Connection
         {
-            get { return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "()Ljava/sql/Connection;"); }
+            get { return IExecute<Java.Sql.Connection>("getConnection"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#getLoginTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#setLoginTimeout(int)"/>
         /// </summary>
         public int LoginTimeout
         {
-            get { return IExecuteWithSignature<int>("getLoginTimeout", "()I"); } set { IExecuteWithSignature("setLoginTimeout", "(I)V", value); }
+            get { return IExecute<int>("getLoginTimeout"); } set { IExecute("setLoginTimeout", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#getLogWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#setLogWriter(java.io.PrintWriter)"/>
         /// </summary>
         public Java.Io.PrintWriter LogWriter
         {
-            get { return IExecuteWithSignature<Java.Io.PrintWriter>("getLogWriter", "()Ljava/io/PrintWriter;"); } set { IExecuteWithSignature("setLogWriter", "(Ljava/io/PrintWriter;)V", value); }
+            get { return IExecute<Java.Io.PrintWriter>("getLogWriter"); } set { IExecute("setLogWriter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#getConnection(java.lang.String,java.lang.String)"/>
@@ -183,7 +183,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ConnectionBuilder CreateConnectionBuilder()
         {
-            return IExecuteWithSignature<Java.Sql.ConnectionBuilder>("createConnectionBuilder", "()Ljava/sql/ConnectionBuilder;");
+            return IExecute<Java.Sql.ConnectionBuilder>("createConnectionBuilder");
         }
 
         #endregion

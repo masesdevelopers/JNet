@@ -112,14 +112,14 @@ namespace Javax.Swing.Border
         /// </summary>
         public Java.Awt.Paint Paint
         {
-            get { return IExecuteWithSignature<Java.Awt.Paint>("getPaint", "()Ljava/awt/Paint;"); }
+            get { return IExecute<Java.Awt.Paint>("getPaint"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#getStroke()"/> 
         /// </summary>
         public Java.Awt.BasicStroke Stroke
         {
-            get { return IExecuteWithSignature<Java.Awt.BasicStroke>("getStroke", "()Ljava/awt/BasicStroke;"); }
+            get { return IExecute<Java.Awt.BasicStroke>("getStroke"); }
         }
 
         #endregion

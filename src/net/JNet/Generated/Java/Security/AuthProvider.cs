@@ -108,7 +108,7 @@ namespace Java.Security
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public void Logout()
         {
-            IExecuteWithSignature("logout", "()V");
+            IExecute("logout");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AuthProvider.html#setCallbackHandler(javax.security.auth.callback.CallbackHandler)"/>
@@ -116,7 +116,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         public void SetCallbackHandler(Javax.Security.Auth.Callback.CallbackHandler arg0)
         {
-            IExecuteWithSignature("setCallbackHandler", "(Ljavax/security/auth/callback/CallbackHandler;)V", arg0);
+            IExecute("setCallbackHandler", arg0);
         }
 
         #endregion

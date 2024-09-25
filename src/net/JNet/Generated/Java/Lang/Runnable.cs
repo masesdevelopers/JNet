@@ -119,7 +119,7 @@ namespace Java.Lang
         /// </summary>
         public void Run()
         {
-            IExecuteWithSignature("run", "()V");
+            IExecute("run");
         }
 
         #endregion

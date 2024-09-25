@@ -93,7 +93,7 @@ namespace Java.Net
         /// </summary>
         public static Java.Net.ResponseCache Default
         {
-            get { return SExecuteWithSignature<Java.Net.ResponseCache>(LocalBridgeClazz, "getDefault", "()Ljava/net/ResponseCache;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/ResponseCache;)V", value); }
+            get { return SExecute<Java.Net.ResponseCache>(LocalBridgeClazz, "getDefault"); } set { SExecute(LocalBridgeClazz, "setDefault", value); }
         }
 
         #endregion

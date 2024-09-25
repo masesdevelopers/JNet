@@ -110,7 +110,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#getDescription(java.lang.String)"/>
@@ -119,7 +119,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDescription(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDescription", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getDescription", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#keySet()"/>
@@ -127,7 +127,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("keySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Lang.String>>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#getType(java.lang.String)"/>
@@ -136,7 +136,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Javax.Management.Openmbean.OpenType"/></returns>
         public Javax.Management.Openmbean.OpenType<object> GetType(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Management.Openmbean.OpenType<object>>("getType", "(Ljava/lang/String;)Ljavax/management/openmbean/OpenType;", arg0);
+            return IExecute<Javax.Management.Openmbean.OpenType<object>>("getType", arg0);
         }
 
         #endregion

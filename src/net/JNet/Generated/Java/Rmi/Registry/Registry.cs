@@ -165,7 +165,7 @@ namespace Java.Rmi.Registry
         /// <exception cref="Java.Rmi.AccessException"/>
         public Java.Lang.String[] List()
         {
-            return IExecuteWithSignatureArray<Java.Lang.String>("list", "()[Ljava/lang/String;");
+            return IExecuteArray<Java.Lang.String>("list");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#lookup(java.lang.String)"/>
@@ -177,7 +177,7 @@ namespace Java.Rmi.Registry
         /// <exception cref="Java.Rmi.AccessException"/>
         public Java.Rmi.Remote Lookup(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Rmi.Remote>("lookup", "(Ljava/lang/String;)Ljava/rmi/Remote;", arg0);
+            return IExecute<Java.Rmi.Remote>("lookup", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#bind(java.lang.String,java.rmi.Remote)"/>
@@ -211,7 +211,7 @@ namespace Java.Rmi.Registry
         /// <exception cref="Java.Rmi.AccessException"/>
         public void Unbind(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("unbind", "(Ljava/lang/String;)V", arg0);
+            IExecute("unbind", arg0);
         }
 
         #endregion

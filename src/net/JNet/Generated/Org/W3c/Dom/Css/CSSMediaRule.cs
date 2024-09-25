@@ -137,14 +137,14 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public Org.W3c.Dom.Css.CSSRuleList CssRules
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Css.CSSRuleList>("getCssRules", "()Lorg/w3c/dom/css/CSSRuleList;"); }
+            get { return IExecute<Org.W3c.Dom.Css.CSSRuleList>("getCssRules"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#getMedia()"/> 
         /// </summary>
         public Org.W3c.Dom.Stylesheets.MediaList Media
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Stylesheets.MediaList>("getMedia", "()Lorg/w3c/dom/stylesheets/MediaList;"); }
+            get { return IExecute<Org.W3c.Dom.Stylesheets.MediaList>("getMedia"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#insertRule(java.lang.String,int)"/>
@@ -164,7 +164,7 @@ namespace Org.W3c.Dom.Css
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteRule(int arg0)
         {
-            IExecuteWithSignature("deleteRule", "(I)V", arg0);
+            IExecute("deleteRule", arg0);
         }
 
         #endregion

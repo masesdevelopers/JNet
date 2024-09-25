@@ -178,14 +178,14 @@ namespace Java.Time.Temporal
         /// </summary>
         public Java.Time.Temporal.TemporalUnit BaseUnit
         {
-            get { return IExecuteWithSignature<Java.Time.Temporal.TemporalUnit>("getBaseUnit", "()Ljava/time/temporal/TemporalUnit;"); }
+            get { return IExecute<Java.Time.Temporal.TemporalUnit>("getBaseUnit"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#getRangeUnit()"/> 
         /// </summary>
         public Java.Time.Temporal.TemporalUnit RangeUnit
         {
-            get { return IExecuteWithSignature<Java.Time.Temporal.TemporalUnit>("getRangeUnit", "()Ljava/time/temporal/TemporalUnit;"); }
+            get { return IExecute<Java.Time.Temporal.TemporalUnit>("getRangeUnit"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#adjustInto(java.time.temporal.Temporal,long)"/>
@@ -204,7 +204,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsDateBased()
         {
-            return IExecuteWithSignature<bool>("isDateBased", "()Z");
+            return IExecute<bool>("isDateBased");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isSupportedBy(java.time.temporal.TemporalAccessor)"/>
@@ -213,7 +213,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsSupportedBy(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return IExecuteWithSignature<bool>("isSupportedBy", "(Ljava/time/temporal/TemporalAccessor;)Z", arg0);
+            return IExecute<bool>("isSupportedBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isTimeBased()"/>
@@ -221,7 +221,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="bool"/></returns>
         public bool IsTimeBased()
         {
-            return IExecuteWithSignature<bool>("isTimeBased", "()Z");
+            return IExecute<bool>("isTimeBased");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#range()"/>
@@ -229,7 +229,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range()
         {
-            return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "()Ljava/time/temporal/ValueRange;");
+            return IExecute<Java.Time.Temporal.ValueRange>("range");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#rangeRefinedBy(java.time.temporal.TemporalAccessor)"/>
@@ -238,7 +238,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange RangeRefinedBy(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("rangeRefinedBy", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/temporal/ValueRange;", arg0);
+            return IExecute<Java.Time.Temporal.ValueRange>("rangeRefinedBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#getFrom(java.time.temporal.TemporalAccessor)"/>
@@ -247,7 +247,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="long"/></returns>
         public long GetFrom(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return IExecuteWithSignature<long>("getFrom", "(Ljava/time/temporal/TemporalAccessor;)J", arg0);
+            return IExecute<long>("getFrom", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#getDisplayName(java.util.Locale)"/>
@@ -256,7 +256,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getDisplayName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#resolve(java.util.Map,java.time.temporal.TemporalAccessor,java.time.format.ResolverStyle)"/>

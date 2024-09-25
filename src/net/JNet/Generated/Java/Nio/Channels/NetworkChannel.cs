@@ -148,7 +148,7 @@ namespace Java.Nio.Channels
         /// </summary>
         public Java.Net.SocketAddress LocalAddress
         {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalAddress", "()Ljava/net/SocketAddress;"); }
+            get { return IExecute<Java.Net.SocketAddress>("getLocalAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
@@ -171,7 +171,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public T GetOption<T>(Java.Net.SocketOption<T> arg0)
         {
-            return IExecuteWithSignature<T>("getOption", "(Ljava/net/SocketOption;)Ljava/lang/Object;", arg0);
+            return IExecute<T>("getOption", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#bind(java.net.SocketAddress)"/>
@@ -181,7 +181,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("bind", "(Ljava/net/SocketAddress;)Ljava/nio/channels/NetworkChannel;", arg0);
+            return IExecute<Java.Nio.Channels.NetworkChannel>("bind", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#supportedOptions()"/>
@@ -189,7 +189,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions");
         }
 
         #endregion

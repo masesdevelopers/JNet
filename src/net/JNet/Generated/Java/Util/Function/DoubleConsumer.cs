@@ -182,7 +182,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoubleConsumer AndThenDefault(Java.Util.Function.DoubleConsumer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.DoubleConsumer>("andThenDefault", "(Ljava/util/function/DoubleConsumer;)Ljava/util/function/DoubleConsumer;", arg0);
+            return IExecute<Java.Util.Function.DoubleConsumer>("andThenDefault", arg0);
         }
 
         /// <summary>
@@ -247,7 +247,7 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="double"/></param>
         public override void Accept(double arg0)
         {
-            IExecuteWithSignature("accept", "(D)V", arg0);
+            IExecute("accept", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
@@ -256,7 +256,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>
         public override Java.Util.Function.DoubleConsumer AndThen(Java.Util.Function.DoubleConsumer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.DoubleConsumerDirect, Java.Util.Function.DoubleConsumer>("andThen", "(Ljava/util/function/DoubleConsumer;)Ljava/util/function/DoubleConsumer;", arg0);
+            return IExecute<Java.Util.Function.DoubleConsumerDirect, Java.Util.Function.DoubleConsumer>("andThen", arg0);
         }
 
         #endregion

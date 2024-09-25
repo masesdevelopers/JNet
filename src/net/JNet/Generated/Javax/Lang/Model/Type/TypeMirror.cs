@@ -128,7 +128,7 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public Javax.Lang.Model.Type.TypeKind Kind
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Type.TypeKind>("getKind", "()Ljavax/lang/model/type/TypeKind;"); }
+            get { return IExecute<Javax.Lang.Model.Type.TypeKind>("getKind"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#accept(javax.lang.model.type.TypeVisitor,java.lang.Object)"/>

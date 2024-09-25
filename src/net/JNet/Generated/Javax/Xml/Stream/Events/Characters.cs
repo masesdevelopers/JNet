@@ -134,7 +134,7 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         public Java.Lang.String Data
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isCData()"/>
@@ -142,7 +142,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsCData()
         {
-            return IExecuteWithSignature<bool>("isCData", "()Z");
+            return IExecute<bool>("isCData");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isIgnorableWhiteSpace()"/>
@@ -150,7 +150,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsIgnorableWhiteSpace()
         {
-            return IExecuteWithSignature<bool>("isIgnorableWhiteSpace", "()Z");
+            return IExecute<bool>("isIgnorableWhiteSpace");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isWhiteSpace()"/>
@@ -158,7 +158,7 @@ namespace Javax.Xml.Stream.Events
         /// <returns><see cref="bool"/></returns>
         public bool IsWhiteSpace()
         {
-            return IExecuteWithSignature<bool>("isWhiteSpace", "()Z");
+            return IExecute<bool>("isWhiteSpace");
         }
 
         #endregion

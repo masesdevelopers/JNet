@@ -350,7 +350,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Awt.Color Decode(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)Ljava/awt/Color;", arg0);
+            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "decode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColor(java.lang.String,int)"/>
@@ -379,7 +379,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "getColor", "(Ljava/lang/String;)Ljava/awt/Color;", arg0);
+            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "getColor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getHSBColor(float,float,float)"/>
@@ -401,49 +401,49 @@ namespace Java.Awt
         /// </summary>
         public int Alpha
         {
-            get { return IExecuteWithSignature<int>("getAlpha", "()I"); }
+            get { return IExecute<int>("getAlpha"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getBlue()"/> 
         /// </summary>
         public int Blue
         {
-            get { return IExecuteWithSignature<int>("getBlue", "()I"); }
+            get { return IExecute<int>("getBlue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColorSpace()"/> 
         /// </summary>
         public Java.Awt.ColorNs.ColorSpace ColorSpace
         {
-            get { return IExecuteWithSignature<Java.Awt.ColorNs.ColorSpace>("getColorSpace", "()Ljava/awt/color/ColorSpace;"); }
+            get { return IExecute<Java.Awt.ColorNs.ColorSpace>("getColorSpace"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getGreen()"/> 
         /// </summary>
         public int Green
         {
-            get { return IExecuteWithSignature<int>("getGreen", "()I"); }
+            get { return IExecute<int>("getGreen"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getRed()"/> 
         /// </summary>
         public int Red
         {
-            get { return IExecuteWithSignature<int>("getRed", "()I"); }
+            get { return IExecute<int>("getRed"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getRGB()"/> 
         /// </summary>
         public int RGB
         {
-            get { return IExecuteWithSignature<int>("getRGB", "()I"); }
+            get { return IExecute<int>("getRGB"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getTransparency()"/> 
         /// </summary>
         public int Transparency
         {
-            get { return IExecuteWithSignature<int>("getTransparency", "()I"); }
+            get { return IExecute<int>("getTransparency"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColorComponents(float[])"/>
@@ -452,7 +452,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float[] GetColorComponents(float[] arg0)
         {
-            return IExecuteWithSignatureArray<float>("getColorComponents", "([F)[F", new object[] { arg0 });
+            return IExecuteArray<float>("getColorComponents", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColorComponents(java.awt.color.ColorSpace,float[])"/>
@@ -471,7 +471,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float[] GetComponents(float[] arg0)
         {
-            return IExecuteWithSignatureArray<float>("getComponents", "([F)[F", new object[] { arg0 });
+            return IExecuteArray<float>("getComponents", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getComponents(java.awt.color.ColorSpace,float[])"/>
@@ -490,7 +490,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float[] GetRGBColorComponents(float[] arg0)
         {
-            return IExecuteWithSignatureArray<float>("getRGBColorComponents", "([F)[F", new object[] { arg0 });
+            return IExecuteArray<float>("getRGBColorComponents", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getRGBComponents(float[])"/>
@@ -499,7 +499,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float[] GetRGBComponents(float[] arg0)
         {
-            return IExecuteWithSignatureArray<float>("getRGBComponents", "([F)[F", new object[] { arg0 });
+            return IExecuteArray<float>("getRGBComponents", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#brighter()"/>
@@ -507,7 +507,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color Brighter()
         {
-            return IExecuteWithSignature<Java.Awt.Color>("brighter", "()Ljava/awt/Color;");
+            return IExecute<Java.Awt.Color>("brighter");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#darker()"/>
@@ -515,7 +515,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color Darker()
         {
-            return IExecuteWithSignature<Java.Awt.Color>("darker", "()Ljava/awt/Color;");
+            return IExecute<Java.Awt.Color>("darker");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#createContext(java.awt.image.ColorModel,java.awt.Rectangle,java.awt.geom.Rectangle2D,java.awt.geom.AffineTransform,java.awt.RenderingHints)"/>

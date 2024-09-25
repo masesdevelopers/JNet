@@ -176,49 +176,49 @@ namespace Org.W3c.Dom.Events
         /// </summary>
         public bool Bubbles
         {
-            get { return IExecuteWithSignature<bool>("getBubbles", "()Z"); }
+            get { return IExecute<bool>("getBubbles"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getCancelable()"/> 
         /// </summary>
         public bool Cancelable
         {
-            get { return IExecuteWithSignature<bool>("getCancelable", "()Z"); }
+            get { return IExecute<bool>("getCancelable"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getCurrentTarget()"/> 
         /// </summary>
         public Org.W3c.Dom.Events.EventTarget CurrentTarget
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Events.EventTarget>("getCurrentTarget", "()Lorg/w3c/dom/events/EventTarget;"); }
+            get { return IExecute<Org.W3c.Dom.Events.EventTarget>("getCurrentTarget"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getEventPhase()"/> 
         /// </summary>
         public short EventPhase
         {
-            get { return IExecuteWithSignature<short>("getEventPhase", "()S"); }
+            get { return IExecute<short>("getEventPhase"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getTarget()"/> 
         /// </summary>
         public Org.W3c.Dom.Events.EventTarget Target
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Events.EventTarget>("getTarget", "()Lorg/w3c/dom/events/EventTarget;"); }
+            get { return IExecute<Org.W3c.Dom.Events.EventTarget>("getTarget"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getTimeStamp()"/> 
         /// </summary>
         public long TimeStamp
         {
-            get { return IExecuteWithSignature<long>("getTimeStamp", "()J"); }
+            get { return IExecute<long>("getTimeStamp"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#initEvent(java.lang.String,boolean,boolean)"/>
@@ -235,14 +235,14 @@ namespace Org.W3c.Dom.Events
         /// </summary>
         public void PreventDefault()
         {
-            IExecuteWithSignature("preventDefault", "()V");
+            IExecute("preventDefault");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#stopPropagation()"/>
         /// </summary>
         public void StopPropagation()
         {
-            IExecuteWithSignature("stopPropagation", "()V");
+            IExecute("stopPropagation");
         }
 
         #endregion

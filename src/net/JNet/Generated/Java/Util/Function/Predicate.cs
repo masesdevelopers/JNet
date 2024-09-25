@@ -184,7 +184,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.Predicate IsEqual(object arg0)
         {
-            return SExecuteWithSignature<Java.Util.Function.Predicate>(LocalBridgeClazz, "isEqual", "(Ljava/lang/Object;)Ljava/util/function/Predicate;", arg0);
+            return SExecute<Java.Util.Function.Predicate>(LocalBridgeClazz, "isEqual", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
@@ -194,7 +194,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.Predicate Not(Java.Util.Function.Predicate arg0)
         {
-            return SExecuteWithSignature<Java.Util.Function.Predicate>(LocalBridgeClazz, "not", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return SExecute<Java.Util.Function.Predicate>(LocalBridgeClazz, "not", arg0);
         }
 
         #endregion
@@ -244,7 +244,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate AndDefault(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.Predicate>("andDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecute<Java.Util.Function.Predicate>("andDefault", arg0);
         }
 
         /// <summary>
@@ -279,7 +279,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate NegateDefault()
         {
-            return IExecuteWithSignature<Java.Util.Function.Predicate>("negateDefault", "()Ljava/util/function/Predicate;");
+            return IExecute<Java.Util.Function.Predicate>("negateDefault");
         }
 
         /// <summary>
@@ -314,7 +314,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate OrDefault(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.Predicate>("orDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecute<Java.Util.Function.Predicate>("orDefault", arg0);
         }
 
         /// <summary>
@@ -380,7 +380,7 @@ namespace Java.Util.Function
         /// <returns><see cref="bool"/></returns>
         public override bool Test(object arg0)
         {
-            return IExecuteWithSignature<bool>("test", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("test", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
@@ -389,7 +389,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate And(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("and", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecute<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("and", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
@@ -397,7 +397,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate Negate()
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("negate", "()Ljava/util/function/Predicate;");
+            return IExecute<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
@@ -406,7 +406,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate Or(Java.Util.Function.Predicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("or", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecute<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("or", arg0);
         }
 
         #endregion
@@ -486,7 +486,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.Predicate<T> IsEqual(object arg0)
         {
-            return SExecuteWithSignature<Java.Util.Function.Predicate<T>>(LocalBridgeClazz, "isEqual", "(Ljava/lang/Object;)Ljava/util/function/Predicate;", arg0);
+            return SExecute<Java.Util.Function.Predicate<T>>(LocalBridgeClazz, "isEqual", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
@@ -497,7 +497,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.Predicate<T> Not<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Function.Predicate<T>>(LocalBridgeClazz, "not", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return SExecute<Java.Util.Function.Predicate<T>>(LocalBridgeClazz, "not", arg0);
         }
 
         #endregion
@@ -548,7 +548,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate<T> And<Arg0objectSuperT>Default(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("andDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecute<Java.Util.Function.Predicate<T>>("andDefault", arg0);
         }
 
         /// <summary>
@@ -584,7 +584,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate<T> NegateDefault()
         {
-            return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("negateDefault", "()Ljava/util/function/Predicate;");
+            return IExecute<Java.Util.Function.Predicate<T>>("negateDefault");
         }
 
         /// <summary>
@@ -620,7 +620,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>Default(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("orDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecute<Java.Util.Function.Predicate<T>>("orDefault", arg0);
         }
 
         /// <summary>
@@ -687,7 +687,7 @@ namespace Java.Util.Function
         /// <returns><see cref="bool"/></returns>
         public override bool Test(T arg0)
         {
-            return IExecuteWithSignature<bool>("test", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("test", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
@@ -697,7 +697,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("and", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecute<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("and", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
@@ -705,7 +705,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate<T> Negate()
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("negate", "()Ljava/util/function/Predicate;");
+            return IExecute<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
@@ -715,7 +715,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public override Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("or", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecute<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("or", arg0);
         }
 
         #endregion

@@ -246,7 +246,7 @@ namespace Javax.Transaction.Xa
         /// </summary>
         public int TransactionTimeout
         {
-            get { return IExecuteWithSignature<int>("getTransactionTimeout", "()I"); }
+            get { return IExecute<int>("getTransactionTimeout"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#isSameRM(javax.transaction.xa.XAResource)"/>
@@ -256,7 +256,7 @@ namespace Javax.Transaction.Xa
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public bool IsSameRM(Javax.Transaction.Xa.XAResource arg0)
         {
-            return IExecuteWithSignature<bool>("isSameRM", "(Ljavax/transaction/xa/XAResource;)Z", arg0);
+            return IExecute<bool>("isSameRM", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#setTransactionTimeout(int)"/>
@@ -266,7 +266,7 @@ namespace Javax.Transaction.Xa
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public bool SetTransactionTimeout(int arg0)
         {
-            return IExecuteWithSignature<bool>("setTransactionTimeout", "(I)Z", arg0);
+            return IExecute<bool>("setTransactionTimeout", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#prepare(javax.transaction.xa.Xid)"/>
@@ -276,7 +276,7 @@ namespace Javax.Transaction.Xa
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public int Prepare(Javax.Transaction.Xa.Xid arg0)
         {
-            return IExecuteWithSignature<int>("prepare", "(Ljavax/transaction/xa/Xid;)I", arg0);
+            return IExecute<int>("prepare", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#recover(int)"/>
@@ -286,7 +286,7 @@ namespace Javax.Transaction.Xa
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public Javax.Transaction.Xa.Xid[] Recover(int arg0)
         {
-            return IExecuteWithSignatureArray<Javax.Transaction.Xa.Xid>("recover", "(I)[Ljavax/transaction/xa/Xid;", arg0);
+            return IExecuteArray<Javax.Transaction.Xa.Xid>("recover", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#commit(javax.transaction.xa.Xid,boolean)"/>
@@ -315,7 +315,7 @@ namespace Javax.Transaction.Xa
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void Forget(Javax.Transaction.Xa.Xid arg0)
         {
-            IExecuteWithSignature("forget", "(Ljavax/transaction/xa/Xid;)V", arg0);
+            IExecute("forget", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#rollback(javax.transaction.xa.Xid)"/>
@@ -324,7 +324,7 @@ namespace Javax.Transaction.Xa
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void Rollback(Javax.Transaction.Xa.Xid arg0)
         {
-            IExecuteWithSignature("rollback", "(Ljavax/transaction/xa/Xid;)V", arg0);
+            IExecute("rollback", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#start(javax.transaction.xa.Xid,int)"/>

@@ -238,70 +238,70 @@ namespace Javax.Swing.Tree
         /// </summary>
         public Javax.Swing.Tree.TreePath LeadSelectionPath
         {
-            get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getLeadSelectionPath", "()Ljavax/swing/tree/TreePath;"); }
+            get { return IExecute<Javax.Swing.Tree.TreePath>("getLeadSelectionPath"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getLeadSelectionRow()"/> 
         /// </summary>
         public int LeadSelectionRow
         {
-            get { return IExecuteWithSignature<int>("getLeadSelectionRow", "()I"); }
+            get { return IExecute<int>("getLeadSelectionRow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getMaxSelectionRow()"/> 
         /// </summary>
         public int MaxSelectionRow
         {
-            get { return IExecuteWithSignature<int>("getMaxSelectionRow", "()I"); }
+            get { return IExecute<int>("getMaxSelectionRow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getMinSelectionRow()"/> 
         /// </summary>
         public int MinSelectionRow
         {
-            get { return IExecuteWithSignature<int>("getMinSelectionRow", "()I"); }
+            get { return IExecute<int>("getMinSelectionRow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getRowMapper()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#setRowMapper(javax.swing.tree.RowMapper)"/>
         /// </summary>
         public Javax.Swing.Tree.RowMapper RowMapper
         {
-            get { return IExecuteWithSignature<Javax.Swing.Tree.RowMapper>("getRowMapper", "()Ljavax/swing/tree/RowMapper;"); } set { IExecuteWithSignature("setRowMapper", "(Ljavax/swing/tree/RowMapper;)V", value); }
+            get { return IExecute<Javax.Swing.Tree.RowMapper>("getRowMapper"); } set { IExecute("setRowMapper", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getSelectionCount()"/> 
         /// </summary>
         public int SelectionCount
         {
-            get { return IExecuteWithSignature<int>("getSelectionCount", "()I"); }
+            get { return IExecute<int>("getSelectionCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getSelectionMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#setSelectionMode(int)"/>
         /// </summary>
         public int SelectionMode
         {
-            get { return IExecuteWithSignature<int>("getSelectionMode", "()I"); } set { IExecuteWithSignature("setSelectionMode", "(I)V", value); }
+            get { return IExecute<int>("getSelectionMode"); } set { IExecute("setSelectionMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getSelectionPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#setSelectionPath(javax.swing.tree.TreePath)"/>
         /// </summary>
         public Javax.Swing.Tree.TreePath SelectionPath
         {
-            get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getSelectionPath", "()Ljavax/swing/tree/TreePath;"); } set { IExecuteWithSignature("setSelectionPath", "(Ljavax/swing/tree/TreePath;)V", value); }
+            get { return IExecute<Javax.Swing.Tree.TreePath>("getSelectionPath"); } set { IExecute("setSelectionPath", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getSelectionPaths()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#setSelectionPaths(javax.swing.tree.TreePath[])"/>
         /// </summary>
         public Javax.Swing.Tree.TreePath[] SelectionPaths
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Tree.TreePath>("getSelectionPaths", "()[Ljavax/swing/tree/TreePath;"); } set { IExecuteWithSignature("setSelectionPaths", "([Ljavax/swing/tree/TreePath;)V", value); }
+            get { return IExecuteArray<Javax.Swing.Tree.TreePath>("getSelectionPaths"); } set { IExecute("setSelectionPaths", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getSelectionRows()"/> 
         /// </summary>
         public int[] SelectionRows
         {
-            get { return IExecuteWithSignatureArray<int>("getSelectionRows", "()[I"); }
+            get { return IExecuteArray<int>("getSelectionRows"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#isPathSelected(javax.swing.tree.TreePath)"/>
@@ -310,7 +310,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="bool"/></returns>
         public bool IsPathSelected(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecuteWithSignature<bool>("isPathSelected", "(Ljavax/swing/tree/TreePath;)Z", arg0);
+            return IExecute<bool>("isPathSelected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#isRowSelected(int)"/>
@@ -319,7 +319,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="bool"/></returns>
         public bool IsRowSelected(int arg0)
         {
-            return IExecuteWithSignature<bool>("isRowSelected", "(I)Z", arg0);
+            return IExecute<bool>("isRowSelected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#isSelectionEmpty()"/>
@@ -327,7 +327,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="bool"/></returns>
         public bool IsSelectionEmpty()
         {
-            return IExecuteWithSignature<bool>("isSelectionEmpty", "()Z");
+            return IExecute<bool>("isSelectionEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -335,7 +335,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("addPropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#addSelectionPath(javax.swing.tree.TreePath)"/>
@@ -343,7 +343,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void AddSelectionPath(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecuteWithSignature("addSelectionPath", "(Ljavax/swing/tree/TreePath;)V", arg0);
+            IExecute("addSelectionPath", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#addSelectionPaths(javax.swing.tree.TreePath[])"/>
@@ -351,7 +351,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void AddSelectionPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
-            IExecuteWithSignature("addSelectionPaths", "([Ljavax/swing/tree/TreePath;)V", new object[] { arg0 });
+            IExecute("addSelectionPaths", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#addTreeSelectionListener(javax.swing.event.TreeSelectionListener)"/>
@@ -359,14 +359,14 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionListener"/></param>
         public void AddTreeSelectionListener(Javax.Swing.Event.TreeSelectionListener arg0)
         {
-            IExecuteWithSignature("addTreeSelectionListener", "(Ljavax/swing/event/TreeSelectionListener;)V", arg0);
+            IExecute("addTreeSelectionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#clearSelection()"/>
         /// </summary>
         public void ClearSelection()
         {
-            IExecuteWithSignature("clearSelection", "()V");
+            IExecute("clearSelection");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -374,7 +374,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("removePropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#removeSelectionPath(javax.swing.tree.TreePath)"/>
@@ -382,7 +382,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void RemoveSelectionPath(Javax.Swing.Tree.TreePath arg0)
         {
-            IExecuteWithSignature("removeSelectionPath", "(Ljavax/swing/tree/TreePath;)V", arg0);
+            IExecute("removeSelectionPath", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#removeSelectionPaths(javax.swing.tree.TreePath[])"/>
@@ -390,7 +390,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void RemoveSelectionPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
-            IExecuteWithSignature("removeSelectionPaths", "([Ljavax/swing/tree/TreePath;)V", new object[] { arg0 });
+            IExecute("removeSelectionPaths", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#removeTreeSelectionListener(javax.swing.event.TreeSelectionListener)"/>
@@ -398,14 +398,14 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionListener"/></param>
         public void RemoveTreeSelectionListener(Javax.Swing.Event.TreeSelectionListener arg0)
         {
-            IExecuteWithSignature("removeTreeSelectionListener", "(Ljavax/swing/event/TreeSelectionListener;)V", arg0);
+            IExecute("removeTreeSelectionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#resetRowSelection()"/>
         /// </summary>
         public void ResetRowSelection()
         {
-            IExecuteWithSignature("resetRowSelection", "()V");
+            IExecute("resetRowSelection");
         }
 
         #endregion

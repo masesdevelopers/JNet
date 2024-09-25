@@ -103,7 +103,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public long Count
         {
-            get { return IExecuteWithSignature<long>("getCount", "()J"); }
+            get { return IExecute<long>("getCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountDownLatch.html#await(long,java.util.concurrent.TimeUnit)"/>
@@ -122,14 +122,14 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Await()
         {
-            IExecuteWithSignature("await", "()V");
+            IExecute("await");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountDownLatch.html#countDown()"/>
         /// </summary>
         public void CountDown()
         {
-            IExecuteWithSignature("countDown", "()V");
+            IExecute("countDown");
         }
 
         #endregion

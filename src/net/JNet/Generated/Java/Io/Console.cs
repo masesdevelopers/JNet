@@ -96,7 +96,7 @@ namespace Java.Io
         /// <returns><see cref="char"/></returns>
         public char[] ReadPassword()
         {
-            return IExecuteWithSignatureArray<char>("readPassword", "()[C");
+            return IExecuteArray<char>("readPassword");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readPassword(java.lang.String,java.lang.Object[])"/>
@@ -134,7 +134,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintWriter"/></returns>
         public Java.Io.PrintWriter Writer()
         {
-            return IExecuteWithSignature<Java.Io.PrintWriter>("writer", "()Ljava/io/PrintWriter;");
+            return IExecute<Java.Io.PrintWriter>("writer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#reader()"/>
@@ -142,7 +142,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public Java.Io.Reader Reader()
         {
-            return IExecuteWithSignature<Java.Io.Reader>("reader", "()Ljava/io/Reader;");
+            return IExecute<Java.Io.Reader>("reader");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine()"/>
@@ -150,7 +150,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReadLine()
         {
-            return IExecuteWithSignature<Java.Lang.String>("readLine", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("readLine");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine(java.lang.String,java.lang.Object[])"/>
@@ -167,7 +167,7 @@ namespace Java.Io
         /// </summary>
         public void Flush()
         {
-            IExecuteWithSignature("flush", "()V");
+            IExecute("flush");
         }
 
         #endregion

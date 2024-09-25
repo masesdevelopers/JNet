@@ -307,7 +307,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Io.IOException"/></returns>
         public Java.Io.IOException IoException()
         {
-            var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("ioException", "()Ljava/io/IOException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Io.IOException>(obj);
+            var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("ioException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Io.IOException>(obj);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#out()"/>
@@ -315,7 +315,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.Appendable"/></returns>
         public Java.Lang.Appendable Out()
         {
-            return IExecuteWithSignature<Java.Lang.Appendable>("out", "()Ljava/lang/Appendable;");
+            return IExecute<Java.Lang.Appendable>("out");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#format(java.lang.String,java.lang.Object[])"/>
@@ -344,21 +344,21 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public Java.Util.Locale Locale()
         {
-            return IExecuteWithSignature<Java.Util.Locale>("locale", "()Ljava/util/Locale;");
+            return IExecute<Java.Util.Locale>("locale");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#flush()"/>
         /// </summary>
         public void Flush()
         {
-            IExecuteWithSignature("flush", "()V");
+            IExecute("flush");
         }
 
         #endregion

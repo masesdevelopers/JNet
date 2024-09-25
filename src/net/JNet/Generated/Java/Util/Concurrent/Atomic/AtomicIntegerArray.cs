@@ -222,7 +222,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int DecrementAndGet(int arg0)
         {
-            return IExecuteWithSignature<int>("decrementAndGet", "(I)I", arg0);
+            return IExecute<int>("decrementAndGet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#get(int)"/>
@@ -231,7 +231,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int Get(int arg0)
         {
-            return IExecuteWithSignature<int>("get", "(I)I", arg0);
+            return IExecute<int>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getAcquire(int)"/>
@@ -240,7 +240,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAcquire(int arg0)
         {
-            return IExecuteWithSignature<int>("getAcquire", "(I)I", arg0);
+            return IExecute<int>("getAcquire", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndAccumulate(int,int,java.util.function.IntBinaryOperator)"/>
@@ -270,7 +270,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndDecrement(int arg0)
         {
-            return IExecuteWithSignature<int>("getAndDecrement", "(I)I", arg0);
+            return IExecute<int>("getAndDecrement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndIncrement(int)"/>
@@ -279,7 +279,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndIncrement(int arg0)
         {
-            return IExecuteWithSignature<int>("getAndIncrement", "(I)I", arg0);
+            return IExecute<int>("getAndIncrement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndSet(int,int)"/>
@@ -308,7 +308,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetOpaque(int arg0)
         {
-            return IExecuteWithSignature<int>("getOpaque", "(I)I", arg0);
+            return IExecute<int>("getOpaque", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getPlain(int)"/>
@@ -317,7 +317,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetPlain(int arg0)
         {
-            return IExecuteWithSignature<int>("getPlain", "(I)I", arg0);
+            return IExecute<int>("getPlain", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#incrementAndGet(int)"/>
@@ -326,7 +326,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int IncrementAndGet(int arg0)
         {
-            return IExecuteWithSignature<int>("incrementAndGet", "(I)I", arg0);
+            return IExecute<int>("incrementAndGet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#length()"/>
@@ -334,7 +334,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int Length()
         {
-            return IExecuteWithSignature<int>("length", "()I");
+            return IExecute<int>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#updateAndGet(int,java.util.function.IntUnaryOperator)"/>

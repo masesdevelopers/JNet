@@ -121,7 +121,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
 
         #endregion

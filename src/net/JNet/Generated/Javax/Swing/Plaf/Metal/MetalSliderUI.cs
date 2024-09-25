@@ -95,7 +95,7 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public int TickLength
         {
-            get { return IExecuteWithSignature<int>("getTickLength", "()I"); }
+            get { return IExecute<int>("getTickLength"); }
         }
 
         #endregion

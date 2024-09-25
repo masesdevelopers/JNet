@@ -143,14 +143,14 @@ namespace Javax.Print.Attribute.Standard
         /// </summary>
         public Java.Lang.Class Category
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getCategory", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getCategory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaPrintableArea.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaPrintableArea.html#getHeight(int)"/>
@@ -159,7 +159,7 @@ namespace Javax.Print.Attribute.Standard
         /// <returns><see cref="float"/></returns>
         public float GetHeight(int arg0)
         {
-            return IExecuteWithSignature<float>("getHeight", "(I)F", arg0);
+            return IExecute<float>("getHeight", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaPrintableArea.html#getWidth(int)"/>
@@ -168,7 +168,7 @@ namespace Javax.Print.Attribute.Standard
         /// <returns><see cref="float"/></returns>
         public float GetWidth(int arg0)
         {
-            return IExecuteWithSignature<float>("getWidth", "(I)F", arg0);
+            return IExecute<float>("getWidth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaPrintableArea.html#getX(int)"/>
@@ -177,7 +177,7 @@ namespace Javax.Print.Attribute.Standard
         /// <returns><see cref="float"/></returns>
         public float GetX(int arg0)
         {
-            return IExecuteWithSignature<float>("getX", "(I)F", arg0);
+            return IExecute<float>("getX", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaPrintableArea.html#getY(int)"/>
@@ -186,7 +186,7 @@ namespace Javax.Print.Attribute.Standard
         /// <returns><see cref="float"/></returns>
         public float GetY(int arg0)
         {
-            return IExecuteWithSignature<float>("getY", "(I)F", arg0);
+            return IExecute<float>("getY", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaPrintableArea.html#getPrintableArea(int)"/>
@@ -195,7 +195,7 @@ namespace Javax.Print.Attribute.Standard
         /// <returns><see cref="float"/></returns>
         public float[] GetPrintableArea(int arg0)
         {
-            return IExecuteWithSignatureArray<float>("getPrintableArea", "(I)[F", arg0);
+            return IExecuteArray<float>("getPrintableArea", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaPrintableArea.html#toString(int,java.lang.String)"/>

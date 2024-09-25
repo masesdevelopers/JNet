@@ -1465,70 +1465,70 @@ namespace Java.Sql
         /// </summary>
         public int Concurrency
         {
-            get { return IExecuteWithSignature<int>("getConcurrency", "()I"); }
+            get { return IExecute<int>("getConcurrency"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCursorName()"/> 
         /// </summary>
         public Java.Lang.String CursorName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCursorName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCursorName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFetchDirection()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#setFetchDirection(int)"/>
         /// </summary>
         public int FetchDirection
         {
-            get { return IExecuteWithSignature<int>("getFetchDirection", "()I"); } set { IExecuteWithSignature("setFetchDirection", "(I)V", value); }
+            get { return IExecute<int>("getFetchDirection"); } set { IExecute("setFetchDirection", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFetchSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#setFetchSize(int)"/>
         /// </summary>
         public int FetchSize
         {
-            get { return IExecuteWithSignature<int>("getFetchSize", "()I"); } set { IExecuteWithSignature("setFetchSize", "(I)V", value); }
+            get { return IExecute<int>("getFetchSize"); } set { IExecute("setFetchSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getHoldability()"/> 
         /// </summary>
         public int Holdability
         {
-            get { return IExecuteWithSignature<int>("getHoldability", "()I"); }
+            get { return IExecute<int>("getHoldability"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getMetaData()"/> 
         /// </summary>
         public Java.Sql.ResultSetMetaData MetaData
         {
-            get { return IExecuteWithSignature<Java.Sql.ResultSetMetaData>("getMetaData", "()Ljava/sql/ResultSetMetaData;"); }
+            get { return IExecute<Java.Sql.ResultSetMetaData>("getMetaData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRow()"/> 
         /// </summary>
         public int Row
         {
-            get { return IExecuteWithSignature<int>("getRow", "()I"); }
+            get { return IExecute<int>("getRow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getStatement()"/> 
         /// </summary>
         public Java.Sql.Statement Statement
         {
-            get { return IExecuteWithSignature<Java.Sql.Statement>("getStatement", "()Ljava/sql/Statement;"); }
+            get { return IExecute<Java.Sql.Statement>("getStatement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            get { return IExecute<int>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getWarnings()"/> 
         /// </summary>
         public Java.Sql.SQLWarning Warnings
         {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getWarnings", "()Ljava/sql/SQLWarning;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLWarning>(obj); }
+            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getWarnings"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLWarning>(obj); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(int,java.lang.Class)"/>
@@ -1562,7 +1562,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Absolute(int arg0)
         {
-            return IExecuteWithSignature<bool>("absolute", "(I)Z", arg0);
+            return IExecute<bool>("absolute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#first()"/>
@@ -1571,7 +1571,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool First()
         {
-            return IExecuteWithSignature<bool>("first", "()Z");
+            return IExecute<bool>("first");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBoolean(int)"/>
@@ -1581,7 +1581,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool GetBoolean(int arg0)
         {
-            return IExecuteWithSignature<bool>("getBoolean", "(I)Z", arg0);
+            return IExecute<bool>("getBoolean", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBoolean(java.lang.String)"/>
@@ -1591,7 +1591,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool GetBoolean(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("getBoolean", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("getBoolean", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isAfterLast()"/>
@@ -1600,7 +1600,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsAfterLast()
         {
-            return IExecuteWithSignature<bool>("isAfterLast", "()Z");
+            return IExecute<bool>("isAfterLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isBeforeFirst()"/>
@@ -1609,7 +1609,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsBeforeFirst()
         {
-            return IExecuteWithSignature<bool>("isBeforeFirst", "()Z");
+            return IExecute<bool>("isBeforeFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isClosed()"/>
@@ -1618,7 +1618,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsClosed()
         {
-            return IExecuteWithSignature<bool>("isClosed", "()Z");
+            return IExecute<bool>("isClosed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isFirst()"/>
@@ -1627,7 +1627,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsFirst()
         {
-            return IExecuteWithSignature<bool>("isFirst", "()Z");
+            return IExecute<bool>("isFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isLast()"/>
@@ -1636,7 +1636,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsLast()
         {
-            return IExecuteWithSignature<bool>("isLast", "()Z");
+            return IExecute<bool>("isLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#last()"/>
@@ -1645,7 +1645,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Last()
         {
-            return IExecuteWithSignature<bool>("last", "()Z");
+            return IExecute<bool>("last");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#next()"/>
@@ -1654,7 +1654,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Next()
         {
-            return IExecuteWithSignature<bool>("next", "()Z");
+            return IExecute<bool>("next");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#previous()"/>
@@ -1663,7 +1663,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Previous()
         {
-            return IExecuteWithSignature<bool>("previous", "()Z");
+            return IExecute<bool>("previous");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#relative(int)"/>
@@ -1673,7 +1673,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Relative(int arg0)
         {
-            return IExecuteWithSignature<bool>("relative", "(I)Z", arg0);
+            return IExecute<bool>("relative", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowDeleted()"/>
@@ -1682,7 +1682,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool RowDeleted()
         {
-            return IExecuteWithSignature<bool>("rowDeleted", "()Z");
+            return IExecute<bool>("rowDeleted");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowInserted()"/>
@@ -1691,7 +1691,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool RowInserted()
         {
-            return IExecuteWithSignature<bool>("rowInserted", "()Z");
+            return IExecute<bool>("rowInserted");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowUpdated()"/>
@@ -1700,7 +1700,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool RowUpdated()
         {
-            return IExecuteWithSignature<bool>("rowUpdated", "()Z");
+            return IExecute<bool>("rowUpdated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#wasNull()"/>
@@ -1709,7 +1709,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool WasNull()
         {
-            return IExecuteWithSignature<bool>("wasNull", "()Z");
+            return IExecute<bool>("wasNull");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getByte(int)"/>
@@ -1719,7 +1719,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public byte GetByte(int arg0)
         {
-            return IExecuteWithSignature<byte>("getByte", "(I)B", arg0);
+            return IExecute<byte>("getByte", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getByte(java.lang.String)"/>
@@ -1729,7 +1729,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public byte GetByte(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<byte>("getByte", "(Ljava/lang/String;)B", arg0);
+            return IExecute<byte>("getByte", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBytes(int)"/>
@@ -1739,7 +1739,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public byte[] GetBytes(int arg0)
         {
-            return IExecuteWithSignatureArray<byte>("getBytes", "(I)[B", arg0);
+            return IExecuteArray<byte>("getBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBytes(java.lang.String)"/>
@@ -1749,7 +1749,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public byte[] GetBytes(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<byte>("getBytes", "(Ljava/lang/String;)[B", arg0);
+            return IExecuteArray<byte>("getBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDouble(int)"/>
@@ -1759,7 +1759,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public double GetDouble(int arg0)
         {
-            return IExecuteWithSignature<double>("getDouble", "(I)D", arg0);
+            return IExecute<double>("getDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDouble(java.lang.String)"/>
@@ -1769,7 +1769,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public double GetDouble(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<double>("getDouble", "(Ljava/lang/String;)D", arg0);
+            return IExecute<double>("getDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFloat(int)"/>
@@ -1779,7 +1779,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public float GetFloat(int arg0)
         {
-            return IExecuteWithSignature<float>("getFloat", "(I)F", arg0);
+            return IExecute<float>("getFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFloat(java.lang.String)"/>
@@ -1789,7 +1789,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public float GetFloat(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<float>("getFloat", "(Ljava/lang/String;)F", arg0);
+            return IExecute<float>("getFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#findColumn(java.lang.String)"/>
@@ -1799,7 +1799,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int FindColumn(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<int>("findColumn", "(Ljava/lang/String;)I", arg0);
+            return IExecute<int>("findColumn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getInt(int)"/>
@@ -1809,7 +1809,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetInt(int arg0)
         {
-            return IExecuteWithSignature<int>("getInt", "(I)I", arg0);
+            return IExecute<int>("getInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getInt(java.lang.String)"/>
@@ -1819,7 +1819,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetInt(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<int>("getInt", "(Ljava/lang/String;)I", arg0);
+            return IExecute<int>("getInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getAsciiStream(int)"/>
@@ -1829,7 +1829,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetAsciiStream(int arg0)
         {
-            return IExecuteWithSignature<Java.Io.InputStream>("getAsciiStream", "(I)Ljava/io/InputStream;", arg0);
+            return IExecute<Java.Io.InputStream>("getAsciiStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getAsciiStream(java.lang.String)"/>
@@ -1839,7 +1839,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetAsciiStream(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Io.InputStream>("getAsciiStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
+            return IExecute<Java.Io.InputStream>("getAsciiStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBinaryStream(int)"/>
@@ -1849,7 +1849,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetBinaryStream(int arg0)
         {
-            return IExecuteWithSignature<Java.Io.InputStream>("getBinaryStream", "(I)Ljava/io/InputStream;", arg0);
+            return IExecute<Java.Io.InputStream>("getBinaryStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBinaryStream(java.lang.String)"/>
@@ -1859,7 +1859,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetBinaryStream(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Io.InputStream>("getBinaryStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
+            return IExecute<Java.Io.InputStream>("getBinaryStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCharacterStream(int)"/>
@@ -1869,7 +1869,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetCharacterStream(int arg0)
         {
-            return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "(I)Ljava/io/Reader;", arg0);
+            return IExecute<Java.Io.Reader>("getCharacterStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCharacterStream(java.lang.String)"/>
@@ -1879,7 +1879,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetCharacterStream(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "(Ljava/lang/String;)Ljava/io/Reader;", arg0);
+            return IExecute<Java.Io.Reader>("getCharacterStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNCharacterStream(int)"/>
@@ -1889,7 +1889,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetNCharacterStream(int arg0)
         {
-            return IExecuteWithSignature<Java.Io.Reader>("getNCharacterStream", "(I)Ljava/io/Reader;", arg0);
+            return IExecute<Java.Io.Reader>("getNCharacterStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNCharacterStream(java.lang.String)"/>
@@ -1899,7 +1899,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetNCharacterStream(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Io.Reader>("getNCharacterStream", "(Ljava/lang/String;)Ljava/io/Reader;", arg0);
+            return IExecute<Java.Io.Reader>("getNCharacterStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(int,java.util.Map)"/>
@@ -1920,7 +1920,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetObject(int arg0)
         {
-            return IExecuteWithSignature("getObject", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("getObject", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String,java.util.Map)"/>
@@ -1941,7 +1941,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetObject(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getObject", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getObject", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNString(int)"/>
@@ -1951,7 +1951,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetNString(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getNString", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getNString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNString(java.lang.String)"/>
@@ -1961,7 +1961,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetNString(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getNString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getNString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getString(int)"/>
@@ -1971,7 +1971,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetString(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getString", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getString(java.lang.String)"/>
@@ -1981,7 +1981,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetString(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBigDecimal(int)"/>
@@ -1991,7 +1991,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Math.BigDecimal GetBigDecimal(int arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigDecimal>("getBigDecimal", "(I)Ljava/math/BigDecimal;", arg0);
+            return IExecute<Java.Math.BigDecimal>("getBigDecimal", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBigDecimal(java.lang.String)"/>
@@ -2001,7 +2001,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Math.BigDecimal GetBigDecimal(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Math.BigDecimal>("getBigDecimal", "(Ljava/lang/String;)Ljava/math/BigDecimal;", arg0);
+            return IExecute<Java.Math.BigDecimal>("getBigDecimal", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getURL(int)"/>
@@ -2011,7 +2011,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Net.URL GetURL(int arg0)
         {
-            return IExecuteWithSignature<Java.Net.URL>("getURL", "(I)Ljava/net/URL;", arg0);
+            return IExecute<Java.Net.URL>("getURL", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getURL(java.lang.String)"/>
@@ -2021,7 +2021,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Net.URL GetURL(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Net.URL>("getURL", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
+            return IExecute<Java.Net.URL>("getURL", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getArray(int)"/>
@@ -2031,7 +2031,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Array GetArray(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Array>("getArray", "(I)Ljava/sql/Array;", arg0);
+            return IExecute<Java.Sql.Array>("getArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getArray(java.lang.String)"/>
@@ -2041,7 +2041,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Array GetArray(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Array>("getArray", "(Ljava/lang/String;)Ljava/sql/Array;", arg0);
+            return IExecute<Java.Sql.Array>("getArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBlob(int)"/>
@@ -2051,7 +2051,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Blob GetBlob(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Blob>("getBlob", "(I)Ljava/sql/Blob;", arg0);
+            return IExecute<Java.Sql.Blob>("getBlob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBlob(java.lang.String)"/>
@@ -2061,7 +2061,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Blob GetBlob(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Blob>("getBlob", "(Ljava/lang/String;)Ljava/sql/Blob;", arg0);
+            return IExecute<Java.Sql.Blob>("getBlob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getClob(int)"/>
@@ -2071,7 +2071,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Clob GetClob(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Clob>("getClob", "(I)Ljava/sql/Clob;", arg0);
+            return IExecute<Java.Sql.Clob>("getClob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getClob(java.lang.String)"/>
@@ -2081,7 +2081,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Clob GetClob(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Clob>("getClob", "(Ljava/lang/String;)Ljava/sql/Clob;", arg0);
+            return IExecute<Java.Sql.Clob>("getClob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(int,java.util.Calendar)"/>
@@ -2102,7 +2102,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Date GetDate(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Date>("getDate", "(I)Ljava/sql/Date;", arg0);
+            return IExecute<Java.Sql.Date>("getDate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(java.lang.String,java.util.Calendar)"/>
@@ -2123,7 +2123,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Date GetDate(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Date>("getDate", "(Ljava/lang/String;)Ljava/sql/Date;", arg0);
+            return IExecute<Java.Sql.Date>("getDate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNClob(int)"/>
@@ -2133,7 +2133,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.NClob GetNClob(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.NClob>("getNClob", "(I)Ljava/sql/NClob;", arg0);
+            return IExecute<Java.Sql.NClob>("getNClob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNClob(java.lang.String)"/>
@@ -2143,7 +2143,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.NClob GetNClob(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.NClob>("getNClob", "(Ljava/lang/String;)Ljava/sql/NClob;", arg0);
+            return IExecute<Java.Sql.NClob>("getNClob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRef(int)"/>
@@ -2153,7 +2153,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Ref GetRef(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Ref>("getRef", "(I)Ljava/sql/Ref;", arg0);
+            return IExecute<Java.Sql.Ref>("getRef", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRef(java.lang.String)"/>
@@ -2163,7 +2163,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Ref GetRef(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Ref>("getRef", "(Ljava/lang/String;)Ljava/sql/Ref;", arg0);
+            return IExecute<Java.Sql.Ref>("getRef", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRowId(int)"/>
@@ -2173,7 +2173,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.RowId GetRowId(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.RowId>("getRowId", "(I)Ljava/sql/RowId;", arg0);
+            return IExecute<Java.Sql.RowId>("getRowId", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRowId(java.lang.String)"/>
@@ -2183,7 +2183,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.RowId GetRowId(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.RowId>("getRowId", "(Ljava/lang/String;)Ljava/sql/RowId;", arg0);
+            return IExecute<Java.Sql.RowId>("getRowId", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getSQLXML(int)"/>
@@ -2193,7 +2193,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.SQLXML GetSQLXML(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.SQLXML>("getSQLXML", "(I)Ljava/sql/SQLXML;", arg0);
+            return IExecute<Java.Sql.SQLXML>("getSQLXML", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getSQLXML(java.lang.String)"/>
@@ -2203,7 +2203,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.SQLXML GetSQLXML(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.SQLXML>("getSQLXML", "(Ljava/lang/String;)Ljava/sql/SQLXML;", arg0);
+            return IExecute<Java.Sql.SQLXML>("getSQLXML", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(int,java.util.Calendar)"/>
@@ -2224,7 +2224,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Time GetTime(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Time>("getTime", "(I)Ljava/sql/Time;", arg0);
+            return IExecute<Java.Sql.Time>("getTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(java.lang.String,java.util.Calendar)"/>
@@ -2245,7 +2245,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Time GetTime(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Time>("getTime", "(Ljava/lang/String;)Ljava/sql/Time;", arg0);
+            return IExecute<Java.Sql.Time>("getTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(int,java.util.Calendar)"/>
@@ -2266,7 +2266,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Timestamp GetTimestamp(int arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Timestamp>("getTimestamp", "(I)Ljava/sql/Timestamp;", arg0);
+            return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(java.lang.String,java.util.Calendar)"/>
@@ -2287,7 +2287,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Timestamp GetTimestamp(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.Timestamp>("getTimestamp", "(Ljava/lang/String;)Ljava/sql/Timestamp;", arg0);
+            return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getLong(int)"/>
@@ -2297,7 +2297,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long GetLong(int arg0)
         {
-            return IExecuteWithSignature<long>("getLong", "(I)J", arg0);
+            return IExecute<long>("getLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getLong(java.lang.String)"/>
@@ -2307,7 +2307,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long GetLong(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<long>("getLong", "(Ljava/lang/String;)J", arg0);
+            return IExecute<long>("getLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getShort(int)"/>
@@ -2317,7 +2317,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public short GetShort(int arg0)
         {
-            return IExecuteWithSignature<short>("getShort", "(I)S", arg0);
+            return IExecute<short>("getShort", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getShort(java.lang.String)"/>
@@ -2327,7 +2327,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public short GetShort(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<short>("getShort", "(Ljava/lang/String;)S", arg0);
+            return IExecute<short>("getShort", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#afterLast()"/>
@@ -2335,7 +2335,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void AfterLast()
         {
-            IExecuteWithSignature("afterLast", "()V");
+            IExecute("afterLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#beforeFirst()"/>
@@ -2343,7 +2343,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void BeforeFirst()
         {
-            IExecuteWithSignature("beforeFirst", "()V");
+            IExecute("beforeFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#cancelRowUpdates()"/>
@@ -2351,7 +2351,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void CancelRowUpdates()
         {
-            IExecuteWithSignature("cancelRowUpdates", "()V");
+            IExecute("cancelRowUpdates");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#clearWarnings()"/>
@@ -2359,7 +2359,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearWarnings()
         {
-            IExecuteWithSignature("clearWarnings", "()V");
+            IExecute("clearWarnings");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#close()"/>
@@ -2367,7 +2367,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#deleteRow()"/>
@@ -2375,7 +2375,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void DeleteRow()
         {
-            IExecuteWithSignature("deleteRow", "()V");
+            IExecute("deleteRow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#insertRow()"/>
@@ -2383,7 +2383,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void InsertRow()
         {
-            IExecuteWithSignature("insertRow", "()V");
+            IExecute("insertRow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#moveToCurrentRow()"/>
@@ -2391,7 +2391,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void MoveToCurrentRow()
         {
-            IExecuteWithSignature("moveToCurrentRow", "()V");
+            IExecute("moveToCurrentRow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#moveToInsertRow()"/>
@@ -2399,7 +2399,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void MoveToInsertRow()
         {
-            IExecuteWithSignature("moveToInsertRow", "()V");
+            IExecute("moveToInsertRow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#refreshRow()"/>
@@ -2407,7 +2407,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void RefreshRow()
         {
-            IExecuteWithSignature("refreshRow", "()V");
+            IExecute("refreshRow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateArray(int,java.sql.Array)"/>
@@ -3056,7 +3056,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNull(int arg0)
         {
-            IExecuteWithSignature("updateNull", "(I)V", arg0);
+            IExecute("updateNull", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNull(java.lang.String)"/>
@@ -3065,7 +3065,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNull(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("updateNull", "(Ljava/lang/String;)V", arg0);
+            IExecute("updateNull", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,int)"/>
@@ -3135,7 +3135,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateRow()
         {
-            IExecuteWithSignature("updateRow", "()V");
+            IExecute("updateRow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRowId(int,java.sql.RowId)"/>

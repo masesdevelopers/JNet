@@ -135,7 +135,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="bool"/></returns>
         public bool Empty()
         {
-            return IExecuteWithSignature<bool>("empty", "()Z");
+            return IExecute<bool>("empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#first(java.lang.Object)"/>
@@ -144,7 +144,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="bool"/></returns>
         public bool First(object arg0)
         {
-            return IExecuteWithSignature<bool>("first", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("first", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#first()"/>
@@ -152,7 +152,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="Javax.Swing.Text.Html.Parser.Element"/></returns>
         public Javax.Swing.Text.Html.Parser.Element First()
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Element>("first", "()Ljavax/swing/text/html/parser/Element;");
+            return IExecute<Javax.Swing.Text.Html.Parser.Element>("first");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#getElements(java.util.Vector)"/>
@@ -160,7 +160,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         public void GetElements(Java.Util.Vector<Javax.Swing.Text.Html.Parser.Element> arg0)
         {
-            IExecuteWithSignature("getElements", "(Ljava/util/Vector;)V", arg0);
+            IExecute("getElements", arg0);
         }
 
         #endregion

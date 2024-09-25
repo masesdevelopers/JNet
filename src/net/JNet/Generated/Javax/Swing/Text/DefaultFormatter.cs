@@ -99,28 +99,28 @@ namespace Javax.Swing.Text
         /// </summary>
         public bool AllowsInvalid
         {
-            get { return IExecuteWithSignature<bool>("getAllowsInvalid", "()Z"); } set { IExecuteWithSignature("setAllowsInvalid", "(Z)V", value); }
+            get { return IExecute<bool>("getAllowsInvalid"); } set { IExecute("setAllowsInvalid", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatter.html#getCommitsOnValidEdit()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatter.html#setCommitsOnValidEdit(boolean)"/>
         /// </summary>
         public bool CommitsOnValidEdit
         {
-            get { return IExecuteWithSignature<bool>("getCommitsOnValidEdit", "()Z"); } set { IExecuteWithSignature("setCommitsOnValidEdit", "(Z)V", value); }
+            get { return IExecute<bool>("getCommitsOnValidEdit"); } set { IExecute("setCommitsOnValidEdit", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatter.html#getOverwriteMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatter.html#setOverwriteMode(boolean)"/>
         /// </summary>
         public bool OverwriteMode
         {
-            get { return IExecuteWithSignature<bool>("getOverwriteMode", "()Z"); } set { IExecuteWithSignature("setOverwriteMode", "(Z)V", value); }
+            get { return IExecute<bool>("getOverwriteMode"); } set { IExecute("setOverwriteMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatter.html#getValueClass()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatter.html#setValueClass(java.lang.Class)"/>
         /// </summary>
         public Java.Lang.Class ValueClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getValueClass", "()Ljava/lang/Class;"); } set { IExecuteWithSignature("setValueClass", "(Ljava/lang/Class;)V", value); }
+            get { return IExecute<Java.Lang.Class>("getValueClass"); } set { IExecute("setValueClass", value); }
         }
 
         #endregion

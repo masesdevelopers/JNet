@@ -104,7 +104,7 @@ namespace Javax.Naming
         /// </summary>
         public Java.Util.Enumeration<Java.Lang.String> All
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getAll", "()Ljava/util/Enumeration;"); }
+            get { return IExecute<Java.Util.Enumeration<Java.Lang.String>>("getAll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#endsWith(javax.naming.Name)"/>
@@ -113,7 +113,7 @@ namespace Javax.Naming
         /// <returns><see cref="bool"/></returns>
         public bool EndsWith(Javax.Naming.Name arg0)
         {
-            return IExecuteWithSignature<bool>("endsWith", "(Ljavax/naming/Name;)Z", arg0);
+            return IExecute<bool>("endsWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#isEmpty()"/>
@@ -121,7 +121,7 @@ namespace Javax.Naming
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#startsWith(javax.naming.Name)"/>
@@ -130,7 +130,7 @@ namespace Javax.Naming
         /// <returns><see cref="bool"/></returns>
         public bool StartsWith(Javax.Naming.Name arg0)
         {
-            return IExecuteWithSignature<bool>("startsWith", "(Ljavax/naming/Name;)Z", arg0);
+            return IExecute<bool>("startsWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#compareTo(java.lang.Object)"/>
@@ -139,7 +139,7 @@ namespace Javax.Naming
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#size()"/>
@@ -147,7 +147,7 @@ namespace Javax.Naming
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#remove(int)"/>
@@ -157,7 +157,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.InvalidNameException"/>
         public object Remove(int arg0)
         {
-            return IExecuteWithSignature("remove", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#get(int)"/>
@@ -166,7 +166,7 @@ namespace Javax.Naming
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Get(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("get", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#add(int,java.lang.String)"/>
@@ -187,7 +187,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.InvalidNameException"/>
         public Javax.Naming.Name Add(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Name>("add", "(Ljava/lang/String;)Ljavax/naming/Name;", arg0);
+            return IExecute<Javax.Naming.Name>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#addAll(int,javax.naming.Name)"/>
@@ -208,7 +208,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.InvalidNameException"/>
         public Javax.Naming.Name AddAll(Javax.Naming.Name arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Name>("addAll", "(Ljavax/naming/Name;)Ljavax/naming/Name;", arg0);
+            return IExecute<Javax.Naming.Name>("addAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#getPrefix(int)"/>
@@ -217,7 +217,7 @@ namespace Javax.Naming
         /// <returns><see cref="Javax.Naming.Name"/></returns>
         public Javax.Naming.Name GetPrefix(int arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Name>("getPrefix", "(I)Ljavax/naming/Name;", arg0);
+            return IExecute<Javax.Naming.Name>("getPrefix", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html#getSuffix(int)"/>
@@ -226,7 +226,7 @@ namespace Javax.Naming
         /// <returns><see cref="Javax.Naming.Name"/></returns>
         public Javax.Naming.Name GetSuffix(int arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.Name>("getSuffix", "(I)Ljavax/naming/Name;", arg0);
+            return IExecute<Javax.Naming.Name>("getSuffix", arg0);
         }
 
         #endregion

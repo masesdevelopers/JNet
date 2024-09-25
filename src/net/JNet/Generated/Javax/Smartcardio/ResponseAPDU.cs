@@ -103,42 +103,42 @@ namespace Javax.Smartcardio
         /// </summary>
         public byte[] Bytes
         {
-            get { return IExecuteWithSignatureArray<byte>("getBytes", "()[B"); }
+            get { return IExecuteArray<byte>("getBytes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ResponseAPDU.html#getData()"/> 
         /// </summary>
         public byte[] Data
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
+            get { return IExecuteArray<byte>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ResponseAPDU.html#getNr()"/> 
         /// </summary>
         public int Nr
         {
-            get { return IExecuteWithSignature<int>("getNr", "()I"); }
+            get { return IExecute<int>("getNr"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ResponseAPDU.html#getSW()"/> 
         /// </summary>
         public int SW
         {
-            get { return IExecuteWithSignature<int>("getSW", "()I"); }
+            get { return IExecute<int>("getSW"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ResponseAPDU.html#getSW1()"/> 
         /// </summary>
         public int SW1
         {
-            get { return IExecuteWithSignature<int>("getSW1", "()I"); }
+            get { return IExecute<int>("getSW1"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ResponseAPDU.html#getSW2()"/> 
         /// </summary>
         public int SW2
         {
-            get { return IExecuteWithSignature<int>("getSW2", "()I"); }
+            get { return IExecute<int>("getSW2"); }
         }
 
         #endregion

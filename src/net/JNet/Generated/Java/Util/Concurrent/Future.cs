@@ -147,7 +147,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Cancel(bool arg0)
         {
-            return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
+            return IExecute<bool>("cancel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isCancelled()"/>
@@ -155,7 +155,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
         {
-            return IExecuteWithSignature<bool>("isCancelled", "()Z");
+            return IExecute<bool>("isCancelled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isDone()"/>
@@ -163,7 +163,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {
-            return IExecuteWithSignature<bool>("isDone", "()Z");
+            return IExecute<bool>("isDone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get()"/>
@@ -173,7 +173,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         public object Get()
         {
-            return IExecuteWithSignature("get", "()Ljava/lang/Object;");
+            return IExecute("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get(long,java.util.concurrent.TimeUnit)"/>
@@ -281,7 +281,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Cancel(bool arg0)
         {
-            return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
+            return IExecute<bool>("cancel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isCancelled()"/>
@@ -289,7 +289,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
         {
-            return IExecuteWithSignature<bool>("isCancelled", "()Z");
+            return IExecute<bool>("isCancelled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isDone()"/>
@@ -297,7 +297,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {
-            return IExecuteWithSignature<bool>("isDone", "()Z");
+            return IExecute<bool>("isDone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get()"/>
@@ -307,7 +307,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         public V Get()
         {
-            return IExecuteWithSignature<V>("get", "()Ljava/lang/Object;");
+            return IExecute<V>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get(long,java.util.concurrent.TimeUnit)"/>

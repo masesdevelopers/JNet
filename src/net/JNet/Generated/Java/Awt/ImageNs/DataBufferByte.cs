@@ -150,14 +150,14 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public byte[] BankData
         {
-            get { return IExecuteWithSignatureArray<byte>("getBankData", "()[[B"); }
+            get { return IExecuteArray<byte>("getBankData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferByte.html#getData()"/> 
         /// </summary>
         public byte[] Data
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
+            get { return IExecuteArray<byte>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferByte.html#getData(int)"/>
@@ -166,7 +166,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="byte"/></returns>
         public byte[] GetData(int arg0)
         {
-            return IExecuteWithSignatureArray<byte>("getData", "(I)[B", arg0);
+            return IExecuteArray<byte>("getData", arg0);
         }
 
         #endregion

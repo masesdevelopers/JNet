@@ -327,70 +327,70 @@ namespace Java.Util.Concurrent
         /// </summary>
         public int ActiveCount
         {
-            get { return IExecuteWithSignature<int>("getActiveCount", "()I"); }
+            get { return IExecute<int>("getActiveCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getCompletedTaskCount()"/> 
         /// </summary>
         public long CompletedTaskCount
         {
-            get { return IExecuteWithSignature<long>("getCompletedTaskCount", "()J"); }
+            get { return IExecute<long>("getCompletedTaskCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getCorePoolSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setCorePoolSize(int)"/>
         /// </summary>
         public int CorePoolSize
         {
-            get { return IExecuteWithSignature<int>("getCorePoolSize", "()I"); } set { IExecuteWithSignature("setCorePoolSize", "(I)V", value); }
+            get { return IExecute<int>("getCorePoolSize"); } set { IExecute("setCorePoolSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getLargestPoolSize()"/> 
         /// </summary>
         public int LargestPoolSize
         {
-            get { return IExecuteWithSignature<int>("getLargestPoolSize", "()I"); }
+            get { return IExecute<int>("getLargestPoolSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getMaximumPoolSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setMaximumPoolSize(int)"/>
         /// </summary>
         public int MaximumPoolSize
         {
-            get { return IExecuteWithSignature<int>("getMaximumPoolSize", "()I"); } set { IExecuteWithSignature("setMaximumPoolSize", "(I)V", value); }
+            get { return IExecute<int>("getMaximumPoolSize"); } set { IExecute("setMaximumPoolSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getPoolSize()"/> 
         /// </summary>
         public int PoolSize
         {
-            get { return IExecuteWithSignature<int>("getPoolSize", "()I"); }
+            get { return IExecute<int>("getPoolSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getQueue()"/> 
         /// </summary>
         public Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> Queue
         {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable>>("getQueue", "()Ljava/util/concurrent/BlockingQueue;"); }
+            get { return IExecute<Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable>>("getQueue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getRejectedExecutionHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
         public Java.Util.Concurrent.RejectedExecutionHandler RejectedExecutionHandler
         {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.RejectedExecutionHandler>("getRejectedExecutionHandler", "()Ljava/util/concurrent/RejectedExecutionHandler;"); } set { IExecuteWithSignature("setRejectedExecutionHandler", "(Ljava/util/concurrent/RejectedExecutionHandler;)V", value); }
+            get { return IExecute<Java.Util.Concurrent.RejectedExecutionHandler>("getRejectedExecutionHandler"); } set { IExecute("setRejectedExecutionHandler", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getTaskCount()"/> 
         /// </summary>
         public long TaskCount
         {
-            get { return IExecuteWithSignature<long>("getTaskCount", "()J"); }
+            get { return IExecute<long>("getTaskCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getThreadFactory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setThreadFactory(java.util.concurrent.ThreadFactory)"/>
         /// </summary>
         public Java.Util.Concurrent.ThreadFactory ThreadFactory
         {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.ThreadFactory>("getThreadFactory", "()Ljava/util/concurrent/ThreadFactory;"); } set { IExecuteWithSignature("setThreadFactory", "(Ljava/util/concurrent/ThreadFactory;)V", value); }
+            get { return IExecute<Java.Util.Concurrent.ThreadFactory>("getThreadFactory"); } set { IExecute("setThreadFactory", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowsCoreThreadTimeOut()"/>
@@ -398,7 +398,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool AllowsCoreThreadTimeOut()
         {
-            return IExecuteWithSignature<bool>("allowsCoreThreadTimeOut", "()Z");
+            return IExecute<bool>("allowsCoreThreadTimeOut");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#isTerminating()"/>
@@ -406,7 +406,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminating()
         {
-            return IExecuteWithSignature<bool>("isTerminating", "()Z");
+            return IExecute<bool>("isTerminating");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartCoreThread()"/>
@@ -414,7 +414,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool PrestartCoreThread()
         {
-            return IExecuteWithSignature<bool>("prestartCoreThread", "()Z");
+            return IExecute<bool>("prestartCoreThread");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#remove(java.lang.Runnable)"/>
@@ -423,7 +423,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Remove(Java.Lang.Runnable arg0)
         {
-            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Runnable;)Z", arg0);
+            return IExecute<bool>("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartAllCoreThreads()"/>
@@ -431,7 +431,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int PrestartAllCoreThreads()
         {
-            return IExecuteWithSignature<int>("prestartAllCoreThreads", "()I");
+            return IExecute<int>("prestartAllCoreThreads");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getKeepAliveTime(java.util.concurrent.TimeUnit)"/>
@@ -440,7 +440,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long GetKeepAliveTime(Java.Util.Concurrent.TimeUnit arg0)
         {
-            return IExecuteWithSignature<long>("getKeepAliveTime", "(Ljava/util/concurrent/TimeUnit;)J", arg0);
+            return IExecute<long>("getKeepAliveTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowCoreThreadTimeOut(boolean)"/>
@@ -448,14 +448,14 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="bool"/></param>
         public void AllowCoreThreadTimeOut(bool arg0)
         {
-            IExecuteWithSignature("allowCoreThreadTimeOut", "(Z)V", arg0);
+            IExecute("allowCoreThreadTimeOut", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#purge()"/>
         /// </summary>
         public void Purge()
         {
-            IExecuteWithSignature("purge", "()V");
+            IExecute("purge");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setKeepAliveTime(long,java.util.concurrent.TimeUnit)"/>

@@ -91,7 +91,7 @@ namespace Javax.Net.Ssl
         /// </summary>
         public static Javax.Net.Ssl.SSLContext Default
         {
-            get { return SExecuteWithSignature<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getDefault", "()Ljavax/net/ssl/SSLContext;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljavax/net/ssl/SSLContext;)V", value); }
+            get { return SExecute<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getDefault"); } set { SExecute(LocalBridgeClazz, "setDefault", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -124,7 +124,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Net.Ssl.SSLContext GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;", arg0);
+            return SExecute<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -135,56 +135,56 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Javax.Net.Ssl.SSLSessionContext ClientSessionContext
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSessionContext>("getClientSessionContext", "()Ljavax/net/ssl/SSLSessionContext;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLSessionContext>("getClientSessionContext"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getDefaultSSLParameters()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLParameters DefaultSSLParameters
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLParameters>("getDefaultSSLParameters", "()Ljavax/net/ssl/SSLParameters;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLParameters>("getDefaultSSLParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getProtocol()"/> 
         /// </summary>
         public Java.Lang.String Protocol
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProtocol", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getProtocol"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getServerSessionContext()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSessionContext ServerSessionContext
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSessionContext>("getServerSessionContext", "()Ljavax/net/ssl/SSLSessionContext;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLSessionContext>("getServerSessionContext"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getServerSocketFactory()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLServerSocketFactory ServerSocketFactory
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLServerSocketFactory>("getServerSocketFactory", "()Ljavax/net/ssl/SSLServerSocketFactory;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLServerSocketFactory>("getServerSocketFactory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getSocketFactory()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSocketFactory SocketFactory
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSocketFactory>("getSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLSocketFactory>("getSocketFactory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getSupportedSSLParameters()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLParameters SupportedSSLParameters
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLParameters>("getSupportedSSLParameters", "()Ljavax/net/ssl/SSLParameters;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLParameters>("getSupportedSSLParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#createSSLEngine()"/>
@@ -192,7 +192,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Javax.Net.Ssl.SSLEngine"/></returns>
         public Javax.Net.Ssl.SSLEngine CreateSSLEngine()
         {
-            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngine>("createSSLEngine", "()Ljavax/net/ssl/SSLEngine;");
+            return IExecute<Javax.Net.Ssl.SSLEngine>("createSSLEngine");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#createSSLEngine(java.lang.String,int)"/>

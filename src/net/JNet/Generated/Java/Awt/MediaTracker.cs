@@ -127,7 +127,7 @@ namespace Java.Awt
         /// </summary>
         public object[] ErrorsAny
         {
-            get { return IExecuteWithSignatureArray<object>("getErrorsAny", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getErrorsAny"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#checkAll()"/>
@@ -135,7 +135,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool CheckAll()
         {
-            return IExecuteWithSignature<bool>("checkAll", "()Z");
+            return IExecute<bool>("checkAll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#checkAll(boolean)"/>
@@ -144,7 +144,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool CheckAll(bool arg0)
         {
-            return IExecuteWithSignature<bool>("checkAll", "(Z)Z", arg0);
+            return IExecute<bool>("checkAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#checkID(int,boolean)"/>
@@ -163,7 +163,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool CheckID(int arg0)
         {
-            return IExecuteWithSignature<bool>("checkID", "(I)Z", arg0);
+            return IExecute<bool>("checkID", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#statusAll(boolean)"/>
@@ -172,7 +172,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int StatusAll(bool arg0)
         {
-            return IExecuteWithSignature<int>("statusAll", "(Z)I", arg0);
+            return IExecute<int>("statusAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#statusID(int,boolean)"/>
@@ -190,7 +190,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsErrorAny()
         {
-            return IExecuteWithSignature<bool>("isErrorAny", "()Z");
+            return IExecute<bool>("isErrorAny");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#isErrorID(int)"/>
@@ -199,7 +199,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsErrorID(int arg0)
         {
-            return IExecuteWithSignature<bool>("isErrorID", "(I)Z", arg0);
+            return IExecute<bool>("isErrorID", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#waitForAll(long)"/>
@@ -209,7 +209,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool WaitForAll(long arg0)
         {
-            return IExecuteWithSignature<bool>("waitForAll", "(J)Z", arg0);
+            return IExecute<bool>("waitForAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#waitForID(int,long)"/>
@@ -229,7 +229,7 @@ namespace Java.Awt
         /// <returns><see cref="object"/></returns>
         public object[] GetErrorsID(int arg0)
         {
-            return IExecuteWithSignatureArray<object>("getErrorsID", "(I)[Ljava/lang/Object;", arg0);
+            return IExecuteArray<object>("getErrorsID", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#addImage(java.awt.Image,int,int,int)"/>
@@ -268,7 +268,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
         public void RemoveImage(Java.Awt.Image arg0)
         {
-            IExecuteWithSignature("removeImage", "(Ljava/awt/Image;)V", arg0);
+            IExecute("removeImage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#addImage(java.awt.Image,int)"/>
@@ -285,7 +285,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void WaitForAll()
         {
-            IExecuteWithSignature("waitForAll", "()V");
+            IExecute("waitForAll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#waitForID(int)"/>
@@ -294,7 +294,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void WaitForID(int arg0)
         {
-            IExecuteWithSignature("waitForID", "(I)V", arg0);
+            IExecute("waitForID", arg0);
         }
 
         #endregion

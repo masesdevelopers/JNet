@@ -97,28 +97,28 @@ namespace Java.Nio.File
         /// </summary>
         public long BlockSize
         {
-            get { return IExecuteWithSignature<long>("getBlockSize", "()J"); }
+            get { return IExecute<long>("getBlockSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getTotalSpace()"/> 
         /// </summary>
         public long TotalSpace
         {
-            get { return IExecuteWithSignature<long>("getTotalSpace", "()J"); }
+            get { return IExecute<long>("getTotalSpace"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getUnallocatedSpace()"/> 
         /// </summary>
         public long UnallocatedSpace
         {
-            get { return IExecuteWithSignature<long>("getUnallocatedSpace", "()J"); }
+            get { return IExecute<long>("getUnallocatedSpace"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getUsableSpace()"/> 
         /// </summary>
         public long UsableSpace
         {
-            get { return IExecuteWithSignature<long>("getUsableSpace", "()J"); }
+            get { return IExecute<long>("getUsableSpace"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getFileStoreAttributeView(java.lang.Class)"/>
@@ -136,7 +136,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
-            return IExecuteWithSignature<bool>("isReadOnly", "()Z");
+            return IExecute<bool>("isReadOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.Class)"/>
@@ -145,7 +145,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool SupportsFileAttributeView(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<bool>("supportsFileAttributeView", "(Ljava/lang/Class;)Z", arg0);
+            return IExecute<bool>("supportsFileAttributeView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.String)"/>
@@ -154,7 +154,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool SupportsFileAttributeView(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("supportsFileAttributeView", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("supportsFileAttributeView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getAttribute(java.lang.String)"/>
@@ -164,7 +164,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public object GetAttribute(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#name()"/>
@@ -172,7 +172,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#type()"/>
@@ -180,7 +180,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Type()
         {
-            return IExecuteWithSignature<Java.Lang.String>("type", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("type");
         }
 
         #endregion

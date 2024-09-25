@@ -136,7 +136,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static int GetMaxAllowedKeyLength(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxAllowedKeyLength", "(Ljava/lang/String;)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "getMaxAllowedKeyLength", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getMaxAllowedParameterSpec(java.lang.String)"/>
@@ -146,7 +146,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Spec.AlgorithmParameterSpec GetMaxAllowedParameterSpec(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>(LocalBridgeClazz, "getMaxAllowedParameterSpec", "(Ljava/lang/String;)Ljava/security/spec/AlgorithmParameterSpec;", arg0);
+            return SExecute<Java.Security.Spec.AlgorithmParameterSpec>(LocalBridgeClazz, "getMaxAllowedParameterSpec", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -182,7 +182,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
         public static Javax.Crypto.Cipher GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Crypto.Cipher>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/crypto/Cipher;", arg0);
+            return SExecute<Javax.Crypto.Cipher>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -193,42 +193,42 @@ namespace Javax.Crypto
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getBlockSize()"/> 
         /// </summary>
         public int BlockSize
         {
-            get { return IExecuteWithSignature<int>("getBlockSize", "()I"); }
+            get { return IExecute<int>("getBlockSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getExemptionMechanism()"/> 
         /// </summary>
         public Javax.Crypto.ExemptionMechanism ExemptionMechanism
         {
-            get { return IExecuteWithSignature<Javax.Crypto.ExemptionMechanism>("getExemptionMechanism", "()Ljavax/crypto/ExemptionMechanism;"); }
+            get { return IExecute<Javax.Crypto.ExemptionMechanism>("getExemptionMechanism"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getIV()"/> 
         /// </summary>
         public byte[] IV
         {
-            get { return IExecuteWithSignatureArray<byte>("getIV", "()[B"); }
+            get { return IExecuteArray<byte>("getIV"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getParameters()"/> 
         /// </summary>
         public Java.Security.AlgorithmParameters Parameters
         {
-            get { return IExecuteWithSignature<Java.Security.AlgorithmParameters>("getParameters", "()Ljava/security/AlgorithmParameters;"); }
+            get { return IExecute<Java.Security.AlgorithmParameters>("getParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal()"/>
@@ -238,7 +238,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public byte[] DoFinal()
         {
-            return IExecuteWithSignatureArray<byte>("doFinal", "()[B");
+            return IExecuteArray<byte>("doFinal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int,int)"/>
@@ -262,7 +262,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public byte[] DoFinal(byte[] arg0)
         {
-            return IExecuteWithSignatureArray<byte>("doFinal", "([B)[B", new object[] { arg0 });
+            return IExecuteArray<byte>("doFinal", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int)"/>
@@ -282,7 +282,7 @@ namespace Javax.Crypto
         /// <returns><see cref="byte"/></returns>
         public byte[] Update(byte[] arg0)
         {
-            return IExecuteWithSignatureArray<byte>("update", "([B)[B", new object[] { arg0 });
+            return IExecuteArray<byte>("update", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#wrap(java.security.Key)"/>
@@ -293,7 +293,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public byte[] Wrap(Java.Security.Key arg0)
         {
-            return IExecuteWithSignatureArray<byte>("wrap", "(Ljava/security/Key;)[B", arg0);
+            return IExecuteArray<byte>("wrap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int,int,byte[],int)"/>
@@ -359,7 +359,7 @@ namespace Javax.Crypto
         /// <returns><see cref="int"/></returns>
         public int GetOutputSize(int arg0)
         {
-            return IExecuteWithSignature<int>("getOutputSize", "(I)I", arg0);
+            return IExecute<int>("getOutputSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int,byte[],int)"/>
@@ -520,7 +520,7 @@ namespace Javax.Crypto
         /// <param name="arg0"><see cref="byte"/></param>
         public void UpdateAAD(byte[] arg0)
         {
-            IExecuteWithSignature("updateAAD", "([B)V", new object[] { arg0 });
+            IExecute("updateAAD", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#updateAAD(java.nio.ByteBuffer)"/>
@@ -528,7 +528,7 @@ namespace Javax.Crypto
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void UpdateAAD(Java.Nio.ByteBuffer arg0)
         {
-            IExecuteWithSignature("updateAAD", "(Ljava/nio/ByteBuffer;)V", arg0);
+            IExecute("updateAAD", arg0);
         }
 
         #endregion

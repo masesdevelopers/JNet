@@ -119,7 +119,7 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public Java.Util.List Alternatives
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getAlternatives", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List>("getAlternatives"); }
         }
 
         #endregion

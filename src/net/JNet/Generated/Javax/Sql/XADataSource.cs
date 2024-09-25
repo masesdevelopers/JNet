@@ -141,21 +141,21 @@ namespace Javax.Sql
         /// </summary>
         public int LoginTimeout
         {
-            get { return IExecuteWithSignature<int>("getLoginTimeout", "()I"); } set { IExecuteWithSignature("setLoginTimeout", "(I)V", value); }
+            get { return IExecute<int>("getLoginTimeout"); } set { IExecute("setLoginTimeout", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XADataSource.html#getLogWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XADataSource.html#setLogWriter(java.io.PrintWriter)"/>
         /// </summary>
         public Java.Io.PrintWriter LogWriter
         {
-            get { return IExecuteWithSignature<Java.Io.PrintWriter>("getLogWriter", "()Ljava/io/PrintWriter;"); } set { IExecuteWithSignature("setLogWriter", "(Ljava/io/PrintWriter;)V", value); }
+            get { return IExecute<Java.Io.PrintWriter>("getLogWriter"); } set { IExecute("setLogWriter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XADataSource.html#getXAConnection()"/> 
         /// </summary>
         public Javax.Sql.XAConnection XAConnection
         {
-            get { return IExecuteWithSignature<Javax.Sql.XAConnection>("getXAConnection", "()Ljavax/sql/XAConnection;"); }
+            get { return IExecute<Javax.Sql.XAConnection>("getXAConnection"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XADataSource.html#getXAConnection(java.lang.String,java.lang.String)"/>
@@ -175,7 +175,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.XAConnectionBuilder CreateXAConnectionBuilder()
         {
-            return IExecuteWithSignature<Javax.Sql.XAConnectionBuilder>("createXAConnectionBuilder", "()Ljavax/sql/XAConnectionBuilder;");
+            return IExecute<Javax.Sql.XAConnectionBuilder>("createXAConnectionBuilder");
         }
 
         #endregion

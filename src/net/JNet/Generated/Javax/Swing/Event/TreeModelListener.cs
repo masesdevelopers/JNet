@@ -294,7 +294,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
         public override void TreeNodesChanged(Javax.Swing.Event.TreeModelEvent arg0)
         {
-            IExecuteWithSignature("treeNodesChanged", "(Ljavax/swing/event/TreeModelEvent;)V", arg0);
+            IExecute("treeNodesChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesInserted(javax.swing.event.TreeModelEvent)"/>
@@ -302,7 +302,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
         public override void TreeNodesInserted(Javax.Swing.Event.TreeModelEvent arg0)
         {
-            IExecuteWithSignature("treeNodesInserted", "(Ljavax/swing/event/TreeModelEvent;)V", arg0);
+            IExecute("treeNodesInserted", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesRemoved(javax.swing.event.TreeModelEvent)"/>
@@ -310,7 +310,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
         public override void TreeNodesRemoved(Javax.Swing.Event.TreeModelEvent arg0)
         {
-            IExecuteWithSignature("treeNodesRemoved", "(Ljavax/swing/event/TreeModelEvent;)V", arg0);
+            IExecute("treeNodesRemoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeStructureChanged(javax.swing.event.TreeModelEvent)"/>
@@ -318,7 +318,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
         public override void TreeStructureChanged(Javax.Swing.Event.TreeModelEvent arg0)
         {
-            IExecuteWithSignature("treeStructureChanged", "(Ljavax/swing/event/TreeModelEvent;)V", arg0);
+            IExecute("treeStructureChanged", arg0);
         }
 
         #endregion

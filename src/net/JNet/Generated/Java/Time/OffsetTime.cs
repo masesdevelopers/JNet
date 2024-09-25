@@ -121,7 +121,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecuteWithSignature<Java.Time.OffsetTime>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/OffsetTime;", arg0);
+            return SExecute<Java.Time.OffsetTime>(LocalBridgeClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#now()"/>
@@ -129,7 +129,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Now()
         {
-            return SExecuteWithSignature<Java.Time.OffsetTime>(LocalBridgeClazz, "now", "()Ljava/time/OffsetTime;");
+            return SExecute<Java.Time.OffsetTime>(LocalBridgeClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#now(java.time.Clock)"/>
@@ -138,7 +138,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Now(Java.Time.Clock arg0)
         {
-            return SExecuteWithSignature<Java.Time.OffsetTime>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/OffsetTime;", arg0);
+            return SExecute<Java.Time.OffsetTime>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#now(java.time.ZoneId)"/>
@@ -147,7 +147,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Now(Java.Time.ZoneId arg0)
         {
-            return SExecuteWithSignature<Java.Time.OffsetTime>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/OffsetTime;", arg0);
+            return SExecute<Java.Time.OffsetTime>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#of(int,int,int,int,java.time.ZoneOffset)"/>
@@ -199,7 +199,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Parse(Java.Lang.CharSequence arg0)
         {
-            return SExecuteWithSignature<Java.Time.OffsetTime>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;)Ljava/time/OffsetTime;", arg0);
+            return SExecute<Java.Time.OffsetTime>(LocalBridgeClazz, "parse", arg0);
         }
 
         #endregion
@@ -210,35 +210,35 @@ namespace Java.Time
         /// </summary>
         public int Hour
         {
-            get { return IExecuteWithSignature<int>("getHour", "()I"); }
+            get { return IExecute<int>("getHour"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#getMinute()"/> 
         /// </summary>
         public int Minute
         {
-            get { return IExecuteWithSignature<int>("getMinute", "()I"); }
+            get { return IExecute<int>("getMinute"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#getNano()"/> 
         /// </summary>
         public int Nano
         {
-            get { return IExecuteWithSignature<int>("getNano", "()I"); }
+            get { return IExecute<int>("getNano"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#getOffset()"/> 
         /// </summary>
         public Java.Time.ZoneOffset Offset
         {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffset", "()Ljava/time/ZoneOffset;"); }
+            get { return IExecute<Java.Time.ZoneOffset>("getOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#getSecond()"/> 
         /// </summary>
         public int Second
         {
-            get { return IExecuteWithSignature<int>("getSecond", "()I"); }
+            get { return IExecute<int>("getSecond"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#query(java.time.temporal.TemporalQuery)"/>
@@ -248,7 +248,7 @@ namespace Java.Time
         /// <returns><typeparamref name="R"/></returns>
         public R Query<R>(Java.Time.Temporal.TemporalQuery<R> arg0)
         {
-            return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
+            return IExecute<R>("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#isAfter(java.time.OffsetTime)"/>
@@ -257,7 +257,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsAfter(Java.Time.OffsetTime arg0)
         {
-            return IExecuteWithSignature<bool>("isAfter", "(Ljava/time/OffsetTime;)Z", arg0);
+            return IExecute<bool>("isAfter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#isBefore(java.time.OffsetTime)"/>
@@ -266,7 +266,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsBefore(Java.Time.OffsetTime arg0)
         {
-            return IExecuteWithSignature<bool>("isBefore", "(Ljava/time/OffsetTime;)Z", arg0);
+            return IExecute<bool>("isBefore", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#isEqual(java.time.OffsetTime)"/>
@@ -275,7 +275,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsEqual(Java.Time.OffsetTime arg0)
         {
-            return IExecuteWithSignature<bool>("isEqual", "(Ljava/time/OffsetTime;)Z", arg0);
+            return IExecute<bool>("isEqual", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#isSupported(java.time.temporal.TemporalField)"/>
@@ -284,7 +284,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
+            return IExecute<bool>("isSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#isSupported(java.time.temporal.TemporalUnit)"/>
@@ -293,7 +293,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalUnit arg0)
         {
-            return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalUnit;)Z", arg0);
+            return IExecute<bool>("isSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#compareTo(java.lang.Object)"/>
@@ -302,7 +302,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#compareTo(java.time.OffsetTime)"/>
@@ -311,7 +311,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Time.OffsetTime arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/time/OffsetTime;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#get(java.time.temporal.TemporalField)"/>
@@ -320,7 +320,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int Get(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
+            return IExecute<int>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#format(java.time.format.DateTimeFormatter)"/>
@@ -329,7 +329,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Format(Java.Time.Format.DateTimeFormatter arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("format", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#toLocalTime()"/>
@@ -337,7 +337,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime ToLocalTime()
         {
-            return IExecuteWithSignature<Java.Time.LocalTime>("toLocalTime", "()Ljava/time/LocalTime;");
+            return IExecute<Java.Time.LocalTime>("toLocalTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#atDate(java.time.LocalDate)"/>
@@ -346,7 +346,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public Java.Time.OffsetDateTime AtDate(Java.Time.LocalDate arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetDateTime>("atDate", "(Ljava/time/LocalDate;)Ljava/time/OffsetDateTime;", arg0);
+            return IExecute<Java.Time.OffsetDateTime>("atDate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#minusHours(long)"/>
@@ -355,7 +355,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime MinusHours(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("minusHours", "(J)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("minusHours", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#minusMinutes(long)"/>
@@ -364,7 +364,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime MinusMinutes(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("minusMinutes", "(J)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("minusMinutes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#minusNanos(long)"/>
@@ -373,7 +373,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime MinusNanos(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("minusNanos", "(J)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("minusNanos", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#minusSeconds(long)"/>
@@ -382,7 +382,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime MinusSeconds(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("minusSeconds", "(J)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("minusSeconds", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#plusHours(long)"/>
@@ -391,7 +391,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime PlusHours(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("plusHours", "(J)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("plusHours", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#plusMinutes(long)"/>
@@ -400,7 +400,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime PlusMinutes(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("plusMinutes", "(J)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("plusMinutes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#plusNanos(long)"/>
@@ -409,7 +409,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime PlusNanos(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("plusNanos", "(J)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("plusNanos", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#plusSeconds(long)"/>
@@ -418,7 +418,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime PlusSeconds(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("plusSeconds", "(J)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("plusSeconds", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#truncatedTo(java.time.temporal.TemporalUnit)"/>
@@ -427,7 +427,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime TruncatedTo(Java.Time.Temporal.TemporalUnit arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("truncatedTo", "(Ljava/time/temporal/TemporalUnit;)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("truncatedTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#withHour(int)"/>
@@ -436,7 +436,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime WithHour(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("withHour", "(I)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("withHour", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#withMinute(int)"/>
@@ -445,7 +445,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime WithMinute(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("withMinute", "(I)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("withMinute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#withNano(int)"/>
@@ -454,7 +454,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime WithNano(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("withNano", "(I)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("withNano", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#withOffsetSameInstant(java.time.ZoneOffset)"/>
@@ -463,7 +463,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime WithOffsetSameInstant(Java.Time.ZoneOffset arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("withOffsetSameInstant", "(Ljava/time/ZoneOffset;)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("withOffsetSameInstant", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#withOffsetSameLocal(java.time.ZoneOffset)"/>
@@ -472,7 +472,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime WithOffsetSameLocal(Java.Time.ZoneOffset arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("withOffsetSameLocal", "(Ljava/time/ZoneOffset;)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("withOffsetSameLocal", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#withSecond(int)"/>
@@ -481,7 +481,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime WithSecond(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetTime>("withSecond", "(I)Ljava/time/OffsetTime;", arg0);
+            return IExecute<Java.Time.OffsetTime>("withSecond", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#adjustInto(java.time.temporal.Temporal)"/>
@@ -490,7 +490,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("adjustInto", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("adjustInto", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#minus(java.time.temporal.TemporalAmount)"/>
@@ -499,7 +499,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Minus(Java.Time.Temporal.TemporalAmount arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("minus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("minus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#minus(long,java.time.temporal.TemporalUnit)"/>
@@ -518,7 +518,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Plus(Java.Time.Temporal.TemporalAmount arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("plus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("plus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#plus(long,java.time.temporal.TemporalUnit)"/>
@@ -537,7 +537,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalAdjuster arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("with", "(Ljava/time/temporal/TemporalAdjuster;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("with", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#with(java.time.temporal.TemporalField,long)"/>
@@ -556,7 +556,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
+            return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#getLong(java.time.temporal.TemporalField)"/>
@@ -565,7 +565,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long GetLong(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
+            return IExecute<long>("getLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#toEpochSecond(java.time.LocalDate)"/>
@@ -574,7 +574,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long ToEpochSecond(Java.Time.LocalDate arg0)
         {
-            return IExecuteWithSignature<long>("toEpochSecond", "(Ljava/time/LocalDate;)J", arg0);
+            return IExecute<long>("toEpochSecond", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>

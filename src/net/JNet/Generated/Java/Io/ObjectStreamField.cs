@@ -114,35 +114,35 @@ namespace Java.Io
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getOffset()"/> 
         /// </summary>
         public int Offset
         {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
+            get { return IExecute<int>("getOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getType()"/> 
         /// </summary>
         public Java.Lang.Class Type
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getTypeCode()"/> 
         /// </summary>
         public char TypeCode
         {
-            get { return IExecuteWithSignature<char>("getTypeCode", "()C"); }
+            get { return IExecute<char>("getTypeCode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getTypeString()"/> 
         /// </summary>
         public Java.Lang.String TypeString
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeString", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTypeString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#isPrimitive()"/>
@@ -150,7 +150,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool IsPrimitive()
         {
-            return IExecuteWithSignature<bool>("isPrimitive", "()Z");
+            return IExecute<bool>("isPrimitive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#isUnshared()"/>
@@ -158,7 +158,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool IsUnshared()
         {
-            return IExecuteWithSignature<bool>("isUnshared", "()Z");
+            return IExecute<bool>("isUnshared");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#compareTo(java.lang.Object)"/>
@@ -167,7 +167,7 @@ namespace Java.Io
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
 
         #endregion

@@ -234,7 +234,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppHiddenEvent"/></param>
         public override void AppHidden(Java.Awt.DesktopNs.AppHiddenEvent arg0)
         {
-            IExecuteWithSignature("appHidden", "(Ljava/awt/desktop/AppHiddenEvent;)V", arg0);
+            IExecute("appHidden", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appUnhidden(java.awt.desktop.AppHiddenEvent)"/>
@@ -242,7 +242,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppHiddenEvent"/></param>
         public override void AppUnhidden(Java.Awt.DesktopNs.AppHiddenEvent arg0)
         {
-            IExecuteWithSignature("appUnhidden", "(Ljava/awt/desktop/AppHiddenEvent;)V", arg0);
+            IExecute("appUnhidden", arg0);
         }
 
         #endregion

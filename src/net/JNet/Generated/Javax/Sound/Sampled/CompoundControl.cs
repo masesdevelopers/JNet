@@ -142,7 +142,7 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public Javax.Sound.Sampled.Control[] MemberControls
         {
-            get { return IExecuteWithSignatureArray<Javax.Sound.Sampled.Control>("getMemberControls", "()[Ljavax/sound/sampled/Control;"); }
+            get { return IExecuteArray<Javax.Sound.Sampled.Control>("getMemberControls"); }
         }
 
         #endregion

@@ -1320,7 +1320,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="int"/></returns>
         public static int GetExtendedKeyCodeForChar(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "getExtendedKeyCodeForChar", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "getExtendedKeyCodeForChar", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyText(int)"/>
@@ -1329,7 +1329,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetKeyText(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getKeyText", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getKeyText", arg0);
         }
 
         #endregion
@@ -1340,28 +1340,28 @@ namespace Java.Awt.EventNs
         /// </summary>
         public int ExtendedKeyCode
         {
-            get { return IExecuteWithSignature<int>("getExtendedKeyCode", "()I"); }
+            get { return IExecute<int>("getExtendedKeyCode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyChar()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#setKeyChar(char)"/>
         /// </summary>
         public char KeyChar
         {
-            get { return IExecuteWithSignature<char>("getKeyChar", "()C"); } set { IExecuteWithSignature("setKeyChar", "(C)V", value); }
+            get { return IExecute<char>("getKeyChar"); } set { IExecute("setKeyChar", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyCode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#setKeyCode(int)"/>
         /// </summary>
         public int KeyCode
         {
-            get { return IExecuteWithSignature<int>("getKeyCode", "()I"); } set { IExecuteWithSignature("setKeyCode", "(I)V", value); }
+            get { return IExecute<int>("getKeyCode"); } set { IExecute("setKeyCode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyLocation()"/> 
         /// </summary>
         public int KeyLocation
         {
-            get { return IExecuteWithSignature<int>("getKeyLocation", "()I"); }
+            get { return IExecute<int>("getKeyLocation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#isActionKey()"/>
@@ -1369,7 +1369,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="bool"/></returns>
         public bool IsActionKey()
         {
-            return IExecuteWithSignature<bool>("isActionKey", "()Z");
+            return IExecute<bool>("isActionKey");
         }
 
         #endregion

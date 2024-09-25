@@ -140,7 +140,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
-            return IExecuteWithSignature<bool>("isValid", "()Z");
+            return IExecute<bool>("isValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#reset()"/>
@@ -148,7 +148,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool Reset()
         {
-            return IExecuteWithSignature<bool>("reset", "()Z");
+            return IExecute<bool>("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#watchable()"/>
@@ -156,7 +156,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Watchable"/></returns>
         public Java.Nio.File.Watchable Watchable()
         {
-            return IExecuteWithSignature<Java.Nio.File.Watchable>("watchable", "()Ljava/nio/file/Watchable;");
+            return IExecute<Java.Nio.File.Watchable>("watchable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#pollEvents()"/>
@@ -164,14 +164,14 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Nio.File.WatchEvent<object>> PollEvents()
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Nio.File.WatchEvent<object>>>("pollEvents", "()Ljava/util/List;");
+            return IExecute<Java.Util.List<Java.Nio.File.WatchEvent<object>>>("pollEvents");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#cancel()"/>
         /// </summary>
         public void Cancel()
         {
-            IExecuteWithSignature("cancel", "()V");
+            IExecute("cancel");
         }
 
         #endregion

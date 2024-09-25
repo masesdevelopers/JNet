@@ -137,28 +137,28 @@ namespace Javax.Xml.Crypto.Dsig
         /// </summary>
         public Java.Util.List<Javax.Xml.Crypto.XMLStructure> Content
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.XMLStructure>>("getContent", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.XMLStructure>>("getContent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getEncoding()"/> 
         /// </summary>
         public Java.Lang.String Encoding
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getEncoding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getId()"/> 
         /// </summary>
         public Java.Lang.String Id
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getMimeType()"/> 
         /// </summary>
         public Java.Lang.String MimeType
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMimeType"); }
         }
 
         #endregion

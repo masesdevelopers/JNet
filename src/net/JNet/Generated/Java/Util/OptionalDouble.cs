@@ -92,7 +92,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public static Java.Util.OptionalDouble Empty()
         {
-            return SExecuteWithSignature<Java.Util.OptionalDouble>(LocalBridgeClazz, "empty", "()Ljava/util/OptionalDouble;");
+            return SExecute<Java.Util.OptionalDouble>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#of(double)"/>
@@ -101,7 +101,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public static Java.Util.OptionalDouble Of(double arg0)
         {
-            return SExecuteWithSignature<Java.Util.OptionalDouble>(LocalBridgeClazz, "of", "(D)Ljava/util/OptionalDouble;", arg0);
+            return SExecute<Java.Util.OptionalDouble>(LocalBridgeClazz, "of", arg0);
         }
 
         #endregion
@@ -112,7 +112,7 @@ namespace Java.Util
         /// </summary>
         public double AsDouble
         {
-            get { return IExecuteWithSignature<double>("getAsDouble", "()D"); }
+            get { return IExecute<double>("getAsDouble"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElseThrow(java.util.function.Supplier)"/>
@@ -132,7 +132,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#isPresent()"/>
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
         {
-            return IExecuteWithSignature<bool>("isPresent", "()Z");
+            return IExecute<bool>("isPresent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElse(double)"/>
@@ -149,7 +149,7 @@ namespace Java.Util
         /// <returns><see cref="double"/></returns>
         public double OrElse(double arg0)
         {
-            return IExecuteWithSignature<double>("orElse", "(D)D", arg0);
+            return IExecute<double>("orElse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElseGet(java.util.function.DoubleSupplier)"/>
@@ -158,7 +158,7 @@ namespace Java.Util
         /// <returns><see cref="double"/></returns>
         public double OrElseGet(Java.Util.Function.DoubleSupplier arg0)
         {
-            return IExecuteWithSignature<double>("orElseGet", "(Ljava/util/function/DoubleSupplier;)D", arg0);
+            return IExecute<double>("orElseGet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElseThrow()"/>
@@ -166,7 +166,7 @@ namespace Java.Util
         /// <returns><see cref="double"/></returns>
         public double OrElseThrow()
         {
-            return IExecuteWithSignature<double>("orElseThrow", "()D");
+            return IExecute<double>("orElseThrow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#stream()"/>
@@ -174,7 +174,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Stream()
         {
-            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("stream", "()Ljava/util/stream/DoubleStream;");
+            return IExecute<Java.Util.Stream.DoubleStream>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#ifPresent(java.util.function.DoubleConsumer)"/>
@@ -182,7 +182,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         public void IfPresent(Java.Util.Function.DoubleConsumer arg0)
         {
-            IExecuteWithSignature("ifPresent", "(Ljava/util/function/DoubleConsumer;)V", arg0);
+            IExecute("ifPresent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#ifPresentOrElse(java.util.function.DoubleConsumer,java.lang.Runnable)"/>

@@ -103,7 +103,7 @@ namespace Java.Util
         /// </summary>
         public object Source
         {
-            get { return IExecuteWithSignature("getSource", "()Ljava/lang/Object;"); }
+            get { return IExecute("getSource"); }
         }
 
         #endregion

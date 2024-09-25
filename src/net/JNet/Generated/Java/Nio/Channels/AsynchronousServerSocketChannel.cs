@@ -103,7 +103,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousServerSocketChannel Open()
         {
-            return SExecuteWithSignature<Java.Nio.Channels.AsynchronousServerSocketChannel>(LocalBridgeClazz, "open", "()Ljava/nio/channels/AsynchronousServerSocketChannel;");
+            return SExecute<Java.Nio.Channels.AsynchronousServerSocketChannel>(LocalBridgeClazz, "open");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#open(java.nio.channels.AsynchronousChannelGroup)"/>
@@ -113,7 +113,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousServerSocketChannel Open(Java.Nio.Channels.AsynchronousChannelGroup arg0)
         {
-            return SExecuteWithSignature<Java.Nio.Channels.AsynchronousServerSocketChannel>(LocalBridgeClazz, "open", "(Ljava/nio/channels/AsynchronousChannelGroup;)Ljava/nio/channels/AsynchronousServerSocketChannel;", arg0);
+            return SExecute<Java.Nio.Channels.AsynchronousServerSocketChannel>(LocalBridgeClazz, "open", arg0);
         }
 
         #endregion
@@ -124,7 +124,7 @@ namespace Java.Nio.Channels
         /// </summary>
         public Java.Net.SocketAddress LocalAddress
         {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalAddress", "()Ljava/net/SocketAddress;"); }
+            get { return IExecute<Java.Net.SocketAddress>("getLocalAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#accept(java.lang.Object,java.nio.channels.CompletionHandler)"/>
@@ -154,7 +154,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<Java.Nio.Channels.AsynchronousSocketChannel> Accept()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Nio.Channels.AsynchronousSocketChannel>>("accept", "()Ljava/util/concurrent/Future;");
+            return IExecute<Java.Util.Concurrent.Future<Java.Nio.Channels.AsynchronousSocketChannel>>("accept");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#provider()"/>
@@ -162,7 +162,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
         public Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider", "()Ljava/nio/channels/spi/AsynchronousChannelProvider;");
+            return IExecute<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#bind(java.net.SocketAddress)"/>
@@ -172,7 +172,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("bind", "(Ljava/net/SocketAddress;)Ljava/nio/channels/NetworkChannel;", arg0);
+            return IExecute<Java.Nio.Channels.NetworkChannel>("bind", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>

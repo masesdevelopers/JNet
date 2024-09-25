@@ -160,42 +160,42 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public Java.Util.List AnnotationMirrors
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getAnnotationMirrors", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List>("getAnnotationMirrors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getEnclosedElements()"/> 
         /// </summary>
         public Java.Util.List EnclosedElements
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getEnclosedElements", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List>("getEnclosedElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Element>("getEnclosingElement", "()Ljavax/lang/model/element/Element;"); }
+            get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getKind()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.ElementKind Kind
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.ElementKind>("getKind", "()Ljavax/lang/model/element/ElementKind;"); }
+            get { return IExecute<Javax.Lang.Model.Element.ElementKind>("getKind"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getModifiers()"/> 
         /// </summary>
         public Java.Util.Set<Javax.Lang.Model.Element.Modifier> Modifiers
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.Modifier>>("getModifiers", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set<Javax.Lang.Model.Element.Modifier>>("getModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getSimpleName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name SimpleName
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getSimpleName", "()Ljavax/lang/model/element/Name;"); }
+            get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getAnnotation(java.lang.Class)"/>
@@ -225,7 +225,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
         public Javax.Lang.Model.Type.TypeMirror AsType()
         {
-            return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("asType", "()Ljavax/lang/model/type/TypeMirror;");
+            return IExecute<Javax.Lang.Model.Type.TypeMirror>("asType");
         }
 
         #endregion

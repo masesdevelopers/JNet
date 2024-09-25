@@ -91,49 +91,49 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public static Javax.Swing.Icon GetCheckBoxIcon
         {
-            get { return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getCheckBoxIcon", "()Ljavax/swing/Icon;"); }
+            get { return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "getCheckBoxIcon"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getCheckBoxMenuItemIcon()"/> 
         /// </summary>
         public static Javax.Swing.Icon GetCheckBoxMenuItemIcon
         {
-            get { return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getCheckBoxMenuItemIcon", "()Ljavax/swing/Icon;"); }
+            get { return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "getCheckBoxMenuItemIcon"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getMenuArrowIcon()"/> 
         /// </summary>
         public static Javax.Swing.Icon GetMenuArrowIcon
         {
-            get { return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getMenuArrowIcon", "()Ljavax/swing/Icon;"); }
+            get { return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "getMenuArrowIcon"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getMenuItemArrowIcon()"/> 
         /// </summary>
         public static Javax.Swing.Icon GetMenuItemArrowIcon
         {
-            get { return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getMenuItemArrowIcon", "()Ljavax/swing/Icon;"); }
+            get { return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "getMenuItemArrowIcon"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getMenuItemCheckIcon()"/> 
         /// </summary>
         public static Javax.Swing.Icon GetMenuItemCheckIcon
         {
-            get { return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getMenuItemCheckIcon", "()Ljavax/swing/Icon;"); }
+            get { return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "getMenuItemCheckIcon"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getRadioButtonIcon()"/> 
         /// </summary>
         public static Javax.Swing.Icon GetRadioButtonIcon
         {
-            get { return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getRadioButtonIcon", "()Ljavax/swing/Icon;"); }
+            get { return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "getRadioButtonIcon"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getRadioButtonMenuItemIcon()"/> 
         /// </summary>
         public static Javax.Swing.Icon GetRadioButtonMenuItemIcon
         {
-            get { return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getRadioButtonMenuItemIcon", "()Ljavax/swing/Icon;"); }
+            get { return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "getRadioButtonMenuItemIcon"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#createEmptyFrameIcon()"/>
@@ -141,7 +141,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon CreateEmptyFrameIcon()
         {
-            return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "createEmptyFrameIcon", "()Ljavax/swing/Icon;");
+            return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "createEmptyFrameIcon");
         }
 
         #endregion

@@ -465,7 +465,7 @@ namespace Java.Awt.FontNs
         /// </summary>
         public int Version
         {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
+            get { return IExecute<int>("getVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTable(int,int,int)"/>
@@ -485,7 +485,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="byte"/></returns>
         public byte[] GetFontTable(int arg0)
         {
-            return IExecuteWithSignatureArray<byte>("getFontTable", "(I)[B", arg0);
+            return IExecuteArray<byte>("getFontTable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTable(java.lang.String,int,int)"/>
@@ -505,7 +505,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="byte"/></returns>
         public byte[] GetFontTable(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<byte>("getFontTable", "(Ljava/lang/String;)[B", arg0);
+            return IExecuteArray<byte>("getFontTable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTableSize(int)"/>
@@ -514,7 +514,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="int"/></returns>
         public int GetFontTableSize(int arg0)
         {
-            return IExecuteWithSignature<int>("getFontTableSize", "(I)I", arg0);
+            return IExecute<int>("getFontTableSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTableSize(java.lang.String)"/>
@@ -523,7 +523,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="int"/></returns>
         public int GetFontTableSize(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<int>("getFontTableSize", "(Ljava/lang/String;)I", arg0);
+            return IExecute<int>("getFontTableSize", arg0);
         }
 
         #endregion

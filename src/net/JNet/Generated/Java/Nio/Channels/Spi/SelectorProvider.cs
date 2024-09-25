@@ -94,7 +94,7 @@ namespace Java.Nio.Channels.Spi
         /// <returns><see cref="Java.Nio.Channels.Spi.SelectorProvider"/></returns>
         public static Java.Nio.Channels.Spi.SelectorProvider Provider()
         {
-            return SExecuteWithSignature<Java.Nio.Channels.Spi.SelectorProvider>(LocalBridgeClazz, "provider", "()Ljava/nio/channels/spi/SelectorProvider;");
+            return SExecute<Java.Nio.Channels.Spi.SelectorProvider>(LocalBridgeClazz, "provider");
         }
 
         #endregion
@@ -107,7 +107,7 @@ namespace Java.Nio.Channels.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.DatagramChannel OpenDatagramChannel()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.DatagramChannel>("openDatagramChannel", "()Ljava/nio/channels/DatagramChannel;");
+            return IExecute<Java.Nio.Channels.DatagramChannel>("openDatagramChannel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html#openDatagramChannel(java.net.ProtocolFamily)"/>
@@ -117,7 +117,7 @@ namespace Java.Nio.Channels.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.DatagramChannel OpenDatagramChannel(Java.Net.ProtocolFamily arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Channels.DatagramChannel>("openDatagramChannel", "(Ljava/net/ProtocolFamily;)Ljava/nio/channels/DatagramChannel;", arg0);
+            return IExecute<Java.Nio.Channels.DatagramChannel>("openDatagramChannel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html#openPipe()"/>
@@ -126,7 +126,7 @@ namespace Java.Nio.Channels.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.Pipe OpenPipe()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.Pipe>("openPipe", "()Ljava/nio/channels/Pipe;");
+            return IExecute<Java.Nio.Channels.Pipe>("openPipe");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html#openServerSocketChannel()"/>
@@ -135,7 +135,7 @@ namespace Java.Nio.Channels.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.ServerSocketChannel OpenServerSocketChannel()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.ServerSocketChannel>("openServerSocketChannel", "()Ljava/nio/channels/ServerSocketChannel;");
+            return IExecute<Java.Nio.Channels.ServerSocketChannel>("openServerSocketChannel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html#openSocketChannel()"/>
@@ -144,7 +144,7 @@ namespace Java.Nio.Channels.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SocketChannel OpenSocketChannel()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.SocketChannel>("openSocketChannel", "()Ljava/nio/channels/SocketChannel;");
+            return IExecute<Java.Nio.Channels.SocketChannel>("openSocketChannel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html#openSelector()"/>
@@ -153,7 +153,7 @@ namespace Java.Nio.Channels.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.Spi.AbstractSelector OpenSelector()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.Spi.AbstractSelector>("openSelector", "()Ljava/nio/channels/spi/AbstractSelector;");
+            return IExecute<Java.Nio.Channels.Spi.AbstractSelector>("openSelector");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html#inheritedChannel()"/>
@@ -162,7 +162,7 @@ namespace Java.Nio.Channels.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.Channel InheritedChannel()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.Channel>("inheritedChannel", "()Ljava/nio/channels/Channel;");
+            return IExecute<Java.Nio.Channels.Channel>("inheritedChannel");
         }
 
         #endregion

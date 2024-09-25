@@ -104,21 +104,21 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Geom.Rectangle2D AnchorRect
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getAnchorRect", "()Ljava/awt/geom/Rectangle2D;"); }
+            get { return IExecute<Java.Awt.Geom.Rectangle2D>("getAnchorRect"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#getImage()"/> 
         /// </summary>
         public Java.Awt.ImageNs.BufferedImage Image
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("getImage", "()Ljava/awt/image/BufferedImage;"); }
+            get { return IExecute<Java.Awt.ImageNs.BufferedImage>("getImage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#getTransparency()"/> 
         /// </summary>
         public int Transparency
         {
-            get { return IExecuteWithSignature<int>("getTransparency", "()I"); }
+            get { return IExecute<int>("getTransparency"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#createContext(java.awt.image.ColorModel,java.awt.Rectangle,java.awt.geom.Rectangle2D,java.awt.geom.AffineTransform,java.awt.RenderingHints)"/>

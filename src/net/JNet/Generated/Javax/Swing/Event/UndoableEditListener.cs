@@ -204,7 +204,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditEvent"/></param>
         public override void UndoableEditHappened(Javax.Swing.Event.UndoableEditEvent arg0)
         {
-            IExecuteWithSignature("undoableEditHappened", "(Ljavax/swing/event/UndoableEditEvent;)V", arg0);
+            IExecute("undoableEditHappened", arg0);
         }
 
         #endregion

@@ -126,7 +126,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Enter()
         {
-            return IExecuteWithSignature<bool>("enter", "()Z");
+            return IExecute<bool>("enter");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#exit()"/>
@@ -134,7 +134,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Exit()
         {
-            return IExecuteWithSignature<bool>("exit", "()Z");
+            return IExecute<bool>("exit");
         }
 
         #endregion

@@ -122,7 +122,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
-            return IExecuteWithSignature<bool>("isValid", "()Z");
+            return IExecute<bool>("isValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#interestOps()"/>
@@ -130,7 +130,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="int"/></returns>
         public int InterestOps()
         {
-            return IExecuteWithSignature<int>("interestOps", "()I");
+            return IExecute<int>("interestOps");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#readyOps()"/>
@@ -138,7 +138,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="int"/></returns>
         public int ReadyOps()
         {
-            return IExecuteWithSignature<int>("readyOps", "()I");
+            return IExecute<int>("readyOps");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#channel()"/>
@@ -146,7 +146,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.SelectableChannel"/></returns>
         public Java.Nio.Channels.SelectableChannel Channel()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.SelectableChannel>("channel", "()Ljava/nio/channels/SelectableChannel;");
+            return IExecute<Java.Nio.Channels.SelectableChannel>("channel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#interestOps(int)"/>
@@ -155,7 +155,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.SelectionKey"/></returns>
         public Java.Nio.Channels.SelectionKey InterestOps(int arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Channels.SelectionKey>("interestOps", "(I)Ljava/nio/channels/SelectionKey;", arg0);
+            return IExecute<Java.Nio.Channels.SelectionKey>("interestOps", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#selector()"/>
@@ -163,14 +163,14 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Nio.Channels.Selector"/></returns>
         public Java.Nio.Channels.Selector Selector()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.Selector>("selector", "()Ljava/nio/channels/Selector;");
+            return IExecute<Java.Nio.Channels.Selector>("selector");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#cancel()"/>
         /// </summary>
         public void Cancel()
         {
-            IExecuteWithSignature("cancel", "()V");
+            IExecute("cancel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#isAcceptable()"/>
@@ -178,7 +178,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsAcceptable()
         {
-            return IExecuteWithSignature<bool>("isAcceptable", "()Z");
+            return IExecute<bool>("isAcceptable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#isConnectable()"/>
@@ -186,7 +186,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsConnectable()
         {
-            return IExecuteWithSignature<bool>("isConnectable", "()Z");
+            return IExecute<bool>("isConnectable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#isReadable()"/>
@@ -194,7 +194,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsReadable()
         {
-            return IExecuteWithSignature<bool>("isReadable", "()Z");
+            return IExecute<bool>("isReadable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#isWritable()"/>
@@ -202,7 +202,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool IsWritable()
         {
-            return IExecuteWithSignature<bool>("isWritable", "()Z");
+            return IExecute<bool>("isWritable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#attach(java.lang.Object)"/>
@@ -211,7 +211,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="object"/></returns>
         public object Attach(object arg0)
         {
-            return IExecuteWithSignature("attach", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("attach", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#attachment()"/>
@@ -219,7 +219,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="object"/></returns>
         public object Attachment()
         {
-            return IExecuteWithSignature("attachment", "()Ljava/lang/Object;");
+            return IExecute("attachment");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#interestOpsAnd(int)"/>
@@ -228,7 +228,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="int"/></returns>
         public int InterestOpsAnd(int arg0)
         {
-            return IExecuteWithSignature<int>("interestOpsAnd", "(I)I", arg0);
+            return IExecute<int>("interestOpsAnd", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html#interestOpsOr(int)"/>
@@ -237,7 +237,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="int"/></returns>
         public int InterestOpsOr(int arg0)
         {
-            return IExecuteWithSignature<int>("interestOpsOr", "(I)I", arg0);
+            return IExecute<int>("interestOpsOr", arg0);
         }
 
         #endregion

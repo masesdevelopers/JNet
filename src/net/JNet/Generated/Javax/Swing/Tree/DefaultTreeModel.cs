@@ -120,14 +120,14 @@ namespace Javax.Swing.Tree
         /// </summary>
         public object Root
         {
-            get { return IExecuteWithSignature("getRoot", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setRoot", "(Ljavax/swing/tree/TreeNode;)V", value); }
+            get { return IExecute("getRoot"); } set { IExecute("setRoot", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#getTreeModelListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.TreeModelListener[] TreeModelListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.TreeModelListener>("getTreeModelListeners", "()[Ljavax/swing/event/TreeModelListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.TreeModelListener>("getTreeModelListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#getListeners(java.lang.Class)"/>
@@ -145,7 +145,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="bool"/></returns>
         public bool AsksAllowsChildren()
         {
-            return IExecuteWithSignature<bool>("asksAllowsChildren", "()Z");
+            return IExecute<bool>("asksAllowsChildren");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#isLeaf(java.lang.Object)"/>
@@ -154,7 +154,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="bool"/></returns>
         public bool IsLeaf(object arg0)
         {
-            return IExecuteWithSignature<bool>("isLeaf", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("isLeaf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#getChildCount(java.lang.Object)"/>
@@ -163,7 +163,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="int"/></returns>
         public int GetChildCount(object arg0)
         {
-            return IExecuteWithSignature<int>("getChildCount", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("getChildCount", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#getIndexOfChild(java.lang.Object,java.lang.Object)"/>
@@ -192,7 +192,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="Javax.Swing.Tree.TreeNode"/></returns>
         public Javax.Swing.Tree.TreeNode[] GetPathToRoot(Javax.Swing.Tree.TreeNode arg0)
         {
-            return IExecuteWithSignatureArray<Javax.Swing.Tree.TreeNode>("getPathToRoot", "(Ljavax/swing/tree/TreeNode;)[Ljavax/swing/tree/TreeNode;", arg0);
+            return IExecuteArray<Javax.Swing.Tree.TreeNode>("getPathToRoot", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#addTreeModelListener(javax.swing.event.TreeModelListener)"/>
@@ -200,7 +200,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelListener"/></param>
         public void AddTreeModelListener(Javax.Swing.Event.TreeModelListener arg0)
         {
-            IExecuteWithSignature("addTreeModelListener", "(Ljavax/swing/event/TreeModelListener;)V", arg0);
+            IExecute("addTreeModelListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#insertNodeInto(javax.swing.tree.MutableTreeNode,javax.swing.tree.MutableTreeNode,int)"/>
@@ -218,7 +218,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
         public void NodeChanged(Javax.Swing.Tree.TreeNode arg0)
         {
-            IExecuteWithSignature("nodeChanged", "(Ljavax/swing/tree/TreeNode;)V", arg0);
+            IExecute("nodeChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#nodesChanged(javax.swing.tree.TreeNode,int[])"/>
@@ -235,7 +235,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
         public void NodeStructureChanged(Javax.Swing.Tree.TreeNode arg0)
         {
-            IExecuteWithSignature("nodeStructureChanged", "(Ljavax/swing/tree/TreeNode;)V", arg0);
+            IExecute("nodeStructureChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#nodesWereInserted(javax.swing.tree.TreeNode,int[])"/>
@@ -261,7 +261,7 @@ namespace Javax.Swing.Tree
         /// </summary>
         public void Reload()
         {
-            IExecuteWithSignature("reload", "()V");
+            IExecute("reload");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#reload(javax.swing.tree.TreeNode)"/>
@@ -269,7 +269,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
         public void Reload(Javax.Swing.Tree.TreeNode arg0)
         {
-            IExecuteWithSignature("reload", "(Ljavax/swing/tree/TreeNode;)V", arg0);
+            IExecute("reload", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#removeNodeFromParent(javax.swing.tree.MutableTreeNode)"/>
@@ -277,7 +277,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
         public void RemoveNodeFromParent(Javax.Swing.Tree.MutableTreeNode arg0)
         {
-            IExecuteWithSignature("removeNodeFromParent", "(Ljavax/swing/tree/MutableTreeNode;)V", arg0);
+            IExecute("removeNodeFromParent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#removeTreeModelListener(javax.swing.event.TreeModelListener)"/>
@@ -285,7 +285,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelListener"/></param>
         public void RemoveTreeModelListener(Javax.Swing.Event.TreeModelListener arg0)
         {
-            IExecuteWithSignature("removeTreeModelListener", "(Ljavax/swing/event/TreeModelListener;)V", arg0);
+            IExecute("removeTreeModelListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#setAsksAllowsChildren(boolean)"/>
@@ -293,7 +293,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetAsksAllowsChildren(bool arg0)
         {
-            IExecuteWithSignature("setAsksAllowsChildren", "(Z)V", arg0);
+            IExecute("setAsksAllowsChildren", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#valueForPathChanged(javax.swing.tree.TreePath,java.lang.Object)"/>

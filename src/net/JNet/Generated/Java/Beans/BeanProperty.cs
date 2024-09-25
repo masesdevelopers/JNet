@@ -156,7 +156,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool Bound()
         {
-            return IExecuteWithSignature<bool>("bound", "()Z");
+            return IExecute<bool>("bound");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#expert()"/>
@@ -164,7 +164,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool Expert()
         {
-            return IExecuteWithSignature<bool>("expert", "()Z");
+            return IExecute<bool>("expert");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#hidden()"/>
@@ -172,7 +172,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool Hidden()
         {
-            return IExecuteWithSignature<bool>("hidden", "()Z");
+            return IExecute<bool>("hidden");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#preferred()"/>
@@ -180,7 +180,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool Preferred()
         {
-            return IExecuteWithSignature<bool>("preferred", "()Z");
+            return IExecute<bool>("preferred");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#required()"/>
@@ -188,7 +188,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool Required()
         {
-            return IExecuteWithSignature<bool>("required", "()Z");
+            return IExecute<bool>("required");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#visualUpdate()"/>
@@ -196,7 +196,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool VisualUpdate()
         {
-            return IExecuteWithSignature<bool>("visualUpdate", "()Z");
+            return IExecute<bool>("visualUpdate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#description()"/>
@@ -204,7 +204,7 @@ namespace Java.Beans
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Description()
         {
-            return IExecuteWithSignature<Java.Lang.String>("description", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("description");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#enumerationValues()"/>
@@ -212,7 +212,7 @@ namespace Java.Beans
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] EnumerationValues()
         {
-            return IExecuteWithSignatureArray<Java.Lang.String>("enumerationValues", "()[Ljava/lang/String;");
+            return IExecuteArray<Java.Lang.String>("enumerationValues");
         }
 
         #endregion

@@ -225,7 +225,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="Javax.Lang.Model.Type.TypeKind"/></returns>
         public static Javax.Lang.Model.Type.TypeKind ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/type/TypeKind;", arg0);
+            return SExecute<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#values()"/>
@@ -233,7 +233,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="Javax.Lang.Model.Type.TypeKind"/></returns>
         public static Javax.Lang.Model.Type.TypeKind[] Values()
         {
-            return SExecuteWithSignatureArray<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/type/TypeKind;");
+            return SExecuteArray<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "values");
         }
 
         #endregion
@@ -245,7 +245,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="bool"/></returns>
         public bool IsPrimitive()
         {
-            return IExecuteWithSignature<bool>("isPrimitive", "()Z");
+            return IExecute<bool>("isPrimitive");
         }
 
         #endregion

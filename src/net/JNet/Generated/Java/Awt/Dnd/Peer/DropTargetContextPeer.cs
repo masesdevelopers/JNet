@@ -159,28 +159,28 @@ namespace Java.Awt.Dnd.Peer
         /// </summary>
         public Java.Awt.Dnd.DropTarget DropTarget
         {
-            get { return IExecuteWithSignature<Java.Awt.Dnd.DropTarget>("getDropTarget", "()Ljava/awt/dnd/DropTarget;"); }
+            get { return IExecute<Java.Awt.Dnd.DropTarget>("getDropTarget"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#getTargetActions()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#setTargetActions(int)"/>
         /// </summary>
         public int TargetActions
         {
-            get { return IExecuteWithSignature<int>("getTargetActions", "()I"); } set { IExecuteWithSignature("setTargetActions", "(I)V", value); }
+            get { return IExecute<int>("getTargetActions"); } set { IExecute("setTargetActions", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#getTransferable()"/> 
         /// </summary>
         public Java.Awt.Datatransfer.Transferable Transferable
         {
-            get { return IExecuteWithSignature<Java.Awt.Datatransfer.Transferable>("getTransferable", "()Ljava/awt/datatransfer/Transferable;"); }
+            get { return IExecute<Java.Awt.Datatransfer.Transferable>("getTransferable"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#getTransferDataFlavors()"/> 
         /// </summary>
         public Java.Awt.Datatransfer.DataFlavor[] TransferDataFlavors
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.Datatransfer.DataFlavor>("getTransferDataFlavors", "()[Ljava/awt/datatransfer/DataFlavor;"); }
+            get { return IExecuteArray<Java.Awt.Datatransfer.DataFlavor>("getTransferDataFlavors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#isTransferableJVMLocal()"/>
@@ -188,7 +188,7 @@ namespace Java.Awt.Dnd.Peer
         /// <returns><see cref="bool"/></returns>
         public bool IsTransferableJVMLocal()
         {
-            return IExecuteWithSignature<bool>("isTransferableJVMLocal", "()Z");
+            return IExecute<bool>("isTransferableJVMLocal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#acceptDrag(int)"/>
@@ -196,7 +196,7 @@ namespace Java.Awt.Dnd.Peer
         /// <param name="arg0"><see cref="int"/></param>
         public void AcceptDrag(int arg0)
         {
-            IExecuteWithSignature("acceptDrag", "(I)V", arg0);
+            IExecute("acceptDrag", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#acceptDrop(int)"/>
@@ -204,7 +204,7 @@ namespace Java.Awt.Dnd.Peer
         /// <param name="arg0"><see cref="int"/></param>
         public void AcceptDrop(int arg0)
         {
-            IExecuteWithSignature("acceptDrop", "(I)V", arg0);
+            IExecute("acceptDrop", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#dropComplete(boolean)"/>
@@ -212,21 +212,21 @@ namespace Java.Awt.Dnd.Peer
         /// <param name="arg0"><see cref="bool"/></param>
         public void DropComplete(bool arg0)
         {
-            IExecuteWithSignature("dropComplete", "(Z)V", arg0);
+            IExecute("dropComplete", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#rejectDrag()"/>
         /// </summary>
         public void RejectDrag()
         {
-            IExecuteWithSignature("rejectDrag", "()V");
+            IExecute("rejectDrag");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#rejectDrop()"/>
         /// </summary>
         public void RejectDrop()
         {
-            IExecuteWithSignature("rejectDrop", "()V");
+            IExecute("rejectDrop");
         }
 
         #endregion

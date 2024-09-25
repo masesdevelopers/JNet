@@ -142,7 +142,7 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public Javax.Sound.Sampled.Control.Type GetType
         {
-            get { return IExecuteWithSignature<Javax.Sound.Sampled.Control.Type>("getType", "()Ljavax/sound/sampled/Control$Type;"); }
+            get { return IExecute<Javax.Sound.Sampled.Control.Type>("getType"); }
         }
 
         #endregion

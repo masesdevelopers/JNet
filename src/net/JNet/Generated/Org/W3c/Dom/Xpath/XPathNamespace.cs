@@ -125,7 +125,7 @@ namespace Org.W3c.Dom.Xpath
         /// </summary>
         public Org.W3c.Dom.Element OwnerElement
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Element>("getOwnerElement", "()Lorg/w3c/dom/Element;"); }
+            get { return IExecute<Org.W3c.Dom.Element>("getOwnerElement"); }
         }
 
         #endregion

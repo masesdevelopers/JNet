@@ -143,49 +143,49 @@ namespace Javax.Annotation.Processing
         /// </summary>
         public Javax.Lang.Model.Util.Elements ElementUtils
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Util.Elements>("getElementUtils", "()Ljavax/lang/model/util/Elements;"); }
+            get { return IExecute<Javax.Lang.Model.Util.Elements>("getElementUtils"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getFiler()"/> 
         /// </summary>
         public Javax.Annotation.Processing.Filer Filer
         {
-            get { return IExecuteWithSignature<Javax.Annotation.Processing.Filer>("getFiler", "()Ljavax/annotation/processing/Filer;"); }
+            get { return IExecute<Javax.Annotation.Processing.Filer>("getFiler"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getLocale()"/> 
         /// </summary>
         public Java.Util.Locale Locale
         {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
+            get { return IExecute<Java.Util.Locale>("getLocale"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getMessager()"/> 
         /// </summary>
         public Javax.Annotation.Processing.Messager Messager
         {
-            get { return IExecuteWithSignature<Javax.Annotation.Processing.Messager>("getMessager", "()Ljavax/annotation/processing/Messager;"); }
+            get { return IExecute<Javax.Annotation.Processing.Messager>("getMessager"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getOptions()"/> 
         /// </summary>
         public Java.Util.Map<Java.Lang.String, Java.Lang.String> Options
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getOptions", "()Ljava/util/Map;"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getOptions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getSourceVersion()"/> 
         /// </summary>
         public Javax.Lang.Model.SourceVersion SourceVersion
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.SourceVersion>("getSourceVersion", "()Ljavax/lang/model/SourceVersion;"); }
+            get { return IExecute<Javax.Lang.Model.SourceVersion>("getSourceVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getTypeUtils()"/> 
         /// </summary>
         public Javax.Lang.Model.Util.Types TypeUtils
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Util.Types>("getTypeUtils", "()Ljavax/lang/model/util/Types;"); }
+            get { return IExecute<Javax.Lang.Model.Util.Types>("getTypeUtils"); }
         }
 
         #endregion

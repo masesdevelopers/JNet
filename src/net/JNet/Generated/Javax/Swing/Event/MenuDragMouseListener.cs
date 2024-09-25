@@ -294,7 +294,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
         public override void MenuDragMouseDragged(Javax.Swing.Event.MenuDragMouseEvent arg0)
         {
-            IExecuteWithSignature("menuDragMouseDragged", "(Ljavax/swing/event/MenuDragMouseEvent;)V", arg0);
+            IExecute("menuDragMouseDragged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseEntered(javax.swing.event.MenuDragMouseEvent)"/>
@@ -302,7 +302,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
         public override void MenuDragMouseEntered(Javax.Swing.Event.MenuDragMouseEvent arg0)
         {
-            IExecuteWithSignature("menuDragMouseEntered", "(Ljavax/swing/event/MenuDragMouseEvent;)V", arg0);
+            IExecute("menuDragMouseEntered", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseExited(javax.swing.event.MenuDragMouseEvent)"/>
@@ -310,7 +310,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
         public override void MenuDragMouseExited(Javax.Swing.Event.MenuDragMouseEvent arg0)
         {
-            IExecuteWithSignature("menuDragMouseExited", "(Ljavax/swing/event/MenuDragMouseEvent;)V", arg0);
+            IExecute("menuDragMouseExited", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseReleased(javax.swing.event.MenuDragMouseEvent)"/>
@@ -318,7 +318,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
         public override void MenuDragMouseReleased(Javax.Swing.Event.MenuDragMouseEvent arg0)
         {
-            IExecuteWithSignature("menuDragMouseReleased", "(Ljavax/swing/event/MenuDragMouseEvent;)V", arg0);
+            IExecute("menuDragMouseReleased", arg0);
         }
 
         #endregion

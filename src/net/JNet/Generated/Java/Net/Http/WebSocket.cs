@@ -291,7 +291,7 @@ namespace Java.Net.Http
         /// </summary>
         public Java.Lang.String Subprotocol
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSubprotocol", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSubprotocol"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/>
@@ -299,7 +299,7 @@ namespace Java.Net.Http
         /// <returns><see cref="bool"/></returns>
         public bool IsInputClosed()
         {
-            return IExecuteWithSignature<bool>("isInputClosed", "()Z");
+            return IExecute<bool>("isInputClosed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isOutputClosed()"/>
@@ -307,7 +307,7 @@ namespace Java.Net.Http
         /// <returns><see cref="bool"/></returns>
         public bool IsOutputClosed()
         {
-            return IExecuteWithSignature<bool>("isOutputClosed", "()Z");
+            return IExecute<bool>("isOutputClosed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendBinary(java.nio.ByteBuffer,boolean)"/>
@@ -336,7 +336,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendPing(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendPing", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletableFuture;", arg0);
+            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendPing", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendPong(java.nio.ByteBuffer)"/>
@@ -345,7 +345,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendPong(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendPong", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletableFuture;", arg0);
+            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendPong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendText(java.lang.CharSequence,boolean)"/>
@@ -362,7 +362,7 @@ namespace Java.Net.Http
         /// </summary>
         public void Abort()
         {
-            IExecuteWithSignature("abort", "()V");
+            IExecute("abort");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#request(long)"/>
@@ -370,7 +370,7 @@ namespace Java.Net.Http
         /// <param name="arg0"><see cref="long"/></param>
         public void Request(long arg0)
         {
-            IExecuteWithSignature("request", "(J)V", arg0);
+            IExecute("request", arg0);
         }
 
         #endregion
@@ -719,7 +719,7 @@ namespace Java.Net.Http
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public void OnOpenDefault(Java.Net.Http.WebSocket arg0)
             {
-                IExecuteWithSignature("onOpenDefault", "(Ljava/net/http/WebSocket;)V", arg0);
+                IExecute("onOpenDefault", arg0);
             }
 
             /// <summary>
@@ -845,7 +845,7 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             public override void OnOpen(Java.Net.Http.WebSocket arg0)
             {
-                IExecuteWithSignature("onOpen", "(Ljava/net/http/WebSocket;)V", arg0);
+                IExecute("onOpen", arg0);
             }
 
             #endregion

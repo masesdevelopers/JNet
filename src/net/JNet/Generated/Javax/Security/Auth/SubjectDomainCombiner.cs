@@ -103,7 +103,7 @@ namespace Javax.Security.Auth
         /// </summary>
         public Javax.Security.Auth.Subject Subject
         {
-            get { return IExecuteWithSignature<Javax.Security.Auth.Subject>("getSubject", "()Ljavax/security/auth/Subject;"); }
+            get { return IExecute<Javax.Security.Auth.Subject>("getSubject"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html#combine(java.security.ProtectionDomain[],java.security.ProtectionDomain[])"/>

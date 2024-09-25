@@ -256,7 +256,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public override void ComponentHidden(Java.Awt.EventNs.ComponentEvent arg0)
         {
-            IExecuteWithSignature("componentHidden", "(Ljava/awt/event/ComponentEvent;)V", arg0);
+            IExecute("componentHidden", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentAdapter.html#componentMoved(java.awt.event.ComponentEvent)"/>
@@ -264,7 +264,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public override void ComponentMoved(Java.Awt.EventNs.ComponentEvent arg0)
         {
-            IExecuteWithSignature("componentMoved", "(Ljava/awt/event/ComponentEvent;)V", arg0);
+            IExecute("componentMoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentAdapter.html#componentResized(java.awt.event.ComponentEvent)"/>
@@ -272,7 +272,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public override void ComponentResized(Java.Awt.EventNs.ComponentEvent arg0)
         {
-            IExecuteWithSignature("componentResized", "(Ljava/awt/event/ComponentEvent;)V", arg0);
+            IExecute("componentResized", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentAdapter.html#componentShown(java.awt.event.ComponentEvent)"/>
@@ -280,7 +280,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public override void ComponentShown(Java.Awt.EventNs.ComponentEvent arg0)
         {
-            IExecuteWithSignature("componentShown", "(Ljava/awt/event/ComponentEvent;)V", arg0);
+            IExecute("componentShown", arg0);
         }
 
         #endregion

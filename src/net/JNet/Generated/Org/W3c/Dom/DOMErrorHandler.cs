@@ -123,7 +123,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="bool"/></returns>
         public bool HandleError(Org.W3c.Dom.DOMError arg0)
         {
-            return IExecuteWithSignature<bool>("handleError", "(Lorg/w3c/dom/DOMError;)Z", arg0);
+            return IExecute<bool>("handleError", arg0);
         }
 
         #endregion

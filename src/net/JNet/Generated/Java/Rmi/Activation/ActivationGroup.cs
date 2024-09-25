@@ -97,7 +97,7 @@ namespace Java.Rmi.Activation
         /// </summary>
         public static Java.Rmi.Activation.ActivationSystem System
         {
-            get { return SExecuteWithSignature<Java.Rmi.Activation.ActivationSystem>(LocalBridgeClazz, "getSystem", "()Ljava/rmi/activation/ActivationSystem;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setSystem", "(Ljava/rmi/activation/ActivationSystem;)V", value); }
+            get { return SExecute<Java.Rmi.Activation.ActivationSystem>(LocalBridgeClazz, "getSystem"); } set { SExecute(LocalBridgeClazz, "setSystem", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#createGroup(java.rmi.activation.ActivationGroupID,java.rmi.activation.ActivationGroupDesc,long)"/>
@@ -117,7 +117,7 @@ namespace Java.Rmi.Activation
         /// <returns><see cref="Java.Rmi.Activation.ActivationGroupID"/></returns>
         public static Java.Rmi.Activation.ActivationGroupID CurrentGroupID()
         {
-            return SExecuteWithSignature<Java.Rmi.Activation.ActivationGroupID>(LocalBridgeClazz, "currentGroupID", "()Ljava/rmi/activation/ActivationGroupID;");
+            return SExecute<Java.Rmi.Activation.ActivationGroupID>(LocalBridgeClazz, "currentGroupID");
         }
 
         #endregion
@@ -145,7 +145,7 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.RemoteException"/>
         public bool InactiveObject(Java.Rmi.Activation.ActivationID arg0)
         {
-            return IExecuteWithSignature<bool>("inactiveObject", "(Ljava/rmi/activation/ActivationID;)Z", arg0);
+            return IExecute<bool>("inactiveObject", arg0);
         }
 
         #endregion

@@ -195,7 +195,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public Java.Util.Comparator Comparator()
         {
-            return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
+            return IExecute<Java.Util.Comparator>("comparator");
         }
 
         #endregion
@@ -292,7 +292,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE : E
         {
-            return IExecuteWithSignature<Java.Util.Comparator<ReturnobjectSuperE>>("comparator", "()Ljava/util/Comparator;");
+            return IExecute<Java.Util.Comparator<ReturnobjectSuperE>>("comparator");
         }
 
         #endregion

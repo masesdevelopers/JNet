@@ -107,14 +107,14 @@ namespace Org.Xml.Sax.Ext
         /// </summary>
         public Java.Lang.String Encoding
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getEncoding"); } set { IExecute("setEncoding", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Locator2Impl.html#getXMLVersion()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Locator2Impl.html#setXMLVersion(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String XMLVersion
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getXMLVersion", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setXMLVersion", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getXMLVersion"); } set { IExecute("setXMLVersion", value); }
         }
 
         #endregion

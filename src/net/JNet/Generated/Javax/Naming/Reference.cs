@@ -141,28 +141,28 @@ namespace Javax.Naming
         /// </summary>
         public Java.Util.Enumeration<Javax.Naming.RefAddr> All
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<Javax.Naming.RefAddr>>("getAll", "()Ljava/util/Enumeration;"); }
+            get { return IExecute<Java.Util.Enumeration<Javax.Naming.RefAddr>>("getAll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#getClassName()"/> 
         /// </summary>
         public Java.Lang.String ClassName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#getFactoryClassLocation()"/> 
         /// </summary>
         public Java.Lang.String FactoryClassLocation
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFactoryClassLocation", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getFactoryClassLocation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#getFactoryClassName()"/> 
         /// </summary>
         public Java.Lang.String FactoryClassName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFactoryClassName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getFactoryClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#size()"/>
@@ -170,7 +170,7 @@ namespace Javax.Naming
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#remove(int)"/>
@@ -179,7 +179,7 @@ namespace Javax.Naming
         /// <returns><see cref="object"/></returns>
         public object Remove(int arg0)
         {
-            return IExecuteWithSignature("remove", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#get(int)"/>
@@ -188,7 +188,7 @@ namespace Javax.Naming
         /// <returns><see cref="Javax.Naming.RefAddr"/></returns>
         public Javax.Naming.RefAddr Get(int arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.RefAddr>("get", "(I)Ljavax/naming/RefAddr;", arg0);
+            return IExecute<Javax.Naming.RefAddr>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#get(java.lang.String)"/>
@@ -197,7 +197,7 @@ namespace Javax.Naming
         /// <returns><see cref="Javax.Naming.RefAddr"/></returns>
         public Javax.Naming.RefAddr Get(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Naming.RefAddr>("get", "(Ljava/lang/String;)Ljavax/naming/RefAddr;", arg0);
+            return IExecute<Javax.Naming.RefAddr>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#add(int,javax.naming.RefAddr)"/>
@@ -214,14 +214,14 @@ namespace Javax.Naming
         /// <param name="arg0"><see cref="Javax.Naming.RefAddr"/></param>
         public void Add(Javax.Naming.RefAddr arg0)
         {
-            IExecuteWithSignature("add", "(Ljavax/naming/RefAddr;)V", arg0);
+            IExecute("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
 
         #endregion

@@ -111,7 +111,7 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Util.List<Java.Security.KeyStore.Builder> Parameters
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.KeyStore.Builder>>("getParameters", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Java.Security.KeyStore.Builder>>("getParameters"); }
         }
 
         #endregion

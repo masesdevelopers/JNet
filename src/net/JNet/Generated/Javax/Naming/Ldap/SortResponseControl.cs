@@ -112,21 +112,21 @@ namespace Javax.Naming.Ldap
         /// </summary>
         public Java.Lang.String AttributeID
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAttributeID", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAttributeID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#getException()"/> 
         /// </summary>
         public Javax.Naming.NamingException Exception
         {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException", "()Ljavax/naming/NamingException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Javax.Naming.NamingException>(obj); }
+            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Javax.Naming.NamingException>(obj); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#getResultCode()"/> 
         /// </summary>
         public int ResultCode
         {
-            get { return IExecuteWithSignature<int>("getResultCode", "()I"); }
+            get { return IExecute<int>("getResultCode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#isSorted()"/>
@@ -134,7 +134,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="bool"/></returns>
         public bool IsSorted()
         {
-            return IExecuteWithSignature<bool>("isSorted", "()Z");
+            return IExecute<bool>("isSorted");
         }
 
         #endregion

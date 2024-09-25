@@ -144,14 +144,14 @@ namespace Java.Math
         /// </summary>
         public int Precision
         {
-            get { return IExecuteWithSignature<int>("getPrecision", "()I"); }
+            get { return IExecute<int>("getPrecision"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#getRoundingMode()"/> 
         /// </summary>
         public Java.Math.RoundingMode RoundingMode
         {
-            get { return IExecuteWithSignature<Java.Math.RoundingMode>("getRoundingMode", "()Ljava/math/RoundingMode;"); }
+            get { return IExecute<Java.Math.RoundingMode>("getRoundingMode"); }
         }
 
         #endregion

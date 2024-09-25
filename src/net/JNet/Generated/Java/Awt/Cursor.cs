@@ -189,7 +189,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.Cursor DefaultCursor
         {
-            get { return SExecuteWithSignature<Java.Awt.Cursor>(LocalBridgeClazz, "getDefaultCursor", "()Ljava/awt/Cursor;"); }
+            get { return SExecute<Java.Awt.Cursor>(LocalBridgeClazz, "getDefaultCursor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getPredefinedCursor(int)"/>
@@ -198,7 +198,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Cursor"/></returns>
         public static Java.Awt.Cursor GetPredefinedCursor(int arg0)
         {
-            return SExecuteWithSignature<Java.Awt.Cursor>(LocalBridgeClazz, "getPredefinedCursor", "(I)Ljava/awt/Cursor;", arg0);
+            return SExecute<Java.Awt.Cursor>(LocalBridgeClazz, "getPredefinedCursor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getSystemCustomCursor(java.lang.String)"/>
@@ -209,7 +209,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Awt.Cursor GetSystemCustomCursor(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Awt.Cursor>(LocalBridgeClazz, "getSystemCustomCursor", "(Ljava/lang/String;)Ljava/awt/Cursor;", arg0);
+            return SExecute<Java.Awt.Cursor>(LocalBridgeClazz, "getSystemCustomCursor", arg0);
         }
 
         #endregion
@@ -220,14 +220,14 @@ namespace Java.Awt
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            get { return IExecute<int>("getType"); }
         }
 
         #endregion

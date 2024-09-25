@@ -98,7 +98,7 @@ namespace Java.Nio
         /// <returns><see cref="bool"/></returns>
         public bool HasArray()
         {
-            return IExecuteWithSignature<bool>("hasArray", "()Z");
+            return IExecute<bool>("hasArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#isDirect()"/>
@@ -106,7 +106,7 @@ namespace Java.Nio
         /// <returns><see cref="bool"/></returns>
         public bool IsDirect()
         {
-            return IExecuteWithSignature<bool>("isDirect", "()Z");
+            return IExecute<bool>("isDirect");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#isReadOnly()"/>
@@ -114,7 +114,7 @@ namespace Java.Nio
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
-            return IExecuteWithSignature<bool>("isReadOnly", "()Z");
+            return IExecute<bool>("isReadOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#arrayOffset()"/>
@@ -122,7 +122,7 @@ namespace Java.Nio
         /// <returns><see cref="int"/></returns>
         public int ArrayOffset()
         {
-            return IExecuteWithSignature<int>("arrayOffset", "()I");
+            return IExecute<int>("arrayOffset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#array()"/>
@@ -130,7 +130,7 @@ namespace Java.Nio
         /// <returns><see cref="object"/></returns>
         public object Array()
         {
-            return IExecuteWithSignature("array", "()Ljava/lang/Object;");
+            return IExecute("array");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#duplicate()"/>
@@ -138,7 +138,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Duplicate()
         {
-            return IExecuteWithSignature<Java.Nio.Buffer>("duplicate", "()Ljava/nio/Buffer;");
+            return IExecute<Java.Nio.Buffer>("duplicate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#slice()"/>
@@ -146,7 +146,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Slice()
         {
-            return IExecuteWithSignature<Java.Nio.Buffer>("slice", "()Ljava/nio/Buffer;");
+            return IExecute<Java.Nio.Buffer>("slice");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#hasRemaining()"/>
@@ -154,7 +154,7 @@ namespace Java.Nio
         /// <returns><see cref="bool"/></returns>
         public bool HasRemaining()
         {
-            return IExecuteWithSignature<bool>("hasRemaining", "()Z");
+            return IExecute<bool>("hasRemaining");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#capacity()"/>
@@ -162,7 +162,7 @@ namespace Java.Nio
         /// <returns><see cref="int"/></returns>
         public int Capacity()
         {
-            return IExecuteWithSignature<int>("capacity", "()I");
+            return IExecute<int>("capacity");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#limit()"/>
@@ -170,7 +170,7 @@ namespace Java.Nio
         /// <returns><see cref="int"/></returns>
         public int Limit()
         {
-            return IExecuteWithSignature<int>("limit", "()I");
+            return IExecute<int>("limit");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#position()"/>
@@ -178,7 +178,7 @@ namespace Java.Nio
         /// <returns><see cref="int"/></returns>
         public int Position()
         {
-            return IExecuteWithSignature<int>("position", "()I");
+            return IExecute<int>("position");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#remaining()"/>
@@ -186,7 +186,7 @@ namespace Java.Nio
         /// <returns><see cref="int"/></returns>
         public int Remaining()
         {
-            return IExecuteWithSignature<int>("remaining", "()I");
+            return IExecute<int>("remaining");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#clear()"/>
@@ -194,7 +194,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Clear()
         {
-            return IExecuteWithSignature<Java.Nio.Buffer>("clear", "()Ljava/nio/Buffer;");
+            return IExecute<Java.Nio.Buffer>("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#flip()"/>
@@ -202,7 +202,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Flip()
         {
-            return IExecuteWithSignature<Java.Nio.Buffer>("flip", "()Ljava/nio/Buffer;");
+            return IExecute<Java.Nio.Buffer>("flip");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#limit(int)"/>
@@ -211,7 +211,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Limit(int arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Buffer>("limit", "(I)Ljava/nio/Buffer;", arg0);
+            return IExecute<Java.Nio.Buffer>("limit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#mark()"/>
@@ -219,7 +219,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Mark()
         {
-            return IExecuteWithSignature<Java.Nio.Buffer>("mark", "()Ljava/nio/Buffer;");
+            return IExecute<Java.Nio.Buffer>("mark");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#position(int)"/>
@@ -228,7 +228,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Position(int arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Buffer>("position", "(I)Ljava/nio/Buffer;", arg0);
+            return IExecute<Java.Nio.Buffer>("position", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#reset()"/>
@@ -236,7 +236,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Reset()
         {
-            return IExecuteWithSignature<Java.Nio.Buffer>("reset", "()Ljava/nio/Buffer;");
+            return IExecute<Java.Nio.Buffer>("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#rewind()"/>
@@ -244,7 +244,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Rewind()
         {
-            return IExecuteWithSignature<Java.Nio.Buffer>("rewind", "()Ljava/nio/Buffer;");
+            return IExecute<Java.Nio.Buffer>("rewind");
         }
 
         #endregion

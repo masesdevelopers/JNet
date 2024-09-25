@@ -134,21 +134,21 @@ namespace Javax.Swing.Border
         /// </summary>
         public int EtchType
         {
-            get { return IExecuteWithSignature<int>("getEtchType", "()I"); }
+            get { return IExecute<int>("getEtchType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getHighlightColor()"/> 
         /// </summary>
         public Java.Awt.Color HighlightColor
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getHighlightColor", "()Ljava/awt/Color;"); }
+            get { return IExecute<Java.Awt.Color>("getHighlightColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getShadowColor()"/> 
         /// </summary>
         public Java.Awt.Color ShadowColor
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getShadowColor", "()Ljava/awt/Color;"); }
+            get { return IExecute<Java.Awt.Color>("getShadowColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getHighlightColor(java.awt.Component)"/>
@@ -157,7 +157,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetHighlightColor(Java.Awt.Component arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Color>("getHighlightColor", "(Ljava/awt/Component;)Ljava/awt/Color;", arg0);
+            return IExecute<Java.Awt.Color>("getHighlightColor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getShadowColor(java.awt.Component)"/>
@@ -166,7 +166,7 @@ namespace Javax.Swing.Border
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetShadowColor(Java.Awt.Component arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Color>("getShadowColor", "(Ljava/awt/Component;)Ljava/awt/Color;", arg0);
+            return IExecute<Java.Awt.Color>("getShadowColor", arg0);
         }
 
         #endregion

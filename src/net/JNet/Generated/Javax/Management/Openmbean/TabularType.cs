@@ -107,14 +107,14 @@ namespace Javax.Management.Openmbean
         /// </summary>
         public Java.Util.List<Java.Lang.String> IndexNames
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getIndexNames", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Java.Lang.String>>("getIndexNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularType.html#getRowType()"/> 
         /// </summary>
         public Javax.Management.Openmbean.CompositeType RowType
         {
-            get { return IExecuteWithSignature<Javax.Management.Openmbean.CompositeType>("getRowType", "()Ljavax/management/openmbean/CompositeType;"); }
+            get { return IExecute<Javax.Management.Openmbean.CompositeType>("getRowType"); }
         }
 
         #endregion

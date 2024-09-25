@@ -135,7 +135,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
         public static Java.Util.Concurrent.TimeUnit Of(Java.Time.Temporal.ChronoUnit arg0)
         {
-            return SExecuteWithSignature<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "of", "(Ljava/time/temporal/ChronoUnit;)Ljava/util/concurrent/TimeUnit;", arg0);
+            return SExecute<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#valueOf(java.lang.String)"/>
@@ -144,7 +144,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
         public static Java.Util.Concurrent.TimeUnit ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/util/concurrent/TimeUnit;", arg0);
+            return SExecute<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#values()"/>
@@ -152,7 +152,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
         public static Java.Util.Concurrent.TimeUnit[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "values", "()[Ljava/util/concurrent/TimeUnit;");
+            return SExecuteArray<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "values");
         }
 
         #endregion
@@ -164,7 +164,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Time.Temporal.ChronoUnit"/></returns>
         public Java.Time.Temporal.ChronoUnit ToChronoUnit()
         {
-            return IExecuteWithSignature<Java.Time.Temporal.ChronoUnit>("toChronoUnit", "()Ljava/time/temporal/ChronoUnit;");
+            return IExecute<Java.Time.Temporal.ChronoUnit>("toChronoUnit");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#convert(java.time.Duration)"/>
@@ -173,7 +173,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long Convert(Java.Time.Duration arg0)
         {
-            return IExecuteWithSignature<long>("convert", "(Ljava/time/Duration;)J", arg0);
+            return IExecute<long>("convert", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#convert(long,java.util.concurrent.TimeUnit)"/>
@@ -192,7 +192,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long ToDays(long arg0)
         {
-            return IExecuteWithSignature<long>("toDays", "(J)J", arg0);
+            return IExecute<long>("toDays", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toHours(long)"/>
@@ -201,7 +201,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long ToHours(long arg0)
         {
-            return IExecuteWithSignature<long>("toHours", "(J)J", arg0);
+            return IExecute<long>("toHours", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMicros(long)"/>
@@ -210,7 +210,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long ToMicros(long arg0)
         {
-            return IExecuteWithSignature<long>("toMicros", "(J)J", arg0);
+            return IExecute<long>("toMicros", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMillis(long)"/>
@@ -219,7 +219,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long ToMillis(long arg0)
         {
-            return IExecuteWithSignature<long>("toMillis", "(J)J", arg0);
+            return IExecute<long>("toMillis", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMinutes(long)"/>
@@ -228,7 +228,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long ToMinutes(long arg0)
         {
-            return IExecuteWithSignature<long>("toMinutes", "(J)J", arg0);
+            return IExecute<long>("toMinutes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toNanos(long)"/>
@@ -237,7 +237,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long ToNanos(long arg0)
         {
-            return IExecuteWithSignature<long>("toNanos", "(J)J", arg0);
+            return IExecute<long>("toNanos", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toSeconds(long)"/>
@@ -246,7 +246,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long ToSeconds(long arg0)
         {
-            return IExecuteWithSignature<long>("toSeconds", "(J)J", arg0);
+            return IExecute<long>("toSeconds", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#sleep(long)"/>
@@ -255,7 +255,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Sleep(long arg0)
         {
-            IExecuteWithSignature("sleep", "(J)V", arg0);
+            IExecute("sleep", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#timedJoin(java.lang.Thread,long)"/>

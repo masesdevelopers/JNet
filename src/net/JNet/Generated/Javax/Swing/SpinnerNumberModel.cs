@@ -128,28 +128,28 @@ namespace Javax.Swing
         /// </summary>
         public Java.Lang.Comparable<object> Maximum
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<object>>("getMaximum", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setMaximum", "(Ljava/lang/Comparable;)V", value); }
+            get { return IExecute<Java.Lang.Comparable<object>>("getMaximum"); } set { IExecute("setMaximum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#setMinimum(java.lang.Comparable)"/>
         /// </summary>
         public Java.Lang.Comparable<object> Minimum
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<object>>("getMinimum", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setMinimum", "(Ljava/lang/Comparable;)V", value); }
+            get { return IExecute<Java.Lang.Comparable<object>>("getMinimum"); } set { IExecute("setMinimum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#getNumber()"/> 
         /// </summary>
         public Java.Lang.Number Number
         {
-            get { return IExecuteWithSignature<Java.Lang.Number>("getNumber", "()Ljava/lang/Number;"); }
+            get { return IExecute<Java.Lang.Number>("getNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#getStepSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#setStepSize(java.lang.Number)"/>
         /// </summary>
         public Java.Lang.Number StepSize
         {
-            get { return IExecuteWithSignature<Java.Lang.Number>("getStepSize", "()Ljava/lang/Number;"); } set { IExecuteWithSignature("setStepSize", "(Ljava/lang/Number;)V", value); }
+            get { return IExecute<Java.Lang.Number>("getStepSize"); } set { IExecute("setStepSize", value); }
         }
 
         #endregion

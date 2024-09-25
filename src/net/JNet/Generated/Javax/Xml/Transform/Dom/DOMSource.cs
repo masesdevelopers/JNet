@@ -118,14 +118,14 @@ namespace Javax.Xml.Transform.Dom
         /// </summary>
         public Org.W3c.Dom.Node Node
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getNode", "()Lorg/w3c/dom/Node;"); } set { IExecuteWithSignature("setNode", "(Lorg/w3c/dom/Node;)V", value); }
+            get { return IExecute<Org.W3c.Dom.Node>("getNode"); } set { IExecute("setNode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html#isEmpty()"/>
@@ -133,7 +133,7 @@ namespace Javax.Xml.Transform.Dom
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
 
         #endregion

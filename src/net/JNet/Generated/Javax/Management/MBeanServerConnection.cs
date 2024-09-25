@@ -362,21 +362,21 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String DefaultDomain
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDefaultDomain", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDefaultDomain"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getDomains()"/> 
         /// </summary>
         public Java.Lang.String[] Domains
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getDomains", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getDomains"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getMBeanCount()"/> 
         /// </summary>
         public Java.Lang.Integer MBeanCount
         {
-            get { return IExecuteWithSignature<Java.Lang.Integer>("getMBeanCount", "()Ljava/lang/Integer;"); }
+            get { return IExecute<Java.Lang.Integer>("getMBeanCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String)"/>
@@ -398,7 +398,7 @@ namespace Javax.Management
         /// <exception cref="Java.Io.IOException"/>
         public bool IsRegistered(Javax.Management.ObjectName arg0)
         {
-            return IExecuteWithSignature<bool>("isRegistered", "(Ljavax/management/ObjectName;)Z", arg0);
+            return IExecute<bool>("isRegistered", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getAttribute(javax.management.ObjectName,java.lang.String)"/>
@@ -490,7 +490,7 @@ namespace Javax.Management
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.MBeanInfo GetMBeanInfo(Javax.Management.ObjectName arg0)
         {
-            return IExecuteWithSignature<Javax.Management.MBeanInfo>("getMBeanInfo", "(Ljavax/management/ObjectName;)Ljavax/management/MBeanInfo;", arg0);
+            return IExecute<Javax.Management.MBeanInfo>("getMBeanInfo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,java.lang.Object[],java.lang.String[])"/>
@@ -573,7 +573,7 @@ namespace Javax.Management
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.ObjectInstance GetObjectInstance(Javax.Management.ObjectName arg0)
         {
-            return IExecuteWithSignature<Javax.Management.ObjectInstance>("getObjectInstance", "(Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", arg0);
+            return IExecute<Javax.Management.ObjectInstance>("getObjectInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
@@ -677,7 +677,7 @@ namespace Javax.Management
         /// <exception cref="Java.Io.IOException"/>
         public void UnregisterMBean(Javax.Management.ObjectName arg0)
         {
-            IExecuteWithSignature("unregisterMBean", "(Ljavax/management/ObjectName;)V", arg0);
+            IExecute("unregisterMBean", arg0);
         }
 
         #endregion

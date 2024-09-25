@@ -311,7 +311,7 @@ namespace Javax.Tools
             /// <returns><see cref="Javax.Tools.DocumentationTool.Location"/></returns>
             public static Javax.Tools.DocumentationTool.Location ValueOf(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Javax.Tools.DocumentationTool.Location>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/tools/DocumentationTool$Location;", arg0);
+                return SExecute<Javax.Tools.DocumentationTool.Location>(LocalBridgeClazz, "valueOf", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#values()"/>
@@ -319,7 +319,7 @@ namespace Javax.Tools
             /// <returns><see cref="Javax.Tools.DocumentationTool.Location"/></returns>
             public static Javax.Tools.DocumentationTool.Location[] Values()
             {
-                return SExecuteWithSignatureArray<Javax.Tools.DocumentationTool.Location>(LocalBridgeClazz, "values", "()[Ljavax/tools/DocumentationTool$Location;");
+                return SExecuteArray<Javax.Tools.DocumentationTool.Location>(LocalBridgeClazz, "values");
             }
 
             #endregion
@@ -330,7 +330,7 @@ namespace Javax.Tools
             /// </summary>
             public Java.Lang.String Name
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                get { return IExecute<Java.Lang.String>("getName"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#isOutputLocation()"/>
@@ -338,7 +338,7 @@ namespace Javax.Tools
             /// <returns><see cref="bool"/></returns>
             public bool IsOutputLocation()
             {
-                return IExecuteWithSignature<bool>("isOutputLocation", "()Z");
+                return IExecute<bool>("isOutputLocation");
             }
 
             #endregion

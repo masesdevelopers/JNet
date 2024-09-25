@@ -134,7 +134,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="int"/></returns>
         public static int GetTypeByName(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "getTypeByName", "(Ljava/lang/String;)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "getTypeByName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#createArrayForType(int,int)"/>
@@ -153,7 +153,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetTypeName(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getTypeName", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getTypeName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#createFromMetadataNode(javax.imageio.plugins.tiff.TIFFTagSet,org.w3c.dom.Node)"/>
@@ -174,112 +174,112 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public byte[] AsBytes
         {
-            get { return IExecuteWithSignatureArray<byte>("getAsBytes", "()[B"); }
+            get { return IExecuteArray<byte>("getAsBytes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsChars()"/> 
         /// </summary>
         public char[] AsChars
         {
-            get { return IExecuteWithSignatureArray<char>("getAsChars", "()[C"); }
+            get { return IExecuteArray<char>("getAsChars"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsDoubles()"/> 
         /// </summary>
         public double[] AsDoubles
         {
-            get { return IExecuteWithSignatureArray<double>("getAsDoubles", "()[D"); }
+            get { return IExecuteArray<double>("getAsDoubles"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsFloats()"/> 
         /// </summary>
         public float[] AsFloats
         {
-            get { return IExecuteWithSignatureArray<float>("getAsFloats", "()[F"); }
+            get { return IExecuteArray<float>("getAsFloats"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsInts()"/> 
         /// </summary>
         public int[] AsInts
         {
-            get { return IExecuteWithSignatureArray<int>("getAsInts", "()[I"); }
+            get { return IExecuteArray<int>("getAsInts"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsLongs()"/> 
         /// </summary>
         public long[] AsLongs
         {
-            get { return IExecuteWithSignatureArray<long>("getAsLongs", "()[J"); }
+            get { return IExecuteArray<long>("getAsLongs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsNativeNode()"/> 
         /// </summary>
         public Org.W3c.Dom.Node AsNativeNode
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getAsNativeNode", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getAsNativeNode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsRationals()"/> 
         /// </summary>
         public long[] AsRationals
         {
-            get { return IExecuteWithSignatureArray<long>("getAsRationals", "()[[J"); }
+            get { return IExecuteArray<long>("getAsRationals"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsShorts()"/> 
         /// </summary>
         public short[] AsShorts
         {
-            get { return IExecuteWithSignatureArray<short>("getAsShorts", "()[S"); }
+            get { return IExecuteArray<short>("getAsShorts"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsSRationals()"/> 
         /// </summary>
         public int[] AsSRationals
         {
-            get { return IExecuteWithSignatureArray<int>("getAsSRationals", "()[[I"); }
+            get { return IExecuteArray<int>("getAsSRationals"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getCount()"/> 
         /// </summary>
         public int Count
         {
-            get { return IExecuteWithSignature<int>("getCount", "()I"); }
+            get { return IExecute<int>("getCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getData()"/> 
         /// </summary>
         public object Data
         {
-            get { return IExecuteWithSignature("getData", "()Ljava/lang/Object;"); }
+            get { return IExecute("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getDirectory()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Tiff.TIFFDirectory Directory
         {
-            get { return IExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFDirectory>("getDirectory", "()Ljavax/imageio/plugins/tiff/TIFFDirectory;"); }
+            get { return IExecute<Javax.Imageio.Plugins.Tiff.TIFFDirectory>("getDirectory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getTag()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Tiff.TIFFTag Tag
         {
-            get { return IExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFTag>("getTag", "()Ljavax/imageio/plugins/tiff/TIFFTag;"); }
+            get { return IExecute<Javax.Imageio.Plugins.Tiff.TIFFTag>("getTag"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getTagNumber()"/> 
         /// </summary>
         public int TagNumber
         {
-            get { return IExecuteWithSignature<int>("getTagNumber", "()I"); }
+            get { return IExecute<int>("getTagNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            get { return IExecute<int>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#hasDirectory()"/>
@@ -287,7 +287,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="bool"/></returns>
         public bool HasDirectory()
         {
-            return IExecuteWithSignature<bool>("hasDirectory", "()Z");
+            return IExecute<bool>("hasDirectory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#isIntegral()"/>
@@ -295,7 +295,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="bool"/></returns>
         public bool IsIntegral()
         {
-            return IExecuteWithSignature<bool>("isIntegral", "()Z");
+            return IExecute<bool>("isIntegral");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsDouble(int)"/>
@@ -304,7 +304,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="double"/></returns>
         public double GetAsDouble(int arg0)
         {
-            return IExecuteWithSignature<double>("getAsDouble", "(I)D", arg0);
+            return IExecute<double>("getAsDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsFloat(int)"/>
@@ -313,7 +313,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="float"/></returns>
         public float GetAsFloat(int arg0)
         {
-            return IExecuteWithSignature<float>("getAsFloat", "(I)F", arg0);
+            return IExecute<float>("getAsFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsInt(int)"/>
@@ -322,7 +322,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="int"/></returns>
         public int GetAsInt(int arg0)
         {
-            return IExecuteWithSignature<int>("getAsInt", "(I)I", arg0);
+            return IExecute<int>("getAsInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsSRational(int)"/>
@@ -331,7 +331,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="int"/></returns>
         public int[] GetAsSRational(int arg0)
         {
-            return IExecuteWithSignatureArray<int>("getAsSRational", "(I)[I", arg0);
+            return IExecuteArray<int>("getAsSRational", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsString(int)"/>
@@ -340,7 +340,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAsString(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getAsString", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getAsString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getValueAsString(int)"/>
@@ -349,7 +349,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetValueAsString(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getValueAsString", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getValueAsString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#clone()"/>
@@ -358,7 +358,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <exception cref="Java.Lang.CloneNotSupportedException"/>
         public Javax.Imageio.Plugins.Tiff.TIFFField Clone()
         {
-            return IExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFField>("clone", "()Ljavax/imageio/plugins/tiff/TIFFField;");
+            return IExecute<Javax.Imageio.Plugins.Tiff.TIFFField>("clone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsLong(int)"/>
@@ -367,7 +367,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="long"/></returns>
         public long GetAsLong(int arg0)
         {
-            return IExecuteWithSignature<long>("getAsLong", "(I)J", arg0);
+            return IExecute<long>("getAsLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsRational(int)"/>
@@ -376,7 +376,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="long"/></returns>
         public long[] GetAsRational(int arg0)
         {
-            return IExecuteWithSignatureArray<long>("getAsRational", "(I)[J", arg0);
+            return IExecuteArray<long>("getAsRational", arg0);
         }
 
         #endregion

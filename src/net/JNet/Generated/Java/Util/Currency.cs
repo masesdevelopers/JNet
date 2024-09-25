@@ -91,7 +91,7 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.Set<Java.Util.Currency> AvailableCurrencies
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Util.Currency>>(LocalBridgeClazz, "getAvailableCurrencies", "()Ljava/util/Set;"); }
+            get { return SExecute<Java.Util.Set<Java.Util.Currency>>(LocalBridgeClazz, "getAvailableCurrencies"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getInstance(java.lang.String)"/>
@@ -100,7 +100,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Currency"/></returns>
         public static Java.Util.Currency GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.Currency>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/util/Currency;", arg0);
+            return SExecute<Java.Util.Currency>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getInstance(java.util.Locale)"/>
@@ -109,7 +109,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Currency"/></returns>
         public static Java.Util.Currency GetInstance(Java.Util.Locale arg0)
         {
-            return SExecuteWithSignature<Java.Util.Currency>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Ljava/util/Currency;", arg0);
+            return SExecute<Java.Util.Currency>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -120,42 +120,42 @@ namespace Java.Util
         /// </summary>
         public Java.Lang.String CurrencyCode
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCurrencyCode", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCurrencyCode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getDefaultFractionDigits()"/> 
         /// </summary>
         public int DefaultFractionDigits
         {
-            get { return IExecuteWithSignature<int>("getDefaultFractionDigits", "()I"); }
+            get { return IExecute<int>("getDefaultFractionDigits"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getDisplayName()"/> 
         /// </summary>
         public Java.Lang.String DisplayName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDisplayName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getNumericCode()"/> 
         /// </summary>
         public int NumericCode
         {
-            get { return IExecuteWithSignature<int>("getNumericCode", "()I"); }
+            get { return IExecute<int>("getNumericCode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getNumericCodeAsString()"/> 
         /// </summary>
         public Java.Lang.String NumericCodeAsString
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNumericCodeAsString", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getNumericCodeAsString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getSymbol()"/> 
         /// </summary>
         public Java.Lang.String Symbol
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSymbol", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSymbol"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getDisplayName(java.util.Locale)"/>
@@ -164,7 +164,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getDisplayName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getSymbol(java.util.Locale)"/>
@@ -173,7 +173,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetSymbol(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getSymbol", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getSymbol", arg0);
         }
 
         #endregion

@@ -161,21 +161,21 @@ namespace Java.Awt.Im
         /// </summary>
         public int State
         {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
+            get { return IExecute<int>("getState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#getStyle()"/> 
         /// </summary>
         public Java.Util.Map<Java.Awt.FontNs.TextAttribute, object> Style
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Awt.FontNs.TextAttribute, object>>("getStyle", "()Ljava/util/Map;"); }
+            get { return IExecute<Java.Util.Map<Java.Awt.FontNs.TextAttribute, object>>("getStyle"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#getVariation()"/> 
         /// </summary>
         public int Variation
         {
-            get { return IExecuteWithSignature<int>("getVariation", "()I"); }
+            get { return IExecute<int>("getVariation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#isSelected()"/>
@@ -183,7 +183,7 @@ namespace Java.Awt.Im
         /// <returns><see cref="bool"/></returns>
         public bool IsSelected()
         {
-            return IExecuteWithSignature<bool>("isSelected", "()Z");
+            return IExecute<bool>("isSelected");
         }
 
         #endregion

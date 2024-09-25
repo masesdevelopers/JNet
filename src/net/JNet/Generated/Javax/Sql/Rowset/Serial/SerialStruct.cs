@@ -127,14 +127,14 @@ namespace Javax.Sql.Rowset.Serial
         /// </summary>
         public object[] Attributes
         {
-            get { return IExecuteWithSignatureArray<object>("getAttributes", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#getSQLTypeName()"/> 
         /// </summary>
         public Java.Lang.String SQLTypeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSQLTypeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSQLTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#getAttributes(java.util.Map)"/>
@@ -144,7 +144,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public object[] GetAttributes(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
         {
-            return IExecuteWithSignatureArray<object>("getAttributes", "(Ljava/util/Map;)[Ljava/lang/Object;", arg0);
+            return IExecuteArray<object>("getAttributes", arg0);
         }
 
         #endregion

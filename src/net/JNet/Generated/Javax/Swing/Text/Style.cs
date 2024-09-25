@@ -129,7 +129,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Style.html#addChangeListener(javax.swing.event.ChangeListener)"/>
@@ -137,7 +137,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("addChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Style.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
@@ -145,7 +145,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("removeChangeListener", arg0);
         }
 
         #endregion

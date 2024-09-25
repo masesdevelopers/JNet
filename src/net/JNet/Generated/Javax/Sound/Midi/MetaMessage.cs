@@ -112,14 +112,14 @@ namespace Javax.Sound.Midi
         /// </summary>
         public byte[] Data
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
+            get { return IExecuteArray<byte>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaMessage.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            get { return IExecute<int>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaMessage.html#setMessage(int,byte[],int)"/>

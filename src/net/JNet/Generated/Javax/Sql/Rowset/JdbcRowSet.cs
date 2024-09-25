@@ -151,21 +151,21 @@ namespace Javax.Sql.Rowset
         /// </summary>
         public bool AutoCommit
         {
-            get { return IExecuteWithSignature<bool>("getAutoCommit", "()Z"); } set { IExecuteWithSignature("setAutoCommit", "(Z)V", value); }
+            get { return IExecute<bool>("getAutoCommit"); } set { IExecute("setAutoCommit", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#getRowSetWarnings()"/> 
         /// </summary>
         public Javax.Sql.Rowset.RowSetWarning RowSetWarnings
         {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getRowSetWarnings", "()Ljavax/sql/rowset/RowSetWarning;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Javax.Sql.Rowset.RowSetWarning>(obj); }
+            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getRowSetWarnings"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Javax.Sql.Rowset.RowSetWarning>(obj); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#getShowDeleted()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#setShowDeleted(boolean)"/>
         /// </summary>
         public bool ShowDeleted
         {
-            get { return IExecuteWithSignature<bool>("getShowDeleted", "()Z"); } set { IExecuteWithSignature("setShowDeleted", "(Z)V", value); }
+            get { return IExecute<bool>("getShowDeleted"); } set { IExecute("setShowDeleted", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#commit()"/>
@@ -173,7 +173,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void Commit()
         {
-            IExecuteWithSignature("commit", "()V");
+            IExecute("commit");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#rollback()"/>
@@ -181,7 +181,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void Rollback()
         {
-            IExecuteWithSignature("rollback", "()V");
+            IExecute("rollback");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#rollback(java.sql.Savepoint)"/>
@@ -190,7 +190,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void Rollback(Java.Sql.Savepoint arg0)
         {
-            IExecuteWithSignature("rollback", "(Ljava/sql/Savepoint;)V", arg0);
+            IExecute("rollback", arg0);
         }
 
         #endregion

@@ -141,14 +141,14 @@ namespace Javax.Tools
         /// </summary>
         public long LastModified
         {
-            get { return IExecuteWithSignature<long>("getLastModified", "()J"); }
+            get { return IExecute<long>("getLastModified"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#delete()"/>
@@ -156,7 +156,7 @@ namespace Javax.Tools
         /// <returns><see cref="bool"/></returns>
         public bool Delete()
         {
-            return IExecuteWithSignature<bool>("delete", "()Z");
+            return IExecute<bool>("delete");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openInputStream()"/>
@@ -165,7 +165,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.InputStream OpenInputStream()
         {
-            return IExecuteWithSignature<Java.Io.InputStream>("openInputStream", "()Ljava/io/InputStream;");
+            return IExecute<Java.Io.InputStream>("openInputStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openOutputStream()"/>
@@ -174,7 +174,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.OutputStream OpenOutputStream()
         {
-            return IExecuteWithSignature<Java.Io.OutputStream>("openOutputStream", "()Ljava/io/OutputStream;");
+            return IExecute<Java.Io.OutputStream>("openOutputStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openReader(boolean)"/>
@@ -184,7 +184,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.Reader OpenReader(bool arg0)
         {
-            return IExecuteWithSignature<Java.Io.Reader>("openReader", "(Z)Ljava/io/Reader;", arg0);
+            return IExecute<Java.Io.Reader>("openReader", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openWriter()"/>
@@ -193,7 +193,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.Writer OpenWriter()
         {
-            return IExecuteWithSignature<Java.Io.Writer>("openWriter", "()Ljava/io/Writer;");
+            return IExecute<Java.Io.Writer>("openWriter");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#getCharContent(boolean)"/>
@@ -203,7 +203,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.CharSequence GetCharContent(bool arg0)
         {
-            return IExecuteWithSignature<Java.Lang.CharSequence>("getCharContent", "(Z)Ljava/lang/CharSequence;", arg0);
+            return IExecute<Java.Lang.CharSequence>("getCharContent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#toUri()"/>
@@ -211,7 +211,7 @@ namespace Javax.Tools
         /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI ToUri()
         {
-            return IExecuteWithSignature<Java.Net.URI>("toUri", "()Ljava/net/URI;");
+            return IExecute<Java.Net.URI>("toUri");
         }
 
         #endregion
@@ -253,14 +253,14 @@ namespace Javax.Tools
         /// </summary>
         public long LastModified
         {
-            get { return IExecuteWithSignature<long>("getLastModified", "()J"); }
+            get { return IExecute<long>("getLastModified"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#delete()"/>
@@ -268,7 +268,7 @@ namespace Javax.Tools
         /// <returns><see cref="bool"/></returns>
         public bool Delete()
         {
-            return IExecuteWithSignature<bool>("delete", "()Z");
+            return IExecute<bool>("delete");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openInputStream()"/>
@@ -277,7 +277,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.InputStream OpenInputStream()
         {
-            return IExecuteWithSignature<Java.Io.InputStream>("openInputStream", "()Ljava/io/InputStream;");
+            return IExecute<Java.Io.InputStream>("openInputStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openOutputStream()"/>
@@ -286,7 +286,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.OutputStream OpenOutputStream()
         {
-            return IExecuteWithSignature<Java.Io.OutputStream>("openOutputStream", "()Ljava/io/OutputStream;");
+            return IExecute<Java.Io.OutputStream>("openOutputStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openReader(boolean)"/>
@@ -296,7 +296,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.Reader OpenReader(bool arg0)
         {
-            return IExecuteWithSignature<Java.Io.Reader>("openReader", "(Z)Ljava/io/Reader;", arg0);
+            return IExecute<Java.Io.Reader>("openReader", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openWriter()"/>
@@ -305,7 +305,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.Writer OpenWriter()
         {
-            return IExecuteWithSignature<Java.Io.Writer>("openWriter", "()Ljava/io/Writer;");
+            return IExecute<Java.Io.Writer>("openWriter");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#getCharContent(boolean)"/>
@@ -315,7 +315,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.CharSequence GetCharContent(bool arg0)
         {
-            return IExecuteWithSignature<Java.Lang.CharSequence>("getCharContent", "(Z)Ljava/lang/CharSequence;", arg0);
+            return IExecute<Java.Lang.CharSequence>("getCharContent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#toUri()"/>
@@ -323,7 +323,7 @@ namespace Javax.Tools
         /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI ToUri()
         {
-            return IExecuteWithSignature<Java.Net.URI>("toUri", "()Ljava/net/URI;");
+            return IExecute<Java.Net.URI>("toUri");
         }
 
         #endregion

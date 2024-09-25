@@ -264,7 +264,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public override void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
         {
-            IExecuteWithSignature("contentsChanged", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+            IExecute("contentsChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
@@ -272,7 +272,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public override void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
         {
-            IExecuteWithSignature("intervalAdded", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+            IExecute("intervalAdded", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
@@ -280,7 +280,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
         public override void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
         {
-            IExecuteWithSignature("intervalRemoved", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+            IExecute("intervalRemoved", arg0);
         }
 
         #endregion

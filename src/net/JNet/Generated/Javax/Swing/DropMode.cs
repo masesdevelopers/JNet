@@ -141,7 +141,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.DropMode"/></returns>
         public static Javax.Swing.DropMode ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Swing.DropMode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/swing/DropMode;", arg0);
+            return SExecute<Javax.Swing.DropMode>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#values()"/>
@@ -149,7 +149,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.DropMode"/></returns>
         public static Javax.Swing.DropMode[] Values()
         {
-            return SExecuteWithSignatureArray<Javax.Swing.DropMode>(LocalBridgeClazz, "values", "()[Ljavax/swing/DropMode;");
+            return SExecuteArray<Javax.Swing.DropMode>(LocalBridgeClazz, "values");
         }
 
         #endregion

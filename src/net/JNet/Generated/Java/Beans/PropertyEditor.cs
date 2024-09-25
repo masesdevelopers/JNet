@@ -161,35 +161,35 @@ namespace Java.Beans
         /// </summary>
         public Java.Lang.String AsText
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAsText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAsText", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAsText"); } set { IExecute("setAsText", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#getCustomEditor()"/> 
         /// </summary>
         public Java.Awt.Component CustomEditor
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getCustomEditor", "()Ljava/awt/Component;"); }
+            get { return IExecute<Java.Awt.Component>("getCustomEditor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#getJavaInitializationString()"/> 
         /// </summary>
         public Java.Lang.String JavaInitializationString
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getJavaInitializationString", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getJavaInitializationString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#getTags()"/> 
         /// </summary>
         public Java.Lang.String[] Tags
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getTags", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getTags"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#setValue(java.lang.Object)"/>
         /// </summary>
         public object Value
         {
-            get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#isPaintable()"/>
@@ -197,7 +197,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool IsPaintable()
         {
-            return IExecuteWithSignature<bool>("isPaintable", "()Z");
+            return IExecute<bool>("isPaintable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#supportsCustomEditor()"/>
@@ -205,7 +205,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool SupportsCustomEditor()
         {
-            return IExecuteWithSignature<bool>("supportsCustomEditor", "()Z");
+            return IExecute<bool>("supportsCustomEditor");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -213,7 +213,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("addPropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#paintValue(java.awt.Graphics,java.awt.Rectangle)"/>
@@ -230,7 +230,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("removePropertyChangeListener", arg0);
         }
 
         #endregion

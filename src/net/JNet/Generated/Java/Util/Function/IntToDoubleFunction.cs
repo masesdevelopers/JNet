@@ -207,7 +207,7 @@ namespace Java.Util.Function
         /// <returns><see cref="double"/></returns>
         public override double ApplyAsDouble(int arg0)
         {
-            return IExecuteWithSignature<double>("applyAsDouble", "(I)D", arg0);
+            return IExecute<double>("applyAsDouble", arg0);
         }
 
         #endregion

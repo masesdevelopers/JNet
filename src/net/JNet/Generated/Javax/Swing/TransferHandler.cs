@@ -219,21 +219,21 @@ namespace Javax.Swing
         /// </summary>
         public static Javax.Swing.Action CopyAction
         {
-            get { return SExecuteWithSignature<Javax.Swing.Action>(LocalBridgeClazz, "getCopyAction", "()Ljavax/swing/Action;"); }
+            get { return SExecute<Javax.Swing.Action>(LocalBridgeClazz, "getCopyAction"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getCutAction()"/> 
         /// </summary>
         public static Javax.Swing.Action CutAction
         {
-            get { return SExecuteWithSignature<Javax.Swing.Action>(LocalBridgeClazz, "getCutAction", "()Ljavax/swing/Action;"); }
+            get { return SExecute<Javax.Swing.Action>(LocalBridgeClazz, "getCutAction"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getPasteAction()"/> 
         /// </summary>
         public static Javax.Swing.Action PasteAction
         {
-            get { return SExecuteWithSignature<Javax.Swing.Action>(LocalBridgeClazz, "getPasteAction", "()Ljavax/swing/Action;"); }
+            get { return SExecute<Javax.Swing.Action>(LocalBridgeClazz, "getPasteAction"); }
         }
 
         #endregion
@@ -244,14 +244,14 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.Image DragImage
         {
-            get { return IExecuteWithSignature<Java.Awt.Image>("getDragImage", "()Ljava/awt/Image;"); } set { IExecuteWithSignature("setDragImage", "(Ljava/awt/Image;)V", value); }
+            get { return IExecute<Java.Awt.Image>("getDragImage"); } set { IExecute("setDragImage", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getDragImageOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#setDragImageOffset(java.awt.Point)"/>
         /// </summary>
         public Java.Awt.Point DragImageOffset
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getDragImageOffset", "()Ljava/awt/Point;"); } set { IExecuteWithSignature("setDragImageOffset", "(Ljava/awt/Point;)V", value); }
+            get { return IExecute<Java.Awt.Point>("getDragImageOffset"); } set { IExecute("setDragImageOffset", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#canImport(javax.swing.JComponent,java.awt.datatransfer.DataFlavor[])"/>
@@ -270,7 +270,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool CanImport(Javax.Swing.TransferHandler.TransferSupport arg0)
         {
-            return IExecuteWithSignature<bool>("canImport", "(Ljavax/swing/TransferHandler$TransferSupport;)Z", arg0);
+            return IExecute<bool>("canImport", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#importData(javax.swing.JComponent,java.awt.datatransfer.Transferable)"/>
@@ -289,7 +289,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool ImportData(Javax.Swing.TransferHandler.TransferSupport arg0)
         {
-            return IExecuteWithSignature<bool>("importData", "(Ljavax/swing/TransferHandler$TransferSupport;)Z", arg0);
+            return IExecute<bool>("importData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getSourceActions(javax.swing.JComponent)"/>
@@ -298,7 +298,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetSourceActions(Javax.Swing.JComponent arg0)
         {
-            return IExecuteWithSignature<int>("getSourceActions", "(Ljavax/swing/JComponent;)I", arg0);
+            return IExecute<int>("getSourceActions", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getVisualRepresentation(java.awt.datatransfer.Transferable)"/>
@@ -307,7 +307,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetVisualRepresentation(Java.Awt.Datatransfer.Transferable arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Icon>("getVisualRepresentation", "(Ljava/awt/datatransfer/Transferable;)Ljavax/swing/Icon;", arg0);
+            return IExecute<Javax.Swing.Icon>("getVisualRepresentation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#exportAsDrag(javax.swing.JComponent,java.awt.event.InputEvent,int)"/>
@@ -406,49 +406,49 @@ namespace Javax.Swing
             /// </summary>
             public Java.Awt.Component Component
             {
-                get { return IExecuteWithSignature<Java.Awt.Component>("getComponent", "()Ljava/awt/Component;"); }
+                get { return IExecute<Java.Awt.Component>("getComponent"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDataFlavors()"/> 
             /// </summary>
             public Java.Awt.Datatransfer.DataFlavor[] DataFlavors
             {
-                get { return IExecuteWithSignatureArray<Java.Awt.Datatransfer.DataFlavor>("getDataFlavors", "()[Ljava/awt/datatransfer/DataFlavor;"); }
+                get { return IExecuteArray<Java.Awt.Datatransfer.DataFlavor>("getDataFlavors"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDropAction()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setDropAction(int)"/>
             /// </summary>
             public int DropAction
             {
-                get { return IExecuteWithSignature<int>("getDropAction", "()I"); } set { IExecuteWithSignature("setDropAction", "(I)V", value); }
+                get { return IExecute<int>("getDropAction"); } set { IExecute("setDropAction", value); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDropLocation()"/> 
             /// </summary>
             public Javax.Swing.TransferHandler.DropLocation GetDropLocation
             {
-                get { return IExecuteWithSignature<Javax.Swing.TransferHandler.DropLocation>("getDropLocation", "()Ljavax/swing/TransferHandler$DropLocation;"); }
+                get { return IExecute<Javax.Swing.TransferHandler.DropLocation>("getDropLocation"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getSourceDropActions()"/> 
             /// </summary>
             public int SourceDropActions
             {
-                get { return IExecuteWithSignature<int>("getSourceDropActions", "()I"); }
+                get { return IExecute<int>("getSourceDropActions"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getTransferable()"/> 
             /// </summary>
             public Java.Awt.Datatransfer.Transferable Transferable
             {
-                get { return IExecuteWithSignature<Java.Awt.Datatransfer.Transferable>("getTransferable", "()Ljava/awt/datatransfer/Transferable;"); }
+                get { return IExecute<Java.Awt.Datatransfer.Transferable>("getTransferable"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getUserDropAction()"/> 
             /// </summary>
             public int UserDropAction
             {
-                get { return IExecuteWithSignature<int>("getUserDropAction", "()I"); }
+                get { return IExecute<int>("getUserDropAction"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)"/>
@@ -457,7 +457,7 @@ namespace Javax.Swing
             /// <returns><see cref="bool"/></returns>
             public bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0)
             {
-                return IExecuteWithSignature<bool>("isDataFlavorSupported", "(Ljava/awt/datatransfer/DataFlavor;)Z", arg0);
+                return IExecute<bool>("isDataFlavorSupported", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#isDrop()"/>
@@ -465,7 +465,7 @@ namespace Javax.Swing
             /// <returns><see cref="bool"/></returns>
             public bool IsDrop()
             {
-                return IExecuteWithSignature<bool>("isDrop", "()Z");
+                return IExecute<bool>("isDrop");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setShowDropLocation(boolean)"/>
@@ -473,7 +473,7 @@ namespace Javax.Swing
             /// <param name="arg0"><see cref="bool"/></param>
             public void SetShowDropLocation(bool arg0)
             {
-                IExecuteWithSignature("setShowDropLocation", "(Z)V", arg0);
+                IExecute("setShowDropLocation", arg0);
             }
 
             #endregion

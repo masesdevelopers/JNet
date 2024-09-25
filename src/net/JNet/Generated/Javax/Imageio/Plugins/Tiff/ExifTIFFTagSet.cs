@@ -1075,7 +1075,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public static Javax.Imageio.Plugins.Tiff.ExifTIFFTagSet Instance
         {
-            get { return SExecuteWithSignature<Javax.Imageio.Plugins.Tiff.ExifTIFFTagSet>(LocalBridgeClazz, "getInstance", "()Ljavax/imageio/plugins/tiff/ExifTIFFTagSet;"); }
+            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifTIFFTagSet>(LocalBridgeClazz, "getInstance"); }
         }
 
         #endregion

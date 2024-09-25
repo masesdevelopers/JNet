@@ -208,14 +208,14 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Javax.Net.Ssl.SSLEngineResult.HandshakeStatus GetHandshakeStatus
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("getHandshakeStatus", "()Ljavax/net/ssl/SSLEngineResult$HandshakeStatus;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("getHandshakeStatus"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#getStatus()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLEngineResult.Status GetStatus
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult.Status>("getStatus", "()Ljavax/net/ssl/SSLEngineResult$Status;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLEngineResult.Status>("getStatus"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#bytesConsumed()"/>
@@ -223,7 +223,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="int"/></returns>
         public int BytesConsumed()
         {
-            return IExecuteWithSignature<int>("bytesConsumed", "()I");
+            return IExecute<int>("bytesConsumed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#bytesProduced()"/>
@@ -231,7 +231,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="int"/></returns>
         public int BytesProduced()
         {
-            return IExecuteWithSignature<int>("bytesProduced", "()I");
+            return IExecute<int>("bytesProduced");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#sequenceNumber()"/>
@@ -239,7 +239,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="long"/></returns>
         public long SequenceNumber()
         {
-            return IExecuteWithSignature<long>("sequenceNumber", "()J");
+            return IExecute<long>("sequenceNumber");
         }
 
         #endregion
@@ -376,7 +376,7 @@ namespace Javax.Net.Ssl
             /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></returns>
             public static Javax.Net.Ssl.SSLEngineResult.Status ValueOf(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult.Status>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/net/ssl/SSLEngineResult$Status;", arg0);
+                return SExecute<Javax.Net.Ssl.SSLEngineResult.Status>(LocalBridgeClazz, "valueOf", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#values()"/>
@@ -384,7 +384,7 @@ namespace Javax.Net.Ssl
             /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></returns>
             public static Javax.Net.Ssl.SSLEngineResult.Status[] Values()
             {
-                return SExecuteWithSignatureArray<Javax.Net.Ssl.SSLEngineResult.Status>(LocalBridgeClazz, "values", "()[Ljavax/net/ssl/SSLEngineResult$Status;");
+                return SExecuteArray<Javax.Net.Ssl.SSLEngineResult.Status>(LocalBridgeClazz, "values");
             }
 
             #endregion

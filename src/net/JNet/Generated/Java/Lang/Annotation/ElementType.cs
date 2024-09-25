@@ -159,7 +159,7 @@ namespace Java.Lang.Annotation
         /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
         public static Java.Lang.Annotation.ElementType ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Annotation.ElementType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/annotation/ElementType;", arg0);
+            return SExecute<Java.Lang.Annotation.ElementType>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#values()"/>
@@ -167,7 +167,7 @@ namespace Java.Lang.Annotation
         /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
         public static Java.Lang.Annotation.ElementType[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Lang.Annotation.ElementType>(LocalBridgeClazz, "values", "()[Ljava/lang/annotation/ElementType;");
+            return SExecuteArray<Java.Lang.Annotation.ElementType>(LocalBridgeClazz, "values");
         }
 
         #endregion

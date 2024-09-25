@@ -133,7 +133,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int FlashCount()
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "flashCount", "()I");
+            return SExecute<int>(LocalBridgeClazz, "flashCount");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashTime()"/>
@@ -141,7 +141,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int FlashTime()
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "flashTime", "()I");
+            return SExecute<int>(LocalBridgeClazz, "flashTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashColor()"/>
@@ -149,7 +149,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color FlashColor()
         {
-            return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "flashColor", "()Ljava/awt/Color;");
+            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "flashColor");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#logStream()"/>
@@ -157,7 +157,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
         public static Java.Io.PrintStream LogStream()
         {
-            return SExecuteWithSignature<Java.Io.PrintStream>(LocalBridgeClazz, "logStream", "()Ljava/io/PrintStream;");
+            return SExecute<Java.Io.PrintStream>(LocalBridgeClazz, "logStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashColor(java.awt.Color)"/>
@@ -165,7 +165,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
         public static void SetFlashColor(Java.Awt.Color arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setFlashColor", "(Ljava/awt/Color;)V", arg0);
+            SExecute(LocalBridgeClazz, "setFlashColor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashCount(int)"/>
@@ -173,7 +173,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public static void SetFlashCount(int arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setFlashCount", "(I)V", arg0);
+            SExecute(LocalBridgeClazz, "setFlashCount", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashTime(int)"/>
@@ -181,7 +181,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public static void SetFlashTime(int arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setFlashTime", "(I)V", arg0);
+            SExecute(LocalBridgeClazz, "setFlashTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setLogStream(java.io.PrintStream)"/>
@@ -189,7 +189,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public static void SetLogStream(Java.Io.PrintStream arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setLogStream", "(Ljava/io/PrintStream;)V", arg0);
+            SExecute(LocalBridgeClazz, "setLogStream", arg0);
         }
 
         #endregion
@@ -200,7 +200,7 @@ namespace Javax.Swing
         /// </summary>
         public int DebugOptions
         {
-            get { return IExecuteWithSignature<int>("getDebugOptions", "()I"); } set { IExecuteWithSignature("setDebugOptions", "(I)V", value); }
+            get { return IExecute<int>("getDebugOptions"); } set { IExecute("setDebugOptions", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#isDrawingBuffer()"/>
@@ -208,7 +208,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsDrawingBuffer()
         {
-            return IExecuteWithSignature<bool>("isDrawingBuffer", "()Z");
+            return IExecute<bool>("isDrawingBuffer");
         }
 
         #endregion

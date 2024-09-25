@@ -171,7 +171,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Io.IOException"/>
         public void ReadXml(Java.Io.InputStream arg0)
         {
-            IExecuteWithSignature("readXml", "(Ljava/io/InputStream;)V", arg0);
+            IExecute("readXml", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#readXml(java.io.Reader)"/>
@@ -180,7 +180,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void ReadXml(Java.Io.Reader arg0)
         {
-            IExecuteWithSignature("readXml", "(Ljava/io/Reader;)V", arg0);
+            IExecute("readXml", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.io.OutputStream)"/>
@@ -190,7 +190,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Io.IOException"/>
         public void WriteXml(Java.Io.OutputStream arg0)
         {
-            IExecuteWithSignature("writeXml", "(Ljava/io/OutputStream;)V", arg0);
+            IExecute("writeXml", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.io.Writer)"/>
@@ -199,7 +199,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteXml(Java.Io.Writer arg0)
         {
-            IExecuteWithSignature("writeXml", "(Ljava/io/Writer;)V", arg0);
+            IExecute("writeXml", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.sql.ResultSet,java.io.OutputStream)"/>

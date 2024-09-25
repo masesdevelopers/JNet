@@ -320,14 +320,14 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public void AddEditor()
         {
-            IExecuteWithSignature("addEditor", "()V");
+            IExecute("addEditor");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.html#configureArrowButton()"/>
         /// </summary>
         public void ConfigureArrowButton()
         {
-            IExecuteWithSignature("configureArrowButton", "()V");
+            IExecute("configureArrowButton");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.html#paintCurrentValue(java.awt.Graphics,java.awt.Rectangle,boolean)"/>
@@ -354,14 +354,14 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public void RemoveEditor()
         {
-            IExecuteWithSignature("removeEditor", "()V");
+            IExecute("removeEditor");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.html#unconfigureArrowButton()"/>
         /// </summary>
         public void UnconfigureArrowButton()
         {
-            IExecuteWithSignature("unconfigureArrowButton", "()V");
+            IExecute("unconfigureArrowButton");
         }
 
         #endregion
@@ -487,7 +487,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
             public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
             {
-                IExecuteWithSignature("focusGained", "(Ljava/awt/event/FocusEvent;)V", arg0);
+                IExecute("focusGained", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)"/>
@@ -495,7 +495,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
             public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
             {
-                IExecuteWithSignature("focusLost", "(Ljava/awt/event/FocusEvent;)V", arg0);
+                IExecute("focusLost", arg0);
             }
 
             #endregion
@@ -546,7 +546,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
             public void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
             {
-                IExecuteWithSignature("itemStateChanged", "(Ljava/awt/event/ItemEvent;)V", arg0);
+                IExecute("itemStateChanged", arg0);
             }
 
             #endregion
@@ -597,7 +597,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
             public void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
             {
-                IExecuteWithSignature("contentsChanged", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+                IExecute("contentsChanged", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ListDataHandler.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
@@ -605,7 +605,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
             public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
             {
-                IExecuteWithSignature("intervalAdded", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+                IExecute("intervalAdded", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ListDataHandler.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
@@ -613,7 +613,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
             public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
             {
-                IExecuteWithSignature("intervalRemoved", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
+                IExecute("intervalRemoved", arg0);
             }
 
             #endregion
@@ -664,7 +664,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
-                IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
+                IExecute("propertyChange", arg0);
             }
 
             #endregion

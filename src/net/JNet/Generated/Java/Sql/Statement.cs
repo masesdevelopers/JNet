@@ -444,112 +444,112 @@ namespace Java.Sql
         /// </summary>
         public Java.Sql.Connection Connection
         {
-            get { return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "()Ljava/sql/Connection;"); }
+            get { return IExecute<Java.Sql.Connection>("getConnection"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getFetchDirection()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setFetchDirection(int)"/>
         /// </summary>
         public int FetchDirection
         {
-            get { return IExecuteWithSignature<int>("getFetchDirection", "()I"); } set { IExecuteWithSignature("setFetchDirection", "(I)V", value); }
+            get { return IExecute<int>("getFetchDirection"); } set { IExecute("setFetchDirection", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getFetchSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setFetchSize(int)"/>
         /// </summary>
         public int FetchSize
         {
-            get { return IExecuteWithSignature<int>("getFetchSize", "()I"); } set { IExecuteWithSignature("setFetchSize", "(I)V", value); }
+            get { return IExecute<int>("getFetchSize"); } set { IExecute("setFetchSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getGeneratedKeys()"/> 
         /// </summary>
         public Java.Sql.ResultSet GeneratedKeys
         {
-            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getGeneratedKeys", "()Ljava/sql/ResultSet;"); }
+            get { return IExecute<Java.Sql.ResultSet>("getGeneratedKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getLargeMaxRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setLargeMaxRows(long)"/>
         /// </summary>
         public long LargeMaxRows
         {
-            get { return IExecuteWithSignature<long>("getLargeMaxRows", "()J"); } set { IExecuteWithSignature("setLargeMaxRows", "(J)V", value); }
+            get { return IExecute<long>("getLargeMaxRows"); } set { IExecute("setLargeMaxRows", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getLargeUpdateCount()"/> 
         /// </summary>
         public long LargeUpdateCount
         {
-            get { return IExecuteWithSignature<long>("getLargeUpdateCount", "()J"); }
+            get { return IExecute<long>("getLargeUpdateCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMaxFieldSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setMaxFieldSize(int)"/>
         /// </summary>
         public int MaxFieldSize
         {
-            get { return IExecuteWithSignature<int>("getMaxFieldSize", "()I"); } set { IExecuteWithSignature("setMaxFieldSize", "(I)V", value); }
+            get { return IExecute<int>("getMaxFieldSize"); } set { IExecute("setMaxFieldSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMaxRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setMaxRows(int)"/>
         /// </summary>
         public int MaxRows
         {
-            get { return IExecuteWithSignature<int>("getMaxRows", "()I"); } set { IExecuteWithSignature("setMaxRows", "(I)V", value); }
+            get { return IExecute<int>("getMaxRows"); } set { IExecute("setMaxRows", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMoreResults()"/> 
         /// </summary>
         public bool MoreResults
         {
-            get { return IExecuteWithSignature<bool>("getMoreResults", "()Z"); }
+            get { return IExecute<bool>("getMoreResults"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getQueryTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setQueryTimeout(int)"/>
         /// </summary>
         public int QueryTimeout
         {
-            get { return IExecuteWithSignature<int>("getQueryTimeout", "()I"); } set { IExecuteWithSignature("setQueryTimeout", "(I)V", value); }
+            get { return IExecute<int>("getQueryTimeout"); } set { IExecute("setQueryTimeout", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getResultSet()"/> 
         /// </summary>
         public Java.Sql.ResultSet ResultSet
         {
-            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "()Ljava/sql/ResultSet;"); }
+            get { return IExecute<Java.Sql.ResultSet>("getResultSet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getResultSetConcurrency()"/> 
         /// </summary>
         public int ResultSetConcurrency
         {
-            get { return IExecuteWithSignature<int>("getResultSetConcurrency", "()I"); }
+            get { return IExecute<int>("getResultSetConcurrency"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getResultSetHoldability()"/> 
         /// </summary>
         public int ResultSetHoldability
         {
-            get { return IExecuteWithSignature<int>("getResultSetHoldability", "()I"); }
+            get { return IExecute<int>("getResultSetHoldability"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getResultSetType()"/> 
         /// </summary>
         public int ResultSetType
         {
-            get { return IExecuteWithSignature<int>("getResultSetType", "()I"); }
+            get { return IExecute<int>("getResultSetType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getUpdateCount()"/> 
         /// </summary>
         public int UpdateCount
         {
-            get { return IExecuteWithSignature<int>("getUpdateCount", "()I"); }
+            get { return IExecute<int>("getUpdateCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getWarnings()"/> 
         /// </summary>
         public Java.Sql.SQLWarning Warnings
         {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getWarnings", "()Ljava/sql/SQLWarning;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLWarning>(obj); }
+            get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getWarnings"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLWarning>(obj); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#execute(java.lang.String,int)"/>
@@ -592,7 +592,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Execute(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("execute", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("execute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMoreResults(int)"/>
@@ -602,7 +602,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool GetMoreResults(int arg0)
         {
-            return IExecuteWithSignature<bool>("getMoreResults", "(I)Z", arg0);
+            return IExecute<bool>("getMoreResults", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isClosed()"/>
@@ -611,7 +611,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsClosed()
         {
-            return IExecuteWithSignature<bool>("isClosed", "()Z");
+            return IExecute<bool>("isClosed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isCloseOnCompletion()"/>
@@ -620,7 +620,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsCloseOnCompletion()
         {
-            return IExecuteWithSignature<bool>("isCloseOnCompletion", "()Z");
+            return IExecute<bool>("isCloseOnCompletion");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isPoolable()"/>
@@ -629,7 +629,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsPoolable()
         {
-            return IExecuteWithSignature<bool>("isPoolable", "()Z");
+            return IExecute<bool>("isPoolable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String,int)"/>
@@ -672,7 +672,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int ExecuteUpdate(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<int>("executeUpdate", "(Ljava/lang/String;)I", arg0);
+            return IExecute<int>("executeUpdate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeBatch()"/>
@@ -681,7 +681,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int[] ExecuteBatch()
         {
-            return IExecuteWithSignatureArray<int>("executeBatch", "()[I");
+            return IExecuteArray<int>("executeBatch");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeQuery(java.lang.String)"/>
@@ -691,7 +691,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet ExecuteQuery(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Sql.ResultSet>("executeQuery", "(Ljava/lang/String;)Ljava/sql/ResultSet;", arg0);
+            return IExecute<Java.Sql.ResultSet>("executeQuery", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#addBatch(java.lang.String)"/>
@@ -700,7 +700,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void AddBatch(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("addBatch", "(Ljava/lang/String;)V", arg0);
+            IExecute("addBatch", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#cancel()"/>
@@ -708,7 +708,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void Cancel()
         {
-            IExecuteWithSignature("cancel", "()V");
+            IExecute("cancel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#clearBatch()"/>
@@ -716,7 +716,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearBatch()
         {
-            IExecuteWithSignature("clearBatch", "()V");
+            IExecute("clearBatch");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#clearWarnings()"/>
@@ -724,7 +724,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearWarnings()
         {
-            IExecuteWithSignature("clearWarnings", "()V");
+            IExecute("clearWarnings");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#close()"/>
@@ -732,7 +732,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#closeOnCompletion()"/>
@@ -740,7 +740,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void CloseOnCompletion()
         {
-            IExecuteWithSignature("closeOnCompletion", "()V");
+            IExecute("closeOnCompletion");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setCursorName(java.lang.String)"/>
@@ -749,7 +749,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCursorName(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("setCursorName", "(Ljava/lang/String;)V", arg0);
+            IExecute("setCursorName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setEscapeProcessing(boolean)"/>
@@ -758,7 +758,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetEscapeProcessing(bool arg0)
         {
-            IExecuteWithSignature("setEscapeProcessing", "(Z)V", arg0);
+            IExecute("setEscapeProcessing", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setPoolable(boolean)"/>
@@ -767,7 +767,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetPoolable(bool arg0)
         {
-            IExecuteWithSignature("setPoolable", "(Z)V", arg0);
+            IExecute("setPoolable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isSimpleIdentifier(java.lang.String)"/>
@@ -777,7 +777,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsSimpleIdentifier(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("isSimpleIdentifier", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("isSimpleIdentifier", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#enquoteIdentifier(java.lang.String,boolean)"/>
@@ -798,7 +798,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String EnquoteLiteral(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("enquoteLiteral", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("enquoteLiteral", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#enquoteNCharLiteral(java.lang.String)"/>
@@ -808,7 +808,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String EnquoteNCharLiteral(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("enquoteNCharLiteral", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("enquoteNCharLiteral", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeUpdate(java.lang.String,int)"/>
@@ -851,7 +851,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long ExecuteLargeUpdate(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<long>("executeLargeUpdate", "(Ljava/lang/String;)J", arg0);
+            return IExecute<long>("executeLargeUpdate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeBatch()"/>
@@ -860,7 +860,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long[] ExecuteLargeBatch()
         {
-            return IExecuteWithSignatureArray<long>("executeLargeBatch", "()[J");
+            return IExecuteArray<long>("executeLargeBatch");
         }
 
         #endregion

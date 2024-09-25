@@ -123,7 +123,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("adjustInto", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("adjustInto", arg0);
         }
 
         #endregion

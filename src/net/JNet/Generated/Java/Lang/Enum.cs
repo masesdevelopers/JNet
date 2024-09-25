@@ -163,7 +163,7 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.Class DeclaringClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Enum)"/>
@@ -172,7 +172,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Lang.Enum arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Enum;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#ordinal()"/>
@@ -180,7 +180,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int Ordinal()
         {
-            return IExecuteWithSignature<int>("ordinal", "()I");
+            return IExecute<int>("ordinal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#name()"/>
@@ -188,7 +188,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Object)"/>
@@ -197,7 +197,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
 
         #endregion
@@ -258,7 +258,7 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.Class DeclaringClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Enum)"/>
@@ -267,7 +267,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(E arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Enum;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#ordinal()"/>
@@ -275,7 +275,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int Ordinal()
         {
-            return IExecuteWithSignature<int>("ordinal", "()I");
+            return IExecute<int>("ordinal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#name()"/>
@@ -283,7 +283,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Object)"/>
@@ -292,7 +292,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
 
         #endregion

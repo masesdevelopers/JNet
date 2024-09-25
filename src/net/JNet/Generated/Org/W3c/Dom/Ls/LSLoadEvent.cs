@@ -123,14 +123,14 @@ namespace Org.W3c.Dom.Ls
         /// </summary>
         public Org.W3c.Dom.Ls.LSInput Input
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Ls.LSInput>("getInput", "()Lorg/w3c/dom/ls/LSInput;"); }
+            get { return IExecute<Org.W3c.Dom.Ls.LSInput>("getInput"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSLoadEvent.html#getNewDocument()"/> 
         /// </summary>
         public Org.W3c.Dom.Document NewDocument
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Document>("getNewDocument", "()Lorg/w3c/dom/Document;"); }
+            get { return IExecute<Org.W3c.Dom.Document>("getNewDocument"); }
         }
 
         #endregion

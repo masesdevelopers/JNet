@@ -150,21 +150,21 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.ImageCapabilities BackBufferCapabilities
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageCapabilities>("getBackBufferCapabilities", "()Ljava/awt/ImageCapabilities;"); }
+            get { return IExecute<Java.Awt.ImageCapabilities>("getBackBufferCapabilities"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#getFrontBufferCapabilities()"/> 
         /// </summary>
         public Java.Awt.ImageCapabilities FrontBufferCapabilities
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageCapabilities>("getFrontBufferCapabilities", "()Ljava/awt/ImageCapabilities;"); }
+            get { return IExecute<Java.Awt.ImageCapabilities>("getFrontBufferCapabilities"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#getFlipContents()"/> 
         /// </summary>
         public Java.Awt.BufferCapabilities.FlipContents GetFlipContents
         {
-            get { return IExecuteWithSignature<Java.Awt.BufferCapabilities.FlipContents>("getFlipContents", "()Ljava/awt/BufferCapabilities$FlipContents;"); }
+            get { return IExecute<Java.Awt.BufferCapabilities.FlipContents>("getFlipContents"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isFullScreenRequired()"/>
@@ -172,7 +172,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsFullScreenRequired()
         {
-            return IExecuteWithSignature<bool>("isFullScreenRequired", "()Z");
+            return IExecute<bool>("isFullScreenRequired");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isMultiBufferAvailable()"/>
@@ -180,7 +180,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsMultiBufferAvailable()
         {
-            return IExecuteWithSignature<bool>("isMultiBufferAvailable", "()Z");
+            return IExecute<bool>("isMultiBufferAvailable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isPageFlipping()"/>
@@ -188,7 +188,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsPageFlipping()
         {
-            return IExecuteWithSignature<bool>("isPageFlipping", "()Z");
+            return IExecute<bool>("isPageFlipping");
         }
 
         #endregion

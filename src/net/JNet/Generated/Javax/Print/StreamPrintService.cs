@@ -97,14 +97,14 @@ namespace Javax.Print
         /// </summary>
         public Java.Lang.String OutputFormat
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOutputFormat", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getOutputFormat"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#getOutputStream()"/> 
         /// </summary>
         public Java.Io.OutputStream OutputStream
         {
-            get { return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;"); }
+            get { return IExecute<Java.Io.OutputStream>("getOutputStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#isDisposed()"/>
@@ -112,14 +112,14 @@ namespace Javax.Print
         /// <returns><see cref="bool"/></returns>
         public bool IsDisposed()
         {
-            return IExecuteWithSignature<bool>("isDisposed", "()Z");
+            return IExecute<bool>("isDisposed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#dispose()"/>
         /// </summary>
         public new void Dispose()
         {
-            IExecuteWithSignature("dispose", "()V");
+            IExecute("dispose");
         }
 
         #endregion

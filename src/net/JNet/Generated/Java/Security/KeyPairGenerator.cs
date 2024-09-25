@@ -119,7 +119,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.KeyPairGenerator GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Security.KeyPairGenerator>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/KeyPairGenerator;", arg0);
+            return SExecute<Java.Security.KeyPairGenerator>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -130,14 +130,14 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#genKeyPair()"/>
@@ -145,7 +145,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.KeyPair"/></returns>
         public Java.Security.KeyPair GenKeyPair()
         {
-            return IExecuteWithSignature<Java.Security.KeyPair>("genKeyPair", "()Ljava/security/KeyPair;");
+            return IExecute<Java.Security.KeyPair>("genKeyPair");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#initialize(int)"/>
@@ -153,7 +153,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="int"/></param>
         public void Initialize(int arg0)
         {
-            IExecuteWithSignature("initialize", "(I)V", arg0);
+            IExecute("initialize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#initialize(java.security.spec.AlgorithmParameterSpec)"/>
@@ -162,7 +162,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Initialize(Java.Security.Spec.AlgorithmParameterSpec arg0)
         {
-            IExecuteWithSignature("initialize", "(Ljava/security/spec/AlgorithmParameterSpec;)V", arg0);
+            IExecute("initialize", arg0);
         }
 
         #endregion

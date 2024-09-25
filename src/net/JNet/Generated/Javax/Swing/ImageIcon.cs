@@ -175,49 +175,49 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Accessibility.AccessibleContext AccessibleContext
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleContext>("getAccessibleContext", "()Ljavax/accessibility/AccessibleContext;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleContext>("getAccessibleContext"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#getDescription()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#setDescription(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Description
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDescription", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getDescription"); } set { IExecute("setDescription", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#getIconHeight()"/> 
         /// </summary>
         public int IconHeight
         {
-            get { return IExecuteWithSignature<int>("getIconHeight", "()I"); }
+            get { return IExecute<int>("getIconHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#getIconWidth()"/> 
         /// </summary>
         public int IconWidth
         {
-            get { return IExecuteWithSignature<int>("getIconWidth", "()I"); }
+            get { return IExecute<int>("getIconWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#getImage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#setImage(java.awt.Image)"/>
         /// </summary>
         public Java.Awt.Image Image
         {
-            get { return IExecuteWithSignature<Java.Awt.Image>("getImage", "()Ljava/awt/Image;"); } set { IExecuteWithSignature("setImage", "(Ljava/awt/Image;)V", value); }
+            get { return IExecute<Java.Awt.Image>("getImage"); } set { IExecute("setImage", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#getImageLoadStatus()"/> 
         /// </summary>
         public int ImageLoadStatus
         {
-            get { return IExecuteWithSignature<int>("getImageLoadStatus", "()I"); }
+            get { return IExecute<int>("getImageLoadStatus"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#getImageObserver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#setImageObserver(java.awt.image.ImageObserver)"/>
         /// </summary>
         public Java.Awt.ImageNs.ImageObserver ImageObserver
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.ImageObserver>("getImageObserver", "()Ljava/awt/image/ImageObserver;"); } set { IExecuteWithSignature("setImageObserver", "(Ljava/awt/image/ImageObserver;)V", value); }
+            get { return IExecute<Java.Awt.ImageNs.ImageObserver>("getImageObserver"); } set { IExecute("setImageObserver", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>

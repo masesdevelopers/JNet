@@ -105,7 +105,7 @@ namespace Javax.Script
         /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(object arg0)
         {
-            return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#containsValue(java.lang.Object)"/>
@@ -114,7 +114,7 @@ namespace Javax.Script
         /// <returns><see cref="bool"/></returns>
         public bool ContainsValue(object arg0)
         {
-            return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("containsValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#isEmpty()"/>
@@ -122,7 +122,7 @@ namespace Javax.Script
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#size()"/>
@@ -130,7 +130,7 @@ namespace Javax.Script
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#get(java.lang.Object)"/>
@@ -139,7 +139,7 @@ namespace Javax.Script
         /// <returns><see cref="object"/></returns>
         public object Get(object arg0)
         {
-            return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#put(java.lang.Object,java.lang.Object)"/>
@@ -168,7 +168,7 @@ namespace Javax.Script
         /// <returns><see cref="object"/></returns>
         public object Remove(object arg0)
         {
-            return IExecuteWithSignature("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#values()"/>
@@ -176,7 +176,7 @@ namespace Javax.Script
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<object> Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection<object>>("values", "()Ljava/util/Collection;");
+            return IExecute<Java.Util.Collection<object>>("values");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#keySet()"/>
@@ -184,7 +184,7 @@ namespace Javax.Script
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("keySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Lang.String>>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#entrySet()"/>
@@ -192,14 +192,14 @@ namespace Javax.Script
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Map.Entry<Java.Lang.String, object>> EntrySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<Java.Lang.String, object>>>("entrySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Util.Map.Entry<Java.Lang.String, object>>>("entrySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#putAll(java.util.Map)"/>

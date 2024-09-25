@@ -159,14 +159,14 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Geom.Point2D EndPoint
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getEndPoint", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getEndPoint"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html#getStartPoint()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D StartPoint
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getStartPoint", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getStartPoint"); }
         }
 
         #endregion

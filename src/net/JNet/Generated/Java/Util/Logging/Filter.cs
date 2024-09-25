@@ -123,7 +123,7 @@ namespace Java.Util.Logging
         /// <returns><see cref="bool"/></returns>
         public bool IsLoggable(Java.Util.Logging.LogRecord arg0)
         {
-            return IExecuteWithSignature<bool>("isLoggable", "(Ljava/util/logging/LogRecord;)Z", arg0);
+            return IExecute<bool>("isLoggable", arg0);
         }
 
         #endregion

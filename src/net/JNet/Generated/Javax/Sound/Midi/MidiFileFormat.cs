@@ -126,35 +126,35 @@ namespace Javax.Sound.Midi
         /// </summary>
         public int ByteLength
         {
-            get { return IExecuteWithSignature<int>("getByteLength", "()I"); }
+            get { return IExecute<int>("getByteLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#getDivisionType()"/> 
         /// </summary>
         public float DivisionType
         {
-            get { return IExecuteWithSignature<float>("getDivisionType", "()F"); }
+            get { return IExecute<float>("getDivisionType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#getMicrosecondLength()"/> 
         /// </summary>
         public long MicrosecondLength
         {
-            get { return IExecuteWithSignature<long>("getMicrosecondLength", "()J"); }
+            get { return IExecute<long>("getMicrosecondLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#getResolution()"/> 
         /// </summary>
         public int Resolution
         {
-            get { return IExecuteWithSignature<int>("getResolution", "()I"); }
+            get { return IExecute<int>("getResolution"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            get { return IExecute<int>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#getProperty(java.lang.String)"/>
@@ -163,7 +163,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="object"/></returns>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#properties()"/>
@@ -171,7 +171,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Java.Lang.String, object> Properties()
         {
-            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, object>>("properties", "()Ljava/util/Map;");
+            return IExecute<Java.Util.Map<Java.Lang.String, object>>("properties");
         }
 
         #endregion

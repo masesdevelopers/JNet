@@ -135,35 +135,35 @@ namespace Org.W3c.Dom
         /// </summary>
         public int ChildElementCount
         {
-            get { return IExecuteWithSignature<int>("getChildElementCount", "()I"); }
+            get { return IExecute<int>("getChildElementCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getFirstElementChild()"/> 
         /// </summary>
         public Org.W3c.Dom.Element FirstElementChild
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Element>("getFirstElementChild", "()Lorg/w3c/dom/Element;"); }
+            get { return IExecute<Org.W3c.Dom.Element>("getFirstElementChild"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getLastElementChild()"/> 
         /// </summary>
         public Org.W3c.Dom.Element LastElementChild
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Element>("getLastElementChild", "()Lorg/w3c/dom/Element;"); }
+            get { return IExecute<Org.W3c.Dom.Element>("getLastElementChild"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getNextElementSibling()"/> 
         /// </summary>
         public Org.W3c.Dom.Element NextElementSibling
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Element>("getNextElementSibling", "()Lorg/w3c/dom/Element;"); }
+            get { return IExecute<Org.W3c.Dom.Element>("getNextElementSibling"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getPreviousElementSibling()"/> 
         /// </summary>
         public Org.W3c.Dom.Element PreviousElementSibling
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Element>("getPreviousElementSibling", "()Lorg/w3c/dom/Element;"); }
+            get { return IExecute<Org.W3c.Dom.Element>("getPreviousElementSibling"); }
         }
 
         #endregion

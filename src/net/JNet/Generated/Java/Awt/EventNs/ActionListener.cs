@@ -204,7 +204,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
         public override void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
         {
-            IExecuteWithSignature("actionPerformed", "(Ljava/awt/event/ActionEvent;)V", arg0);
+            IExecute("actionPerformed", arg0);
         }
 
         #endregion

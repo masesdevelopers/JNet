@@ -101,7 +101,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
         public static Java.Sql.Timestamp ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Sql.Timestamp>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/Timestamp;", arg0);
+            return SExecute<Java.Sql.Timestamp>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#valueOf(java.time.LocalDateTime)"/>
@@ -110,7 +110,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
         public static Java.Sql.Timestamp ValueOf(Java.Time.LocalDateTime arg0)
         {
-            return SExecuteWithSignature<Java.Sql.Timestamp>(LocalBridgeClazz, "valueOf", "(Ljava/time/LocalDateTime;)Ljava/sql/Timestamp;", arg0);
+            return SExecute<Java.Sql.Timestamp>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion
@@ -121,7 +121,7 @@ namespace Java.Sql
         /// </summary>
         public int Nanos
         {
-            get { return IExecuteWithSignature<int>("getNanos", "()I"); } set { IExecuteWithSignature("setNanos", "(I)V", value); }
+            get { return IExecute<int>("getNanos"); } set { IExecute("setNanos", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#after(java.sql.Timestamp)"/>
@@ -130,7 +130,7 @@ namespace Java.Sql
         /// <returns><see cref="bool"/></returns>
         public bool After(Java.Sql.Timestamp arg0)
         {
-            return IExecuteWithSignature<bool>("after", "(Ljava/sql/Timestamp;)Z", arg0);
+            return IExecute<bool>("after", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#before(java.sql.Timestamp)"/>
@@ -139,7 +139,7 @@ namespace Java.Sql
         /// <returns><see cref="bool"/></returns>
         public bool Before(Java.Sql.Timestamp arg0)
         {
-            return IExecuteWithSignature<bool>("before", "(Ljava/sql/Timestamp;)Z", arg0);
+            return IExecute<bool>("before", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#compareTo(java.sql.Timestamp)"/>
@@ -148,7 +148,7 @@ namespace Java.Sql
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Sql.Timestamp arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/sql/Timestamp;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#toLocalDateTime()"/>
@@ -156,7 +156,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
         public Java.Time.LocalDateTime ToLocalDateTime()
         {
-            return IExecuteWithSignature<Java.Time.LocalDateTime>("toLocalDateTime", "()Ljava/time/LocalDateTime;");
+            return IExecute<Java.Time.LocalDateTime>("toLocalDateTime");
         }
 
         #endregion

@@ -94,7 +94,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ExecutableElement> ConstructorsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ExecutableElement>>(LocalBridgeClazz, "constructorsIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ExecutableElement>>(LocalBridgeClazz, "constructorsIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#methodsIn(java.lang.Iterable)"/>
@@ -104,7 +104,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ExecutableElement> MethodsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ExecutableElement>>(LocalBridgeClazz, "methodsIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ExecutableElement>>(LocalBridgeClazz, "methodsIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#modulesIn(java.lang.Iterable)"/>
@@ -114,7 +114,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement> ModulesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ModuleElement>>(LocalBridgeClazz, "modulesIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement>>(LocalBridgeClazz, "modulesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#exportsIn(java.lang.Iterable)"/>
@@ -124,7 +124,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ExportsDirective> ExportsIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive : Javax.Lang.Model.Element.ModuleElement.Directive
         {
-            return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ExportsDirective>>(LocalBridgeClazz, "exportsIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ExportsDirective>>(LocalBridgeClazz, "exportsIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#opensIn(java.lang.Iterable)"/>
@@ -134,7 +134,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.OpensDirective> OpensIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive : Javax.Lang.Model.Element.ModuleElement.Directive
         {
-            return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.OpensDirective>>(LocalBridgeClazz, "opensIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.OpensDirective>>(LocalBridgeClazz, "opensIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#providesIn(java.lang.Iterable)"/>
@@ -144,7 +144,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ProvidesDirective> ProvidesIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive : Javax.Lang.Model.Element.ModuleElement.Directive
         {
-            return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ProvidesDirective>>(LocalBridgeClazz, "providesIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.ProvidesDirective>>(LocalBridgeClazz, "providesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#requiresIn(java.lang.Iterable)"/>
@@ -154,7 +154,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.RequiresDirective> RequiresIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive : Javax.Lang.Model.Element.ModuleElement.Directive
         {
-            return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.RequiresDirective>>(LocalBridgeClazz, "requiresIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.RequiresDirective>>(LocalBridgeClazz, "requiresIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#usesIn(java.lang.Iterable)"/>
@@ -164,7 +164,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.ModuleElement.UsesDirective> UsesIn<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive> arg0) where Arg0ExtendsJavax_Lang_Model_Element_ModuleElement_Directive : Javax.Lang.Model.Element.ModuleElement.Directive
         {
-            return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.UsesDirective>>(LocalBridgeClazz, "usesIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.ModuleElement.UsesDirective>>(LocalBridgeClazz, "usesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#packagesIn(java.lang.Iterable)"/>
@@ -174,7 +174,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.PackageElement> PackagesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.PackageElement>>(LocalBridgeClazz, "packagesIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.PackageElement>>(LocalBridgeClazz, "packagesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#typesIn(java.lang.Iterable)"/>
@@ -184,7 +184,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.TypeElement> TypesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.TypeElement>>(LocalBridgeClazz, "typesIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.TypeElement>>(LocalBridgeClazz, "typesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#fieldsIn(java.lang.Iterable)"/>
@@ -194,7 +194,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Javax.Lang.Model.Element.VariableElement> FieldsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return SExecuteWithSignature<Java.Util.List<Javax.Lang.Model.Element.VariableElement>>(LocalBridgeClazz, "fieldsIn", "(Ljava/lang/Iterable;)Ljava/util/List;", arg0);
+            return SExecute<Java.Util.List<Javax.Lang.Model.Element.VariableElement>>(LocalBridgeClazz, "fieldsIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#constructorsIn(java.util.Set)"/>
@@ -204,7 +204,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement> ConstructorsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return SExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement>>(LocalBridgeClazz, "constructorsIn", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
+            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement>>(LocalBridgeClazz, "constructorsIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#methodsIn(java.util.Set)"/>
@@ -214,7 +214,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement> MethodsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return SExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement>>(LocalBridgeClazz, "methodsIn", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
+            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.ExecutableElement>>(LocalBridgeClazz, "methodsIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#modulesIn(java.util.Set)"/>
@@ -224,7 +224,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.ModuleElement> ModulesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return SExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.ModuleElement>>(LocalBridgeClazz, "modulesIn", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
+            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.ModuleElement>>(LocalBridgeClazz, "modulesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#packagesIn(java.util.Set)"/>
@@ -234,7 +234,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.PackageElement> PackagesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return SExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.PackageElement>>(LocalBridgeClazz, "packagesIn", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
+            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.PackageElement>>(LocalBridgeClazz, "packagesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#typesIn(java.util.Set)"/>
@@ -244,7 +244,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.TypeElement> TypesIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return SExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.TypeElement>>(LocalBridgeClazz, "typesIn", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
+            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.TypeElement>>(LocalBridgeClazz, "typesIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#fieldsIn(java.util.Set)"/>
@@ -254,7 +254,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<Javax.Lang.Model.Element.VariableElement> FieldsIn<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return SExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.VariableElement>>(LocalBridgeClazz, "fieldsIn", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
+            return SExecute<Java.Util.Set<Javax.Lang.Model.Element.VariableElement>>(LocalBridgeClazz, "fieldsIn", arg0);
         }
 
         #endregion

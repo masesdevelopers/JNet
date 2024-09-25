@@ -123,14 +123,14 @@ namespace Javax.Xml.Crypto
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/URIReference.html#getURI()"/> 
         /// </summary>
         public Java.Lang.String URI
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getURI", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getURI"); }
         }
 
         #endregion

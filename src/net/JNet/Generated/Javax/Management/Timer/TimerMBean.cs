@@ -255,21 +255,21 @@ namespace Javax.Management.Timer
         /// </summary>
         public Java.Util.Vector<Java.Lang.Integer> AllNotificationIDs
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<Java.Lang.Integer>>("getAllNotificationIDs", "()Ljava/util/Vector;"); }
+            get { return IExecute<Java.Util.Vector<Java.Lang.Integer>>("getAllNotificationIDs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNbNotifications()"/> 
         /// </summary>
         public int NbNotifications
         {
-            get { return IExecuteWithSignature<int>("getNbNotifications", "()I"); }
+            get { return IExecute<int>("getNbNotifications"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getSendPastNotifications()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#setSendPastNotifications(boolean)"/>
         /// </summary>
         public bool SendPastNotifications
         {
-            get { return IExecuteWithSignature<bool>("getSendPastNotifications", "()Z"); } set { IExecuteWithSignature("setSendPastNotifications", "(Z)V", value); }
+            get { return IExecute<bool>("getSendPastNotifications"); } set { IExecute("setSendPastNotifications", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#isActive()"/>
@@ -277,7 +277,7 @@ namespace Javax.Management.Timer
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
-            return IExecuteWithSignature<bool>("isActive", "()Z");
+            return IExecute<bool>("isActive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#isEmpty()"/>
@@ -285,7 +285,7 @@ namespace Javax.Management.Timer
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getFixedRate(java.lang.Integer)"/>
@@ -294,7 +294,7 @@ namespace Javax.Management.Timer
         /// <returns><see cref="Java.Lang.Boolean"/></returns>
         public Java.Lang.Boolean GetFixedRate(Java.Lang.Integer arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Boolean>("getFixedRate", "(Ljava/lang/Integer;)Ljava/lang/Boolean;", arg0);
+            return IExecute<Java.Lang.Boolean>("getFixedRate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long,boolean)"/>
@@ -361,7 +361,7 @@ namespace Javax.Management.Timer
         /// <returns><see cref="Java.Lang.Long"/></returns>
         public Java.Lang.Long GetNbOccurences(Java.Lang.Integer arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Long>("getNbOccurences", "(Ljava/lang/Integer;)Ljava/lang/Long;", arg0);
+            return IExecute<Java.Lang.Long>("getNbOccurences", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getPeriod(java.lang.Integer)"/>
@@ -370,7 +370,7 @@ namespace Javax.Management.Timer
         /// <returns><see cref="Java.Lang.Long"/></returns>
         public Java.Lang.Long GetPeriod(Java.Lang.Integer arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Long>("getPeriod", "(Ljava/lang/Integer;)Ljava/lang/Long;", arg0);
+            return IExecute<Java.Lang.Long>("getPeriod", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationUserData(java.lang.Integer)"/>
@@ -379,7 +379,7 @@ namespace Javax.Management.Timer
         /// <returns><see cref="object"/></returns>
         public object GetNotificationUserData(Java.Lang.Integer arg0)
         {
-            return IExecuteWithSignature("getNotificationUserData", "(Ljava/lang/Integer;)Ljava/lang/Object;", arg0);
+            return IExecute("getNotificationUserData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationMessage(java.lang.Integer)"/>
@@ -388,7 +388,7 @@ namespace Javax.Management.Timer
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetNotificationMessage(Java.Lang.Integer arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getNotificationMessage", "(Ljava/lang/Integer;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getNotificationMessage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationType(java.lang.Integer)"/>
@@ -397,7 +397,7 @@ namespace Javax.Management.Timer
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetNotificationType(Java.Lang.Integer arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getNotificationType", "(Ljava/lang/Integer;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getNotificationType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getDate(java.lang.Integer)"/>
@@ -406,7 +406,7 @@ namespace Javax.Management.Timer
         /// <returns><see cref="Java.Util.Date"/></returns>
         public Java.Util.Date GetDate(Java.Lang.Integer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Date>("getDate", "(Ljava/lang/Integer;)Ljava/util/Date;", arg0);
+            return IExecute<Java.Util.Date>("getDate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNotificationIDs(java.lang.String)"/>
@@ -415,14 +415,14 @@ namespace Javax.Management.Timer
         /// <returns><see cref="Java.Util.Vector"/></returns>
         public Java.Util.Vector<Java.Lang.Integer> GetNotificationIDs(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Vector<Java.Lang.Integer>>("getNotificationIDs", "(Ljava/lang/String;)Ljava/util/Vector;", arg0);
+            return IExecute<Java.Util.Vector<Java.Lang.Integer>>("getNotificationIDs", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#removeAllNotifications()"/>
         /// </summary>
         public void RemoveAllNotifications()
         {
-            IExecuteWithSignature("removeAllNotifications", "()V");
+            IExecute("removeAllNotifications");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#removeNotification(java.lang.Integer)"/>
@@ -431,7 +431,7 @@ namespace Javax.Management.Timer
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void RemoveNotification(Java.Lang.Integer arg0)
         {
-            IExecuteWithSignature("removeNotification", "(Ljava/lang/Integer;)V", arg0);
+            IExecute("removeNotification", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#removeNotifications(java.lang.String)"/>
@@ -440,21 +440,21 @@ namespace Javax.Management.Timer
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void RemoveNotifications(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("removeNotifications", "(Ljava/lang/String;)V", arg0);
+            IExecute("removeNotifications", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#start()"/>
         /// </summary>
         public void Start()
         {
-            IExecuteWithSignature("start", "()V");
+            IExecute("start");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#stop()"/>
         /// </summary>
         public void Stop()
         {
-            IExecuteWithSignature("stop", "()V");
+            IExecute("stop");
         }
 
         #endregion

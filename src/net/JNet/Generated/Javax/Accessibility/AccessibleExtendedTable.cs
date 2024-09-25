@@ -136,7 +136,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="int"/></returns>
         public int GetAccessibleColumn(int arg0)
         {
-            return IExecuteWithSignature<int>("getAccessibleColumn", "(I)I", arg0);
+            return IExecute<int>("getAccessibleColumn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedTable.html#getAccessibleIndex(int,int)"/>
@@ -155,7 +155,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="int"/></returns>
         public int GetAccessibleRow(int arg0)
         {
-            return IExecuteWithSignature<int>("getAccessibleRow", "(I)I", arg0);
+            return IExecute<int>("getAccessibleRow", arg0);
         }
 
         #endregion

@@ -123,28 +123,28 @@ namespace Javax.Management
         /// </summary>
         public object Implementation
         {
-            get { return IExecuteWithSignature("getImplementation", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setImplementation", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getImplementation"); } set { IExecute("setImplementation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getImplementationClass()"/> 
         /// </summary>
         public Java.Lang.Class ImplementationClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getImplementationClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getImplementationClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getMBeanInfo()"/> 
         /// </summary>
         public Javax.Management.MBeanInfo MBeanInfo
         {
-            get { return IExecuteWithSignature<Javax.Management.MBeanInfo>("getMBeanInfo", "()Ljavax/management/MBeanInfo;"); }
+            get { return IExecute<Javax.Management.MBeanInfo>("getMBeanInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getMBeanInterface()"/> 
         /// </summary>
         public Java.Lang.Class MBeanInterface
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getMBeanInterface", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getMBeanInterface"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getAttribute(java.lang.String)"/>
@@ -156,7 +156,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ReflectionException"/>
         public object GetAttribute(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#invoke(java.lang.String,java.lang.Object[],java.lang.String[])"/>
@@ -178,7 +178,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.AttributeList"/></returns>
         public Javax.Management.AttributeList GetAttributes(Java.Lang.String[] arg0)
         {
-            return IExecuteWithSignature<Javax.Management.AttributeList>("getAttributes", "([Ljava/lang/String;)Ljavax/management/AttributeList;", new object[] { arg0 });
+            return IExecute<Javax.Management.AttributeList>("getAttributes", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#setAttributes(javax.management.AttributeList)"/>
@@ -187,7 +187,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.AttributeList"/></returns>
         public Javax.Management.AttributeList SetAttributes(Javax.Management.AttributeList arg0)
         {
-            return IExecuteWithSignature<Javax.Management.AttributeList>("setAttributes", "(Ljavax/management/AttributeList;)Ljavax/management/AttributeList;", arg0);
+            return IExecute<Javax.Management.AttributeList>("setAttributes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
@@ -205,7 +205,7 @@ namespace Javax.Management
         /// </summary>
         public void PostDeregister()
         {
-            IExecuteWithSignature("postDeregister", "()V");
+            IExecute("postDeregister");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#postRegister(java.lang.Boolean)"/>
@@ -213,7 +213,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
         public void PostRegister(Java.Lang.Boolean arg0)
         {
-            IExecuteWithSignature("postRegister", "(Ljava/lang/Boolean;)V", arg0);
+            IExecute("postRegister", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#preDeregister()"/>
@@ -221,7 +221,7 @@ namespace Javax.Management
         /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
-            IExecuteWithSignature("preDeregister", "()V");
+            IExecute("preDeregister");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#setAttribute(javax.management.Attribute)"/>
@@ -233,7 +233,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ReflectionException"/>
         public void SetAttribute(Javax.Management.Attribute arg0)
         {
-            IExecuteWithSignature("setAttribute", "(Ljavax/management/Attribute;)V", arg0);
+            IExecute("setAttribute", arg0);
         }
 
         #endregion

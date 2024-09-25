@@ -160,7 +160,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<T> LookupProviders<T>(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Util.Iterator<T>>(LocalBridgeClazz, "lookupProviders", "(Ljava/lang/Class;)Ljava/util/Iterator;", arg0);
+            return SExecute<Java.Util.Iterator<T>>(LocalBridgeClazz, "lookupProviders", arg0);
         }
 
         #endregion
@@ -171,7 +171,7 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public Java.Util.Iterator<Java.Lang.Class> Categories
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.Class>>("getCategories", "()Ljava/util/Iterator;"); }
+            get { return IExecute<Java.Util.Iterator<Java.Lang.Class>>("getCategories"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#deregisterServiceProvider(java.lang.Object,java.lang.Class)"/>
@@ -250,7 +250,7 @@ namespace Javax.Imageio.Spi
         /// <returns><typeparamref name="T"/></returns>
         public T GetServiceProviderByClass<T>(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<T>("getServiceProviderByClass", "(Ljava/lang/Class;)Ljava/lang/Object;", arg0);
+            return IExecute<T>("getServiceProviderByClass", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#contains(java.lang.Object)"/>
@@ -259,14 +259,14 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#deregisterAll()"/>
         /// </summary>
         public void DeregisterAll()
         {
-            IExecuteWithSignature("deregisterAll", "()V");
+            IExecute("deregisterAll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#deregisterAll(java.lang.Class)"/>
@@ -274,7 +274,7 @@ namespace Javax.Imageio.Spi
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         public void DeregisterAll(Java.Lang.Class arg0)
         {
-            IExecuteWithSignature("deregisterAll", "(Ljava/lang/Class;)V", arg0);
+            IExecute("deregisterAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#deregisterServiceProvider(java.lang.Object)"/>
@@ -282,7 +282,7 @@ namespace Javax.Imageio.Spi
         /// <param name="arg0"><see cref="object"/></param>
         public void DeregisterServiceProvider(object arg0)
         {
-            IExecuteWithSignature("deregisterServiceProvider", "(Ljava/lang/Object;)V", arg0);
+            IExecute("deregisterServiceProvider", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#registerServiceProvider(java.lang.Object)"/>
@@ -290,7 +290,7 @@ namespace Javax.Imageio.Spi
         /// <param name="arg0"><see cref="object"/></param>
         public void RegisterServiceProvider(object arg0)
         {
-            IExecuteWithSignature("registerServiceProvider", "(Ljava/lang/Object;)V", arg0);
+            IExecute("registerServiceProvider", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#registerServiceProviders(java.util.Iterator)"/>
@@ -298,7 +298,7 @@ namespace Javax.Imageio.Spi
         /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
         public void RegisterServiceProviders(Java.Util.Iterator<object> arg0)
         {
-            IExecuteWithSignature("registerServiceProviders", "(Ljava/util/Iterator;)V", arg0);
+            IExecute("registerServiceProviders", arg0);
         }
 
         #endregion

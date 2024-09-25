@@ -167,49 +167,49 @@ namespace Javax.Management.Relation
         /// </summary>
         public Java.Util.List<Javax.Management.ObjectName> MBeansToUnregister
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Management.ObjectName>>("getMBeansToUnregister", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getMBeansToUnregister"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getNewRoleValue()"/> 
         /// </summary>
         public Java.Util.List<Javax.Management.ObjectName> NewRoleValue
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Management.ObjectName>>("getNewRoleValue", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getNewRoleValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getObjectName()"/> 
         /// </summary>
         public Javax.Management.ObjectName ObjectName
         {
-            get { return IExecuteWithSignature<Javax.Management.ObjectName>("getObjectName", "()Ljavax/management/ObjectName;"); }
+            get { return IExecute<Javax.Management.ObjectName>("getObjectName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getOldRoleValue()"/> 
         /// </summary>
         public Java.Util.List<Javax.Management.ObjectName> OldRoleValue
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Management.ObjectName>>("getOldRoleValue", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Javax.Management.ObjectName>>("getOldRoleValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRelationId()"/> 
         /// </summary>
         public Java.Lang.String RelationId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRelationId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getRelationId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRelationTypeName()"/> 
         /// </summary>
         public Java.Lang.String RelationTypeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRelationTypeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getRelationTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRoleName()"/> 
         /// </summary>
         public Java.Lang.String RoleName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRoleName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getRoleName"); }
         }
 
         #endregion

@@ -204,7 +204,7 @@ namespace Java.Awt.Datatransfer
         /// <param name="arg0"><see cref="Java.Awt.Datatransfer.FlavorEvent"/></param>
         public override void FlavorsChanged(Java.Awt.Datatransfer.FlavorEvent arg0)
         {
-            IExecuteWithSignature("flavorsChanged", "(Ljava/awt/datatransfer/FlavorEvent;)V", arg0);
+            IExecute("flavorsChanged", arg0);
         }
 
         #endregion

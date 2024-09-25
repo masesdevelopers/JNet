@@ -154,7 +154,7 @@ namespace Javax.Xml.Stream
         /// </summary>
         public Java.Lang.String ElementText
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getElementText", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getElementText"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#hasNext()"/>
@@ -162,7 +162,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="bool"/></returns>
         public bool HasNext()
         {
-            return IExecuteWithSignature<bool>("hasNext", "()Z");
+            return IExecute<bool>("hasNext");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#getProperty(java.lang.String)"/>
@@ -172,7 +172,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#nextEvent()"/>
@@ -181,7 +181,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.Events.XMLEvent NextEvent()
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.XMLEvent>("nextEvent", "()Ljavax/xml/stream/events/XMLEvent;");
+            return IExecute<Javax.Xml.Stream.Events.XMLEvent>("nextEvent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#nextTag()"/>
@@ -190,7 +190,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.Events.XMLEvent NextTag()
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.XMLEvent>("nextTag", "()Ljavax/xml/stream/events/XMLEvent;");
+            return IExecute<Javax.Xml.Stream.Events.XMLEvent>("nextTag");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#peek()"/>
@@ -199,7 +199,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.Events.XMLEvent Peek()
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.XMLEvent>("peek", "()Ljavax/xml/stream/events/XMLEvent;");
+            return IExecute<Javax.Xml.Stream.Events.XMLEvent>("peek");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#close()"/>
@@ -207,7 +207,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
 
         #endregion

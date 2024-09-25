@@ -119,7 +119,7 @@ namespace Org.W3c.Dom.Views
         /// </summary>
         public Org.W3c.Dom.Views.AbstractView DefaultView
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Views.AbstractView>("getDefaultView", "()Lorg/w3c/dom/views/AbstractView;"); }
+            get { return IExecute<Org.W3c.Dom.Views.AbstractView>("getDefaultView"); }
         }
 
         #endregion

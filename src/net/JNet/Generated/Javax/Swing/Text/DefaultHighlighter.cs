@@ -146,7 +146,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public bool DrawsLayeredHighlights
         {
-            get { return IExecuteWithSignature<bool>("getDrawsLayeredHighlights", "()Z"); } set { IExecuteWithSignature("setDrawsLayeredHighlights", "(Z)V", value); }
+            get { return IExecute<bool>("getDrawsLayeredHighlights"); } set { IExecute("setDrawsLayeredHighlights", value); }
         }
 
         #endregion

@@ -204,7 +204,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
         public override void HierarchyChanged(Java.Awt.EventNs.HierarchyEvent arg0)
         {
-            IExecuteWithSignature("hierarchyChanged", "(Ljava/awt/event/HierarchyEvent;)V", arg0);
+            IExecute("hierarchyChanged", arg0);
         }
 
         #endregion

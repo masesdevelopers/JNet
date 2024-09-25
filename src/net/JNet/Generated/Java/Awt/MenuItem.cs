@@ -118,28 +118,28 @@ namespace Java.Awt
         /// </summary>
         public Java.Lang.String ActionCommand
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getActionCommand", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setActionCommand", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getActionCommand"); } set { IExecute("setActionCommand", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#getActionListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ActionListener[] ActionListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ActionListener>("getActionListeners", "()[Ljava/awt/event/ActionListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.ActionListener>("getActionListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#setLabel(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Label
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLabel", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getLabel"); } set { IExecute("setLabel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#getShortcut()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#setShortcut(java.awt.MenuShortcut)"/>
         /// </summary>
         public Java.Awt.MenuShortcut Shortcut
         {
-            get { return IExecuteWithSignature<Java.Awt.MenuShortcut>("getShortcut", "()Ljava/awt/MenuShortcut;"); } set { IExecuteWithSignature("setShortcut", "(Ljava/awt/MenuShortcut;)V", value); }
+            get { return IExecute<Java.Awt.MenuShortcut>("getShortcut"); } set { IExecute("setShortcut", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#getListeners(java.lang.Class)"/>
@@ -157,7 +157,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsEnabled()
         {
-            return IExecuteWithSignature<bool>("isEnabled", "()Z");
+            return IExecute<bool>("isEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#paramString()"/>
@@ -165,7 +165,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ParamString()
         {
-            return IExecuteWithSignature<Java.Lang.String>("paramString", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("paramString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#addActionListener(java.awt.event.ActionListener)"/>
@@ -173,7 +173,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
+            IExecute("addActionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#removeActionListener(java.awt.event.ActionListener)"/>
@@ -181,7 +181,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
+            IExecute("removeActionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#setEnabled(boolean)"/>
@@ -189,21 +189,21 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetEnabled(bool arg0)
         {
-            IExecuteWithSignature("setEnabled", "(Z)V", arg0);
+            IExecute("setEnabled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#addNotify()"/>
         /// </summary>
         public void AddNotify()
         {
-            IExecuteWithSignature("addNotify", "()V");
+            IExecute("addNotify");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#deleteShortcut()"/>
         /// </summary>
         public void DeleteShortcut()
         {
-            IExecuteWithSignature("deleteShortcut", "()V");
+            IExecute("deleteShortcut");
         }
 
         #endregion

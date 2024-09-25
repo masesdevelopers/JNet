@@ -165,35 +165,35 @@ namespace Org.W3c.Dom.Events
         /// </summary>
         public short AttrChange
         {
-            get { return IExecuteWithSignature<short>("getAttrChange", "()S"); }
+            get { return IExecute<short>("getAttrChange"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#getAttrName()"/> 
         /// </summary>
         public Java.Lang.String AttrName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAttrName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAttrName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#getNewValue()"/> 
         /// </summary>
         public Java.Lang.String NewValue
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNewValue", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getNewValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#getPrevValue()"/> 
         /// </summary>
         public Java.Lang.String PrevValue
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrevValue", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPrevValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#getRelatedNode()"/> 
         /// </summary>
         public Org.W3c.Dom.Node RelatedNode
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getRelatedNode", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getRelatedNode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#initMutationEvent(java.lang.String,boolean,boolean,org.w3c.dom.Node,java.lang.String,java.lang.String,java.lang.String,short)"/>

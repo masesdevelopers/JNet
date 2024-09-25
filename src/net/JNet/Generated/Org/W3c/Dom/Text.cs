@@ -138,7 +138,7 @@ namespace Org.W3c.Dom
         /// </summary>
         public Java.Lang.String WholeText
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWholeText", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getWholeText"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#isElementContentWhitespace()"/>
@@ -146,7 +146,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="bool"/></returns>
         public bool IsElementContentWhitespace()
         {
-            return IExecuteWithSignature<bool>("isElementContentWhitespace", "()Z");
+            return IExecute<bool>("isElementContentWhitespace");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#replaceWholeText(java.lang.String)"/>
@@ -156,7 +156,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Text ReplaceWholeText(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Text>("replaceWholeText", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", arg0);
+            return IExecute<Org.W3c.Dom.Text>("replaceWholeText", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#splitText(int)"/>
@@ -166,7 +166,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Text SplitText(int arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Text>("splitText", "(I)Lorg/w3c/dom/Text;", arg0);
+            return IExecute<Org.W3c.Dom.Text>("splitText", arg0);
         }
 
         #endregion

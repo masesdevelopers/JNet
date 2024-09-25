@@ -150,7 +150,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Lang.Invoke.MethodHandle ArrayConstructor(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "arrayConstructor", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
+            return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "arrayConstructor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#arrayElementGetter(java.lang.Class)"/>
@@ -160,7 +160,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Lang.Invoke.MethodHandle ArrayElementGetter(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "arrayElementGetter", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
+            return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "arrayElementGetter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#arrayElementSetter(java.lang.Class)"/>
@@ -170,7 +170,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Lang.Invoke.MethodHandle ArrayElementSetter(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "arrayElementSetter", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
+            return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "arrayElementSetter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#arrayLength(java.lang.Class)"/>
@@ -180,7 +180,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Lang.Invoke.MethodHandle ArrayLength(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "arrayLength", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
+            return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "arrayLength", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#catchException(java.lang.invoke.MethodHandle,java.lang.Class,java.lang.invoke.MethodHandle)"/>
@@ -289,7 +289,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle Empty(Java.Lang.Invoke.MethodType arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "empty", "(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;", arg0);
+            return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "empty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#exactInvoker(java.lang.invoke.MethodType)"/>
@@ -298,7 +298,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle ExactInvoker(Java.Lang.Invoke.MethodType arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "exactInvoker", "(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;", arg0);
+            return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "exactInvoker", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#explicitCastArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType)"/>
@@ -370,7 +370,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle Identity(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "identity", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
+            return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "identity", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertArguments(java.lang.invoke.MethodHandle,int,java.lang.Object[])"/>
@@ -390,7 +390,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle Invoker(Java.Lang.Invoke.MethodType arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "invoker", "(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;", arg0);
+            return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "invoker", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#iteratedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
@@ -410,7 +410,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle Loop(params Java.Lang.Invoke.MethodHandle[][] arg0)
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "loop", "([[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;"); else return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "loop", "([[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "loop"); else return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "loop", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType,int[])"/>
@@ -491,7 +491,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle Zero(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "zero", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
+            return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "zero", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#lookup()"/>
@@ -499,7 +499,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
         public static Java.Lang.Invoke.MethodHandles.Lookup LookupMethod()
         {
-            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandles.Lookup>(LocalBridgeClazz, "lookup", "()Ljava/lang/invoke/MethodHandles$Lookup;");
+            return SExecute<Java.Lang.Invoke.MethodHandles.Lookup>(LocalBridgeClazz, "lookup");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#privateLookupIn(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)"/>
@@ -518,7 +518,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
         public static Java.Lang.Invoke.MethodHandles.Lookup PublicLookup()
         {
-            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandles.Lookup>(LocalBridgeClazz, "publicLookup", "()Ljava/lang/invoke/MethodHandles$Lookup;");
+            return SExecute<Java.Lang.Invoke.MethodHandles.Lookup>(LocalBridgeClazz, "publicLookup");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#arrayElementVarHandle(java.lang.Class)"/>
@@ -528,7 +528,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Lang.Invoke.VarHandle ArrayElementVarHandle(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Invoke.VarHandle>(LocalBridgeClazz, "arrayElementVarHandle", "(Ljava/lang/Class;)Ljava/lang/invoke/VarHandle;", arg0);
+            return SExecute<Java.Lang.Invoke.VarHandle>(LocalBridgeClazz, "arrayElementVarHandle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#byteArrayViewVarHandle(java.lang.Class,java.nio.ByteOrder)"/>

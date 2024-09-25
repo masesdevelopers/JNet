@@ -97,14 +97,14 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public int NumComponents
         {
-            get { return IExecuteWithSignature<int>("getNumComponents", "()I"); }
+            get { return IExecute<int>("getNumComponents"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/LookupTable.html#getOffset()"/> 
         /// </summary>
         public int Offset
         {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
+            get { return IExecute<int>("getOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/LookupTable.html#lookupPixel(int[],int[])"/>

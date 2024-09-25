@@ -132,35 +132,35 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.Container ContentPane
         {
-            get { return IExecuteWithSignature<Java.Awt.Container>("getContentPane", "()Ljava/awt/Container;"); } set { IExecuteWithSignature("setContentPane", "(Ljava/awt/Container;)V", value); }
+            get { return IExecute<Java.Awt.Container>("getContentPane"); } set { IExecute("setContentPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getGlassPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#setGlassPane(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component GlassPane
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getGlassPane", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setGlassPane", "(Ljava/awt/Component;)V", value); }
+            get { return IExecute<Java.Awt.Component>("getGlassPane"); } set { IExecute("setGlassPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getLayeredPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#setLayeredPane(javax.swing.JLayeredPane)"/>
         /// </summary>
         public Javax.Swing.JLayeredPane LayeredPane
         {
-            get { return IExecuteWithSignature<Javax.Swing.JLayeredPane>("getLayeredPane", "()Ljavax/swing/JLayeredPane;"); } set { IExecuteWithSignature("setLayeredPane", "(Ljavax/swing/JLayeredPane;)V", value); }
+            get { return IExecute<Javax.Swing.JLayeredPane>("getLayeredPane"); } set { IExecute("setLayeredPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getRootPane()"/> 
         /// </summary>
         public Javax.Swing.JRootPane RootPane
         {
-            get { return IExecuteWithSignature<Javax.Swing.JRootPane>("getRootPane", "()Ljavax/swing/JRootPane;"); }
+            get { return IExecute<Javax.Swing.JRootPane>("getRootPane"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getTransferHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#setTransferHandler(javax.swing.TransferHandler)"/>
         /// </summary>
         public Javax.Swing.TransferHandler TransferHandler
         {
-            get { return IExecuteWithSignature<Javax.Swing.TransferHandler>("getTransferHandler", "()Ljavax/swing/TransferHandler;"); } set { IExecuteWithSignature("setTransferHandler", "(Ljavax/swing/TransferHandler;)V", value); }
+            get { return IExecute<Javax.Swing.TransferHandler>("getTransferHandler"); } set { IExecute("setTransferHandler", value); }
         }
 
         #endregion

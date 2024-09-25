@@ -204,7 +204,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaMessage"/></param>
         public override void Meta(Javax.Sound.Midi.MetaMessage arg0)
         {
-            IExecuteWithSignature("meta", "(Ljavax/sound/midi/MetaMessage;)V", arg0);
+            IExecute("meta", arg0);
         }
 
         #endregion

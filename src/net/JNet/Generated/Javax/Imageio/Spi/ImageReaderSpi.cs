@@ -122,14 +122,14 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public Java.Lang.String[] ImageWriterSpiNames
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getImageWriterSpiNames", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getImageWriterSpiNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#getInputTypes()"/> 
         /// </summary>
         public Java.Lang.Class[] InputTypes
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Class>("getInputTypes", "()[Ljava/lang/Class;"); }
+            get { return IExecuteArray<Java.Lang.Class>("getInputTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#canDecodeInput(java.lang.Object)"/>
@@ -139,7 +139,7 @@ namespace Javax.Imageio.Spi
         /// <exception cref="Java.Io.IOException"/>
         public bool CanDecodeInput(object arg0)
         {
-            return IExecuteWithSignature<bool>("canDecodeInput", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("canDecodeInput", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#createReaderInstance(java.lang.Object)"/>
@@ -149,7 +149,7 @@ namespace Javax.Imageio.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageReader CreateReaderInstance(object arg0)
         {
-            return IExecuteWithSignature<Javax.Imageio.ImageReader>("createReaderInstance", "(Ljava/lang/Object;)Ljavax/imageio/ImageReader;", arg0);
+            return IExecute<Javax.Imageio.ImageReader>("createReaderInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#isOwnReader(javax.imageio.ImageReader)"/>
@@ -158,7 +158,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsOwnReader(Javax.Imageio.ImageReader arg0)
         {
-            return IExecuteWithSignature<bool>("isOwnReader", "(Ljavax/imageio/ImageReader;)Z", arg0);
+            return IExecute<bool>("isOwnReader", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#createReaderInstance()"/>
@@ -167,7 +167,7 @@ namespace Javax.Imageio.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageReader CreateReaderInstance()
         {
-            return IExecuteWithSignature<Javax.Imageio.ImageReader>("createReaderInstance", "()Ljavax/imageio/ImageReader;");
+            return IExecute<Javax.Imageio.ImageReader>("createReaderInstance");
         }
 
         #endregion

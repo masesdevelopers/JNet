@@ -203,7 +203,7 @@ namespace Java.Util.Function
         /// </summary>
         public int AsInt
         {
-            get { return IExecuteWithSignature<int>("getAsInt", "()I"); }
+            get { return IExecute<int>("getAsInt"); }
         }
 
         #endregion

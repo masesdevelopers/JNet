@@ -124,35 +124,35 @@ namespace Java.Security.Cert
         /// </summary>
         public Javax.Security.Auth.X500.X500Principal CA
         {
-            get { return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getCA", "()Ljavax/security/auth/x500/X500Principal;"); }
+            get { return IExecute<Javax.Security.Auth.X500.X500Principal>("getCA"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/TrustAnchor.html#getCAName()"/> 
         /// </summary>
         public Java.Lang.String CAName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCAName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCAName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/TrustAnchor.html#getCAPublicKey()"/> 
         /// </summary>
         public Java.Security.PublicKey CAPublicKey
         {
-            get { return IExecuteWithSignature<Java.Security.PublicKey>("getCAPublicKey", "()Ljava/security/PublicKey;"); }
+            get { return IExecute<Java.Security.PublicKey>("getCAPublicKey"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/TrustAnchor.html#getNameConstraints()"/> 
         /// </summary>
         public byte[] NameConstraints
         {
-            get { return IExecuteWithSignatureArray<byte>("getNameConstraints", "()[B"); }
+            get { return IExecuteArray<byte>("getNameConstraints"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/TrustAnchor.html#getTrustedCert()"/> 
         /// </summary>
         public Java.Security.Cert.X509Certificate TrustedCert
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getTrustedCert", "()Ljava/security/cert/X509Certificate;"); }
+            get { return IExecute<Java.Security.Cert.X509Certificate>("getTrustedCert"); }
         }
 
         #endregion

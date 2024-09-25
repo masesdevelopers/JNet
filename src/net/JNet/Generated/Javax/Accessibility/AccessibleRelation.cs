@@ -256,14 +256,14 @@ namespace Javax.Accessibility
         /// </summary>
         public Java.Lang.String Key
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getKey"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#getTarget()"/> 
         /// </summary>
         public object[] Target
         {
-            get { return IExecuteWithSignatureArray<object>("getTarget", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getTarget"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#setTarget(java.lang.Object)"/>
@@ -271,7 +271,7 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="object"/></param>
         public void SetTarget(object arg0)
         {
-            IExecuteWithSignature("setTarget", "(Ljava/lang/Object;)V", arg0);
+            IExecute("setTarget", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelation.html#setTarget(java.lang.Object[])"/>
@@ -279,7 +279,7 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="object"/></param>
         public void SetTarget(object[] arg0)
         {
-            IExecuteWithSignature("setTarget", "([Ljava/lang/Object;)V", new object[] { arg0 });
+            IExecute("setTarget", new object[] { arg0 });
         }
 
         #endregion

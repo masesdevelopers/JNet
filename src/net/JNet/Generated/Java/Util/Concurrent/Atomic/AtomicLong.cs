@@ -103,35 +103,35 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         public long Acquire
         {
-            get { return IExecuteWithSignature<long>("getAcquire", "()J"); }
+            get { return IExecute<long>("getAcquire"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndDecrement()"/> 
         /// </summary>
         public long AndDecrement
         {
-            get { return IExecuteWithSignature<long>("getAndDecrement", "()J"); }
+            get { return IExecute<long>("getAndDecrement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndIncrement()"/> 
         /// </summary>
         public long AndIncrement
         {
-            get { return IExecuteWithSignature<long>("getAndIncrement", "()J"); }
+            get { return IExecute<long>("getAndIncrement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#getOpaque()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#setOpaque(long)"/>
         /// </summary>
         public long Opaque
         {
-            get { return IExecuteWithSignature<long>("getOpaque", "()J"); } set { IExecuteWithSignature("setOpaque", "(J)V", value); }
+            get { return IExecute<long>("getOpaque"); } set { IExecute("setOpaque", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#getPlain()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#setPlain(long)"/>
         /// </summary>
         public long Plain
         {
-            get { return IExecuteWithSignature<long>("getPlain", "()J"); } set { IExecuteWithSignature("setPlain", "(J)V", value); }
+            get { return IExecute<long>("getPlain"); } set { IExecute("setPlain", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#compareAndSet(long,long)"/>
@@ -200,7 +200,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long AddAndGet(long arg0)
         {
-            return IExecuteWithSignature<long>("addAndGet", "(J)J", arg0);
+            return IExecute<long>("addAndGet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#compareAndExchange(long,long)"/>
@@ -238,7 +238,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long DecrementAndGet()
         {
-            return IExecuteWithSignature<long>("decrementAndGet", "()J");
+            return IExecute<long>("decrementAndGet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#get()"/>
@@ -246,7 +246,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long Get()
         {
-            return IExecuteWithSignature<long>("get", "()J");
+            return IExecute<long>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndAccumulate(long,java.util.function.LongBinaryOperator)"/>
@@ -265,7 +265,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long GetAndAdd(long arg0)
         {
-            return IExecuteWithSignature<long>("getAndAdd", "(J)J", arg0);
+            return IExecute<long>("getAndAdd", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndSet(long)"/>
@@ -274,7 +274,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long GetAndSet(long arg0)
         {
-            return IExecuteWithSignature<long>("getAndSet", "(J)J", arg0);
+            return IExecute<long>("getAndSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndUpdate(java.util.function.LongUnaryOperator)"/>
@@ -283,7 +283,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long GetAndUpdate(Java.Util.Function.LongUnaryOperator arg0)
         {
-            return IExecuteWithSignature<long>("getAndUpdate", "(Ljava/util/function/LongUnaryOperator;)J", arg0);
+            return IExecute<long>("getAndUpdate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#incrementAndGet()"/>
@@ -291,7 +291,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long IncrementAndGet()
         {
-            return IExecuteWithSignature<long>("incrementAndGet", "()J");
+            return IExecute<long>("incrementAndGet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#updateAndGet(java.util.function.LongUnaryOperator)"/>
@@ -300,7 +300,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long UpdateAndGet(Java.Util.Function.LongUnaryOperator arg0)
         {
-            return IExecuteWithSignature<long>("updateAndGet", "(Ljava/util/function/LongUnaryOperator;)J", arg0);
+            return IExecute<long>("updateAndGet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#lazySet(long)"/>
@@ -308,7 +308,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="long"/></param>
         public void LazySet(long arg0)
         {
-            IExecuteWithSignature("lazySet", "(J)V", arg0);
+            IExecute("lazySet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#set(long)"/>
@@ -316,7 +316,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="long"/></param>
         public void Set(long arg0)
         {
-            IExecuteWithSignature("set", "(J)V", arg0);
+            IExecute("set", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#setRelease(long)"/>
@@ -324,7 +324,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="long"/></param>
         public void SetRelease(long arg0)
         {
-            IExecuteWithSignature("setRelease", "(J)V", arg0);
+            IExecute("setRelease", arg0);
         }
 
         #endregion

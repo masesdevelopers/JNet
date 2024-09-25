@@ -267,91 +267,91 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
-            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "()Ljava/awt/Rectangle;"); }
+            get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getDataBuffer()"/> 
         /// </summary>
         public Java.Awt.ImageNs.DataBuffer DataBuffer
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.DataBuffer>("getDataBuffer", "()Ljava/awt/image/DataBuffer;"); }
+            get { return IExecute<Java.Awt.ImageNs.DataBuffer>("getDataBuffer"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+            get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getMinX()"/> 
         /// </summary>
         public int MinX
         {
-            get { return IExecuteWithSignature<int>("getMinX", "()I"); }
+            get { return IExecute<int>("getMinX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getMinY()"/> 
         /// </summary>
         public int MinY
         {
-            get { return IExecuteWithSignature<int>("getMinY", "()I"); }
+            get { return IExecute<int>("getMinY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getNumBands()"/> 
         /// </summary>
         public int NumBands
         {
-            get { return IExecuteWithSignature<int>("getNumBands", "()I"); }
+            get { return IExecute<int>("getNumBands"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getNumDataElements()"/> 
         /// </summary>
         public int NumDataElements
         {
-            get { return IExecuteWithSignature<int>("getNumDataElements", "()I"); }
+            get { return IExecute<int>("getNumDataElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getParent()"/> 
         /// </summary>
         public Java.Awt.ImageNs.Raster Parent
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("getParent", "()Ljava/awt/image/Raster;"); }
+            get { return IExecute<Java.Awt.ImageNs.Raster>("getParent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getSampleModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.SampleModel SampleModel
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.SampleModel>("getSampleModel", "()Ljava/awt/image/SampleModel;"); }
+            get { return IExecute<Java.Awt.ImageNs.SampleModel>("getSampleModel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getSampleModelTranslateX()"/> 
         /// </summary>
         public int SampleModelTranslateX
         {
-            get { return IExecuteWithSignature<int>("getSampleModelTranslateX", "()I"); }
+            get { return IExecute<int>("getSampleModelTranslateX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getSampleModelTranslateY()"/> 
         /// </summary>
         public int SampleModelTranslateY
         {
-            get { return IExecuteWithSignature<int>("getSampleModelTranslateY", "()I"); }
+            get { return IExecute<int>("getSampleModelTranslateY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getTransferType()"/> 
         /// </summary>
         public int TransferType
         {
-            get { return IExecuteWithSignature<int>("getTransferType", "()I"); }
+            get { return IExecute<int>("getTransferType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getSampleDouble(int,int,int)"/>
@@ -531,7 +531,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleWritableRaster()
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("createCompatibleWritableRaster", "()Ljava/awt/image/WritableRaster;");
+            return IExecute<Java.Awt.ImageNs.WritableRaster>("createCompatibleWritableRaster");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createCompatibleWritableRaster(int,int,int,int)"/>
@@ -562,7 +562,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleWritableRaster(Java.Awt.Rectangle arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("createCompatibleWritableRaster", "(Ljava/awt/Rectangle;)Ljava/awt/image/WritableRaster;", arg0);
+            return IExecute<Java.Awt.ImageNs.WritableRaster>("createCompatibleWritableRaster", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getDataElements(int,int,int,int,java.lang.Object)"/>

@@ -95,21 +95,21 @@ namespace Java.Net
         /// </summary>
         public Java.Net.InetAddress Address
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;"); }
+            get { return IExecute<Java.Net.InetAddress>("getAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InterfaceAddress.html#getBroadcast()"/> 
         /// </summary>
         public Java.Net.InetAddress Broadcast
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getBroadcast", "()Ljava/net/InetAddress;"); }
+            get { return IExecute<Java.Net.InetAddress>("getBroadcast"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InterfaceAddress.html#getNetworkPrefixLength()"/> 
         /// </summary>
         public short NetworkPrefixLength
         {
-            get { return IExecuteWithSignature<short>("getNetworkPrefixLength", "()S"); }
+            get { return IExecute<short>("getNetworkPrefixLength"); }
         }
 
         #endregion

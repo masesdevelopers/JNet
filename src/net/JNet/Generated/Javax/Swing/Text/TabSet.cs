@@ -103,7 +103,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public int TabCount
         {
-            get { return IExecuteWithSignature<int>("getTabCount", "()I"); }
+            get { return IExecute<int>("getTabCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabIndex(javax.swing.text.TabStop)"/>
@@ -112,7 +112,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int GetTabIndex(Javax.Swing.Text.TabStop arg0)
         {
-            return IExecuteWithSignature<int>("getTabIndex", "(Ljavax/swing/text/TabStop;)I", arg0);
+            return IExecute<int>("getTabIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabIndexAfter(float)"/>
@@ -121,7 +121,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int GetTabIndexAfter(float arg0)
         {
-            return IExecuteWithSignature<int>("getTabIndexAfter", "(F)I", arg0);
+            return IExecute<int>("getTabIndexAfter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTab(int)"/>
@@ -130,7 +130,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.TabStop"/></returns>
         public Javax.Swing.Text.TabStop GetTab(int arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.TabStop>("getTab", "(I)Ljavax/swing/text/TabStop;", arg0);
+            return IExecute<Javax.Swing.Text.TabStop>("getTab", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabAfter(float)"/>
@@ -139,7 +139,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.TabStop"/></returns>
         public Javax.Swing.Text.TabStop GetTabAfter(float arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.TabStop>("getTabAfter", "(F)Ljavax/swing/text/TabStop;", arg0);
+            return IExecute<Javax.Swing.Text.TabStop>("getTabAfter", arg0);
         }
 
         #endregion

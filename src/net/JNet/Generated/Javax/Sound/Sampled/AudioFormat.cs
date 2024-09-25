@@ -181,42 +181,42 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public int Channels
         {
-            get { return IExecuteWithSignature<int>("getChannels", "()I"); }
+            get { return IExecute<int>("getChannels"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getFrameRate()"/> 
         /// </summary>
         public float FrameRate
         {
-            get { return IExecuteWithSignature<float>("getFrameRate", "()F"); }
+            get { return IExecute<float>("getFrameRate"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getFrameSize()"/> 
         /// </summary>
         public int FrameSize
         {
-            get { return IExecuteWithSignature<int>("getFrameSize", "()I"); }
+            get { return IExecute<int>("getFrameSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getEncoding()"/> 
         /// </summary>
         public Javax.Sound.Sampled.AudioFormat.Encoding GetEncoding
         {
-            get { return IExecuteWithSignature<Javax.Sound.Sampled.AudioFormat.Encoding>("getEncoding", "()Ljavax/sound/sampled/AudioFormat$Encoding;"); }
+            get { return IExecute<Javax.Sound.Sampled.AudioFormat.Encoding>("getEncoding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getSampleRate()"/> 
         /// </summary>
         public float SampleRate
         {
-            get { return IExecuteWithSignature<float>("getSampleRate", "()F"); }
+            get { return IExecute<float>("getSampleRate"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getSampleSizeInBits()"/> 
         /// </summary>
         public int SampleSizeInBits
         {
-            get { return IExecuteWithSignature<int>("getSampleSizeInBits", "()I"); }
+            get { return IExecute<int>("getSampleSizeInBits"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#isBigEndian()"/>
@@ -224,7 +224,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="bool"/></returns>
         public bool IsBigEndian()
         {
-            return IExecuteWithSignature<bool>("isBigEndian", "()Z");
+            return IExecute<bool>("isBigEndian");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#matches(javax.sound.sampled.AudioFormat)"/>
@@ -233,7 +233,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="bool"/></returns>
         public bool Matches(Javax.Sound.Sampled.AudioFormat arg0)
         {
-            return IExecuteWithSignature<bool>("matches", "(Ljavax/sound/sampled/AudioFormat;)Z", arg0);
+            return IExecute<bool>("matches", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getProperty(java.lang.String)"/>
@@ -242,7 +242,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="object"/></returns>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#properties()"/>
@@ -250,7 +250,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Java.Lang.String, object> Properties()
         {
-            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, object>>("properties", "()Ljava/util/Map;");
+            return IExecute<Java.Util.Map<Java.Lang.String, object>>("properties");
         }
 
         #endregion

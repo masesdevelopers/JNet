@@ -124,21 +124,21 @@ namespace Javax.Swing.Event
         /// </summary>
         public int Index0
         {
-            get { return IExecuteWithSignature<int>("getIndex0", "()I"); }
+            get { return IExecute<int>("getIndex0"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#getIndex1()"/> 
         /// </summary>
         public int Index1
         {
-            get { return IExecuteWithSignature<int>("getIndex1", "()I"); }
+            get { return IExecute<int>("getIndex1"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            get { return IExecute<int>("getType"); }
         }
 
         #endregion

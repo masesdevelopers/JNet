@@ -131,7 +131,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool IsIs()
         {
-            return IExecuteWithSignature<bool>("isIs", "()Z");
+            return IExecute<bool>("isIs");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable()"/>
@@ -139,7 +139,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool IsReadable()
         {
-            return IExecuteWithSignature<bool>("isReadable", "()Z");
+            return IExecute<bool>("isReadable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable()"/>
@@ -147,7 +147,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool IsWritable()
         {
-            return IExecuteWithSignature<bool>("isWritable", "()Z");
+            return IExecute<bool>("isWritable");
         }
 
         #endregion

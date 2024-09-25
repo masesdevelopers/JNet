@@ -143,7 +143,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="int"/></returns>
         public static int GetMaskForButton(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaskForButton", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "getMaskForButton", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#getModifiersExText(int)"/>
@@ -152,7 +152,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetModifiersExText(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getModifiersExText", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getModifiersExText", arg0);
         }
 
         #endregion
@@ -163,14 +163,14 @@ namespace Java.Awt.EventNs
         /// </summary>
         public int ModifiersEx
         {
-            get { return IExecuteWithSignature<int>("getModifiersEx", "()I"); }
+            get { return IExecute<int>("getModifiersEx"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#getWhen()"/> 
         /// </summary>
         public long When
         {
-            get { return IExecuteWithSignature<long>("getWhen", "()J"); }
+            get { return IExecute<long>("getWhen"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isAltDown()"/>
@@ -178,7 +178,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="bool"/></returns>
         public bool IsAltDown()
         {
-            return IExecuteWithSignature<bool>("isAltDown", "()Z");
+            return IExecute<bool>("isAltDown");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isAltGraphDown()"/>
@@ -186,7 +186,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="bool"/></returns>
         public bool IsAltGraphDown()
         {
-            return IExecuteWithSignature<bool>("isAltGraphDown", "()Z");
+            return IExecute<bool>("isAltGraphDown");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isConsumed()"/>
@@ -194,7 +194,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="bool"/></returns>
         public bool IsConsumed()
         {
-            return IExecuteWithSignature<bool>("isConsumed", "()Z");
+            return IExecute<bool>("isConsumed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isControlDown()"/>
@@ -202,7 +202,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="bool"/></returns>
         public bool IsControlDown()
         {
-            return IExecuteWithSignature<bool>("isControlDown", "()Z");
+            return IExecute<bool>("isControlDown");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isMetaDown()"/>
@@ -210,7 +210,7 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="bool"/></returns>
         public bool IsMetaDown()
         {
-            return IExecuteWithSignature<bool>("isMetaDown", "()Z");
+            return IExecute<bool>("isMetaDown");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isShiftDown()"/>
@@ -218,14 +218,14 @@ namespace Java.Awt.EventNs
         /// <returns><see cref="bool"/></returns>
         public bool IsShiftDown()
         {
-            return IExecuteWithSignature<bool>("isShiftDown", "()Z");
+            return IExecute<bool>("isShiftDown");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#consume()"/>
         /// </summary>
         public void Consume()
         {
-            IExecuteWithSignature("consume", "()V");
+            IExecute("consume");
         }
 
         #endregion

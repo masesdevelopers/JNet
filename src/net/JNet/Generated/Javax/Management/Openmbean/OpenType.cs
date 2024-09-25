@@ -151,21 +151,21 @@ namespace Javax.Management.Openmbean
         /// </summary>
         public Java.Lang.String ClassName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getDescription()"/> 
         /// </summary>
         public Java.Lang.String Description
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDescription"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getTypeName()"/> 
         /// </summary>
         public Java.Lang.String TypeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isValue(java.lang.Object)"/>
@@ -174,7 +174,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool IsValue(object arg0)
         {
-            return IExecuteWithSignature<bool>("isValue", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("isValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isArray()"/>
@@ -182,7 +182,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool IsArray()
         {
-            return IExecuteWithSignature<bool>("isArray", "()Z");
+            return IExecute<bool>("isArray");
         }
 
         #endregion
@@ -230,21 +230,21 @@ namespace Javax.Management.Openmbean
         /// </summary>
         public Java.Lang.String ClassName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getDescription()"/> 
         /// </summary>
         public Java.Lang.String Description
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDescription"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getTypeName()"/> 
         /// </summary>
         public Java.Lang.String TypeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isValue(java.lang.Object)"/>
@@ -253,7 +253,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool IsValue(object arg0)
         {
-            return IExecuteWithSignature<bool>("isValue", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("isValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isArray()"/>
@@ -261,7 +261,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool IsArray()
         {
-            return IExecuteWithSignature<bool>("isArray", "()Z");
+            return IExecute<bool>("isArray");
         }
 
         #endregion

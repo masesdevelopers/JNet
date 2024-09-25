@@ -229,119 +229,119 @@ namespace Javax.Accessibility
         /// </summary>
         public Javax.Accessibility.AccessibleAction AccessibleAction
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleAction>("getAccessibleAction", "()Ljavax/accessibility/AccessibleAction;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleAction>("getAccessibleAction"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleChildrenCount()"/> 
         /// </summary>
         public int AccessibleChildrenCount
         {
-            get { return IExecuteWithSignature<int>("getAccessibleChildrenCount", "()I"); }
+            get { return IExecute<int>("getAccessibleChildrenCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleComponent()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleComponent AccessibleComponent
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleComponent>("getAccessibleComponent", "()Ljavax/accessibility/AccessibleComponent;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleComponent>("getAccessibleComponent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleDescription()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#setAccessibleDescription(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String AccessibleDescription
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAccessibleDescription", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAccessibleDescription", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAccessibleDescription"); } set { IExecute("setAccessibleDescription", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleEditableText()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleEditableText AccessibleEditableText
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleEditableText>("getAccessibleEditableText", "()Ljavax/accessibility/AccessibleEditableText;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleEditableText>("getAccessibleEditableText"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleIcon()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleIcon[] AccessibleIcon
         {
-            get { return IExecuteWithSignatureArray<Javax.Accessibility.AccessibleIcon>("getAccessibleIcon", "()[Ljavax/accessibility/AccessibleIcon;"); }
+            get { return IExecuteArray<Javax.Accessibility.AccessibleIcon>("getAccessibleIcon"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleIndexInParent()"/> 
         /// </summary>
         public int AccessibleIndexInParent
         {
-            get { return IExecuteWithSignature<int>("getAccessibleIndexInParent", "()I"); }
+            get { return IExecute<int>("getAccessibleIndexInParent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#setAccessibleName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String AccessibleName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAccessibleName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAccessibleName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAccessibleName"); } set { IExecute("setAccessibleName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#setAccessibleParent(javax.accessibility.Accessible)"/>
         /// </summary>
         public Javax.Accessibility.Accessible AccessibleParent
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.Accessible>("getAccessibleParent", "()Ljavax/accessibility/Accessible;"); } set { IExecuteWithSignature("setAccessibleParent", "(Ljavax/accessibility/Accessible;)V", value); }
+            get { return IExecute<Javax.Accessibility.Accessible>("getAccessibleParent"); } set { IExecute("setAccessibleParent", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleRelationSet()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleRelationSet AccessibleRelationSet
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleRelationSet>("getAccessibleRelationSet", "()Ljavax/accessibility/AccessibleRelationSet;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleRelationSet>("getAccessibleRelationSet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleRole()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleRole AccessibleRole
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleRole>("getAccessibleRole", "()Ljavax/accessibility/AccessibleRole;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleRole>("getAccessibleRole"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleSelection()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleSelection AccessibleSelection
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleSelection>("getAccessibleSelection", "()Ljavax/accessibility/AccessibleSelection;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleSelection>("getAccessibleSelection"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleStateSet()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleStateSet AccessibleStateSet
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleStateSet>("getAccessibleStateSet", "()Ljavax/accessibility/AccessibleStateSet;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleStateSet>("getAccessibleStateSet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleTable()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleTable AccessibleTable
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleTable>("getAccessibleTable", "()Ljavax/accessibility/AccessibleTable;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleTable>("getAccessibleTable"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleText()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleText AccessibleText
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleText>("getAccessibleText", "()Ljavax/accessibility/AccessibleText;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleText>("getAccessibleText"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleValue()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleValue AccessibleValue
         {
-            get { return IExecuteWithSignature<Javax.Accessibility.AccessibleValue>("getAccessibleValue", "()Ljavax/accessibility/AccessibleValue;"); }
+            get { return IExecute<Javax.Accessibility.AccessibleValue>("getAccessibleValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getLocale()"/> 
         /// </summary>
         public Java.Util.Locale Locale
         {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
+            get { return IExecute<Java.Util.Locale>("getLocale"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#getAccessibleChild(int)"/>
@@ -350,7 +350,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
         public Javax.Accessibility.Accessible GetAccessibleChild(int arg0)
         {
-            return IExecuteWithSignature<Javax.Accessibility.Accessible>("getAccessibleChild", "(I)Ljavax/accessibility/Accessible;", arg0);
+            return IExecute<Javax.Accessibility.Accessible>("getAccessibleChild", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -358,7 +358,7 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("addPropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
@@ -376,7 +376,7 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("removePropertyChangeListener", arg0);
         }
 
         #endregion

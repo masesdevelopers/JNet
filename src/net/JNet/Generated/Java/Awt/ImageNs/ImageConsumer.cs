@@ -220,7 +220,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         public void ImageComplete(int arg0)
         {
-            IExecuteWithSignature("imageComplete", "(I)V", arg0);
+            IExecute("imageComplete", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#setColorModel(java.awt.image.ColorModel)"/>
@@ -228,7 +228,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
         public void SetColorModel(Java.Awt.ImageNs.ColorModel arg0)
         {
-            IExecuteWithSignature("setColorModel", "(Ljava/awt/image/ColorModel;)V", arg0);
+            IExecute("setColorModel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#setDimensions(int,int)"/>
@@ -245,7 +245,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         public void SetHints(int arg0)
         {
-            IExecuteWithSignature("setHints", "(I)V", arg0);
+            IExecute("setHints", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#setPixels(int,int,int,int,java.awt.image.ColorModel,byte[],int,int)"/>
@@ -283,7 +283,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
         public void SetProperties(Java.Util.Hashtable<object, object> arg0)
         {
-            IExecuteWithSignature("setProperties", "(Ljava/util/Hashtable;)V", arg0);
+            IExecute("setProperties", arg0);
         }
 
         #endregion

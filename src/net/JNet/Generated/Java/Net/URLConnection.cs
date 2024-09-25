@@ -93,14 +93,14 @@ namespace Java.Net
         /// </summary>
         public static bool DefaultAllowUserInteraction
         {
-            get { return SExecuteWithSignature<bool>(LocalBridgeClazz, "getDefaultAllowUserInteraction", "()Z"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefaultAllowUserInteraction", "(Z)V", value); }
+            get { return SExecute<bool>(LocalBridgeClazz, "getDefaultAllowUserInteraction"); } set { SExecute(LocalBridgeClazz, "setDefaultAllowUserInteraction", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getFileNameMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setFileNameMap(java.net.FileNameMap)"/>
         /// </summary>
         public static Java.Net.FileNameMap FileNameMap
         {
-            get { return SExecuteWithSignature<Java.Net.FileNameMap>(LocalBridgeClazz, "getFileNameMap", "()Ljava/net/FileNameMap;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setFileNameMap", "(Ljava/net/FileNameMap;)V", value); }
+            get { return SExecute<Java.Net.FileNameMap>(LocalBridgeClazz, "getFileNameMap"); } set { SExecute(LocalBridgeClazz, "setFileNameMap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDefaultUseCaches(java.lang.String)"/>
@@ -109,7 +109,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public static bool GetDefaultUseCaches(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "getDefaultUseCaches", "(Ljava/lang/String;)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "getDefaultUseCaches", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#guessContentTypeFromName(java.lang.String)"/>
@@ -118,7 +118,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GuessContentTypeFromName(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "guessContentTypeFromName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "guessContentTypeFromName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#guessContentTypeFromStream(java.io.InputStream)"/>
@@ -128,7 +128,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Lang.String GuessContentTypeFromStream(Java.Io.InputStream arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "guessContentTypeFromStream", "(Ljava/io/InputStream;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "guessContentTypeFromStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setContentHandlerFactory(java.net.ContentHandlerFactory)"/>
@@ -136,7 +136,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="Java.Net.ContentHandlerFactory"/></param>
         public static void SetContentHandlerFactory(Java.Net.ContentHandlerFactory arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setContentHandlerFactory", "(Ljava/net/ContentHandlerFactory;)V", arg0);
+            SExecute(LocalBridgeClazz, "setContentHandlerFactory", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDefaultUseCaches(java.lang.String,boolean)"/>
@@ -156,154 +156,154 @@ namespace Java.Net
         /// </summary>
         public bool AllowUserInteraction
         {
-            get { return IExecuteWithSignature<bool>("getAllowUserInteraction", "()Z"); } set { IExecuteWithSignature("setAllowUserInteraction", "(Z)V", value); }
+            get { return IExecute<bool>("getAllowUserInteraction"); } set { IExecute("setAllowUserInteraction", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getConnectTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setConnectTimeout(int)"/>
         /// </summary>
         public int ConnectTimeout
         {
-            get { return IExecuteWithSignature<int>("getConnectTimeout", "()I"); } set { IExecuteWithSignature("setConnectTimeout", "(I)V", value); }
+            get { return IExecute<int>("getConnectTimeout"); } set { IExecute("setConnectTimeout", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContent()"/> 
         /// </summary>
         public object Content
         {
-            get { return IExecuteWithSignature("getContent", "()Ljava/lang/Object;"); }
+            get { return IExecute("getContent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentEncoding()"/> 
         /// </summary>
         public Java.Lang.String ContentEncoding
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getContentEncoding", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getContentEncoding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentLength()"/> 
         /// </summary>
         public int ContentLength
         {
-            get { return IExecuteWithSignature<int>("getContentLength", "()I"); }
+            get { return IExecute<int>("getContentLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentLengthLong()"/> 
         /// </summary>
         public long ContentLengthLong
         {
-            get { return IExecuteWithSignature<long>("getContentLengthLong", "()J"); }
+            get { return IExecute<long>("getContentLengthLong"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentType()"/> 
         /// </summary>
         public Java.Lang.String ContentType
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getContentType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getContentType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDate()"/> 
         /// </summary>
         public long Date
         {
-            get { return IExecuteWithSignature<long>("getDate", "()J"); }
+            get { return IExecute<long>("getDate"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDefaultUseCaches()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDefaultUseCaches(boolean)"/>
         /// </summary>
         public bool DefaultUseCaches
         {
-            get { return IExecuteWithSignature<bool>("getDefaultUseCaches", "()Z"); } set { IExecuteWithSignature("setDefaultUseCaches", "(Z)V", value); }
+            get { return IExecute<bool>("getDefaultUseCaches"); } set { IExecute("setDefaultUseCaches", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDoInput()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDoInput(boolean)"/>
         /// </summary>
         public bool DoInput
         {
-            get { return IExecuteWithSignature<bool>("getDoInput", "()Z"); } set { IExecuteWithSignature("setDoInput", "(Z)V", value); }
+            get { return IExecute<bool>("getDoInput"); } set { IExecute("setDoInput", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDoOutput()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDoOutput(boolean)"/>
         /// </summary>
         public bool DoOutput
         {
-            get { return IExecuteWithSignature<bool>("getDoOutput", "()Z"); } set { IExecuteWithSignature("setDoOutput", "(Z)V", value); }
+            get { return IExecute<bool>("getDoOutput"); } set { IExecute("setDoOutput", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getExpiration()"/> 
         /// </summary>
         public long Expiration
         {
-            get { return IExecuteWithSignature<long>("getExpiration", "()J"); }
+            get { return IExecute<long>("getExpiration"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFields()"/> 
         /// </summary>
         public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> HeaderFields
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getHeaderFields", "()Ljava/util/Map;"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getHeaderFields"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getIfModifiedSince()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setIfModifiedSince(long)"/>
         /// </summary>
         public long IfModifiedSince
         {
-            get { return IExecuteWithSignature<long>("getIfModifiedSince", "()J"); } set { IExecuteWithSignature("setIfModifiedSince", "(J)V", value); }
+            get { return IExecute<long>("getIfModifiedSince"); } set { IExecute("setIfModifiedSince", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getInputStream()"/> 
         /// </summary>
         public Java.Io.InputStream InputStream
         {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;"); }
+            get { return IExecute<Java.Io.InputStream>("getInputStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getLastModified()"/> 
         /// </summary>
         public long LastModified
         {
-            get { return IExecuteWithSignature<long>("getLastModified", "()J"); }
+            get { return IExecute<long>("getLastModified"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getOutputStream()"/> 
         /// </summary>
         public Java.Io.OutputStream OutputStream
         {
-            get { return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;"); }
+            get { return IExecute<Java.Io.OutputStream>("getOutputStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getPermission()"/> 
         /// </summary>
         public Java.Security.Permission Permission
         {
-            get { return IExecuteWithSignature<Java.Security.Permission>("getPermission", "()Ljava/security/Permission;"); }
+            get { return IExecute<Java.Security.Permission>("getPermission"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getReadTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setReadTimeout(int)"/>
         /// </summary>
         public int ReadTimeout
         {
-            get { return IExecuteWithSignature<int>("getReadTimeout", "()I"); } set { IExecuteWithSignature("setReadTimeout", "(I)V", value); }
+            get { return IExecute<int>("getReadTimeout"); } set { IExecute("setReadTimeout", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getRequestProperties()"/> 
         /// </summary>
         public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> RequestProperties
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getRequestProperties", "()Ljava/util/Map;"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getRequestProperties"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getURL()"/> 
         /// </summary>
         public Java.Net.URL URL
         {
-            get { return IExecuteWithSignature<Java.Net.URL>("getURL", "()Ljava/net/URL;"); }
+            get { return IExecute<Java.Net.URL>("getURL"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getUseCaches()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setUseCaches(boolean)"/>
         /// </summary>
         public bool UseCaches
         {
-            get { return IExecuteWithSignature<bool>("getUseCaches", "()Z"); } set { IExecuteWithSignature("setUseCaches", "(Z)V", value); }
+            get { return IExecute<bool>("getUseCaches"); } set { IExecute("setUseCaches", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#connect()"/>
@@ -311,7 +311,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Connect()
         {
-            IExecuteWithSignature("connect", "()V");
+            IExecute("connect");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldInt(java.lang.String,int)"/>
@@ -331,7 +331,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public object GetContent(Java.Lang.Class[] arg0)
         {
-            return IExecuteWithSignature("getContent", "([Ljava/lang/Class;)Ljava/lang/Object;", new object[] { arg0 });
+            return IExecute("getContent", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderField(int)"/>
@@ -340,7 +340,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetHeaderField(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getHeaderField", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getHeaderField", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderField(java.lang.String)"/>
@@ -349,7 +349,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetHeaderField(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getHeaderField", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getHeaderField", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldKey(int)"/>
@@ -358,7 +358,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetHeaderFieldKey(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getHeaderFieldKey", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getHeaderFieldKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getRequestProperty(java.lang.String)"/>
@@ -367,7 +367,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetRequestProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getRequestProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getRequestProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldDate(java.lang.String,long)"/>

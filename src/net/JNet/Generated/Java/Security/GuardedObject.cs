@@ -104,7 +104,7 @@ namespace Java.Security
         /// </summary>
         public object Object
         {
-            get { return IExecuteWithSignature("getObject", "()Ljava/lang/Object;"); }
+            get { return IExecute("getObject"); }
         }
 
         #endregion

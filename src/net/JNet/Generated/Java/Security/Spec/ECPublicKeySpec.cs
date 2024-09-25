@@ -104,14 +104,14 @@ namespace Java.Security.Spec
         /// </summary>
         public Java.Security.Spec.ECParameterSpec Params
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.ECParameterSpec>("getParams", "()Ljava/security/spec/ECParameterSpec;"); }
+            get { return IExecute<Java.Security.Spec.ECParameterSpec>("getParams"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPublicKeySpec.html#getW()"/> 
         /// </summary>
         public Java.Security.Spec.ECPoint W
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.ECPoint>("getW", "()Ljava/security/spec/ECPoint;"); }
+            get { return IExecute<Java.Security.Spec.ECPoint>("getW"); }
         }
 
         #endregion

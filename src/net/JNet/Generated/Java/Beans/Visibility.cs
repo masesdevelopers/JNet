@@ -134,7 +134,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool AvoidingGui()
         {
-            return IExecuteWithSignature<bool>("avoidingGui", "()Z");
+            return IExecute<bool>("avoidingGui");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#needsGui()"/>
@@ -142,21 +142,21 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool NeedsGui()
         {
-            return IExecuteWithSignature<bool>("needsGui", "()Z");
+            return IExecute<bool>("needsGui");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#dontUseGui()"/>
         /// </summary>
         public void DontUseGui()
         {
-            IExecuteWithSignature("dontUseGui", "()V");
+            IExecute("dontUseGui");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#okToUseGui()"/>
         /// </summary>
         public void OkToUseGui()
         {
-            IExecuteWithSignature("okToUseGui", "()V");
+            IExecute("okToUseGui");
         }
 
         #endregion

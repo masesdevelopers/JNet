@@ -95,7 +95,7 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public Java.Lang.String PropertyPrefix
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPropertyPrefix", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPropertyPrefix"); }
         }
 
         #endregion

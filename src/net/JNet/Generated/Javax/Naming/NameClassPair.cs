@@ -114,21 +114,21 @@ namespace Javax.Naming
         /// </summary>
         public Java.Lang.String ClassName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setClassName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getClassName"); } set { IExecute("setClassName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#getNameInNamespace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setNameInNamespace(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String NameInNamespace
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNameInNamespace", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setNameInNamespace", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getNameInNamespace"); } set { IExecute("setNameInNamespace", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#isRelative()"/>
@@ -136,7 +136,7 @@ namespace Javax.Naming
         /// <returns><see cref="bool"/></returns>
         public bool IsRelative()
         {
-            return IExecuteWithSignature<bool>("isRelative", "()Z");
+            return IExecute<bool>("isRelative");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setRelative(boolean)"/>
@@ -144,7 +144,7 @@ namespace Javax.Naming
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetRelative(bool arg0)
         {
-            IExecuteWithSignature("setRelative", "(Z)V", arg0);
+            IExecute("setRelative", arg0);
         }
 
         #endregion

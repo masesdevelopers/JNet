@@ -131,7 +131,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Comments()
         {
-            return IExecuteWithSignature<Java.Lang.String>("comments", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("comments");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#date()"/>
@@ -139,7 +139,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Date()
         {
-            return IExecuteWithSignature<Java.Lang.String>("date", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("date");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#value()"/>
@@ -147,7 +147,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] Value()
         {
-            return IExecuteWithSignatureArray<Java.Lang.String>("value", "()[Ljava/lang/String;");
+            return IExecuteArray<Java.Lang.String>("value");
         }
 
         #endregion

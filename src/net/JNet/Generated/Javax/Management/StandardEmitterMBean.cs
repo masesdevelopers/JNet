@@ -120,7 +120,7 @@ namespace Javax.Management
         /// </summary>
         public Javax.Management.MBeanNotificationInfo[] NotificationInfo
         {
-            get { return IExecuteWithSignatureArray<Javax.Management.MBeanNotificationInfo>("getNotificationInfo", "()[Ljavax/management/MBeanNotificationInfo;"); }
+            get { return IExecuteArray<Javax.Management.MBeanNotificationInfo>("getNotificationInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#addNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
@@ -150,7 +150,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0)
         {
-            IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/NotificationListener;)V", arg0);
+            IExecute("removeNotificationListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#sendNotification(javax.management.Notification)"/>
@@ -158,7 +158,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
         public void SendNotification(Javax.Management.Notification arg0)
         {
-            IExecuteWithSignature("sendNotification", "(Ljavax/management/Notification;)V", arg0);
+            IExecute("sendNotification", arg0);
         }
 
         #endregion

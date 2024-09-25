@@ -124,7 +124,7 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public Java.Util.List<Java.Nio.File.Attribute.AclEntry> Acl
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Nio.File.Attribute.AclEntry>>("getAcl", "()Ljava/util/List;"); } set { IExecuteWithSignature("setAcl", "(Ljava/util/List;)V", value); }
+            get { return IExecute<Java.Util.List<Java.Nio.File.Attribute.AclEntry>>("getAcl"); } set { IExecute("setAcl", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/>
@@ -132,7 +132,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
 
         #endregion

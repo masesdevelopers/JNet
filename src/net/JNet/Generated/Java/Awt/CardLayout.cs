@@ -112,14 +112,14 @@ namespace Java.Awt
         /// </summary>
         public int Hgap
         {
-            get { return IExecuteWithSignature<int>("getHgap", "()I"); } set { IExecuteWithSignature("setHgap", "(I)V", value); }
+            get { return IExecute<int>("getHgap"); } set { IExecute("setHgap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#getVgap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#setVgap(int)"/>
         /// </summary>
         public int Vgap
         {
-            get { return IExecuteWithSignature<int>("getVgap", "()I"); } set { IExecuteWithSignature("setVgap", "(I)V", value); }
+            get { return IExecute<int>("getVgap"); } set { IExecute("setVgap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#getLayoutAlignmentX(java.awt.Container)"/>
@@ -128,7 +128,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float GetLayoutAlignmentX(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<float>("getLayoutAlignmentX", "(Ljava/awt/Container;)F", arg0);
+            return IExecute<float>("getLayoutAlignmentX", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#getLayoutAlignmentY(java.awt.Container)"/>
@@ -137,7 +137,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float GetLayoutAlignmentY(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<float>("getLayoutAlignmentY", "(Ljava/awt/Container;)F", arg0);
+            return IExecute<float>("getLayoutAlignmentY", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#maximumLayoutSize(java.awt.Container)"/>
@@ -146,7 +146,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MaximumLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("maximumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("maximumLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#minimumLayoutSize(java.awt.Container)"/>
@@ -155,7 +155,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#preferredLayoutSize(java.awt.Container)"/>
@@ -164,7 +164,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#addLayoutComponent(java.awt.Component,java.lang.Object)"/>
@@ -181,7 +181,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void First(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("first", "(Ljava/awt/Container;)V", arg0);
+            IExecute("first", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#invalidateLayout(java.awt.Container)"/>
@@ -189,7 +189,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void InvalidateLayout(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("invalidateLayout", "(Ljava/awt/Container;)V", arg0);
+            IExecute("invalidateLayout", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#last(java.awt.Container)"/>
@@ -197,7 +197,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void Last(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("last", "(Ljava/awt/Container;)V", arg0);
+            IExecute("last", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#layoutContainer(java.awt.Container)"/>
@@ -205,7 +205,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void LayoutContainer(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
+            IExecute("layoutContainer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#next(java.awt.Container)"/>
@@ -213,7 +213,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void Next(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("next", "(Ljava/awt/Container;)V", arg0);
+            IExecute("next", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#previous(java.awt.Container)"/>
@@ -221,7 +221,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void Previous(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("previous", "(Ljava/awt/Container;)V", arg0);
+            IExecute("previous", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#removeLayoutComponent(java.awt.Component)"/>
@@ -229,7 +229,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void RemoveLayoutComponent(Java.Awt.Component arg0)
         {
-            IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);
+            IExecute("removeLayoutComponent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#show(java.awt.Container,java.lang.String)"/>

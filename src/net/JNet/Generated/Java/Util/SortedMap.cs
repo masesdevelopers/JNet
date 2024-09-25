@@ -147,7 +147,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
+            return IExecute<Java.Util.Collection>("values");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/>
@@ -155,7 +155,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public Java.Util.Comparator Comparator()
         {
-            return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
+            return IExecute<Java.Util.Comparator>("comparator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/>
@@ -163,7 +163,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set EntrySet()
         {
-            return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set>("entrySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#keySet()"/>
@@ -171,7 +171,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#headMap(java.lang.Object)"/>
@@ -180,7 +180,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap HeadMap(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedMap>("headMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
+            return IExecute<Java.Util.SortedMap>("headMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#subMap(java.lang.Object,java.lang.Object)"/>
@@ -199,7 +199,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap TailMap(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedMap>("tailMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
+            return IExecute<Java.Util.SortedMap>("tailMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#firstKey()"/>
@@ -207,7 +207,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object FirstKey()
         {
-            return IExecuteWithSignature("firstKey", "()Ljava/lang/Object;");
+            return IExecute("firstKey");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#lastKey()"/>
@@ -215,7 +215,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object LastKey()
         {
-            return IExecuteWithSignature("lastKey", "()Ljava/lang/Object;");
+            return IExecute("lastKey");
         }
 
         #endregion
@@ -326,7 +326,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<V> Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection<V>>("values", "()Ljava/util/Collection;");
+            return IExecute<Java.Util.Collection<V>>("values");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/>
@@ -335,7 +335,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public Java.Util.Comparator<ReturnobjectSuperK> Comparator<ReturnobjectSuperK>() where ReturnobjectSuperK : K
         {
-            return IExecuteWithSignature<Java.Util.Comparator<ReturnobjectSuperK>>("comparator", "()Ljava/util/Comparator;");
+            return IExecute<Java.Util.Comparator<ReturnobjectSuperK>>("comparator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/>
@@ -343,7 +343,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#keySet()"/>
@@ -351,7 +351,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<K> KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<K>>("keySet", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<K>>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#headMap(java.lang.Object)"/>
@@ -360,7 +360,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap<K, V> HeadMap(K arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedMap<K, V>>("headMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
+            return IExecute<Java.Util.SortedMap<K, V>>("headMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#subMap(java.lang.Object,java.lang.Object)"/>
@@ -379,7 +379,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap<K, V> TailMap(K arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedMap<K, V>>("tailMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
+            return IExecute<Java.Util.SortedMap<K, V>>("tailMap", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#firstKey()"/>
@@ -387,7 +387,7 @@ namespace Java.Util
         /// <returns><typeparamref name="K"/></returns>
         public K FirstKey()
         {
-            return IExecuteWithSignature<K>("firstKey", "()Ljava/lang/Object;");
+            return IExecute<K>("firstKey");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#lastKey()"/>
@@ -395,7 +395,7 @@ namespace Java.Util
         /// <returns><typeparamref name="K"/></returns>
         public K LastKey()
         {
-            return IExecuteWithSignature<K>("lastKey", "()Ljava/lang/Object;");
+            return IExecute<K>("lastKey");
         }
 
         #endregion

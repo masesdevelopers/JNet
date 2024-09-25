@@ -203,154 +203,154 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Accept
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAccept", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAccept", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAccept"); } set { IExecute("setAccept", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getAccessKey()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setAccessKey(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String AccessKey
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAccessKey", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAccessKey", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAccessKey"); } set { IExecute("setAccessKey", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setAlign(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Align
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlign", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getAlt()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setAlt(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Alt
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlt", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlt", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAlt"); } set { IExecute("setAlt", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getChecked()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setChecked(boolean)"/>
         /// </summary>
         public bool Checked
         {
-            get { return IExecuteWithSignature<bool>("getChecked", "()Z"); } set { IExecuteWithSignature("setChecked", "(Z)V", value); }
+            get { return IExecute<bool>("getChecked"); } set { IExecute("setChecked", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getDefaultChecked()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setDefaultChecked(boolean)"/>
         /// </summary>
         public bool DefaultChecked
         {
-            get { return IExecuteWithSignature<bool>("getDefaultChecked", "()Z"); } set { IExecuteWithSignature("setDefaultChecked", "(Z)V", value); }
+            get { return IExecute<bool>("getDefaultChecked"); } set { IExecute("setDefaultChecked", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getDefaultValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setDefaultValue(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String DefaultValue
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDefaultValue", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDefaultValue", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getDefaultValue"); } set { IExecute("setDefaultValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getDisabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setDisabled(boolean)"/>
         /// </summary>
         public bool Disabled
         {
-            get { return IExecuteWithSignature<bool>("getDisabled", "()Z"); } set { IExecuteWithSignature("setDisabled", "(Z)V", value); }
+            get { return IExecute<bool>("getDisabled"); } set { IExecute("setDisabled", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getForm()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLFormElement Form
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLFormElement>("getForm", "()Lorg/w3c/dom/html/HTMLFormElement;"); }
+            get { return IExecute<Org.W3c.Dom.Html.HTMLFormElement>("getForm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getMaxLength()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setMaxLength(int)"/>
         /// </summary>
         public int MaxLength
         {
-            get { return IExecuteWithSignature<int>("getMaxLength", "()I"); } set { IExecuteWithSignature("setMaxLength", "(I)V", value); }
+            get { return IExecute<int>("getMaxLength"); } set { IExecute("setMaxLength", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getReadOnly()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setReadOnly(boolean)"/>
         /// </summary>
         public bool ReadOnly
         {
-            get { return IExecuteWithSignature<bool>("getReadOnly", "()Z"); } set { IExecuteWithSignature("setReadOnly", "(Z)V", value); }
+            get { return IExecute<bool>("getReadOnly"); } set { IExecute("setReadOnly", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setSize(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Size
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSize", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSize", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSize"); } set { IExecute("setSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getSrc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setSrc(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Src
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSrc", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSrc", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSrc"); } set { IExecute("setSrc", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getTabIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setTabIndex(int)"/>
         /// </summary>
         public int TabIndex
         {
-            get { return IExecuteWithSignature<int>("getTabIndex", "()I"); } set { IExecuteWithSignature("setTabIndex", "(I)V", value); }
+            get { return IExecute<int>("getTabIndex"); } set { IExecute("setTabIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getUseMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setUseMap(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String UseMap
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUseMap", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setUseMap", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getUseMap"); } set { IExecute("setUseMap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#setValue(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Value
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#blur()"/>
         /// </summary>
         public void Blur()
         {
-            IExecuteWithSignature("blur", "()V");
+            IExecute("blur");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#click()"/>
         /// </summary>
         public void Click()
         {
-            IExecuteWithSignature("click", "()V");
+            IExecute("click");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#focus()"/>
         /// </summary>
         public void Focus()
         {
-            IExecuteWithSignature("focus", "()V");
+            IExecute("focus");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLInputElement.html#select()"/>
         /// </summary>
         public void Select()
         {
-            IExecuteWithSignature("select", "()V");
+            IExecute("select");
         }
 
         #endregion

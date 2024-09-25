@@ -93,7 +93,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
         public static Java.Nio.File.Attribute.FileTime From(Java.Time.Instant arg0)
         {
-            return SExecuteWithSignature<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "from", "(Ljava/time/Instant;)Ljava/nio/file/attribute/FileTime;", arg0);
+            return SExecute<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#from(long,java.util.concurrent.TimeUnit)"/>
@@ -112,7 +112,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
         public static Java.Nio.File.Attribute.FileTime FromMillis(long arg0)
         {
-            return SExecuteWithSignature<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "fromMillis", "(J)Ljava/nio/file/attribute/FileTime;", arg0);
+            return SExecute<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "fromMillis", arg0);
         }
 
         #endregion
@@ -125,7 +125,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#compareTo(java.nio.file.attribute.FileTime)"/>
@@ -134,7 +134,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Nio.File.Attribute.FileTime arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/file/attribute/FileTime;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toInstant()"/>
@@ -142,7 +142,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant ToInstant()
         {
-            return IExecuteWithSignature<Java.Time.Instant>("toInstant", "()Ljava/time/Instant;");
+            return IExecute<Java.Time.Instant>("toInstant");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#to(java.util.concurrent.TimeUnit)"/>
@@ -151,7 +151,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="long"/></returns>
         public long To(Java.Util.Concurrent.TimeUnit arg0)
         {
-            return IExecuteWithSignature<long>("to", "(Ljava/util/concurrent/TimeUnit;)J", arg0);
+            return IExecute<long>("to", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toMillis()"/>
@@ -159,7 +159,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="long"/></returns>
         public long ToMillis()
         {
-            return IExecuteWithSignature<long>("toMillis", "()J");
+            return IExecute<long>("toMillis");
         }
 
         #endregion

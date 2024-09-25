@@ -149,112 +149,112 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Event.ChangeListener[] ChangeListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.ChangeListener>("getChangeListeners", "()[Ljavax/swing/event/ChangeListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.ChangeListener>("getChangeListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getExtent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setExtent(int)"/>
         /// </summary>
         public int Extent
         {
-            get { return IExecuteWithSignature<int>("getExtent", "()I"); } set { IExecuteWithSignature("setExtent", "(I)V", value); }
+            get { return IExecute<int>("getExtent"); } set { IExecute("setExtent", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getInverted()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setInverted(boolean)"/>
         /// </summary>
         public bool Inverted
         {
-            get { return IExecuteWithSignature<bool>("getInverted", "()Z"); } set { IExecuteWithSignature("setInverted", "(Z)V", value); }
+            get { return IExecute<bool>("getInverted"); } set { IExecute("setInverted", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getLabelTable()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setLabelTable(java.util.Dictionary)"/>
         /// </summary>
         public Java.Util.Dictionary LabelTable
         {
-            get { return IExecuteWithSignature<Java.Util.Dictionary>("getLabelTable", "()Ljava/util/Dictionary;"); } set { IExecuteWithSignature("setLabelTable", "(Ljava/util/Dictionary;)V", value); }
+            get { return IExecute<Java.Util.Dictionary>("getLabelTable"); } set { IExecute("setLabelTable", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getMajorTickSpacing()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setMajorTickSpacing(int)"/>
         /// </summary>
         public int MajorTickSpacing
         {
-            get { return IExecuteWithSignature<int>("getMajorTickSpacing", "()I"); } set { IExecuteWithSignature("setMajorTickSpacing", "(I)V", value); }
+            get { return IExecute<int>("getMajorTickSpacing"); } set { IExecute("setMajorTickSpacing", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setMaximum(int)"/>
         /// </summary>
         public int Maximum
         {
-            get { return IExecuteWithSignature<int>("getMaximum", "()I"); } set { IExecuteWithSignature("setMaximum", "(I)V", value); }
+            get { return IExecute<int>("getMaximum"); } set { IExecute("setMaximum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setMinimum(int)"/>
         /// </summary>
         public int Minimum
         {
-            get { return IExecuteWithSignature<int>("getMinimum", "()I"); } set { IExecuteWithSignature("setMinimum", "(I)V", value); }
+            get { return IExecute<int>("getMinimum"); } set { IExecute("setMinimum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getMinorTickSpacing()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setMinorTickSpacing(int)"/>
         /// </summary>
         public int MinorTickSpacing
         {
-            get { return IExecuteWithSignature<int>("getMinorTickSpacing", "()I"); } set { IExecuteWithSignature("setMinorTickSpacing", "(I)V", value); }
+            get { return IExecute<int>("getMinorTickSpacing"); } set { IExecute("setMinorTickSpacing", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setModel(javax.swing.BoundedRangeModel)"/>
         /// </summary>
         public Javax.Swing.BoundedRangeModel Model
         {
-            get { return IExecuteWithSignature<Javax.Swing.BoundedRangeModel>("getModel", "()Ljavax/swing/BoundedRangeModel;"); } set { IExecuteWithSignature("setModel", "(Ljavax/swing/BoundedRangeModel;)V", value); }
+            get { return IExecute<Javax.Swing.BoundedRangeModel>("getModel"); } set { IExecute("setModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setOrientation(int)"/>
         /// </summary>
         public int Orientation
         {
-            get { return IExecuteWithSignature<int>("getOrientation", "()I"); } set { IExecuteWithSignature("setOrientation", "(I)V", value); }
+            get { return IExecute<int>("getOrientation"); } set { IExecute("setOrientation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getPaintLabels()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setPaintLabels(boolean)"/>
         /// </summary>
         public bool PaintLabels
         {
-            get { return IExecuteWithSignature<bool>("getPaintLabels", "()Z"); } set { IExecuteWithSignature("setPaintLabels", "(Z)V", value); }
+            get { return IExecute<bool>("getPaintLabels"); } set { IExecute("setPaintLabels", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getPaintTicks()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setPaintTicks(boolean)"/>
         /// </summary>
         public bool PaintTicks
         {
-            get { return IExecuteWithSignature<bool>("getPaintTicks", "()Z"); } set { IExecuteWithSignature("setPaintTicks", "(Z)V", value); }
+            get { return IExecute<bool>("getPaintTicks"); } set { IExecute("setPaintTicks", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getPaintTrack()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setPaintTrack(boolean)"/>
         /// </summary>
         public bool PaintTrack
         {
-            get { return IExecuteWithSignature<bool>("getPaintTrack", "()Z"); } set { IExecuteWithSignature("setPaintTrack", "(Z)V", value); }
+            get { return IExecute<bool>("getPaintTrack"); } set { IExecute("setPaintTrack", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getSnapToTicks()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setSnapToTicks(boolean)"/>
         /// </summary>
         public bool SnapToTicks
         {
-            get { return IExecuteWithSignature<bool>("getSnapToTicks", "()Z"); } set { IExecuteWithSignature("setSnapToTicks", "(Z)V", value); }
+            get { return IExecute<bool>("getSnapToTicks"); } set { IExecute("setSnapToTicks", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setValue(int)"/>
         /// </summary>
         public int Value
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); } set { IExecuteWithSignature("setValue", "(I)V", value); }
+            get { return IExecute<int>("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getValueIsAdjusting()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setValueIsAdjusting(boolean)"/>
         /// </summary>
         public bool ValueIsAdjusting
         {
-            get { return IExecuteWithSignature<bool>("getValueIsAdjusting", "()Z"); } set { IExecuteWithSignature("setValueIsAdjusting", "(Z)V", value); }
+            get { return IExecute<bool>("getValueIsAdjusting"); } set { IExecute("setValueIsAdjusting", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#createStandardLabels(int,int)"/>
@@ -273,7 +273,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Util.Hashtable"/></returns>
         public Java.Util.Hashtable<Java.Lang.Integer, Javax.Swing.JComponent> CreateStandardLabels(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.Hashtable<Java.Lang.Integer, Javax.Swing.JComponent>>("createStandardLabels", "(I)Ljava/util/Hashtable;", arg0);
+            return IExecute<Java.Util.Hashtable<Java.Lang.Integer, Javax.Swing.JComponent>>("createStandardLabels", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#addChangeListener(javax.swing.event.ChangeListener)"/>
@@ -281,7 +281,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("addChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
@@ -289,7 +289,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("removeChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setUI(javax.swing.plaf.SliderUI)"/>
@@ -297,7 +297,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.SliderUI"/></param>
         public void SetUI(Javax.Swing.Plaf.SliderUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/SliderUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
 
         #endregion

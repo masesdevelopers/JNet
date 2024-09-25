@@ -123,7 +123,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetContentTypeFor(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getContentTypeFor", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getContentTypeFor", arg0);
         }
 
         #endregion

@@ -123,14 +123,14 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ExtendsBound
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("getExtendsBound", "()Ljavax/lang/model/type/TypeMirror;"); }
+            get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getExtendsBound"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/WildcardType.html#getSuperBound()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror SuperBound
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("getSuperBound", "()Ljavax/lang/model/type/TypeMirror;"); }
+            get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getSuperBound"); }
         }
 
         #endregion

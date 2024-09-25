@@ -142,7 +142,7 @@ namespace Java.Lang.Ref
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         public Java.Lang.Ref.Reference Poll()
         {
-            return IExecuteWithSignature<Java.Lang.Ref.Reference>("poll", "()Ljava/lang/ref/Reference;");
+            return IExecute<Java.Lang.Ref.Reference>("poll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
@@ -151,7 +151,7 @@ namespace Java.Lang.Ref
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Lang.Ref.Reference Remove()
         {
-            return IExecuteWithSignature<Java.Lang.Ref.Reference>("remove", "()Ljava/lang/ref/Reference;");
+            return IExecute<Java.Lang.Ref.Reference>("remove");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove(long)"/>
@@ -162,7 +162,7 @@ namespace Java.Lang.Ref
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Lang.Ref.Reference Remove(long arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Ref.Reference>("remove", "(J)Ljava/lang/ref/Reference;", arg0);
+            return IExecute<Java.Lang.Ref.Reference>("remove", arg0);
         }
 
         #endregion
@@ -206,7 +206,7 @@ namespace Java.Lang.Ref
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         public Java.Lang.Ref.Reference<ReturnExtendsT> Poll<ReturnExtendsT>() where ReturnExtendsT : T
         {
-            return IExecuteWithSignature<Java.Lang.Ref.Reference<ReturnExtendsT>>("poll", "()Ljava/lang/ref/Reference;");
+            return IExecute<Java.Lang.Ref.Reference<ReturnExtendsT>>("poll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
@@ -216,7 +216,7 @@ namespace Java.Lang.Ref
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>() where ReturnExtendsT : T
         {
-            return IExecuteWithSignature<Java.Lang.Ref.Reference<ReturnExtendsT>>("remove", "()Ljava/lang/ref/Reference;");
+            return IExecute<Java.Lang.Ref.Reference<ReturnExtendsT>>("remove");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove(long)"/>
@@ -228,7 +228,7 @@ namespace Java.Lang.Ref
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>(long arg0) where ReturnExtendsT : T
         {
-            return IExecuteWithSignature<Java.Lang.Ref.Reference<ReturnExtendsT>>("remove", "(J)Ljava/lang/ref/Reference;", arg0);
+            return IExecute<Java.Lang.Ref.Reference<ReturnExtendsT>>("remove", arg0);
         }
 
         #endregion

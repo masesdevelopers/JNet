@@ -204,7 +204,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public override void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowStateChanged", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowStateChanged", arg0);
         }
 
         #endregion

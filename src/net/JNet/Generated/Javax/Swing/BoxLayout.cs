@@ -136,14 +136,14 @@ namespace Javax.Swing
         /// </summary>
         public int Axis
         {
-            get { return IExecuteWithSignature<int>("getAxis", "()I"); }
+            get { return IExecute<int>("getAxis"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#getTarget()"/> 
         /// </summary>
         public Java.Awt.Container Target
         {
-            get { return IExecuteWithSignature<Java.Awt.Container>("getTarget", "()Ljava/awt/Container;"); }
+            get { return IExecute<Java.Awt.Container>("getTarget"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#maximumLayoutSize(java.awt.Container)"/>
@@ -152,7 +152,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MaximumLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("maximumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("maximumLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#minimumLayoutSize(java.awt.Container)"/>
@@ -161,7 +161,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#preferredLayoutSize(java.awt.Container)"/>
@@ -170,7 +170,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#getLayoutAlignmentX(java.awt.Container)"/>
@@ -179,7 +179,7 @@ namespace Javax.Swing
         /// <returns><see cref="float"/></returns>
         public float GetLayoutAlignmentX(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<float>("getLayoutAlignmentX", "(Ljava/awt/Container;)F", arg0);
+            return IExecute<float>("getLayoutAlignmentX", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#getLayoutAlignmentY(java.awt.Container)"/>
@@ -188,7 +188,7 @@ namespace Javax.Swing
         /// <returns><see cref="float"/></returns>
         public float GetLayoutAlignmentY(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<float>("getLayoutAlignmentY", "(Ljava/awt/Container;)F", arg0);
+            return IExecute<float>("getLayoutAlignmentY", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#invalidateLayout(java.awt.Container)"/>
@@ -196,7 +196,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void InvalidateLayout(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("invalidateLayout", "(Ljava/awt/Container;)V", arg0);
+            IExecute("invalidateLayout", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#addLayoutComponent(java.awt.Component,java.lang.Object)"/>
@@ -222,7 +222,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void LayoutContainer(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
+            IExecute("layoutContainer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#removeLayoutComponent(java.awt.Component)"/>
@@ -230,7 +230,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void RemoveLayoutComponent(Java.Awt.Component arg0)
         {
-            IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);
+            IExecute("removeLayoutComponent", arg0);
         }
 
         #endregion

@@ -99,7 +99,7 @@ namespace Java.Text.Spi
         /// <returns><see cref="Java.Text.DecimalFormatSymbols"/></returns>
         public Java.Text.DecimalFormatSymbols GetInstance(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Text.DecimalFormatSymbols>("getInstance", "(Ljava/util/Locale;)Ljava/text/DecimalFormatSymbols;", arg0);
+            return IExecute<Java.Text.DecimalFormatSymbols>("getInstance", arg0);
         }
 
         #endregion

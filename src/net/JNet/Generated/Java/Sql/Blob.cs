@@ -193,7 +193,7 @@ namespace Java.Sql
         /// </summary>
         public Java.Io.InputStream BinaryStream
         {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getBinaryStream", "()Ljava/io/InputStream;"); }
+            get { return IExecute<Java.Io.InputStream>("getBinaryStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBytes(long,int)"/>
@@ -249,7 +249,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.OutputStream SetBinaryStream(long arg0)
         {
-            return IExecuteWithSignature<Java.Io.OutputStream>("setBinaryStream", "(J)Ljava/io/OutputStream;", arg0);
+            return IExecute<Java.Io.OutputStream>("setBinaryStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#length()"/>
@@ -258,7 +258,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long Length()
         {
-            return IExecuteWithSignature<long>("length", "()J");
+            return IExecute<long>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#position(byte[],long)"/>
@@ -288,7 +288,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void Free()
         {
-            IExecuteWithSignature("free", "()V");
+            IExecute("free");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#truncate(long)"/>
@@ -297,7 +297,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void Truncate(long arg0)
         {
-            IExecuteWithSignature("truncate", "(J)V", arg0);
+            IExecute("truncate", arg0);
         }
 
         #endregion

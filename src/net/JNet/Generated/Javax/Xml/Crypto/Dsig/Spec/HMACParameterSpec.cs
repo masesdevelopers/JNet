@@ -103,7 +103,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         public int OutputLength
         {
-            get { return IExecuteWithSignature<int>("getOutputLength", "()I"); }
+            get { return IExecute<int>("getOutputLength"); }
         }
 
         #endregion

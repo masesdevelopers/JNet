@@ -127,7 +127,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/Instant;", arg0);
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#now()"/>
@@ -135,7 +135,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant Now()
         {
-            return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "now", "()Ljava/time/Instant;");
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#now(java.time.Clock)"/>
@@ -144,7 +144,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant Now(Java.Time.Clock arg0)
         {
-            return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/Instant;", arg0);
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#ofEpochMilli(long)"/>
@@ -153,7 +153,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant OfEpochMilli(long arg0)
         {
-            return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "ofEpochMilli", "(J)Ljava/time/Instant;", arg0);
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "ofEpochMilli", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#ofEpochSecond(long,long)"/>
@@ -172,7 +172,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant OfEpochSecond(long arg0)
         {
-            return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "ofEpochSecond", "(J)Ljava/time/Instant;", arg0);
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "ofEpochSecond", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#parse(java.lang.CharSequence)"/>
@@ -181,7 +181,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant Parse(Java.Lang.CharSequence arg0)
         {
-            return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;)Ljava/time/Instant;", arg0);
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "parse", arg0);
         }
 
         #endregion
@@ -192,14 +192,14 @@ namespace Java.Time
         /// </summary>
         public long EpochSecond
         {
-            get { return IExecuteWithSignature<long>("getEpochSecond", "()J"); }
+            get { return IExecute<long>("getEpochSecond"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#getNano()"/> 
         /// </summary>
         public int Nano
         {
-            get { return IExecuteWithSignature<int>("getNano", "()I"); }
+            get { return IExecute<int>("getNano"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#query(java.time.temporal.TemporalQuery)"/>
@@ -209,7 +209,7 @@ namespace Java.Time
         /// <returns><typeparamref name="R"/></returns>
         public R Query<R>(Java.Time.Temporal.TemporalQuery<R> arg0)
         {
-            return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
+            return IExecute<R>("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#isAfter(java.time.Instant)"/>
@@ -218,7 +218,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsAfter(Java.Time.Instant arg0)
         {
-            return IExecuteWithSignature<bool>("isAfter", "(Ljava/time/Instant;)Z", arg0);
+            return IExecute<bool>("isAfter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#isBefore(java.time.Instant)"/>
@@ -227,7 +227,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsBefore(Java.Time.Instant arg0)
         {
-            return IExecuteWithSignature<bool>("isBefore", "(Ljava/time/Instant;)Z", arg0);
+            return IExecute<bool>("isBefore", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#isSupported(java.time.temporal.TemporalField)"/>
@@ -236,7 +236,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
+            return IExecute<bool>("isSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#isSupported(java.time.temporal.TemporalUnit)"/>
@@ -245,7 +245,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalUnit arg0)
         {
-            return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalUnit;)Z", arg0);
+            return IExecute<bool>("isSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#compareTo(java.lang.Object)"/>
@@ -254,7 +254,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#compareTo(java.time.Instant)"/>
@@ -263,7 +263,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Time.Instant arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/time/Instant;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#get(java.time.temporal.TemporalField)"/>
@@ -272,7 +272,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int Get(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
+            return IExecute<int>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#minusMillis(long)"/>
@@ -281,7 +281,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant MinusMillis(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.Instant>("minusMillis", "(J)Ljava/time/Instant;", arg0);
+            return IExecute<Java.Time.Instant>("minusMillis", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#minusNanos(long)"/>
@@ -290,7 +290,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant MinusNanos(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.Instant>("minusNanos", "(J)Ljava/time/Instant;", arg0);
+            return IExecute<Java.Time.Instant>("minusNanos", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#minusSeconds(long)"/>
@@ -299,7 +299,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant MinusSeconds(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.Instant>("minusSeconds", "(J)Ljava/time/Instant;", arg0);
+            return IExecute<Java.Time.Instant>("minusSeconds", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#plusMillis(long)"/>
@@ -308,7 +308,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant PlusMillis(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.Instant>("plusMillis", "(J)Ljava/time/Instant;", arg0);
+            return IExecute<Java.Time.Instant>("plusMillis", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#plusNanos(long)"/>
@@ -317,7 +317,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant PlusNanos(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.Instant>("plusNanos", "(J)Ljava/time/Instant;", arg0);
+            return IExecute<Java.Time.Instant>("plusNanos", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#plusSeconds(long)"/>
@@ -326,7 +326,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant PlusSeconds(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.Instant>("plusSeconds", "(J)Ljava/time/Instant;", arg0);
+            return IExecute<Java.Time.Instant>("plusSeconds", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#truncatedTo(java.time.temporal.TemporalUnit)"/>
@@ -335,7 +335,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant TruncatedTo(Java.Time.Temporal.TemporalUnit arg0)
         {
-            return IExecuteWithSignature<Java.Time.Instant>("truncatedTo", "(Ljava/time/temporal/TemporalUnit;)Ljava/time/Instant;", arg0);
+            return IExecute<Java.Time.Instant>("truncatedTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#atOffset(java.time.ZoneOffset)"/>
@@ -344,7 +344,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public Java.Time.OffsetDateTime AtOffset(Java.Time.ZoneOffset arg0)
         {
-            return IExecuteWithSignature<Java.Time.OffsetDateTime>("atOffset", "(Ljava/time/ZoneOffset;)Ljava/time/OffsetDateTime;", arg0);
+            return IExecute<Java.Time.OffsetDateTime>("atOffset", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#adjustInto(java.time.temporal.Temporal)"/>
@@ -353,7 +353,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("adjustInto", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("adjustInto", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#minus(java.time.temporal.TemporalAmount)"/>
@@ -362,7 +362,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Minus(Java.Time.Temporal.TemporalAmount arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("minus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("minus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#minus(long,java.time.temporal.TemporalUnit)"/>
@@ -381,7 +381,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Plus(Java.Time.Temporal.TemporalAmount arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("plus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("plus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#plus(long,java.time.temporal.TemporalUnit)"/>
@@ -400,7 +400,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalAdjuster arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("with", "(Ljava/time/temporal/TemporalAdjuster;)Ljava/time/temporal/Temporal;", arg0);
+            return IExecute<Java.Time.Temporal.Temporal>("with", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#with(java.time.temporal.TemporalField,long)"/>
@@ -419,7 +419,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
+            return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#atZone(java.time.ZoneId)"/>
@@ -428,7 +428,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime AtZone(Java.Time.ZoneId arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("atZone", "(Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("atZone", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#getLong(java.time.temporal.TemporalField)"/>
@@ -437,7 +437,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long GetLong(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
+            return IExecute<long>("getLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#toEpochMilli()"/>
@@ -445,7 +445,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long ToEpochMilli()
         {
-            return IExecuteWithSignature<long>("toEpochMilli", "()J");
+            return IExecute<long>("toEpochMilli");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>

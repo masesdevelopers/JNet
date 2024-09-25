@@ -204,7 +204,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineEvent"/></param>
         public override void Update(Javax.Sound.Sampled.LineEvent arg0)
         {
-            IExecuteWithSignature("update", "(Ljavax/sound/sampled/LineEvent;)V", arg0);
+            IExecute("update", arg0);
         }
 
         #endregion

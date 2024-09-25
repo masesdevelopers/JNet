@@ -286,7 +286,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteArray(Java.Sql.Array arg0)
         {
-            IExecuteWithSignature("writeArray", "(Ljava/sql/Array;)V", arg0);
+            IExecute("writeArray", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeAsciiStream(java.io.InputStream)"/>
@@ -295,7 +295,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteAsciiStream(Java.Io.InputStream arg0)
         {
-            IExecuteWithSignature("writeAsciiStream", "(Ljava/io/InputStream;)V", arg0);
+            IExecute("writeAsciiStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeBigDecimal(java.math.BigDecimal)"/>
@@ -304,7 +304,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteBigDecimal(Java.Math.BigDecimal arg0)
         {
-            IExecuteWithSignature("writeBigDecimal", "(Ljava/math/BigDecimal;)V", arg0);
+            IExecute("writeBigDecimal", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeBinaryStream(java.io.InputStream)"/>
@@ -313,7 +313,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteBinaryStream(Java.Io.InputStream arg0)
         {
-            IExecuteWithSignature("writeBinaryStream", "(Ljava/io/InputStream;)V", arg0);
+            IExecute("writeBinaryStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeBlob(java.sql.Blob)"/>
@@ -322,7 +322,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteBlob(Java.Sql.Blob arg0)
         {
-            IExecuteWithSignature("writeBlob", "(Ljava/sql/Blob;)V", arg0);
+            IExecute("writeBlob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeBoolean(boolean)"/>
@@ -331,7 +331,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteBoolean(bool arg0)
         {
-            IExecuteWithSignature("writeBoolean", "(Z)V", arg0);
+            IExecute("writeBoolean", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeByte(byte)"/>
@@ -340,7 +340,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteByte(byte arg0)
         {
-            IExecuteWithSignature("writeByte", "(B)V", arg0);
+            IExecute("writeByte", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeBytes(byte[])"/>
@@ -349,7 +349,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteBytes(byte[] arg0)
         {
-            IExecuteWithSignature("writeBytes", "([B)V", new object[] { arg0 });
+            IExecute("writeBytes", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeCharacterStream(java.io.Reader)"/>
@@ -358,7 +358,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteCharacterStream(Java.Io.Reader arg0)
         {
-            IExecuteWithSignature("writeCharacterStream", "(Ljava/io/Reader;)V", arg0);
+            IExecute("writeCharacterStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeClob(java.sql.Clob)"/>
@@ -367,7 +367,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteClob(Java.Sql.Clob arg0)
         {
-            IExecuteWithSignature("writeClob", "(Ljava/sql/Clob;)V", arg0);
+            IExecute("writeClob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeDate(java.sql.Date)"/>
@@ -376,7 +376,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteDate(Java.Sql.Date arg0)
         {
-            IExecuteWithSignature("writeDate", "(Ljava/sql/Date;)V", arg0);
+            IExecute("writeDate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeDouble(double)"/>
@@ -385,7 +385,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteDouble(double arg0)
         {
-            IExecuteWithSignature("writeDouble", "(D)V", arg0);
+            IExecute("writeDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeFloat(float)"/>
@@ -394,7 +394,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteFloat(float arg0)
         {
-            IExecuteWithSignature("writeFloat", "(F)V", arg0);
+            IExecute("writeFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeInt(int)"/>
@@ -403,7 +403,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteInt(int arg0)
         {
-            IExecuteWithSignature("writeInt", "(I)V", arg0);
+            IExecute("writeInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeLong(long)"/>
@@ -412,7 +412,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteLong(long arg0)
         {
-            IExecuteWithSignature("writeLong", "(J)V", arg0);
+            IExecute("writeLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeNClob(java.sql.NClob)"/>
@@ -421,7 +421,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteNClob(Java.Sql.NClob arg0)
         {
-            IExecuteWithSignature("writeNClob", "(Ljava/sql/NClob;)V", arg0);
+            IExecute("writeNClob", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeNString(java.lang.String)"/>
@@ -430,7 +430,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteNString(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("writeNString", "(Ljava/lang/String;)V", arg0);
+            IExecute("writeNString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeObject(java.sql.SQLData)"/>
@@ -439,7 +439,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteObject(Java.Sql.SQLData arg0)
         {
-            IExecuteWithSignature("writeObject", "(Ljava/sql/SQLData;)V", arg0);
+            IExecute("writeObject", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeRef(java.sql.Ref)"/>
@@ -448,7 +448,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteRef(Java.Sql.Ref arg0)
         {
-            IExecuteWithSignature("writeRef", "(Ljava/sql/Ref;)V", arg0);
+            IExecute("writeRef", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeRowId(java.sql.RowId)"/>
@@ -457,7 +457,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteRowId(Java.Sql.RowId arg0)
         {
-            IExecuteWithSignature("writeRowId", "(Ljava/sql/RowId;)V", arg0);
+            IExecute("writeRowId", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeShort(short)"/>
@@ -466,7 +466,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteShort(short arg0)
         {
-            IExecuteWithSignature("writeShort", "(S)V", arg0);
+            IExecute("writeShort", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeSQLXML(java.sql.SQLXML)"/>
@@ -475,7 +475,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteSQLXML(Java.Sql.SQLXML arg0)
         {
-            IExecuteWithSignature("writeSQLXML", "(Ljava/sql/SQLXML;)V", arg0);
+            IExecute("writeSQLXML", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeString(java.lang.String)"/>
@@ -484,7 +484,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteString(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("writeString", "(Ljava/lang/String;)V", arg0);
+            IExecute("writeString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeStruct(java.sql.Struct)"/>
@@ -493,7 +493,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteStruct(Java.Sql.Struct arg0)
         {
-            IExecuteWithSignature("writeStruct", "(Ljava/sql/Struct;)V", arg0);
+            IExecute("writeStruct", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeTime(java.sql.Time)"/>
@@ -502,7 +502,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteTime(Java.Sql.Time arg0)
         {
-            IExecuteWithSignature("writeTime", "(Ljava/sql/Time;)V", arg0);
+            IExecute("writeTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeTimestamp(java.sql.Timestamp)"/>
@@ -511,7 +511,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteTimestamp(Java.Sql.Timestamp arg0)
         {
-            IExecuteWithSignature("writeTimestamp", "(Ljava/sql/Timestamp;)V", arg0);
+            IExecute("writeTimestamp", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeURL(java.net.URL)"/>
@@ -520,7 +520,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteURL(Java.Net.URL arg0)
         {
-            IExecuteWithSignature("writeURL", "(Ljava/net/URL;)V", arg0);
+            IExecute("writeURL", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeObject(java.lang.Object,java.sql.SQLType)"/>

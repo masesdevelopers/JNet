@@ -171,14 +171,14 @@ namespace Javax.Sql.Rowset
         /// </summary>
         public int[] MatchColumnIndexes
         {
-            get { return IExecuteWithSignatureArray<int>("getMatchColumnIndexes", "()[I"); }
+            get { return IExecuteArray<int>("getMatchColumnIndexes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#getMatchColumnNames()"/> 
         /// </summary>
         public Java.Lang.String[] MatchColumnNames
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getMatchColumnNames", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getMatchColumnNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#setMatchColumn(int)"/>
@@ -187,7 +187,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetMatchColumn(int arg0)
         {
-            IExecuteWithSignature("setMatchColumn", "(I)V", arg0);
+            IExecute("setMatchColumn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#setMatchColumn(int[])"/>
@@ -196,7 +196,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetMatchColumn(int[] arg0)
         {
-            IExecuteWithSignature("setMatchColumn", "([I)V", new object[] { arg0 });
+            IExecute("setMatchColumn", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#setMatchColumn(java.lang.String)"/>
@@ -205,7 +205,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetMatchColumn(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("setMatchColumn", "(Ljava/lang/String;)V", arg0);
+            IExecute("setMatchColumn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#setMatchColumn(java.lang.String[])"/>
@@ -214,7 +214,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetMatchColumn(Java.Lang.String[] arg0)
         {
-            IExecuteWithSignature("setMatchColumn", "([Ljava/lang/String;)V", new object[] { arg0 });
+            IExecute("setMatchColumn", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#unsetMatchColumn(int)"/>
@@ -223,7 +223,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void UnsetMatchColumn(int arg0)
         {
-            IExecuteWithSignature("unsetMatchColumn", "(I)V", arg0);
+            IExecute("unsetMatchColumn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#unsetMatchColumn(int[])"/>
@@ -232,7 +232,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void UnsetMatchColumn(int[] arg0)
         {
-            IExecuteWithSignature("unsetMatchColumn", "([I)V", new object[] { arg0 });
+            IExecute("unsetMatchColumn", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#unsetMatchColumn(java.lang.String)"/>
@@ -241,7 +241,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void UnsetMatchColumn(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("unsetMatchColumn", "(Ljava/lang/String;)V", arg0);
+            IExecute("unsetMatchColumn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html#unsetMatchColumn(java.lang.String[])"/>
@@ -250,7 +250,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void UnsetMatchColumn(Java.Lang.String[] arg0)
         {
-            IExecuteWithSignature("unsetMatchColumn", "([Ljava/lang/String;)V", new object[] { arg0 });
+            IExecute("unsetMatchColumn", new object[] { arg0 });
         }
 
         #endregion

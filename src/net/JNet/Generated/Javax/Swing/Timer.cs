@@ -100,7 +100,7 @@ namespace Javax.Swing
         /// </summary>
         public static bool LogTimers
         {
-            get { return SExecuteWithSignature<bool>(LocalBridgeClazz, "getLogTimers", "()Z"); } set { SExecuteWithSignature(LocalBridgeClazz, "setLogTimers", "(Z)V", value); }
+            get { return SExecute<bool>(LocalBridgeClazz, "getLogTimers"); } set { SExecute(LocalBridgeClazz, "setLogTimers", value); }
         }
 
         #endregion
@@ -111,28 +111,28 @@ namespace Javax.Swing
         /// </summary>
         public Java.Lang.String ActionCommand
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getActionCommand", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setActionCommand", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getActionCommand"); } set { IExecute("setActionCommand", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getActionListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ActionListener[] ActionListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ActionListener>("getActionListeners", "()[Ljava/awt/event/ActionListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.ActionListener>("getActionListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getDelay()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setDelay(int)"/>
         /// </summary>
         public int Delay
         {
-            get { return IExecuteWithSignature<int>("getDelay", "()I"); } set { IExecuteWithSignature("setDelay", "(I)V", value); }
+            get { return IExecute<int>("getDelay"); } set { IExecute("setDelay", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getInitialDelay()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setInitialDelay(int)"/>
         /// </summary>
         public int InitialDelay
         {
-            get { return IExecuteWithSignature<int>("getInitialDelay", "()I"); } set { IExecuteWithSignature("setInitialDelay", "(I)V", value); }
+            get { return IExecute<int>("getInitialDelay"); } set { IExecute("setInitialDelay", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#getListeners(java.lang.Class)"/>
@@ -150,7 +150,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsCoalesce()
         {
-            return IExecuteWithSignature<bool>("isCoalesce", "()Z");
+            return IExecute<bool>("isCoalesce");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#isRepeats()"/>
@@ -158,7 +158,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsRepeats()
         {
-            return IExecuteWithSignature<bool>("isRepeats", "()Z");
+            return IExecute<bool>("isRepeats");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#isRunning()"/>
@@ -166,7 +166,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsRunning()
         {
-            return IExecuteWithSignature<bool>("isRunning", "()Z");
+            return IExecute<bool>("isRunning");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#addActionListener(java.awt.event.ActionListener)"/>
@@ -174,7 +174,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
+            IExecute("addActionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#removeActionListener(java.awt.event.ActionListener)"/>
@@ -182,14 +182,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
+            IExecute("removeActionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#restart()"/>
         /// </summary>
         public void Restart()
         {
-            IExecuteWithSignature("restart", "()V");
+            IExecute("restart");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setCoalesce(boolean)"/>
@@ -197,7 +197,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetCoalesce(bool arg0)
         {
-            IExecuteWithSignature("setCoalesce", "(Z)V", arg0);
+            IExecute("setCoalesce", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setRepeats(boolean)"/>
@@ -205,21 +205,21 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetRepeats(bool arg0)
         {
-            IExecuteWithSignature("setRepeats", "(Z)V", arg0);
+            IExecute("setRepeats", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#start()"/>
         /// </summary>
         public void Start()
         {
-            IExecuteWithSignature("start", "()V");
+            IExecute("start");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#stop()"/>
         /// </summary>
         public void Stop()
         {
-            IExecuteWithSignature("stop", "()V");
+            IExecute("stop");
         }
 
         #endregion

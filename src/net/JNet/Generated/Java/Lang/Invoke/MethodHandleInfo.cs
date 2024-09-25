@@ -200,7 +200,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ReferenceKindToString(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "referenceKindToString", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "referenceKindToString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#toString(int,java.lang.Class,java.lang.String,java.lang.invoke.MethodType)"/>
@@ -223,35 +223,35 @@ namespace Java.Lang.Invoke
         /// </summary>
         public Java.Lang.Class DeclaringClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getMethodType()"/> 
         /// </summary>
         public Java.Lang.Invoke.MethodType MethodType
         {
-            get { return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("getMethodType", "()Ljava/lang/invoke/MethodType;"); }
+            get { return IExecute<Java.Lang.Invoke.MethodType>("getMethodType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers
         {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
+            get { return IExecute<int>("getModifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getReferenceKind()"/> 
         /// </summary>
         public int ReferenceKind
         {
-            get { return IExecuteWithSignature<int>("getReferenceKind", "()I"); }
+            get { return IExecute<int>("getReferenceKind"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)"/>
@@ -270,7 +270,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool IsVarArgs()
         {
-            return IExecuteWithSignature<bool>("isVarArgs", "()Z");
+            return IExecute<bool>("isVarArgs");
         }
 
         #endregion

@@ -217,7 +217,7 @@ namespace Java.Sql
         /// </summary>
         public int ParameterCount
         {
-            get { return IExecuteWithSignature<int>("getParameterCount", "()I"); }
+            get { return IExecute<int>("getParameterCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#isSigned(int)"/>
@@ -227,7 +227,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsSigned(int arg0)
         {
-            return IExecuteWithSignature<bool>("isSigned", "(I)Z", arg0);
+            return IExecute<bool>("isSigned", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterMode(int)"/>
@@ -237,7 +237,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetParameterMode(int arg0)
         {
-            return IExecuteWithSignature<int>("getParameterMode", "(I)I", arg0);
+            return IExecute<int>("getParameterMode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterType(int)"/>
@@ -247,7 +247,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetParameterType(int arg0)
         {
-            return IExecuteWithSignature<int>("getParameterType", "(I)I", arg0);
+            return IExecute<int>("getParameterType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getPrecision(int)"/>
@@ -257,7 +257,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetPrecision(int arg0)
         {
-            return IExecuteWithSignature<int>("getPrecision", "(I)I", arg0);
+            return IExecute<int>("getPrecision", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getScale(int)"/>
@@ -267,7 +267,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetScale(int arg0)
         {
-            return IExecuteWithSignature<int>("getScale", "(I)I", arg0);
+            return IExecute<int>("getScale", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#isNullable(int)"/>
@@ -277,7 +277,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int IsNullable(int arg0)
         {
-            return IExecuteWithSignature<int>("isNullable", "(I)I", arg0);
+            return IExecute<int>("isNullable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterClassName(int)"/>
@@ -287,7 +287,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetParameterClassName(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getParameterClassName", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getParameterClassName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterTypeName(int)"/>
@@ -297,7 +297,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String GetParameterTypeName(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getParameterTypeName", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getParameterTypeName", arg0);
         }
 
         #endregion

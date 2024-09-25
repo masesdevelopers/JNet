@@ -226,7 +226,7 @@ namespace Java.Awt
         /// </summary>
         public int ID
         {
-            get { return IExecuteWithSignature<int>("getID", "()I"); }
+            get { return IExecute<int>("getID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#paramString()"/>
@@ -234,7 +234,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ParamString()
         {
-            return IExecuteWithSignature<Java.Lang.String>("paramString", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("paramString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#setSource(java.lang.Object)"/>
@@ -242,7 +242,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="object"/></param>
         public void SetSource(object arg0)
         {
-            IExecuteWithSignature("setSource", "(Ljava/lang/Object;)V", arg0);
+            IExecute("setSource", arg0);
         }
 
         #endregion

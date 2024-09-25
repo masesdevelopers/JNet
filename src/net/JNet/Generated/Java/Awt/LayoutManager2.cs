@@ -146,7 +146,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float GetLayoutAlignmentX(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<float>("getLayoutAlignmentX", "(Ljava/awt/Container;)F", arg0);
+            return IExecute<float>("getLayoutAlignmentX", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager2.html#getLayoutAlignmentY(java.awt.Container)"/>
@@ -155,7 +155,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public float GetLayoutAlignmentY(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<float>("getLayoutAlignmentY", "(Ljava/awt/Container;)F", arg0);
+            return IExecute<float>("getLayoutAlignmentY", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager2.html#maximumLayoutSize(java.awt.Container)"/>
@@ -164,7 +164,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MaximumLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("maximumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("maximumLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager2.html#addLayoutComponent(java.awt.Component,java.lang.Object)"/>
@@ -181,7 +181,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void InvalidateLayout(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("invalidateLayout", "(Ljava/awt/Container;)V", arg0);
+            IExecute("invalidateLayout", arg0);
         }
 
         #endregion

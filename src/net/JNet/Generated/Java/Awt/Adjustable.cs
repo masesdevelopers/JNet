@@ -171,49 +171,49 @@ namespace Java.Awt
         /// </summary>
         public int BlockIncrement
         {
-            get { return IExecuteWithSignature<int>("getBlockIncrement", "()I"); } set { IExecuteWithSignature("setBlockIncrement", "(I)V", value); }
+            get { return IExecute<int>("getBlockIncrement"); } set { IExecute("setBlockIncrement", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setMaximum(int)"/>
         /// </summary>
         public int Maximum
         {
-            get { return IExecuteWithSignature<int>("getMaximum", "()I"); } set { IExecuteWithSignature("setMaximum", "(I)V", value); }
+            get { return IExecute<int>("getMaximum"); } set { IExecute("setMaximum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setMinimum(int)"/>
         /// </summary>
         public int Minimum
         {
-            get { return IExecuteWithSignature<int>("getMinimum", "()I"); } set { IExecuteWithSignature("setMinimum", "(I)V", value); }
+            get { return IExecute<int>("getMinimum"); } set { IExecute("setMinimum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getOrientation()"/> 
         /// </summary>
         public int Orientation
         {
-            get { return IExecuteWithSignature<int>("getOrientation", "()I"); }
+            get { return IExecute<int>("getOrientation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getUnitIncrement()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setUnitIncrement(int)"/>
         /// </summary>
         public int UnitIncrement
         {
-            get { return IExecuteWithSignature<int>("getUnitIncrement", "()I"); } set { IExecuteWithSignature("setUnitIncrement", "(I)V", value); }
+            get { return IExecute<int>("getUnitIncrement"); } set { IExecute("setUnitIncrement", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setValue(int)"/>
         /// </summary>
         public int Value
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); } set { IExecuteWithSignature("setValue", "(I)V", value); }
+            get { return IExecute<int>("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getVisibleAmount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setVisibleAmount(int)"/>
         /// </summary>
         public int VisibleAmount
         {
-            get { return IExecuteWithSignature<int>("getVisibleAmount", "()I"); } set { IExecuteWithSignature("setVisibleAmount", "(I)V", value); }
+            get { return IExecute<int>("getVisibleAmount"); } set { IExecute("setVisibleAmount", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#addAdjustmentListener(java.awt.event.AdjustmentListener)"/>
@@ -221,7 +221,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
         public void AddAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0)
         {
-            IExecuteWithSignature("addAdjustmentListener", "(Ljava/awt/event/AdjustmentListener;)V", arg0);
+            IExecute("addAdjustmentListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#removeAdjustmentListener(java.awt.event.AdjustmentListener)"/>
@@ -229,7 +229,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
         public void RemoveAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0)
         {
-            IExecuteWithSignature("removeAdjustmentListener", "(Ljava/awt/event/AdjustmentListener;)V", arg0);
+            IExecute("removeAdjustmentListener", arg0);
         }
 
         #endregion

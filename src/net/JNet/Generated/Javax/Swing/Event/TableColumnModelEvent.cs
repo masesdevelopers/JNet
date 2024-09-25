@@ -105,14 +105,14 @@ namespace Javax.Swing.Event
         /// </summary>
         public int FromIndex
         {
-            get { return IExecuteWithSignature<int>("getFromIndex", "()I"); }
+            get { return IExecute<int>("getFromIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelEvent.html#getToIndex()"/> 
         /// </summary>
         public int ToIndex
         {
-            get { return IExecuteWithSignature<int>("getToIndex", "()I"); }
+            get { return IExecute<int>("getToIndex"); }
         }
 
         #endregion

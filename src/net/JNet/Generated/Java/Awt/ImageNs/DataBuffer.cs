@@ -137,7 +137,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public static int GetDataTypeSize(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "getDataTypeSize", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "getDataTypeSize", arg0);
         }
 
         #endregion
@@ -148,35 +148,35 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public int DataType
         {
-            get { return IExecuteWithSignature<int>("getDataType", "()I"); }
+            get { return IExecute<int>("getDataType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getNumBanks()"/> 
         /// </summary>
         public int NumBanks
         {
-            get { return IExecuteWithSignature<int>("getNumBanks", "()I"); }
+            get { return IExecute<int>("getNumBanks"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getOffset()"/> 
         /// </summary>
         public int Offset
         {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
+            get { return IExecute<int>("getOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getOffsets()"/> 
         /// </summary>
         public int[] Offsets
         {
-            get { return IExecuteWithSignatureArray<int>("getOffsets", "()[I"); }
+            get { return IExecuteArray<int>("getOffsets"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getSize()"/> 
         /// </summary>
         public int Size
         {
-            get { return IExecuteWithSignature<int>("getSize", "()I"); }
+            get { return IExecute<int>("getSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getElem(int,int)"/>
@@ -215,7 +215,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="double"/></returns>
         public double GetElemDouble(int arg0)
         {
-            return IExecuteWithSignature<double>("getElemDouble", "(I)D", arg0);
+            return IExecute<double>("getElemDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getElemFloat(int,int)"/>
@@ -234,7 +234,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="float"/></returns>
         public float GetElemFloat(int arg0)
         {
-            return IExecuteWithSignature<float>("getElemFloat", "(I)F", arg0);
+            return IExecute<float>("getElemFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getElem(int)"/>
@@ -243,7 +243,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetElem(int arg0)
         {
-            return IExecuteWithSignature<int>("getElem", "(I)I", arg0);
+            return IExecute<int>("getElem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#setElem(int,int)"/>

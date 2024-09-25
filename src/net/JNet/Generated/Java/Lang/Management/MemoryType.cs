@@ -105,7 +105,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.MemoryType"/></returns>
         public static Java.Lang.Management.MemoryType ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Management.MemoryType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/management/MemoryType;", arg0);
+            return SExecute<Java.Lang.Management.MemoryType>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#values()"/>
@@ -113,7 +113,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.MemoryType"/></returns>
         public static Java.Lang.Management.MemoryType[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Lang.Management.MemoryType>(LocalBridgeClazz, "values", "()[Ljava/lang/management/MemoryType;");
+            return SExecuteArray<Java.Lang.Management.MemoryType>(LocalBridgeClazz, "values");
         }
 
         #endregion

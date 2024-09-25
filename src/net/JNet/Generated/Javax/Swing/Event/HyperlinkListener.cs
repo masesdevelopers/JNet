@@ -204,7 +204,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkEvent"/></param>
         public override void HyperlinkUpdate(Javax.Swing.Event.HyperlinkEvent arg0)
         {
-            IExecuteWithSignature("hyperlinkUpdate", "(Ljavax/swing/event/HyperlinkEvent;)V", arg0);
+            IExecute("hyperlinkUpdate", arg0);
         }
 
         #endregion

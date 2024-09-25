@@ -97,7 +97,7 @@ namespace Java.Text
         /// </summary>
         public Java.Lang.String SourceString
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSourceString", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSourceString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#toByteArray()"/>
@@ -105,7 +105,7 @@ namespace Java.Text
         /// <returns><see cref="byte"/></returns>
         public byte[] ToByteArray()
         {
-            return IExecuteWithSignatureArray<byte>("toByteArray", "()[B");
+            return IExecuteArray<byte>("toByteArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#compareTo(java.text.CollationKey)"/>
@@ -114,7 +114,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Text.CollationKey arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/text/CollationKey;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#compareTo(java.lang.Object)"/>
@@ -123,7 +123,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
 
         #endregion

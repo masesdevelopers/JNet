@@ -284,7 +284,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public static Java.Nio.File.Path Of(Java.Net.URI arg0)
         {
-            return SExecuteWithSignature<Java.Nio.File.Path>(LocalBridgeClazz, "of", "(Ljava/net/URI;)Ljava/nio/file/Path;", arg0);
+            return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "of", arg0);
         }
 
         #endregion
@@ -295,35 +295,35 @@ namespace Java.Nio.File
         /// </summary>
         public Java.Nio.File.Path FileName
         {
-            get { return IExecuteWithSignature<Java.Nio.File.Path>("getFileName", "()Ljava/nio/file/Path;"); }
+            get { return IExecute<Java.Nio.File.Path>("getFileName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#getFileSystem()"/> 
         /// </summary>
         public Java.Nio.File.FileSystem FileSystem
         {
-            get { return IExecuteWithSignature<Java.Nio.File.FileSystem>("getFileSystem", "()Ljava/nio/file/FileSystem;"); }
+            get { return IExecute<Java.Nio.File.FileSystem>("getFileSystem"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#getNameCount()"/> 
         /// </summary>
         public int NameCount
         {
-            get { return IExecuteWithSignature<int>("getNameCount", "()I"); }
+            get { return IExecute<int>("getNameCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#getParent()"/> 
         /// </summary>
         public Java.Nio.File.Path Parent
         {
-            get { return IExecuteWithSignature<Java.Nio.File.Path>("getParent", "()Ljava/nio/file/Path;"); }
+            get { return IExecute<Java.Nio.File.Path>("getParent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#getRoot()"/> 
         /// </summary>
         public Java.Nio.File.Path Root
         {
-            get { return IExecuteWithSignature<Java.Nio.File.Path>("getRoot", "()Ljava/nio/file/Path;"); }
+            get { return IExecute<Java.Nio.File.Path>("getRoot"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#endsWith(java.nio.file.Path)"/>
@@ -332,7 +332,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool EndsWith(Java.Nio.File.Path arg0)
         {
-            return IExecuteWithSignature<bool>("endsWith", "(Ljava/nio/file/Path;)Z", arg0);
+            return IExecute<bool>("endsWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#isAbsolute()"/>
@@ -340,7 +340,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool IsAbsolute()
         {
-            return IExecuteWithSignature<bool>("isAbsolute", "()Z");
+            return IExecute<bool>("isAbsolute");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#startsWith(java.nio.file.Path)"/>
@@ -349,7 +349,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool StartsWith(Java.Nio.File.Path arg0)
         {
-            return IExecuteWithSignature<bool>("startsWith", "(Ljava/nio/file/Path;)Z", arg0);
+            return IExecute<bool>("startsWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#compareTo(java.nio.file.Path)"/>
@@ -358,7 +358,7 @@ namespace Java.Nio.File
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Nio.File.Path arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/file/Path;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toUri()"/>
@@ -366,7 +366,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI ToUri()
         {
-            return IExecuteWithSignature<Java.Net.URI>("toUri", "()Ljava/net/URI;");
+            return IExecute<Java.Net.URI>("toUri");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#getName(int)"/>
@@ -375,7 +375,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path GetName(int arg0)
         {
-            return IExecuteWithSignature<Java.Nio.File.Path>("getName", "(I)Ljava/nio/file/Path;", arg0);
+            return IExecute<Java.Nio.File.Path>("getName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#normalize()"/>
@@ -383,7 +383,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path Normalize()
         {
-            return IExecuteWithSignature<Java.Nio.File.Path>("normalize", "()Ljava/nio/file/Path;");
+            return IExecute<Java.Nio.File.Path>("normalize");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#relativize(java.nio.file.Path)"/>
@@ -392,7 +392,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path Relativize(Java.Nio.File.Path arg0)
         {
-            return IExecuteWithSignature<Java.Nio.File.Path>("relativize", "(Ljava/nio/file/Path;)Ljava/nio/file/Path;", arg0);
+            return IExecute<Java.Nio.File.Path>("relativize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#resolve(java.nio.file.Path)"/>
@@ -401,7 +401,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path Resolve(Java.Nio.File.Path arg0)
         {
-            return IExecuteWithSignature<Java.Nio.File.Path>("resolve", "(Ljava/nio/file/Path;)Ljava/nio/file/Path;", arg0);
+            return IExecute<Java.Nio.File.Path>("resolve", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#subpath(int,int)"/>
@@ -419,7 +419,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path ToAbsolutePath()
         {
-            return IExecuteWithSignature<Java.Nio.File.Path>("toAbsolutePath", "()Ljava/nio/file/Path;");
+            return IExecute<Java.Nio.File.Path>("toAbsolutePath");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toRealPath(java.nio.file.LinkOption[])"/>
@@ -429,7 +429,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.Path ToRealPath(params Java.Nio.File.LinkOption[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Nio.File.Path>("toRealPath", "([Ljava/nio/file/LinkOption;)Ljava/nio/file/Path;"); else return IExecuteWithSignature<Java.Nio.File.Path>("toRealPath", "([Ljava/nio/file/LinkOption;)Ljava/nio/file/Path;", arg0);
+            if (arg0.Length == 0) return IExecute<Java.Nio.File.Path>("toRealPath"); else return IExecute<Java.Nio.File.Path>("toRealPath", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier[])"/>
@@ -450,7 +450,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool EndsWith(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("endsWith", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("endsWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#startsWith(java.lang.String)"/>
@@ -459,7 +459,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public bool StartsWith(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("startsWith", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("startsWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#compareTo(java.lang.Object)"/>
@@ -468,7 +468,7 @@ namespace Java.Nio.File
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toFile()"/>
@@ -476,7 +476,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File ToFile()
         {
-            return IExecuteWithSignature<Java.Io.File>("toFile", "()Ljava/io/File;");
+            return IExecute<Java.Io.File>("toFile");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#resolve(java.lang.String)"/>
@@ -485,7 +485,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path Resolve(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Nio.File.Path>("resolve", "(Ljava/lang/String;)Ljava/nio/file/Path;", arg0);
+            return IExecute<Java.Nio.File.Path>("resolve", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#resolveSibling(java.lang.String)"/>
@@ -494,7 +494,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path ResolveSibling(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Nio.File.Path>("resolveSibling", "(Ljava/lang/String;)Ljava/nio/file/Path;", arg0);
+            return IExecute<Java.Nio.File.Path>("resolveSibling", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#resolveSibling(java.nio.file.Path)"/>
@@ -503,7 +503,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path ResolveSibling(Java.Nio.File.Path arg0)
         {
-            return IExecuteWithSignature<Java.Nio.File.Path>("resolveSibling", "(Ljava/nio/file/Path;)Ljava/nio/file/Path;", arg0);
+            return IExecute<Java.Nio.File.Path>("resolveSibling", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[])"/>
@@ -522,7 +522,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<Java.Nio.File.Path> Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Nio.File.Path>>("iterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator<Java.Nio.File.Path>>("iterator");
         }
 
         #endregion

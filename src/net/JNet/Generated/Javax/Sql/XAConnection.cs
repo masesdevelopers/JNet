@@ -119,7 +119,7 @@ namespace Javax.Sql
         /// </summary>
         public Javax.Transaction.Xa.XAResource XAResource
         {
-            get { return IExecuteWithSignature<Javax.Transaction.Xa.XAResource>("getXAResource", "()Ljavax/transaction/xa/XAResource;"); }
+            get { return IExecute<Javax.Transaction.Xa.XAResource>("getXAResource"); }
         }
 
         #endregion

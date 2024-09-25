@@ -366,7 +366,7 @@ namespace Javax.Swing
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public bool AcceptDefault(object arg0)
         {
-            return IExecuteWithSignature<bool>("acceptDefault", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("acceptDefault", arg0);
         }
 
         /// <summary>
@@ -431,7 +431,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public override bool IsEnabled()
         {
-            return IExecuteWithSignature<bool>("isEnabled", "()Z");
+            return IExecute<bool>("isEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#getValue(java.lang.String)"/>
@@ -440,7 +440,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public override object GetValue(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
@@ -456,7 +456,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public override void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("addPropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#putValue(java.lang.String,java.lang.Object)"/>
@@ -473,7 +473,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public override void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
-            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
+            IExecute("removePropertyChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#setEnabled(boolean)"/>
@@ -481,7 +481,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public override void SetEnabled(bool arg0)
         {
-            IExecuteWithSignature("setEnabled", "(Z)V", arg0);
+            IExecute("setEnabled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#accept(java.lang.Object)"/>
@@ -490,7 +490,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public override bool Accept(object arg0)
         {
-            return IExecuteWithSignature<bool>("accept", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("accept", arg0);
         }
 
         #endregion

@@ -97,21 +97,21 @@ namespace Javax.Accessibility
         /// </summary>
         public int AccessibleActionCount
         {
-            get { return IExecuteWithSignature<int>("getAccessibleActionCount", "()I"); }
+            get { return IExecute<int>("getAccessibleActionCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html#getEndIndex()"/> 
         /// </summary>
         public int EndIndex
         {
-            get { return IExecuteWithSignature<int>("getEndIndex", "()I"); }
+            get { return IExecute<int>("getEndIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html#getStartIndex()"/> 
         /// </summary>
         public int StartIndex
         {
-            get { return IExecuteWithSignature<int>("getStartIndex", "()I"); }
+            get { return IExecute<int>("getStartIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html#doAccessibleAction(int)"/>
@@ -120,7 +120,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool DoAccessibleAction(int arg0)
         {
-            return IExecuteWithSignature<bool>("doAccessibleAction", "(I)Z", arg0);
+            return IExecute<bool>("doAccessibleAction", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html#isValid()"/>
@@ -128,7 +128,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
         {
-            return IExecuteWithSignature<bool>("isValid", "()Z");
+            return IExecute<bool>("isValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html#getAccessibleActionAnchor(int)"/>
@@ -137,7 +137,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="object"/></returns>
         public object GetAccessibleActionAnchor(int arg0)
         {
-            return IExecuteWithSignature("getAccessibleActionAnchor", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("getAccessibleActionAnchor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html#getAccessibleActionObject(int)"/>
@@ -146,7 +146,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="object"/></returns>
         public object GetAccessibleActionObject(int arg0)
         {
-            return IExecuteWithSignature("getAccessibleActionObject", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("getAccessibleActionObject", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html#getAccessibleActionDescription(int)"/>
@@ -155,7 +155,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAccessibleActionDescription(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getAccessibleActionDescription", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getAccessibleActionDescription", arg0);
         }
 
         #endregion

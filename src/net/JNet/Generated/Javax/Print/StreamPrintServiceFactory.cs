@@ -107,14 +107,14 @@ namespace Javax.Print
         /// </summary>
         public Java.Lang.String OutputFormat
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOutputFormat", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getOutputFormat"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#getSupportedDocFlavors()"/> 
         /// </summary>
         public Javax.Print.DocFlavor[] SupportedDocFlavors
         {
-            get { return IExecuteWithSignatureArray<Javax.Print.DocFlavor>("getSupportedDocFlavors", "()[Ljavax/print/DocFlavor;"); }
+            get { return IExecuteArray<Javax.Print.DocFlavor>("getSupportedDocFlavors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#getPrintService(java.io.OutputStream)"/>
@@ -123,7 +123,7 @@ namespace Javax.Print
         /// <returns><see cref="Javax.Print.StreamPrintService"/></returns>
         public Javax.Print.StreamPrintService GetPrintService(Java.Io.OutputStream arg0)
         {
-            return IExecuteWithSignature<Javax.Print.StreamPrintService>("getPrintService", "(Ljava/io/OutputStream;)Ljavax/print/StreamPrintService;", arg0);
+            return IExecute<Javax.Print.StreamPrintService>("getPrintService", arg0);
         }
 
         #endregion

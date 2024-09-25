@@ -139,42 +139,42 @@ namespace Org.W3c.Dom
         /// </summary>
         public int ByteOffset
         {
-            get { return IExecuteWithSignature<int>("getByteOffset", "()I"); }
+            get { return IExecute<int>("getByteOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getColumnNumber()"/> 
         /// </summary>
         public int ColumnNumber
         {
-            get { return IExecuteWithSignature<int>("getColumnNumber", "()I"); }
+            get { return IExecute<int>("getColumnNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getLineNumber()"/> 
         /// </summary>
         public int LineNumber
         {
-            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); }
+            get { return IExecute<int>("getLineNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getRelatedNode()"/> 
         /// </summary>
         public Org.W3c.Dom.Node RelatedNode
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getRelatedNode", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getRelatedNode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getUri()"/> 
         /// </summary>
         public Java.Lang.String Uri
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUri", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getUri"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getUtf16Offset()"/> 
         /// </summary>
         public int Utf16Offset
         {
-            get { return IExecuteWithSignature<int>("getUtf16Offset", "()I"); }
+            get { return IExecute<int>("getUtf16Offset"); }
         }
 
         #endregion

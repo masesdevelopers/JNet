@@ -122,7 +122,7 @@ namespace Org.Ietf.Jgss
         /// </summary>
         public byte[] DER
         {
-            get { return IExecuteWithSignatureArray<byte>("getDER", "()[B"); }
+            get { return IExecuteArray<byte>("getDER"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/Oid.html#containedIn(org.ietf.jgss.Oid[])"/>
@@ -131,7 +131,7 @@ namespace Org.Ietf.Jgss
         /// <returns><see cref="bool"/></returns>
         public bool ContainedIn(Org.Ietf.Jgss.Oid[] arg0)
         {
-            return IExecuteWithSignature<bool>("containedIn", "([Lorg/ietf/jgss/Oid;)Z", new object[] { arg0 });
+            return IExecute<bool>("containedIn", new object[] { arg0 });
         }
 
         #endregion

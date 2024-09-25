@@ -239,7 +239,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         public void ForEach(Java.Util.Function.BiConsumer arg0)
         {
-            IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
+            IExecute("forEach", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replaceAll(java.util.function.BiFunction)"/>
@@ -247,7 +247,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         public void ReplaceAll(Java.Util.Function.BiFunction arg0)
         {
-            IExecuteWithSignature("replaceAll", "(Ljava/util/function/BiFunction;)V", arg0);
+            IExecute("replaceAll", arg0);
         }
 
         #endregion
@@ -502,7 +502,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
         public void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V
         {
-            IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
+            IExecute("forEach", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replaceAll(java.util.function.BiFunction)"/>
@@ -513,7 +513,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         public void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V
         {
-            IExecuteWithSignature("replaceAll", "(Ljava/util/function/BiFunction;)V", arg0);
+            IExecute("replaceAll", arg0);
         }
 
         #endregion

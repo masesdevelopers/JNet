@@ -97,7 +97,7 @@ namespace Javax.Script
         /// </summary>
         public Javax.Script.ScriptEngine Engine
         {
-            get { return IExecuteWithSignature<Javax.Script.ScriptEngine>("getEngine", "()Ljavax/script/ScriptEngine;"); }
+            get { return IExecute<Javax.Script.ScriptEngine>("getEngine"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval(javax.script.ScriptContext)"/>
@@ -107,7 +107,7 @@ namespace Javax.Script
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Javax.Script.ScriptContext arg0)
         {
-            return IExecuteWithSignature("eval", "(Ljavax/script/ScriptContext;)Ljava/lang/Object;", arg0);
+            return IExecute("eval", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval()"/>
@@ -116,7 +116,7 @@ namespace Javax.Script
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval()
         {
-            return IExecuteWithSignature("eval", "()Ljava/lang/Object;");
+            return IExecute("eval");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval(javax.script.Bindings)"/>
@@ -126,7 +126,7 @@ namespace Javax.Script
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Javax.Script.Bindings arg0)
         {
-            return IExecuteWithSignature("eval", "(Ljavax/script/Bindings;)Ljava/lang/Object;", arg0);
+            return IExecute("eval", arg0);
         }
 
         #endregion

@@ -147,7 +147,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#size()"/>
@@ -155,7 +155,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#keys()"/>
@@ -163,7 +163,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Keys()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration>("keys", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration>("keys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#elements()"/>
@@ -171,7 +171,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Elements()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration>("elements", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration>("elements");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#get(java.lang.Object)"/>
@@ -180,7 +180,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Get(object arg0)
         {
-            return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#put(java.lang.Object,java.lang.Object)"/>
@@ -199,7 +199,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Remove(object arg0)
         {
-            return IExecuteWithSignature("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("remove", arg0);
         }
 
         #endregion
@@ -242,7 +242,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#size()"/>
@@ -250,7 +250,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#keys()"/>
@@ -258,7 +258,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<K> Keys()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<K>>("keys", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration<K>>("keys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#elements()"/>
@@ -266,7 +266,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<V> Elements()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<V>>("elements", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration<V>>("elements");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#get(java.lang.Object)"/>
@@ -275,7 +275,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Get(object arg0)
         {
-            return IExecuteWithSignature<V>("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<V>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#put(java.lang.Object,java.lang.Object)"/>
@@ -294,7 +294,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Remove(object arg0)
         {
-            return IExecuteWithSignature<V>("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<V>("remove", arg0);
         }
 
         #endregion

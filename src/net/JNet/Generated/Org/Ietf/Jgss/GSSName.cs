@@ -178,7 +178,7 @@ namespace Org.Ietf.Jgss
         /// </summary>
         public Org.Ietf.Jgss.Oid StringNameType
         {
-            get { return IExecuteWithSignature<Org.Ietf.Jgss.Oid>("getStringNameType", "()Lorg/ietf/jgss/Oid;"); }
+            get { return IExecute<Org.Ietf.Jgss.Oid>("getStringNameType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isAnonymous()"/>
@@ -186,7 +186,7 @@ namespace Org.Ietf.Jgss
         /// <returns><see cref="bool"/></returns>
         public bool IsAnonymous()
         {
-            return IExecuteWithSignature<bool>("isAnonymous", "()Z");
+            return IExecute<bool>("isAnonymous");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isMN()"/>
@@ -194,7 +194,7 @@ namespace Org.Ietf.Jgss
         /// <returns><see cref="bool"/></returns>
         public bool IsMN()
         {
-            return IExecuteWithSignature<bool>("isMN", "()Z");
+            return IExecute<bool>("isMN");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#export()"/>
@@ -203,7 +203,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public byte[] Export()
         {
-            return IExecuteWithSignatureArray<byte>("export", "()[B");
+            return IExecuteArray<byte>("export");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#canonicalize(org.ietf.jgss.Oid)"/>
@@ -213,7 +213,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public Org.Ietf.Jgss.GSSName Canonicalize(Org.Ietf.Jgss.Oid arg0)
         {
-            return IExecuteWithSignature<Org.Ietf.Jgss.GSSName>("canonicalize", "(Lorg/ietf/jgss/Oid;)Lorg/ietf/jgss/GSSName;", arg0);
+            return IExecute<Org.Ietf.Jgss.GSSName>("canonicalize", arg0);
         }
 
         #endregion

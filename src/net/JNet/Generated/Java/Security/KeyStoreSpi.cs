@@ -99,7 +99,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool EngineContainsAlias(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("engineContainsAlias", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("engineContainsAlias", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineIsCertificateEntry(java.lang.String)"/>
@@ -108,7 +108,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool EngineIsCertificateEntry(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("engineIsCertificateEntry", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("engineIsCertificateEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineIsKeyEntry(java.lang.String)"/>
@@ -117,7 +117,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool EngineIsKeyEntry(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("engineIsKeyEntry", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("engineIsKeyEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineSize()"/>
@@ -125,7 +125,7 @@ namespace Java.Security
         /// <returns><see cref="int"/></returns>
         public int EngineSize()
         {
-            return IExecuteWithSignature<int>("engineSize", "()I");
+            return IExecute<int>("engineSize");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCertificateAlias(java.security.cert.Certificate)"/>
@@ -134,7 +134,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String EngineGetCertificateAlias(Java.Security.Cert.Certificate arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("engineGetCertificateAlias", "(Ljava/security/cert/Certificate;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("engineGetCertificateAlias", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCertificate(java.lang.String)"/>
@@ -143,7 +143,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
         public Java.Security.Cert.Certificate EngineGetCertificate(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Security.Cert.Certificate>("engineGetCertificate", "(Ljava/lang/String;)Ljava/security/cert/Certificate;", arg0);
+            return IExecute<Java.Security.Cert.Certificate>("engineGetCertificate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCertificateChain(java.lang.String)"/>
@@ -152,7 +152,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
         public Java.Security.Cert.Certificate[] EngineGetCertificateChain(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("engineGetCertificateChain", "(Ljava/lang/String;)[Ljava/security/cert/Certificate;", arg0);
+            return IExecuteArray<Java.Security.Cert.Certificate>("engineGetCertificateChain", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetKey(java.lang.String,char[])"/>
@@ -173,7 +173,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Util.Date"/></returns>
         public Java.Util.Date EngineGetCreationDate(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Date>("engineGetCreationDate", "(Ljava/lang/String;)Ljava/util/Date;", arg0);
+            return IExecute<Java.Util.Date>("engineGetCreationDate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineAliases()"/>
@@ -181,7 +181,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Lang.String> EngineAliases()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("engineAliases", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration<Java.Lang.String>>("engineAliases");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineDeleteEntry(java.lang.String)"/>
@@ -190,7 +190,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void EngineDeleteEntry(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("engineDeleteEntry", "(Ljava/lang/String;)V", arg0);
+            IExecute("engineDeleteEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineLoad(java.io.InputStream,char[])"/>
@@ -267,7 +267,7 @@ namespace Java.Security
         /// <exception cref="Java.Io.IOException"/>
         public bool EngineProbe(Java.Io.InputStream arg0)
         {
-            return IExecuteWithSignature<bool>("engineProbe", "(Ljava/io/InputStream;)Z", arg0);
+            return IExecute<bool>("engineProbe", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetEntry(java.lang.String,java.security.KeyStore.ProtectionParameter)"/>
@@ -291,7 +291,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void EngineLoad(Java.Security.KeyStore.LoadStoreParameter arg0)
         {
-            IExecuteWithSignature("engineLoad", "(Ljava/security/KeyStore$LoadStoreParameter;)V", arg0);
+            IExecute("engineLoad", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineSetEntry(java.lang.String,java.security.KeyStore.Entry,java.security.KeyStore.ProtectionParameter)"/>
@@ -313,7 +313,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void EngineStore(Java.Security.KeyStore.LoadStoreParameter arg0)
         {
-            IExecuteWithSignature("engineStore", "(Ljava/security/KeyStore$LoadStoreParameter;)V", arg0);
+            IExecute("engineStore", arg0);
         }
 
         #endregion

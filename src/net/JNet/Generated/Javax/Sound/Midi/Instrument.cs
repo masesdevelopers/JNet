@@ -97,7 +97,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         public Javax.Sound.Midi.Patch Patch
         {
-            get { return IExecuteWithSignature<Javax.Sound.Midi.Patch>("getPatch", "()Ljavax/sound/midi/Patch;"); }
+            get { return IExecute<Javax.Sound.Midi.Patch>("getPatch"); }
         }
 
         #endregion

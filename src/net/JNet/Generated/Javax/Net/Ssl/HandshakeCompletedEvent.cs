@@ -104,49 +104,49 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Lang.String CipherSuite
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCipherSuite", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCipherSuite"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getLocalCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] LocalCertificates
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getLocalCertificates", "()[Ljava/security/cert/Certificate;"); }
+            get { return IExecuteArray<Java.Security.Cert.Certificate>("getLocalCertificates"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getLocalPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal LocalPrincipal
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getLocalPrincipal", "()Ljava/security/Principal;"); }
+            get { return IExecute<Java.Security.Principal>("getLocalPrincipal"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getPeerCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] PeerCertificates
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getPeerCertificates", "()[Ljava/security/cert/Certificate;"); }
+            get { return IExecuteArray<Java.Security.Cert.Certificate>("getPeerCertificates"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getPeerPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal PeerPrincipal
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getPeerPrincipal", "()Ljava/security/Principal;"); }
+            get { return IExecute<Java.Security.Principal>("getPeerPrincipal"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getSession()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSession Session
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getSession", "()Ljavax/net/ssl/SSLSession;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLSession>("getSession"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getSocket()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSocket Socket
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSocket>("getSocket", "()Ljavax/net/ssl/SSLSocket;"); }
+            get { return IExecute<Javax.Net.Ssl.SSLSocket>("getSocket"); }
         }
 
         #endregion

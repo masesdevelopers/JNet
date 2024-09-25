@@ -151,63 +151,63 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Org.W3c.Dom.Document ContentDocument
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Document>("getContentDocument", "()Lorg/w3c/dom/Document;"); }
+            get { return IExecute<Org.W3c.Dom.Document>("getContentDocument"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#getFrameBorder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#setFrameBorder(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String FrameBorder
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFrameBorder", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFrameBorder", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getFrameBorder"); } set { IExecute("setFrameBorder", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#getLongDesc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#setLongDesc(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String LongDesc
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLongDesc", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLongDesc", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getLongDesc"); } set { IExecute("setLongDesc", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#getMarginHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#setMarginHeight(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String MarginHeight
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMarginHeight", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setMarginHeight", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getMarginHeight"); } set { IExecute("setMarginHeight", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#getMarginWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#setMarginWidth(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String MarginWidth
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMarginWidth", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setMarginWidth", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getMarginWidth"); } set { IExecute("setMarginWidth", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#setName(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#getNoResize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#setNoResize(boolean)"/>
         /// </summary>
         public bool NoResize
         {
-            get { return IExecuteWithSignature<bool>("getNoResize", "()Z"); } set { IExecuteWithSignature("setNoResize", "(Z)V", value); }
+            get { return IExecute<bool>("getNoResize"); } set { IExecute("setNoResize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#getScrolling()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#setScrolling(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Scrolling
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getScrolling", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setScrolling", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getScrolling"); } set { IExecute("setScrolling", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#getSrc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameElement.html#setSrc(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Src
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSrc", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSrc", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSrc"); } set { IExecute("setSrc", value); }
         }
 
         #endregion

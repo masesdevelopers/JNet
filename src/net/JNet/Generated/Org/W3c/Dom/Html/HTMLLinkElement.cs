@@ -151,63 +151,63 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Charset
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCharset", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCharset", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCharset"); } set { IExecute("setCharset", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#getDisabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#setDisabled(boolean)"/>
         /// </summary>
         public bool Disabled
         {
-            get { return IExecuteWithSignature<bool>("getDisabled", "()Z"); } set { IExecuteWithSignature("setDisabled", "(Z)V", value); }
+            get { return IExecute<bool>("getDisabled"); } set { IExecute("setDisabled", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#getHref()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#setHref(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Href
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHref", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHref", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getHref"); } set { IExecute("setHref", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#getHreflang()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#setHreflang(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Hreflang
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHreflang", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHreflang", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getHreflang"); } set { IExecute("setHreflang", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#getMedia()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#setMedia(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Media
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMedia", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setMedia", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getMedia"); } set { IExecute("setMedia", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#getRel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#setRel(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Rel
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRel", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setRel", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getRel"); } set { IExecute("setRel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#getRev()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#setRev(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Rev
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRev", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setRev", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getRev"); } set { IExecute("setRev", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#getTarget()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#setTarget(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Target
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTarget", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTarget", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getTarget"); } set { IExecute("setTarget", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#getType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLinkElement.html#setType(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setType", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getType"); } set { IExecute("setType", value); }
         }
 
         #endregion

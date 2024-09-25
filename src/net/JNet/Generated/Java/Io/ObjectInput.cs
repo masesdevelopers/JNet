@@ -172,7 +172,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Available()
         {
-            return IExecuteWithSignature<int>("available", "()I");
+            return IExecute<int>("available");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#read()"/>
@@ -181,7 +181,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read()
         {
-            return IExecuteWithSignature<int>("read", "()I");
+            return IExecute<int>("read");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#read(byte[],int,int)"/>
@@ -203,7 +203,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read(byte[] arg0)
         {
-            return IExecuteWithSignature<int>("read", "([B)I", new object[] { arg0 });
+            return IExecute<int>("read", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#readObject()"/>
@@ -213,7 +213,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public object ReadObject()
         {
-            return IExecuteWithSignature("readObject", "()Ljava/lang/Object;");
+            return IExecute("readObject");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#skip(long)"/>
@@ -223,7 +223,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public long Skip(long arg0)
         {
-            return IExecuteWithSignature<long>("skip", "(J)J", arg0);
+            return IExecute<long>("skip", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#close()"/>
@@ -231,7 +231,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
 
         #endregion

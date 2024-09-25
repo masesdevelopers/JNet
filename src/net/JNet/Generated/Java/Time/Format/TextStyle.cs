@@ -129,7 +129,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
         public static Java.Time.Format.TextStyle ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Time.Format.TextStyle>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/format/TextStyle;", arg0);
+            return SExecute<Java.Time.Format.TextStyle>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#values()"/>
@@ -137,7 +137,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
         public static Java.Time.Format.TextStyle[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Time.Format.TextStyle>(LocalBridgeClazz, "values", "()[Ljava/time/format/TextStyle;");
+            return SExecuteArray<Java.Time.Format.TextStyle>(LocalBridgeClazz, "values");
         }
 
         #endregion
@@ -149,7 +149,7 @@ namespace Java.Time.Format
         /// <returns><see cref="bool"/></returns>
         public bool IsStandalone()
         {
-            return IExecuteWithSignature<bool>("isStandalone", "()Z");
+            return IExecute<bool>("isStandalone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#asNormal()"/>
@@ -157,7 +157,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
         public Java.Time.Format.TextStyle AsNormal()
         {
-            return IExecuteWithSignature<Java.Time.Format.TextStyle>("asNormal", "()Ljava/time/format/TextStyle;");
+            return IExecute<Java.Time.Format.TextStyle>("asNormal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#asStandalone()"/>
@@ -165,7 +165,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
         public Java.Time.Format.TextStyle AsStandalone()
         {
-            return IExecuteWithSignature<Java.Time.Format.TextStyle>("asStandalone", "()Ljava/time/format/TextStyle;");
+            return IExecute<Java.Time.Format.TextStyle>("asStandalone");
         }
 
         #endregion

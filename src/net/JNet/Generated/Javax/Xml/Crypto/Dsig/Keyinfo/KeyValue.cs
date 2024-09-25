@@ -131,7 +131,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// </summary>
         public Java.Security.PublicKey PublicKey
         {
-            get { return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;"); }
+            get { return IExecute<Java.Security.PublicKey>("getPublicKey"); }
         }
 
         #endregion

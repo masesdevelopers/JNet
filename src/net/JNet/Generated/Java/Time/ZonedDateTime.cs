@@ -104,7 +104,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime Now()
         {
-            return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "now", "()Ljava/time/ZonedDateTime;");
+            return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#now(java.time.Clock)"/>
@@ -113,7 +113,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime Now(Java.Time.Clock arg0)
         {
-            return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/ZonedDateTime;", arg0);
+            return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#now(java.time.ZoneId)"/>
@@ -122,7 +122,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime Now(Java.Time.ZoneId arg0)
         {
-            return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0);
+            return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#of(int,int,int,int,int,int,int,java.time.ZoneId)"/>
@@ -221,7 +221,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime Parse(Java.Lang.CharSequence arg0)
         {
-            return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;)Ljava/time/ZonedDateTime;", arg0);
+            return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "parse", arg0);
         }
 
         #endregion
@@ -232,84 +232,84 @@ namespace Java.Time
         /// </summary>
         public int DayOfMonth
         {
-            get { return IExecuteWithSignature<int>("getDayOfMonth", "()I"); }
+            get { return IExecute<int>("getDayOfMonth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getDayOfWeek()"/> 
         /// </summary>
         public Java.Time.DayOfWeek DayOfWeek
         {
-            get { return IExecuteWithSignature<Java.Time.DayOfWeek>("getDayOfWeek", "()Ljava/time/DayOfWeek;"); }
+            get { return IExecute<Java.Time.DayOfWeek>("getDayOfWeek"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getDayOfYear()"/> 
         /// </summary>
         public int DayOfYear
         {
-            get { return IExecuteWithSignature<int>("getDayOfYear", "()I"); }
+            get { return IExecute<int>("getDayOfYear"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getHour()"/> 
         /// </summary>
         public int Hour
         {
-            get { return IExecuteWithSignature<int>("getHour", "()I"); }
+            get { return IExecute<int>("getHour"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getMinute()"/> 
         /// </summary>
         public int Minute
         {
-            get { return IExecuteWithSignature<int>("getMinute", "()I"); }
+            get { return IExecute<int>("getMinute"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getMonth()"/> 
         /// </summary>
         public Java.Time.Month Month
         {
-            get { return IExecuteWithSignature<Java.Time.Month>("getMonth", "()Ljava/time/Month;"); }
+            get { return IExecute<Java.Time.Month>("getMonth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getMonthValue()"/> 
         /// </summary>
         public int MonthValue
         {
-            get { return IExecuteWithSignature<int>("getMonthValue", "()I"); }
+            get { return IExecute<int>("getMonthValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getNano()"/> 
         /// </summary>
         public int Nano
         {
-            get { return IExecuteWithSignature<int>("getNano", "()I"); }
+            get { return IExecute<int>("getNano"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getOffset()"/> 
         /// </summary>
         public Java.Time.ZoneOffset Offset
         {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffset", "()Ljava/time/ZoneOffset;"); }
+            get { return IExecute<Java.Time.ZoneOffset>("getOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getSecond()"/> 
         /// </summary>
         public int Second
         {
-            get { return IExecuteWithSignature<int>("getSecond", "()I"); }
+            get { return IExecute<int>("getSecond"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getYear()"/> 
         /// </summary>
         public int Year
         {
-            get { return IExecuteWithSignature<int>("getYear", "()I"); }
+            get { return IExecute<int>("getYear"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getZone()"/> 
         /// </summary>
         public Java.Time.ZoneId Zone
         {
-            get { return IExecuteWithSignature<Java.Time.ZoneId>("getZone", "()Ljava/time/ZoneId;"); }
+            get { return IExecute<Java.Time.ZoneId>("getZone"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#query(java.time.temporal.TemporalQuery)"/>
@@ -319,7 +319,7 @@ namespace Java.Time
         /// <returns><typeparamref name="R"/></returns>
         public R Query<R>(Java.Time.Temporal.TemporalQuery<R> arg0)
         {
-            return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
+            return IExecute<R>("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#isSupported(java.time.temporal.TemporalField)"/>
@@ -328,7 +328,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
+            return IExecute<bool>("isSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#isSupported(java.time.temporal.TemporalUnit)"/>
@@ -337,7 +337,7 @@ namespace Java.Time
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalUnit arg0)
         {
-            return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalUnit;)Z", arg0);
+            return IExecute<bool>("isSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#get(java.time.temporal.TemporalField)"/>
@@ -346,7 +346,7 @@ namespace Java.Time
         /// <returns><see cref="int"/></returns>
         public int Get(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
+            return IExecute<int>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#format(java.time.format.DateTimeFormatter)"/>
@@ -355,7 +355,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Format(Java.Time.Format.DateTimeFormatter arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("format", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#toLocalDate()"/>
@@ -363,7 +363,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate ToLocalDate()
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("toLocalDate", "()Ljava/time/chrono/ChronoLocalDate;");
+            return IExecute<Java.Time.Chrono.ChronoLocalDate>("toLocalDate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#toLocalDateTime()"/>
@@ -371,7 +371,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
         public Java.Time.Chrono.ChronoLocalDateTime ToLocalDateTime()
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDateTime>("toLocalDateTime", "()Ljava/time/chrono/ChronoLocalDateTime;");
+            return IExecute<Java.Time.Chrono.ChronoLocalDateTime>("toLocalDateTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withEarlierOffsetAtOverlap()"/>
@@ -379,7 +379,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
         public Java.Time.Chrono.ChronoZonedDateTime WithEarlierOffsetAtOverlap()
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("withEarlierOffsetAtOverlap", "()Ljava/time/chrono/ChronoZonedDateTime;");
+            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withEarlierOffsetAtOverlap");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withLaterOffsetAtOverlap()"/>
@@ -387,7 +387,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
         public Java.Time.Chrono.ChronoZonedDateTime WithLaterOffsetAtOverlap()
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("withLaterOffsetAtOverlap", "()Ljava/time/chrono/ChronoZonedDateTime;");
+            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withLaterOffsetAtOverlap");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withZoneSameInstant(java.time.ZoneId)"/>
@@ -396,7 +396,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
         public Java.Time.Chrono.ChronoZonedDateTime WithZoneSameInstant(Java.Time.ZoneId arg0)
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("withZoneSameInstant", "(Ljava/time/ZoneId;)Ljava/time/chrono/ChronoZonedDateTime;", arg0);
+            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withZoneSameInstant", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withZoneSameLocal(java.time.ZoneId)"/>
@@ -405,7 +405,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
         public Java.Time.Chrono.ChronoZonedDateTime WithZoneSameLocal(Java.Time.ZoneId arg0)
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("withZoneSameLocal", "(Ljava/time/ZoneId;)Ljava/time/chrono/ChronoZonedDateTime;", arg0);
+            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withZoneSameLocal", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#toLocalTime()"/>
@@ -413,7 +413,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime ToLocalTime()
         {
-            return IExecuteWithSignature<Java.Time.LocalTime>("toLocalTime", "()Ljava/time/LocalTime;");
+            return IExecute<Java.Time.LocalTime>("toLocalTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#toOffsetDateTime()"/>
@@ -421,7 +421,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public Java.Time.OffsetDateTime ToOffsetDateTime()
         {
-            return IExecuteWithSignature<Java.Time.OffsetDateTime>("toOffsetDateTime", "()Ljava/time/OffsetDateTime;");
+            return IExecute<Java.Time.OffsetDateTime>("toOffsetDateTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#range(java.time.temporal.TemporalField)"/>
@@ -430,7 +430,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
+            return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#minusDays(long)"/>
@@ -439,7 +439,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime MinusDays(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusDays", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("minusDays", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#minusHours(long)"/>
@@ -448,7 +448,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime MinusHours(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusHours", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("minusHours", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#minusMinutes(long)"/>
@@ -457,7 +457,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime MinusMinutes(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusMinutes", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("minusMinutes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#minusMonths(long)"/>
@@ -466,7 +466,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime MinusMonths(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusMonths", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("minusMonths", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#minusNanos(long)"/>
@@ -475,7 +475,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime MinusNanos(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusNanos", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("minusNanos", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#minusSeconds(long)"/>
@@ -484,7 +484,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime MinusSeconds(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusSeconds", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("minusSeconds", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#minusWeeks(long)"/>
@@ -493,7 +493,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime MinusWeeks(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusWeeks", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("minusWeeks", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#minusYears(long)"/>
@@ -502,7 +502,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime MinusYears(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusYears", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("minusYears", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#plusDays(long)"/>
@@ -511,7 +511,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime PlusDays(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusDays", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("plusDays", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#plusHours(long)"/>
@@ -520,7 +520,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime PlusHours(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusHours", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("plusHours", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#plusMinutes(long)"/>
@@ -529,7 +529,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime PlusMinutes(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusMinutes", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("plusMinutes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#plusMonths(long)"/>
@@ -538,7 +538,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime PlusMonths(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusMonths", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("plusMonths", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#plusNanos(long)"/>
@@ -547,7 +547,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime PlusNanos(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusNanos", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("plusNanos", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#plusSeconds(long)"/>
@@ -556,7 +556,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime PlusSeconds(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusSeconds", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("plusSeconds", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#plusWeeks(long)"/>
@@ -565,7 +565,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime PlusWeeks(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusWeeks", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("plusWeeks", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#plusYears(long)"/>
@@ -574,7 +574,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime PlusYears(long arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusYears", "(J)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("plusYears", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#truncatedTo(java.time.temporal.TemporalUnit)"/>
@@ -583,7 +583,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime TruncatedTo(Java.Time.Temporal.TemporalUnit arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("truncatedTo", "(Ljava/time/temporal/TemporalUnit;)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("truncatedTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withDayOfMonth(int)"/>
@@ -592,7 +592,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime WithDayOfMonth(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("withDayOfMonth", "(I)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("withDayOfMonth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withDayOfYear(int)"/>
@@ -601,7 +601,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime WithDayOfYear(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("withDayOfYear", "(I)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("withDayOfYear", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withFixedOffsetZone()"/>
@@ -609,7 +609,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime WithFixedOffsetZone()
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("withFixedOffsetZone", "()Ljava/time/ZonedDateTime;");
+            return IExecute<Java.Time.ZonedDateTime>("withFixedOffsetZone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withHour(int)"/>
@@ -618,7 +618,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime WithHour(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("withHour", "(I)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("withHour", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withMinute(int)"/>
@@ -627,7 +627,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime WithMinute(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("withMinute", "(I)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("withMinute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withMonth(int)"/>
@@ -636,7 +636,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime WithMonth(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("withMonth", "(I)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("withMonth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withNano(int)"/>
@@ -645,7 +645,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime WithNano(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("withNano", "(I)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("withNano", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withSecond(int)"/>
@@ -654,7 +654,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime WithSecond(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("withSecond", "(I)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("withSecond", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#withYear(int)"/>
@@ -663,7 +663,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime WithYear(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.ZonedDateTime>("withYear", "(I)Ljava/time/ZonedDateTime;", arg0);
+            return IExecute<Java.Time.ZonedDateTime>("withYear", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#getLong(java.time.temporal.TemporalField)"/>
@@ -672,7 +672,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long GetLong(Java.Time.Temporal.TemporalField arg0)
         {
-            return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
+            return IExecute<long>("getLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>

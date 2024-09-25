@@ -327,7 +327,7 @@ namespace Javax.Lang.Model.Util
         /// </summary>
         public Java.Util.Set AllModuleElements
         {
-            get { return IExecuteWithSignature<Java.Util.Set>("getAllModuleElements", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set>("getAllModuleElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#hides(javax.lang.model.element.Element,javax.lang.model.element.Element)"/>
@@ -346,7 +346,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsDeprecated(Javax.Lang.Model.Element.Element arg0)
         {
-            return IExecuteWithSignature<bool>("isDeprecated", "(Ljavax/lang/model/element/Element;)Z", arg0);
+            return IExecute<bool>("isDeprecated", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isFunctionalInterface(javax.lang.model.element.TypeElement)"/>
@@ -355,7 +355,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsFunctionalInterface(Javax.Lang.Model.Element.TypeElement arg0)
         {
-            return IExecuteWithSignature<bool>("isFunctionalInterface", "(Ljavax/lang/model/element/TypeElement;)Z", arg0);
+            return IExecute<bool>("isFunctionalInterface", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#overrides(javax.lang.model.element.ExecutableElement,javax.lang.model.element.ExecutableElement,javax.lang.model.element.TypeElement)"/>
@@ -375,7 +375,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetConstantExpression(object arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getConstantExpression", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getConstantExpression", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getDocComment(javax.lang.model.element.Element)"/>
@@ -384,7 +384,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDocComment(Javax.Lang.Model.Element.Element arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDocComment", "(Ljavax/lang/model/element/Element;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getDocComment", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllAnnotationMirrors(javax.lang.model.element.Element)"/>
@@ -394,7 +394,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror> GetAllAnnotationMirrors<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror>(Javax.Lang.Model.Element.Element arg0) where ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror : Javax.Lang.Model.Element.AnnotationMirror
         {
-            return IExecuteWithSignature<Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror>>("getAllAnnotationMirrors", "(Ljavax/lang/model/element/Element;)Ljava/util/List;", arg0);
+            return IExecute<Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror>>("getAllAnnotationMirrors", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllMembers(javax.lang.model.element.TypeElement)"/>
@@ -404,7 +404,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_Element> GetAllMembers<ReturnExtendsJavax_Lang_Model_Element_Element>(Javax.Lang.Model.Element.TypeElement arg0) where ReturnExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return IExecuteWithSignature<Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_Element>>("getAllMembers", "(Ljavax/lang/model/element/TypeElement;)Ljava/util/List;", arg0);
+            return IExecute<Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_Element>>("getAllMembers", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getElementValuesWithDefaults(javax.lang.model.element.AnnotationMirror)"/>
@@ -415,7 +415,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue> GetElementValuesWithDefaults<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue>(Javax.Lang.Model.Element.AnnotationMirror arg0) where ReturnExtendsJavax_Lang_Model_Element_ExecutableElement : Javax.Lang.Model.Element.ExecutableElement where ReturnExtendsJavax_Lang_Model_Element_AnnotationValue : Javax.Lang.Model.Element.AnnotationValue
         {
-            return IExecuteWithSignature<Java.Util.Map<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue>>("getElementValuesWithDefaults", "(Ljavax/lang/model/element/AnnotationMirror;)Ljava/util/Map;", arg0);
+            return IExecute<Java.Util.Map<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue>>("getElementValuesWithDefaults", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getBinaryName(javax.lang.model.element.TypeElement)"/>
@@ -424,7 +424,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Javax.Lang.Model.Element.Name"/></returns>
         public Javax.Lang.Model.Element.Name GetBinaryName(Javax.Lang.Model.Element.TypeElement arg0)
         {
-            return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getBinaryName", "(Ljavax/lang/model/element/TypeElement;)Ljavax/lang/model/element/Name;", arg0);
+            return IExecute<Javax.Lang.Model.Element.Name>("getBinaryName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getName(java.lang.CharSequence)"/>
@@ -433,7 +433,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Javax.Lang.Model.Element.Name"/></returns>
         public Javax.Lang.Model.Element.Name GetName(Java.Lang.CharSequence arg0)
         {
-            return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getName", "(Ljava/lang/CharSequence;)Ljavax/lang/model/element/Name;", arg0);
+            return IExecute<Javax.Lang.Model.Element.Name>("getName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageElement(java.lang.CharSequence)"/>
@@ -442,7 +442,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Javax.Lang.Model.Element.PackageElement"/></returns>
         public Javax.Lang.Model.Element.PackageElement GetPackageElement(Java.Lang.CharSequence arg0)
         {
-            return IExecuteWithSignature<Javax.Lang.Model.Element.PackageElement>("getPackageElement", "(Ljava/lang/CharSequence;)Ljavax/lang/model/element/PackageElement;", arg0);
+            return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackageElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageOf(javax.lang.model.element.Element)"/>
@@ -451,7 +451,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Javax.Lang.Model.Element.PackageElement"/></returns>
         public Javax.Lang.Model.Element.PackageElement GetPackageOf(Javax.Lang.Model.Element.Element arg0)
         {
-            return IExecuteWithSignature<Javax.Lang.Model.Element.PackageElement>("getPackageOf", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/PackageElement;", arg0);
+            return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackageOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getTypeElement(java.lang.CharSequence)"/>
@@ -460,7 +460,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Javax.Lang.Model.Element.TypeElement"/></returns>
         public Javax.Lang.Model.Element.TypeElement GetTypeElement(Java.Lang.CharSequence arg0)
         {
-            return IExecuteWithSignature<Javax.Lang.Model.Element.TypeElement>("getTypeElement", "(Ljava/lang/CharSequence;)Ljavax/lang/model/element/TypeElement;", arg0);
+            return IExecute<Javax.Lang.Model.Element.TypeElement>("getTypeElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#printElements(java.io.Writer,javax.lang.model.element.Element[])"/>
@@ -478,7 +478,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsBridge(Javax.Lang.Model.Element.ExecutableElement arg0)
         {
-            return IExecuteWithSignature<bool>("isBridge", "(Ljavax/lang/model/element/ExecutableElement;)Z", arg0);
+            return IExecute<bool>("isBridge", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllPackageElements(java.lang.CharSequence)"/>
@@ -488,7 +488,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_PackageElement> GetAllPackageElements<ReturnExtendsJavax_Lang_Model_Element_PackageElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_PackageElement : Javax.Lang.Model.Element.PackageElement
         {
-            return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_PackageElement>>("getAllPackageElements", "(Ljava/lang/CharSequence;)Ljava/util/Set;", arg0);
+            return IExecute<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_PackageElement>>("getAllPackageElements", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllTypeElements(java.lang.CharSequence)"/>
@@ -498,7 +498,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_TypeElement> GetAllTypeElements<ReturnExtendsJavax_Lang_Model_Element_TypeElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_TypeElement : Javax.Lang.Model.Element.TypeElement
         {
-            return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_TypeElement>>("getAllTypeElements", "(Ljava/lang/CharSequence;)Ljava/util/Set;", arg0);
+            return IExecute<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_TypeElement>>("getAllTypeElements", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getModuleElement(java.lang.CharSequence)"/>
@@ -507,7 +507,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement"/></returns>
         public Javax.Lang.Model.Element.ModuleElement GetModuleElement(Java.Lang.CharSequence arg0)
         {
-            return IExecuteWithSignature<Javax.Lang.Model.Element.ModuleElement>("getModuleElement", "(Ljava/lang/CharSequence;)Ljavax/lang/model/element/ModuleElement;", arg0);
+            return IExecute<Javax.Lang.Model.Element.ModuleElement>("getModuleElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getModuleOf(javax.lang.model.element.Element)"/>
@@ -516,7 +516,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement"/></returns>
         public Javax.Lang.Model.Element.ModuleElement GetModuleOf(Javax.Lang.Model.Element.Element arg0)
         {
-            return IExecuteWithSignature<Javax.Lang.Model.Element.ModuleElement>("getModuleOf", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/ModuleElement;", arg0);
+            return IExecute<Javax.Lang.Model.Element.ModuleElement>("getModuleOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageElement(javax.lang.model.element.ModuleElement,java.lang.CharSequence)"/>
@@ -555,7 +555,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
         public Javax.Lang.Model.Util.Elements.Origin GetOrigin(Javax.Lang.Model.Element.Element arg0)
         {
-            return IExecuteWithSignature<Javax.Lang.Model.Util.Elements.Origin>("getOrigin", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/util/Elements$Origin;", arg0);
+            return IExecute<Javax.Lang.Model.Util.Elements.Origin>("getOrigin", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOrigin(javax.lang.model.element.ModuleElement,javax.lang.model.element.ModuleElement.Directive)"/>

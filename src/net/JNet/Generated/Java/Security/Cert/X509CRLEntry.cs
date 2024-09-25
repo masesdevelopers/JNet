@@ -97,35 +97,35 @@ namespace Java.Security.Cert
         /// </summary>
         public Javax.Security.Auth.X500.X500Principal CertificateIssuer
         {
-            get { return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getCertificateIssuer", "()Ljavax/security/auth/x500/X500Principal;"); }
+            get { return IExecute<Javax.Security.Auth.X500.X500Principal>("getCertificateIssuer"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getRevocationDate()"/> 
         /// </summary>
         public Java.Util.Date RevocationDate
         {
-            get { return IExecuteWithSignature<Java.Util.Date>("getRevocationDate", "()Ljava/util/Date;"); }
+            get { return IExecute<Java.Util.Date>("getRevocationDate"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getRevocationReason()"/> 
         /// </summary>
         public Java.Security.Cert.CRLReason RevocationReason
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.CRLReason>("getRevocationReason", "()Ljava/security/cert/CRLReason;"); }
+            get { return IExecute<Java.Security.Cert.CRLReason>("getRevocationReason"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getSerialNumber()"/> 
         /// </summary>
         public Java.Math.BigInteger SerialNumber
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getSerialNumber", "()Ljava/math/BigInteger;"); }
+            get { return IExecute<Java.Math.BigInteger>("getSerialNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#hasExtensions()"/>
@@ -133,7 +133,7 @@ namespace Java.Security.Cert
         /// <returns><see cref="bool"/></returns>
         public bool HasExtensions()
         {
-            return IExecuteWithSignature<bool>("hasExtensions", "()Z");
+            return IExecute<bool>("hasExtensions");
         }
 
         #endregion

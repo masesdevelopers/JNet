@@ -154,21 +154,21 @@ namespace Javax.Management.Remote
         /// </summary>
         public Javax.Management.Remote.JMXServiceURL Address
         {
-            get { return IExecuteWithSignature<Javax.Management.Remote.JMXServiceURL>("getAddress", "()Ljavax/management/remote/JMXServiceURL;"); }
+            get { return IExecute<Javax.Management.Remote.JMXServiceURL>("getAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#getAttributes()"/> 
         /// </summary>
         public Java.Util.Map<Java.Lang.String, object> Attributes
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, object>>("getAttributes", "()Ljava/util/Map;"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, object>>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#getConnectionIds()"/> 
         /// </summary>
         public Java.Lang.String[] ConnectionIds
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getConnectionIds", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getConnectionIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#isActive()"/>
@@ -176,7 +176,7 @@ namespace Javax.Management.Remote
         /// <returns><see cref="bool"/></returns>
         public bool IsActive()
         {
-            return IExecuteWithSignature<bool>("isActive", "()Z");
+            return IExecute<bool>("isActive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#toJMXConnector(java.util.Map)"/>
@@ -186,7 +186,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map<Java.Lang.String, object> arg0)
         {
-            return IExecuteWithSignature<Javax.Management.Remote.JMXConnector>("toJMXConnector", "(Ljava/util/Map;)Ljavax/management/remote/JMXConnector;", arg0);
+            return IExecute<Javax.Management.Remote.JMXConnector>("toJMXConnector", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#setMBeanServerForwarder(javax.management.remote.MBeanServerForwarder)"/>
@@ -194,7 +194,7 @@ namespace Javax.Management.Remote
         /// <param name="arg0"><see cref="Javax.Management.Remote.MBeanServerForwarder"/></param>
         public void SetMBeanServerForwarder(Javax.Management.Remote.MBeanServerForwarder arg0)
         {
-            IExecuteWithSignature("setMBeanServerForwarder", "(Ljavax/management/remote/MBeanServerForwarder;)V", arg0);
+            IExecute("setMBeanServerForwarder", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#start()"/>
@@ -202,7 +202,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public void Start()
         {
-            IExecuteWithSignature("start", "()V");
+            IExecute("start");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#stop()"/>
@@ -210,7 +210,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Java.Io.IOException"/>
         public void Stop()
         {
-            IExecuteWithSignature("stop", "()V");
+            IExecute("stop");
         }
 
         #endregion

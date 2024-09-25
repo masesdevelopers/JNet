@@ -156,7 +156,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
         public Java.Net.Proxy.Type TypeMethod()
         {
-            return IExecuteWithSignature<Java.Net.Proxy.Type>("type", "()Ljava/net/Proxy$Type;");
+            return IExecute<Java.Net.Proxy.Type>("type");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#address()"/>
@@ -164,7 +164,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.SocketAddress"/></returns>
         public Java.Net.SocketAddress Address()
         {
-            return IExecuteWithSignature<Java.Net.SocketAddress>("address", "()Ljava/net/SocketAddress;");
+            return IExecute<Java.Net.SocketAddress>("address");
         }
 
         #endregion

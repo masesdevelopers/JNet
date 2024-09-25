@@ -251,7 +251,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public static int SolveQuadratic(double[] arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "solveQuadratic", "([D)I", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "solveQuadratic", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#subdivide(double[],int,double[],int,double[],int)"/>
@@ -285,84 +285,84 @@ namespace Java.Awt.Geom
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
-            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "()Ljava/awt/Rectangle;"); }
+            get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getCtrlPt()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D CtrlPt
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getCtrlPt", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getCtrlPt"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getCtrlX()"/> 
         /// </summary>
         public double CtrlX
         {
-            get { return IExecuteWithSignature<double>("getCtrlX", "()D"); }
+            get { return IExecute<double>("getCtrlX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getCtrlY()"/> 
         /// </summary>
         public double CtrlY
         {
-            get { return IExecuteWithSignature<double>("getCtrlY", "()D"); }
+            get { return IExecute<double>("getCtrlY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getFlatness()"/> 
         /// </summary>
         public double Flatness
         {
-            get { return IExecuteWithSignature<double>("getFlatness", "()D"); }
+            get { return IExecute<double>("getFlatness"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getFlatnessSq()"/> 
         /// </summary>
         public double FlatnessSq
         {
-            get { return IExecuteWithSignature<double>("getFlatnessSq", "()D"); }
+            get { return IExecute<double>("getFlatnessSq"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getP1()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D P1
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getP1", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getP1"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getP2()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D P2
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getP2", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getP2"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getX1()"/> 
         /// </summary>
         public double X1
         {
-            get { return IExecuteWithSignature<double>("getX1", "()D"); }
+            get { return IExecute<double>("getX1"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getX2()"/> 
         /// </summary>
         public double X2
         {
-            get { return IExecuteWithSignature<double>("getX2", "()D"); }
+            get { return IExecute<double>("getX2"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getY1()"/> 
         /// </summary>
         public double Y1
         {
-            get { return IExecuteWithSignature<double>("getY1", "()D"); }
+            get { return IExecute<double>("getY1"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getY2()"/> 
         /// </summary>
         public double Y2
         {
-            get { return IExecuteWithSignature<double>("getY2", "()D"); }
+            get { return IExecute<double>("getY2"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#setCurve(double,double,double,double,double,double)"/>
@@ -406,7 +406,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Point2D;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#contains(java.awt.geom.Rectangle2D)"/>
@@ -415,7 +415,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Rectangle2D arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#intersects(double,double,double,double)"/>
@@ -436,7 +436,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Intersects(Java.Awt.Geom.Rectangle2D arg0)
         {
-            return IExecuteWithSignature<bool>("intersects", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
+            return IExecute<bool>("intersects", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
@@ -455,7 +455,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;)Ljava/awt/geom/PathIterator;", arg0);
+            return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#setCurve(double[],int)"/>
@@ -491,7 +491,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.QuadCurve2D"/></param>
         public void SetCurve(Java.Awt.Geom.QuadCurve2D arg0)
         {
-            IExecuteWithSignature("setCurve", "(Ljava/awt/geom/QuadCurve2D;)V", arg0);
+            IExecute("setCurve", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#subdivide(java.awt.geom.QuadCurve2D,java.awt.geom.QuadCurve2D)"/>

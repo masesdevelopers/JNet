@@ -147,77 +147,77 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Icon DisabledIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getDisabledIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setDisabledIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getDisabledIcon"); } set { IExecute("setDisabledIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#getDisplayedMnemonic()"/> 
         /// </summary>
         public int DisplayedMnemonic
         {
-            get { return IExecuteWithSignature<int>("getDisplayedMnemonic", "()I"); }
+            get { return IExecute<int>("getDisplayedMnemonic"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#getDisplayedMnemonicIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setDisplayedMnemonicIndex(int)"/>
         /// </summary>
         public int DisplayedMnemonicIndex
         {
-            get { return IExecuteWithSignature<int>("getDisplayedMnemonicIndex", "()I"); } set { IExecuteWithSignature("setDisplayedMnemonicIndex", "(I)V", value); }
+            get { return IExecute<int>("getDisplayedMnemonicIndex"); } set { IExecute("setDisplayedMnemonicIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#getHorizontalAlignment()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setHorizontalAlignment(int)"/>
         /// </summary>
         public int HorizontalAlignment
         {
-            get { return IExecuteWithSignature<int>("getHorizontalAlignment", "()I"); } set { IExecuteWithSignature("setHorizontalAlignment", "(I)V", value); }
+            get { return IExecute<int>("getHorizontalAlignment"); } set { IExecute("setHorizontalAlignment", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#getHorizontalTextPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setHorizontalTextPosition(int)"/>
         /// </summary>
         public int HorizontalTextPosition
         {
-            get { return IExecuteWithSignature<int>("getHorizontalTextPosition", "()I"); } set { IExecuteWithSignature("setHorizontalTextPosition", "(I)V", value); }
+            get { return IExecute<int>("getHorizontalTextPosition"); } set { IExecute("setHorizontalTextPosition", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#getIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon Icon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getIcon"); } set { IExecute("setIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#getIconTextGap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setIconTextGap(int)"/>
         /// </summary>
         public int IconTextGap
         {
-            get { return IExecuteWithSignature<int>("getIconTextGap", "()I"); } set { IExecuteWithSignature("setIconTextGap", "(I)V", value); }
+            get { return IExecute<int>("getIconTextGap"); } set { IExecute("setIconTextGap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#getLabelFor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setLabelFor(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component LabelFor
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getLabelFor", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setLabelFor", "(Ljava/awt/Component;)V", value); }
+            get { return IExecute<Java.Awt.Component>("getLabelFor"); } set { IExecute("setLabelFor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setText(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Text
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setText", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getText"); } set { IExecute("setText", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#getVerticalAlignment()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setVerticalAlignment(int)"/>
         /// </summary>
         public int VerticalAlignment
         {
-            get { return IExecuteWithSignature<int>("getVerticalAlignment", "()I"); } set { IExecuteWithSignature("setVerticalAlignment", "(I)V", value); }
+            get { return IExecute<int>("getVerticalAlignment"); } set { IExecute("setVerticalAlignment", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#getVerticalTextPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setVerticalTextPosition(int)"/>
         /// </summary>
         public int VerticalTextPosition
         {
-            get { return IExecuteWithSignature<int>("getVerticalTextPosition", "()I"); } set { IExecuteWithSignature("setVerticalTextPosition", "(I)V", value); }
+            get { return IExecute<int>("getVerticalTextPosition"); } set { IExecute("setVerticalTextPosition", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setDisplayedMnemonic(char)"/>
@@ -225,7 +225,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="char"/></param>
         public void SetDisplayedMnemonic(char arg0)
         {
-            IExecuteWithSignature("setDisplayedMnemonic", "(C)V", arg0);
+            IExecute("setDisplayedMnemonic", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setDisplayedMnemonic(int)"/>
@@ -233,7 +233,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void SetDisplayedMnemonic(int arg0)
         {
-            IExecuteWithSignature("setDisplayedMnemonic", "(I)V", arg0);
+            IExecute("setDisplayedMnemonic", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setUI(javax.swing.plaf.LabelUI)"/>
@@ -241,7 +241,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.LabelUI"/></param>
         public void SetUI(Javax.Swing.Plaf.LabelUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/LabelUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
 
         #endregion

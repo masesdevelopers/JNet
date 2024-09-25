@@ -165,7 +165,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="Javax.Lang.Model.Element.Modifier"/></returns>
         public static Javax.Lang.Model.Element.Modifier ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/element/Modifier;", arg0);
+            return SExecute<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#values()"/>
@@ -173,7 +173,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="Javax.Lang.Model.Element.Modifier"/></returns>
         public static Javax.Lang.Model.Element.Modifier[] Values()
         {
-            return SExecuteWithSignatureArray<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/element/Modifier;");
+            return SExecuteArray<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "values");
         }
 
         #endregion

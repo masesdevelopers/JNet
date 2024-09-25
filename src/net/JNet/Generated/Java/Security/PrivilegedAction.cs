@@ -146,7 +146,7 @@ namespace Java.Security
         /// <returns><see cref="object"/></returns>
         public object Run()
         {
-            return IExecuteWithSignature("run", "()Ljava/lang/Object;");
+            return IExecute("run");
         }
 
         #endregion
@@ -212,7 +212,7 @@ namespace Java.Security
         /// <returns><typeparamref name="T"/></returns>
         public T Run()
         {
-            return IExecuteWithSignature<T>("run", "()Ljava/lang/Object;");
+            return IExecute<T>("run");
         }
 
         #endregion

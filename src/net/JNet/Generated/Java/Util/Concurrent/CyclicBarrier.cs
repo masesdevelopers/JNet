@@ -112,14 +112,14 @@ namespace Java.Util.Concurrent
         /// </summary>
         public int NumberWaiting
         {
-            get { return IExecuteWithSignature<int>("getNumberWaiting", "()I"); }
+            get { return IExecute<int>("getNumberWaiting"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#getParties()"/> 
         /// </summary>
         public int Parties
         {
-            get { return IExecuteWithSignature<int>("getParties", "()I"); }
+            get { return IExecute<int>("getParties"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#isBroken()"/>
@@ -127,7 +127,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsBroken()
         {
-            return IExecuteWithSignature<bool>("isBroken", "()Z");
+            return IExecute<bool>("isBroken");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#await()"/>
@@ -137,7 +137,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Util.Concurrent.BrokenBarrierException"/>
         public int Await()
         {
-            return IExecuteWithSignature<int>("await", "()I");
+            return IExecute<int>("await");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#await(long,java.util.concurrent.TimeUnit)"/>
@@ -157,7 +157,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
 
         #endregion

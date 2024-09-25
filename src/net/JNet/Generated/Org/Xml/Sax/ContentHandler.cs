@@ -201,7 +201,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDocument()
         {
-            IExecuteWithSignature("endDocument", "()V");
+            IExecute("endDocument");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -221,7 +221,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndPrefixMapping(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("endPrefixMapping", "(Ljava/lang/String;)V", arg0);
+            IExecute("endPrefixMapping", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html#ignorableWhitespace(char[],int,int)"/>
@@ -250,7 +250,7 @@ namespace Org.Xml.Sax
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
         {
-            IExecuteWithSignature("setDocumentLocator", "(Lorg/xml/sax/Locator;)V", arg0);
+            IExecute("setDocumentLocator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html#skippedEntity(java.lang.String)"/>
@@ -259,7 +259,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void SkippedEntity(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("skippedEntity", "(Ljava/lang/String;)V", arg0);
+            IExecute("skippedEntity", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html#startDocument()"/>
@@ -267,7 +267,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDocument()
         {
-            IExecuteWithSignature("startDocument", "()V");
+            IExecute("startDocument");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>

@@ -160,21 +160,21 @@ namespace Java.Sql
         /// </summary>
         public Java.Io.InputStream BinaryStream
         {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getBinaryStream", "()Ljava/io/InputStream;"); }
+            get { return IExecute<Java.Io.InputStream>("getBinaryStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getCharacterStream()"/> 
         /// </summary>
         public Java.Io.Reader CharacterStream
         {
-            get { return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "()Ljava/io/Reader;"); }
+            get { return IExecute<Java.Io.Reader>("getCharacterStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getString()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setString(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String String
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getString", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setString", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getString"); } set { IExecute("setString", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getSource(java.lang.Class)"/>
@@ -205,7 +205,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.OutputStream SetBinaryStream()
         {
-            return IExecuteWithSignature<Java.Io.OutputStream>("setBinaryStream", "()Ljava/io/OutputStream;");
+            return IExecute<Java.Io.OutputStream>("setBinaryStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setCharacterStream()"/>
@@ -214,7 +214,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Writer SetCharacterStream()
         {
-            return IExecuteWithSignature<Java.Io.Writer>("setCharacterStream", "()Ljava/io/Writer;");
+            return IExecute<Java.Io.Writer>("setCharacterStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#free()"/>
@@ -222,7 +222,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void Free()
         {
-            IExecuteWithSignature("free", "()V");
+            IExecute("free");
         }
 
         #endregion

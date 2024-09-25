@@ -123,14 +123,14 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Cols
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCols", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCols", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCols"); } set { IExecute("setCols", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#getRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#setRows(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Rows
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRows", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setRows", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getRows"); } set { IExecute("setRows", value); }
         }
 
         #endregion

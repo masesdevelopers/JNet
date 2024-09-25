@@ -111,7 +111,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.ResolverStyle"/></returns>
         public static Java.Time.Format.ResolverStyle ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/format/ResolverStyle;", arg0);
+            return SExecute<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#values()"/>
@@ -119,7 +119,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.ResolverStyle"/></returns>
         public static Java.Time.Format.ResolverStyle[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "values", "()[Ljava/time/format/ResolverStyle;");
+            return SExecuteArray<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "values");
         }
 
         #endregion

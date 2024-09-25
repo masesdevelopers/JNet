@@ -166,28 +166,28 @@ namespace Java.Awt.EventNs
         /// </summary>
         public Java.Awt.Adjustable Adjustable
         {
-            get { return IExecuteWithSignature<Java.Awt.Adjustable>("getAdjustable", "()Ljava/awt/Adjustable;"); }
+            get { return IExecute<Java.Awt.Adjustable>("getAdjustable"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#getAdjustmentType()"/> 
         /// </summary>
         public int AdjustmentType
         {
-            get { return IExecuteWithSignature<int>("getAdjustmentType", "()I"); }
+            get { return IExecute<int>("getAdjustmentType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#getValue()"/> 
         /// </summary>
         public int Value
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); }
+            get { return IExecute<int>("getValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#getValueIsAdjusting()"/> 
         /// </summary>
         public bool ValueIsAdjusting
         {
-            get { return IExecuteWithSignature<bool>("getValueIsAdjusting", "()Z"); }
+            get { return IExecute<bool>("getValueIsAdjusting"); }
         }
 
         #endregion

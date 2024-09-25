@@ -103,7 +103,7 @@ namespace Java.Security.Cert
         /// </summary>
         public Java.Util.Collection<object> Collection
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<object>>("getCollection", "()Ljava/util/Collection;"); }
+            get { return IExecute<Java.Util.Collection<object>>("getCollection"); }
         }
 
         #endregion

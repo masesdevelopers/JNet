@@ -101,21 +101,21 @@ namespace Java.Rmi.Server
         /// </summary>
         public static Java.Rmi.Server.RMISocketFactory DefaultSocketFactory
         {
-            get { return SExecuteWithSignature<Java.Rmi.Server.RMISocketFactory>(LocalBridgeClazz, "getDefaultSocketFactory", "()Ljava/rmi/server/RMISocketFactory;"); }
+            get { return SExecute<Java.Rmi.Server.RMISocketFactory>(LocalBridgeClazz, "getDefaultSocketFactory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#getFailureHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#setFailureHandler(java.rmi.server.RMIFailureHandler)"/>
         /// </summary>
         public static Java.Rmi.Server.RMIFailureHandler FailureHandler
         {
-            get { return SExecuteWithSignature<Java.Rmi.Server.RMIFailureHandler>(LocalBridgeClazz, "getFailureHandler", "()Ljava/rmi/server/RMIFailureHandler;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setFailureHandler", "(Ljava/rmi/server/RMIFailureHandler;)V", value); }
+            get { return SExecute<Java.Rmi.Server.RMIFailureHandler>(LocalBridgeClazz, "getFailureHandler"); } set { SExecute(LocalBridgeClazz, "setFailureHandler", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#getSocketFactory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#setSocketFactory(java.rmi.server.RMISocketFactory)"/>
         /// </summary>
         public static Java.Rmi.Server.RMISocketFactory SocketFactory
         {
-            get { return SExecuteWithSignature<Java.Rmi.Server.RMISocketFactory>(LocalBridgeClazz, "getSocketFactory", "()Ljava/rmi/server/RMISocketFactory;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setSocketFactory", "(Ljava/rmi/server/RMISocketFactory;)V", value); }
+            get { return SExecute<Java.Rmi.Server.RMISocketFactory>(LocalBridgeClazz, "getSocketFactory"); } set { SExecute(LocalBridgeClazz, "setSocketFactory", value); }
         }
 
         #endregion
@@ -129,7 +129,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.ServerSocket CreateServerSocket(int arg0)
         {
-            return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "(I)Ljava/net/ServerSocket;", arg0);
+            return IExecute<Java.Net.ServerSocket>("createServerSocket", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#createSocket(java.lang.String,int)"/>

@@ -131,7 +131,7 @@ namespace Javax.Accessibility
         /// </summary>
         public int LinkCount
         {
-            get { return IExecuteWithSignature<int>("getLinkCount", "()I"); }
+            get { return IExecute<int>("getLinkCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHypertext.html#getLinkIndex(int)"/>
@@ -140,7 +140,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="int"/></returns>
         public int GetLinkIndex(int arg0)
         {
-            return IExecuteWithSignature<int>("getLinkIndex", "(I)I", arg0);
+            return IExecute<int>("getLinkIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHypertext.html#getLink(int)"/>
@@ -149,7 +149,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Javax.Accessibility.AccessibleHyperlink"/></returns>
         public Javax.Accessibility.AccessibleHyperlink GetLink(int arg0)
         {
-            return IExecuteWithSignature<Javax.Accessibility.AccessibleHyperlink>("getLink", "(I)Ljavax/accessibility/AccessibleHyperlink;", arg0);
+            return IExecute<Javax.Accessibility.AccessibleHyperlink>("getLink", arg0);
         }
 
         #endregion

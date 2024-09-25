@@ -130,7 +130,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public static bool IsDefaultLookAndFeelDecorated()
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDefaultLookAndFeelDecorated", "()Z");
+            return SExecute<bool>(LocalBridgeClazz, "isDefaultLookAndFeelDecorated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setDefaultLookAndFeelDecorated(boolean)"/>
@@ -138,7 +138,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public static void SetDefaultLookAndFeelDecorated(bool arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setDefaultLookAndFeelDecorated", "(Z)V", arg0);
+            SExecute(LocalBridgeClazz, "setDefaultLookAndFeelDecorated", arg0);
         }
 
         #endregion
@@ -149,49 +149,49 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.Container ContentPane
         {
-            get { return IExecuteWithSignature<Java.Awt.Container>("getContentPane", "()Ljava/awt/Container;"); } set { IExecuteWithSignature("setContentPane", "(Ljava/awt/Container;)V", value); }
+            get { return IExecute<Java.Awt.Container>("getContentPane"); } set { IExecute("setContentPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getDefaultCloseOperation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setDefaultCloseOperation(int)"/>
         /// </summary>
         public int DefaultCloseOperation
         {
-            get { return IExecuteWithSignature<int>("getDefaultCloseOperation", "()I"); } set { IExecuteWithSignature("setDefaultCloseOperation", "(I)V", value); }
+            get { return IExecute<int>("getDefaultCloseOperation"); } set { IExecute("setDefaultCloseOperation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getGlassPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setGlassPane(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component GlassPane
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getGlassPane", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setGlassPane", "(Ljava/awt/Component;)V", value); }
+            get { return IExecute<Java.Awt.Component>("getGlassPane"); } set { IExecute("setGlassPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getJMenuBar()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setJMenuBar(javax.swing.JMenuBar)"/>
         /// </summary>
         public Javax.Swing.JMenuBar JMenuBar
         {
-            get { return IExecuteWithSignature<Javax.Swing.JMenuBar>("getJMenuBar", "()Ljavax/swing/JMenuBar;"); } set { IExecuteWithSignature("setJMenuBar", "(Ljavax/swing/JMenuBar;)V", value); }
+            get { return IExecute<Javax.Swing.JMenuBar>("getJMenuBar"); } set { IExecute("setJMenuBar", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getLayeredPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setLayeredPane(javax.swing.JLayeredPane)"/>
         /// </summary>
         public Javax.Swing.JLayeredPane LayeredPane
         {
-            get { return IExecuteWithSignature<Javax.Swing.JLayeredPane>("getLayeredPane", "()Ljavax/swing/JLayeredPane;"); } set { IExecuteWithSignature("setLayeredPane", "(Ljavax/swing/JLayeredPane;)V", value); }
+            get { return IExecute<Javax.Swing.JLayeredPane>("getLayeredPane"); } set { IExecute("setLayeredPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getRootPane()"/> 
         /// </summary>
         public Javax.Swing.JRootPane RootPane
         {
-            get { return IExecuteWithSignature<Javax.Swing.JRootPane>("getRootPane", "()Ljavax/swing/JRootPane;"); }
+            get { return IExecute<Javax.Swing.JRootPane>("getRootPane"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getTransferHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setTransferHandler(javax.swing.TransferHandler)"/>
         /// </summary>
         public Javax.Swing.TransferHandler TransferHandler
         {
-            get { return IExecuteWithSignature<Javax.Swing.TransferHandler>("getTransferHandler", "()Ljavax/swing/TransferHandler;"); } set { IExecuteWithSignature("setTransferHandler", "(Ljavax/swing/TransferHandler;)V", value); }
+            get { return IExecute<Javax.Swing.TransferHandler>("getTransferHandler"); } set { IExecute("setTransferHandler", value); }
         }
 
         #endregion

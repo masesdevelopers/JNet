@@ -104,14 +104,14 @@ namespace Javax.Swing.Text
         /// </summary>
         public int MaximumZoneSize
         {
-            get { return IExecuteWithSignature<int>("getMaximumZoneSize", "()I"); } set { IExecuteWithSignature("setMaximumZoneSize", "(I)V", value); }
+            get { return IExecute<int>("getMaximumZoneSize"); } set { IExecute("setMaximumZoneSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html#getMaxZonesLoaded()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html#setMaxZonesLoaded(int)"/>
         /// </summary>
         public int MaxZonesLoaded
         {
-            get { return IExecuteWithSignature<int>("getMaxZonesLoaded", "()I"); } set { IExecuteWithSignature("setMaxZonesLoaded", "(I)V", value); }
+            get { return IExecute<int>("getMaxZonesLoaded"); } set { IExecute("setMaxZonesLoaded", value); }
         }
 
         #endregion

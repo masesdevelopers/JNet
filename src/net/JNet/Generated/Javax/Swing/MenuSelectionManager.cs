@@ -92,7 +92,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.MenuSelectionManager"/></returns>
         public static Javax.Swing.MenuSelectionManager DefaultManager()
         {
-            return SExecuteWithSignature<Javax.Swing.MenuSelectionManager>(LocalBridgeClazz, "defaultManager", "()Ljavax/swing/MenuSelectionManager;");
+            return SExecute<Javax.Swing.MenuSelectionManager>(LocalBridgeClazz, "defaultManager");
         }
 
         #endregion
@@ -103,14 +103,14 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Event.ChangeListener[] ChangeListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.ChangeListener>("getChangeListeners", "()[Ljavax/swing/event/ChangeListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.ChangeListener>("getChangeListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#getSelectedPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#setSelectedPath(javax.swing.MenuElement[])"/>
         /// </summary>
         public Javax.Swing.MenuElement[] SelectedPath
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.MenuElement>("getSelectedPath", "()[Ljavax/swing/MenuElement;"); } set { IExecuteWithSignature("setSelectedPath", "([Ljavax/swing/MenuElement;)V", value); }
+            get { return IExecuteArray<Javax.Swing.MenuElement>("getSelectedPath"); } set { IExecute("setSelectedPath", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#isComponentPartOfCurrentMenu(java.awt.Component)"/>
@@ -119,7 +119,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsComponentPartOfCurrentMenu(Java.Awt.Component arg0)
         {
-            return IExecuteWithSignature<bool>("isComponentPartOfCurrentMenu", "(Ljava/awt/Component;)Z", arg0);
+            return IExecute<bool>("isComponentPartOfCurrentMenu", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#componentForPoint(java.awt.Component,java.awt.Point)"/>
@@ -137,14 +137,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("addChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#clearSelectedPath()"/>
         /// </summary>
         public void ClearSelectedPath()
         {
-            IExecuteWithSignature("clearSelectedPath", "()V");
+            IExecute("clearSelectedPath");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#processKeyEvent(java.awt.event.KeyEvent)"/>
@@ -152,7 +152,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public void ProcessKeyEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
-            IExecuteWithSignature("processKeyEvent", "(Ljava/awt/event/KeyEvent;)V", arg0);
+            IExecute("processKeyEvent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#processMouseEvent(java.awt.event.MouseEvent)"/>
@@ -160,7 +160,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void ProcessMouseEvent(Java.Awt.EventNs.MouseEvent arg0)
         {
-            IExecuteWithSignature("processMouseEvent", "(Ljava/awt/event/MouseEvent;)V", arg0);
+            IExecute("processMouseEvent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
@@ -168,7 +168,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("removeChangeListener", arg0);
         }
 
         #endregion

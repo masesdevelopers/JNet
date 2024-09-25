@@ -143,49 +143,49 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String ImplementationName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImplementationName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getImplementationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationVendor()"/> 
         /// </summary>
         public Java.Lang.String ImplementationVendor
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImplementationVendor", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getImplementationVendor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationVersion()"/> 
         /// </summary>
         public Java.Lang.String ImplementationVersion
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImplementationVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getImplementationVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getMBeanServerId()"/> 
         /// </summary>
         public Java.Lang.String MBeanServerId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMBeanServerId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMBeanServerId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationName()"/> 
         /// </summary>
         public Java.Lang.String SpecificationName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSpecificationName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSpecificationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationVendor()"/> 
         /// </summary>
         public Java.Lang.String SpecificationVendor
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSpecificationVendor", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSpecificationVendor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationVersion()"/> 
         /// </summary>
         public Java.Lang.String SpecificationVersion
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSpecificationVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSpecificationVersion"); }
         }
 
         #endregion

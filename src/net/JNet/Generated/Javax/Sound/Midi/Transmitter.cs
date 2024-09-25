@@ -123,14 +123,14 @@ namespace Javax.Sound.Midi
         /// </summary>
         public Javax.Sound.Midi.Receiver Receiver
         {
-            get { return IExecuteWithSignature<Javax.Sound.Midi.Receiver>("getReceiver", "()Ljavax/sound/midi/Receiver;"); } set { IExecuteWithSignature("setReceiver", "(Ljavax/sound/midi/Receiver;)V", value); }
+            get { return IExecute<Javax.Sound.Midi.Receiver>("getReceiver"); } set { IExecute("setReceiver", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
 
         #endregion

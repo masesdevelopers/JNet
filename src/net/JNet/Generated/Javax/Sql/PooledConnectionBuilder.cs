@@ -147,7 +147,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.PooledConnection Build()
         {
-            return IExecuteWithSignature<Javax.Sql.PooledConnection>("build", "()Ljavax/sql/PooledConnection;");
+            return IExecute<Javax.Sql.PooledConnection>("build");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html#password(java.lang.String)"/>
@@ -156,7 +156,7 @@ namespace Javax.Sql
         /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
         public Javax.Sql.PooledConnectionBuilder Password(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Sql.PooledConnectionBuilder>("password", "(Ljava/lang/String;)Ljavax/sql/PooledConnectionBuilder;", arg0);
+            return IExecute<Javax.Sql.PooledConnectionBuilder>("password", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html#shardingKey(java.sql.ShardingKey)"/>
@@ -165,7 +165,7 @@ namespace Javax.Sql
         /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
         public Javax.Sql.PooledConnectionBuilder ShardingKey(Java.Sql.ShardingKey arg0)
         {
-            return IExecuteWithSignature<Javax.Sql.PooledConnectionBuilder>("shardingKey", "(Ljava/sql/ShardingKey;)Ljavax/sql/PooledConnectionBuilder;", arg0);
+            return IExecute<Javax.Sql.PooledConnectionBuilder>("shardingKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html#superShardingKey(java.sql.ShardingKey)"/>
@@ -174,7 +174,7 @@ namespace Javax.Sql
         /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
         public Javax.Sql.PooledConnectionBuilder SuperShardingKey(Java.Sql.ShardingKey arg0)
         {
-            return IExecuteWithSignature<Javax.Sql.PooledConnectionBuilder>("superShardingKey", "(Ljava/sql/ShardingKey;)Ljavax/sql/PooledConnectionBuilder;", arg0);
+            return IExecute<Javax.Sql.PooledConnectionBuilder>("superShardingKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html#user(java.lang.String)"/>
@@ -183,7 +183,7 @@ namespace Javax.Sql
         /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
         public Javax.Sql.PooledConnectionBuilder User(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Sql.PooledConnectionBuilder>("user", "(Ljava/lang/String;)Ljavax/sql/PooledConnectionBuilder;", arg0);
+            return IExecute<Javax.Sql.PooledConnectionBuilder>("user", arg0);
         }
 
         #endregion

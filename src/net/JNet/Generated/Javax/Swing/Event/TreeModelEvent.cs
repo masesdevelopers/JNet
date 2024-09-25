@@ -104,28 +104,28 @@ namespace Javax.Swing.Event
         /// </summary>
         public int[] ChildIndices
         {
-            get { return IExecuteWithSignatureArray<int>("getChildIndices", "()[I"); }
+            get { return IExecuteArray<int>("getChildIndices"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#getChildren()"/> 
         /// </summary>
         public object[] Children
         {
-            get { return IExecuteWithSignatureArray<object>("getChildren", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getChildren"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#getPath()"/> 
         /// </summary>
         public object[] Path
         {
-            get { return IExecuteWithSignatureArray<object>("getPath", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getPath"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#getTreePath()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath TreePath
         {
-            get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getTreePath", "()Ljavax/swing/tree/TreePath;"); }
+            get { return IExecute<Javax.Swing.Tree.TreePath>("getTreePath"); }
         }
 
         #endregion

@@ -124,7 +124,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateFromBufferedImageType(int arg0)
         {
-            return SExecuteWithSignature<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createFromBufferedImageType", "(I)Ljavax/imageio/ImageTypeSpecifier;", arg0);
+            return SExecute<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createFromBufferedImageType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createFromRenderedImage(java.awt.image.RenderedImage)"/>
@@ -133,7 +133,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateFromRenderedImage(Java.Awt.ImageNs.RenderedImage arg0)
         {
-            return SExecuteWithSignature<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createFromRenderedImage", "(Ljava/awt/image/RenderedImage;)Ljavax/imageio/ImageTypeSpecifier;", arg0);
+            return SExecute<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createFromRenderedImage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createGrayscale(int,int,boolean,boolean)"/>
@@ -209,35 +209,35 @@ namespace Javax.Imageio
         /// </summary>
         public int BufferedImageType
         {
-            get { return IExecuteWithSignature<int>("getBufferedImageType", "()I"); }
+            get { return IExecute<int>("getBufferedImageType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#getColorModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.ColorModel ColorModel
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.ColorModel>("getColorModel", "()Ljava/awt/image/ColorModel;"); }
+            get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#getNumBands()"/> 
         /// </summary>
         public int NumBands
         {
-            get { return IExecuteWithSignature<int>("getNumBands", "()I"); }
+            get { return IExecute<int>("getNumBands"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#getNumComponents()"/> 
         /// </summary>
         public int NumComponents
         {
-            get { return IExecuteWithSignature<int>("getNumComponents", "()I"); }
+            get { return IExecute<int>("getNumComponents"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#getSampleModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.SampleModel SampleModel
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.SampleModel>("getSampleModel", "()Ljava/awt/image/SampleModel;"); }
+            get { return IExecute<Java.Awt.ImageNs.SampleModel>("getSampleModel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#getBitsPerBand(int)"/>
@@ -246,7 +246,7 @@ namespace Javax.Imageio
         /// <returns><see cref="int"/></returns>
         public int GetBitsPerBand(int arg0)
         {
-            return IExecuteWithSignature<int>("getBitsPerBand", "(I)I", arg0);
+            return IExecute<int>("getBitsPerBand", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createBufferedImage(int,int)"/>

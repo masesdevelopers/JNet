@@ -151,28 +151,28 @@ namespace Java.Awt
         /// </summary>
         public int Alignment
         {
-            get { return IExecuteWithSignature<int>("getAlignment", "()I"); } set { IExecuteWithSignature("setAlignment", "(I)V", value); }
+            get { return IExecute<int>("getAlignment"); } set { IExecute("setAlignment", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#getAlignOnBaseline()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#setAlignOnBaseline(boolean)"/>
         /// </summary>
         public bool AlignOnBaseline
         {
-            get { return IExecuteWithSignature<bool>("getAlignOnBaseline", "()Z"); } set { IExecuteWithSignature("setAlignOnBaseline", "(Z)V", value); }
+            get { return IExecute<bool>("getAlignOnBaseline"); } set { IExecute("setAlignOnBaseline", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#getHgap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#setHgap(int)"/>
         /// </summary>
         public int Hgap
         {
-            get { return IExecuteWithSignature<int>("getHgap", "()I"); } set { IExecuteWithSignature("setHgap", "(I)V", value); }
+            get { return IExecute<int>("getHgap"); } set { IExecute("setHgap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#getVgap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#setVgap(int)"/>
         /// </summary>
         public int Vgap
         {
-            get { return IExecuteWithSignature<int>("getVgap", "()I"); } set { IExecuteWithSignature("setVgap", "(I)V", value); }
+            get { return IExecute<int>("getVgap"); } set { IExecute("setVgap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#minimumLayoutSize(java.awt.Container)"/>
@@ -181,7 +181,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#preferredLayoutSize(java.awt.Container)"/>
@@ -190,7 +190,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
@@ -207,7 +207,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void LayoutContainer(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
+            IExecute("layoutContainer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#removeLayoutComponent(java.awt.Component)"/>
@@ -215,7 +215,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void RemoveLayoutComponent(Java.Awt.Component arg0)
         {
-            IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);
+            IExecute("removeLayoutComponent", arg0);
         }
 
         #endregion

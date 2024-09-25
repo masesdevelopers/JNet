@@ -101,7 +101,7 @@ namespace Javax.Sound.Midi.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.MidiFileFormat GetMidiFileFormat(Java.Io.File arg0)
         {
-            return IExecuteWithSignature<Javax.Sound.Midi.MidiFileFormat>("getMidiFileFormat", "(Ljava/io/File;)Ljavax/sound/midi/MidiFileFormat;", arg0);
+            return IExecute<Javax.Sound.Midi.MidiFileFormat>("getMidiFileFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getMidiFileFormat(java.io.InputStream)"/>
@@ -112,7 +112,7 @@ namespace Javax.Sound.Midi.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.MidiFileFormat GetMidiFileFormat(Java.Io.InputStream arg0)
         {
-            return IExecuteWithSignature<Javax.Sound.Midi.MidiFileFormat>("getMidiFileFormat", "(Ljava/io/InputStream;)Ljavax/sound/midi/MidiFileFormat;", arg0);
+            return IExecute<Javax.Sound.Midi.MidiFileFormat>("getMidiFileFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getMidiFileFormat(java.net.URL)"/>
@@ -123,7 +123,7 @@ namespace Javax.Sound.Midi.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.MidiFileFormat GetMidiFileFormat(Java.Net.URL arg0)
         {
-            return IExecuteWithSignature<Javax.Sound.Midi.MidiFileFormat>("getMidiFileFormat", "(Ljava/net/URL;)Ljavax/sound/midi/MidiFileFormat;", arg0);
+            return IExecute<Javax.Sound.Midi.MidiFileFormat>("getMidiFileFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getSequence(java.io.File)"/>
@@ -134,7 +134,7 @@ namespace Javax.Sound.Midi.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.Sequence GetSequence(Java.Io.File arg0)
         {
-            return IExecuteWithSignature<Javax.Sound.Midi.Sequence>("getSequence", "(Ljava/io/File;)Ljavax/sound/midi/Sequence;", arg0);
+            return IExecute<Javax.Sound.Midi.Sequence>("getSequence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getSequence(java.io.InputStream)"/>
@@ -145,7 +145,7 @@ namespace Javax.Sound.Midi.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.Sequence GetSequence(Java.Io.InputStream arg0)
         {
-            return IExecuteWithSignature<Javax.Sound.Midi.Sequence>("getSequence", "(Ljava/io/InputStream;)Ljavax/sound/midi/Sequence;", arg0);
+            return IExecute<Javax.Sound.Midi.Sequence>("getSequence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getSequence(java.net.URL)"/>
@@ -156,7 +156,7 @@ namespace Javax.Sound.Midi.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.Sequence GetSequence(Java.Net.URL arg0)
         {
-            return IExecuteWithSignature<Javax.Sound.Midi.Sequence>("getSequence", "(Ljava/net/URL;)Ljavax/sound/midi/Sequence;", arg0);
+            return IExecute<Javax.Sound.Midi.Sequence>("getSequence", arg0);
         }
 
         #endregion

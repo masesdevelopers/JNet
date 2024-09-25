@@ -115,28 +115,28 @@ namespace Java.Awt.FontNs
         /// </summary>
         public object AntiAliasingHint
         {
-            get { return IExecuteWithSignature("getAntiAliasingHint", "()Ljava/lang/Object;"); }
+            get { return IExecute("getAntiAliasingHint"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#getFractionalMetricsHint()"/> 
         /// </summary>
         public object FractionalMetricsHint
         {
-            get { return IExecuteWithSignature("getFractionalMetricsHint", "()Ljava/lang/Object;"); }
+            get { return IExecute("getFractionalMetricsHint"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#getTransform()"/> 
         /// </summary>
         public Java.Awt.Geom.AffineTransform Transform
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.AffineTransform>("getTransform", "()Ljava/awt/geom/AffineTransform;"); }
+            get { return IExecute<Java.Awt.Geom.AffineTransform>("getTransform"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#getTransformType()"/> 
         /// </summary>
         public int TransformType
         {
-            get { return IExecuteWithSignature<int>("getTransformType", "()I"); }
+            get { return IExecute<int>("getTransformType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#isAntiAliased()"/>
@@ -144,7 +144,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="bool"/></returns>
         public bool IsAntiAliased()
         {
-            return IExecuteWithSignature<bool>("isAntiAliased", "()Z");
+            return IExecute<bool>("isAntiAliased");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#isTransformed()"/>
@@ -152,7 +152,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="bool"/></returns>
         public bool IsTransformed()
         {
-            return IExecuteWithSignature<bool>("isTransformed", "()Z");
+            return IExecute<bool>("isTransformed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#usesFractionalMetrics()"/>
@@ -160,7 +160,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="bool"/></returns>
         public bool UsesFractionalMetrics()
         {
-            return IExecuteWithSignature<bool>("usesFractionalMetrics", "()Z");
+            return IExecute<bool>("usesFractionalMetrics");
         }
 
         #endregion

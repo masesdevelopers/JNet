@@ -112,7 +112,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int Depth()
         {
-            return IExecuteWithSignature<int>("depth", "()I");
+            return IExecute<int>("depth");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#current()"/>
@@ -120,7 +120,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element Current()
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Element>("current", "()Ljavax/swing/text/Element;");
+            return IExecute<Javax.Swing.Text.Element>("current");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#first()"/>
@@ -128,7 +128,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element First()
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Element>("first", "()Ljavax/swing/text/Element;");
+            return IExecute<Javax.Swing.Text.Element>("first");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#next()"/>
@@ -136,7 +136,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element Next()
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Element>("next", "()Ljavax/swing/text/Element;");
+            return IExecute<Javax.Swing.Text.Element>("next");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#previous()"/>
@@ -144,7 +144,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element Previous()
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Element>("previous", "()Ljavax/swing/text/Element;");
+            return IExecute<Javax.Swing.Text.Element>("previous");
         }
 
         #endregion

@@ -123,14 +123,14 @@ namespace Java.Lang.Management
         /// </summary>
         public long CollectionCount
         {
-            get { return IExecuteWithSignature<long>("getCollectionCount", "()J"); }
+            get { return IExecute<long>("getCollectionCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/GarbageCollectorMXBean.html#getCollectionTime()"/> 
         /// </summary>
         public long CollectionTime
         {
-            get { return IExecuteWithSignature<long>("getCollectionTime", "()J"); }
+            get { return IExecute<long>("getCollectionTime"); }
         }
 
         #endregion

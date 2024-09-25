@@ -139,42 +139,42 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         public Java.Lang.String BaseURI
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBaseURI", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getBaseURI"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getNotationName()"/> 
         /// </summary>
         public Java.Lang.String NotationName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNotationName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getNotationName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getPublicId()"/> 
         /// </summary>
         public Java.Lang.String PublicId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPublicId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getReplacementText()"/> 
         /// </summary>
         public Java.Lang.String ReplacementText
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getReplacementText", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getReplacementText"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getSystemId()"/> 
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); }
         }
 
         #endregion

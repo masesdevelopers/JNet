@@ -128,14 +128,14 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror LowerBound
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("getLowerBound", "()Ljavax/lang/model/type/TypeMirror;"); }
+            get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getLowerBound"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#getUpperBound()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror UpperBound
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("getUpperBound", "()Ljavax/lang/model/type/TypeMirror;"); }
+            get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getUpperBound"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#asElement()"/>
@@ -143,7 +143,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
         public Javax.Lang.Model.Element.Element AsElement()
         {
-            return IExecuteWithSignature<Javax.Lang.Model.Element.Element>("asElement", "()Ljavax/lang/model/element/Element;");
+            return IExecute<Javax.Lang.Model.Element.Element>("asElement");
         }
 
         #endregion

@@ -104,7 +104,7 @@ namespace Java.Util.Zip
         /// </summary>
         public Java.Util.Zip.Checksum Checksum
         {
-            get { return IExecuteWithSignature<Java.Util.Zip.Checksum>("getChecksum", "()Ljava/util/zip/Checksum;"); }
+            get { return IExecute<Java.Util.Zip.Checksum>("getChecksum"); }
         }
 
         #endregion

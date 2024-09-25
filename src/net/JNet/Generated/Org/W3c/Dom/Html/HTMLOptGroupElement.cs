@@ -123,14 +123,14 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public bool Disabled
         {
-            get { return IExecuteWithSignature<bool>("getDisabled", "()Z"); } set { IExecuteWithSignature("setDisabled", "(Z)V", value); }
+            get { return IExecute<bool>("getDisabled"); } set { IExecute("setDisabled", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptGroupElement.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptGroupElement.html#setLabel(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Label
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLabel", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getLabel"); } set { IExecute("setLabel", value); }
         }
 
         #endregion

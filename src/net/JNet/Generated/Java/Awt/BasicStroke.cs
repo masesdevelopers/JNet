@@ -173,42 +173,42 @@ namespace Java.Awt
         /// </summary>
         public float[] DashArray
         {
-            get { return IExecuteWithSignatureArray<float>("getDashArray", "()[F"); }
+            get { return IExecuteArray<float>("getDashArray"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getDashPhase()"/> 
         /// </summary>
         public float DashPhase
         {
-            get { return IExecuteWithSignature<float>("getDashPhase", "()F"); }
+            get { return IExecute<float>("getDashPhase"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getEndCap()"/> 
         /// </summary>
         public int EndCap
         {
-            get { return IExecuteWithSignature<int>("getEndCap", "()I"); }
+            get { return IExecute<int>("getEndCap"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getLineJoin()"/> 
         /// </summary>
         public int LineJoin
         {
-            get { return IExecuteWithSignature<int>("getLineJoin", "()I"); }
+            get { return IExecute<int>("getLineJoin"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getLineWidth()"/> 
         /// </summary>
         public float LineWidth
         {
-            get { return IExecuteWithSignature<float>("getLineWidth", "()F"); }
+            get { return IExecute<float>("getLineWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getMiterLimit()"/> 
         /// </summary>
         public float MiterLimit
         {
-            get { return IExecuteWithSignature<float>("getMiterLimit", "()F"); }
+            get { return IExecute<float>("getMiterLimit"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#createStrokedShape(java.awt.Shape)"/>
@@ -217,7 +217,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape CreateStrokedShape(Java.Awt.Shape arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Shape>("createStrokedShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;", arg0);
+            return IExecute<Java.Awt.Shape>("createStrokedShape", arg0);
         }
 
         #endregion

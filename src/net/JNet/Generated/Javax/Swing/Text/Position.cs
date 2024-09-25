@@ -164,7 +164,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public int Offset
         {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
+            get { return IExecute<int>("getOffset"); }
         }
 
         #endregion

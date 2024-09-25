@@ -155,7 +155,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.URLClassLoader"/></returns>
         public static Java.Net.URLClassLoader NewInstance(Java.Net.URL[] arg0)
         {
-            return SExecuteWithSignature<Java.Net.URLClassLoader>(LocalBridgeClazz, "newInstance", "([Ljava/net/URL;)Ljava/net/URLClassLoader;", new object[] { arg0 });
+            return SExecute<Java.Net.URLClassLoader>(LocalBridgeClazz, "newInstance", new object[] { arg0 });
         }
 
         #endregion
@@ -166,7 +166,7 @@ namespace Java.Net
         /// </summary>
         public Java.Net.URL[] URLs
         {
-            get { return IExecuteWithSignatureArray<Java.Net.URL>("getURLs", "()[Ljava/net/URL;"); }
+            get { return IExecuteArray<Java.Net.URL>("getURLs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#findResource(java.lang.String)"/>
@@ -175,7 +175,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.URL"/></returns>
         public Java.Net.URL FindResource(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Net.URL>("findResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
+            return IExecute<Java.Net.URL>("findResource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#findResources(java.lang.String)"/>
@@ -185,7 +185,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Enumeration<Java.Net.URL> FindResources(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Java.Net.URL>>("findResources", "(Ljava/lang/String;)Ljava/util/Enumeration;", arg0);
+            return IExecute<Java.Util.Enumeration<Java.Net.URL>>("findResources", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#close()"/>
@@ -193,7 +193,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
 
         #endregion

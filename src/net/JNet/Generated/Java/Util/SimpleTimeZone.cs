@@ -178,7 +178,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void SetDSTSavings(int arg0)
         {
-            IExecuteWithSignature("setDSTSavings", "(I)V", arg0);
+            IExecute("setDSTSavings", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#setEndRule(int,int,int,int,boolean)"/>
@@ -252,7 +252,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void SetStartYear(int arg0)
         {
-            IExecuteWithSignature("setStartYear", "(I)V", arg0);
+            IExecute("setStartYear", arg0);
         }
 
         #endregion

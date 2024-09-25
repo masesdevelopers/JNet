@@ -95,7 +95,7 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.ActionMap Parent
         {
-            get { return IExecuteWithSignature<Javax.Swing.ActionMap>("getParent", "()Ljavax/swing/ActionMap;"); } set { IExecuteWithSignature("setParent", "(Ljavax/swing/ActionMap;)V", value); }
+            get { return IExecute<Javax.Swing.ActionMap>("getParent"); } set { IExecute("setParent", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#size()"/>
@@ -103,7 +103,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#allKeys()"/>
@@ -111,7 +111,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public object[] AllKeys()
         {
-            return IExecuteWithSignatureArray<object>("allKeys", "()[Ljava/lang/Object;");
+            return IExecuteArray<object>("allKeys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#keys()"/>
@@ -119,7 +119,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public object[] Keys()
         {
-            return IExecuteWithSignatureArray<object>("keys", "()[Ljava/lang/Object;");
+            return IExecuteArray<object>("keys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#get(java.lang.Object)"/>
@@ -128,7 +128,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Action"/></returns>
         public Javax.Swing.Action Get(object arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Action>("get", "(Ljava/lang/Object;)Ljavax/swing/Action;", arg0);
+            return IExecute<Javax.Swing.Action>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#get(java.lang.Object)"/>
@@ -137,14 +137,14 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Action"/></returns>
         public Javax.Swing.Action GetDirect(object arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.ActionDirect, Javax.Swing.Action>("get", "(Ljava/lang/Object;)Ljavax/swing/Action;", arg0);
+            return IExecute<Javax.Swing.ActionDirect, Javax.Swing.Action>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#put(java.lang.Object,javax.swing.Action)"/>
@@ -161,7 +161,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="object"/></param>
         public void Remove(object arg0)
         {
-            IExecuteWithSignature("remove", "(Ljava/lang/Object;)V", arg0);
+            IExecute("remove", arg0);
         }
 
         #endregion

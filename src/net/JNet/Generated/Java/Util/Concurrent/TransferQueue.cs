@@ -145,7 +145,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public int WaitingConsumerCount
         {
-            get { return IExecuteWithSignature<int>("getWaitingConsumerCount", "()I"); }
+            get { return IExecute<int>("getWaitingConsumerCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#hasWaitingConsumer()"/>
@@ -153,7 +153,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool HasWaitingConsumer()
         {
-            return IExecuteWithSignature<bool>("hasWaitingConsumer", "()Z");
+            return IExecute<bool>("hasWaitingConsumer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -174,7 +174,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool TryTransfer(object arg0)
         {
-            return IExecuteWithSignature<bool>("tryTransfer", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("tryTransfer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#transfer(java.lang.Object)"/>
@@ -183,7 +183,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Transfer(object arg0)
         {
-            IExecuteWithSignature("transfer", "(Ljava/lang/Object;)V", arg0);
+            IExecute("transfer", arg0);
         }
 
         #endregion
@@ -273,7 +273,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public int WaitingConsumerCount
         {
-            get { return IExecuteWithSignature<int>("getWaitingConsumerCount", "()I"); }
+            get { return IExecute<int>("getWaitingConsumerCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#hasWaitingConsumer()"/>
@@ -281,7 +281,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool HasWaitingConsumer()
         {
-            return IExecuteWithSignature<bool>("hasWaitingConsumer", "()Z");
+            return IExecute<bool>("hasWaitingConsumer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -302,7 +302,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool TryTransfer(E arg0)
         {
-            return IExecuteWithSignature<bool>("tryTransfer", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("tryTransfer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#transfer(java.lang.Object)"/>
@@ -311,7 +311,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Transfer(E arg0)
         {
-            IExecuteWithSignature("transfer", "(Ljava/lang/Object;)V", arg0);
+            IExecute("transfer", arg0);
         }
 
         #endregion

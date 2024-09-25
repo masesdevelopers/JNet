@@ -107,7 +107,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.String> AllValues(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("allValues", "(Ljava/lang/String;)Ljava/util/List;", arg0);
+            return IExecute<Java.Util.List<Java.Lang.String>>("allValues", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#map()"/>
@@ -115,7 +115,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> Map()
         {
-            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("map", "()Ljava/util/Map;");
+            return IExecute<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("map");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#firstValue(java.lang.String)"/>
@@ -124,7 +124,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Lang.String> FirstValue(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.String>>("firstValue", "(Ljava/lang/String;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<Java.Lang.String>>("firstValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#firstValueAsLong(java.lang.String)"/>
@@ -133,7 +133,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public Java.Util.OptionalLong FirstValueAsLong(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.OptionalLong>("firstValueAsLong", "(Ljava/lang/String;)Ljava/util/OptionalLong;", arg0);
+            return IExecute<Java.Util.OptionalLong>("firstValueAsLong", arg0);
         }
 
         #endregion

@@ -142,14 +142,14 @@ namespace Javax.Sound.Sampled
         /// </summary>
         public object Value
         {
-            get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/EnumControl.html#getValues()"/> 
         /// </summary>
         public object[] Values
         {
-            get { return IExecuteWithSignatureArray<object>("getValues", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getValues"); }
         }
 
         #endregion

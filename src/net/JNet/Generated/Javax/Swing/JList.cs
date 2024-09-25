@@ -228,203 +228,203 @@ namespace Javax.Swing
         /// </summary>
         public int AnchorSelectionIndex
         {
-            get { return IExecuteWithSignature<int>("getAnchorSelectionIndex", "()I"); }
+            get { return IExecute<int>("getAnchorSelectionIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getCellRenderer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setCellRenderer(javax.swing.ListCellRenderer)"/>
         /// </summary>
         public Javax.Swing.ListCellRenderer CellRenderer
         {
-            get { return IExecuteWithSignature<Javax.Swing.ListCellRenderer>("getCellRenderer", "()Ljavax/swing/ListCellRenderer;"); } set { IExecuteWithSignature("setCellRenderer", "(Ljavax/swing/ListCellRenderer;)V", value); }
+            get { return IExecute<Javax.Swing.ListCellRenderer>("getCellRenderer"); } set { IExecute("setCellRenderer", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDragEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDragEnabled(boolean)"/>
         /// </summary>
         public bool DragEnabled
         {
-            get { return IExecuteWithSignature<bool>("getDragEnabled", "()Z"); } set { IExecuteWithSignature("setDragEnabled", "(Z)V", value); }
+            get { return IExecute<bool>("getDragEnabled"); } set { IExecute("setDragEnabled", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDropMode(javax.swing.DropMode)"/>
         /// </summary>
         public Javax.Swing.DropMode DropMode
         {
-            get { return IExecuteWithSignature<Javax.Swing.DropMode>("getDropMode", "()Ljavax/swing/DropMode;"); } set { IExecuteWithSignature("setDropMode", "(Ljavax/swing/DropMode;)V", value); }
+            get { return IExecute<Javax.Swing.DropMode>("getDropMode"); } set { IExecute("setDropMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFirstVisibleIndex()"/> 
         /// </summary>
         public int FirstVisibleIndex
         {
-            get { return IExecuteWithSignature<int>("getFirstVisibleIndex", "()I"); }
+            get { return IExecute<int>("getFirstVisibleIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFixedCellHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setFixedCellHeight(int)"/>
         /// </summary>
         public int FixedCellHeight
         {
-            get { return IExecuteWithSignature<int>("getFixedCellHeight", "()I"); } set { IExecuteWithSignature("setFixedCellHeight", "(I)V", value); }
+            get { return IExecute<int>("getFixedCellHeight"); } set { IExecute("setFixedCellHeight", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFixedCellWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setFixedCellWidth(int)"/>
         /// </summary>
         public int FixedCellWidth
         {
-            get { return IExecuteWithSignature<int>("getFixedCellWidth", "()I"); } set { IExecuteWithSignature("setFixedCellWidth", "(I)V", value); }
+            get { return IExecute<int>("getFixedCellWidth"); } set { IExecute("setFixedCellWidth", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropLocation()"/> 
         /// </summary>
         public Javax.Swing.JList.DropLocation GetDropLocation
         {
-            get { return IExecuteWithSignature<Javax.Swing.JList.DropLocation>("getDropLocation", "()Ljavax/swing/JList$DropLocation;"); }
+            get { return IExecute<Javax.Swing.JList.DropLocation>("getDropLocation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLastVisibleIndex()"/> 
         /// </summary>
         public int LastVisibleIndex
         {
-            get { return IExecuteWithSignature<int>("getLastVisibleIndex", "()I"); }
+            get { return IExecute<int>("getLastVisibleIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLayoutOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setLayoutOrientation(int)"/>
         /// </summary>
         public int LayoutOrientation
         {
-            get { return IExecuteWithSignature<int>("getLayoutOrientation", "()I"); } set { IExecuteWithSignature("setLayoutOrientation", "(I)V", value); }
+            get { return IExecute<int>("getLayoutOrientation"); } set { IExecute("setLayoutOrientation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLeadSelectionIndex()"/> 
         /// </summary>
         public int LeadSelectionIndex
         {
-            get { return IExecuteWithSignature<int>("getLeadSelectionIndex", "()I"); }
+            get { return IExecute<int>("getLeadSelectionIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getListSelectionListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.ListSelectionListener[] ListSelectionListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.ListSelectionListener>("getListSelectionListeners", "()[Ljavax/swing/event/ListSelectionListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.ListSelectionListener>("getListSelectionListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getMaxSelectionIndex()"/> 
         /// </summary>
         public int MaxSelectionIndex
         {
-            get { return IExecuteWithSignature<int>("getMaxSelectionIndex", "()I"); }
+            get { return IExecute<int>("getMaxSelectionIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getMinSelectionIndex()"/> 
         /// </summary>
         public int MinSelectionIndex
         {
-            get { return IExecuteWithSignature<int>("getMinSelectionIndex", "()I"); }
+            get { return IExecute<int>("getMinSelectionIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setModel(javax.swing.ListModel)"/>
         /// </summary>
         public Javax.Swing.ListModel Model
         {
-            get { return IExecuteWithSignature<Javax.Swing.ListModel>("getModel", "()Ljavax/swing/ListModel;"); } set { IExecuteWithSignature("setModel", "(Ljavax/swing/ListModel;)V", value); }
+            get { return IExecute<Javax.Swing.ListModel>("getModel"); } set { IExecute("setModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getPreferredScrollableViewportSize()"/> 
         /// </summary>
         public Java.Awt.Dimension PreferredScrollableViewportSize
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredScrollableViewportSize", "()Ljava/awt/Dimension;"); }
+            get { return IExecute<Java.Awt.Dimension>("getPreferredScrollableViewportSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getPrototypeCellValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setPrototypeCellValue(java.lang.Object)"/>
         /// </summary>
         public object PrototypeCellValue
         {
-            get { return IExecuteWithSignature("getPrototypeCellValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setPrototypeCellValue", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getPrototypeCellValue"); } set { IExecute("setPrototypeCellValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getScrollableTracksViewportHeight()"/> 
         /// </summary>
         public bool ScrollableTracksViewportHeight
         {
-            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportHeight", "()Z"); }
+            get { return IExecute<bool>("getScrollableTracksViewportHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getScrollableTracksViewportWidth()"/> 
         /// </summary>
         public bool ScrollableTracksViewportWidth
         {
-            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportWidth", "()Z"); }
+            get { return IExecute<bool>("getScrollableTracksViewportWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedIndex(int)"/>
         /// </summary>
         public int SelectedIndex
         {
-            get { return IExecuteWithSignature<int>("getSelectedIndex", "()I"); } set { IExecuteWithSignature("setSelectedIndex", "(I)V", value); }
+            get { return IExecute<int>("getSelectedIndex"); } set { IExecute("setSelectedIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedIndices()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedIndices(int[])"/>
         /// </summary>
         public int[] SelectedIndices
         {
-            get { return IExecuteWithSignatureArray<int>("getSelectedIndices", "()[I"); } set { IExecuteWithSignature("setSelectedIndices", "([I)V", value); }
+            get { return IExecuteArray<int>("getSelectedIndices"); } set { IExecute("setSelectedIndices", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedValue()"/> 
         /// </summary>
         public object SelectedValue
         {
-            get { return IExecuteWithSignature("getSelectedValue", "()Ljava/lang/Object;"); }
+            get { return IExecute("getSelectedValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedValuesList()"/> 
         /// </summary>
         public Java.Util.List SelectedValuesList
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getSelectedValuesList", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List>("getSelectedValuesList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionBackground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionBackground(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color SelectionBackground
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getSelectionBackground", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setSelectionBackground", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getSelectionBackground"); } set { IExecute("setSelectionBackground", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionForeground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionForeground(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color SelectionForeground
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getSelectionForeground", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setSelectionForeground", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getSelectionForeground"); } set { IExecute("setSelectionForeground", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionMode(int)"/>
         /// </summary>
         public int SelectionMode
         {
-            get { return IExecuteWithSignature<int>("getSelectionMode", "()I"); } set { IExecuteWithSignature("setSelectionMode", "(I)V", value); }
+            get { return IExecute<int>("getSelectionMode"); } set { IExecute("setSelectionMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionModel(javax.swing.ListSelectionModel)"/>
         /// </summary>
         public Javax.Swing.ListSelectionModel SelectionModel
         {
-            get { return IExecuteWithSignature<Javax.Swing.ListSelectionModel>("getSelectionModel", "()Ljavax/swing/ListSelectionModel;"); } set { IExecuteWithSignature("setSelectionModel", "(Ljavax/swing/ListSelectionModel;)V", value); }
+            get { return IExecute<Javax.Swing.ListSelectionModel>("getSelectionModel"); } set { IExecute("setSelectionModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getValueIsAdjusting()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setValueIsAdjusting(boolean)"/>
         /// </summary>
         public bool ValueIsAdjusting
         {
-            get { return IExecuteWithSignature<bool>("getValueIsAdjusting", "()Z"); } set { IExecuteWithSignature("setValueIsAdjusting", "(Z)V", value); }
+            get { return IExecute<bool>("getValueIsAdjusting"); } set { IExecute("setValueIsAdjusting", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getVisibleRowCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setVisibleRowCount(int)"/>
         /// </summary>
         public int VisibleRowCount
         {
-            get { return IExecuteWithSignature<int>("getVisibleRowCount", "()I"); } set { IExecuteWithSignature("setVisibleRowCount", "(I)V", value); }
+            get { return IExecute<int>("getVisibleRowCount"); } set { IExecute("setVisibleRowCount", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectedIndex(int)"/>
@@ -433,7 +433,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSelectedIndex(int arg0)
         {
-            return IExecuteWithSignature<bool>("isSelectedIndex", "(I)Z", arg0);
+            return IExecute<bool>("isSelectedIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/>
@@ -441,7 +441,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSelectionEmpty()
         {
-            return IExecuteWithSignature<bool>("isSelectionEmpty", "()Z");
+            return IExecute<bool>("isSelectionEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getNextMatch(java.lang.String,int,javax.swing.text.Position.Bias)"/>
@@ -483,7 +483,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int LocationToIndex(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<int>("locationToIndex", "(Ljava/awt/Point;)I", arg0);
+            return IExecute<int>("locationToIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#indexToLocation(int)"/>
@@ -492,7 +492,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Point"/></returns>
         public Java.Awt.Point IndexToLocation(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Point>("indexToLocation", "(I)Ljava/awt/Point;", arg0);
+            return IExecute<Java.Awt.Point>("indexToLocation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getCellBounds(int,int)"/>
@@ -510,7 +510,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
         public void AddListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
-            IExecuteWithSignature("addListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
+            IExecute("addListSelectionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#addSelectionInterval(int,int)"/>
@@ -526,7 +526,7 @@ namespace Javax.Swing
         /// </summary>
         public void ClearSelection()
         {
-            IExecuteWithSignature("clearSelection", "()V");
+            IExecute("clearSelection");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#ensureIndexIsVisible(int)"/>
@@ -534,7 +534,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void EnsureIndexIsVisible(int arg0)
         {
-            IExecuteWithSignature("ensureIndexIsVisible", "(I)V", arg0);
+            IExecute("ensureIndexIsVisible", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#removeListSelectionListener(javax.swing.event.ListSelectionListener)"/>
@@ -542,7 +542,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
         public void RemoveListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
-            IExecuteWithSignature("removeListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
+            IExecute("removeListSelectionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#removeSelectionInterval(int,int)"/>
@@ -559,7 +559,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="object"/></param>
         public void SetListData(object[] arg0)
         {
-            IExecuteWithSignature("setListData", "([Ljava/lang/Object;)V", new object[] { arg0 });
+            IExecute("setListData", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.util.Vector)"/>
@@ -567,7 +567,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         public void SetListData(Java.Util.Vector arg0)
         {
-            IExecuteWithSignature("setListData", "(Ljava/util/Vector;)V", arg0);
+            IExecute("setListData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedValue(java.lang.Object,boolean)"/>
@@ -593,7 +593,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.ListUI"/></param>
         public void SetUI(Javax.Swing.Plaf.ListUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ListUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
 
         #endregion
@@ -731,203 +731,203 @@ namespace Javax.Swing
         /// </summary>
         public int AnchorSelectionIndex
         {
-            get { return IExecuteWithSignature<int>("getAnchorSelectionIndex", "()I"); }
+            get { return IExecute<int>("getAnchorSelectionIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getCellRenderer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setCellRenderer(javax.swing.ListCellRenderer)"/>
         /// </summary>
         public Javax.Swing.ListCellRenderer CellRenderer
         {
-            get { return IExecuteWithSignature<Javax.Swing.ListCellRenderer>("getCellRenderer", "()Ljavax/swing/ListCellRenderer;"); } set { IExecuteWithSignature("setCellRenderer", "(Ljavax/swing/ListCellRenderer;)V", value); }
+            get { return IExecute<Javax.Swing.ListCellRenderer>("getCellRenderer"); } set { IExecute("setCellRenderer", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDragEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDragEnabled(boolean)"/>
         /// </summary>
         public bool DragEnabled
         {
-            get { return IExecuteWithSignature<bool>("getDragEnabled", "()Z"); } set { IExecuteWithSignature("setDragEnabled", "(Z)V", value); }
+            get { return IExecute<bool>("getDragEnabled"); } set { IExecute("setDragEnabled", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDropMode(javax.swing.DropMode)"/>
         /// </summary>
         public Javax.Swing.DropMode DropMode
         {
-            get { return IExecuteWithSignature<Javax.Swing.DropMode>("getDropMode", "()Ljavax/swing/DropMode;"); } set { IExecuteWithSignature("setDropMode", "(Ljavax/swing/DropMode;)V", value); }
+            get { return IExecute<Javax.Swing.DropMode>("getDropMode"); } set { IExecute("setDropMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFirstVisibleIndex()"/> 
         /// </summary>
         public int FirstVisibleIndex
         {
-            get { return IExecuteWithSignature<int>("getFirstVisibleIndex", "()I"); }
+            get { return IExecute<int>("getFirstVisibleIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFixedCellHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setFixedCellHeight(int)"/>
         /// </summary>
         public int FixedCellHeight
         {
-            get { return IExecuteWithSignature<int>("getFixedCellHeight", "()I"); } set { IExecuteWithSignature("setFixedCellHeight", "(I)V", value); }
+            get { return IExecute<int>("getFixedCellHeight"); } set { IExecute("setFixedCellHeight", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFixedCellWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setFixedCellWidth(int)"/>
         /// </summary>
         public int FixedCellWidth
         {
-            get { return IExecuteWithSignature<int>("getFixedCellWidth", "()I"); } set { IExecuteWithSignature("setFixedCellWidth", "(I)V", value); }
+            get { return IExecute<int>("getFixedCellWidth"); } set { IExecute("setFixedCellWidth", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropLocation()"/> 
         /// </summary>
         public Javax.Swing.JList.DropLocation GetDropLocation
         {
-            get { return IExecuteWithSignature<Javax.Swing.JList.DropLocation>("getDropLocation", "()Ljavax/swing/JList$DropLocation;"); }
+            get { return IExecute<Javax.Swing.JList.DropLocation>("getDropLocation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLastVisibleIndex()"/> 
         /// </summary>
         public int LastVisibleIndex
         {
-            get { return IExecuteWithSignature<int>("getLastVisibleIndex", "()I"); }
+            get { return IExecute<int>("getLastVisibleIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLayoutOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setLayoutOrientation(int)"/>
         /// </summary>
         public int LayoutOrientation
         {
-            get { return IExecuteWithSignature<int>("getLayoutOrientation", "()I"); } set { IExecuteWithSignature("setLayoutOrientation", "(I)V", value); }
+            get { return IExecute<int>("getLayoutOrientation"); } set { IExecute("setLayoutOrientation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLeadSelectionIndex()"/> 
         /// </summary>
         public int LeadSelectionIndex
         {
-            get { return IExecuteWithSignature<int>("getLeadSelectionIndex", "()I"); }
+            get { return IExecute<int>("getLeadSelectionIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getListSelectionListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.ListSelectionListener[] ListSelectionListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.ListSelectionListener>("getListSelectionListeners", "()[Ljavax/swing/event/ListSelectionListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.ListSelectionListener>("getListSelectionListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getMaxSelectionIndex()"/> 
         /// </summary>
         public int MaxSelectionIndex
         {
-            get { return IExecuteWithSignature<int>("getMaxSelectionIndex", "()I"); }
+            get { return IExecute<int>("getMaxSelectionIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getMinSelectionIndex()"/> 
         /// </summary>
         public int MinSelectionIndex
         {
-            get { return IExecuteWithSignature<int>("getMinSelectionIndex", "()I"); }
+            get { return IExecute<int>("getMinSelectionIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setModel(javax.swing.ListModel)"/>
         /// </summary>
         public Javax.Swing.ListModel<E> Model
         {
-            get { return IExecuteWithSignature<Javax.Swing.ListModel<E>>("getModel", "()Ljavax/swing/ListModel;"); } set { IExecuteWithSignature("setModel", "(Ljavax/swing/ListModel;)V", value); }
+            get { return IExecute<Javax.Swing.ListModel<E>>("getModel"); } set { IExecute("setModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getPreferredScrollableViewportSize()"/> 
         /// </summary>
         public Java.Awt.Dimension PreferredScrollableViewportSize
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredScrollableViewportSize", "()Ljava/awt/Dimension;"); }
+            get { return IExecute<Java.Awt.Dimension>("getPreferredScrollableViewportSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getPrototypeCellValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setPrototypeCellValue(java.lang.Object)"/>
         /// </summary>
         public E PrototypeCellValue
         {
-            get { return IExecuteWithSignature<E>("getPrototypeCellValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setPrototypeCellValue", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute<E>("getPrototypeCellValue"); } set { IExecute("setPrototypeCellValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getScrollableTracksViewportHeight()"/> 
         /// </summary>
         public bool ScrollableTracksViewportHeight
         {
-            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportHeight", "()Z"); }
+            get { return IExecute<bool>("getScrollableTracksViewportHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getScrollableTracksViewportWidth()"/> 
         /// </summary>
         public bool ScrollableTracksViewportWidth
         {
-            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportWidth", "()Z"); }
+            get { return IExecute<bool>("getScrollableTracksViewportWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedIndex(int)"/>
         /// </summary>
         public int SelectedIndex
         {
-            get { return IExecuteWithSignature<int>("getSelectedIndex", "()I"); } set { IExecuteWithSignature("setSelectedIndex", "(I)V", value); }
+            get { return IExecute<int>("getSelectedIndex"); } set { IExecute("setSelectedIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedIndices()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedIndices(int[])"/>
         /// </summary>
         public int[] SelectedIndices
         {
-            get { return IExecuteWithSignatureArray<int>("getSelectedIndices", "()[I"); } set { IExecuteWithSignature("setSelectedIndices", "([I)V", value); }
+            get { return IExecuteArray<int>("getSelectedIndices"); } set { IExecute("setSelectedIndices", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedValue()"/> 
         /// </summary>
         public E SelectedValue
         {
-            get { return IExecuteWithSignature<E>("getSelectedValue", "()Ljava/lang/Object;"); }
+            get { return IExecute<E>("getSelectedValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedValuesList()"/> 
         /// </summary>
         public Java.Util.List<E> SelectedValuesList
         {
-            get { return IExecuteWithSignature<Java.Util.List<E>>("getSelectedValuesList", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<E>>("getSelectedValuesList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionBackground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionBackground(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color SelectionBackground
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getSelectionBackground", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setSelectionBackground", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getSelectionBackground"); } set { IExecute("setSelectionBackground", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionForeground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionForeground(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color SelectionForeground
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getSelectionForeground", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setSelectionForeground", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getSelectionForeground"); } set { IExecute("setSelectionForeground", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionMode(int)"/>
         /// </summary>
         public int SelectionMode
         {
-            get { return IExecuteWithSignature<int>("getSelectionMode", "()I"); } set { IExecuteWithSignature("setSelectionMode", "(I)V", value); }
+            get { return IExecute<int>("getSelectionMode"); } set { IExecute("setSelectionMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionModel(javax.swing.ListSelectionModel)"/>
         /// </summary>
         public Javax.Swing.ListSelectionModel SelectionModel
         {
-            get { return IExecuteWithSignature<Javax.Swing.ListSelectionModel>("getSelectionModel", "()Ljavax/swing/ListSelectionModel;"); } set { IExecuteWithSignature("setSelectionModel", "(Ljavax/swing/ListSelectionModel;)V", value); }
+            get { return IExecute<Javax.Swing.ListSelectionModel>("getSelectionModel"); } set { IExecute("setSelectionModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getValueIsAdjusting()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setValueIsAdjusting(boolean)"/>
         /// </summary>
         public bool ValueIsAdjusting
         {
-            get { return IExecuteWithSignature<bool>("getValueIsAdjusting", "()Z"); } set { IExecuteWithSignature("setValueIsAdjusting", "(Z)V", value); }
+            get { return IExecute<bool>("getValueIsAdjusting"); } set { IExecute("setValueIsAdjusting", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getVisibleRowCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setVisibleRowCount(int)"/>
         /// </summary>
         public int VisibleRowCount
         {
-            get { return IExecuteWithSignature<int>("getVisibleRowCount", "()I"); } set { IExecuteWithSignature("setVisibleRowCount", "(I)V", value); }
+            get { return IExecute<int>("getVisibleRowCount"); } set { IExecute("setVisibleRowCount", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectedIndex(int)"/>
@@ -936,7 +936,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSelectedIndex(int arg0)
         {
-            return IExecuteWithSignature<bool>("isSelectedIndex", "(I)Z", arg0);
+            return IExecute<bool>("isSelectedIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/>
@@ -944,7 +944,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSelectionEmpty()
         {
-            return IExecuteWithSignature<bool>("isSelectionEmpty", "()Z");
+            return IExecute<bool>("isSelectionEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getNextMatch(java.lang.String,int,javax.swing.text.Position.Bias)"/>
@@ -986,7 +986,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int LocationToIndex(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<int>("locationToIndex", "(Ljava/awt/Point;)I", arg0);
+            return IExecute<int>("locationToIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#indexToLocation(int)"/>
@@ -995,7 +995,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Point"/></returns>
         public Java.Awt.Point IndexToLocation(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Point>("indexToLocation", "(I)Ljava/awt/Point;", arg0);
+            return IExecute<Java.Awt.Point>("indexToLocation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getCellBounds(int,int)"/>
@@ -1013,7 +1013,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
         public void AddListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
-            IExecuteWithSignature("addListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
+            IExecute("addListSelectionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#addSelectionInterval(int,int)"/>
@@ -1029,7 +1029,7 @@ namespace Javax.Swing
         /// </summary>
         public void ClearSelection()
         {
-            IExecuteWithSignature("clearSelection", "()V");
+            IExecute("clearSelection");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#ensureIndexIsVisible(int)"/>
@@ -1037,7 +1037,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void EnsureIndexIsVisible(int arg0)
         {
-            IExecuteWithSignature("ensureIndexIsVisible", "(I)V", arg0);
+            IExecute("ensureIndexIsVisible", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#removeListSelectionListener(javax.swing.event.ListSelectionListener)"/>
@@ -1045,7 +1045,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
         public void RemoveListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
-            IExecuteWithSignature("removeListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
+            IExecute("removeListSelectionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#removeSelectionInterval(int,int)"/>
@@ -1062,7 +1062,7 @@ namespace Javax.Swing
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void SetListData(E[] arg0)
         {
-            IExecuteWithSignature("setListData", "([Ljava/lang/Object;)V", new object[] { arg0 });
+            IExecute("setListData", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.util.Vector)"/>
@@ -1071,7 +1071,7 @@ namespace Javax.Swing
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         public void SetListData<Arg0ExtendsE>(Java.Util.Vector<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
-            IExecuteWithSignature("setListData", "(Ljava/util/Vector;)V", arg0);
+            IExecute("setListData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedValue(java.lang.Object,boolean)"/>
@@ -1097,7 +1097,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.ListUI"/></param>
         public void SetUI(Javax.Swing.Plaf.ListUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ListUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
 
         #endregion

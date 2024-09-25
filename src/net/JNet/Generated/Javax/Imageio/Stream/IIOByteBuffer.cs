@@ -105,21 +105,21 @@ namespace Javax.Imageio.Stream
         /// </summary>
         public byte[] Data
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); } set { IExecuteWithSignature("setData", "([B)V", value); }
+            get { return IExecuteArray<byte>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#getLength()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#setLength(int)"/>
         /// </summary>
         public int Length
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); } set { IExecuteWithSignature("setLength", "(I)V", value); }
+            get { return IExecute<int>("getLength"); } set { IExecute("setLength", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#getOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#setOffset(int)"/>
         /// </summary>
         public int Offset
         {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); } set { IExecuteWithSignature("setOffset", "(I)V", value); }
+            get { return IExecute<int>("getOffset"); } set { IExecute("setOffset", value); }
         }
 
         #endregion

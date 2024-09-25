@@ -143,21 +143,21 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.Dimension PreferredScrollableViewportSize
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredScrollableViewportSize", "()Ljava/awt/Dimension;"); }
+            get { return IExecute<Java.Awt.Dimension>("getPreferredScrollableViewportSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Scrollable.html#getScrollableTracksViewportHeight()"/> 
         /// </summary>
         public bool ScrollableTracksViewportHeight
         {
-            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportHeight", "()Z"); }
+            get { return IExecute<bool>("getScrollableTracksViewportHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Scrollable.html#getScrollableTracksViewportWidth()"/> 
         /// </summary>
         public bool ScrollableTracksViewportWidth
         {
-            get { return IExecuteWithSignature<bool>("getScrollableTracksViewportWidth", "()Z"); }
+            get { return IExecute<bool>("getScrollableTracksViewportWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Scrollable.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>

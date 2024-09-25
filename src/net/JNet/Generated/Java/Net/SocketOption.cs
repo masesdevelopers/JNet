@@ -146,7 +146,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class Type()
         {
-            return IExecuteWithSignature<Java.Lang.Class>("type", "()Ljava/lang/Class;");
+            return IExecute<Java.Lang.Class>("type");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/>
@@ -154,7 +154,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
 
         #endregion
@@ -225,7 +225,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class Type()
         {
-            return IExecuteWithSignature<Java.Lang.Class>("type", "()Ljava/lang/Class;");
+            return IExecute<Java.Lang.Class>("type");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/>
@@ -233,7 +233,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
 
         #endregion

@@ -173,14 +173,14 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.Insets Margin
         {
-            get { return IExecuteWithSignature<Java.Awt.Insets>("getMargin", "()Ljava/awt/Insets;"); } set { IExecuteWithSignature("setMargin", "(Ljava/awt/Insets;)V", value); }
+            get { return IExecute<Java.Awt.Insets>("getMargin"); } set { IExecute("setMargin", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#getOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#setOrientation(int)"/>
         /// </summary>
         public int Orientation
         {
-            get { return IExecuteWithSignature<int>("getOrientation", "()I"); } set { IExecuteWithSignature("setOrientation", "(I)V", value); }
+            get { return IExecute<int>("getOrientation"); } set { IExecute("setOrientation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#isBorderPainted()"/>
@@ -188,7 +188,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsBorderPainted()
         {
-            return IExecuteWithSignature<bool>("isBorderPainted", "()Z");
+            return IExecute<bool>("isBorderPainted");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#isFloatable()"/>
@@ -196,7 +196,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsFloatable()
         {
-            return IExecuteWithSignature<bool>("isFloatable", "()Z");
+            return IExecute<bool>("isFloatable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#isRollover()"/>
@@ -204,7 +204,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsRollover()
         {
-            return IExecuteWithSignature<bool>("isRollover", "()Z");
+            return IExecute<bool>("isRollover");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#getComponentIndex(java.awt.Component)"/>
@@ -213,7 +213,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetComponentIndex(Java.Awt.Component arg0)
         {
-            return IExecuteWithSignature<int>("getComponentIndex", "(Ljava/awt/Component;)I", arg0);
+            return IExecute<int>("getComponentIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#getComponentAtIndex(int)"/>
@@ -222,7 +222,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetComponentAtIndex(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Component>("getComponentAtIndex", "(I)Ljava/awt/Component;", arg0);
+            return IExecute<Java.Awt.Component>("getComponentAtIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#add(javax.swing.Action)"/>
@@ -231,14 +231,14 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.JButton"/></returns>
         public Javax.Swing.JButton Add(Javax.Swing.Action arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.JButton>("add", "(Ljavax/swing/Action;)Ljavax/swing/JButton;", arg0);
+            return IExecute<Javax.Swing.JButton>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#addSeparator()"/>
         /// </summary>
         public void AddSeparator()
         {
-            IExecuteWithSignature("addSeparator", "()V");
+            IExecute("addSeparator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#addSeparator(java.awt.Dimension)"/>
@@ -246,7 +246,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
         public void AddSeparator(Java.Awt.Dimension arg0)
         {
-            IExecuteWithSignature("addSeparator", "(Ljava/awt/Dimension;)V", arg0);
+            IExecute("addSeparator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#setBorderPainted(boolean)"/>
@@ -254,7 +254,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetBorderPainted(bool arg0)
         {
-            IExecuteWithSignature("setBorderPainted", "(Z)V", arg0);
+            IExecute("setBorderPainted", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#setFloatable(boolean)"/>
@@ -262,7 +262,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetFloatable(bool arg0)
         {
-            IExecuteWithSignature("setFloatable", "(Z)V", arg0);
+            IExecute("setFloatable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#setRollover(boolean)"/>
@@ -270,7 +270,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetRollover(bool arg0)
         {
-            IExecuteWithSignature("setRollover", "(Z)V", arg0);
+            IExecute("setRollover", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#setUI(javax.swing.plaf.ToolBarUI)"/>
@@ -278,7 +278,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.ToolBarUI"/></param>
         public void SetUI(Javax.Swing.Plaf.ToolBarUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ToolBarUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
 
         #endregion

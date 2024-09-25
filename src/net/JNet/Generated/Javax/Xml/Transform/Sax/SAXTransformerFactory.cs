@@ -111,7 +111,7 @@ namespace Javax.Xml.Transform.Sax
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Sax.TemplatesHandler NewTemplatesHandler()
         {
-            return IExecuteWithSignature<Javax.Xml.Transform.Sax.TemplatesHandler>("newTemplatesHandler", "()Ljavax/xml/transform/sax/TemplatesHandler;");
+            return IExecute<Javax.Xml.Transform.Sax.TemplatesHandler>("newTemplatesHandler");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler()"/>
@@ -120,7 +120,7 @@ namespace Javax.Xml.Transform.Sax
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Sax.TransformerHandler NewTransformerHandler()
         {
-            return IExecuteWithSignature<Javax.Xml.Transform.Sax.TransformerHandler>("newTransformerHandler", "()Ljavax/xml/transform/sax/TransformerHandler;");
+            return IExecute<Javax.Xml.Transform.Sax.TransformerHandler>("newTransformerHandler");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler(javax.xml.transform.Source)"/>
@@ -130,7 +130,7 @@ namespace Javax.Xml.Transform.Sax
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Sax.TransformerHandler NewTransformerHandler(Javax.Xml.Transform.Source arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Transform.Sax.TransformerHandler>("newTransformerHandler", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/sax/TransformerHandler;", arg0);
+            return IExecute<Javax.Xml.Transform.Sax.TransformerHandler>("newTransformerHandler", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler(javax.xml.transform.Templates)"/>
@@ -140,7 +140,7 @@ namespace Javax.Xml.Transform.Sax
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Sax.TransformerHandler NewTransformerHandler(Javax.Xml.Transform.Templates arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Transform.Sax.TransformerHandler>("newTransformerHandler", "(Ljavax/xml/transform/Templates;)Ljavax/xml/transform/sax/TransformerHandler;", arg0);
+            return IExecute<Javax.Xml.Transform.Sax.TransformerHandler>("newTransformerHandler", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newXMLFilter(javax.xml.transform.Source)"/>
@@ -150,7 +150,7 @@ namespace Javax.Xml.Transform.Sax
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Org.Xml.Sax.XMLFilter NewXMLFilter(Javax.Xml.Transform.Source arg0)
         {
-            return IExecuteWithSignature<Org.Xml.Sax.XMLFilter>("newXMLFilter", "(Ljavax/xml/transform/Source;)Lorg/xml/sax/XMLFilter;", arg0);
+            return IExecute<Org.Xml.Sax.XMLFilter>("newXMLFilter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newXMLFilter(javax.xml.transform.Templates)"/>
@@ -160,7 +160,7 @@ namespace Javax.Xml.Transform.Sax
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Org.Xml.Sax.XMLFilter NewXMLFilter(Javax.Xml.Transform.Templates arg0)
         {
-            return IExecuteWithSignature<Org.Xml.Sax.XMLFilter>("newXMLFilter", "(Ljavax/xml/transform/Templates;)Lorg/xml/sax/XMLFilter;", arg0);
+            return IExecute<Org.Xml.Sax.XMLFilter>("newXMLFilter", arg0);
         }
 
         #endregion

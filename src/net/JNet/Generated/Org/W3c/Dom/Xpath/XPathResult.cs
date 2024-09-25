@@ -217,49 +217,49 @@ namespace Org.W3c.Dom.Xpath
         /// </summary>
         public bool BooleanValue
         {
-            get { return IExecuteWithSignature<bool>("getBooleanValue", "()Z"); }
+            get { return IExecute<bool>("getBooleanValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getInvalidIteratorState()"/> 
         /// </summary>
         public bool InvalidIteratorState
         {
-            get { return IExecuteWithSignature<bool>("getInvalidIteratorState", "()Z"); }
+            get { return IExecute<bool>("getInvalidIteratorState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getNumberValue()"/> 
         /// </summary>
         public double NumberValue
         {
-            get { return IExecuteWithSignature<double>("getNumberValue", "()D"); }
+            get { return IExecute<double>("getNumberValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getResultType()"/> 
         /// </summary>
         public short ResultType
         {
-            get { return IExecuteWithSignature<short>("getResultType", "()S"); }
+            get { return IExecute<short>("getResultType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getSingleNodeValue()"/> 
         /// </summary>
         public Org.W3c.Dom.Node SingleNodeValue
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getSingleNodeValue", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getSingleNodeValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getSnapshotLength()"/> 
         /// </summary>
         public int SnapshotLength
         {
-            get { return IExecuteWithSignature<int>("getSnapshotLength", "()I"); }
+            get { return IExecute<int>("getSnapshotLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getStringValue()"/> 
         /// </summary>
         public Java.Lang.String StringValue
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getStringValue", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getStringValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#iterateNext()"/>
@@ -269,7 +269,7 @@ namespace Org.W3c.Dom.Xpath
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node IterateNext()
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Node>("iterateNext", "()Lorg/w3c/dom/Node;");
+            return IExecute<Org.W3c.Dom.Node>("iterateNext");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#snapshotItem(int)"/>
@@ -279,7 +279,7 @@ namespace Org.W3c.Dom.Xpath
         /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
         public Org.W3c.Dom.Node SnapshotItem(int arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Node>("snapshotItem", "(I)Lorg/w3c/dom/Node;", arg0);
+            return IExecute<Org.W3c.Dom.Node>("snapshotItem", arg0);
         }
 
         #endregion

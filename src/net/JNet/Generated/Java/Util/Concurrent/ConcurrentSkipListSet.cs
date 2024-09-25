@@ -179,7 +179,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object Ceiling(object arg0)
         {
-            return IExecuteWithSignature("ceiling", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("ceiling", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#first()"/>
@@ -187,7 +187,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object First()
         {
-            return IExecuteWithSignature("first", "()Ljava/lang/Object;");
+            return IExecute("first");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#floor(java.lang.Object)"/>
@@ -196,7 +196,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object Floor(object arg0)
         {
-            return IExecuteWithSignature("floor", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("floor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#higher(java.lang.Object)"/>
@@ -205,7 +205,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object Higher(object arg0)
         {
-            return IExecuteWithSignature("higher", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("higher", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#last()"/>
@@ -213,7 +213,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object Last()
         {
-            return IExecuteWithSignature("last", "()Ljava/lang/Object;");
+            return IExecute("last");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#lower(java.lang.Object)"/>
@@ -222,7 +222,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object Lower(object arg0)
         {
-            return IExecuteWithSignature("lower", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("lower", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#pollFirst()"/>
@@ -230,7 +230,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object PollFirst()
         {
-            return IExecuteWithSignature("pollFirst", "()Ljava/lang/Object;");
+            return IExecute("pollFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#pollLast()"/>
@@ -238,7 +238,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="object"/></returns>
         public object PollLast()
         {
-            return IExecuteWithSignature("pollLast", "()Ljava/lang/Object;");
+            return IExecute("pollLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#comparator()"/>
@@ -246,7 +246,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public Java.Util.Comparator Comparator()
         {
-            return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
+            return IExecute<Java.Util.Comparator>("comparator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#clone()"/>
@@ -254,7 +254,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListSet"/></returns>
         public Java.Util.Concurrent.ConcurrentSkipListSet Clone()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentSkipListSet>("clone", "()Ljava/util/concurrent/ConcurrentSkipListSet;");
+            return IExecute<Java.Util.Concurrent.ConcurrentSkipListSet>("clone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#descendingIterator()"/>
@@ -262,7 +262,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("descendingIterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator>("descendingIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#descendingSet()"/>
@@ -270,7 +270,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet DescendingSet()
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet>("descendingSet", "()Ljava/util/NavigableSet;");
+            return IExecute<Java.Util.NavigableSet>("descendingSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object,boolean)"/>
@@ -311,7 +311,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet HeadSet(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedSet>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
+            return IExecute<Java.Util.SortedSet>("headSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object,java.lang.Object)"/>
@@ -330,7 +330,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet TailSet(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedSet>("tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
+            return IExecute<Java.Util.SortedSet>("tailSet", arg0);
         }
 
         #endregion
@@ -410,7 +410,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E Ceiling(E arg0)
         {
-            return IExecuteWithSignature<E>("ceiling", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<E>("ceiling", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#first()"/>
@@ -418,7 +418,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E First()
         {
-            return IExecuteWithSignature<E>("first", "()Ljava/lang/Object;");
+            return IExecute<E>("first");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#floor(java.lang.Object)"/>
@@ -427,7 +427,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E Floor(E arg0)
         {
-            return IExecuteWithSignature<E>("floor", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<E>("floor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#higher(java.lang.Object)"/>
@@ -436,7 +436,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E Higher(E arg0)
         {
-            return IExecuteWithSignature<E>("higher", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<E>("higher", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#last()"/>
@@ -444,7 +444,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E Last()
         {
-            return IExecuteWithSignature<E>("last", "()Ljava/lang/Object;");
+            return IExecute<E>("last");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#lower(java.lang.Object)"/>
@@ -453,7 +453,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E Lower(E arg0)
         {
-            return IExecuteWithSignature<E>("lower", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute<E>("lower", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#pollFirst()"/>
@@ -461,7 +461,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E PollFirst()
         {
-            return IExecuteWithSignature<E>("pollFirst", "()Ljava/lang/Object;");
+            return IExecute<E>("pollFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#pollLast()"/>
@@ -469,7 +469,7 @@ namespace Java.Util.Concurrent
         /// <returns><typeparamref name="E"/></returns>
         public E PollLast()
         {
-            return IExecuteWithSignature<E>("pollLast", "()Ljava/lang/Object;");
+            return IExecute<E>("pollLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#comparator()"/>
@@ -478,7 +478,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Comparator"/></returns>
         public Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE : E
         {
-            return IExecuteWithSignature<Java.Util.Comparator<ReturnobjectSuperE>>("comparator", "()Ljava/util/Comparator;");
+            return IExecute<Java.Util.Comparator<ReturnobjectSuperE>>("comparator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#clone()"/>
@@ -486,7 +486,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListSet"/></returns>
         public Java.Util.Concurrent.ConcurrentSkipListSet<E> Clone()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentSkipListSet<E>>("clone", "()Ljava/util/concurrent/ConcurrentSkipListSet;");
+            return IExecute<Java.Util.Concurrent.ConcurrentSkipListSet<E>>("clone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#descendingIterator()"/>
@@ -494,7 +494,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("descendingIterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator<E>>("descendingIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#descendingSet()"/>
@@ -502,7 +502,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> DescendingSet()
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet<E>>("descendingSet", "()Ljava/util/NavigableSet;");
+            return IExecute<Java.Util.NavigableSet<E>>("descendingSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object,boolean)"/>
@@ -543,7 +543,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet HeadSet(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedSet>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
+            return IExecute<Java.Util.SortedSet>("headSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object,java.lang.Object)"/>
@@ -562,7 +562,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet TailSet(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedSet>("tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
+            return IExecute<Java.Util.SortedSet>("tailSet", arg0);
         }
 
         #endregion

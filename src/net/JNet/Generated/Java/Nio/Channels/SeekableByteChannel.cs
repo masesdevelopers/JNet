@@ -158,7 +158,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Read(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<int>("read", "(Ljava/nio/ByteBuffer;)I", arg0);
+            return IExecute<int>("read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html#write(java.nio.ByteBuffer)"/>
@@ -168,7 +168,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;)I", arg0);
+            return IExecute<int>("write", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html#position(long)"/>
@@ -178,7 +178,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SeekableByteChannel Position(long arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("position", "(J)Ljava/nio/channels/SeekableByteChannel;", arg0);
+            return IExecute<Java.Nio.Channels.SeekableByteChannel>("position", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html#truncate(long)"/>
@@ -188,7 +188,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SeekableByteChannel Truncate(long arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("truncate", "(J)Ljava/nio/channels/SeekableByteChannel;", arg0);
+            return IExecute<Java.Nio.Channels.SeekableByteChannel>("truncate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html#position()"/>
@@ -197,7 +197,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Position()
         {
-            return IExecuteWithSignature<long>("position", "()J");
+            return IExecute<long>("position");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html#size()"/>
@@ -206,7 +206,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Size()
         {
-            return IExecuteWithSignature<long>("size", "()J");
+            return IExecute<long>("size");
         }
 
         #endregion

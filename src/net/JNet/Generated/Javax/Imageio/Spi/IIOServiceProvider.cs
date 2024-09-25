@@ -106,14 +106,14 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public Java.Lang.String VendorName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVendorName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getVendorName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIOServiceProvider.html#getVersion()"/> 
         /// </summary>
         public Java.Lang.String Version
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIOServiceProvider.html#getDescription(java.util.Locale)"/>
@@ -122,7 +122,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDescription(Java.Util.Locale arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDescription", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getDescription", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIOServiceProvider.html#onDeregistration(javax.imageio.spi.ServiceRegistry,java.lang.Class)"/>

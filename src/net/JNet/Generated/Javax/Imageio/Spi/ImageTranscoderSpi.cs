@@ -106,14 +106,14 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public Java.Lang.String ReaderServiceProviderName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getReaderServiceProviderName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getReaderServiceProviderName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#getWriterServiceProviderName()"/> 
         /// </summary>
         public Java.Lang.String WriterServiceProviderName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWriterServiceProviderName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getWriterServiceProviderName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#createTranscoderInstance()"/>
@@ -121,7 +121,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="Javax.Imageio.ImageTranscoder"/></returns>
         public Javax.Imageio.ImageTranscoder CreateTranscoderInstance()
         {
-            return IExecuteWithSignature<Javax.Imageio.ImageTranscoder>("createTranscoderInstance", "()Ljavax/imageio/ImageTranscoder;");
+            return IExecute<Javax.Imageio.ImageTranscoder>("createTranscoderInstance");
         }
 
         #endregion

@@ -137,7 +137,7 @@ namespace Javax.Management
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Quote(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "quote", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "quote", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#unquote(java.lang.String)"/>
@@ -146,7 +146,7 @@ namespace Javax.Management
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Unquote(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "unquote", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "unquote", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -180,7 +180,7 @@ namespace Javax.Management
         /// <exception cref="Java.Lang.NullPointerException"/>
         public static Javax.Management.ObjectName GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/management/ObjectName;", arg0);
+            return SExecute<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(javax.management.ObjectName)"/>
@@ -189,7 +189,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ObjectName"/></returns>
         public static Javax.Management.ObjectName GetInstance(Javax.Management.ObjectName arg0)
         {
-            return SExecuteWithSignature<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", "(Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", arg0);
+            return SExecute<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -200,35 +200,35 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String CanonicalKeyPropertyListString
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCanonicalKeyPropertyListString", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCanonicalKeyPropertyListString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getCanonicalName()"/> 
         /// </summary>
         public Java.Lang.String CanonicalName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCanonicalName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCanonicalName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getDomain()"/> 
         /// </summary>
         public Java.Lang.String Domain
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDomain", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDomain"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyPropertyList()"/> 
         /// </summary>
         public Java.Util.Hashtable<Java.Lang.String, Java.Lang.String> KeyPropertyList
         {
-            get { return IExecuteWithSignature<Java.Util.Hashtable<Java.Lang.String, Java.Lang.String>>("getKeyPropertyList", "()Ljava/util/Hashtable;"); }
+            get { return IExecute<Java.Util.Hashtable<Java.Lang.String, Java.Lang.String>>("getKeyPropertyList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyPropertyListString()"/> 
         /// </summary>
         public Java.Lang.String KeyPropertyListString
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKeyPropertyListString", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getKeyPropertyListString"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#apply(javax.management.ObjectName)"/>
@@ -237,7 +237,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool Apply(Javax.Management.ObjectName arg0)
         {
-            return IExecuteWithSignature<bool>("apply", "(Ljavax/management/ObjectName;)Z", arg0);
+            return IExecute<bool>("apply", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isDomainPattern()"/>
@@ -245,7 +245,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsDomainPattern()
         {
-            return IExecuteWithSignature<bool>("isDomainPattern", "()Z");
+            return IExecute<bool>("isDomainPattern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPattern()"/>
@@ -253,7 +253,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsPattern()
         {
-            return IExecuteWithSignature<bool>("isPattern", "()Z");
+            return IExecute<bool>("isPattern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyListPattern()"/>
@@ -261,7 +261,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsPropertyListPattern()
         {
-            return IExecuteWithSignature<bool>("isPropertyListPattern", "()Z");
+            return IExecute<bool>("isPropertyListPattern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyPattern()"/>
@@ -269,7 +269,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsPropertyPattern()
         {
-            return IExecuteWithSignature<bool>("isPropertyPattern", "()Z");
+            return IExecute<bool>("isPropertyPattern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyValuePattern()"/>
@@ -277,7 +277,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsPropertyValuePattern()
         {
-            return IExecuteWithSignature<bool>("isPropertyValuePattern", "()Z");
+            return IExecute<bool>("isPropertyValuePattern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyValuePattern(java.lang.String)"/>
@@ -286,7 +286,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsPropertyValuePattern(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("isPropertyValuePattern", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("isPropertyValuePattern", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#compareTo(java.lang.Object)"/>
@@ -295,7 +295,7 @@ namespace Javax.Management
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#compareTo(javax.management.ObjectName)"/>
@@ -304,7 +304,7 @@ namespace Javax.Management
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Javax.Management.ObjectName arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljavax/management/ObjectName;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyProperty(java.lang.String)"/>
@@ -313,7 +313,7 @@ namespace Javax.Management
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetKeyProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getKeyProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getKeyProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#setMBeanServer(javax.management.MBeanServer)"/>
@@ -321,7 +321,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
         public void SetMBeanServer(Javax.Management.MBeanServer arg0)
         {
-            IExecuteWithSignature("setMBeanServer", "(Ljavax/management/MBeanServer;)V", arg0);
+            IExecute("setMBeanServer", arg0);
         }
 
         #endregion

@@ -120,49 +120,49 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.String ClassLoaderName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClassLoaderName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getClassLoaderName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getClassName()"/> 
         /// </summary>
         public Java.Lang.String ClassName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getFileName()"/> 
         /// </summary>
         public Java.Lang.String FileName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFileName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getFileName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getLineNumber()"/> 
         /// </summary>
         public int LineNumber
         {
-            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); }
+            get { return IExecute<int>("getLineNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getMethodName()"/> 
         /// </summary>
         public Java.Lang.String MethodName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMethodName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMethodName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getModuleName()"/> 
         /// </summary>
         public Java.Lang.String ModuleName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getModuleName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getModuleName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getModuleVersion()"/> 
         /// </summary>
         public Java.Lang.String ModuleVersion
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getModuleVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getModuleVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#isNativeMethod()"/>
@@ -170,7 +170,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsNativeMethod()
         {
-            return IExecuteWithSignature<bool>("isNativeMethod", "()Z");
+            return IExecute<bool>("isNativeMethod");
         }
 
         #endregion

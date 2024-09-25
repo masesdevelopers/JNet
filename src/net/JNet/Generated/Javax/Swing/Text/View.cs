@@ -141,70 +141,70 @@ namespace Javax.Swing.Text
         /// </summary>
         public Javax.Swing.Text.AttributeSet Attributes
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getAttributes", "()Ljavax/swing/text/AttributeSet;"); }
+            get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getContainer()"/> 
         /// </summary>
         public Java.Awt.Container Container
         {
-            get { return IExecuteWithSignature<Java.Awt.Container>("getContainer", "()Ljava/awt/Container;"); }
+            get { return IExecute<Java.Awt.Container>("getContainer"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getDocument()"/> 
         /// </summary>
         public Javax.Swing.Text.Document Document
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.Document>("getDocument", "()Ljavax/swing/text/Document;"); }
+            get { return IExecute<Javax.Swing.Text.Document>("getDocument"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getElement()"/> 
         /// </summary>
         public Javax.Swing.Text.Element Element
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.Element>("getElement", "()Ljavax/swing/text/Element;"); }
+            get { return IExecute<Javax.Swing.Text.Element>("getElement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getEndOffset()"/> 
         /// </summary>
         public int EndOffset
         {
-            get { return IExecuteWithSignature<int>("getEndOffset", "()I"); }
+            get { return IExecute<int>("getEndOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getGraphics()"/> 
         /// </summary>
         public Java.Awt.Graphics Graphics
         {
-            get { return IExecuteWithSignature<Java.Awt.Graphics>("getGraphics", "()Ljava/awt/Graphics;"); }
+            get { return IExecute<Java.Awt.Graphics>("getGraphics"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#setParent(javax.swing.text.View)"/>
         /// </summary>
         public Javax.Swing.Text.View Parent
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.View>("getParent", "()Ljavax/swing/text/View;"); } set { IExecuteWithSignature("setParent", "(Ljavax/swing/text/View;)V", value); }
+            get { return IExecute<Javax.Swing.Text.View>("getParent"); } set { IExecute("setParent", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getStartOffset()"/> 
         /// </summary>
         public int StartOffset
         {
-            get { return IExecuteWithSignature<int>("getStartOffset", "()I"); }
+            get { return IExecute<int>("getStartOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getViewCount()"/> 
         /// </summary>
         public int ViewCount
         {
-            get { return IExecuteWithSignature<int>("getViewCount", "()I"); }
+            get { return IExecute<int>("getViewCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getViewFactory()"/> 
         /// </summary>
         public Javax.Swing.Text.ViewFactory ViewFactory
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.ViewFactory>("getViewFactory", "()Ljavax/swing/text/ViewFactory;"); }
+            get { return IExecute<Javax.Swing.Text.ViewFactory>("getViewFactory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getPreferredSpan(int)"/>
@@ -213,7 +213,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="float"/></returns>
         public float GetPreferredSpan(int arg0)
         {
-            return IExecuteWithSignature<float>("getPreferredSpan", "(I)F", arg0);
+            return IExecute<float>("getPreferredSpan", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#viewToModel(float,float,java.awt.Shape,javax.swing.text.Position.Bias[])"/>
@@ -254,7 +254,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsVisible()
         {
-            return IExecuteWithSignature<bool>("isVisible", "()Z");
+            return IExecute<bool>("isVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getAlignment(int)"/>
@@ -263,7 +263,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="float"/></returns>
         public float GetAlignment(int arg0)
         {
-            return IExecuteWithSignature<float>("getAlignment", "(I)F", arg0);
+            return IExecute<float>("getAlignment", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getMaximumSpan(int)"/>
@@ -272,7 +272,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="float"/></returns>
         public float GetMaximumSpan(int arg0)
         {
-            return IExecuteWithSignature<float>("getMaximumSpan", "(I)F", arg0);
+            return IExecute<float>("getMaximumSpan", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getMinimumSpan(int)"/>
@@ -281,7 +281,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="float"/></returns>
         public float GetMinimumSpan(int arg0)
         {
-            return IExecuteWithSignature<float>("getMinimumSpan", "(I)F", arg0);
+            return IExecute<float>("getMinimumSpan", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getBreakWeight(int,float,float)"/>
@@ -315,7 +315,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int GetResizeWeight(int arg0)
         {
-            return IExecuteWithSignature<int>("getResizeWeight", "(I)I", arg0);
+            return IExecute<int>("getResizeWeight", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getViewIndex(float,float,java.awt.Shape)"/>
@@ -402,7 +402,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public Javax.Swing.Text.View GetView(int arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.View>("getView", "(I)Ljavax/swing/text/View;", arg0);
+            return IExecute<Javax.Swing.Text.View>("getView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#append(javax.swing.text.View)"/>
@@ -410,7 +410,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Text.View"/></param>
         public void Append(Javax.Swing.Text.View arg0)
         {
-            IExecuteWithSignature("append", "(Ljavax/swing/text/View;)V", arg0);
+            IExecute("append", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#changedUpdate(javax.swing.event.DocumentEvent,java.awt.Shape,javax.swing.text.ViewFactory)"/>
@@ -457,14 +457,14 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="int"/></param>
         public void Remove(int arg0)
         {
-            IExecuteWithSignature("remove", "(I)V", arg0);
+            IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#removeAll()"/>
         /// </summary>
         public void RemoveAll()
         {
-            IExecuteWithSignature("removeAll", "()V");
+            IExecute("removeAll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#removeUpdate(javax.swing.event.DocumentEvent,java.awt.Shape,javax.swing.text.ViewFactory)"/>

@@ -97,35 +97,35 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         public Javax.Imageio.Metadata.IIOMetadataController Controller
         {
-            get { return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadataController>("getController", "()Ljavax/imageio/metadata/IIOMetadataController;"); } set { IExecuteWithSignature("setController", "(Ljavax/imageio/metadata/IIOMetadataController;)V", value); }
+            get { return IExecute<Javax.Imageio.Metadata.IIOMetadataController>("getController"); } set { IExecute("setController", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getDefaultController()"/> 
         /// </summary>
         public Javax.Imageio.Metadata.IIOMetadataController DefaultController
         {
-            get { return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadataController>("getDefaultController", "()Ljavax/imageio/metadata/IIOMetadataController;"); }
+            get { return IExecute<Javax.Imageio.Metadata.IIOMetadataController>("getDefaultController"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getExtraMetadataFormatNames()"/> 
         /// </summary>
         public Java.Lang.String[] ExtraMetadataFormatNames
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getExtraMetadataFormatNames", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getExtraMetadataFormatNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getMetadataFormatNames()"/> 
         /// </summary>
         public Java.Lang.String[] MetadataFormatNames
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getMetadataFormatNames", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getMetadataFormatNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getNativeMetadataFormatName()"/> 
         /// </summary>
         public Java.Lang.String NativeMetadataFormatName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNativeMetadataFormatName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getNativeMetadataFormatName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isReadOnly()"/>
@@ -133,7 +133,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
         {
-            return IExecuteWithSignature<bool>("isReadOnly", "()Z");
+            return IExecute<bool>("isReadOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getAsTree(java.lang.String)"/>
@@ -142,7 +142,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node GetAsTree(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Node>("getAsTree", "(Ljava/lang/String;)Lorg/w3c/dom/Node;", arg0);
+            return IExecute<Org.W3c.Dom.Node>("getAsTree", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#mergeTree(java.lang.String,org.w3c.dom.Node)"/>
@@ -159,7 +159,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#activateController()"/>
@@ -167,7 +167,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="bool"/></returns>
         public bool ActivateController()
         {
-            return IExecuteWithSignature<bool>("activateController", "()Z");
+            return IExecute<bool>("activateController");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#hasController()"/>
@@ -175,7 +175,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="bool"/></returns>
         public bool HasController()
         {
-            return IExecuteWithSignature<bool>("hasController", "()Z");
+            return IExecute<bool>("hasController");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isStandardMetadataFormatSupported()"/>
@@ -183,7 +183,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="bool"/></returns>
         public bool IsStandardMetadataFormatSupported()
         {
-            return IExecuteWithSignature<bool>("isStandardMetadataFormatSupported", "()Z");
+            return IExecute<bool>("isStandardMetadataFormatSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getMetadataFormat(java.lang.String)"/>
@@ -192,7 +192,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/></returns>
         public Javax.Imageio.Metadata.IIOMetadataFormat GetMetadataFormat(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadataFormat>("getMetadataFormat", "(Ljava/lang/String;)Ljavax/imageio/metadata/IIOMetadataFormat;", arg0);
+            return IExecute<Javax.Imageio.Metadata.IIOMetadataFormat>("getMetadataFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#setFromTree(java.lang.String,org.w3c.dom.Node)"/>

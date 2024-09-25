@@ -105,7 +105,7 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public int ButtonWidth
         {
-            get { return IExecuteWithSignature<int>("getButtonWidth", "()I"); }
+            get { return IExecute<int>("getButtonWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalScrollButton.html#setFreeStanding(boolean)"/>
@@ -113,7 +113,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetFreeStanding(bool arg0)
         {
-            IExecuteWithSignature("setFreeStanding", "(Z)V", arg0);
+            IExecute("setFreeStanding", arg0);
         }
 
         #endregion

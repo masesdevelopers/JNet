@@ -148,7 +148,7 @@ namespace Java.Util.Logging
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Util.Logging.Level Parse(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.Logging.Level>(LocalBridgeClazz, "parse", "(Ljava/lang/String;)Ljava/util/logging/Level;", arg0);
+            return SExecute<Java.Util.Logging.Level>(LocalBridgeClazz, "parse", arg0);
         }
 
         #endregion
@@ -159,21 +159,21 @@ namespace Java.Util.Logging
         /// </summary>
         public Java.Lang.String LocalizedName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLocalizedName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getLocalizedName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#getResourceBundleName()"/> 
         /// </summary>
         public Java.Lang.String ResourceBundleName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getResourceBundleName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getResourceBundleName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#intValue()"/>
@@ -181,7 +181,7 @@ namespace Java.Util.Logging
         /// <returns><see cref="int"/></returns>
         public int IntValue()
         {
-            return IExecuteWithSignature<int>("intValue", "()I");
+            return IExecute<int>("intValue");
         }
 
         #endregion

@@ -129,7 +129,7 @@ namespace Javax.Management
         /// </summary>
         public Javax.Management.MBeanParameterInfo[] Signature
         {
-            get { return IExecuteWithSignatureArray<Javax.Management.MBeanParameterInfo>("getSignature", "()[Ljavax/management/MBeanParameterInfo;"); }
+            get { return IExecuteArray<Javax.Management.MBeanParameterInfo>("getSignature"); }
         }
 
         #endregion

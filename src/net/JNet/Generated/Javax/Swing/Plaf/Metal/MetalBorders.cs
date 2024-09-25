@@ -721,35 +721,35 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public static Javax.Swing.Border.Border DesktopIconBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getDesktopIconBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getDesktopIconBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getButtonBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetButtonBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getButtonBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getButtonBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getTextFieldBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetTextFieldBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getTextFieldBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getTextFieldBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getToggleButtonBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetToggleButtonBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getToggleButtonBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getToggleButtonBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getTextBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border TextBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getTextBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getTextBorder"); }
         }
 
         #endregion

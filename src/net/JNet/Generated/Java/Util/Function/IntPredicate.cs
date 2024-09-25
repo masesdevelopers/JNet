@@ -197,7 +197,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.IntPredicate AndDefault(Java.Util.Function.IntPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.IntPredicate>("andDefault", "(Ljava/util/function/IntPredicate;)Ljava/util/function/IntPredicate;", arg0);
+            return IExecute<Java.Util.Function.IntPredicate>("andDefault", arg0);
         }
 
         /// <summary>
@@ -232,7 +232,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.IntPredicate NegateDefault()
         {
-            return IExecuteWithSignature<Java.Util.Function.IntPredicate>("negateDefault", "()Ljava/util/function/IntPredicate;");
+            return IExecute<Java.Util.Function.IntPredicate>("negateDefault");
         }
 
         /// <summary>
@@ -267,7 +267,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.IntPredicate OrDefault(Java.Util.Function.IntPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.IntPredicate>("orDefault", "(Ljava/util/function/IntPredicate;)Ljava/util/function/IntPredicate;", arg0);
+            return IExecute<Java.Util.Function.IntPredicate>("orDefault", arg0);
         }
 
         /// <summary>
@@ -333,7 +333,7 @@ namespace Java.Util.Function
         /// <returns><see cref="bool"/></returns>
         public override bool Test(int arg0)
         {
-            return IExecuteWithSignature<bool>("test", "(I)Z", arg0);
+            return IExecute<bool>("test", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
@@ -342,7 +342,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         public override Java.Util.Function.IntPredicate And(Java.Util.Function.IntPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("and", "(Ljava/util/function/IntPredicate;)Ljava/util/function/IntPredicate;", arg0);
+            return IExecute<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("and", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
@@ -350,7 +350,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         public override Java.Util.Function.IntPredicate Negate()
         {
-            return IExecuteWithSignature<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("negate", "()Ljava/util/function/IntPredicate;");
+            return IExecute<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
@@ -359,7 +359,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         public override Java.Util.Function.IntPredicate Or(Java.Util.Function.IntPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("or", "(Ljava/util/function/IntPredicate;)Ljava/util/function/IntPredicate;", arg0);
+            return IExecute<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("or", arg0);
         }
 
         #endregion

@@ -115,14 +115,14 @@ namespace Javax.Swing.Plaf
         /// </summary>
         public int IconHeight
         {
-            get { return IExecuteWithSignature<int>("getIconHeight", "()I"); }
+            get { return IExecute<int>("getIconHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html#getIconWidth()"/> 
         /// </summary>
         public int IconWidth
         {
-            get { return IExecuteWithSignature<int>("getIconWidth", "()I"); }
+            get { return IExecute<int>("getIconWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>

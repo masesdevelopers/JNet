@@ -207,7 +207,7 @@ namespace Java.Beans
         /// <exception cref="Java.Beans.PropertyVetoException"/>
         public override void VetoableChange(Java.Beans.PropertyChangeEvent arg0)
         {
-            IExecuteWithSignature("vetoableChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
+            IExecute("vetoableChange", arg0);
         }
 
         #endregion

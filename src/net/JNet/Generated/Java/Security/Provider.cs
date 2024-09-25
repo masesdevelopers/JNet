@@ -142,28 +142,28 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.String Info
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInfo", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getServices()"/> 
         /// </summary>
         public Java.Util.Set<Java.Security.Provider.Service> Services
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Security.Provider.Service>>("getServices", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set<Java.Security.Provider.Service>>("getServices"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getVersionStr()"/> 
         /// </summary>
         public Java.Lang.String VersionStr
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVersionStr", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getVersionStr"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#isConfigured()"/>
@@ -171,7 +171,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool IsConfigured()
         {
-            return IExecuteWithSignature<bool>("isConfigured", "()Z");
+            return IExecute<bool>("isConfigured");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#configure(java.lang.String)"/>
@@ -180,7 +180,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.Provider"/></returns>
         public Java.Security.Provider Configure(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Security.Provider>("configure", "(Ljava/lang/String;)Ljava/security/Provider;", arg0);
+            return IExecute<Java.Security.Provider>("configure", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getService(java.lang.String,java.lang.String)"/>

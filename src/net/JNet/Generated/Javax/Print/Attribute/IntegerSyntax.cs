@@ -105,7 +105,7 @@ namespace Javax.Print.Attribute
         /// </summary>
         public int Value
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); }
+            get { return IExecute<int>("getValue"); }
         }
 
         #endregion

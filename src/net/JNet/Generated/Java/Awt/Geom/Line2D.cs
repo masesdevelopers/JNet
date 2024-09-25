@@ -281,49 +281,49 @@ namespace Java.Awt.Geom
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
-            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "()Ljava/awt/Rectangle;"); }
+            get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#getP1()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D P1
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getP1", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getP1"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#getP2()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D P2
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getP2", "()Ljava/awt/geom/Point2D;"); }
+            get { return IExecute<Java.Awt.Geom.Point2D>("getP2"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#getX1()"/> 
         /// </summary>
         public double X1
         {
-            get { return IExecuteWithSignature<double>("getX1", "()D"); }
+            get { return IExecute<double>("getX1"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#getX2()"/> 
         /// </summary>
         public double X2
         {
-            get { return IExecuteWithSignature<double>("getX2", "()D"); }
+            get { return IExecute<double>("getX2"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#getY1()"/> 
         /// </summary>
         public double Y1
         {
-            get { return IExecuteWithSignature<double>("getY1", "()D"); }
+            get { return IExecute<double>("getY1"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#getY2()"/> 
         /// </summary>
         public double Y2
         {
-            get { return IExecuteWithSignature<double>("getY2", "()D"); }
+            get { return IExecute<double>("getY2"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#setLine(double,double,double,double)"/>
@@ -365,7 +365,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Point2D;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#contains(java.awt.geom.Rectangle2D)"/>
@@ -374,7 +374,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Rectangle2D arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#intersects(double,double,double,double)"/>
@@ -395,7 +395,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Intersects(Java.Awt.Geom.Rectangle2D arg0)
         {
-            return IExecuteWithSignature<bool>("intersects", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
+            return IExecute<bool>("intersects", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#intersectsLine(double,double,double,double)"/>
@@ -416,7 +416,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool IntersectsLine(Java.Awt.Geom.Line2D arg0)
         {
-            return IExecuteWithSignature<bool>("intersectsLine", "(Ljava/awt/geom/Line2D;)Z", arg0);
+            return IExecute<bool>("intersectsLine", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptLineDist(double,double)"/>
@@ -435,7 +435,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public double PtLineDist(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecuteWithSignature<double>("ptLineDist", "(Ljava/awt/geom/Point2D;)D", arg0);
+            return IExecute<double>("ptLineDist", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptLineDistSq(double,double)"/>
@@ -454,7 +454,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public double PtLineDistSq(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecuteWithSignature<double>("ptLineDistSq", "(Ljava/awt/geom/Point2D;)D", arg0);
+            return IExecute<double>("ptLineDistSq", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptSegDist(double,double)"/>
@@ -473,7 +473,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public double PtSegDist(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecuteWithSignature<double>("ptSegDist", "(Ljava/awt/geom/Point2D;)D", arg0);
+            return IExecute<double>("ptSegDist", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptSegDistSq(double,double)"/>
@@ -492,7 +492,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public double PtSegDistSq(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecuteWithSignature<double>("ptSegDistSq", "(Ljava/awt/geom/Point2D;)D", arg0);
+            return IExecute<double>("ptSegDistSq", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#relativeCCW(double,double)"/>
@@ -511,7 +511,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public int RelativeCCW(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecuteWithSignature<int>("relativeCCW", "(Ljava/awt/geom/Point2D;)I", arg0);
+            return IExecute<int>("relativeCCW", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
@@ -530,7 +530,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;)Ljava/awt/geom/PathIterator;", arg0);
+            return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#setLine(java.awt.geom.Line2D)"/>
@@ -538,7 +538,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.Line2D"/></param>
         public void SetLine(Java.Awt.Geom.Line2D arg0)
         {
-            IExecuteWithSignature("setLine", "(Ljava/awt/geom/Line2D;)V", arg0);
+            IExecute("setLine", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#setLine(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>

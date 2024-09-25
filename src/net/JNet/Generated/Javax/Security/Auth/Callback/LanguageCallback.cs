@@ -103,7 +103,7 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public Java.Util.Locale Locale
         {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); } set { IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", value); }
+            get { return IExecute<Java.Util.Locale>("getLocale"); } set { IExecute("setLocale", value); }
         }
 
         #endregion

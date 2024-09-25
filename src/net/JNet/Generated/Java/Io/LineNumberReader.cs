@@ -112,7 +112,7 @@ namespace Java.Io
         /// </summary>
         public int LineNumber
         {
-            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); } set { IExecuteWithSignature("setLineNumber", "(I)V", value); }
+            get { return IExecute<int>("getLineNumber"); } set { IExecute("setLineNumber", value); }
         }
 
         #endregion

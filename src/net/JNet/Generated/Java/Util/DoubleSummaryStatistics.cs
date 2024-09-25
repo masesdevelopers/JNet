@@ -111,35 +111,35 @@ namespace Java.Util
         /// </summary>
         public double Average
         {
-            get { return IExecuteWithSignature<double>("getAverage", "()D"); }
+            get { return IExecute<double>("getAverage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DoubleSummaryStatistics.html#getCount()"/> 
         /// </summary>
         public long Count
         {
-            get { return IExecuteWithSignature<long>("getCount", "()J"); }
+            get { return IExecute<long>("getCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DoubleSummaryStatistics.html#getMax()"/> 
         /// </summary>
         public double Max
         {
-            get { return IExecuteWithSignature<double>("getMax", "()D"); }
+            get { return IExecute<double>("getMax"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DoubleSummaryStatistics.html#getMin()"/> 
         /// </summary>
         public double Min
         {
-            get { return IExecuteWithSignature<double>("getMin", "()D"); }
+            get { return IExecute<double>("getMin"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DoubleSummaryStatistics.html#getSum()"/> 
         /// </summary>
         public double Sum
         {
-            get { return IExecuteWithSignature<double>("getSum", "()D"); }
+            get { return IExecute<double>("getSum"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DoubleSummaryStatistics.html#accept(double)"/>
@@ -147,7 +147,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="double"/></param>
         public void Accept(double arg0)
         {
-            IExecuteWithSignature("accept", "(D)V", arg0);
+            IExecute("accept", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DoubleSummaryStatistics.html#combine(java.util.DoubleSummaryStatistics)"/>
@@ -155,7 +155,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.DoubleSummaryStatistics"/></param>
         public void Combine(Java.Util.DoubleSummaryStatistics arg0)
         {
-            IExecuteWithSignature("combine", "(Ljava/util/DoubleSummaryStatistics;)V", arg0);
+            IExecute("combine", arg0);
         }
 
         #endregion

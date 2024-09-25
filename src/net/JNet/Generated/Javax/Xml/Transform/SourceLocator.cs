@@ -131,28 +131,28 @@ namespace Javax.Xml.Transform
         /// </summary>
         public int ColumnNumber
         {
-            get { return IExecuteWithSignature<int>("getColumnNumber", "()I"); }
+            get { return IExecute<int>("getColumnNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/SourceLocator.html#getLineNumber()"/> 
         /// </summary>
         public int LineNumber
         {
-            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); }
+            get { return IExecute<int>("getLineNumber"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/SourceLocator.html#getPublicId()"/> 
         /// </summary>
         public Java.Lang.String PublicId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPublicId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/SourceLocator.html#getSystemId()"/> 
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); }
         }
 
         #endregion

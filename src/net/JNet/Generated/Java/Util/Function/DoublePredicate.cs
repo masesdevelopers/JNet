@@ -197,7 +197,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoublePredicate AndDefault(Java.Util.Function.DoublePredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.DoublePredicate>("andDefault", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
+            return IExecute<Java.Util.Function.DoublePredicate>("andDefault", arg0);
         }
 
         /// <summary>
@@ -232,7 +232,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoublePredicate NegateDefault()
         {
-            return IExecuteWithSignature<Java.Util.Function.DoublePredicate>("negateDefault", "()Ljava/util/function/DoublePredicate;");
+            return IExecute<Java.Util.Function.DoublePredicate>("negateDefault");
         }
 
         /// <summary>
@@ -267,7 +267,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoublePredicate OrDefault(Java.Util.Function.DoublePredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.DoublePredicate>("orDefault", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
+            return IExecute<Java.Util.Function.DoublePredicate>("orDefault", arg0);
         }
 
         /// <summary>
@@ -333,7 +333,7 @@ namespace Java.Util.Function
         /// <returns><see cref="bool"/></returns>
         public override bool Test(double arg0)
         {
-            return IExecuteWithSignature<bool>("test", "(D)Z", arg0);
+            return IExecute<bool>("test", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
@@ -342,7 +342,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         public override Java.Util.Function.DoublePredicate And(Java.Util.Function.DoublePredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("and", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
+            return IExecute<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("and", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
@@ -350,7 +350,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         public override Java.Util.Function.DoublePredicate Negate()
         {
-            return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("negate", "()Ljava/util/function/DoublePredicate;");
+            return IExecute<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
@@ -359,7 +359,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         public override Java.Util.Function.DoublePredicate Or(Java.Util.Function.DoublePredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("or", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
+            return IExecute<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("or", arg0);
         }
 
         #endregion

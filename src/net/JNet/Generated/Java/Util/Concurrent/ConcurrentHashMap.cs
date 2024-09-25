@@ -274,7 +274,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
         public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView NewKeySet()
         {
-            return SExecuteWithSignature<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>(LocalBridgeClazz, "newKeySet", "()Ljava/util/concurrent/ConcurrentHashMap$KeySetView;");
+            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>(LocalBridgeClazz, "newKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#newKeySet(int)"/>
@@ -283,7 +283,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
         public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView NewKeySet(int arg0)
         {
-            return SExecuteWithSignature<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>(LocalBridgeClazz, "newKeySet", "(I)Ljava/util/concurrent/ConcurrentHashMap$KeySetView;", arg0);
+            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>(LocalBridgeClazz, "newKeySet", arg0);
         }
 
         #endregion
@@ -420,7 +420,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntriesToDouble(long,java.util.function.ToDoubleFunction,double,java.util.function.DoubleBinaryOperator)"/>
@@ -525,7 +525,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
         public Java.Util.Concurrent.ConcurrentHashMap.KeySetView KeySet(object arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>("keySet", "(Ljava/lang/Object;)Ljava/util/concurrent/ConcurrentHashMap$KeySetView;", arg0);
+            return IExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>("keySet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#keys()"/>
@@ -533,7 +533,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Keys()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration>("keys", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration>("keys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#elements()"/>
@@ -541,7 +541,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Elements()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration>("elements", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration>("elements");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntries(long,java.util.function.BiFunction)"/>
@@ -569,7 +569,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long MappingCount()
         {
-            return IExecuteWithSignature<long>("mappingCount", "()J");
+            return IExecute<long>("mappingCount");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntriesToLong(long,java.util.function.ToLongFunction,long,java.util.function.LongBinaryOperator)"/>
@@ -841,7 +841,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
         public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, Java.Lang.Boolean> NewKeySet()
         {
-            return SExecuteWithSignature<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, Java.Lang.Boolean>>(LocalBridgeClazz, "newKeySet", "()Ljava/util/concurrent/ConcurrentHashMap$KeySetView;");
+            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, Java.Lang.Boolean>>(LocalBridgeClazz, "newKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#newKeySet(int)"/>
@@ -850,7 +850,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
         public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, Java.Lang.Boolean> NewKeySet(int arg0)
         {
-            return SExecuteWithSignature<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, Java.Lang.Boolean>>(LocalBridgeClazz, "newKeySet", "(I)Ljava/util/concurrent/ConcurrentHashMap$KeySetView;", arg0);
+            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, Java.Lang.Boolean>>(LocalBridgeClazz, "newKeySet", arg0);
         }
 
         #endregion
@@ -1035,7 +1035,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntriesToDouble(long,java.util.function.ToDoubleFunction,double,java.util.function.DoubleBinaryOperator)"/>
@@ -1148,7 +1148,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
         public Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, V> KeySet(V arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, V>>("keySet", "(Ljava/lang/Object;)Ljava/util/concurrent/ConcurrentHashMap$KeySetView;", arg0);
+            return IExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, V>>("keySet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#keys()"/>
@@ -1156,7 +1156,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<K> Keys()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<K>>("keys", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration<K>>("keys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#elements()"/>
@@ -1164,7 +1164,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<V> Elements()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<V>>("elements", "()Ljava/util/Enumeration;");
+            return IExecute<Java.Util.Enumeration<V>>("elements");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntries(long,java.util.function.BiFunction)"/>
@@ -1195,7 +1195,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long MappingCount()
         {
-            return IExecuteWithSignature<long>("mappingCount", "()J");
+            return IExecute<long>("mappingCount");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntriesToLong(long,java.util.function.ToLongFunction,long,java.util.function.LongBinaryOperator)"/>

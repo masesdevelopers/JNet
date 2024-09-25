@@ -157,7 +157,7 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         public Java.Lang.String Target
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTarget", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTarget"); }
         }
 
         #endregion

@@ -165,14 +165,14 @@ namespace Java.Util
         /// </summary>
         public object First
         {
-            get { return IExecuteWithSignature("getFirst", "()Ljava/lang/Object;"); }
+            get { return IExecute("getFirst"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#getLast()"/> 
         /// </summary>
         public object Last
         {
-            get { return IExecuteWithSignature("getLast", "()Ljava/lang/Object;"); }
+            get { return IExecute("getLast"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#offer(java.lang.Object)"/>
@@ -181,7 +181,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Offer(object arg0)
         {
-            return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("offer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#offerFirst(java.lang.Object)"/>
@@ -190,7 +190,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool OfferFirst(object arg0)
         {
-            return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("offerFirst", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#offerLast(java.lang.Object)"/>
@@ -199,7 +199,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool OfferLast(object arg0)
         {
-            return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("offerLast", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#removeFirstOccurrence(java.lang.Object)"/>
@@ -208,7 +208,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveFirstOccurrence(object arg0)
         {
-            return IExecuteWithSignature<bool>("removeFirstOccurrence", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("removeFirstOccurrence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#removeLastOccurrence(java.lang.Object)"/>
@@ -217,7 +217,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveLastOccurrence(object arg0)
         {
-            return IExecuteWithSignature<bool>("removeLastOccurrence", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("removeLastOccurrence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#element()"/>
@@ -225,7 +225,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Element()
         {
-            return IExecuteWithSignature("element", "()Ljava/lang/Object;");
+            return IExecute("element");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#peek()"/>
@@ -233,7 +233,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Peek()
         {
-            return IExecuteWithSignature("peek", "()Ljava/lang/Object;");
+            return IExecute("peek");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#peekFirst()"/>
@@ -241,7 +241,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object PeekFirst()
         {
-            return IExecuteWithSignature("peekFirst", "()Ljava/lang/Object;");
+            return IExecute("peekFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#peekLast()"/>
@@ -249,7 +249,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object PeekLast()
         {
-            return IExecuteWithSignature("peekLast", "()Ljava/lang/Object;");
+            return IExecute("peekLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#poll()"/>
@@ -257,7 +257,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Poll()
         {
-            return IExecuteWithSignature("poll", "()Ljava/lang/Object;");
+            return IExecute("poll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#pollFirst()"/>
@@ -265,7 +265,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object PollFirst()
         {
-            return IExecuteWithSignature("pollFirst", "()Ljava/lang/Object;");
+            return IExecute("pollFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#pollLast()"/>
@@ -273,7 +273,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object PollLast()
         {
-            return IExecuteWithSignature("pollLast", "()Ljava/lang/Object;");
+            return IExecute("pollLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#pop()"/>
@@ -281,7 +281,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Pop()
         {
-            return IExecuteWithSignature("pop", "()Ljava/lang/Object;");
+            return IExecute("pop");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#remove()"/>
@@ -289,7 +289,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Remove()
         {
-            return IExecuteWithSignature("remove", "()Ljava/lang/Object;");
+            return IExecute("remove");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#removeFirst()"/>
@@ -297,7 +297,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object RemoveFirst()
         {
-            return IExecuteWithSignature("removeFirst", "()Ljava/lang/Object;");
+            return IExecute("removeFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#removeLast()"/>
@@ -305,7 +305,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object RemoveLast()
         {
-            return IExecuteWithSignature("removeLast", "()Ljava/lang/Object;");
+            return IExecute("removeLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#descendingIterator()"/>
@@ -313,7 +313,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("descendingIterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator>("descendingIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#addFirst(java.lang.Object)"/>
@@ -321,7 +321,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         public void AddFirst(object arg0)
         {
-            IExecuteWithSignature("addFirst", "(Ljava/lang/Object;)V", arg0);
+            IExecute("addFirst", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#addLast(java.lang.Object)"/>
@@ -329,7 +329,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         public void AddLast(object arg0)
         {
-            IExecuteWithSignature("addLast", "(Ljava/lang/Object;)V", arg0);
+            IExecute("addLast", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#push(java.lang.Object)"/>
@@ -337,7 +337,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         public void Push(object arg0)
         {
-            IExecuteWithSignature("push", "(Ljava/lang/Object;)V", arg0);
+            IExecute("push", arg0);
         }
 
         #endregion
@@ -403,14 +403,14 @@ namespace Java.Util
         /// </summary>
         public E First
         {
-            get { return IExecuteWithSignature<E>("getFirst", "()Ljava/lang/Object;"); }
+            get { return IExecute<E>("getFirst"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#getLast()"/> 
         /// </summary>
         public E Last
         {
-            get { return IExecuteWithSignature<E>("getLast", "()Ljava/lang/Object;"); }
+            get { return IExecute<E>("getLast"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#offer(java.lang.Object)"/>
@@ -419,7 +419,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Offer(E arg0)
         {
-            return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("offer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#offerFirst(java.lang.Object)"/>
@@ -428,7 +428,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool OfferFirst(E arg0)
         {
-            return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("offerFirst", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#offerLast(java.lang.Object)"/>
@@ -437,7 +437,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool OfferLast(E arg0)
         {
-            return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("offerLast", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#removeFirstOccurrence(java.lang.Object)"/>
@@ -446,7 +446,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveFirstOccurrence(object arg0)
         {
-            return IExecuteWithSignature<bool>("removeFirstOccurrence", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("removeFirstOccurrence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#removeLastOccurrence(java.lang.Object)"/>
@@ -455,7 +455,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool RemoveLastOccurrence(object arg0)
         {
-            return IExecuteWithSignature<bool>("removeLastOccurrence", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("removeLastOccurrence", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#element()"/>
@@ -463,7 +463,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
         {
-            return IExecuteWithSignature<E>("element", "()Ljava/lang/Object;");
+            return IExecute<E>("element");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#peek()"/>
@@ -471,7 +471,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
         {
-            return IExecuteWithSignature<E>("peek", "()Ljava/lang/Object;");
+            return IExecute<E>("peek");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#peekFirst()"/>
@@ -479,7 +479,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E PeekFirst()
         {
-            return IExecuteWithSignature<E>("peekFirst", "()Ljava/lang/Object;");
+            return IExecute<E>("peekFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#peekLast()"/>
@@ -487,7 +487,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E PeekLast()
         {
-            return IExecuteWithSignature<E>("peekLast", "()Ljava/lang/Object;");
+            return IExecute<E>("peekLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#poll()"/>
@@ -495,7 +495,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Poll()
         {
-            return IExecuteWithSignature<E>("poll", "()Ljava/lang/Object;");
+            return IExecute<E>("poll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#pollFirst()"/>
@@ -503,7 +503,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E PollFirst()
         {
-            return IExecuteWithSignature<E>("pollFirst", "()Ljava/lang/Object;");
+            return IExecute<E>("pollFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#pollLast()"/>
@@ -511,7 +511,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E PollLast()
         {
-            return IExecuteWithSignature<E>("pollLast", "()Ljava/lang/Object;");
+            return IExecute<E>("pollLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#pop()"/>
@@ -519,7 +519,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Pop()
         {
-            return IExecuteWithSignature<E>("pop", "()Ljava/lang/Object;");
+            return IExecute<E>("pop");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#remove()"/>
@@ -527,7 +527,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()
         {
-            return IExecuteWithSignature<E>("remove", "()Ljava/lang/Object;");
+            return IExecute<E>("remove");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#removeFirst()"/>
@@ -535,7 +535,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveFirst()
         {
-            return IExecuteWithSignature<E>("removeFirst", "()Ljava/lang/Object;");
+            return IExecute<E>("removeFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#removeLast()"/>
@@ -543,7 +543,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveLast()
         {
-            return IExecuteWithSignature<E>("removeLast", "()Ljava/lang/Object;");
+            return IExecute<E>("removeLast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#descendingIterator()"/>
@@ -551,7 +551,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("descendingIterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator<E>>("descendingIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#addFirst(java.lang.Object)"/>
@@ -559,7 +559,7 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddFirst(E arg0)
         {
-            IExecuteWithSignature("addFirst", "(Ljava/lang/Object;)V", arg0);
+            IExecute("addFirst", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#addLast(java.lang.Object)"/>
@@ -567,7 +567,7 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddLast(E arg0)
         {
-            IExecuteWithSignature("addLast", "(Ljava/lang/Object;)V", arg0);
+            IExecute("addLast", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#push(java.lang.Object)"/>
@@ -575,7 +575,7 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void Push(E arg0)
         {
-            IExecuteWithSignature("push", "(Ljava/lang/Object;)V", arg0);
+            IExecute("push", arg0);
         }
 
         #endregion

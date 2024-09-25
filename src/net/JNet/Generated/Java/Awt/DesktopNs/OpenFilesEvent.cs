@@ -104,7 +104,7 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         public Java.Lang.String SearchTerm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSearchTerm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSearchTerm"); }
         }
 
         #endregion

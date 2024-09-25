@@ -92,7 +92,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         public static Java.Util.OptionalInt Empty()
         {
-            return SExecuteWithSignature<Java.Util.OptionalInt>(LocalBridgeClazz, "empty", "()Ljava/util/OptionalInt;");
+            return SExecute<Java.Util.OptionalInt>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#of(int)"/>
@@ -101,7 +101,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         public static Java.Util.OptionalInt Of(int arg0)
         {
-            return SExecuteWithSignature<Java.Util.OptionalInt>(LocalBridgeClazz, "of", "(I)Ljava/util/OptionalInt;", arg0);
+            return SExecute<Java.Util.OptionalInt>(LocalBridgeClazz, "of", arg0);
         }
 
         #endregion
@@ -112,7 +112,7 @@ namespace Java.Util
         /// </summary>
         public int AsInt
         {
-            get { return IExecuteWithSignature<int>("getAsInt", "()I"); }
+            get { return IExecute<int>("getAsInt"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseThrow(java.util.function.Supplier)"/>
@@ -132,7 +132,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isPresent()"/>
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
         {
-            return IExecuteWithSignature<bool>("isPresent", "()Z");
+            return IExecute<bool>("isPresent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElse(int)"/>
@@ -149,7 +149,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int OrElse(int arg0)
         {
-            return IExecuteWithSignature<int>("orElse", "(I)I", arg0);
+            return IExecute<int>("orElse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseGet(java.util.function.IntSupplier)"/>
@@ -158,7 +158,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int OrElseGet(Java.Util.Function.IntSupplier arg0)
         {
-            return IExecuteWithSignature<int>("orElseGet", "(Ljava/util/function/IntSupplier;)I", arg0);
+            return IExecute<int>("orElseGet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseThrow()"/>
@@ -166,7 +166,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int OrElseThrow()
         {
-            return IExecuteWithSignature<int>("orElseThrow", "()I");
+            return IExecute<int>("orElseThrow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#stream()"/>
@@ -174,7 +174,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Stream()
         {
-            return IExecuteWithSignature<Java.Util.Stream.IntStream>("stream", "()Ljava/util/stream/IntStream;");
+            return IExecute<Java.Util.Stream.IntStream>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#ifPresent(java.util.function.IntConsumer)"/>
@@ -182,7 +182,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         public void IfPresent(Java.Util.Function.IntConsumer arg0)
         {
-            IExecuteWithSignature("ifPresent", "(Ljava/util/function/IntConsumer;)V", arg0);
+            IExecute("ifPresent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#ifPresentOrElse(java.util.function.IntConsumer,java.lang.Runnable)"/>

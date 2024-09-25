@@ -148,28 +148,28 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public Javax.Swing.JComponent EastPane
         {
-            get { return IExecuteWithSignature<Javax.Swing.JComponent>("getEastPane", "()Ljavax/swing/JComponent;"); } set { IExecuteWithSignature("setEastPane", "(Ljavax/swing/JComponent;)V", value); }
+            get { return IExecute<Javax.Swing.JComponent>("getEastPane"); } set { IExecute("setEastPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#getNorthPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#setNorthPane(javax.swing.JComponent)"/>
         /// </summary>
         public Javax.Swing.JComponent NorthPane
         {
-            get { return IExecuteWithSignature<Javax.Swing.JComponent>("getNorthPane", "()Ljavax/swing/JComponent;"); } set { IExecuteWithSignature("setNorthPane", "(Ljavax/swing/JComponent;)V", value); }
+            get { return IExecute<Javax.Swing.JComponent>("getNorthPane"); } set { IExecute("setNorthPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#getSouthPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#setSouthPane(javax.swing.JComponent)"/>
         /// </summary>
         public Javax.Swing.JComponent SouthPane
         {
-            get { return IExecuteWithSignature<Javax.Swing.JComponent>("getSouthPane", "()Ljavax/swing/JComponent;"); } set { IExecuteWithSignature("setSouthPane", "(Ljavax/swing/JComponent;)V", value); }
+            get { return IExecute<Javax.Swing.JComponent>("getSouthPane"); } set { IExecute("setSouthPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#getWestPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#setWestPane(javax.swing.JComponent)"/>
         /// </summary>
         public Javax.Swing.JComponent WestPane
         {
-            get { return IExecuteWithSignature<Javax.Swing.JComponent>("getWestPane", "()Ljavax/swing/JComponent;"); } set { IExecuteWithSignature("setWestPane", "(Ljavax/swing/JComponent;)V", value); }
+            get { return IExecute<Javax.Swing.JComponent>("getWestPane"); } set { IExecute("setWestPane", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#isKeyBindingActive()"/>
@@ -177,7 +177,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="bool"/></returns>
         public bool IsKeyBindingActive()
         {
-            return IExecuteWithSignature<bool>("isKeyBindingActive", "()Z");
+            return IExecute<bool>("isKeyBindingActive");
         }
 
         #endregion

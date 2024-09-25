@@ -107,7 +107,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.MBeanServerDelegate"/></returns>
         public Javax.Management.MBeanServerDelegate NewMBeanServerDelegate()
         {
-            return IExecuteWithSignature<Javax.Management.MBeanServerDelegate>("newMBeanServerDelegate", "()Ljavax/management/MBeanServerDelegate;");
+            return IExecute<Javax.Management.MBeanServerDelegate>("newMBeanServerDelegate");
         }
 
         #endregion

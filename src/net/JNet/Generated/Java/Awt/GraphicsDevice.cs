@@ -160,56 +160,56 @@ namespace Java.Awt
         /// </summary>
         public int AvailableAcceleratedMemory
         {
-            get { return IExecuteWithSignature<int>("getAvailableAcceleratedMemory", "()I"); }
+            get { return IExecute<int>("getAvailableAcceleratedMemory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getConfigurations()"/> 
         /// </summary>
         public Java.Awt.GraphicsConfiguration[] Configurations
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.GraphicsConfiguration>("getConfigurations", "()[Ljava/awt/GraphicsConfiguration;"); }
+            get { return IExecuteArray<Java.Awt.GraphicsConfiguration>("getConfigurations"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getDefaultConfiguration()"/> 
         /// </summary>
         public Java.Awt.GraphicsConfiguration DefaultConfiguration
         {
-            get { return IExecuteWithSignature<Java.Awt.GraphicsConfiguration>("getDefaultConfiguration", "()Ljava/awt/GraphicsConfiguration;"); }
+            get { return IExecute<Java.Awt.GraphicsConfiguration>("getDefaultConfiguration"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getDisplayMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#setDisplayMode(java.awt.DisplayMode)"/>
         /// </summary>
         public Java.Awt.DisplayMode DisplayMode
         {
-            get { return IExecuteWithSignature<Java.Awt.DisplayMode>("getDisplayMode", "()Ljava/awt/DisplayMode;"); } set { IExecuteWithSignature("setDisplayMode", "(Ljava/awt/DisplayMode;)V", value); }
+            get { return IExecute<Java.Awt.DisplayMode>("getDisplayMode"); } set { IExecute("setDisplayMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getDisplayModes()"/> 
         /// </summary>
         public Java.Awt.DisplayMode[] DisplayModes
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.DisplayMode>("getDisplayModes", "()[Ljava/awt/DisplayMode;"); }
+            get { return IExecuteArray<Java.Awt.DisplayMode>("getDisplayModes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getFullScreenWindow()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#setFullScreenWindow(java.awt.Window)"/>
         /// </summary>
         public Java.Awt.Window FullScreenWindow
         {
-            get { return IExecuteWithSignature<Java.Awt.Window>("getFullScreenWindow", "()Ljava/awt/Window;"); } set { IExecuteWithSignature("setFullScreenWindow", "(Ljava/awt/Window;)V", value); }
+            get { return IExecute<Java.Awt.Window>("getFullScreenWindow"); } set { IExecute("setFullScreenWindow", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getIDstring()"/> 
         /// </summary>
         public Java.Lang.String IDstring
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getIDstring", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getIDstring"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getType()"/> 
         /// </summary>
         public int Type
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            get { return IExecute<int>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isDisplayChangeSupported()"/>
@@ -217,7 +217,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsDisplayChangeSupported()
         {
-            return IExecuteWithSignature<bool>("isDisplayChangeSupported", "()Z");
+            return IExecute<bool>("isDisplayChangeSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isFullScreenSupported()"/>
@@ -225,7 +225,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsFullScreenSupported()
         {
-            return IExecuteWithSignature<bool>("isFullScreenSupported", "()Z");
+            return IExecute<bool>("isFullScreenSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isWindowTranslucencySupported(java.awt.GraphicsDevice.WindowTranslucency)"/>
@@ -234,7 +234,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsWindowTranslucencySupported(Java.Awt.GraphicsDevice.WindowTranslucency arg0)
         {
-            return IExecuteWithSignature<bool>("isWindowTranslucencySupported", "(Ljava/awt/GraphicsDevice$WindowTranslucency;)Z", arg0);
+            return IExecute<bool>("isWindowTranslucencySupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getBestConfiguration(java.awt.GraphicsConfigTemplate)"/>
@@ -243,7 +243,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.GraphicsConfiguration"/></returns>
         public Java.Awt.GraphicsConfiguration GetBestConfiguration(Java.Awt.GraphicsConfigTemplate arg0)
         {
-            return IExecuteWithSignature<Java.Awt.GraphicsConfiguration>("getBestConfiguration", "(Ljava/awt/GraphicsConfigTemplate;)Ljava/awt/GraphicsConfiguration;", arg0);
+            return IExecute<Java.Awt.GraphicsConfiguration>("getBestConfiguration", arg0);
         }
 
         #endregion

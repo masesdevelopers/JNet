@@ -102,7 +102,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NullReader()
         {
-            return SExecuteWithSignature<Java.Io.Reader>(LocalBridgeClazz, "nullReader", "()Ljava/io/Reader;");
+            return SExecute<Java.Io.Reader>(LocalBridgeClazz, "nullReader");
         }
 
         #endregion
@@ -126,7 +126,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#markSupported()"/>
@@ -134,7 +134,7 @@ namespace Java.Io
         /// <returns><see cref="bool"/></returns>
         public bool MarkSupported()
         {
-            return IExecuteWithSignature<bool>("markSupported", "()Z");
+            return IExecute<bool>("markSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#ready()"/>
@@ -143,7 +143,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public bool Ready()
         {
-            return IExecuteWithSignature<bool>("ready", "()Z");
+            return IExecute<bool>("ready");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read()"/>
@@ -152,7 +152,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read()
         {
-            return IExecuteWithSignature<int>("read", "()I");
+            return IExecute<int>("read");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(char[])"/>
@@ -162,7 +162,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read(char[] arg0)
         {
-            return IExecuteWithSignature<int>("read", "([C)I", new object[] { arg0 });
+            return IExecute<int>("read", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(java.nio.CharBuffer)"/>
@@ -172,7 +172,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read(Java.Nio.CharBuffer arg0)
         {
-            return IExecuteWithSignature<int>("read", "(Ljava/nio/CharBuffer;)I", arg0);
+            return IExecute<int>("read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#skip(long)"/>
@@ -182,7 +182,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public long Skip(long arg0)
         {
-            return IExecuteWithSignature<long>("skip", "(J)J", arg0);
+            return IExecute<long>("skip", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer)"/>
@@ -192,7 +192,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public long TransferTo(Java.Io.Writer arg0)
         {
-            return IExecuteWithSignature<long>("transferTo", "(Ljava/io/Writer;)J", arg0);
+            return IExecute<long>("transferTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#mark(int)"/>
@@ -201,7 +201,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Mark(int arg0)
         {
-            IExecuteWithSignature("mark", "(I)V", arg0);
+            IExecute("mark", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#reset()"/>
@@ -209,7 +209,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
 
         #endregion

@@ -174,70 +174,70 @@ namespace Org.W3c.Dom.Events
         /// </summary>
         public bool AltKey
         {
-            get { return IExecuteWithSignature<bool>("getAltKey", "()Z"); }
+            get { return IExecute<bool>("getAltKey"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getButton()"/> 
         /// </summary>
         public short Button
         {
-            get { return IExecuteWithSignature<short>("getButton", "()S"); }
+            get { return IExecute<short>("getButton"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getClientX()"/> 
         /// </summary>
         public int ClientX
         {
-            get { return IExecuteWithSignature<int>("getClientX", "()I"); }
+            get { return IExecute<int>("getClientX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getClientY()"/> 
         /// </summary>
         public int ClientY
         {
-            get { return IExecuteWithSignature<int>("getClientY", "()I"); }
+            get { return IExecute<int>("getClientY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getCtrlKey()"/> 
         /// </summary>
         public bool CtrlKey
         {
-            get { return IExecuteWithSignature<bool>("getCtrlKey", "()Z"); }
+            get { return IExecute<bool>("getCtrlKey"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getMetaKey()"/> 
         /// </summary>
         public bool MetaKey
         {
-            get { return IExecuteWithSignature<bool>("getMetaKey", "()Z"); }
+            get { return IExecute<bool>("getMetaKey"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getRelatedTarget()"/> 
         /// </summary>
         public Org.W3c.Dom.Events.EventTarget RelatedTarget
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Events.EventTarget>("getRelatedTarget", "()Lorg/w3c/dom/events/EventTarget;"); }
+            get { return IExecute<Org.W3c.Dom.Events.EventTarget>("getRelatedTarget"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getScreenX()"/> 
         /// </summary>
         public int ScreenX
         {
-            get { return IExecuteWithSignature<int>("getScreenX", "()I"); }
+            get { return IExecute<int>("getScreenX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getScreenY()"/> 
         /// </summary>
         public int ScreenY
         {
-            get { return IExecuteWithSignature<int>("getScreenY", "()I"); }
+            get { return IExecute<int>("getScreenY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getShiftKey()"/> 
         /// </summary>
         public bool ShiftKey
         {
-            get { return IExecuteWithSignature<bool>("getShiftKey", "()Z"); }
+            get { return IExecute<bool>("getShiftKey"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#initMouseEvent(java.lang.String,boolean,boolean,org.w3c.dom.views.AbstractView,int,int,int,int,int,boolean,boolean,boolean,boolean,short,org.w3c.dom.events.EventTarget)"/>

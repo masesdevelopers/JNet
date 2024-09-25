@@ -98,7 +98,7 @@ namespace Javax.Naming.Spi
         /// <returns><see cref="bool"/></returns>
         public static bool HasInitialContextFactoryBuilder()
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "hasInitialContextFactoryBuilder", "()Z");
+            return SExecute<bool>(LocalBridgeClazz, "hasInitialContextFactoryBuilder");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable)"/>
@@ -134,7 +134,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Javax.Naming.NamingException"/>
         public static Javax.Naming.Context GetContinuationContext(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
-            return SExecuteWithSignature<Javax.Naming.Context>(LocalBridgeClazz, "getContinuationContext", "(Ljavax/naming/CannotProceedException;)Ljavax/naming/Context;", arg0);
+            return SExecute<Javax.Naming.Context>(LocalBridgeClazz, "getContinuationContext", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getInitialContext(java.util.Hashtable)"/>
@@ -144,7 +144,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Javax.Naming.NamingException"/>
         public static Javax.Naming.Context GetInitialContext(Java.Util.Hashtable<object, object> arg0)
         {
-            return SExecuteWithSignature<Javax.Naming.Context>(LocalBridgeClazz, "getInitialContext", "(Ljava/util/Hashtable;)Ljavax/naming/Context;", arg0);
+            return SExecute<Javax.Naming.Context>(LocalBridgeClazz, "getInitialContext", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getURLContext(java.lang.String,java.util.Hashtable)"/>
@@ -164,7 +164,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Javax.Naming.NamingException"/>
         public static void SetInitialContextFactoryBuilder(Javax.Naming.Spi.InitialContextFactoryBuilder arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setInitialContextFactoryBuilder", "(Ljavax/naming/spi/InitialContextFactoryBuilder;)V", arg0);
+            SExecute(LocalBridgeClazz, "setInitialContextFactoryBuilder", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#setObjectFactoryBuilder(javax.naming.spi.ObjectFactoryBuilder)"/>
@@ -173,7 +173,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Javax.Naming.NamingException"/>
         public static void SetObjectFactoryBuilder(Javax.Naming.Spi.ObjectFactoryBuilder arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setObjectFactoryBuilder", "(Ljavax/naming/spi/ObjectFactoryBuilder;)V", arg0);
+            SExecute(LocalBridgeClazz, "setObjectFactoryBuilder", arg0);
         }
 
         #endregion

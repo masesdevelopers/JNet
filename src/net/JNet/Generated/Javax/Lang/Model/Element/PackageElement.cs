@@ -144,28 +144,28 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public Java.Util.List EnclosedElements
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getEnclosedElements", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List>("getEnclosedElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Element>("getEnclosingElement", "()Ljavax/lang/model/element/Element;"); }
+            get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#getQualifiedName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name QualifiedName
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getQualifiedName", "()Ljavax/lang/model/element/Name;"); }
+            get { return IExecute<Javax.Lang.Model.Element.Name>("getQualifiedName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#getSimpleName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name SimpleName
         {
-            get { return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getSimpleName", "()Ljavax/lang/model/element/Name;"); }
+            get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#isUnnamed()"/>
@@ -173,7 +173,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="bool"/></returns>
         public bool IsUnnamed()
         {
-            return IExecuteWithSignature<bool>("isUnnamed", "()Z");
+            return IExecute<bool>("isUnnamed");
         }
 
         #endregion

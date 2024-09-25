@@ -132,21 +132,21 @@ namespace Java.Beans
         /// </summary>
         public Java.Lang.Class IndexedPropertyType
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getIndexedPropertyType", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getIndexedPropertyType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#getIndexedReadMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#setIndexedReadMethod(java.lang.reflect.Method)"/>
         /// </summary>
         public Java.Lang.Reflect.Method IndexedReadMethod
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Method>("getIndexedReadMethod", "()Ljava/lang/reflect/Method;"); } set { IExecuteWithSignature("setIndexedReadMethod", "(Ljava/lang/reflect/Method;)V", value); }
+            get { return IExecute<Java.Lang.Reflect.Method>("getIndexedReadMethod"); } set { IExecute("setIndexedReadMethod", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#getIndexedWriteMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#setIndexedWriteMethod(java.lang.reflect.Method)"/>
         /// </summary>
         public Java.Lang.Reflect.Method IndexedWriteMethod
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Method>("getIndexedWriteMethod", "()Ljava/lang/reflect/Method;"); } set { IExecuteWithSignature("setIndexedWriteMethod", "(Ljava/lang/reflect/Method;)V", value); }
+            get { return IExecute<Java.Lang.Reflect.Method>("getIndexedWriteMethod"); } set { IExecute("setIndexedWriteMethod", value); }
         }
 
         #endregion

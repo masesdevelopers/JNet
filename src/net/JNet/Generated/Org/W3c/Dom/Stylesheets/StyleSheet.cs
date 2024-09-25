@@ -143,49 +143,49 @@ namespace Org.W3c.Dom.Stylesheets
         /// </summary>
         public bool Disabled
         {
-            get { return IExecuteWithSignature<bool>("getDisabled", "()Z"); } set { IExecuteWithSignature("setDisabled", "(Z)V", value); }
+            get { return IExecute<bool>("getDisabled"); } set { IExecute("setDisabled", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getHref()"/> 
         /// </summary>
         public Java.Lang.String Href
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHref", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getHref"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getMedia()"/> 
         /// </summary>
         public Org.W3c.Dom.Stylesheets.MediaList Media
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Stylesheets.MediaList>("getMedia", "()Lorg/w3c/dom/stylesheets/MediaList;"); }
+            get { return IExecute<Org.W3c.Dom.Stylesheets.MediaList>("getMedia"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getOwnerNode()"/> 
         /// </summary>
         public Org.W3c.Dom.Node OwnerNode
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getOwnerNode", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getOwnerNode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getParentStyleSheet()"/> 
         /// </summary>
         public Org.W3c.Dom.Stylesheets.StyleSheet ParentStyleSheet
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Stylesheets.StyleSheet>("getParentStyleSheet", "()Lorg/w3c/dom/stylesheets/StyleSheet;"); }
+            get { return IExecute<Org.W3c.Dom.Stylesheets.StyleSheet>("getParentStyleSheet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getTitle()"/> 
         /// </summary>
         public Java.Lang.String Title
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTitle", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTitle"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
 
         #endregion

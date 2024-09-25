@@ -161,35 +161,35 @@ namespace Java.Awt
         /// </summary>
         public Java.Lang.String Directory
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDirectory", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDirectory", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getDirectory"); } set { IExecute("setDirectory", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#getFile()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#setFile(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String File
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFile", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFile", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getFile"); } set { IExecute("setFile", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#getFilenameFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#setFilenameFilter(java.io.FilenameFilter)"/>
         /// </summary>
         public Java.Io.FilenameFilter FilenameFilter
         {
-            get { return IExecuteWithSignature<Java.Io.FilenameFilter>("getFilenameFilter", "()Ljava/io/FilenameFilter;"); } set { IExecuteWithSignature("setFilenameFilter", "(Ljava/io/FilenameFilter;)V", value); }
+            get { return IExecute<Java.Io.FilenameFilter>("getFilenameFilter"); } set { IExecute("setFilenameFilter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#getFiles()"/> 
         /// </summary>
         public Java.Io.File[] Files
         {
-            get { return IExecuteWithSignatureArray<Java.Io.File>("getFiles", "()[Ljava/io/File;"); }
+            get { return IExecuteArray<Java.Io.File>("getFiles"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#getMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#setMode(int)"/>
         /// </summary>
         public int Mode
         {
-            get { return IExecuteWithSignature<int>("getMode", "()I"); } set { IExecuteWithSignature("setMode", "(I)V", value); }
+            get { return IExecute<int>("getMode"); } set { IExecute("setMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#isMultipleMode()"/>
@@ -197,7 +197,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsMultipleMode()
         {
-            return IExecuteWithSignature<bool>("isMultipleMode", "()Z");
+            return IExecute<bool>("isMultipleMode");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#setMultipleMode(boolean)"/>
@@ -205,7 +205,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetMultipleMode(bool arg0)
         {
-            IExecuteWithSignature("setMultipleMode", "(Z)V", arg0);
+            IExecute("setMultipleMode", arg0);
         }
 
         #endregion

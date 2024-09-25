@@ -450,21 +450,21 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
+            get { return SExecuteArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getAvailableCalendarTypes()"/> 
         /// </summary>
         public static Java.Util.Set<Java.Lang.String> GetAvailableCalendarTypes
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableCalendarTypes", "()Ljava/util/Set;"); }
+            get { return SExecute<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableCalendarTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance()"/> 
         /// </summary>
         public static Java.Util.Calendar Instance
         {
-            get { return SExecuteWithSignature<Java.Util.Calendar>(LocalBridgeClazz, "getInstance", "()Ljava/util/Calendar;"); }
+            get { return SExecute<Java.Util.Calendar>(LocalBridgeClazz, "getInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.Locale)"/>
@@ -473,7 +473,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.Locale arg0)
         {
-            return SExecuteWithSignature<Java.Util.Calendar>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Ljava/util/Calendar;", arg0);
+            return SExecute<Java.Util.Calendar>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.TimeZone,java.util.Locale)"/>
@@ -492,7 +492,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.TimeZone arg0)
         {
-            return SExecuteWithSignature<Java.Util.Calendar>(LocalBridgeClazz, "getInstance", "(Ljava/util/TimeZone;)Ljava/util/Calendar;", arg0);
+            return SExecute<Java.Util.Calendar>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -503,56 +503,56 @@ namespace Java.Util
         /// </summary>
         public Java.Lang.String CalendarType
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCalendarType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCalendarType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getFirstDayOfWeek()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setFirstDayOfWeek(int)"/>
         /// </summary>
         public int FirstDayOfWeek
         {
-            get { return IExecuteWithSignature<int>("getFirstDayOfWeek", "()I"); } set { IExecuteWithSignature("setFirstDayOfWeek", "(I)V", value); }
+            get { return IExecute<int>("getFirstDayOfWeek"); } set { IExecute("setFirstDayOfWeek", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getMinimalDaysInFirstWeek()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setMinimalDaysInFirstWeek(int)"/>
         /// </summary>
         public int MinimalDaysInFirstWeek
         {
-            get { return IExecuteWithSignature<int>("getMinimalDaysInFirstWeek", "()I"); } set { IExecuteWithSignature("setMinimalDaysInFirstWeek", "(I)V", value); }
+            get { return IExecute<int>("getMinimalDaysInFirstWeek"); } set { IExecute("setMinimalDaysInFirstWeek", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getTime()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setTime(java.util.Date)"/>
         /// </summary>
         public Java.Util.Date Time
         {
-            get { return IExecuteWithSignature<Java.Util.Date>("getTime", "()Ljava/util/Date;"); } set { IExecuteWithSignature("setTime", "(Ljava/util/Date;)V", value); }
+            get { return IExecute<Java.Util.Date>("getTime"); } set { IExecute("setTime", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getTimeInMillis()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setTimeInMillis(long)"/>
         /// </summary>
         public long TimeInMillis
         {
-            get { return IExecuteWithSignature<long>("getTimeInMillis", "()J"); } set { IExecuteWithSignature("setTimeInMillis", "(J)V", value); }
+            get { return IExecute<long>("getTimeInMillis"); } set { IExecute("setTimeInMillis", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getTimeZone()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setTimeZone(java.util.TimeZone)"/>
         /// </summary>
         public Java.Util.TimeZone TimeZone
         {
-            get { return IExecuteWithSignature<Java.Util.TimeZone>("getTimeZone", "()Ljava/util/TimeZone;"); } set { IExecuteWithSignature("setTimeZone", "(Ljava/util/TimeZone;)V", value); }
+            get { return IExecute<Java.Util.TimeZone>("getTimeZone"); } set { IExecute("setTimeZone", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getWeeksInWeekYear()"/> 
         /// </summary>
         public int WeeksInWeekYear
         {
-            get { return IExecuteWithSignature<int>("getWeeksInWeekYear", "()I"); }
+            get { return IExecute<int>("getWeeksInWeekYear"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getWeekYear()"/> 
         /// </summary>
         public int WeekYear
         {
-            get { return IExecuteWithSignature<int>("getWeekYear", "()I"); }
+            get { return IExecute<int>("getWeekYear"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getGreatestMinimum(int)"/>
@@ -561,7 +561,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int GetGreatestMinimum(int arg0)
         {
-            return IExecuteWithSignature<int>("getGreatestMinimum", "(I)I", arg0);
+            return IExecute<int>("getGreatestMinimum", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getLeastMaximum(int)"/>
@@ -570,7 +570,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int GetLeastMaximum(int arg0)
         {
-            return IExecuteWithSignature<int>("getLeastMaximum", "(I)I", arg0);
+            return IExecute<int>("getLeastMaximum", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getMaximum(int)"/>
@@ -579,7 +579,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int GetMaximum(int arg0)
         {
-            return IExecuteWithSignature<int>("getMaximum", "(I)I", arg0);
+            return IExecute<int>("getMaximum", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getMinimum(int)"/>
@@ -588,7 +588,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int GetMinimum(int arg0)
         {
-            return IExecuteWithSignature<int>("getMinimum", "(I)I", arg0);
+            return IExecute<int>("getMinimum", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#add(int,int)"/>
@@ -615,7 +615,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool After(object arg0)
         {
-            return IExecuteWithSignature<bool>("after", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("after", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#before(java.lang.Object)"/>
@@ -624,7 +624,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Before(object arg0)
         {
-            return IExecuteWithSignature<bool>("before", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("before", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isLenient()"/>
@@ -632,7 +632,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsLenient()
         {
-            return IExecuteWithSignature<bool>("isLenient", "()Z");
+            return IExecute<bool>("isLenient");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isWeekDateSupported()"/>
@@ -640,7 +640,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsWeekDateSupported()
         {
-            return IExecuteWithSignature<bool>("isWeekDateSupported", "()Z");
+            return IExecute<bool>("isWeekDateSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isSet(int)"/>
@@ -649,7 +649,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool IsSet(int arg0)
         {
-            return IExecuteWithSignature<bool>("isSet", "(I)Z", arg0);
+            return IExecute<bool>("isSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#toInstant()"/>
@@ -657,14 +657,14 @@ namespace Java.Util
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant ToInstant()
         {
-            return IExecuteWithSignature<Java.Time.Instant>("toInstant", "()Ljava/time/Instant;");
+            return IExecute<Java.Time.Instant>("toInstant");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#clear(int)"/>
@@ -672,7 +672,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void Clear(int arg0)
         {
-            IExecuteWithSignature("clear", "(I)V", arg0);
+            IExecute("clear", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int,int,int,int,int)"/>
@@ -716,7 +716,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#compareTo(java.util.Calendar)"/>
@@ -725,7 +725,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Util.Calendar arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/util/Calendar;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#get(int)"/>
@@ -734,7 +734,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Get(int arg0)
         {
-            return IExecuteWithSignature<int>("get", "(I)I", arg0);
+            return IExecute<int>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getActualMaximum(int)"/>
@@ -743,7 +743,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int GetActualMaximum(int arg0)
         {
-            return IExecuteWithSignature<int>("getActualMaximum", "(I)I", arg0);
+            return IExecute<int>("getActualMaximum", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getActualMinimum(int)"/>
@@ -752,7 +752,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int GetActualMinimum(int arg0)
         {
-            return IExecuteWithSignature<int>("getActualMinimum", "(I)I", arg0);
+            return IExecute<int>("getActualMinimum", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getDisplayName(int,int,java.util.Locale)"/>
@@ -800,7 +800,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetLenient(bool arg0)
         {
-            IExecuteWithSignature("setLenient", "(Z)V", arg0);
+            IExecute("setLenient", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setWeekDate(int,int,int)"/>

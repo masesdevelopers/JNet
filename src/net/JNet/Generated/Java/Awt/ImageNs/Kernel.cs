@@ -105,28 +105,28 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public int Height
         {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+            get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getXOrigin()"/> 
         /// </summary>
         public int XOrigin
         {
-            get { return IExecuteWithSignature<int>("getXOrigin", "()I"); }
+            get { return IExecute<int>("getXOrigin"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getYOrigin()"/> 
         /// </summary>
         public int YOrigin
         {
-            get { return IExecuteWithSignature<int>("getYOrigin", "()I"); }
+            get { return IExecute<int>("getYOrigin"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getKernelData(float[])"/>
@@ -135,7 +135,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="float"/></returns>
         public float[] GetKernelData(float[] arg0)
         {
-            return IExecuteWithSignatureArray<float>("getKernelData", "([F)[F", new object[] { arg0 });
+            return IExecuteArray<float>("getKernelData", new object[] { arg0 });
         }
 
         #endregion

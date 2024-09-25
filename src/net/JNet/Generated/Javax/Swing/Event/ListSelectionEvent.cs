@@ -106,21 +106,21 @@ namespace Javax.Swing.Event
         /// </summary>
         public int FirstIndex
         {
-            get { return IExecuteWithSignature<int>("getFirstIndex", "()I"); }
+            get { return IExecute<int>("getFirstIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionEvent.html#getLastIndex()"/> 
         /// </summary>
         public int LastIndex
         {
-            get { return IExecuteWithSignature<int>("getLastIndex", "()I"); }
+            get { return IExecute<int>("getLastIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionEvent.html#getValueIsAdjusting()"/> 
         /// </summary>
         public bool ValueIsAdjusting
         {
-            get { return IExecuteWithSignature<bool>("getValueIsAdjusting", "()Z"); }
+            get { return IExecute<bool>("getValueIsAdjusting"); }
         }
 
         #endregion

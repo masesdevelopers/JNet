@@ -104,7 +104,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.MemoryUsage"/></returns>
         public static Java.Lang.Management.MemoryUsage From(Javax.Management.Openmbean.CompositeData arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Management.MemoryUsage>(LocalBridgeClazz, "from", "(Ljavax/management/openmbean/CompositeData;)Ljava/lang/management/MemoryUsage;", arg0);
+            return SExecute<Java.Lang.Management.MemoryUsage>(LocalBridgeClazz, "from", arg0);
         }
 
         #endregion
@@ -115,28 +115,28 @@ namespace Java.Lang.Management
         /// </summary>
         public long Committed
         {
-            get { return IExecuteWithSignature<long>("getCommitted", "()J"); }
+            get { return IExecute<long>("getCommitted"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#getInit()"/> 
         /// </summary>
         public long Init
         {
-            get { return IExecuteWithSignature<long>("getInit", "()J"); }
+            get { return IExecute<long>("getInit"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#getMax()"/> 
         /// </summary>
         public long Max
         {
-            get { return IExecuteWithSignature<long>("getMax", "()J"); }
+            get { return IExecute<long>("getMax"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#getUsed()"/> 
         /// </summary>
         public long Used
         {
-            get { return IExecuteWithSignature<long>("getUsed", "()J"); }
+            get { return IExecute<long>("getUsed"); }
         }
 
         #endregion

@@ -127,7 +127,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public bool AddAll(Javax.Management.Relation.RoleList arg0)
         {
-            return IExecuteWithSignature<bool>("addAll", "(Ljavax/management/relation/RoleList;)Z", arg0);
+            return IExecute<bool>("addAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html#asList()"/>
@@ -135,7 +135,7 @@ namespace Javax.Management.Relation
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Javax.Management.Relation.Role> AsList()
         {
-            return IExecuteWithSignature<Java.Util.List<Javax.Management.Relation.Role>>("asList", "()Ljava/util/List;");
+            return IExecute<Java.Util.List<Javax.Management.Relation.Role>>("asList");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html#add(int,javax.management.relation.Role)"/>
@@ -155,7 +155,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void Add(Javax.Management.Relation.Role arg0)
         {
-            IExecuteWithSignature("add", "(Ljavax/management/relation/Role;)V", arg0);
+            IExecute("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html#set(int,javax.management.relation.Role)"/>

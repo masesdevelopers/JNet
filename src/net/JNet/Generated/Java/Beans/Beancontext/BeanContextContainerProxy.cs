@@ -119,7 +119,7 @@ namespace Java.Beans.Beancontext
         /// </summary>
         public Java.Awt.Container Container
         {
-            get { return IExecuteWithSignature<Java.Awt.Container>("getContainer", "()Ljava/awt/Container;"); }
+            get { return IExecute<Java.Awt.Container>("getContainer"); }
         }
 
         #endregion

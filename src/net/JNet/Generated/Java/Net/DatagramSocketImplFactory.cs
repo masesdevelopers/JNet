@@ -121,7 +121,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.DatagramSocketImpl"/></returns>
         public Java.Net.DatagramSocketImpl CreateDatagramSocketImpl()
         {
-            return IExecuteWithSignature<Java.Net.DatagramSocketImpl>("createDatagramSocketImpl", "()Ljava/net/DatagramSocketImpl;");
+            return IExecute<Java.Net.DatagramSocketImpl>("createDatagramSocketImpl");
         }
 
         #endregion

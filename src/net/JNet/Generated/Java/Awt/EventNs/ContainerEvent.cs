@@ -129,14 +129,14 @@ namespace Java.Awt.EventNs
         /// </summary>
         public Java.Awt.Component Child
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getChild", "()Ljava/awt/Component;"); }
+            get { return IExecute<Java.Awt.Component>("getChild"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#getContainer()"/> 
         /// </summary>
         public Java.Awt.Container Container
         {
-            get { return IExecuteWithSignature<Java.Awt.Container>("getContainer", "()Ljava/awt/Container;"); }
+            get { return IExecute<Java.Awt.Container>("getContainer"); }
         }
 
         #endregion

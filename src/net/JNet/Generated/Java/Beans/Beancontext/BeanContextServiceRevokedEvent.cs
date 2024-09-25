@@ -105,14 +105,14 @@ namespace Java.Beans.Beancontext
         /// </summary>
         public Java.Lang.Class ServiceClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getServiceClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getServiceClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#getSourceAsBeanContextServices()"/> 
         /// </summary>
         public Java.Beans.Beancontext.BeanContextServices SourceAsBeanContextServices
         {
-            get { return IExecuteWithSignature<Java.Beans.Beancontext.BeanContextServices>("getSourceAsBeanContextServices", "()Ljava/beans/beancontext/BeanContextServices;"); }
+            get { return IExecute<Java.Beans.Beancontext.BeanContextServices>("getSourceAsBeanContextServices"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isCurrentServiceInvalidNow()"/>
@@ -120,7 +120,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool IsCurrentServiceInvalidNow()
         {
-            return IExecuteWithSignature<bool>("isCurrentServiceInvalidNow", "()Z");
+            return IExecute<bool>("isCurrentServiceInvalidNow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isServiceClass(java.lang.Class)"/>
@@ -129,7 +129,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool IsServiceClass(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<bool>("isServiceClass", "(Ljava/lang/Class;)Z", arg0);
+            return IExecute<bool>("isServiceClass", arg0);
         }
 
         #endregion

@@ -173,35 +173,35 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Colorchooser.AbstractColorChooserPanel[] ChooserPanels
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Colorchooser.AbstractColorChooserPanel>("getChooserPanels", "()[Ljavax/swing/colorchooser/AbstractColorChooserPanel;"); } set { IExecuteWithSignature("setChooserPanels", "([Ljavax/swing/colorchooser/AbstractColorChooserPanel;)V", value); }
+            get { return IExecuteArray<Javax.Swing.Colorchooser.AbstractColorChooserPanel>("getChooserPanels"); } set { IExecute("setChooserPanels", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getColor()"/> 
         /// </summary>
         public Java.Awt.Color Color
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getColor", "()Ljava/awt/Color;"); }
+            get { return IExecute<Java.Awt.Color>("getColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getDragEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setDragEnabled(boolean)"/>
         /// </summary>
         public bool DragEnabled
         {
-            get { return IExecuteWithSignature<bool>("getDragEnabled", "()Z"); } set { IExecuteWithSignature("setDragEnabled", "(Z)V", value); }
+            get { return IExecute<bool>("getDragEnabled"); } set { IExecute("setDragEnabled", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getPreviewPanel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setPreviewPanel(javax.swing.JComponent)"/>
         /// </summary>
         public Javax.Swing.JComponent PreviewPanel
         {
-            get { return IExecuteWithSignature<Javax.Swing.JComponent>("getPreviewPanel", "()Ljavax/swing/JComponent;"); } set { IExecuteWithSignature("setPreviewPanel", "(Ljavax/swing/JComponent;)V", value); }
+            get { return IExecute<Javax.Swing.JComponent>("getPreviewPanel"); } set { IExecute("setPreviewPanel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getSelectionModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setSelectionModel(javax.swing.colorchooser.ColorSelectionModel)"/>
         /// </summary>
         public Javax.Swing.Colorchooser.ColorSelectionModel SelectionModel
         {
-            get { return IExecuteWithSignature<Javax.Swing.Colorchooser.ColorSelectionModel>("getSelectionModel", "()Ljavax/swing/colorchooser/ColorSelectionModel;"); } set { IExecuteWithSignature("setSelectionModel", "(Ljavax/swing/colorchooser/ColorSelectionModel;)V", value); }
+            get { return IExecute<Javax.Swing.Colorchooser.ColorSelectionModel>("getSelectionModel"); } set { IExecute("setSelectionModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#removeChooserPanel(javax.swing.colorchooser.AbstractColorChooserPanel)"/>
@@ -210,7 +210,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Colorchooser.AbstractColorChooserPanel"/></returns>
         public Javax.Swing.Colorchooser.AbstractColorChooserPanel RemoveChooserPanel(Javax.Swing.Colorchooser.AbstractColorChooserPanel arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Colorchooser.AbstractColorChooserPanel>("removeChooserPanel", "(Ljavax/swing/colorchooser/AbstractColorChooserPanel;)Ljavax/swing/colorchooser/AbstractColorChooserPanel;", arg0);
+            return IExecute<Javax.Swing.Colorchooser.AbstractColorChooserPanel>("removeChooserPanel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#addChooserPanel(javax.swing.colorchooser.AbstractColorChooserPanel)"/>
@@ -218,7 +218,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Colorchooser.AbstractColorChooserPanel"/></param>
         public void AddChooserPanel(Javax.Swing.Colorchooser.AbstractColorChooserPanel arg0)
         {
-            IExecuteWithSignature("addChooserPanel", "(Ljavax/swing/colorchooser/AbstractColorChooserPanel;)V", arg0);
+            IExecute("addChooserPanel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setColor(int,int,int)"/>
@@ -236,7 +236,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public void SetColor(int arg0)
         {
-            IExecuteWithSignature("setColor", "(I)V", arg0);
+            IExecute("setColor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setColor(java.awt.Color)"/>
@@ -244,7 +244,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
         public void SetColor(Java.Awt.Color arg0)
         {
-            IExecuteWithSignature("setColor", "(Ljava/awt/Color;)V", arg0);
+            IExecute("setColor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setUI(javax.swing.plaf.ColorChooserUI)"/>
@@ -252,7 +252,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.ColorChooserUI"/></param>
         public void SetUI(Javax.Swing.Plaf.ColorChooserUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ColorChooserUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
 
         #endregion

@@ -108,7 +108,7 @@ namespace Javax.Management.Timer
         /// </summary>
         public Java.Lang.Integer NotificationID
         {
-            get { return IExecuteWithSignature<Java.Lang.Integer>("getNotificationID", "()Ljava/lang/Integer;"); }
+            get { return IExecute<Java.Lang.Integer>("getNotificationID"); }
         }
 
         #endregion

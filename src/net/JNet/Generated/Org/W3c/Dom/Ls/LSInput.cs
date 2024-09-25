@@ -147,56 +147,56 @@ namespace Org.W3c.Dom.Ls
         /// </summary>
         public Java.Lang.String BaseURI
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBaseURI", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setBaseURI", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getBaseURI"); } set { IExecute("setBaseURI", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getByteStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setByteStream(java.io.InputStream)"/>
         /// </summary>
         public Java.Io.InputStream ByteStream
         {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getByteStream", "()Ljava/io/InputStream;"); } set { IExecuteWithSignature("setByteStream", "(Ljava/io/InputStream;)V", value); }
+            get { return IExecute<Java.Io.InputStream>("getByteStream"); } set { IExecute("setByteStream", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getCertifiedText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setCertifiedText(boolean)"/>
         /// </summary>
         public bool CertifiedText
         {
-            get { return IExecuteWithSignature<bool>("getCertifiedText", "()Z"); } set { IExecuteWithSignature("setCertifiedText", "(Z)V", value); }
+            get { return IExecute<bool>("getCertifiedText"); } set { IExecute("setCertifiedText", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getCharacterStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setCharacterStream(java.io.Reader)"/>
         /// </summary>
         public Java.Io.Reader CharacterStream
         {
-            get { return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "()Ljava/io/Reader;"); } set { IExecuteWithSignature("setCharacterStream", "(Ljava/io/Reader;)V", value); }
+            get { return IExecute<Java.Io.Reader>("getCharacterStream"); } set { IExecute("setCharacterStream", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getEncoding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setEncoding(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Encoding
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getEncoding"); } set { IExecute("setEncoding", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getPublicId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setPublicId(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String PublicId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPublicId", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getPublicId"); } set { IExecute("setPublicId", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getStringData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setStringData(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String StringData
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getStringData", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setStringData", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getStringData"); } set { IExecute("setStringData", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
 
         #endregion

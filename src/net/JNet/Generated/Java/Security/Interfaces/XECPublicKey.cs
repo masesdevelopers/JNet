@@ -127,7 +127,7 @@ namespace Java.Security.Interfaces
         /// </summary>
         public Java.Math.BigInteger U
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getU", "()Ljava/math/BigInteger;"); }
+            get { return IExecute<Java.Math.BigInteger>("getU"); }
         }
 
         #endregion

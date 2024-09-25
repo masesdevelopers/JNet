@@ -131,21 +131,21 @@ namespace Java.Awt.ImageNs.Renderable
         /// </summary>
         public Java.Awt.Shape AreaOfInterest
         {
-            get { return IExecuteWithSignature<Java.Awt.Shape>("getAreaOfInterest", "()Ljava/awt/Shape;"); } set { IExecuteWithSignature("setAreaOfInterest", "(Ljava/awt/Shape;)V", value); }
+            get { return IExecute<Java.Awt.Shape>("getAreaOfInterest"); } set { IExecute("setAreaOfInterest", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#getRenderingHints()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#setRenderingHints(java.awt.RenderingHints)"/>
         /// </summary>
         public Java.Awt.RenderingHints RenderingHints
         {
-            get { return IExecuteWithSignature<Java.Awt.RenderingHints>("getRenderingHints", "()Ljava/awt/RenderingHints;"); } set { IExecuteWithSignature("setRenderingHints", "(Ljava/awt/RenderingHints;)V", value); }
+            get { return IExecute<Java.Awt.RenderingHints>("getRenderingHints"); } set { IExecute("setRenderingHints", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#getTransform()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#setTransform(java.awt.geom.AffineTransform)"/>
         /// </summary>
         public Java.Awt.Geom.AffineTransform Transform
         {
-            get { return IExecuteWithSignature<Java.Awt.Geom.AffineTransform>("getTransform", "()Ljava/awt/geom/AffineTransform;"); } set { IExecuteWithSignature("setTransform", "(Ljava/awt/geom/AffineTransform;)V", value); }
+            get { return IExecute<Java.Awt.Geom.AffineTransform>("getTransform"); } set { IExecute("setTransform", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#concatenateTransform(java.awt.geom.AffineTransform)"/>
@@ -153,7 +153,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void ConcatenateTransform(Java.Awt.Geom.AffineTransform arg0)
         {
-            IExecuteWithSignature("concatenateTransform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
+            IExecute("concatenateTransform", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#preConcatenateTransform(java.awt.geom.AffineTransform)"/>
@@ -161,7 +161,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void PreConcatenateTransform(Java.Awt.Geom.AffineTransform arg0)
         {
-            IExecuteWithSignature("preConcatenateTransform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
+            IExecute("preConcatenateTransform", arg0);
         }
 
         #endregion

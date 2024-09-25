@@ -312,35 +312,35 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public Org.W3c.Dom.Css.Counter CounterValue
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Css.Counter>("getCounterValue", "()Lorg/w3c/dom/css/Counter;"); }
+            get { return IExecute<Org.W3c.Dom.Css.Counter>("getCounterValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getPrimitiveType()"/> 
         /// </summary>
         public short PrimitiveType
         {
-            get { return IExecuteWithSignature<short>("getPrimitiveType", "()S"); }
+            get { return IExecute<short>("getPrimitiveType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getRectValue()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.Rect RectValue
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Css.Rect>("getRectValue", "()Lorg/w3c/dom/css/Rect;"); }
+            get { return IExecute<Org.W3c.Dom.Css.Rect>("getRectValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getRGBColorValue()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.RGBColor RGBColorValue
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Css.RGBColor>("getRGBColorValue", "()Lorg/w3c/dom/css/RGBColor;"); }
+            get { return IExecute<Org.W3c.Dom.Css.RGBColor>("getRGBColorValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getStringValue()"/> 
         /// </summary>
         public Java.Lang.String StringValue
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getStringValue", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getStringValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getFloatValue(short)"/>
@@ -350,7 +350,7 @@ namespace Org.W3c.Dom.Css
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public float GetFloatValue(short arg0)
         {
-            return IExecuteWithSignature<float>("getFloatValue", "(S)F", arg0);
+            return IExecute<float>("getFloatValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#setFloatValue(short,float)"/>

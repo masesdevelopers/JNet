@@ -104,7 +104,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsAccelerated()
         {
-            return IExecuteWithSignature<bool>("isAccelerated", "()Z");
+            return IExecute<bool>("isAccelerated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isTrueVolatile()"/>
@@ -112,7 +112,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsTrueVolatile()
         {
-            return IExecuteWithSignature<bool>("isTrueVolatile", "()Z");
+            return IExecute<bool>("isTrueVolatile");
         }
 
         #endregion

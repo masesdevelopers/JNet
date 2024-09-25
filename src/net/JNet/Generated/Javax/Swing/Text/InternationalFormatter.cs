@@ -103,21 +103,21 @@ namespace Javax.Swing.Text
         /// </summary>
         public Java.Text.Format Format
         {
-            get { return IExecuteWithSignature<Java.Text.Format>("getFormat", "()Ljava/text/Format;"); } set { IExecuteWithSignature("setFormat", "(Ljava/text/Format;)V", value); }
+            get { return IExecute<Java.Text.Format>("getFormat"); } set { IExecute("setFormat", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#setMaximum(java.lang.Comparable)"/>
         /// </summary>
         public Java.Lang.Comparable<object> Maximum
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<object>>("getMaximum", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setMaximum", "(Ljava/lang/Comparable;)V", value); }
+            get { return IExecute<Java.Lang.Comparable<object>>("getMaximum"); } set { IExecute("setMaximum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#setMinimum(java.lang.Comparable)"/>
         /// </summary>
         public Java.Lang.Comparable<object> Minimum
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<object>>("getMinimum", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setMinimum", "(Ljava/lang/Comparable;)V", value); }
+            get { return IExecute<Java.Lang.Comparable<object>>("getMinimum"); } set { IExecute("setMinimum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getFields(int)"/>
@@ -126,7 +126,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Java.Text.Format.Field"/></returns>
         public Java.Text.Format.Field[] GetFields(int arg0)
         {
-            return IExecuteWithSignatureArray<Java.Text.Format.Field>("getFields", "(I)[Ljava/text/Format$Field;", arg0);
+            return IExecuteArray<Java.Text.Format.Field>("getFields", arg0);
         }
 
         #endregion

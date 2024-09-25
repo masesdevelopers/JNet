@@ -111,140 +111,140 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         public Org.W3c.Dom.NamedNodeMap Attributes
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.NamedNodeMap>("getAttributes", "()Lorg/w3c/dom/NamedNodeMap;"); }
+            get { return IExecute<Org.W3c.Dom.NamedNodeMap>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getBaseURI()"/> 
         /// </summary>
         public Java.Lang.String BaseURI
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBaseURI", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getBaseURI"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getChildNodes()"/> 
         /// </summary>
         public Org.W3c.Dom.NodeList ChildNodes
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.NodeList>("getChildNodes", "()Lorg/w3c/dom/NodeList;"); }
+            get { return IExecute<Org.W3c.Dom.NodeList>("getChildNodes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getFirstChild()"/> 
         /// </summary>
         public Org.W3c.Dom.Node FirstChild
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getFirstChild", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getFirstChild"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getLastChild()"/> 
         /// </summary>
         public Org.W3c.Dom.Node LastChild
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getLastChild", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getLastChild"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getLength()"/> 
         /// </summary>
         public int Length
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            get { return IExecute<int>("getLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getLocalName()"/> 
         /// </summary>
         public Java.Lang.String LocalName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLocalName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getLocalName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getNamespaceURI()"/> 
         /// </summary>
         public Java.Lang.String NamespaceURI
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespaceURI", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getNamespaceURI"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getNextSibling()"/> 
         /// </summary>
         public Org.W3c.Dom.Node NextSibling
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getNextSibling", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getNextSibling"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getNodeName()"/> 
         /// </summary>
         public Java.Lang.String NodeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNodeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getNodeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getNodeType()"/> 
         /// </summary>
         public short NodeType
         {
-            get { return IExecuteWithSignature<short>("getNodeType", "()S"); }
+            get { return IExecute<short>("getNodeType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getNodeValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#setNodeValue(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String NodeValue
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNodeValue", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setNodeValue", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getNodeValue"); } set { IExecute("setNodeValue", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getOwnerDocument()"/> 
         /// </summary>
         public Org.W3c.Dom.Document OwnerDocument
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Document>("getOwnerDocument", "()Lorg/w3c/dom/Document;"); }
+            get { return IExecute<Org.W3c.Dom.Document>("getOwnerDocument"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getParentNode()"/> 
         /// </summary>
         public Org.W3c.Dom.Node ParentNode
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getParentNode", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getParentNode"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getPrefix()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#setPrefix(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Prefix
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrefix", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPrefix", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getPrefix"); } set { IExecute("setPrefix", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getPreviousSibling()"/> 
         /// </summary>
         public Org.W3c.Dom.Node PreviousSibling
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getPreviousSibling", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getPreviousSibling"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getSchemaTypeInfo()"/> 
         /// </summary>
         public Org.W3c.Dom.TypeInfo SchemaTypeInfo
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.TypeInfo>("getSchemaTypeInfo", "()Lorg/w3c/dom/TypeInfo;"); }
+            get { return IExecute<Org.W3c.Dom.TypeInfo>("getSchemaTypeInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getTagName()"/> 
         /// </summary>
         public Java.Lang.String TagName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTagName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getTagName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getTextContent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#setTextContent(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String TextContent
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTextContent", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTextContent", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getTextContent"); } set { IExecute("setTextContent", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getUserObject()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#setUserObject(java.lang.Object)"/>
         /// </summary>
         public object UserObject
         {
-            get { return IExecuteWithSignature("getUserObject", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setUserObject", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getUserObject"); } set { IExecute("setUserObject", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#hasAttribute(java.lang.String)"/>
@@ -253,7 +253,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="bool"/></returns>
         public bool HasAttribute(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("hasAttribute", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("hasAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#hasAttributeNS(java.lang.String,java.lang.String)"/>
@@ -271,7 +271,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="bool"/></returns>
         public bool HasAttributes()
         {
-            return IExecuteWithSignature<bool>("hasAttributes", "()Z");
+            return IExecute<bool>("hasAttributes");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#hasChildNodes()"/>
@@ -279,7 +279,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="bool"/></returns>
         public bool HasChildNodes()
         {
-            return IExecuteWithSignature<bool>("hasChildNodes", "()Z");
+            return IExecute<bool>("hasChildNodes");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#isDefaultNamespace(java.lang.String)"/>
@@ -289,7 +289,7 @@ namespace Javax.Imageio.Metadata
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public bool IsDefaultNamespace(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("isDefaultNamespace", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("isDefaultNamespace", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#isEqualNode(org.w3c.dom.Node)"/>
@@ -299,7 +299,7 @@ namespace Javax.Imageio.Metadata
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public bool IsEqualNode(Org.W3c.Dom.Node arg0)
         {
-            return IExecuteWithSignature<bool>("isEqualNode", "(Lorg/w3c/dom/Node;)Z", arg0);
+            return IExecute<bool>("isEqualNode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#isSameNode(org.w3c.dom.Node)"/>
@@ -309,7 +309,7 @@ namespace Javax.Imageio.Metadata
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public bool IsSameNode(Org.W3c.Dom.Node arg0)
         {
-            return IExecuteWithSignature<bool>("isSameNode", "(Lorg/w3c/dom/Node;)Z", arg0);
+            return IExecute<bool>("isSameNode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#isSupported(java.lang.String,java.lang.String)"/>
@@ -340,7 +340,7 @@ namespace Javax.Imageio.Metadata
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public object GetUserData(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getUserData", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getUserData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#setUserData(java.lang.String,java.lang.Object,org.w3c.dom.UserDataHandler)"/>
@@ -361,7 +361,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttribute(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getAttribute", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getAttributeNS(java.lang.String,java.lang.String)"/>
@@ -381,7 +381,7 @@ namespace Javax.Imageio.Metadata
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Java.Lang.String LookupNamespaceURI(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("lookupNamespaceURI", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("lookupNamespaceURI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#lookupPrefix(java.lang.String)"/>
@@ -391,7 +391,7 @@ namespace Javax.Imageio.Metadata
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Java.Lang.String LookupPrefix(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("lookupPrefix", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("lookupPrefix", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getAttributeNode(java.lang.String)"/>
@@ -400,7 +400,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
         public Org.W3c.Dom.Attr GetAttributeNode(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Attr>("getAttributeNode", "(Ljava/lang/String;)Lorg/w3c/dom/Attr;", arg0);
+            return IExecute<Org.W3c.Dom.Attr>("getAttributeNode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getAttributeNodeNS(java.lang.String,java.lang.String)"/>
@@ -419,7 +419,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
         public Org.W3c.Dom.Attr RemoveAttributeNode(Org.W3c.Dom.Attr arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Attr>("removeAttributeNode", "(Lorg/w3c/dom/Attr;)Lorg/w3c/dom/Attr;", arg0);
+            return IExecute<Org.W3c.Dom.Attr>("removeAttributeNode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#setAttributeNode(org.w3c.dom.Attr)"/>
@@ -429,7 +429,7 @@ namespace Javax.Imageio.Metadata
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Attr SetAttributeNode(Org.W3c.Dom.Attr arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Attr>("setAttributeNode", "(Lorg/w3c/dom/Attr;)Lorg/w3c/dom/Attr;", arg0);
+            return IExecute<Org.W3c.Dom.Attr>("setAttributeNode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#setAttributeNodeNS(org.w3c.dom.Attr)"/>
@@ -438,7 +438,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
         public Org.W3c.Dom.Attr SetAttributeNodeNS(Org.W3c.Dom.Attr arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Attr>("setAttributeNodeNS", "(Lorg/w3c/dom/Attr;)Lorg/w3c/dom/Attr;", arg0);
+            return IExecute<Org.W3c.Dom.Attr>("setAttributeNodeNS", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#appendChild(org.w3c.dom.Node)"/>
@@ -447,7 +447,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node AppendChild(Org.W3c.Dom.Node arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Node>("appendChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", arg0);
+            return IExecute<Org.W3c.Dom.Node>("appendChild", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#cloneNode(boolean)"/>
@@ -456,7 +456,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node CloneNode(bool arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Node>("cloneNode", "(Z)Lorg/w3c/dom/Node;", arg0);
+            return IExecute<Org.W3c.Dom.Node>("cloneNode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#insertBefore(org.w3c.dom.Node,org.w3c.dom.Node)"/>
@@ -475,7 +475,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node Item(int arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Node>("item", "(I)Lorg/w3c/dom/Node;", arg0);
+            return IExecute<Org.W3c.Dom.Node>("item", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#removeChild(org.w3c.dom.Node)"/>
@@ -484,7 +484,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node RemoveChild(Org.W3c.Dom.Node arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Node>("removeChild", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", arg0);
+            return IExecute<Org.W3c.Dom.Node>("removeChild", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#replaceChild(org.w3c.dom.Node,org.w3c.dom.Node)"/>
@@ -503,7 +503,7 @@ namespace Javax.Imageio.Metadata
         /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
         public Org.W3c.Dom.NodeList GetElementsByTagName(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.NodeList>("getElementsByTagName", "(Ljava/lang/String;)Lorg/w3c/dom/NodeList;", arg0);
+            return IExecute<Org.W3c.Dom.NodeList>("getElementsByTagName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getElementsByTagNameNS(java.lang.String,java.lang.String)"/>
@@ -523,14 +523,14 @@ namespace Javax.Imageio.Metadata
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public short CompareDocumentPosition(Org.W3c.Dom.Node arg0)
         {
-            return IExecuteWithSignature<short>("compareDocumentPosition", "(Lorg/w3c/dom/Node;)S", arg0);
+            return IExecute<short>("compareDocumentPosition", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#normalize()"/>
         /// </summary>
         public void Normalize()
         {
-            IExecuteWithSignature("normalize", "()V");
+            IExecute("normalize");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#removeAttribute(java.lang.String)"/>
@@ -538,7 +538,7 @@ namespace Javax.Imageio.Metadata
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void RemoveAttribute(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("removeAttribute", "(Ljava/lang/String;)V", arg0);
+            IExecute("removeAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#removeAttributeNS(java.lang.String,java.lang.String)"/>

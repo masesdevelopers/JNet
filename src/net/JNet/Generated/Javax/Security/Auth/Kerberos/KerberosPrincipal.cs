@@ -156,21 +156,21 @@ namespace Javax.Security.Auth.Kerberos
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#getNameType()"/> 
         /// </summary>
         public int NameType
         {
-            get { return IExecuteWithSignature<int>("getNameType", "()I"); }
+            get { return IExecute<int>("getNameType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#getRealm()"/> 
         /// </summary>
         public Java.Lang.String Realm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRealm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getRealm"); }
         }
 
         #endregion

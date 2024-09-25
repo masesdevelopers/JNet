@@ -203,7 +203,7 @@ namespace Java.Util.Function
         /// </summary>
         public bool AsBoolean
         {
-            get { return IExecuteWithSignature<bool>("getAsBoolean", "()Z"); }
+            get { return IExecute<bool>("getAsBoolean"); }
         }
 
         #endregion

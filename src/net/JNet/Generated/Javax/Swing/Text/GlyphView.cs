@@ -158,35 +158,35 @@ namespace Javax.Swing.Text
         /// </summary>
         public Java.Awt.Color Background
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getBackground", "()Ljava/awt/Color;"); }
+            get { return IExecute<Java.Awt.Color>("getBackground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getFont()"/> 
         /// </summary>
         public Java.Awt.Font Font
         {
-            get { return IExecuteWithSignature<Java.Awt.Font>("getFont", "()Ljava/awt/Font;"); }
+            get { return IExecute<Java.Awt.Font>("getFont"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getForeground()"/> 
         /// </summary>
         public Java.Awt.Color Foreground
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getForeground", "()Ljava/awt/Color;"); }
+            get { return IExecute<Java.Awt.Color>("getForeground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getGlyphPainter()"/> 
         /// </summary>
         public Javax.Swing.Text.GlyphView.GlyphPainter GetGlyphPainter
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.GlyphView.GlyphPainter>("getGlyphPainter", "()Ljavax/swing/text/GlyphView$GlyphPainter;"); }
+            get { return IExecute<Javax.Swing.Text.GlyphView.GlyphPainter>("getGlyphPainter"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getTabExpander()"/> 
         /// </summary>
         public Javax.Swing.Text.TabExpander TabExpander
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.TabExpander>("getTabExpander", "()Ljavax/swing/text/TabExpander;"); }
+            get { return IExecute<Javax.Swing.Text.TabExpander>("getTabExpander"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isStrikeThrough()"/>
@@ -194,7 +194,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsStrikeThrough()
         {
-            return IExecuteWithSignature<bool>("isStrikeThrough", "()Z");
+            return IExecute<bool>("isStrikeThrough");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isSubscript()"/>
@@ -202,7 +202,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsSubscript()
         {
-            return IExecuteWithSignature<bool>("isSubscript", "()Z");
+            return IExecute<bool>("isSubscript");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isSuperscript()"/>
@@ -210,7 +210,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsSuperscript()
         {
-            return IExecuteWithSignature<bool>("isSuperscript", "()Z");
+            return IExecute<bool>("isSuperscript");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isUnderline()"/>
@@ -218,7 +218,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsUnderline()
         {
-            return IExecuteWithSignature<bool>("isUnderline", "()Z");
+            return IExecute<bool>("isUnderline");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getPartialSpan(int,int)"/>
@@ -256,7 +256,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Text.GlyphView.GlyphPainter"/></param>
         public void SetGlyphPainter(Javax.Swing.Text.GlyphView.GlyphPainter arg0)
         {
-            IExecuteWithSignature("setGlyphPainter", "(Ljavax/swing/text/GlyphView$GlyphPainter;)V", arg0);
+            IExecute("setGlyphPainter", arg0);
         }
 
         #endregion

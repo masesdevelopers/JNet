@@ -143,14 +143,14 @@ namespace Java.Text
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
+            get { return SExecuteArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getInstance()"/> 
         /// </summary>
         public static Java.Text.Collator Instance
         {
-            get { return SExecuteWithSignature<Java.Text.Collator>(LocalBridgeClazz, "getInstance", "()Ljava/text/Collator;"); }
+            get { return SExecute<Java.Text.Collator>(LocalBridgeClazz, "getInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getInstance(java.util.Locale)"/>
@@ -159,7 +159,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.Collator"/></returns>
         public static Java.Text.Collator GetInstance(Java.Util.Locale arg0)
         {
-            return SExecuteWithSignature<Java.Text.Collator>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Ljava/text/Collator;", arg0);
+            return SExecute<Java.Text.Collator>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -170,14 +170,14 @@ namespace Java.Text
         /// </summary>
         public int Decomposition
         {
-            get { return IExecuteWithSignature<int>("getDecomposition", "()I"); } set { IExecuteWithSignature("setDecomposition", "(I)V", value); }
+            get { return IExecute<int>("getDecomposition"); } set { IExecute("setDecomposition", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getStrength()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#setStrength(int)"/>
         /// </summary>
         public int Strength
         {
-            get { return IExecuteWithSignature<int>("getStrength", "()I"); } set { IExecuteWithSignature("setStrength", "(I)V", value); }
+            get { return IExecute<int>("getStrength"); } set { IExecute("setStrength", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#compare(java.lang.String,java.lang.String)"/>
@@ -196,7 +196,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.CollationKey"/></returns>
         public Java.Text.CollationKey GetCollationKey(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Text.CollationKey>("getCollationKey", "(Ljava/lang/String;)Ljava/text/CollationKey;", arg0);
+            return IExecute<Java.Text.CollationKey>("getCollationKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#equals(java.lang.String,java.lang.String)"/>

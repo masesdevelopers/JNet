@@ -209,56 +209,56 @@ namespace Javax.Accessibility
         /// </summary>
         public Java.Awt.Color Background
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getBackground", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setBackground", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getBackground"); } set { IExecute("setBackground", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getBounds()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setBounds(java.awt.Rectangle)"/>
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
-            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "()Ljava/awt/Rectangle;"); } set { IExecuteWithSignature("setBounds", "(Ljava/awt/Rectangle;)V", value); }
+            get { return IExecute<Java.Awt.Rectangle>("getBounds"); } set { IExecute("setBounds", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getCursor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setCursor(java.awt.Cursor)"/>
         /// </summary>
         public Java.Awt.Cursor Cursor
         {
-            get { return IExecuteWithSignature<Java.Awt.Cursor>("getCursor", "()Ljava/awt/Cursor;"); } set { IExecuteWithSignature("setCursor", "(Ljava/awt/Cursor;)V", value); }
+            get { return IExecute<Java.Awt.Cursor>("getCursor"); } set { IExecute("setCursor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getFont()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setFont(java.awt.Font)"/>
         /// </summary>
         public Java.Awt.Font Font
         {
-            get { return IExecuteWithSignature<Java.Awt.Font>("getFont", "()Ljava/awt/Font;"); } set { IExecuteWithSignature("setFont", "(Ljava/awt/Font;)V", value); }
+            get { return IExecute<Java.Awt.Font>("getFont"); } set { IExecute("setFont", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getForeground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setForeground(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color Foreground
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getForeground", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setForeground", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getForeground"); } set { IExecute("setForeground", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getLocation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setLocation(java.awt.Point)"/>
         /// </summary>
         public Java.Awt.Point Location
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getLocation", "()Ljava/awt/Point;"); } set { IExecuteWithSignature("setLocation", "(Ljava/awt/Point;)V", value); }
+            get { return IExecute<Java.Awt.Point>("getLocation"); } set { IExecute("setLocation", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getLocationOnScreen()"/> 
         /// </summary>
         public Java.Awt.Point LocationOnScreen
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getLocationOnScreen", "()Ljava/awt/Point;"); }
+            get { return IExecute<Java.Awt.Point>("getLocationOnScreen"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension Size
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setSize", "(Ljava/awt/Dimension;)V", value); }
+            get { return IExecute<Java.Awt.Dimension>("getSize"); } set { IExecute("setSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#contains(java.awt.Point)"/>
@@ -267,7 +267,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/awt/Point;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isEnabled()"/>
@@ -275,7 +275,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool IsEnabled()
         {
-            return IExecuteWithSignature<bool>("isEnabled", "()Z");
+            return IExecute<bool>("isEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isFocusTraversable()"/>
@@ -283,7 +283,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool IsFocusTraversable()
         {
-            return IExecuteWithSignature<bool>("isFocusTraversable", "()Z");
+            return IExecute<bool>("isFocusTraversable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isShowing()"/>
@@ -291,7 +291,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool IsShowing()
         {
-            return IExecuteWithSignature<bool>("isShowing", "()Z");
+            return IExecute<bool>("isShowing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isVisible()"/>
@@ -299,7 +299,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool IsVisible()
         {
-            return IExecuteWithSignature<bool>("isVisible", "()Z");
+            return IExecute<bool>("isVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getFontMetrics(java.awt.Font)"/>
@@ -308,7 +308,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Java.Awt.FontMetrics"/></returns>
         public Java.Awt.FontMetrics GetFontMetrics(Java.Awt.Font arg0)
         {
-            return IExecuteWithSignature<Java.Awt.FontMetrics>("getFontMetrics", "(Ljava/awt/Font;)Ljava/awt/FontMetrics;", arg0);
+            return IExecute<Java.Awt.FontMetrics>("getFontMetrics", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getAccessibleAt(java.awt.Point)"/>
@@ -317,7 +317,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
         public Javax.Accessibility.Accessible GetAccessibleAt(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<Javax.Accessibility.Accessible>("getAccessibleAt", "(Ljava/awt/Point;)Ljavax/accessibility/Accessible;", arg0);
+            return IExecute<Javax.Accessibility.Accessible>("getAccessibleAt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#addFocusListener(java.awt.event.FocusListener)"/>
@@ -325,7 +325,7 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
         public void AddFocusListener(Java.Awt.EventNs.FocusListener arg0)
         {
-            IExecuteWithSignature("addFocusListener", "(Ljava/awt/event/FocusListener;)V", arg0);
+            IExecute("addFocusListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#removeFocusListener(java.awt.event.FocusListener)"/>
@@ -333,14 +333,14 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
         public void RemoveFocusListener(Java.Awt.EventNs.FocusListener arg0)
         {
-            IExecuteWithSignature("removeFocusListener", "(Ljava/awt/event/FocusListener;)V", arg0);
+            IExecute("removeFocusListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#requestFocus()"/>
         /// </summary>
         public void RequestFocus()
         {
-            IExecuteWithSignature("requestFocus", "()V");
+            IExecute("requestFocus");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setEnabled(boolean)"/>
@@ -348,7 +348,7 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetEnabled(bool arg0)
         {
-            IExecuteWithSignature("setEnabled", "(Z)V", arg0);
+            IExecute("setEnabled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setVisible(boolean)"/>
@@ -356,7 +356,7 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetVisible(bool arg0)
         {
-            IExecuteWithSignature("setVisible", "(Z)V", arg0);
+            IExecute("setVisible", arg0);
         }
 
         #endregion

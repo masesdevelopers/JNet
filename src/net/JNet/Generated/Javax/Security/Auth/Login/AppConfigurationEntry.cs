@@ -150,21 +150,21 @@ namespace Javax.Security.Auth.Login
         /// </summary>
         public Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag ControlFlag
         {
-            get { return IExecuteWithSignature<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>("getControlFlag", "()Ljavax/security/auth/login/AppConfigurationEntry$LoginModuleControlFlag;"); }
+            get { return IExecute<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>("getControlFlag"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.html#getLoginModuleName()"/> 
         /// </summary>
         public Java.Lang.String LoginModuleName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLoginModuleName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getLoginModuleName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.html#getOptions()"/> 
         /// </summary>
         public Java.Util.Map<Java.Lang.String, object> Options
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, object>>("getOptions", "()Ljava/util/Map;"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, object>>("getOptions"); }
         }
 
         #endregion

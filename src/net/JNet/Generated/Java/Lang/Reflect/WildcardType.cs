@@ -123,14 +123,14 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Java.Lang.Reflect.Type[] LowerBounds
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getLowerBounds", "()[Ljava/lang/reflect/Type;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Type>("getLowerBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/WildcardType.html#getUpperBounds()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type[] UpperBounds
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getUpperBounds", "()[Ljava/lang/reflect/Type;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Type>("getUpperBounds"); }
         }
 
         #endregion

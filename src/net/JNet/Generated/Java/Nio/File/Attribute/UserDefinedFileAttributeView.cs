@@ -169,7 +169,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public int Size(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<int>("size", "(Ljava/lang/String;)I", arg0);
+            return IExecute<int>("size", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#write(java.lang.String,java.nio.ByteBuffer)"/>
@@ -188,7 +188,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#list()"/>
@@ -197,7 +197,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.List<Java.Lang.String> List()
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("list", "()Ljava/util/List;");
+            return IExecute<Java.Util.List<Java.Lang.String>>("list");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#delete(java.lang.String)"/>
@@ -206,7 +206,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public void Delete(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("delete", "(Ljava/lang/String;)V", arg0);
+            IExecute("delete", arg0);
         }
 
         #endregion

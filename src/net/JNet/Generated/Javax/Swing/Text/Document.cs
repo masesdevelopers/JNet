@@ -222,35 +222,35 @@ namespace Javax.Swing.Text
         /// </summary>
         public Javax.Swing.Text.Element DefaultRootElement
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.Element>("getDefaultRootElement", "()Ljavax/swing/text/Element;"); }
+            get { return IExecute<Javax.Swing.Text.Element>("getDefaultRootElement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getEndPosition()"/> 
         /// </summary>
         public Javax.Swing.Text.Position EndPosition
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.Position>("getEndPosition", "()Ljavax/swing/text/Position;"); }
+            get { return IExecute<Javax.Swing.Text.Position>("getEndPosition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getLength()"/> 
         /// </summary>
         public int Length
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            get { return IExecute<int>("getLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getRootElements()"/> 
         /// </summary>
         public Javax.Swing.Text.Element[] RootElements
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Text.Element>("getRootElements", "()[Ljavax/swing/text/Element;"); }
+            get { return IExecuteArray<Javax.Swing.Text.Element>("getRootElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getStartPosition()"/> 
         /// </summary>
         public Javax.Swing.Text.Position StartPosition
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.Position>("getStartPosition", "()Ljavax/swing/text/Position;"); }
+            get { return IExecute<Javax.Swing.Text.Position>("getStartPosition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getProperty(java.lang.Object)"/>
@@ -259,7 +259,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="object"/></returns>
         public object GetProperty(object arg0)
         {
-            return IExecuteWithSignature("getProperty", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecute("getProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getText(int,int)"/>
@@ -280,7 +280,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Javax.Swing.Text.Position CreatePosition(int arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Position>("createPosition", "(I)Ljavax/swing/text/Position;", arg0);
+            return IExecute<Javax.Swing.Text.Position>("createPosition", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#addDocumentListener(javax.swing.event.DocumentListener)"/>
@@ -288,7 +288,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentListener"/></param>
         public void AddDocumentListener(Javax.Swing.Event.DocumentListener arg0)
         {
-            IExecuteWithSignature("addDocumentListener", "(Ljavax/swing/event/DocumentListener;)V", arg0);
+            IExecute("addDocumentListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#addUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
@@ -296,7 +296,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
         public void AddUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0)
         {
-            IExecuteWithSignature("addUndoableEditListener", "(Ljavax/swing/event/UndoableEditListener;)V", arg0);
+            IExecute("addUndoableEditListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getText(int,int,javax.swing.text.Segment)"/>
@@ -345,7 +345,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentListener"/></param>
         public void RemoveDocumentListener(Javax.Swing.Event.DocumentListener arg0)
         {
-            IExecuteWithSignature("removeDocumentListener", "(Ljavax/swing/event/DocumentListener;)V", arg0);
+            IExecute("removeDocumentListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#removeUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
@@ -353,7 +353,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
         public void RemoveUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0)
         {
-            IExecuteWithSignature("removeUndoableEditListener", "(Ljavax/swing/event/UndoableEditListener;)V", arg0);
+            IExecute("removeUndoableEditListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#render(java.lang.Runnable)"/>
@@ -361,7 +361,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         public void Render(Java.Lang.Runnable arg0)
         {
-            IExecuteWithSignature("render", "(Ljava/lang/Runnable;)V", arg0);
+            IExecute("render", arg0);
         }
 
         #endregion

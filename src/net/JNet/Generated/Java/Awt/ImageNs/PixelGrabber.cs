@@ -138,28 +138,28 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public Java.Awt.ImageNs.ColorModel ColorModel
         {
-            get { return IExecuteWithSignature<Java.Awt.ImageNs.ColorModel>("getColorModel", "()Ljava/awt/image/ColorModel;"); } set { IExecuteWithSignature("setColorModel", "(Ljava/awt/image/ColorModel;)V", value); }
+            get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); } set { IExecute("setColorModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+            get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getPixels()"/> 
         /// </summary>
         public object Pixels
         {
-            get { return IExecuteWithSignature("getPixels", "()Ljava/lang/Object;"); }
+            get { return IExecute("getPixels"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#grabPixels()"/>
@@ -168,7 +168,7 @@ namespace Java.Awt.ImageNs
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool GrabPixels()
         {
-            return IExecuteWithSignature<bool>("grabPixels", "()Z");
+            return IExecute<bool>("grabPixels");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#grabPixels(long)"/>
@@ -178,7 +178,7 @@ namespace Java.Awt.ImageNs
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool GrabPixels(long arg0)
         {
-            return IExecuteWithSignature<bool>("grabPixels", "(J)Z", arg0);
+            return IExecute<bool>("grabPixels", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getStatus()"/>
@@ -186,7 +186,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetStatus()
         {
-            return IExecuteWithSignature<int>("getStatus", "()I");
+            return IExecute<int>("getStatus");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#status()"/>
@@ -194,14 +194,14 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int Status()
         {
-            return IExecuteWithSignature<int>("status", "()I");
+            return IExecute<int>("status");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#abortGrabbing()"/>
         /// </summary>
         public void AbortGrabbing()
         {
-            IExecuteWithSignature("abortGrabbing", "()V");
+            IExecute("abortGrabbing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#imageComplete(int)"/>
@@ -209,14 +209,14 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         public void ImageComplete(int arg0)
         {
-            IExecuteWithSignature("imageComplete", "(I)V", arg0);
+            IExecute("imageComplete", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#startGrabbing()"/>
         /// </summary>
         public void StartGrabbing()
         {
-            IExecuteWithSignature("startGrabbing", "()V");
+            IExecute("startGrabbing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setDimensions(int,int)"/>
@@ -233,7 +233,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="int"/></param>
         public void SetHints(int arg0)
         {
-            IExecuteWithSignature("setHints", "(I)V", arg0);
+            IExecute("setHints", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setPixels(int,int,int,int,java.awt.image.ColorModel,byte[],int,int)"/>
@@ -271,7 +271,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
         public void SetProperties(Java.Util.Hashtable<object, object> arg0)
         {
-            IExecuteWithSignature("setProperties", "(Ljava/util/Hashtable;)V", arg0);
+            IExecute("setProperties", arg0);
         }
 
         #endregion

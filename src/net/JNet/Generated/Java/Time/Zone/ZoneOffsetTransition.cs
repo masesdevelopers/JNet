@@ -114,42 +114,42 @@ namespace Java.Time.Zone
         /// </summary>
         public Java.Time.LocalDateTime DateTimeAfter
         {
-            get { return IExecuteWithSignature<Java.Time.LocalDateTime>("getDateTimeAfter", "()Ljava/time/LocalDateTime;"); }
+            get { return IExecute<Java.Time.LocalDateTime>("getDateTimeAfter"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getDateTimeBefore()"/> 
         /// </summary>
         public Java.Time.LocalDateTime DateTimeBefore
         {
-            get { return IExecuteWithSignature<Java.Time.LocalDateTime>("getDateTimeBefore", "()Ljava/time/LocalDateTime;"); }
+            get { return IExecute<Java.Time.LocalDateTime>("getDateTimeBefore"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getDuration()"/> 
         /// </summary>
         public Java.Time.Duration Duration
         {
-            get { return IExecuteWithSignature<Java.Time.Duration>("getDuration", "()Ljava/time/Duration;"); }
+            get { return IExecute<Java.Time.Duration>("getDuration"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getInstant()"/> 
         /// </summary>
         public Java.Time.Instant Instant
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getInstant", "()Ljava/time/Instant;"); }
+            get { return IExecute<Java.Time.Instant>("getInstant"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getOffsetAfter()"/> 
         /// </summary>
         public Java.Time.ZoneOffset OffsetAfter
         {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffsetAfter", "()Ljava/time/ZoneOffset;"); }
+            get { return IExecute<Java.Time.ZoneOffset>("getOffsetAfter"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getOffsetBefore()"/> 
         /// </summary>
         public Java.Time.ZoneOffset OffsetBefore
         {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffsetBefore", "()Ljava/time/ZoneOffset;"); }
+            get { return IExecute<Java.Time.ZoneOffset>("getOffsetBefore"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isGap()"/>
@@ -157,7 +157,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="bool"/></returns>
         public bool IsGap()
         {
-            return IExecuteWithSignature<bool>("isGap", "()Z");
+            return IExecute<bool>("isGap");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isOverlap()"/>
@@ -165,7 +165,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="bool"/></returns>
         public bool IsOverlap()
         {
-            return IExecuteWithSignature<bool>("isOverlap", "()Z");
+            return IExecute<bool>("isOverlap");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isValidOffset(java.time.ZoneOffset)"/>
@@ -174,7 +174,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="bool"/></returns>
         public bool IsValidOffset(Java.Time.ZoneOffset arg0)
         {
-            return IExecuteWithSignature<bool>("isValidOffset", "(Ljava/time/ZoneOffset;)Z", arg0);
+            return IExecute<bool>("isValidOffset", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#compareTo(java.lang.Object)"/>
@@ -183,7 +183,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#compareTo(java.time.zone.ZoneOffsetTransition)"/>
@@ -192,7 +192,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Time.Zone.ZoneOffsetTransition arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/time/zone/ZoneOffsetTransition;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#toEpochSecond()"/>
@@ -200,7 +200,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="long"/></returns>
         public long ToEpochSecond()
         {
-            return IExecuteWithSignature<long>("toEpochSecond", "()J");
+            return IExecute<long>("toEpochSecond");
         }
 
         #endregion

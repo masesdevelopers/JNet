@@ -271,70 +271,70 @@ namespace Org.W3c.Dom
         /// </summary>
         public Org.W3c.Dom.DocumentType Doctype
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DocumentType>("getDoctype", "()Lorg/w3c/dom/DocumentType;"); }
+            get { return IExecute<Org.W3c.Dom.DocumentType>("getDoctype"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getDocumentElement()"/> 
         /// </summary>
         public Org.W3c.Dom.Element DocumentElement
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Element>("getDocumentElement", "()Lorg/w3c/dom/Element;"); }
+            get { return IExecute<Org.W3c.Dom.Element>("getDocumentElement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getDocumentURI()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#setDocumentURI(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String DocumentURI
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDocumentURI", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDocumentURI", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getDocumentURI"); } set { IExecute("setDocumentURI", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getDomConfig()"/> 
         /// </summary>
         public Org.W3c.Dom.DOMConfiguration DomConfig
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DOMConfiguration>("getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;"); }
+            get { return IExecute<Org.W3c.Dom.DOMConfiguration>("getDomConfig"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getImplementation()"/> 
         /// </summary>
         public Org.W3c.Dom.DOMImplementation Implementation
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DOMImplementation>("getImplementation", "()Lorg/w3c/dom/DOMImplementation;"); }
+            get { return IExecute<Org.W3c.Dom.DOMImplementation>("getImplementation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getInputEncoding()"/> 
         /// </summary>
         public Java.Lang.String InputEncoding
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInputEncoding", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getInputEncoding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getStrictErrorChecking()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#setStrictErrorChecking(boolean)"/>
         /// </summary>
         public bool StrictErrorChecking
         {
-            get { return IExecuteWithSignature<bool>("getStrictErrorChecking", "()Z"); } set { IExecuteWithSignature("setStrictErrorChecking", "(Z)V", value); }
+            get { return IExecute<bool>("getStrictErrorChecking"); } set { IExecute("setStrictErrorChecking", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getXmlEncoding()"/> 
         /// </summary>
         public Java.Lang.String XmlEncoding
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getXmlEncoding", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getXmlEncoding"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getXmlStandalone()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#setXmlStandalone(boolean)"/>
         /// </summary>
         public bool XmlStandalone
         {
-            get { return IExecuteWithSignature<bool>("getXmlStandalone", "()Z"); } set { IExecuteWithSignature("setXmlStandalone", "(Z)V", value); }
+            get { return IExecute<bool>("getXmlStandalone"); } set { IExecute("setXmlStandalone", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getXmlVersion()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#setXmlVersion(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String XmlVersion
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getXmlVersion", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setXmlVersion", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getXmlVersion"); } set { IExecute("setXmlVersion", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createAttribute(java.lang.String)"/>
@@ -344,7 +344,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Attr CreateAttribute(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Attr>("createAttribute", "(Ljava/lang/String;)Lorg/w3c/dom/Attr;", arg0);
+            return IExecute<Org.W3c.Dom.Attr>("createAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createAttributeNS(java.lang.String,java.lang.String)"/>
@@ -365,7 +365,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.CDATASection CreateCDATASection(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.CDATASection>("createCDATASection", "(Ljava/lang/String;)Lorg/w3c/dom/CDATASection;", arg0);
+            return IExecute<Org.W3c.Dom.CDATASection>("createCDATASection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createComment(java.lang.String)"/>
@@ -374,7 +374,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="Org.W3c.Dom.Comment"/></returns>
         public Org.W3c.Dom.Comment CreateComment(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Comment>("createComment", "(Ljava/lang/String;)Lorg/w3c/dom/Comment;", arg0);
+            return IExecute<Org.W3c.Dom.Comment>("createComment", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createDocumentFragment()"/>
@@ -382,7 +382,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
         public Org.W3c.Dom.DocumentFragment CreateDocumentFragment()
         {
-            return IExecuteWithSignature<Org.W3c.Dom.DocumentFragment>("createDocumentFragment", "()Lorg/w3c/dom/DocumentFragment;");
+            return IExecute<Org.W3c.Dom.DocumentFragment>("createDocumentFragment");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createElement(java.lang.String)"/>
@@ -392,7 +392,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Element CreateElement(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Element>("createElement", "(Ljava/lang/String;)Lorg/w3c/dom/Element;", arg0);
+            return IExecute<Org.W3c.Dom.Element>("createElement", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createElementNS(java.lang.String,java.lang.String)"/>
@@ -412,7 +412,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="Org.W3c.Dom.Element"/></returns>
         public Org.W3c.Dom.Element GetElementById(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Element>("getElementById", "(Ljava/lang/String;)Lorg/w3c/dom/Element;", arg0);
+            return IExecute<Org.W3c.Dom.Element>("getElementById", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#createEntityReference(java.lang.String)"/>
@@ -422,7 +422,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.EntityReference CreateEntityReference(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.EntityReference>("createEntityReference", "(Ljava/lang/String;)Lorg/w3c/dom/EntityReference;", arg0);
+            return IExecute<Org.W3c.Dom.EntityReference>("createEntityReference", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#adoptNode(org.w3c.dom.Node)"/>
@@ -432,7 +432,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node AdoptNode(Org.W3c.Dom.Node arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Node>("adoptNode", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", arg0);
+            return IExecute<Org.W3c.Dom.Node>("adoptNode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#importNode(org.w3c.dom.Node,boolean)"/>
@@ -464,7 +464,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
         public Org.W3c.Dom.NodeList GetElementsByTagName(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.NodeList>("getElementsByTagName", "(Ljava/lang/String;)Lorg/w3c/dom/NodeList;", arg0);
+            return IExecute<Org.W3c.Dom.NodeList>("getElementsByTagName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#getElementsByTagNameNS(java.lang.String,java.lang.String)"/>
@@ -494,14 +494,14 @@ namespace Org.W3c.Dom
         /// <returns><see cref="Org.W3c.Dom.Text"/></returns>
         public Org.W3c.Dom.Text CreateTextNode(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Text>("createTextNode", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", arg0);
+            return IExecute<Org.W3c.Dom.Text>("createTextNode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html#normalizeDocument()"/>
         /// </summary>
         public void NormalizeDocument()
         {
-            IExecuteWithSignature("normalizeDocument", "()V");
+            IExecute("normalizeDocument");
         }
 
         #endregion

@@ -106,28 +106,28 @@ namespace Java.Security.Spec
         /// </summary>
         public Java.Math.BigInteger G
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getG", "()Ljava/math/BigInteger;"); }
+            get { return IExecute<Java.Math.BigInteger>("getG"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#getP()"/> 
         /// </summary>
         public Java.Math.BigInteger P
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getP", "()Ljava/math/BigInteger;"); }
+            get { return IExecute<Java.Math.BigInteger>("getP"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#getQ()"/> 
         /// </summary>
         public Java.Math.BigInteger Q
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getQ", "()Ljava/math/BigInteger;"); }
+            get { return IExecute<Java.Math.BigInteger>("getQ"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#getY()"/> 
         /// </summary>
         public Java.Math.BigInteger Y
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getY", "()Ljava/math/BigInteger;"); }
+            get { return IExecute<Java.Math.BigInteger>("getY"); }
         }
 
         #endregion

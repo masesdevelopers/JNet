@@ -181,7 +181,7 @@ namespace Java.Beans.Beancontext
         /// </summary>
         public Java.Util.Iterator<object> CurrentServiceClasses
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<object>>("getCurrentServiceClasses", "()Ljava/util/Iterator;"); }
+            get { return IExecute<Java.Util.Iterator<object>>("getCurrentServiceClasses"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#addService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider)"/>
@@ -200,7 +200,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool HasService(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<bool>("hasService", "(Ljava/lang/Class;)Z", arg0);
+            return IExecute<bool>("hasService", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#getService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Class,java.lang.Object,java.beans.beancontext.BeanContextServiceRevokedListener)"/>
@@ -223,7 +223,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<object> GetCurrentServiceSelectors(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<Java.Util.Iterator<object>>("getCurrentServiceSelectors", "(Ljava/lang/Class;)Ljava/util/Iterator;", arg0);
+            return IExecute<Java.Util.Iterator<object>>("getCurrentServiceSelectors", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)"/>
@@ -231,7 +231,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServicesListener"/></param>
         public void AddBeanContextServicesListener(Java.Beans.Beancontext.BeanContextServicesListener arg0)
         {
-            IExecuteWithSignature("addBeanContextServicesListener", "(Ljava/beans/beancontext/BeanContextServicesListener;)V", arg0);
+            IExecute("addBeanContextServicesListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#releaseService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Object)"/>
@@ -249,7 +249,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServicesListener"/></param>
         public void RemoveBeanContextServicesListener(Java.Beans.Beancontext.BeanContextServicesListener arg0)
         {
-            IExecuteWithSignature("removeBeanContextServicesListener", "(Ljava/beans/beancontext/BeanContextServicesListener;)V", arg0);
+            IExecute("removeBeanContextServicesListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#revokeService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider,boolean)"/>

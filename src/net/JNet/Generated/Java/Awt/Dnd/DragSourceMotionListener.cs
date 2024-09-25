@@ -204,7 +204,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
         public override void DragMouseMoved(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
-            IExecuteWithSignature("dragMouseMoved", "(Ljava/awt/dnd/DragSourceDragEvent;)V", arg0);
+            IExecute("dragMouseMoved", arg0);
         }
 
         #endregion

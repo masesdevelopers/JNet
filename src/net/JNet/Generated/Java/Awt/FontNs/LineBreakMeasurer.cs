@@ -114,7 +114,7 @@ namespace Java.Awt.FontNs
         /// </summary>
         public int Position
         {
-            get { return IExecuteWithSignature<int>("getPosition", "()I"); } set { IExecuteWithSignature("setPosition", "(I)V", value); }
+            get { return IExecute<int>("getPosition"); } set { IExecute("setPosition", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineBreakMeasurer.html#nextOffset(float,int,boolean)"/>
@@ -134,7 +134,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="int"/></returns>
         public int NextOffset(float arg0)
         {
-            return IExecuteWithSignature<int>("nextOffset", "(F)I", arg0);
+            return IExecute<int>("nextOffset", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineBreakMeasurer.html#nextLayout(float,int,boolean)"/>
@@ -154,7 +154,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.FontNs.TextLayout"/></returns>
         public Java.Awt.FontNs.TextLayout NextLayout(float arg0)
         {
-            return IExecuteWithSignature<Java.Awt.FontNs.TextLayout>("nextLayout", "(F)Ljava/awt/font/TextLayout;", arg0);
+            return IExecute<Java.Awt.FontNs.TextLayout>("nextLayout", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineBreakMeasurer.html#deleteChar(java.text.AttributedCharacterIterator,int)"/>

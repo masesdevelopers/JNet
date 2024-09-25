@@ -98,7 +98,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public double DoubleValue()
         {
-            return IExecuteWithSignature<double>("doubleValue", "()D");
+            return IExecute<double>("doubleValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#floatValue()"/>
@@ -106,7 +106,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public float FloatValue()
         {
-            return IExecuteWithSignature<float>("floatValue", "()F");
+            return IExecute<float>("floatValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#intValue()"/>
@@ -114,7 +114,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int IntValue()
         {
-            return IExecuteWithSignature<int>("intValue", "()I");
+            return IExecute<int>("intValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#longValue()"/>
@@ -122,7 +122,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public long LongValue()
         {
-            return IExecuteWithSignature<long>("longValue", "()J");
+            return IExecute<long>("longValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#byteValue()"/>
@@ -130,7 +130,7 @@ namespace Java.Lang
         /// <returns><see cref="byte"/></returns>
         public byte ByteValue()
         {
-            return IExecuteWithSignature<byte>("byteValue", "()B");
+            return IExecute<byte>("byteValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#shortValue()"/>
@@ -138,7 +138,7 @@ namespace Java.Lang
         /// <returns><see cref="short"/></returns>
         public short ShortValue()
         {
-            return IExecuteWithSignature<short>("shortValue", "()S");
+            return IExecute<short>("shortValue");
         }
 
         #endregion

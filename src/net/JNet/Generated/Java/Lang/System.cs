@@ -248,21 +248,21 @@ namespace Java.Lang
         /// </summary>
         public static Java.Util.Map<Java.Lang.String, Java.Lang.String> Env
         {
-            get { return SExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>(LocalBridgeClazz, "getenv", "()Ljava/util/Map;"); }
+            get { return SExecute<Java.Util.Map<Java.Lang.String, Java.Lang.String>>(LocalBridgeClazz, "getenv"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getProperties()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setProperties(java.util.Properties)"/>
         /// </summary>
         public static Java.Util.Properties Properties
         {
-            get { return SExecuteWithSignature<Java.Util.Properties>(LocalBridgeClazz, "getProperties", "()Ljava/util/Properties;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setProperties", "(Ljava/util/Properties;)V", value); }
+            get { return SExecute<Java.Util.Properties>(LocalBridgeClazz, "getProperties"); } set { SExecute(LocalBridgeClazz, "setProperties", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getSecurityManager()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)"/>
         /// </summary>
         public static Java.Lang.SecurityManager SecurityManager
         {
-            get { return SExecuteWithSignature<Java.Lang.SecurityManager>(LocalBridgeClazz, "getSecurityManager", "()Ljava/lang/SecurityManager;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setSecurityManager", "(Ljava/lang/SecurityManager;)V", value); }
+            get { return SExecute<Java.Lang.SecurityManager>(LocalBridgeClazz, "getSecurityManager"); } set { SExecute(LocalBridgeClazz, "setSecurityManager", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#console()"/>
@@ -270,7 +270,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Io.Console"/></returns>
         public static Java.Io.Console Console()
         {
-            return SExecuteWithSignature<Java.Io.Console>(LocalBridgeClazz, "console", "()Ljava/io/Console;");
+            return SExecute<Java.Io.Console>(LocalBridgeClazz, "console");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#clearProperty(java.lang.String)"/>
@@ -279,7 +279,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ClearProperty(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "clearProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "clearProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getenv(java.lang.String)"/>
@@ -288,7 +288,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Getenv(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getenv", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getenv", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getProperty(java.lang.String,java.lang.String)"/>
@@ -307,7 +307,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetProperty(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#lineSeparator()"/>
@@ -315,7 +315,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String LineSeparator()
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "lineSeparator", "()Ljava/lang/String;");
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "lineSeparator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setProperty(java.lang.String,java.lang.String)"/>
@@ -344,7 +344,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.System.Logger"/></returns>
         public static Java.Lang.System.Logger GetLogger(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.System.Logger>(LocalBridgeClazz, "getLogger", "(Ljava/lang/String;)Ljava/lang/System$Logger;", arg0);
+            return SExecute<Java.Lang.System.Logger>(LocalBridgeClazz, "getLogger", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#inheritedChannel()"/>
@@ -353,7 +353,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.Channel InheritedChannel()
         {
-            return SExecuteWithSignature<Java.Nio.Channels.Channel>(LocalBridgeClazz, "inheritedChannel", "()Ljava/nio/channels/Channel;");
+            return SExecute<Java.Nio.Channels.Channel>(LocalBridgeClazz, "inheritedChannel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#identityHashCode(java.lang.Object)"/>
@@ -362,7 +362,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int IdentityHashCode(object arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "identityHashCode", "(Ljava/lang/Object;)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "identityHashCode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#mapLibraryName(java.lang.String)"/>
@@ -371,7 +371,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String MapLibraryName(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "mapLibraryName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "mapLibraryName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#currentTimeMillis()"/>
@@ -379,7 +379,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long CurrentTimeMillis()
         {
-            return SExecuteWithSignature<long>(LocalBridgeClazz, "currentTimeMillis", "()J");
+            return SExecute<long>(LocalBridgeClazz, "currentTimeMillis");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#nanoTime()"/>
@@ -387,7 +387,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long NanoTime()
         {
-            return SExecuteWithSignature<long>(LocalBridgeClazz, "nanoTime", "()J");
+            return SExecute<long>(LocalBridgeClazz, "nanoTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#arraycopy(java.lang.Object,int,java.lang.Object,int,int)"/>
@@ -407,14 +407,14 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="int"/></param>
         public static void Exit(int arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "exit", "(I)V", arg0);
+            SExecute(LocalBridgeClazz, "exit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#gc()"/>
         /// </summary>
         public static void Gc()
         {
-            SExecuteWithSignature(LocalBridgeClazz, "gc", "()V");
+            SExecute(LocalBridgeClazz, "gc");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#load(java.lang.String)"/>
@@ -422,7 +422,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public static void Load(Java.Lang.String arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "load", "(Ljava/lang/String;)V", arg0);
+            SExecute(LocalBridgeClazz, "load", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#loadLibrary(java.lang.String)"/>
@@ -430,14 +430,14 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public static void LoadLibrary(Java.Lang.String arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "loadLibrary", "(Ljava/lang/String;)V", arg0);
+            SExecute(LocalBridgeClazz, "loadLibrary", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#runFinalization()"/>
         /// </summary>
         public static void RunFinalization()
         {
-            SExecuteWithSignature(LocalBridgeClazz, "runFinalization", "()V");
+            SExecute(LocalBridgeClazz, "runFinalization");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setErr(java.io.PrintStream)"/>
@@ -445,7 +445,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public static void SetErr(Java.Io.PrintStream arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setErr", "(Ljava/io/PrintStream;)V", arg0);
+            SExecute(LocalBridgeClazz, "setErr", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setIn(java.io.InputStream)"/>
@@ -453,7 +453,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public static void SetIn(Java.Io.InputStream arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setIn", "(Ljava/io/InputStream;)V", arg0);
+            SExecute(LocalBridgeClazz, "setIn", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setOut(java.io.PrintStream)"/>
@@ -461,7 +461,7 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public static void SetOut(Java.Io.PrintStream arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setOut", "(Ljava/io/PrintStream;)V", arg0);
+            SExecute(LocalBridgeClazz, "setOut", arg0);
         }
 
         #endregion
@@ -722,7 +722,7 @@ namespace Java.Lang
             /// </summary>
             public static Java.Lang.System.LoggerFinder GetLoggerFinder
             {
-                get { return SExecuteWithSignature<Java.Lang.System.LoggerFinder>(LocalBridgeClazz, "getLoggerFinder", "()Ljava/lang/System$LoggerFinder;"); }
+                get { return SExecute<Java.Lang.System.LoggerFinder>(LocalBridgeClazz, "getLoggerFinder"); }
             }
 
             #endregion

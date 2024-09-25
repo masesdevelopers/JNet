@@ -140,7 +140,7 @@ namespace Java.Io
         /// <returns><see cref="int"/></returns>
         public int Lineno()
         {
-            return IExecuteWithSignature<int>("lineno", "()I");
+            return IExecute<int>("lineno");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#nextToken()"/>
@@ -149,7 +149,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int NextToken()
         {
-            return IExecuteWithSignature<int>("nextToken", "()I");
+            return IExecute<int>("nextToken");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#commentChar(int)"/>
@@ -157,7 +157,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="int"/></param>
         public void CommentChar(int arg0)
         {
-            IExecuteWithSignature("commentChar", "(I)V", arg0);
+            IExecute("commentChar", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#eolIsSignificant(boolean)"/>
@@ -165,7 +165,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="bool"/></param>
         public void EolIsSignificant(bool arg0)
         {
-            IExecuteWithSignature("eolIsSignificant", "(Z)V", arg0);
+            IExecute("eolIsSignificant", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#lowerCaseMode(boolean)"/>
@@ -173,7 +173,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="bool"/></param>
         public void LowerCaseMode(bool arg0)
         {
-            IExecuteWithSignature("lowerCaseMode", "(Z)V", arg0);
+            IExecute("lowerCaseMode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ordinaryChar(int)"/>
@@ -181,7 +181,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="int"/></param>
         public void OrdinaryChar(int arg0)
         {
-            IExecuteWithSignature("ordinaryChar", "(I)V", arg0);
+            IExecute("ordinaryChar", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ordinaryChars(int,int)"/>
@@ -197,14 +197,14 @@ namespace Java.Io
         /// </summary>
         public void ParseNumbers()
         {
-            IExecuteWithSignature("parseNumbers", "()V");
+            IExecute("parseNumbers");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#pushBack()"/>
         /// </summary>
         public void PushBack()
         {
-            IExecuteWithSignature("pushBack", "()V");
+            IExecute("pushBack");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#quoteChar(int)"/>
@@ -212,14 +212,14 @@ namespace Java.Io
         /// <param name="arg0"><see cref="int"/></param>
         public void QuoteChar(int arg0)
         {
-            IExecuteWithSignature("quoteChar", "(I)V", arg0);
+            IExecute("quoteChar", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#resetSyntax()"/>
         /// </summary>
         public void ResetSyntax()
         {
-            IExecuteWithSignature("resetSyntax", "()V");
+            IExecute("resetSyntax");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#slashSlashComments(boolean)"/>
@@ -227,7 +227,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="bool"/></param>
         public void SlashSlashComments(bool arg0)
         {
-            IExecuteWithSignature("slashSlashComments", "(Z)V", arg0);
+            IExecute("slashSlashComments", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#slashStarComments(boolean)"/>
@@ -235,7 +235,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="bool"/></param>
         public void SlashStarComments(bool arg0)
         {
-            IExecuteWithSignature("slashStarComments", "(Z)V", arg0);
+            IExecute("slashStarComments", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#whitespaceChars(int,int)"/>

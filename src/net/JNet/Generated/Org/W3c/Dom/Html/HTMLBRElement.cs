@@ -119,7 +119,7 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Clear
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClear", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setClear", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getClear"); } set { IExecute("setClear", value); }
         }
 
         #endregion

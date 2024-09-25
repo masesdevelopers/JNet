@@ -106,42 +106,42 @@ namespace Java.Awt.Dnd
         /// </summary>
         public Java.Awt.Datatransfer.DataFlavor[] CurrentDataFlavors
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.Datatransfer.DataFlavor>("getCurrentDataFlavors", "()[Ljava/awt/datatransfer/DataFlavor;"); }
+            get { return IExecuteArray<Java.Awt.Datatransfer.DataFlavor>("getCurrentDataFlavors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getCurrentDataFlavorsAsList()"/> 
         /// </summary>
         public Java.Util.List<Java.Awt.Datatransfer.DataFlavor> CurrentDataFlavorsAsList
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Awt.Datatransfer.DataFlavor>>("getCurrentDataFlavorsAsList", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Java.Awt.Datatransfer.DataFlavor>>("getCurrentDataFlavorsAsList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getDropAction()"/> 
         /// </summary>
         public int DropAction
         {
-            get { return IExecuteWithSignature<int>("getDropAction", "()I"); }
+            get { return IExecute<int>("getDropAction"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getLocation()"/> 
         /// </summary>
         public Java.Awt.Point Location
         {
-            get { return IExecuteWithSignature<Java.Awt.Point>("getLocation", "()Ljava/awt/Point;"); }
+            get { return IExecute<Java.Awt.Point>("getLocation"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getSourceActions()"/> 
         /// </summary>
         public int SourceActions
         {
-            get { return IExecuteWithSignature<int>("getSourceActions", "()I"); }
+            get { return IExecute<int>("getSourceActions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getTransferable()"/> 
         /// </summary>
         public Java.Awt.Datatransfer.Transferable Transferable
         {
-            get { return IExecuteWithSignature<Java.Awt.Datatransfer.Transferable>("getTransferable", "()Ljava/awt/datatransfer/Transferable;"); }
+            get { return IExecute<Java.Awt.Datatransfer.Transferable>("getTransferable"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)"/>
@@ -150,7 +150,7 @@ namespace Java.Awt.Dnd
         /// <returns><see cref="bool"/></returns>
         public bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0)
         {
-            return IExecuteWithSignature<bool>("isDataFlavorSupported", "(Ljava/awt/datatransfer/DataFlavor;)Z", arg0);
+            return IExecute<bool>("isDataFlavorSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#acceptDrag(int)"/>
@@ -158,14 +158,14 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="int"/></param>
         public void AcceptDrag(int arg0)
         {
-            IExecuteWithSignature("acceptDrag", "(I)V", arg0);
+            IExecute("acceptDrag", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#rejectDrag()"/>
         /// </summary>
         public void RejectDrag()
         {
-            IExecuteWithSignature("rejectDrag", "()V");
+            IExecute("rejectDrag");
         }
 
         #endregion

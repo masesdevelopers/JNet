@@ -119,7 +119,7 @@ namespace Javax.Xml.Crypto.Dom
         /// </summary>
         public Org.W3c.Dom.Node Here
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getHere", "()Lorg/w3c/dom/Node;"); }
+            get { return IExecute<Org.W3c.Dom.Node>("getHere"); }
         }
 
         #endregion

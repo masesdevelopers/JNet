@@ -211,14 +211,14 @@ namespace Java.Awt.Geom
         /// </summary>
         public double X
         {
-            get { return IExecuteWithSignature<double>("getX", "()D"); }
+            get { return IExecute<double>("getX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#getY()"/> 
         /// </summary>
         public double Y
         {
-            get { return IExecuteWithSignature<double>("getY", "()D"); }
+            get { return IExecute<double>("getY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#setLocation(double,double)"/>
@@ -246,7 +246,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public double Distance(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecuteWithSignature<double>("distance", "(Ljava/awt/geom/Point2D;)D", arg0);
+            return IExecute<double>("distance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#distanceSq(double,double)"/>
@@ -265,7 +265,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public double DistanceSq(Java.Awt.Geom.Point2D arg0)
         {
-            return IExecuteWithSignature<double>("distanceSq", "(Ljava/awt/geom/Point2D;)D", arg0);
+            return IExecute<double>("distanceSq", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#setLocation(java.awt.geom.Point2D)"/>
@@ -273,7 +273,7 @@ namespace Java.Awt.Geom
         /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void SetLocation(Java.Awt.Geom.Point2D arg0)
         {
-            IExecuteWithSignature("setLocation", "(Ljava/awt/geom/Point2D;)V", arg0);
+            IExecute("setLocation", arg0);
         }
 
         #endregion

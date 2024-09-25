@@ -119,21 +119,21 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public int DataBitOffset
         {
-            get { return IExecuteWithSignature<int>("getDataBitOffset", "()I"); }
+            get { return IExecute<int>("getDataBitOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiPixelPackedSampleModel.html#getPixelBitStride()"/> 
         /// </summary>
         public int PixelBitStride
         {
-            get { return IExecuteWithSignature<int>("getPixelBitStride", "()I"); }
+            get { return IExecute<int>("getPixelBitStride"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiPixelPackedSampleModel.html#getScanlineStride()"/> 
         /// </summary>
         public int ScanlineStride
         {
-            get { return IExecuteWithSignature<int>("getScanlineStride", "()I"); }
+            get { return IExecute<int>("getScanlineStride"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiPixelPackedSampleModel.html#getBitOffset(int)"/>
@@ -142,7 +142,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetBitOffset(int arg0)
         {
-            return IExecuteWithSignature<int>("getBitOffset", "(I)I", arg0);
+            return IExecute<int>("getBitOffset", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiPixelPackedSampleModel.html#getOffset(int,int)"/>

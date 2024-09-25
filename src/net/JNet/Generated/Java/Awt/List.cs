@@ -122,77 +122,77 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.EventNs.ActionListener[] ActionListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ActionListener>("getActionListeners", "()[Ljava/awt/event/ActionListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.ActionListener>("getActionListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItemCount()"/> 
         /// </summary>
         public int ItemCount
         {
-            get { return IExecuteWithSignature<int>("getItemCount", "()I"); }
+            get { return IExecute<int>("getItemCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItemListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ItemListener[] ItemListeners
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ItemListener>("getItemListeners", "()[Ljava/awt/event/ItemListener;"); }
+            get { return IExecuteArray<Java.Awt.EventNs.ItemListener>("getItemListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItems()"/> 
         /// </summary>
         public Java.Lang.String[] Items
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getItems", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getItems"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getRows()"/> 
         /// </summary>
         public int Rows
         {
-            get { return IExecuteWithSignature<int>("getRows", "()I"); }
+            get { return IExecute<int>("getRows"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedIndex()"/> 
         /// </summary>
         public int SelectedIndex
         {
-            get { return IExecuteWithSignature<int>("getSelectedIndex", "()I"); }
+            get { return IExecute<int>("getSelectedIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedIndexes()"/> 
         /// </summary>
         public int[] SelectedIndexes
         {
-            get { return IExecuteWithSignatureArray<int>("getSelectedIndexes", "()[I"); }
+            get { return IExecuteArray<int>("getSelectedIndexes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedItem()"/> 
         /// </summary>
         public Java.Lang.String SelectedItem
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSelectedItem", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSelectedItem"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedItems()"/> 
         /// </summary>
         public Java.Lang.String[] SelectedItems
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSelectedItems", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getSelectedItems"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedObjects()"/> 
         /// </summary>
         public object[] SelectedObjects
         {
-            get { return IExecuteWithSignatureArray<object>("getSelectedObjects", "()[Ljava/lang/Object;"); }
+            get { return IExecuteArray<object>("getSelectedObjects"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getVisibleIndex()"/> 
         /// </summary>
         public int VisibleIndex
         {
-            get { return IExecuteWithSignature<int>("getVisibleIndex", "()I"); }
+            get { return IExecute<int>("getVisibleIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#isIndexSelected(int)"/>
@@ -201,7 +201,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsIndexSelected(int arg0)
         {
-            return IExecuteWithSignature<bool>("isIndexSelected", "(I)Z", arg0);
+            return IExecute<bool>("isIndexSelected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#isMultipleMode()"/>
@@ -209,7 +209,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool IsMultipleMode()
         {
-            return IExecuteWithSignature<bool>("isMultipleMode", "()Z");
+            return IExecute<bool>("isMultipleMode");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getMinimumSize(int)"/>
@@ -218,7 +218,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetMinimumSize(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("getMinimumSize", "(I)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("getMinimumSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getPreferredSize(int)"/>
@@ -227,7 +227,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetPreferredSize(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredSize", "(I)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("getPreferredSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItem(int)"/>
@@ -236,7 +236,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetItem(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getItem", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getItem", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#addActionListener(java.awt.event.ActionListener)"/>
@@ -244,7 +244,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
+            IExecute("addActionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#addItemListener(java.awt.event.ItemListener)"/>
@@ -252,7 +252,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecuteWithSignature("addItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
+            IExecute("addItemListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#deselect(int)"/>
@@ -260,7 +260,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void Deselect(int arg0)
         {
-            IExecuteWithSignature("deselect", "(I)V", arg0);
+            IExecute("deselect", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#makeVisible(int)"/>
@@ -268,7 +268,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void MakeVisible(int arg0)
         {
-            IExecuteWithSignature("makeVisible", "(I)V", arg0);
+            IExecute("makeVisible", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#remove(java.lang.String)"/>
@@ -276,7 +276,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Remove(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("remove", "(Ljava/lang/String;)V", arg0);
+            IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#removeActionListener(java.awt.event.ActionListener)"/>
@@ -284,7 +284,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
-            IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
+            IExecute("removeActionListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#removeItemListener(java.awt.event.ItemListener)"/>
@@ -292,7 +292,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
-            IExecuteWithSignature("removeItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
+            IExecute("removeItemListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#replaceItem(java.lang.String,int)"/>
@@ -318,7 +318,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Add(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("add", "(Ljava/lang/String;)V", arg0);
+            IExecute("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#remove(int)"/>
@@ -326,14 +326,14 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void Remove(int arg0)
         {
-            IExecuteWithSignature("remove", "(I)V", arg0);
+            IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#removeAll()"/>
         /// </summary>
         public void RemoveAll()
         {
-            IExecuteWithSignature("removeAll", "()V");
+            IExecute("removeAll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#select(int)"/>
@@ -341,7 +341,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         public void Select(int arg0)
         {
-            IExecuteWithSignature("select", "(I)V", arg0);
+            IExecute("select", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#setMultipleMode(boolean)"/>
@@ -349,7 +349,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetMultipleMode(bool arg0)
         {
-            IExecuteWithSignature("setMultipleMode", "(Z)V", arg0);
+            IExecute("setMultipleMode", arg0);
         }
 
         #endregion

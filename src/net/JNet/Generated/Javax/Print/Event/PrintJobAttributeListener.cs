@@ -204,7 +204,7 @@ namespace Javax.Print.Event
         /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobAttributeEvent"/></param>
         public override void AttributeUpdate(Javax.Print.Event.PrintJobAttributeEvent arg0)
         {
-            IExecuteWithSignature("attributeUpdate", "(Ljavax/print/event/PrintJobAttributeEvent;)V", arg0);
+            IExecute("attributeUpdate", arg0);
         }
 
         #endregion

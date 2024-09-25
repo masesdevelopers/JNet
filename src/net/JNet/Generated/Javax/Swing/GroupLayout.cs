@@ -297,28 +297,28 @@ namespace Javax.Swing
         /// </summary>
         public bool AutoCreateContainerGaps
         {
-            get { return IExecuteWithSignature<bool>("getAutoCreateContainerGaps", "()Z"); } set { IExecuteWithSignature("setAutoCreateContainerGaps", "(Z)V", value); }
+            get { return IExecute<bool>("getAutoCreateContainerGaps"); } set { IExecute("setAutoCreateContainerGaps", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getAutoCreateGaps()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setAutoCreateGaps(boolean)"/>
         /// </summary>
         public bool AutoCreateGaps
         {
-            get { return IExecuteWithSignature<bool>("getAutoCreateGaps", "()Z"); } set { IExecuteWithSignature("setAutoCreateGaps", "(Z)V", value); }
+            get { return IExecute<bool>("getAutoCreateGaps"); } set { IExecute("setAutoCreateGaps", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getHonorsVisibility()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setHonorsVisibility(boolean)"/>
         /// </summary>
         public bool HonorsVisibility
         {
-            get { return IExecuteWithSignature<bool>("getHonorsVisibility", "()Z"); } set { IExecuteWithSignature("setHonorsVisibility", "(Z)V", value); }
+            get { return IExecute<bool>("getHonorsVisibility"); } set { IExecute("setHonorsVisibility", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getLayoutStyle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setLayoutStyle(javax.swing.LayoutStyle)"/>
         /// </summary>
         public Javax.Swing.LayoutStyle LayoutStyle
         {
-            get { return IExecuteWithSignature<Javax.Swing.LayoutStyle>("getLayoutStyle", "()Ljavax/swing/LayoutStyle;"); } set { IExecuteWithSignature("setLayoutStyle", "(Ljavax/swing/LayoutStyle;)V", value); }
+            get { return IExecute<Javax.Swing.LayoutStyle>("getLayoutStyle"); } set { IExecute("setLayoutStyle", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getLayoutAlignmentX(java.awt.Container)"/>
@@ -327,7 +327,7 @@ namespace Javax.Swing
         /// <returns><see cref="float"/></returns>
         public float GetLayoutAlignmentX(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<float>("getLayoutAlignmentX", "(Ljava/awt/Container;)F", arg0);
+            return IExecute<float>("getLayoutAlignmentX", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getLayoutAlignmentY(java.awt.Container)"/>
@@ -336,7 +336,7 @@ namespace Javax.Swing
         /// <returns><see cref="float"/></returns>
         public float GetLayoutAlignmentY(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<float>("getLayoutAlignmentY", "(Ljava/awt/Container;)F", arg0);
+            return IExecute<float>("getLayoutAlignmentY", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#maximumLayoutSize(java.awt.Container)"/>
@@ -345,7 +345,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MaximumLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("maximumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("maximumLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#minimumLayoutSize(java.awt.Container)"/>
@@ -354,7 +354,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#preferredLayoutSize(java.awt.Container)"/>
@@ -363,7 +363,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
+            return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#createBaselineGroup(boolean,boolean)"/>
@@ -381,7 +381,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.GroupLayout.ParallelGroup"/></returns>
         public Javax.Swing.GroupLayout.ParallelGroup CreateParallelGroup()
         {
-            return IExecuteWithSignature<Javax.Swing.GroupLayout.ParallelGroup>("createParallelGroup", "()Ljavax/swing/GroupLayout$ParallelGroup;");
+            return IExecute<Javax.Swing.GroupLayout.ParallelGroup>("createParallelGroup");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#createParallelGroup(javax.swing.GroupLayout.Alignment,boolean)"/>
@@ -400,7 +400,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.GroupLayout.ParallelGroup"/></returns>
         public Javax.Swing.GroupLayout.ParallelGroup CreateParallelGroup(Javax.Swing.GroupLayout.Alignment arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.GroupLayout.ParallelGroup>("createParallelGroup", "(Ljavax/swing/GroupLayout$Alignment;)Ljavax/swing/GroupLayout$ParallelGroup;", arg0);
+            return IExecute<Javax.Swing.GroupLayout.ParallelGroup>("createParallelGroup", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#createSequentialGroup()"/>
@@ -408,7 +408,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
         public Javax.Swing.GroupLayout.SequentialGroup CreateSequentialGroup()
         {
-            return IExecuteWithSignature<Javax.Swing.GroupLayout.SequentialGroup>("createSequentialGroup", "()Ljavax/swing/GroupLayout$SequentialGroup;");
+            return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("createSequentialGroup");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#addLayoutComponent(java.awt.Component,java.lang.Object)"/>
@@ -434,7 +434,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void InvalidateLayout(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("invalidateLayout", "(Ljava/awt/Container;)V", arg0);
+            IExecute("invalidateLayout", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#layoutContainer(java.awt.Container)"/>
@@ -442,7 +442,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void LayoutContainer(Java.Awt.Container arg0)
         {
-            IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
+            IExecute("layoutContainer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#linkSize(int,java.awt.Component[])"/>
@@ -459,7 +459,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void LinkSize(params Java.Awt.Component[] arg0)
         {
-            if (arg0.Length == 0) IExecuteWithSignature("linkSize", "([Ljava/awt/Component;)V"); else IExecuteWithSignature("linkSize", "([Ljava/awt/Component;)V", arg0);
+            if (arg0.Length == 0) IExecute("linkSize"); else IExecute("linkSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#removeLayoutComponent(java.awt.Component)"/>
@@ -467,7 +467,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void RemoveLayoutComponent(Java.Awt.Component arg0)
         {
-            IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);
+            IExecute("removeLayoutComponent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#replace(java.awt.Component,java.awt.Component)"/>
@@ -493,7 +493,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.GroupLayout.Group"/></param>
         public void SetHorizontalGroup(Javax.Swing.GroupLayout.Group arg0)
         {
-            IExecuteWithSignature("setHorizontalGroup", "(Ljavax/swing/GroupLayout$Group;)V", arg0);
+            IExecute("setHorizontalGroup", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setVerticalGroup(javax.swing.GroupLayout.Group)"/>
@@ -501,7 +501,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.GroupLayout.Group"/></param>
         public void SetVerticalGroup(Javax.Swing.GroupLayout.Group arg0)
         {
-            IExecuteWithSignature("setVerticalGroup", "(Ljavax/swing/GroupLayout$Group;)V", arg0);
+            IExecute("setVerticalGroup", arg0);
         }
 
         #endregion
@@ -618,7 +618,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.GroupLayout.Group"/></returns>
             public Javax.Swing.GroupLayout.Group AddComponent(Java.Awt.Component arg0)
             {
-                return IExecuteWithSignature<Javax.Swing.GroupLayout.Group>("addComponent", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$Group;", arg0);
+                return IExecute<Javax.Swing.GroupLayout.Group>("addComponent", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addGap(int,int,int)"/>
@@ -638,7 +638,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.GroupLayout.Group"/></returns>
             public Javax.Swing.GroupLayout.Group AddGap(int arg0)
             {
-                return IExecuteWithSignature<Javax.Swing.GroupLayout.Group>("addGap", "(I)Ljavax/swing/GroupLayout$Group;", arg0);
+                return IExecute<Javax.Swing.GroupLayout.Group>("addGap", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addGroup(javax.swing.GroupLayout.Group)"/>
@@ -647,7 +647,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.GroupLayout.Group"/></returns>
             public Javax.Swing.GroupLayout.Group AddGroup(Javax.Swing.GroupLayout.Group arg0)
             {
-                return IExecuteWithSignature<Javax.Swing.GroupLayout.Group>("addGroup", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$Group;", arg0);
+                return IExecute<Javax.Swing.GroupLayout.Group>("addGroup", arg0);
             }
 
             #endregion
@@ -773,7 +773,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
             public Javax.Swing.GroupLayout.SequentialGroup AddContainerGap()
             {
-                return IExecuteWithSignature<Javax.Swing.GroupLayout.SequentialGroup>("addContainerGap", "()Ljavax/swing/GroupLayout$SequentialGroup;");
+                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addContainerGap");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addContainerGap(int,int)"/>
@@ -837,7 +837,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
             public Javax.Swing.GroupLayout.SequentialGroup AddPreferredGap(Javax.Swing.LayoutStyle.ComponentPlacement arg0)
             {
-                return IExecuteWithSignature<Javax.Swing.GroupLayout.SequentialGroup>("addPreferredGap", "(Ljavax/swing/LayoutStyle$ComponentPlacement;)Ljavax/swing/GroupLayout$SequentialGroup;", arg0);
+                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addPreferredGap", arg0);
             }
 
             #endregion

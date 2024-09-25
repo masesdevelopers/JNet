@@ -109,7 +109,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
         public static Java.Time.Chrono.IsoEra Of(int arg0)
         {
-            return SExecuteWithSignature<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "of", "(I)Ljava/time/chrono/IsoEra;", arg0);
+            return SExecute<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#valueOf(java.lang.String)"/>
@@ -118,7 +118,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
         public static Java.Time.Chrono.IsoEra ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/chrono/IsoEra;", arg0);
+            return SExecute<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#values()"/>
@@ -126,7 +126,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
         public static Java.Time.Chrono.IsoEra[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "values", "()[Ljava/time/chrono/IsoEra;");
+            return SExecuteArray<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "values");
         }
 
         #endregion
@@ -137,7 +137,7 @@ namespace Java.Time.Chrono
         /// </summary>
         public int Value
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); }
+            get { return IExecute<int>("getValue"); }
         }
 
         #endregion

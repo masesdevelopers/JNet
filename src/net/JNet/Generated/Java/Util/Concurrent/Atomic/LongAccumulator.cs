@@ -104,7 +104,7 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         public long ThenReset
         {
-            get { return IExecuteWithSignature<long>("getThenReset", "()J"); }
+            get { return IExecute<long>("getThenReset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#get()"/>
@@ -112,7 +112,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long Get()
         {
-            return IExecuteWithSignature<long>("get", "()J");
+            return IExecute<long>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#accumulate(long)"/>
@@ -120,14 +120,14 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="long"/></param>
         public void Accumulate(long arg0)
         {
-            IExecuteWithSignature("accumulate", "(J)V", arg0);
+            IExecute("accumulate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
 
         #endregion

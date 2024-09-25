@@ -101,7 +101,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public static Java.Awt.ImageNs.ColorModel RGBdefault
         {
-            get { return SExecuteWithSignature<Java.Awt.ImageNs.ColorModel>(LocalBridgeClazz, "getRGBdefault", "()Ljava/awt/image/ColorModel;"); }
+            get { return SExecute<Java.Awt.ImageNs.ColorModel>(LocalBridgeClazz, "getRGBdefault"); }
         }
 
         #endregion
@@ -112,49 +112,49 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public Java.Awt.ColorNs.ColorSpace ColorSpace
         {
-            get { return IExecuteWithSignature<Java.Awt.ColorNs.ColorSpace>("getColorSpace", "()Ljava/awt/color/ColorSpace;"); }
+            get { return IExecute<Java.Awt.ColorNs.ColorSpace>("getColorSpace"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponentSize()"/> 
         /// </summary>
         public int[] ComponentSize
         {
-            get { return IExecuteWithSignatureArray<int>("getComponentSize", "()[I"); }
+            get { return IExecuteArray<int>("getComponentSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNumColorComponents()"/> 
         /// </summary>
         public int NumColorComponents
         {
-            get { return IExecuteWithSignature<int>("getNumColorComponents", "()I"); }
+            get { return IExecute<int>("getNumColorComponents"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNumComponents()"/> 
         /// </summary>
         public int NumComponents
         {
-            get { return IExecuteWithSignature<int>("getNumComponents", "()I"); }
+            get { return IExecute<int>("getNumComponents"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getPixelSize()"/> 
         /// </summary>
         public int PixelSize
         {
-            get { return IExecuteWithSignature<int>("getPixelSize", "()I"); }
+            get { return IExecute<int>("getPixelSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getTransferType()"/> 
         /// </summary>
         public int TransferType
         {
-            get { return IExecuteWithSignature<int>("getTransferType", "()I"); }
+            get { return IExecute<int>("getTransferType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getTransparency()"/> 
         /// </summary>
         public int Transparency
         {
-            get { return IExecuteWithSignature<int>("getTransparency", "()I"); }
+            get { return IExecute<int>("getTransparency"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getAlpha(int)"/>
@@ -163,7 +163,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetAlpha(int arg0)
         {
-            return IExecuteWithSignature<int>("getAlpha", "(I)I", arg0);
+            return IExecute<int>("getAlpha", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getBlue(int)"/>
@@ -172,7 +172,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetBlue(int arg0)
         {
-            return IExecuteWithSignature<int>("getBlue", "(I)I", arg0);
+            return IExecute<int>("getBlue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getGreen(int)"/>
@@ -181,7 +181,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetGreen(int arg0)
         {
-            return IExecuteWithSignature<int>("getGreen", "(I)I", arg0);
+            return IExecute<int>("getGreen", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRed(int)"/>
@@ -190,7 +190,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetRed(int arg0)
         {
-            return IExecuteWithSignature<int>("getRed", "(I)I", arg0);
+            return IExecute<int>("getRed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isCompatibleRaster(java.awt.image.Raster)"/>
@@ -199,7 +199,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool IsCompatibleRaster(Java.Awt.ImageNs.Raster arg0)
         {
-            return IExecuteWithSignature<bool>("isCompatibleRaster", "(Ljava/awt/image/Raster;)Z", arg0);
+            return IExecute<bool>("isCompatibleRaster", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isCompatibleSampleModel(java.awt.image.SampleModel)"/>
@@ -208,7 +208,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool IsCompatibleSampleModel(Java.Awt.ImageNs.SampleModel arg0)
         {
-            return IExecuteWithSignature<bool>("isCompatibleSampleModel", "(Ljava/awt/image/SampleModel;)Z", arg0);
+            return IExecute<bool>("isCompatibleSampleModel", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#hasAlpha()"/>
@@ -216,7 +216,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool HasAlpha()
         {
-            return IExecuteWithSignature<bool>("hasAlpha", "()Z");
+            return IExecute<bool>("hasAlpha");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isAlphaPremultiplied()"/>
@@ -224,7 +224,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool IsAlphaPremultiplied()
         {
-            return IExecuteWithSignature<bool>("isAlphaPremultiplied", "()Z");
+            return IExecute<bool>("isAlphaPremultiplied");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNormalizedComponents(int[],int,float[],int)"/>
@@ -256,7 +256,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetAlpha(object arg0)
         {
-            return IExecuteWithSignature<int>("getAlpha", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("getAlpha", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getBlue(java.lang.Object)"/>
@@ -265,7 +265,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetBlue(object arg0)
         {
-            return IExecuteWithSignature<int>("getBlue", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("getBlue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponentSize(int)"/>
@@ -274,7 +274,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetComponentSize(int arg0)
         {
-            return IExecuteWithSignature<int>("getComponentSize", "(I)I", arg0);
+            return IExecute<int>("getComponentSize", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElement(float[],int)"/>
@@ -303,7 +303,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetGreen(object arg0)
         {
-            return IExecuteWithSignature<int>("getGreen", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("getGreen", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRed(java.lang.Object)"/>
@@ -312,7 +312,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetRed(object arg0)
         {
-            return IExecuteWithSignature<int>("getRed", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("getRed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRGB(int)"/>
@@ -321,7 +321,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetRGB(int arg0)
         {
-            return IExecuteWithSignature<int>("getRGB", "(I)I", arg0);
+            return IExecute<int>("getRGB", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRGB(java.lang.Object)"/>
@@ -330,7 +330,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetRGB(object arg0)
         {
-            return IExecuteWithSignature<int>("getRGB", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("getRGB", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponents(int,int[],int)"/>
@@ -403,7 +403,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster GetAlphaRaster(Java.Awt.ImageNs.WritableRaster arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("getAlphaRaster", "(Ljava/awt/image/WritableRaster;)Ljava/awt/image/WritableRaster;", arg0);
+            return IExecute<Java.Awt.ImageNs.WritableRaster>("getAlphaRaster", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElements(float[],int,java.lang.Object)"/>

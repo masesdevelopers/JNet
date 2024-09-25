@@ -97,14 +97,14 @@ namespace Javax.Net.Ssl
         /// </summary>
         public Java.Lang.String[] DefaultCipherSuites
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getDefaultCipherSuites", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getDefaultCipherSuites"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#getSupportedCipherSuites()"/> 
         /// </summary>
         public Java.Lang.String[] SupportedCipherSuites
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedCipherSuites", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getSupportedCipherSuites"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#createSocket(java.net.Socket,java.lang.String,int,boolean)"/>

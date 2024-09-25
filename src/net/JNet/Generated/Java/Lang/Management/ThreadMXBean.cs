@@ -272,49 +272,49 @@ namespace Java.Lang.Management
         /// </summary>
         public long[] AllThreadIds
         {
-            get { return IExecuteWithSignatureArray<long>("getAllThreadIds", "()[J"); }
+            get { return IExecuteArray<long>("getAllThreadIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getCurrentThreadCpuTime()"/> 
         /// </summary>
         public long CurrentThreadCpuTime
         {
-            get { return IExecuteWithSignature<long>("getCurrentThreadCpuTime", "()J"); }
+            get { return IExecute<long>("getCurrentThreadCpuTime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getCurrentThreadUserTime()"/> 
         /// </summary>
         public long CurrentThreadUserTime
         {
-            get { return IExecuteWithSignature<long>("getCurrentThreadUserTime", "()J"); }
+            get { return IExecute<long>("getCurrentThreadUserTime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getDaemonThreadCount()"/> 
         /// </summary>
         public int DaemonThreadCount
         {
-            get { return IExecuteWithSignature<int>("getDaemonThreadCount", "()I"); }
+            get { return IExecute<int>("getDaemonThreadCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getPeakThreadCount()"/> 
         /// </summary>
         public int PeakThreadCount
         {
-            get { return IExecuteWithSignature<int>("getPeakThreadCount", "()I"); }
+            get { return IExecute<int>("getPeakThreadCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadCount()"/> 
         /// </summary>
         public int ThreadCount
         {
-            get { return IExecuteWithSignature<int>("getThreadCount", "()I"); }
+            get { return IExecute<int>("getThreadCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getTotalStartedThreadCount()"/> 
         /// </summary>
         public long TotalStartedThreadCount
         {
-            get { return IExecuteWithSignature<long>("getTotalStartedThreadCount", "()J"); }
+            get { return IExecute<long>("getTotalStartedThreadCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isCurrentThreadCpuTimeSupported()"/>
@@ -322,7 +322,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsCurrentThreadCpuTimeSupported()
         {
-            return IExecuteWithSignature<bool>("isCurrentThreadCpuTimeSupported", "()Z");
+            return IExecute<bool>("isCurrentThreadCpuTimeSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isObjectMonitorUsageSupported()"/>
@@ -330,7 +330,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsObjectMonitorUsageSupported()
         {
-            return IExecuteWithSignature<bool>("isObjectMonitorUsageSupported", "()Z");
+            return IExecute<bool>("isObjectMonitorUsageSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isSynchronizerUsageSupported()"/>
@@ -338,7 +338,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsSynchronizerUsageSupported()
         {
-            return IExecuteWithSignature<bool>("isSynchronizerUsageSupported", "()Z");
+            return IExecute<bool>("isSynchronizerUsageSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadContentionMonitoringEnabled()"/>
@@ -346,7 +346,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsThreadContentionMonitoringEnabled()
         {
-            return IExecuteWithSignature<bool>("isThreadContentionMonitoringEnabled", "()Z");
+            return IExecute<bool>("isThreadContentionMonitoringEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadContentionMonitoringSupported()"/>
@@ -354,7 +354,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsThreadContentionMonitoringSupported()
         {
-            return IExecuteWithSignature<bool>("isThreadContentionMonitoringSupported", "()Z");
+            return IExecute<bool>("isThreadContentionMonitoringSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadCpuTimeEnabled()"/>
@@ -362,7 +362,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsThreadCpuTimeEnabled()
         {
-            return IExecuteWithSignature<bool>("isThreadCpuTimeEnabled", "()Z");
+            return IExecute<bool>("isThreadCpuTimeEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadCpuTimeSupported()"/>
@@ -370,7 +370,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="bool"/></returns>
         public bool IsThreadCpuTimeSupported()
         {
-            return IExecuteWithSignature<bool>("isThreadCpuTimeSupported", "()Z");
+            return IExecute<bool>("isThreadCpuTimeSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long,int)"/>
@@ -389,7 +389,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo GetThreadInfo(long arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Management.ThreadInfo>("getThreadInfo", "(J)Ljava/lang/management/ThreadInfo;", arg0);
+            return IExecute<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#dumpAllThreads(boolean,boolean)"/>
@@ -429,7 +429,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0)
         {
-            return IExecuteWithSignatureArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", "([J)[Ljava/lang/management/ThreadInfo;", new object[] { arg0 });
+            return IExecuteArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadCpuTime(long)"/>
@@ -438,7 +438,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="long"/></returns>
         public long GetThreadCpuTime(long arg0)
         {
-            return IExecuteWithSignature<long>("getThreadCpuTime", "(J)J", arg0);
+            return IExecute<long>("getThreadCpuTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadUserTime(long)"/>
@@ -447,7 +447,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="long"/></returns>
         public long GetThreadUserTime(long arg0)
         {
-            return IExecuteWithSignature<long>("getThreadUserTime", "(J)J", arg0);
+            return IExecute<long>("getThreadUserTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#findDeadlockedThreads()"/>
@@ -455,7 +455,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="long"/></returns>
         public long[] FindDeadlockedThreads()
         {
-            return IExecuteWithSignatureArray<long>("findDeadlockedThreads", "()[J");
+            return IExecuteArray<long>("findDeadlockedThreads");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#findMonitorDeadlockedThreads()"/>
@@ -463,14 +463,14 @@ namespace Java.Lang.Management
         /// <returns><see cref="long"/></returns>
         public long[] FindMonitorDeadlockedThreads()
         {
-            return IExecuteWithSignatureArray<long>("findMonitorDeadlockedThreads", "()[J");
+            return IExecuteArray<long>("findMonitorDeadlockedThreads");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#resetPeakThreadCount()"/>
         /// </summary>
         public void ResetPeakThreadCount()
         {
-            IExecuteWithSignature("resetPeakThreadCount", "()V");
+            IExecute("resetPeakThreadCount");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#setThreadContentionMonitoringEnabled(boolean)"/>
@@ -478,7 +478,7 @@ namespace Java.Lang.Management
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetThreadContentionMonitoringEnabled(bool arg0)
         {
-            IExecuteWithSignature("setThreadContentionMonitoringEnabled", "(Z)V", arg0);
+            IExecute("setThreadContentionMonitoringEnabled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#setThreadCpuTimeEnabled(boolean)"/>
@@ -486,7 +486,7 @@ namespace Java.Lang.Management
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetThreadCpuTimeEnabled(bool arg0)
         {
-            IExecuteWithSignature("setThreadCpuTimeEnabled", "(Z)V", arg0);
+            IExecute("setThreadCpuTimeEnabled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#dumpAllThreads(boolean,boolean,int)"/>

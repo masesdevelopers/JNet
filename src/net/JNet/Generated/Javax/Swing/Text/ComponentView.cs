@@ -103,7 +103,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public Java.Awt.Component Component
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getComponent", "()Ljava/awt/Component;"); }
+            get { return IExecute<Java.Awt.Component>("getComponent"); }
         }
 
         #endregion

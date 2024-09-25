@@ -138,7 +138,7 @@ namespace Javax.Swing
         /// </summary>
         public int SelectedIndex
         {
-            get { return IExecuteWithSignature<int>("getSelectedIndex", "()I"); } set { IExecuteWithSignature("setSelectedIndex", "(I)V", value); }
+            get { return IExecute<int>("getSelectedIndex"); } set { IExecute("setSelectedIndex", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#isSelected()"/>
@@ -146,7 +146,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSelected()
         {
-            return IExecuteWithSignature<bool>("isSelected", "()Z");
+            return IExecute<bool>("isSelected");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#addChangeListener(javax.swing.event.ChangeListener)"/>
@@ -154,14 +154,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("addChangeListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#clearSelection()"/>
         /// </summary>
         public void ClearSelection()
         {
-            IExecuteWithSignature("clearSelection", "()V");
+            IExecute("clearSelection");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
@@ -169,7 +169,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
-            IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
+            IExecute("removeChangeListener", arg0);
         }
 
         #endregion

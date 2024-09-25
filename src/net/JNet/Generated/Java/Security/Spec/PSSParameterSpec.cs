@@ -127,35 +127,35 @@ namespace Java.Security.Spec
         /// </summary>
         public Java.Lang.String DigestAlgorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDigestAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getDigestAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getMGFAlgorithm()"/> 
         /// </summary>
         public Java.Lang.String MGFAlgorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMGFAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getMGFAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getMGFParameters()"/> 
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec MGFParameters
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getMGFParameters", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+            get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getMGFParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getSaltLength()"/> 
         /// </summary>
         public int SaltLength
         {
-            get { return IExecuteWithSignature<int>("getSaltLength", "()I"); }
+            get { return IExecute<int>("getSaltLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getTrailerField()"/> 
         /// </summary>
         public int TrailerField
         {
-            get { return IExecuteWithSignature<int>("getTrailerField", "()I"); }
+            get { return IExecute<int>("getTrailerField"); }
         }
 
         #endregion

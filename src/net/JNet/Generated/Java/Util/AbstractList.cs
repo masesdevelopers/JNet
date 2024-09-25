@@ -151,7 +151,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Get(int arg0)
         {
-            return IExecuteWithSignature("get", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#addAll(int,java.util.Collection)"/>
@@ -170,7 +170,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Remove(int arg0)
         {
-            return IExecuteWithSignature("remove", "(I)Ljava/lang/Object;", arg0);
+            return IExecute("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#set(int,java.lang.Object)"/>
@@ -189,7 +189,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOf(object arg0)
         {
-            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("indexOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#lastIndexOf(java.lang.Object)"/>
@@ -198,7 +198,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int LastIndexOf(object arg0)
         {
-            return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("lastIndexOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#subList(int,int)"/>
@@ -216,7 +216,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator ListIterator()
         {
-            return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "()Ljava/util/ListIterator;");
+            return IExecute<Java.Util.ListIterator>("listIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator(int)"/>
@@ -225,7 +225,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator ListIterator(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
+            return IExecute<Java.Util.ListIterator>("listIterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#add(int,java.lang.Object)"/>
@@ -282,7 +282,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Get(int arg0)
         {
-            return IExecuteWithSignature<E>("get", "(I)Ljava/lang/Object;", arg0);
+            return IExecute<E>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#addAll(int,java.util.Collection)"/>
@@ -302,7 +302,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Remove(int arg0)
         {
-            return IExecuteWithSignature<E>("remove", "(I)Ljava/lang/Object;", arg0);
+            return IExecute<E>("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#set(int,java.lang.Object)"/>
@@ -321,7 +321,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int IndexOf(object arg0)
         {
-            return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("indexOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#lastIndexOf(java.lang.Object)"/>
@@ -330,7 +330,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int LastIndexOf(object arg0)
         {
-            return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("lastIndexOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#subList(int,int)"/>
@@ -348,7 +348,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator<E> ListIterator()
         {
-            return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "()Ljava/util/ListIterator;");
+            return IExecute<Java.Util.ListIterator<E>>("listIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator(int)"/>
@@ -357,7 +357,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator<E> ListIterator(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
+            return IExecute<Java.Util.ListIterator<E>>("listIterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#add(int,java.lang.Object)"/>

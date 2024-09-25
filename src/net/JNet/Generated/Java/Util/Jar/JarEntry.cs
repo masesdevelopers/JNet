@@ -119,28 +119,28 @@ namespace Java.Util.Jar
         /// </summary>
         public Java.Util.Jar.Attributes Attributes
         {
-            get { return IExecuteWithSignature<Java.Util.Jar.Attributes>("getAttributes", "()Ljava/util/jar/Attributes;"); }
+            get { return IExecute<Java.Util.Jar.Attributes>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#getCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] Certificates
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificates", "()[Ljava/security/cert/Certificate;"); }
+            get { return IExecuteArray<Java.Security.Cert.Certificate>("getCertificates"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#getCodeSigners()"/> 
         /// </summary>
         public Java.Security.CodeSigner[] CodeSigners
         {
-            get { return IExecuteWithSignatureArray<Java.Security.CodeSigner>("getCodeSigners", "()[Ljava/security/CodeSigner;"); }
+            get { return IExecuteArray<Java.Security.CodeSigner>("getCodeSigners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#getRealName()"/> 
         /// </summary>
         public Java.Lang.String RealName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRealName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getRealName"); }
         }
 
         #endregion

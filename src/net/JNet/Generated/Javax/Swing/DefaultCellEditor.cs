@@ -127,14 +127,14 @@ namespace Javax.Swing
         /// </summary>
         public int ClickCountToStart
         {
-            get { return IExecuteWithSignature<int>("getClickCountToStart", "()I"); } set { IExecuteWithSignature("setClickCountToStart", "(I)V", value); }
+            get { return IExecute<int>("getClickCountToStart"); } set { IExecute("setClickCountToStart", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#getComponent()"/> 
         /// </summary>
         public Java.Awt.Component Component
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getComponent", "()Ljava/awt/Component;"); }
+            get { return IExecute<Java.Awt.Component>("getComponent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#getTableCellEditorComponent(javax.swing.JTable,java.lang.Object,boolean,int,int)"/>

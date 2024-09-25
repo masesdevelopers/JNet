@@ -157,7 +157,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.StandardOpenOption"/></returns>
         public static Java.Nio.File.StandardOpenOption ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Nio.File.StandardOpenOption>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/StandardOpenOption;", arg0);
+            return SExecute<Java.Nio.File.StandardOpenOption>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#values()"/>
@@ -165,7 +165,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.StandardOpenOption"/></returns>
         public static Java.Nio.File.StandardOpenOption[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Nio.File.StandardOpenOption>(LocalBridgeClazz, "values", "()[Ljava/nio/file/StandardOpenOption;");
+            return SExecuteArray<Java.Nio.File.StandardOpenOption>(LocalBridgeClazz, "values");
         }
 
         #endregion

@@ -93,7 +93,7 @@ namespace Org.Ietf.Jgss
         /// </summary>
         public static Org.Ietf.Jgss.GSSManager Instance
         {
-            get { return SExecuteWithSignature<Org.Ietf.Jgss.GSSManager>(LocalBridgeClazz, "getInstance", "()Lorg/ietf/jgss/GSSManager;"); }
+            get { return SExecute<Org.Ietf.Jgss.GSSManager>(LocalBridgeClazz, "getInstance"); }
         }
 
         #endregion
@@ -104,7 +104,7 @@ namespace Org.Ietf.Jgss
         /// </summary>
         public Org.Ietf.Jgss.Oid[] Mechs
         {
-            get { return IExecuteWithSignatureArray<Org.Ietf.Jgss.Oid>("getMechs", "()[Lorg/ietf/jgss/Oid;"); }
+            get { return IExecuteArray<Org.Ietf.Jgss.Oid>("getMechs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createContext(byte[])"/>
@@ -114,7 +114,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public Org.Ietf.Jgss.GSSContext CreateContext(byte[] arg0)
         {
-            return IExecuteWithSignature<Org.Ietf.Jgss.GSSContext>("createContext", "([B)Lorg/ietf/jgss/GSSContext;", new object[] { arg0 });
+            return IExecute<Org.Ietf.Jgss.GSSContext>("createContext", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createContext(org.ietf.jgss.GSSCredential)"/>
@@ -124,7 +124,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public Org.Ietf.Jgss.GSSContext CreateContext(Org.Ietf.Jgss.GSSCredential arg0)
         {
-            return IExecuteWithSignature<Org.Ietf.Jgss.GSSContext>("createContext", "(Lorg/ietf/jgss/GSSCredential;)Lorg/ietf/jgss/GSSContext;", arg0);
+            return IExecute<Org.Ietf.Jgss.GSSContext>("createContext", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createContext(org.ietf.jgss.GSSName,org.ietf.jgss.Oid,org.ietf.jgss.GSSCredential,int)"/>
@@ -147,7 +147,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public Org.Ietf.Jgss.GSSCredential CreateCredential(int arg0)
         {
-            return IExecuteWithSignature<Org.Ietf.Jgss.GSSCredential>("createCredential", "(I)Lorg/ietf/jgss/GSSCredential;", arg0);
+            return IExecute<Org.Ietf.Jgss.GSSCredential>("createCredential", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createCredential(org.ietf.jgss.GSSName,int,org.ietf.jgss.Oid,int)"/>
@@ -228,7 +228,7 @@ namespace Org.Ietf.Jgss
         /// <returns><see cref="Org.Ietf.Jgss.Oid"/></returns>
         public Org.Ietf.Jgss.Oid[] GetMechsForName(Org.Ietf.Jgss.Oid arg0)
         {
-            return IExecuteWithSignatureArray<Org.Ietf.Jgss.Oid>("getMechsForName", "(Lorg/ietf/jgss/Oid;)[Lorg/ietf/jgss/Oid;", arg0);
+            return IExecuteArray<Org.Ietf.Jgss.Oid>("getMechsForName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#getNamesForMech(org.ietf.jgss.Oid)"/>
@@ -238,7 +238,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public Org.Ietf.Jgss.Oid[] GetNamesForMech(Org.Ietf.Jgss.Oid arg0)
         {
-            return IExecuteWithSignatureArray<Org.Ietf.Jgss.Oid>("getNamesForMech", "(Lorg/ietf/jgss/Oid;)[Lorg/ietf/jgss/Oid;", arg0);
+            return IExecuteArray<Org.Ietf.Jgss.Oid>("getNamesForMech", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#addProviderAtEnd(java.security.Provider,org.ietf.jgss.Oid)"/>

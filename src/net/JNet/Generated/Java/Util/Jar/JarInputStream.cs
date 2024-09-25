@@ -114,14 +114,14 @@ namespace Java.Util.Jar
         /// </summary>
         public Java.Util.Jar.Manifest Manifest
         {
-            get { return IExecuteWithSignature<Java.Util.Jar.Manifest>("getManifest", "()Ljava/util/jar/Manifest;"); }
+            get { return IExecute<Java.Util.Jar.Manifest>("getManifest"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarInputStream.html#getNextJarEntry()"/> 
         /// </summary>
         public Java.Util.Jar.JarEntry NextJarEntry
         {
-            get { return IExecuteWithSignature<Java.Util.Jar.JarEntry>("getNextJarEntry", "()Ljava/util/jar/JarEntry;"); }
+            get { return IExecute<Java.Util.Jar.JarEntry>("getNextJarEntry"); }
         }
 
         #endregion

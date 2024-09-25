@@ -384,7 +384,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public override void WindowActivated(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowActivated", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowActivated", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowClosed(java.awt.event.WindowEvent)"/>
@@ -392,7 +392,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public override void WindowClosed(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowClosed", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowClosed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowClosing(java.awt.event.WindowEvent)"/>
@@ -400,7 +400,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public override void WindowClosing(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowClosing", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowClosing", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowDeactivated(java.awt.event.WindowEvent)"/>
@@ -408,7 +408,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public override void WindowDeactivated(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowDeactivated", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowDeactivated", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowDeiconified(java.awt.event.WindowEvent)"/>
@@ -416,7 +416,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public override void WindowDeiconified(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowDeiconified", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowDeiconified", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowIconified(java.awt.event.WindowEvent)"/>
@@ -424,7 +424,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public override void WindowIconified(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowIconified", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowIconified", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowOpened(java.awt.event.WindowEvent)"/>
@@ -432,7 +432,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public override void WindowOpened(Java.Awt.EventNs.WindowEvent arg0)
         {
-            IExecuteWithSignature("windowOpened", "(Ljava/awt/event/WindowEvent;)V", arg0);
+            IExecute("windowOpened", arg0);
         }
 
         #endregion

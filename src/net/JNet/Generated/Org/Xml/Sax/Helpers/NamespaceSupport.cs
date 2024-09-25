@@ -107,14 +107,14 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         public Java.Util.Enumeration<Java.Lang.String> DeclaredPrefixes
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getDeclaredPrefixes", "()Ljava/util/Enumeration;"); }
+            get { return IExecute<Java.Util.Enumeration<Java.Lang.String>>("getDeclaredPrefixes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefixes()"/> 
         /// </summary>
         public Java.Util.Enumeration<Java.Lang.String> Prefixes
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getPrefixes", "()Ljava/util/Enumeration;"); }
+            get { return IExecute<Java.Util.Enumeration<Java.Lang.String>>("getPrefixes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#declarePrefix(java.lang.String,java.lang.String)"/>
@@ -132,7 +132,7 @@ namespace Org.Xml.Sax.Helpers
         /// <returns><see cref="bool"/></returns>
         public bool IsNamespaceDeclUris()
         {
-            return IExecuteWithSignature<bool>("isNamespaceDeclUris", "()Z");
+            return IExecute<bool>("isNamespaceDeclUris");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefix(java.lang.String)"/>
@@ -141,7 +141,7 @@ namespace Org.Xml.Sax.Helpers
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetPrefix(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getPrefix", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getPrefix", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getURI(java.lang.String)"/>
@@ -150,7 +150,7 @@ namespace Org.Xml.Sax.Helpers
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetURI(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getURI", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getURI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#processName(java.lang.String,java.lang.String[],boolean)"/>
@@ -170,28 +170,28 @@ namespace Org.Xml.Sax.Helpers
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Lang.String> GetPrefixes(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getPrefixes", "(Ljava/lang/String;)Ljava/util/Enumeration;", arg0);
+            return IExecute<Java.Util.Enumeration<Java.Lang.String>>("getPrefixes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#popContext()"/>
         /// </summary>
         public void PopContext()
         {
-            IExecuteWithSignature("popContext", "()V");
+            IExecute("popContext");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#pushContext()"/>
         /// </summary>
         public void PushContext()
         {
-            IExecuteWithSignature("pushContext", "()V");
+            IExecute("pushContext");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#setNamespaceDeclUris(boolean)"/>
@@ -199,7 +199,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetNamespaceDeclUris(bool arg0)
         {
-            IExecuteWithSignature("setNamespaceDeclUris", "(Z)V", arg0);
+            IExecute("setNamespaceDeclUris", arg0);
         }
 
         #endregion

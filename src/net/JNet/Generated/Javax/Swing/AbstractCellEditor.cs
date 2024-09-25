@@ -105,7 +105,7 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.Event.CellEditorListener[] CellEditorListeners
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Event.CellEditorListener>("getCellEditorListeners", "()[Ljavax/swing/event/CellEditorListener;"); }
+            get { return IExecuteArray<Javax.Swing.Event.CellEditorListener>("getCellEditorListeners"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractCellEditor.html#isCellEditable(java.util.EventObject)"/>
@@ -114,7 +114,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsCellEditable(Java.Util.EventObject arg0)
         {
-            return IExecuteWithSignature<bool>("isCellEditable", "(Ljava/util/EventObject;)Z", arg0);
+            return IExecute<bool>("isCellEditable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractCellEditor.html#shouldSelectCell(java.util.EventObject)"/>
@@ -123,7 +123,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool ShouldSelectCell(Java.Util.EventObject arg0)
         {
-            return IExecuteWithSignature<bool>("shouldSelectCell", "(Ljava/util/EventObject;)Z", arg0);
+            return IExecute<bool>("shouldSelectCell", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractCellEditor.html#stopCellEditing()"/>
@@ -131,7 +131,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool StopCellEditing()
         {
-            return IExecuteWithSignature<bool>("stopCellEditing", "()Z");
+            return IExecute<bool>("stopCellEditing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractCellEditor.html#addCellEditorListener(javax.swing.event.CellEditorListener)"/>
@@ -139,14 +139,14 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.CellEditorListener"/></param>
         public void AddCellEditorListener(Javax.Swing.Event.CellEditorListener arg0)
         {
-            IExecuteWithSignature("addCellEditorListener", "(Ljavax/swing/event/CellEditorListener;)V", arg0);
+            IExecute("addCellEditorListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractCellEditor.html#cancelCellEditing()"/>
         /// </summary>
         public void CancelCellEditing()
         {
-            IExecuteWithSignature("cancelCellEditing", "()V");
+            IExecute("cancelCellEditing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractCellEditor.html#removeCellEditorListener(javax.swing.event.CellEditorListener)"/>
@@ -154,7 +154,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Event.CellEditorListener"/></param>
         public void RemoveCellEditorListener(Javax.Swing.Event.CellEditorListener arg0)
         {
-            IExecuteWithSignature("removeCellEditorListener", "(Ljavax/swing/event/CellEditorListener;)V", arg0);
+            IExecute("removeCellEditorListener", arg0);
         }
 
         #endregion

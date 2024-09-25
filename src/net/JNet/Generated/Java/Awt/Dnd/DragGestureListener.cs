@@ -204,7 +204,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DragGestureEvent"/></param>
         public override void DragGestureRecognized(Java.Awt.Dnd.DragGestureEvent arg0)
         {
-            IExecuteWithSignature("dragGestureRecognized", "(Ljava/awt/dnd/DragGestureEvent;)V", arg0);
+            IExecute("dragGestureRecognized", arg0);
         }
 
         #endregion

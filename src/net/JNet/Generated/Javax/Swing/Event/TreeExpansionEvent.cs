@@ -104,7 +104,7 @@ namespace Javax.Swing.Event
         /// </summary>
         public Javax.Swing.Tree.TreePath Path
         {
-            get { return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getPath", "()Ljavax/swing/tree/TreePath;"); }
+            get { return IExecute<Javax.Swing.Tree.TreePath>("getPath"); }
         }
 
         #endregion

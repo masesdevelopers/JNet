@@ -139,42 +139,42 @@ namespace Org.W3c.Dom
         /// </summary>
         public Org.W3c.Dom.NamedNodeMap Entities
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.NamedNodeMap>("getEntities", "()Lorg/w3c/dom/NamedNodeMap;"); }
+            get { return IExecute<Org.W3c.Dom.NamedNodeMap>("getEntities"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getInternalSubset()"/> 
         /// </summary>
         public Java.Lang.String InternalSubset
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInternalSubset", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getInternalSubset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getNotations()"/> 
         /// </summary>
         public Org.W3c.Dom.NamedNodeMap Notations
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.NamedNodeMap>("getNotations", "()Lorg/w3c/dom/NamedNodeMap;"); }
+            get { return IExecute<Org.W3c.Dom.NamedNodeMap>("getNotations"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getPublicId()"/> 
         /// </summary>
         public Java.Lang.String PublicId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPublicId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getSystemId()"/> 
         /// </summary>
         public Java.Lang.String SystemId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSystemId"); }
         }
 
         #endregion

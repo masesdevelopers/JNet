@@ -115,7 +115,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.MemoryNotificationInfo"/></returns>
         public static Java.Lang.Management.MemoryNotificationInfo From(Javax.Management.Openmbean.CompositeData arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Management.MemoryNotificationInfo>(LocalBridgeClazz, "from", "(Ljavax/management/openmbean/CompositeData;)Ljava/lang/management/MemoryNotificationInfo;", arg0);
+            return SExecute<Java.Lang.Management.MemoryNotificationInfo>(LocalBridgeClazz, "from", arg0);
         }
 
         #endregion
@@ -126,21 +126,21 @@ namespace Java.Lang.Management
         /// </summary>
         public long Count
         {
-            get { return IExecuteWithSignature<long>("getCount", "()J"); }
+            get { return IExecute<long>("getCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#getPoolName()"/> 
         /// </summary>
         public Java.Lang.String PoolName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPoolName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPoolName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#getUsage()"/> 
         /// </summary>
         public Java.Lang.Management.MemoryUsage Usage
         {
-            get { return IExecuteWithSignature<Java.Lang.Management.MemoryUsage>("getUsage", "()Ljava/lang/management/MemoryUsage;"); }
+            get { return IExecute<Java.Lang.Management.MemoryUsage>("getUsage"); }
         }
 
         #endregion

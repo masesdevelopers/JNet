@@ -126,7 +126,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool Value()
         {
-            return IExecuteWithSignature<bool>("value", "()Z");
+            return IExecute<bool>("value");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#delegate()"/>
@@ -134,7 +134,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Delegate()
         {
-            return IExecuteWithSignature<Java.Lang.String>("delegate", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("delegate");
         }
 
         #endregion

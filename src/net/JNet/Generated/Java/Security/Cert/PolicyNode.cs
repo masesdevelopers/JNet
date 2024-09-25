@@ -144,42 +144,42 @@ namespace Java.Security.Cert
         /// </summary>
         public Java.Util.Iterator Children
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator>("getChildren", "()Ljava/util/Iterator;"); }
+            get { return IExecute<Java.Util.Iterator>("getChildren"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getDepth()"/> 
         /// </summary>
         public int Depth
         {
-            get { return IExecuteWithSignature<int>("getDepth", "()I"); }
+            get { return IExecute<int>("getDepth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getExpectedPolicies()"/> 
         /// </summary>
         public Java.Util.Set<Java.Lang.String> ExpectedPolicies
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getExpectedPolicies", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set<Java.Lang.String>>("getExpectedPolicies"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getParent()"/> 
         /// </summary>
         public Java.Security.Cert.PolicyNode Parent
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.PolicyNode>("getParent", "()Ljava/security/cert/PolicyNode;"); }
+            get { return IExecute<Java.Security.Cert.PolicyNode>("getParent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getPolicyQualifiers()"/> 
         /// </summary>
         public Java.Util.Set PolicyQualifiers
         {
-            get { return IExecuteWithSignature<Java.Util.Set>("getPolicyQualifiers", "()Ljava/util/Set;"); }
+            get { return IExecute<Java.Util.Set>("getPolicyQualifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getValidPolicy()"/> 
         /// </summary>
         public Java.Lang.String ValidPolicy
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getValidPolicy", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getValidPolicy"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()"/>
@@ -187,7 +187,7 @@ namespace Java.Security.Cert
         /// <returns><see cref="bool"/></returns>
         public bool IsCritical()
         {
-            return IExecuteWithSignature<bool>("isCritical", "()Z");
+            return IExecute<bool>("isCritical");
         }
 
         #endregion

@@ -153,7 +153,7 @@ namespace Java.Rmi
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public object Get()
         {
-            return IExecuteWithSignature("get", "()Ljava/lang/Object;");
+            return IExecute("get");
         }
 
         #endregion
@@ -207,7 +207,7 @@ namespace Java.Rmi
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public T Get()
         {
-            return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
+            return IExecute<T>("get");
         }
 
         #endregion

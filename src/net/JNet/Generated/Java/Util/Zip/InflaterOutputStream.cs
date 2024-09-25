@@ -123,7 +123,7 @@ namespace Java.Util.Zip
         /// <exception cref="Java.Io.IOException"/>
         public void Finish()
         {
-            IExecuteWithSignature("finish", "()V");
+            IExecute("finish");
         }
 
         #endregion

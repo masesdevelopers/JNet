@@ -91,7 +91,7 @@ namespace Java.Security.Cert
         /// </summary>
         public static Java.Lang.String DefaultType
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultType", "()Ljava/lang/String;"); }
+            get { return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDefaultType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilder.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -124,7 +124,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Cert.CertPathBuilder GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Security.Cert.CertPathBuilder>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/cert/CertPathBuilder;", arg0);
+            return SExecute<Java.Security.Cert.CertPathBuilder>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -135,21 +135,21 @@ namespace Java.Security.Cert
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilder.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilder.html#getRevocationChecker()"/> 
         /// </summary>
         public Java.Security.Cert.CertPathChecker RevocationChecker
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.CertPathChecker>("getRevocationChecker", "()Ljava/security/cert/CertPathChecker;"); }
+            get { return IExecute<Java.Security.Cert.CertPathChecker>("getRevocationChecker"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilder.html#build(java.security.cert.CertPathParameters)"/>
@@ -160,7 +160,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public Java.Security.Cert.CertPathBuilderResult Build(Java.Security.Cert.CertPathParameters arg0)
         {
-            return IExecuteWithSignature<Java.Security.Cert.CertPathBuilderResult>("build", "(Ljava/security/cert/CertPathParameters;)Ljava/security/cert/CertPathBuilderResult;", arg0);
+            return IExecute<Java.Security.Cert.CertPathBuilderResult>("build", arg0);
         }
 
         #endregion

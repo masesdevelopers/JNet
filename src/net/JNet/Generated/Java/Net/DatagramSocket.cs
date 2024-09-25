@@ -121,7 +121,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public static void SetDatagramSocketImplFactory(Java.Net.DatagramSocketImplFactory arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setDatagramSocketImplFactory", "(Ljava/net/DatagramSocketImplFactory;)V", arg0);
+            SExecute(LocalBridgeClazz, "setDatagramSocketImplFactory", arg0);
         }
 
         #endregion
@@ -132,91 +132,91 @@ namespace Java.Net
         /// </summary>
         public bool Broadcast
         {
-            get { return IExecuteWithSignature<bool>("getBroadcast", "()Z"); } set { IExecuteWithSignature("setBroadcast", "(Z)V", value); }
+            get { return IExecute<bool>("getBroadcast"); } set { IExecute("setBroadcast", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getChannel()"/> 
         /// </summary>
         public Java.Nio.Channels.DatagramChannel Channel
         {
-            get { return IExecuteWithSignature<Java.Nio.Channels.DatagramChannel>("getChannel", "()Ljava/nio/channels/DatagramChannel;"); }
+            get { return IExecute<Java.Nio.Channels.DatagramChannel>("getChannel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getInetAddress()"/> 
         /// </summary>
         public Java.Net.InetAddress InetAddress
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getInetAddress", "()Ljava/net/InetAddress;"); }
+            get { return IExecute<Java.Net.InetAddress>("getInetAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getLocalAddress()"/> 
         /// </summary>
         public Java.Net.InetAddress LocalAddress
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getLocalAddress", "()Ljava/net/InetAddress;"); }
+            get { return IExecute<Java.Net.InetAddress>("getLocalAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getLocalPort()"/> 
         /// </summary>
         public int LocalPort
         {
-            get { return IExecuteWithSignature<int>("getLocalPort", "()I"); }
+            get { return IExecute<int>("getLocalPort"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getLocalSocketAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress LocalSocketAddress
         {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalSocketAddress", "()Ljava/net/SocketAddress;"); }
+            get { return IExecute<Java.Net.SocketAddress>("getLocalSocketAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getPort()"/> 
         /// </summary>
         public int Port
         {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); }
+            get { return IExecute<int>("getPort"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getReceiveBufferSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setReceiveBufferSize(int)"/>
         /// </summary>
         public int ReceiveBufferSize
         {
-            get { return IExecuteWithSignature<int>("getReceiveBufferSize", "()I"); } set { IExecuteWithSignature("setReceiveBufferSize", "(I)V", value); }
+            get { return IExecute<int>("getReceiveBufferSize"); } set { IExecute("setReceiveBufferSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getRemoteSocketAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress RemoteSocketAddress
         {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getRemoteSocketAddress", "()Ljava/net/SocketAddress;"); }
+            get { return IExecute<Java.Net.SocketAddress>("getRemoteSocketAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getReuseAddress()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setReuseAddress(boolean)"/>
         /// </summary>
         public bool ReuseAddress
         {
-            get { return IExecuteWithSignature<bool>("getReuseAddress", "()Z"); } set { IExecuteWithSignature("setReuseAddress", "(Z)V", value); }
+            get { return IExecute<bool>("getReuseAddress"); } set { IExecute("setReuseAddress", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getSendBufferSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setSendBufferSize(int)"/>
         /// </summary>
         public int SendBufferSize
         {
-            get { return IExecuteWithSignature<int>("getSendBufferSize", "()I"); } set { IExecuteWithSignature("setSendBufferSize", "(I)V", value); }
+            get { return IExecute<int>("getSendBufferSize"); } set { IExecute("setSendBufferSize", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getSoTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setSoTimeout(int)"/>
         /// </summary>
         public int SoTimeout
         {
-            get { return IExecuteWithSignature<int>("getSoTimeout", "()I"); } set { IExecuteWithSignature("setSoTimeout", "(I)V", value); }
+            get { return IExecute<int>("getSoTimeout"); } set { IExecute("setSoTimeout", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getTrafficClass()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setTrafficClass(int)"/>
         /// </summary>
         public int TrafficClass
         {
-            get { return IExecuteWithSignature<int>("getTrafficClass", "()I"); } set { IExecuteWithSignature("setTrafficClass", "(I)V", value); }
+            get { return IExecute<int>("getTrafficClass"); } set { IExecute("setTrafficClass", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setOption(java.net.SocketOption,java.lang.Object)"/>
@@ -239,7 +239,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public T GetOption<T>(Java.Net.SocketOption<T> arg0)
         {
-            return IExecuteWithSignature<T>("getOption", "(Ljava/net/SocketOption;)Ljava/lang/Object;", arg0);
+            return IExecute<T>("getOption", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isBound()"/>
@@ -247,7 +247,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsBound()
         {
-            return IExecuteWithSignature<bool>("isBound", "()Z");
+            return IExecute<bool>("isBound");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isClosed()"/>
@@ -255,7 +255,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
         {
-            return IExecuteWithSignature<bool>("isClosed", "()Z");
+            return IExecute<bool>("isClosed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isConnected()"/>
@@ -263,7 +263,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsConnected()
         {
-            return IExecuteWithSignature<bool>("isConnected", "()Z");
+            return IExecute<bool>("isConnected");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#supportedOptions()"/>
@@ -271,7 +271,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#bind(java.net.SocketAddress)"/>
@@ -280,7 +280,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public void Bind(Java.Net.SocketAddress arg0)
         {
-            IExecuteWithSignature("bind", "(Ljava/net/SocketAddress;)V", arg0);
+            IExecute("bind", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#receive(java.net.DatagramPacket)"/>
@@ -289,14 +289,14 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Receive(Java.Net.DatagramPacket arg0)
         {
-            IExecuteWithSignature("receive", "(Ljava/net/DatagramPacket;)V", arg0);
+            IExecute("receive", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#connect(java.net.InetAddress,int)"/>
@@ -314,14 +314,14 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public void Connect(Java.Net.SocketAddress arg0)
         {
-            IExecuteWithSignature("connect", "(Ljava/net/SocketAddress;)V", arg0);
+            IExecute("connect", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#disconnect()"/>
         /// </summary>
         public void Disconnect()
         {
-            IExecuteWithSignature("disconnect", "()V");
+            IExecute("disconnect");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#send(java.net.DatagramPacket)"/>
@@ -330,7 +330,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Send(Java.Net.DatagramPacket arg0)
         {
-            IExecuteWithSignature("send", "(Ljava/net/DatagramPacket;)V", arg0);
+            IExecute("send", arg0);
         }
 
         #endregion

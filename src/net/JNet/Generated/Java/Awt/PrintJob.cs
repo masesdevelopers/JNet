@@ -97,21 +97,21 @@ namespace Java.Awt
         /// </summary>
         public Java.Awt.Graphics Graphics
         {
-            get { return IExecuteWithSignature<Java.Awt.Graphics>("getGraphics", "()Ljava/awt/Graphics;"); }
+            get { return IExecute<Java.Awt.Graphics>("getGraphics"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#getPageDimension()"/> 
         /// </summary>
         public Java.Awt.Dimension PageDimension
         {
-            get { return IExecuteWithSignature<Java.Awt.Dimension>("getPageDimension", "()Ljava/awt/Dimension;"); }
+            get { return IExecute<Java.Awt.Dimension>("getPageDimension"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#getPageResolution()"/> 
         /// </summary>
         public int PageResolution
         {
-            get { return IExecuteWithSignature<int>("getPageResolution", "()I"); }
+            get { return IExecute<int>("getPageResolution"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#lastPageFirst()"/>
@@ -119,14 +119,14 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool LastPageFirst()
         {
-            return IExecuteWithSignature<bool>("lastPageFirst", "()Z");
+            return IExecute<bool>("lastPageFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#end()"/>
         /// </summary>
         public void End()
         {
-            IExecuteWithSignature("end", "()V");
+            IExecute("end");
         }
 
         #endregion

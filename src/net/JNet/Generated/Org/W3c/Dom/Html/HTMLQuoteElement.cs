@@ -119,7 +119,7 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Cite
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCite", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCite", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCite"); } set { IExecute("setCite", value); }
         }
 
         #endregion

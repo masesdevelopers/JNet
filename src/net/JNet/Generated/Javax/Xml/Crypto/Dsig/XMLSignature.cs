@@ -206,42 +206,42 @@ namespace Javax.Xml.Crypto.Dsig
         /// </summary>
         public Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue GetSignatureValue
         {
-            get { return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue>("getSignatureValue", "()Ljavax/xml/crypto/dsig/XMLSignature$SignatureValue;"); }
+            get { return IExecute<Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue>("getSignatureValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getId()"/> 
         /// </summary>
         public Java.Lang.String Id
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getKeyInfo()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo KeyInfo
         {
-            get { return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo>("getKeyInfo", "()Ljavax/xml/crypto/dsig/keyinfo/KeyInfo;"); }
+            get { return IExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo>("getKeyInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getKeySelectorResult()"/> 
         /// </summary>
         public Javax.Xml.Crypto.KeySelectorResult KeySelectorResult
         {
-            get { return IExecuteWithSignature<Javax.Xml.Crypto.KeySelectorResult>("getKeySelectorResult", "()Ljavax/xml/crypto/KeySelectorResult;"); }
+            get { return IExecute<Javax.Xml.Crypto.KeySelectorResult>("getKeySelectorResult"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getObjects()"/> 
         /// </summary>
         public Java.Util.List<Javax.Xml.Crypto.Dsig.XMLObject> Objects
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.Dsig.XMLObject>>("getObjects", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Javax.Xml.Crypto.Dsig.XMLObject>>("getObjects"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getSignedInfo()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.SignedInfo SignedInfo
         {
-            get { return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.SignedInfo>("getSignedInfo", "()Ljavax/xml/crypto/dsig/SignedInfo;"); }
+            get { return IExecute<Javax.Xml.Crypto.Dsig.SignedInfo>("getSignedInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#validate(javax.xml.crypto.dsig.XMLValidateContext)"/>
@@ -251,7 +251,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Javax.Xml.Crypto.Dsig.XMLSignatureException"/>
         public bool Validate(Javax.Xml.Crypto.Dsig.XMLValidateContext arg0)
         {
-            return IExecuteWithSignature<bool>("validate", "(Ljavax/xml/crypto/dsig/XMLValidateContext;)Z", arg0);
+            return IExecute<bool>("validate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#sign(javax.xml.crypto.dsig.XMLSignContext)"/>
@@ -261,7 +261,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Javax.Xml.Crypto.Dsig.XMLSignatureException"/>
         public void Sign(Javax.Xml.Crypto.Dsig.XMLSignContext arg0)
         {
-            IExecuteWithSignature("sign", "(Ljavax/xml/crypto/dsig/XMLSignContext;)V", arg0);
+            IExecute("sign", arg0);
         }
 
         #endregion

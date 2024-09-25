@@ -136,21 +136,21 @@ namespace Java.Awt.EventNs
         /// </summary>
         public object Item
         {
-            get { return IExecuteWithSignature("getItem", "()Ljava/lang/Object;"); }
+            get { return IExecute("getItem"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#getItemSelectable()"/> 
         /// </summary>
         public Java.Awt.ItemSelectable ItemSelectable
         {
-            get { return IExecuteWithSignature<Java.Awt.ItemSelectable>("getItemSelectable", "()Ljava/awt/ItemSelectable;"); }
+            get { return IExecute<Java.Awt.ItemSelectable>("getItemSelectable"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#getStateChange()"/> 
         /// </summary>
         public int StateChange
         {
-            get { return IExecuteWithSignature<int>("getStateChange", "()I"); }
+            get { return IExecute<int>("getStateChange"); }
         }
 
         #endregion

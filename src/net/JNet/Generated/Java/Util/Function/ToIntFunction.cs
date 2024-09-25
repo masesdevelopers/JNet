@@ -251,7 +251,7 @@ namespace Java.Util.Function
         /// <returns><see cref="int"/></returns>
         public override int ApplyAsInt(object arg0)
         {
-            return IExecuteWithSignature<int>("applyAsInt", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("applyAsInt", arg0);
         }
 
         #endregion
@@ -379,7 +379,7 @@ namespace Java.Util.Function
         /// <returns><see cref="int"/></returns>
         public override int ApplyAsInt(T arg0)
         {
-            return IExecuteWithSignature<int>("applyAsInt", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("applyAsInt", arg0);
         }
 
         #endregion

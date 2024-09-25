@@ -91,7 +91,7 @@ namespace Java.Lang
         /// </summary>
         public static Java.Lang.Package[] Packages
         {
-            get { return SExecuteWithSignatureArray<Java.Lang.Package>(LocalBridgeClazz, "getPackages", "()[Ljava/lang/Package;"); }
+            get { return SExecuteArray<Java.Lang.Package>(LocalBridgeClazz, "getPackages"); }
         }
 
         #endregion
@@ -102,63 +102,63 @@ namespace Java.Lang
         /// </summary>
         public Java.Lang.Annotation.Annotation[] Annotations
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
+            get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getAnnotations"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getDeclaredAnnotations()"/> 
         /// </summary>
         public Java.Lang.Annotation.Annotation[] DeclaredAnnotations
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
+            get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getImplementationTitle()"/> 
         /// </summary>
         public Java.Lang.String ImplementationTitle
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImplementationTitle", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getImplementationTitle"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getImplementationVendor()"/> 
         /// </summary>
         public Java.Lang.String ImplementationVendor
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImplementationVendor", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getImplementationVendor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getImplementationVersion()"/> 
         /// </summary>
         public Java.Lang.String ImplementationVersion
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getImplementationVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getImplementationVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getSpecificationTitle()"/> 
         /// </summary>
         public Java.Lang.String SpecificationTitle
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSpecificationTitle", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSpecificationTitle"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getSpecificationVendor()"/> 
         /// </summary>
         public Java.Lang.String SpecificationVendor
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSpecificationVendor", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSpecificationVendor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getSpecificationVersion()"/> 
         /// </summary>
         public Java.Lang.String SpecificationVersion
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSpecificationVersion", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSpecificationVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getAnnotation(java.lang.Class)"/>
@@ -207,7 +207,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsAnnotationPresent(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<bool>("isAnnotationPresent", "(Ljava/lang/Class;)Z", arg0);
+            return IExecute<bool>("isAnnotationPresent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#isCompatibleWith(java.lang.String)"/>
@@ -217,7 +217,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public bool IsCompatibleWith(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("isCompatibleWith", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("isCompatibleWith", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#isSealed()"/>
@@ -225,7 +225,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsSealed()
         {
-            return IExecuteWithSignature<bool>("isSealed", "()Z");
+            return IExecute<bool>("isSealed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#isSealed(java.net.URL)"/>
@@ -234,7 +234,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsSealed(Java.Net.URL arg0)
         {
-            return IExecuteWithSignature<bool>("isSealed", "(Ljava/net/URL;)Z", arg0);
+            return IExecute<bool>("isSealed", arg0);
         }
 
         #endregion

@@ -120,42 +120,42 @@ namespace Java.Util.Concurrent
         /// </summary>
         public int ArrivedParties
         {
-            get { return IExecuteWithSignature<int>("getArrivedParties", "()I"); }
+            get { return IExecute<int>("getArrivedParties"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getParent()"/> 
         /// </summary>
         public Java.Util.Concurrent.Phaser Parent
         {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.Phaser>("getParent", "()Ljava/util/concurrent/Phaser;"); }
+            get { return IExecute<Java.Util.Concurrent.Phaser>("getParent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getPhase()"/> 
         /// </summary>
         public int Phase
         {
-            get { return IExecuteWithSignature<int>("getPhase", "()I"); }
+            get { return IExecute<int>("getPhase"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getRegisteredParties()"/> 
         /// </summary>
         public int RegisteredParties
         {
-            get { return IExecuteWithSignature<int>("getRegisteredParties", "()I"); }
+            get { return IExecute<int>("getRegisteredParties"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getRoot()"/> 
         /// </summary>
         public Java.Util.Concurrent.Phaser Root
         {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.Phaser>("getRoot", "()Ljava/util/concurrent/Phaser;"); }
+            get { return IExecute<Java.Util.Concurrent.Phaser>("getRoot"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getUnarrivedParties()"/> 
         /// </summary>
         public int UnarrivedParties
         {
-            get { return IExecuteWithSignature<int>("getUnarrivedParties", "()I"); }
+            get { return IExecute<int>("getUnarrivedParties"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#isTerminated()"/>
@@ -163,7 +163,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminated()
         {
-            return IExecuteWithSignature<bool>("isTerminated", "()Z");
+            return IExecute<bool>("isTerminated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arrive()"/>
@@ -171,7 +171,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int Arrive()
         {
-            return IExecuteWithSignature<int>("arrive", "()I");
+            return IExecute<int>("arrive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndAwaitAdvance()"/>
@@ -179,7 +179,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int ArriveAndAwaitAdvance()
         {
-            return IExecuteWithSignature<int>("arriveAndAwaitAdvance", "()I");
+            return IExecute<int>("arriveAndAwaitAdvance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndDeregister()"/>
@@ -187,7 +187,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int ArriveAndDeregister()
         {
-            return IExecuteWithSignature<int>("arriveAndDeregister", "()I");
+            return IExecute<int>("arriveAndDeregister");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvance(int)"/>
@@ -196,7 +196,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int AwaitAdvance(int arg0)
         {
-            return IExecuteWithSignature<int>("awaitAdvance", "(I)I", arg0);
+            return IExecute<int>("awaitAdvance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int,long,java.util.concurrent.TimeUnit)"/>
@@ -219,7 +219,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public int AwaitAdvanceInterruptibly(int arg0)
         {
-            return IExecuteWithSignature<int>("awaitAdvanceInterruptibly", "(I)I", arg0);
+            return IExecute<int>("awaitAdvanceInterruptibly", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#bulkRegister(int)"/>
@@ -228,7 +228,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int BulkRegister(int arg0)
         {
-            return IExecuteWithSignature<int>("bulkRegister", "(I)I", arg0);
+            return IExecute<int>("bulkRegister", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#register()"/>
@@ -236,14 +236,14 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int Register()
         {
-            return IExecuteWithSignature<int>("register", "()I");
+            return IExecute<int>("register");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#forceTermination()"/>
         /// </summary>
         public void ForceTermination()
         {
-            IExecuteWithSignature("forceTermination", "()V");
+            IExecute("forceTermination");
         }
 
         #endregion

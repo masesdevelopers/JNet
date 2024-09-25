@@ -264,7 +264,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
         public override void AncestorAdded(Javax.Swing.Event.AncestorEvent arg0)
         {
-            IExecuteWithSignature("ancestorAdded", "(Ljavax/swing/event/AncestorEvent;)V", arg0);
+            IExecute("ancestorAdded", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorMoved(javax.swing.event.AncestorEvent)"/>
@@ -272,7 +272,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
         public override void AncestorMoved(Javax.Swing.Event.AncestorEvent arg0)
         {
-            IExecuteWithSignature("ancestorMoved", "(Ljavax/swing/event/AncestorEvent;)V", arg0);
+            IExecute("ancestorMoved", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorRemoved(javax.swing.event.AncestorEvent)"/>
@@ -280,7 +280,7 @@ namespace Javax.Swing.Event
         /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
         public override void AncestorRemoved(Javax.Swing.Event.AncestorEvent arg0)
         {
-            IExecuteWithSignature("ancestorRemoved", "(Ljavax/swing/event/AncestorEvent;)V", arg0);
+            IExecute("ancestorRemoved", arg0);
         }
 
         #endregion

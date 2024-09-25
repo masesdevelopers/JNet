@@ -191,7 +191,7 @@ namespace Javax.Xml.Xpath
         /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
         public Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type()
         {
-            return IExecuteWithSignature<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("type", "()Ljavax/xml/xpath/XPathEvaluationResult$XPathResultType;");
+            return IExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("type");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
@@ -199,7 +199,7 @@ namespace Javax.Xml.Xpath
         /// <returns><see cref="object"/></returns>
         public object Value()
         {
-            return IExecuteWithSignature("value", "()Ljava/lang/Object;");
+            return IExecute("value");
         }
 
         #endregion
@@ -363,7 +363,7 @@ namespace Javax.Xml.Xpath
         /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
         public Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type()
         {
-            return IExecuteWithSignature<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("type", "()Ljavax/xml/xpath/XPathEvaluationResult$XPathResultType;");
+            return IExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("type");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
@@ -371,7 +371,7 @@ namespace Javax.Xml.Xpath
         /// <returns><typeparamref name="T"/></returns>
         public T Value()
         {
-            return IExecuteWithSignature<T>("value", "()Ljava/lang/Object;");
+            return IExecute<T>("value");
         }
 
         #endregion

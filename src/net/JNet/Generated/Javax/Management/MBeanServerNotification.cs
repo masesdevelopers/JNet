@@ -118,7 +118,7 @@ namespace Javax.Management
         /// </summary>
         public Javax.Management.ObjectName MBeanName
         {
-            get { return IExecuteWithSignature<Javax.Management.ObjectName>("getMBeanName", "()Ljavax/management/ObjectName;"); }
+            get { return IExecute<Javax.Management.ObjectName>("getMBeanName"); }
         }
 
         #endregion

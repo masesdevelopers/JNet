@@ -121,7 +121,7 @@ namespace Java.Lang.Annotation
         /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
         public Java.Lang.Annotation.RetentionPolicy Value()
         {
-            return IExecuteWithSignature<Java.Lang.Annotation.RetentionPolicy>("value", "()Ljava/lang/annotation/RetentionPolicy;");
+            return IExecute<Java.Lang.Annotation.RetentionPolicy>("value");
         }
 
         #endregion

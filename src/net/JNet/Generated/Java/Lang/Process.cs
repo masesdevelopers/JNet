@@ -97,21 +97,21 @@ namespace Java.Lang
         /// </summary>
         public Java.Io.InputStream ErrorStream
         {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getErrorStream", "()Ljava/io/InputStream;"); }
+            get { return IExecute<Java.Io.InputStream>("getErrorStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#getInputStream()"/> 
         /// </summary>
         public Java.Io.InputStream InputStream
         {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;"); }
+            get { return IExecute<Java.Io.InputStream>("getInputStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#getOutputStream()"/> 
         /// </summary>
         public Java.Io.OutputStream OutputStream
         {
-            get { return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;"); }
+            get { return IExecute<Java.Io.OutputStream>("getOutputStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#exitValue()"/>
@@ -119,7 +119,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int ExitValue()
         {
-            return IExecuteWithSignature<int>("exitValue", "()I");
+            return IExecute<int>("exitValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#waitFor()"/>
@@ -128,14 +128,14 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public int WaitFor()
         {
-            return IExecuteWithSignature<int>("waitFor", "()I");
+            return IExecute<int>("waitFor");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#destroy()"/>
         /// </summary>
         public void Destroy()
         {
-            IExecuteWithSignature("destroy", "()V");
+            IExecute("destroy");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#isAlive()"/>
@@ -143,7 +143,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsAlive()
         {
-            return IExecuteWithSignature<bool>("isAlive", "()Z");
+            return IExecute<bool>("isAlive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#supportsNormalTermination()"/>
@@ -151,7 +151,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool SupportsNormalTermination()
         {
-            return IExecuteWithSignature<bool>("supportsNormalTermination", "()Z");
+            return IExecute<bool>("supportsNormalTermination");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#waitFor(long,java.util.concurrent.TimeUnit)"/>
@@ -170,7 +170,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Process"/></returns>
         public Java.Lang.Process DestroyForcibly()
         {
-            return IExecuteWithSignature<Java.Lang.Process>("destroyForcibly", "()Ljava/lang/Process;");
+            return IExecute<Java.Lang.Process>("destroyForcibly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#toHandle()"/>
@@ -178,7 +178,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ProcessHandle"/></returns>
         public Java.Lang.ProcessHandle ToHandle()
         {
-            return IExecuteWithSignature<Java.Lang.ProcessHandle>("toHandle", "()Ljava/lang/ProcessHandle;");
+            return IExecute<Java.Lang.ProcessHandle>("toHandle");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#info()"/>
@@ -186,7 +186,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ProcessHandle.Info"/></returns>
         public Java.Lang.ProcessHandle.Info Info()
         {
-            return IExecuteWithSignature<Java.Lang.ProcessHandle.Info>("info", "()Ljava/lang/ProcessHandle$Info;");
+            return IExecute<Java.Lang.ProcessHandle.Info>("info");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#onExit()"/>
@@ -194,7 +194,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Lang.Process> OnExit()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Lang.Process>>("onExit", "()Ljava/util/concurrent/CompletableFuture;");
+            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Process>>("onExit");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#children()"/>
@@ -202,7 +202,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.ProcessHandle> Children()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.ProcessHandle>>("children", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream<Java.Lang.ProcessHandle>>("children");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#descendants()"/>
@@ -210,7 +210,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.ProcessHandle> Descendants()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.ProcessHandle>>("descendants", "()Ljava/util/stream/Stream;");
+            return IExecute<Java.Util.Stream.Stream<Java.Lang.ProcessHandle>>("descendants");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#pid()"/>
@@ -218,7 +218,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public long Pid()
         {
-            return IExecuteWithSignature<long>("pid", "()J");
+            return IExecute<long>("pid");
         }
 
         #endregion

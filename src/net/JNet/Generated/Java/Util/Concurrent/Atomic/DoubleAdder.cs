@@ -96,7 +96,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="double"/></returns>
         public double Sum()
         {
-            return IExecuteWithSignature<double>("sum", "()D");
+            return IExecute<double>("sum");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#sumThenReset()"/>
@@ -104,7 +104,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="double"/></returns>
         public double SumThenReset()
         {
-            return IExecuteWithSignature<double>("sumThenReset", "()D");
+            return IExecute<double>("sumThenReset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#add(double)"/>
@@ -112,14 +112,14 @@ namespace Java.Util.Concurrent.Atomic
         /// <param name="arg0"><see cref="double"/></param>
         public void Add(double arg0)
         {
-            IExecuteWithSignature("add", "(D)V", arg0);
+            IExecute("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
 
         #endregion

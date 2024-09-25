@@ -105,7 +105,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></returns>
         public Javax.Swing.Plaf.Synth.SynthContext GetContext(Javax.Swing.JComponent arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Plaf.Synth.SynthContext>("getContext", "(Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/SynthContext;", arg0);
+            return IExecute<Javax.Swing.Plaf.Synth.SynthContext>("getContext", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthSeparatorUI.html#installDefaults(javax.swing.JSeparator)"/>
@@ -113,7 +113,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Javax.Swing.JSeparator"/></param>
         public void InstallDefaults(Javax.Swing.JSeparator arg0)
         {
-            IExecuteWithSignature("installDefaults", "(Ljavax/swing/JSeparator;)V", arg0);
+            IExecute("installDefaults", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthSeparatorUI.html#installListeners(javax.swing.JSeparator)"/>
@@ -121,7 +121,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Javax.Swing.JSeparator"/></param>
         public void InstallListeners(Javax.Swing.JSeparator arg0)
         {
-            IExecuteWithSignature("installListeners", "(Ljavax/swing/JSeparator;)V", arg0);
+            IExecute("installListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthSeparatorUI.html#paintBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
@@ -142,7 +142,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
-            IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
+            IExecute("propertyChange", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthSeparatorUI.html#uninstallDefaults(javax.swing.JSeparator)"/>
@@ -150,7 +150,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Javax.Swing.JSeparator"/></param>
         public void UninstallDefaults(Javax.Swing.JSeparator arg0)
         {
-            IExecuteWithSignature("uninstallDefaults", "(Ljavax/swing/JSeparator;)V", arg0);
+            IExecute("uninstallDefaults", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthSeparatorUI.html#uninstallListeners(javax.swing.JSeparator)"/>
@@ -158,7 +158,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Javax.Swing.JSeparator"/></param>
         public void UninstallListeners(Javax.Swing.JSeparator arg0)
         {
-            IExecuteWithSignature("uninstallListeners", "(Ljavax/swing/JSeparator;)V", arg0);
+            IExecute("uninstallListeners", arg0);
         }
 
         #endregion

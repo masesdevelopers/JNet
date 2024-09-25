@@ -166,21 +166,21 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public Java.Lang.String CssText
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCssText", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCssText", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCssText"); } set { IExecute("setCssText", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleDeclaration.html#getLength()"/> 
         /// </summary>
         public int Length
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            get { return IExecute<int>("getLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleDeclaration.html#getParentRule()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSRule ParentRule
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Css.CSSRule>("getParentRule", "()Lorg/w3c/dom/css/CSSRule;"); }
+            get { return IExecute<Org.W3c.Dom.Css.CSSRule>("getParentRule"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleDeclaration.html#getPropertyPriority(java.lang.String)"/>
@@ -189,7 +189,7 @@ namespace Org.W3c.Dom.Css
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetPropertyPriority(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getPropertyPriority", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getPropertyPriority", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleDeclaration.html#getPropertyValue(java.lang.String)"/>
@@ -198,7 +198,7 @@ namespace Org.W3c.Dom.Css
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetPropertyValue(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getPropertyValue", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getPropertyValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleDeclaration.html#item(int)"/>
@@ -207,7 +207,7 @@ namespace Org.W3c.Dom.Css
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Item(int arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("item", "(I)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("item", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleDeclaration.html#removeProperty(java.lang.String)"/>
@@ -217,7 +217,7 @@ namespace Org.W3c.Dom.Css
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Java.Lang.String RemoveProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("removeProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("removeProperty", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleDeclaration.html#getPropertyCSSValue(java.lang.String)"/>
@@ -226,7 +226,7 @@ namespace Org.W3c.Dom.Css
         /// <returns><see cref="Org.W3c.Dom.Css.CSSValue"/></returns>
         public Org.W3c.Dom.Css.CSSValue GetPropertyCSSValue(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Css.CSSValue>("getPropertyCSSValue", "(Ljava/lang/String;)Lorg/w3c/dom/css/CSSValue;", arg0);
+            return IExecute<Org.W3c.Dom.Css.CSSValue>("getPropertyCSSValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleDeclaration.html#setProperty(java.lang.String,java.lang.String,java.lang.String)"/>

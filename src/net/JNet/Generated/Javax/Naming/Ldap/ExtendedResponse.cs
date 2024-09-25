@@ -123,14 +123,14 @@ namespace Javax.Naming.Ldap
         /// </summary>
         public byte[] EncodedValue
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncodedValue", "()[B"); }
+            get { return IExecuteArray<byte>("getEncodedValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedResponse.html#getID()"/> 
         /// </summary>
         public Java.Lang.String ID
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getID", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getID"); }
         }
 
         #endregion

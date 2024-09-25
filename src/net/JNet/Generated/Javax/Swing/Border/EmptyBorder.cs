@@ -114,7 +114,7 @@ namespace Javax.Swing.Border
         /// </summary>
         public Java.Awt.Insets BorderInsets
         {
-            get { return IExecuteWithSignature<Java.Awt.Insets>("getBorderInsets", "()Ljava/awt/Insets;"); }
+            get { return IExecute<Java.Awt.Insets>("getBorderInsets"); }
         }
 
         #endregion

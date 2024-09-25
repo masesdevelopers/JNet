@@ -124,7 +124,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
         public static Java.Lang.ModuleNs.ModuleFinder Compose(params Java.Lang.ModuleNs.ModuleFinder[] arg0)
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "compose", "([Ljava/lang/module/ModuleFinder;)Ljava/lang/module/ModuleFinder;"); else return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "compose", "([Ljava/lang/module/ModuleFinder;)Ljava/lang/module/ModuleFinder;", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "compose"); else return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "compose", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#of(java.nio.file.Path[])"/>
@@ -133,7 +133,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
         public static Java.Lang.ModuleNs.ModuleFinder Of(params Java.Nio.File.Path[] arg0)
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "of", "([Ljava/nio/file/Path;)Ljava/lang/module/ModuleFinder;"); else return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "of", "([Ljava/nio/file/Path;)Ljava/lang/module/ModuleFinder;", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "of"); else return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#ofSystem()"/>
@@ -141,7 +141,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
         public static Java.Lang.ModuleNs.ModuleFinder OfSystem()
         {
-            return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "ofSystem", "()Ljava/lang/module/ModuleFinder;");
+            return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "ofSystem");
         }
 
         #endregion
@@ -154,7 +154,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference> Find(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference>>("find", "(Ljava/lang/String;)Ljava/util/Optional;", arg0);
+            return IExecute<Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference>>("find", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/>
@@ -162,7 +162,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.ModuleNs.ModuleReference> FindAll()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.ModuleNs.ModuleReference>>("findAll", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Lang.ModuleNs.ModuleReference>>("findAll");
         }
 
         #endregion

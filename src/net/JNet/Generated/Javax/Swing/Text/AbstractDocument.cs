@@ -1025,7 +1025,7 @@ namespace Javax.Swing.Text
             /// </summary>
             public Javax.Swing.Text.AttributeSet EmptySet
             {
-                get { return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getEmptySet", "()Ljavax/swing/text/AttributeSet;"); }
+                get { return IExecute<Javax.Swing.Text.AttributeSet>("getEmptySet"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#addAttribute(javax.swing.text.AttributeSet,java.lang.Object,java.lang.Object)"/>
@@ -1084,7 +1084,7 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
             public void Reclaim(Javax.Swing.Text.AttributeSet arg0)
             {
-                IExecuteWithSignature("reclaim", "(Ljavax/swing/text/AttributeSet;)V", arg0);
+                IExecute("reclaim", arg0);
             }
 
             #endregion
@@ -1134,7 +1134,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
             public Javax.Swing.Text.Element PositionToElement(int arg0)
             {
-                return IExecuteWithSignature<Javax.Swing.Text.Element>("positionToElement", "(I)Ljavax/swing/text/Element;", arg0);
+                return IExecute<Javax.Swing.Text.Element>("positionToElement", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.BranchElement.html#replace(int,int,javax.swing.text.Element[])"/>
@@ -1183,7 +1183,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="int"/></returns>
             public int Length()
             {
-                return IExecuteWithSignature<int>("length", "()I");
+                return IExecute<int>("length");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#getString(int,int)"/>
@@ -1204,7 +1204,7 @@ namespace Javax.Swing.Text
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public Javax.Swing.Text.Position CreatePosition(int arg0)
             {
-                return IExecuteWithSignature<Javax.Swing.Text.Position>("createPosition", "(I)Ljavax/swing/text/Position;", arg0);
+                return IExecute<Javax.Swing.Text.Position>("createPosition", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#insertString(int,java.lang.String)"/>
@@ -1290,28 +1290,28 @@ namespace Javax.Swing.Text
             /// </summary>
             public Javax.Swing.Text.Document Document
             {
-                get { return IExecuteWithSignature<Javax.Swing.Text.Document>("getDocument", "()Ljavax/swing/text/Document;"); }
+                get { return IExecute<Javax.Swing.Text.Document>("getDocument"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getLength()"/> 
             /// </summary>
             public int Length
             {
-                get { return IExecuteWithSignature<int>("getLength", "()I"); }
+                get { return IExecute<int>("getLength"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getOffset()"/> 
             /// </summary>
             public int Offset
             {
-                get { return IExecuteWithSignature<int>("getOffset", "()I"); }
+                get { return IExecute<int>("getOffset"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getType()"/> 
             /// </summary>
             public Javax.Swing.Event.DocumentEvent.EventType Type
             {
-                get { return IExecuteWithSignature<Javax.Swing.Event.DocumentEvent.EventType>("getType", "()Ljavax/swing/event/DocumentEvent$EventType;"); }
+                get { return IExecute<Javax.Swing.Event.DocumentEvent.EventType>("getType"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getChange(javax.swing.text.Element)"/>
@@ -1320,7 +1320,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Event.DocumentEvent.ElementChange"/></returns>
             public Javax.Swing.Event.DocumentEvent.ElementChange GetChange(Javax.Swing.Text.Element arg0)
             {
-                return IExecuteWithSignature<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", "(Ljavax/swing/text/Element;)Ljavax/swing/event/DocumentEvent$ElementChange;", arg0);
+                return IExecute<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", arg0);
             }
 
             #endregion
@@ -1369,28 +1369,28 @@ namespace Javax.Swing.Text
             /// </summary>
             public Javax.Swing.Text.Element[] ChildrenAdded
             {
-                get { return IExecuteWithSignatureArray<Javax.Swing.Text.Element>("getChildrenAdded", "()[Ljavax/swing/text/Element;"); }
+                get { return IExecuteArray<Javax.Swing.Text.Element>("getChildrenAdded"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getChildrenRemoved()"/> 
             /// </summary>
             public Javax.Swing.Text.Element[] ChildrenRemoved
             {
-                get { return IExecuteWithSignatureArray<Javax.Swing.Text.Element>("getChildrenRemoved", "()[Ljavax/swing/text/Element;"); }
+                get { return IExecuteArray<Javax.Swing.Text.Element>("getChildrenRemoved"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getElement()"/> 
             /// </summary>
             public Javax.Swing.Text.Element Element
             {
-                get { return IExecuteWithSignature<Javax.Swing.Text.Element>("getElement", "()Ljavax/swing/text/Element;"); }
+                get { return IExecute<Javax.Swing.Text.Element>("getElement"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getIndex()"/> 
             /// </summary>
             public int Index
             {
-                get { return IExecuteWithSignature<int>("getIndex", "()I"); }
+                get { return IExecute<int>("getIndex"); }
             }
 
             #endregion

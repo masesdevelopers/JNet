@@ -130,14 +130,14 @@ namespace Java.Sql
         /// </summary>
         public Java.Lang.String BaseTypeName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBaseTypeName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getBaseTypeName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getObject()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#setObject(java.lang.Object)"/>
         /// </summary>
         public object Object
         {
-            get { return IExecuteWithSignature("getObject", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setObject", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getObject"); } set { IExecute("setObject", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getObject(java.util.Map)"/>
@@ -147,7 +147,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetObject(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
         {
-            return IExecuteWithSignature("getObject", "(Ljava/util/Map;)Ljava/lang/Object;", arg0);
+            return IExecute("getObject", arg0);
         }
 
         #endregion

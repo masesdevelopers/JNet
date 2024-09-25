@@ -204,7 +204,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
         public override void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
         {
-            IExecuteWithSignature("itemStateChanged", "(Ljava/awt/event/ItemEvent;)V", arg0);
+            IExecute("itemStateChanged", arg0);
         }
 
         #endregion

@@ -160,49 +160,49 @@ namespace Javax.Swing.Text
         /// </summary>
         public Javax.Swing.Text.AttributeSet Attributes
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getAttributes", "()Ljavax/swing/text/AttributeSet;"); }
+            get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getDocument()"/> 
         /// </summary>
         public Javax.Swing.Text.Document Document
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.Document>("getDocument", "()Ljavax/swing/text/Document;"); }
+            get { return IExecute<Javax.Swing.Text.Document>("getDocument"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElementCount()"/> 
         /// </summary>
         public int ElementCount
         {
-            get { return IExecuteWithSignature<int>("getElementCount", "()I"); }
+            get { return IExecute<int>("getElementCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getEndOffset()"/> 
         /// </summary>
         public int EndOffset
         {
-            get { return IExecuteWithSignature<int>("getEndOffset", "()I"); }
+            get { return IExecute<int>("getEndOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getParentElement()"/> 
         /// </summary>
         public Javax.Swing.Text.Element ParentElement
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.Element>("getParentElement", "()Ljavax/swing/text/Element;"); }
+            get { return IExecute<Javax.Swing.Text.Element>("getParentElement"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getStartOffset()"/> 
         /// </summary>
         public int StartOffset
         {
-            get { return IExecuteWithSignature<int>("getStartOffset", "()I"); }
+            get { return IExecute<int>("getStartOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#isLeaf()"/>
@@ -210,7 +210,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsLeaf()
         {
-            return IExecuteWithSignature<bool>("isLeaf", "()Z");
+            return IExecute<bool>("isLeaf");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElementIndex(int)"/>
@@ -219,7 +219,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="int"/></returns>
         public int GetElementIndex(int arg0)
         {
-            return IExecuteWithSignature<int>("getElementIndex", "(I)I", arg0);
+            return IExecute<int>("getElementIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElement(int)"/>
@@ -228,7 +228,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetElement(int arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.Element>("getElement", "(I)Ljavax/swing/text/Element;", arg0);
+            return IExecute<Javax.Swing.Text.Element>("getElement", arg0);
         }
 
         #endregion

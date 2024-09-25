@@ -97,28 +97,28 @@ namespace Javax.Sound.Midi
         /// </summary>
         public object Data
         {
-            get { return IExecuteWithSignature("getData", "()Ljava/lang/Object;"); }
+            get { return IExecute("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html#getDataClass()"/> 
         /// </summary>
         public Java.Lang.Class DataClass
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDataClass", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getDataClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html#getSoundbank()"/> 
         /// </summary>
         public Javax.Sound.Midi.Soundbank Soundbank
         {
-            get { return IExecuteWithSignature<Javax.Sound.Midi.Soundbank>("getSoundbank", "()Ljavax/sound/midi/Soundbank;"); }
+            get { return IExecute<Javax.Sound.Midi.Soundbank>("getSoundbank"); }
         }
 
         #endregion

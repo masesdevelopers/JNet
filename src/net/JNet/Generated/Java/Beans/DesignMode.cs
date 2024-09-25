@@ -132,7 +132,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public bool IsDesignTime()
         {
-            return IExecuteWithSignature<bool>("isDesignTime", "()Z");
+            return IExecute<bool>("isDesignTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html#setDesignTime(boolean)"/>
@@ -140,7 +140,7 @@ namespace Java.Beans
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDesignTime(bool arg0)
         {
-            IExecuteWithSignature("setDesignTime", "(Z)V", arg0);
+            IExecute("setDesignTime", arg0);
         }
 
         #endregion

@@ -121,14 +121,14 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int Purge()
         {
-            return IExecuteWithSignature<int>("purge", "()I");
+            return IExecute<int>("purge");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#cancel()"/>
         /// </summary>
         public void Cancel()
         {
-            IExecuteWithSignature("cancel", "()V");
+            IExecute("cancel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,java.util.Date,long)"/>

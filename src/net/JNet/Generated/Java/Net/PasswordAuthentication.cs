@@ -104,14 +104,14 @@ namespace Java.Net
         /// </summary>
         public char[] Password
         {
-            get { return IExecuteWithSignatureArray<char>("getPassword", "()[C"); }
+            get { return IExecuteArray<char>("getPassword"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/PasswordAuthentication.html#getUserName()"/> 
         /// </summary>
         public Java.Lang.String UserName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUserName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getUserName"); }
         }
 
         #endregion

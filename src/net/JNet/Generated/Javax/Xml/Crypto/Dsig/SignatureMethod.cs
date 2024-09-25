@@ -259,7 +259,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec ParameterSpec
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+            get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec"); }
         }
 
         #endregion

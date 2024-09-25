@@ -99,7 +99,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.ServerSocketChannel Open()
         {
-            return SExecuteWithSignature<Java.Nio.Channels.ServerSocketChannel>(LocalBridgeClazz, "open", "()Ljava/nio/channels/ServerSocketChannel;");
+            return SExecute<Java.Nio.Channels.ServerSocketChannel>(LocalBridgeClazz, "open");
         }
 
         #endregion
@@ -110,7 +110,7 @@ namespace Java.Nio.Channels
         /// </summary>
         public Java.Net.SocketAddress LocalAddress
         {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalAddress", "()Ljava/net/SocketAddress;"); }
+            get { return IExecute<Java.Net.SocketAddress>("getLocalAddress"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#socket()"/>
@@ -118,7 +118,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Net.ServerSocket"/></returns>
         public Java.Net.ServerSocket Socket()
         {
-            return IExecuteWithSignature<Java.Net.ServerSocket>("socket", "()Ljava/net/ServerSocket;");
+            return IExecute<Java.Net.ServerSocket>("socket");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#bind(java.net.SocketAddress,int)"/>
@@ -138,7 +138,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SocketChannel Accept()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.SocketChannel>("accept", "()Ljava/nio/channels/SocketChannel;");
+            return IExecute<Java.Nio.Channels.SocketChannel>("accept");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#bind(java.net.SocketAddress)"/>
@@ -148,7 +148,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("bind", "(Ljava/net/SocketAddress;)Ljava/nio/channels/NetworkChannel;", arg0);
+            return IExecute<Java.Nio.Channels.NetworkChannel>("bind", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>

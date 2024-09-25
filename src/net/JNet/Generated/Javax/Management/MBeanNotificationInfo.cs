@@ -120,7 +120,7 @@ namespace Javax.Management
         /// </summary>
         public Java.Lang.String[] NotifTypes
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getNotifTypes", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getNotifTypes"); }
         }
 
         #endregion

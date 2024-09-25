@@ -220,7 +220,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<T> Submit<T>(Java.Util.Concurrent.Callable<T> arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<T>>("submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;", arg0);
+            return IExecute<Java.Util.Concurrent.Future<T>>("submit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#invokeAll(java.util.Collection,long,java.util.concurrent.TimeUnit)"/>
@@ -246,7 +246,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Util.List<Java.Util.Concurrent.Future<T>> InvokeAll<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0) where Arg0ExtendsJava_Util_Concurrent_Callable_T_ : Java.Util.Concurrent.Callable<T>
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Util.Concurrent.Future<T>>>("invokeAll", "(Ljava/util/Collection;)Ljava/util/List;", arg0);
+            return IExecute<Java.Util.List<Java.Util.Concurrent.Future<T>>>("invokeAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#invokeAny(java.util.Collection,long,java.util.concurrent.TimeUnit)"/>
@@ -275,7 +275,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         public T InvokeAny<T, Arg0ExtendsJava_Util_Concurrent_Callable_T_>(Java.Util.Collection<Arg0ExtendsJava_Util_Concurrent_Callable_T_> arg0) where Arg0ExtendsJava_Util_Concurrent_Callable_T_ : Java.Util.Concurrent.Callable<T>
         {
-            return IExecuteWithSignature<T>("invokeAny", "(Ljava/util/Collection;)Ljava/lang/Object;", arg0);
+            return IExecute<T>("invokeAny", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#awaitTermination(long,java.util.concurrent.TimeUnit)"/>
@@ -294,7 +294,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsShutdown()
         {
-            return IExecuteWithSignature<bool>("isShutdown", "()Z");
+            return IExecute<bool>("isShutdown");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isTerminated()"/>
@@ -302,7 +302,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool IsTerminated()
         {
-            return IExecuteWithSignature<bool>("isTerminated", "()Z");
+            return IExecute<bool>("isTerminated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#submit(java.lang.Runnable)"/>
@@ -311,7 +311,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<object> Submit(Java.Lang.Runnable arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<object>>("submit", "(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;", arg0);
+            return IExecute<Java.Util.Concurrent.Future<object>>("submit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#shutdownNow()"/>
@@ -319,14 +319,14 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.Runnable> ShutdownNow()
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Lang.Runnable>>("shutdownNow", "()Ljava/util/List;");
+            return IExecute<Java.Util.List<Java.Lang.Runnable>>("shutdownNow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#shutdown()"/>
         /// </summary>
         public void Shutdown()
         {
-            IExecuteWithSignature("shutdown", "()V");
+            IExecute("shutdown");
         }
 
         #endregion

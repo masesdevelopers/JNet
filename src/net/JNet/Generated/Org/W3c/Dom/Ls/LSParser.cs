@@ -191,28 +191,28 @@ namespace Org.W3c.Dom.Ls
         /// </summary>
         public bool Async
         {
-            get { return IExecuteWithSignature<bool>("getAsync", "()Z"); }
+            get { return IExecute<bool>("getAsync"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#getBusy()"/> 
         /// </summary>
         public bool Busy
         {
-            get { return IExecuteWithSignature<bool>("getBusy", "()Z"); }
+            get { return IExecute<bool>("getBusy"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#getDomConfig()"/> 
         /// </summary>
         public Org.W3c.Dom.DOMConfiguration DomConfig
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DOMConfiguration>("getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;"); }
+            get { return IExecute<Org.W3c.Dom.DOMConfiguration>("getDomConfig"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#getFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#setFilter(org.w3c.dom.ls.LSParserFilter)"/>
         /// </summary>
         public Org.W3c.Dom.Ls.LSParserFilter Filter
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Ls.LSParserFilter>("getFilter", "()Lorg/w3c/dom/ls/LSParserFilter;"); } set { IExecuteWithSignature("setFilter", "(Lorg/w3c/dom/ls/LSParserFilter;)V", value); }
+            get { return IExecute<Org.W3c.Dom.Ls.LSParserFilter>("getFilter"); } set { IExecute("setFilter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parse(org.w3c.dom.ls.LSInput)"/>
@@ -223,7 +223,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public Org.W3c.Dom.Document Parse(Org.W3c.Dom.Ls.LSInput arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Lorg/w3c/dom/ls/LSInput;)Lorg/w3c/dom/Document;", arg0);
+            return IExecute<Org.W3c.Dom.Document>("parse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseURI(java.lang.String)"/>
@@ -234,7 +234,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public Org.W3c.Dom.Document ParseURI(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Document>("parseURI", "(Ljava/lang/String;)Lorg/w3c/dom/Document;", arg0);
+            return IExecute<Org.W3c.Dom.Document>("parseURI", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseWithContext(org.w3c.dom.ls.LSInput,org.w3c.dom.Node,short)"/>
@@ -254,7 +254,7 @@ namespace Org.W3c.Dom.Ls
         /// </summary>
         public void Abort()
         {
-            IExecuteWithSignature("abort", "()V");
+            IExecute("abort");
         }
 
         #endregion

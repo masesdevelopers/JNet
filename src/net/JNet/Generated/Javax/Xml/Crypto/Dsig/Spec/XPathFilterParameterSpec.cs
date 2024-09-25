@@ -112,14 +112,14 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         public Java.Util.Map<Java.Lang.String, Java.Lang.String> NamespaceMap
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getNamespaceMap", "()Ljava/util/Map;"); }
+            get { return IExecute<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getNamespaceMap"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilterParameterSpec.html#getXPath()"/> 
         /// </summary>
         public Java.Lang.String XPath
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getXPath", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getXPath"); }
         }
 
         #endregion

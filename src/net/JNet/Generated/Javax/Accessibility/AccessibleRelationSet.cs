@@ -105,7 +105,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool Add(Javax.Accessibility.AccessibleRelation arg0)
         {
-            return IExecuteWithSignature<bool>("add", "(Ljavax/accessibility/AccessibleRelation;)Z", arg0);
+            return IExecute<bool>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#contains(java.lang.String)"/>
@@ -114,7 +114,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#remove(javax.accessibility.AccessibleRelation)"/>
@@ -123,7 +123,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool Remove(Javax.Accessibility.AccessibleRelation arg0)
         {
-            return IExecuteWithSignature<bool>("remove", "(Ljavax/accessibility/AccessibleRelation;)Z", arg0);
+            return IExecute<bool>("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#size()"/>
@@ -131,7 +131,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#get(java.lang.String)"/>
@@ -140,7 +140,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Javax.Accessibility.AccessibleRelation"/></returns>
         public Javax.Accessibility.AccessibleRelation Get(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Accessibility.AccessibleRelation>("get", "(Ljava/lang/String;)Ljavax/accessibility/AccessibleRelation;", arg0);
+            return IExecute<Javax.Accessibility.AccessibleRelation>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#toArray()"/>
@@ -148,7 +148,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Javax.Accessibility.AccessibleRelation"/></returns>
         public Javax.Accessibility.AccessibleRelation[] ToArray()
         {
-            return IExecuteWithSignatureArray<Javax.Accessibility.AccessibleRelation>("toArray", "()[Ljavax/accessibility/AccessibleRelation;");
+            return IExecuteArray<Javax.Accessibility.AccessibleRelation>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#addAll(javax.accessibility.AccessibleRelation[])"/>
@@ -156,14 +156,14 @@ namespace Javax.Accessibility
         /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleRelation"/></param>
         public void AddAll(Javax.Accessibility.AccessibleRelation[] arg0)
         {
-            IExecuteWithSignature("addAll", "([Ljavax/accessibility/AccessibleRelation;)V", new object[] { arg0 });
+            IExecute("addAll", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
 
         #endregion

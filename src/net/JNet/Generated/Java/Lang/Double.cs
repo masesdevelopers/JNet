@@ -163,7 +163,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsFinite(double arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isFinite", "(D)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isFinite", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#isInfinite(double)"/>
@@ -172,7 +172,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsInfinite(double arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isInfinite", "(D)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isInfinite", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#isNaN(double)"/>
@@ -181,7 +181,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsNaN(double arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNaN", "(D)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isNaN", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#max(double,double)"/>
@@ -211,7 +211,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static double ParseDouble(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<double>(LocalBridgeClazz, "parseDouble", "(Ljava/lang/String;)D", arg0);
+            return SExecute<double>(LocalBridgeClazz, "parseDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#sum(double,double)"/>
@@ -240,7 +240,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int HashCode(double arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(D)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "hashCode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#valueOf(double)"/>
@@ -249,7 +249,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Double"/></returns>
         public static Java.Lang.Double ValueOf(double arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Double>(LocalBridgeClazz, "valueOf", "(D)Ljava/lang/Double;", arg0);
+            return SExecute<Java.Lang.Double>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#valueOf(java.lang.String)"/>
@@ -259,7 +259,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Lang.Double ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Double>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Double;", arg0);
+            return SExecute<Java.Lang.Double>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#toHexString(double)"/>
@@ -268,7 +268,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToHexString(double arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toHexString", "(D)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toHexString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#toString(double)"/>
@@ -277,7 +277,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(double arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(D)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#doubleToLongBits(double)"/>
@@ -286,7 +286,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long DoubleToLongBits(double arg0)
         {
-            return SExecuteWithSignature<long>(LocalBridgeClazz, "doubleToLongBits", "(D)J", arg0);
+            return SExecute<long>(LocalBridgeClazz, "doubleToLongBits", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#longBitsToDouble(long)"/>
@@ -295,7 +295,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double LongBitsToDouble(long arg0)
         {
-            return SExecuteWithSignature<double>(LocalBridgeClazz, "longBitsToDouble", "(J)D", arg0);
+            return SExecute<double>(LocalBridgeClazz, "longBitsToDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#doubleToRawLongBits(double)"/>
@@ -304,7 +304,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long DoubleToRawLongBits(double arg0)
         {
-            return SExecuteWithSignature<long>(LocalBridgeClazz, "doubleToRawLongBits", "(D)J", arg0);
+            return SExecute<long>(LocalBridgeClazz, "doubleToRawLongBits", arg0);
         }
 
         #endregion
@@ -316,7 +316,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsInfinite()
         {
-            return IExecuteWithSignature<bool>("isInfinite", "()Z");
+            return IExecute<bool>("isInfinite");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#isNaN()"/>
@@ -324,7 +324,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsNaN()
         {
-            return IExecuteWithSignature<bool>("isNaN", "()Z");
+            return IExecute<bool>("isNaN");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#compareTo(java.lang.Double)"/>
@@ -333,7 +333,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Lang.Double arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Double;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#compareTo(java.lang.Object)"/>
@@ -342,7 +342,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
 
         #endregion

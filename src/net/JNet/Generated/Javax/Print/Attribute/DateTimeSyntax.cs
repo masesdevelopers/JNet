@@ -105,7 +105,7 @@ namespace Javax.Print.Attribute
         /// </summary>
         public Java.Util.Date Value
         {
-            get { return IExecuteWithSignature<Java.Util.Date>("getValue", "()Ljava/util/Date;"); }
+            get { return IExecute<Java.Util.Date>("getValue"); }
         }
 
         #endregion

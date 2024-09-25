@@ -99,7 +99,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.ObjectStreamClass"/></returns>
         public static Java.Io.ObjectStreamClass Lookup(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Io.ObjectStreamClass>(LocalBridgeClazz, "lookup", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;", arg0);
+            return SExecute<Java.Io.ObjectStreamClass>(LocalBridgeClazz, "lookup", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#lookupAny(java.lang.Class)"/>
@@ -108,7 +108,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.ObjectStreamClass"/></returns>
         public static Java.Io.ObjectStreamClass LookupAny(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Io.ObjectStreamClass>(LocalBridgeClazz, "lookupAny", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;", arg0);
+            return SExecute<Java.Io.ObjectStreamClass>(LocalBridgeClazz, "lookupAny", arg0);
         }
 
         #endregion
@@ -119,21 +119,21 @@ namespace Java.Io
         /// </summary>
         public Java.Io.ObjectStreamField[] Fields
         {
-            get { return IExecuteWithSignatureArray<Java.Io.ObjectStreamField>("getFields", "()[Ljava/io/ObjectStreamField;"); }
+            get { return IExecuteArray<Java.Io.ObjectStreamField>("getFields"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#getSerialVersionUID()"/> 
         /// </summary>
         public long SerialVersionUID
         {
-            get { return IExecuteWithSignature<long>("getSerialVersionUID", "()J"); }
+            get { return IExecute<long>("getSerialVersionUID"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#getField(java.lang.String)"/>
@@ -142,7 +142,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.ObjectStreamField"/></returns>
         public Java.Io.ObjectStreamField GetField(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Io.ObjectStreamField>("getField", "(Ljava/lang/String;)Ljava/io/ObjectStreamField;", arg0);
+            return IExecute<Java.Io.ObjectStreamField>("getField", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#forClass()"/>
@@ -150,7 +150,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class ForClass()
         {
-            return IExecuteWithSignature<Java.Lang.Class>("forClass", "()Ljava/lang/Class;");
+            return IExecute<Java.Lang.Class>("forClass");
         }
 
         #endregion

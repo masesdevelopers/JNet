@@ -127,7 +127,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int BitCount(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "bitCount", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "bitCount", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#compare(int,int)"/>
@@ -166,7 +166,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int HashCode(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "hashCode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#highestOneBit(int)"/>
@@ -175,7 +175,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int HighestOneBit(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "highestOneBit", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "highestOneBit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#lowestOneBit(int)"/>
@@ -184,7 +184,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int LowestOneBit(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "lowestOneBit", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "lowestOneBit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#max(int,int)"/>
@@ -213,7 +213,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int NumberOfLeadingZeros(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "numberOfLeadingZeros", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "numberOfLeadingZeros", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#numberOfTrailingZeros(int)"/>
@@ -222,7 +222,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int NumberOfTrailingZeros(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "numberOfTrailingZeros", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "numberOfTrailingZeros", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#parseInt(java.lang.CharSequence,int,int,int)"/>
@@ -256,7 +256,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int ParseInt(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "parseInt", "(Ljava/lang/String;)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "parseInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#parseUnsignedInt(java.lang.CharSequence,int,int,int)"/>
@@ -290,7 +290,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static int ParseUnsignedInt(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "parseUnsignedInt", "(Ljava/lang/String;)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "parseUnsignedInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#remainderUnsigned(int,int)"/>
@@ -309,7 +309,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Reverse(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "reverse", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "reverse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#reverseBytes(int)"/>
@@ -318,7 +318,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int ReverseBytes(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "reverseBytes", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "reverseBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#rotateLeft(int,int)"/>
@@ -347,7 +347,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Signum(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "signum", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "signum", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#sum(int,int)"/>
@@ -367,7 +367,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Lang.Integer Decode(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Integer>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)Ljava/lang/Integer;", arg0);
+            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "decode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#getInteger(java.lang.String,int)"/>
@@ -396,7 +396,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Integer"/></returns>
         public static Java.Lang.Integer GetInteger(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Integer>(LocalBridgeClazz, "getInteger", "(Ljava/lang/String;)Ljava/lang/Integer;", arg0);
+            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "getInteger", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#valueOf(int)"/>
@@ -405,7 +405,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Integer"/></returns>
         public static Java.Lang.Integer ValueOf(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Integer>(LocalBridgeClazz, "valueOf", "(I)Ljava/lang/Integer;", arg0);
+            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#valueOf(java.lang.String,int)"/>
@@ -426,7 +426,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Lang.Integer ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Integer>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Integer;", arg0);
+            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toBinaryString(int)"/>
@@ -435,7 +435,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToBinaryString(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toBinaryString", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toBinaryString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toHexString(int)"/>
@@ -444,7 +444,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToHexString(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toHexString", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toHexString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toOctalString(int)"/>
@@ -453,7 +453,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToOctalString(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toOctalString", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toOctalString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toString(int,int)"/>
@@ -472,7 +472,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toUnsignedString(int,int)"/>
@@ -491,7 +491,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToUnsignedString(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toUnsignedString", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toUnsignedString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toUnsignedLong(int)"/>
@@ -500,7 +500,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long ToUnsignedLong(int arg0)
         {
-            return SExecuteWithSignature<long>(LocalBridgeClazz, "toUnsignedLong", "(I)J", arg0);
+            return SExecute<long>(LocalBridgeClazz, "toUnsignedLong", arg0);
         }
 
         #endregion
@@ -513,7 +513,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Lang.Integer arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Integer;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#compareTo(java.lang.Object)"/>
@@ -522,7 +522,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
 
         #endregion

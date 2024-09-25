@@ -103,42 +103,42 @@ namespace Javax.Swing
         /// </summary>
         public Java.Awt.Component Component
         {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getComponent", "()Ljava/awt/Component;"); }
+            get { return IExecute<Java.Awt.Component>("getComponent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#getHelpMenu()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#setHelpMenu(javax.swing.JMenu)"/>
         /// </summary>
         public Javax.Swing.JMenu HelpMenu
         {
-            get { return IExecuteWithSignature<Javax.Swing.JMenu>("getHelpMenu", "()Ljavax/swing/JMenu;"); } set { IExecuteWithSignature("setHelpMenu", "(Ljavax/swing/JMenu;)V", value); }
+            get { return IExecute<Javax.Swing.JMenu>("getHelpMenu"); } set { IExecute("setHelpMenu", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#getMargin()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#setMargin(java.awt.Insets)"/>
         /// </summary>
         public Java.Awt.Insets Margin
         {
-            get { return IExecuteWithSignature<Java.Awt.Insets>("getMargin", "()Ljava/awt/Insets;"); } set { IExecuteWithSignature("setMargin", "(Ljava/awt/Insets;)V", value); }
+            get { return IExecute<Java.Awt.Insets>("getMargin"); } set { IExecute("setMargin", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#getMenuCount()"/> 
         /// </summary>
         public int MenuCount
         {
-            get { return IExecuteWithSignature<int>("getMenuCount", "()I"); }
+            get { return IExecute<int>("getMenuCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#getSelectionModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#setSelectionModel(javax.swing.SingleSelectionModel)"/>
         /// </summary>
         public Javax.Swing.SingleSelectionModel SelectionModel
         {
-            get { return IExecuteWithSignature<Javax.Swing.SingleSelectionModel>("getSelectionModel", "()Ljavax/swing/SingleSelectionModel;"); } set { IExecuteWithSignature("setSelectionModel", "(Ljavax/swing/SingleSelectionModel;)V", value); }
+            get { return IExecute<Javax.Swing.SingleSelectionModel>("getSelectionModel"); } set { IExecute("setSelectionModel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#getSubElements()"/> 
         /// </summary>
         public Javax.Swing.MenuElement[] SubElements
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.MenuElement>("getSubElements", "()[Ljavax/swing/MenuElement;"); }
+            get { return IExecuteArray<Javax.Swing.MenuElement>("getSubElements"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#isBorderPainted()"/>
@@ -146,7 +146,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsBorderPainted()
         {
-            return IExecuteWithSignature<bool>("isBorderPainted", "()Z");
+            return IExecute<bool>("isBorderPainted");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#isSelected()"/>
@@ -154,7 +154,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsSelected()
         {
-            return IExecuteWithSignature<bool>("isSelected", "()Z");
+            return IExecute<bool>("isSelected");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#getComponentIndex(java.awt.Component)"/>
@@ -163,7 +163,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetComponentIndex(Java.Awt.Component arg0)
         {
-            return IExecuteWithSignature<int>("getComponentIndex", "(Ljava/awt/Component;)I", arg0);
+            return IExecute<int>("getComponentIndex", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#add(javax.swing.JMenu)"/>
@@ -172,7 +172,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.JMenu"/></returns>
         public Javax.Swing.JMenu Add(Javax.Swing.JMenu arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.JMenu>("add", "(Ljavax/swing/JMenu;)Ljavax/swing/JMenu;", arg0);
+            return IExecute<Javax.Swing.JMenu>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#getMenu(int)"/>
@@ -181,7 +181,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.JMenu"/></returns>
         public Javax.Swing.JMenu GetMenu(int arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.JMenu>("getMenu", "(I)Ljavax/swing/JMenu;", arg0);
+            return IExecute<Javax.Swing.JMenu>("getMenu", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#menuSelectionChanged(boolean)"/>
@@ -189,7 +189,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void MenuSelectionChanged(bool arg0)
         {
-            IExecuteWithSignature("menuSelectionChanged", "(Z)V", arg0);
+            IExecute("menuSelectionChanged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#processKeyEvent(java.awt.event.KeyEvent,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)"/>
@@ -217,7 +217,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetBorderPainted(bool arg0)
         {
-            IExecuteWithSignature("setBorderPainted", "(Z)V", arg0);
+            IExecute("setBorderPainted", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#setSelected(java.awt.Component)"/>
@@ -225,7 +225,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void SetSelected(Java.Awt.Component arg0)
         {
-            IExecuteWithSignature("setSelected", "(Ljava/awt/Component;)V", arg0);
+            IExecute("setSelected", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuBar.html#setUI(javax.swing.plaf.MenuBarUI)"/>
@@ -233,7 +233,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.MenuBarUI"/></param>
         public void SetUI(Javax.Swing.Plaf.MenuBarUI arg0)
         {
-            IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/MenuBarUI;)V", arg0);
+            IExecute("setUI", arg0);
         }
 
         #endregion

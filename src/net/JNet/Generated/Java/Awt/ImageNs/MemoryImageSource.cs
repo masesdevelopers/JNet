@@ -176,7 +176,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool IsConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
-            return IExecuteWithSignature<bool>("isConsumer", "(Ljava/awt/image/ImageConsumer;)Z", arg0);
+            return IExecute<bool>("isConsumer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#addConsumer(java.awt.image.ImageConsumer)"/>
@@ -184,7 +184,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void AddConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
-            IExecuteWithSignature("addConsumer", "(Ljava/awt/image/ImageConsumer;)V", arg0);
+            IExecute("addConsumer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(byte[],java.awt.image.ColorModel,int,int)"/>
@@ -237,7 +237,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void RemoveConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
-            IExecuteWithSignature("removeConsumer", "(Ljava/awt/image/ImageConsumer;)V", arg0);
+            IExecute("removeConsumer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#setAnimated(boolean)"/>
@@ -245,7 +245,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetAnimated(bool arg0)
         {
-            IExecuteWithSignature("setAnimated", "(Z)V", arg0);
+            IExecute("setAnimated", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#setFullBufferUpdates(boolean)"/>
@@ -253,14 +253,14 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetFullBufferUpdates(bool arg0)
         {
-            IExecuteWithSignature("setFullBufferUpdates", "(Z)V", arg0);
+            IExecute("setFullBufferUpdates", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels()"/>
         /// </summary>
         public void NewPixels()
         {
-            IExecuteWithSignature("newPixels", "()V");
+            IExecute("newPixels");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer)"/>
@@ -268,7 +268,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void RequestTopDownLeftRightResend(Java.Awt.ImageNs.ImageConsumer arg0)
         {
-            IExecuteWithSignature("requestTopDownLeftRightResend", "(Ljava/awt/image/ImageConsumer;)V", arg0);
+            IExecute("requestTopDownLeftRightResend", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#startProduction(java.awt.image.ImageConsumer)"/>
@@ -276,7 +276,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void StartProduction(Java.Awt.ImageNs.ImageConsumer arg0)
         {
-            IExecuteWithSignature("startProduction", "(Ljava/awt/image/ImageConsumer;)V", arg0);
+            IExecute("startProduction", arg0);
         }
 
         #endregion

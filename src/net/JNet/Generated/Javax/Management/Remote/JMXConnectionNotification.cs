@@ -132,7 +132,7 @@ namespace Javax.Management.Remote
         /// </summary>
         public Java.Lang.String ConnectionId
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getConnectionId", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getConnectionId"); }
         }
 
         #endregion

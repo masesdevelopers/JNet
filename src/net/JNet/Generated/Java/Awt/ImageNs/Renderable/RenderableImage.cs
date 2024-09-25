@@ -175,42 +175,42 @@ namespace Java.Awt.ImageNs.Renderable
         /// </summary>
         public float Height
         {
-            get { return IExecuteWithSignature<float>("getHeight", "()F"); }
+            get { return IExecute<float>("getHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getMinX()"/> 
         /// </summary>
         public float MinX
         {
-            get { return IExecuteWithSignature<float>("getMinX", "()F"); }
+            get { return IExecute<float>("getMinX"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getMinY()"/> 
         /// </summary>
         public float MinY
         {
-            get { return IExecuteWithSignature<float>("getMinY", "()F"); }
+            get { return IExecute<float>("getMinY"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getPropertyNames()"/> 
         /// </summary>
         public Java.Lang.String[] PropertyNames
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getPropertyNames", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getPropertyNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getSources()"/> 
         /// </summary>
         public Java.Util.Vector<Java.Awt.ImageNs.Renderable.RenderableImage> Sources
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<Java.Awt.ImageNs.Renderable.RenderableImage>>("getSources", "()Ljava/util/Vector;"); }
+            get { return IExecute<Java.Util.Vector<Java.Awt.ImageNs.Renderable.RenderableImage>>("getSources"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getWidth()"/> 
         /// </summary>
         public float Width
         {
-            get { return IExecuteWithSignature<float>("getWidth", "()F"); }
+            get { return IExecute<float>("getWidth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#isDynamic()"/>
@@ -218,7 +218,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="bool"/></returns>
         public bool IsDynamic()
         {
-            return IExecuteWithSignature<bool>("isDynamic", "()Z");
+            return IExecute<bool>("isDynamic");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createDefaultRendering()"/>
@@ -226,7 +226,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         public Java.Awt.ImageNs.RenderedImage CreateDefaultRendering()
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("createDefaultRendering", "()Ljava/awt/image/RenderedImage;");
+            return IExecute<Java.Awt.ImageNs.RenderedImage>("createDefaultRendering");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createRendering(java.awt.image.renderable.RenderContext)"/>
@@ -235,7 +235,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         public Java.Awt.ImageNs.RenderedImage CreateRendering(Java.Awt.ImageNs.Renderable.RenderContext arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("createRendering", "(Ljava/awt/image/renderable/RenderContext;)Ljava/awt/image/RenderedImage;", arg0);
+            return IExecute<Java.Awt.ImageNs.RenderedImage>("createRendering", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createScaledRendering(int,int,java.awt.RenderingHints)"/>
@@ -255,7 +255,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="object"/></returns>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("getProperty", arg0);
         }
 
         #endregion

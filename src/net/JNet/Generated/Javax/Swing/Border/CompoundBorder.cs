@@ -104,14 +104,14 @@ namespace Javax.Swing.Border
         /// </summary>
         public Javax.Swing.Border.Border InsideBorder
         {
-            get { return IExecuteWithSignature<Javax.Swing.Border.Border>("getInsideBorder", "()Ljavax/swing/border/Border;"); }
+            get { return IExecute<Javax.Swing.Border.Border>("getInsideBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/CompoundBorder.html#getOutsideBorder()"/> 
         /// </summary>
         public Javax.Swing.Border.Border OutsideBorder
         {
-            get { return IExecuteWithSignature<Javax.Swing.Border.Border>("getOutsideBorder", "()Ljavax/swing/border/Border;"); }
+            get { return IExecute<Javax.Swing.Border.Border>("getOutsideBorder"); }
         }
 
         #endregion

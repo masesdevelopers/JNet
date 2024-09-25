@@ -92,7 +92,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Lang.Invoke.SwitchPoint"/></param>
         public static void InvalidateAll(Java.Lang.Invoke.SwitchPoint[] arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "invalidateAll", "([Ljava/lang/invoke/SwitchPoint;)V", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "invalidateAll", new object[] { arg0 });
         }
 
         #endregion
@@ -104,7 +104,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool HasBeenInvalidated()
         {
-            return IExecuteWithSignature<bool>("hasBeenInvalidated", "()Z");
+            return IExecute<bool>("hasBeenInvalidated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SwitchPoint.html#guardWithTest(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>

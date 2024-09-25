@@ -119,7 +119,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Signature GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Security.Signature>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/Signature;", arg0);
+            return SExecute<Java.Security.Signature>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -130,21 +130,21 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#getParameters()"/> 
         /// </summary>
         public Java.Security.AlgorithmParameters Parameters
         {
-            get { return IExecuteWithSignature<Java.Security.AlgorithmParameters>("getParameters", "()Ljava/security/AlgorithmParameters;"); }
+            get { return IExecute<Java.Security.AlgorithmParameters>("getParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#verify(byte[],int,int)"/>
@@ -166,7 +166,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.SignatureException"/>
         public bool Verify(byte[] arg0)
         {
-            return IExecuteWithSignature<bool>("verify", "([B)Z", new object[] { arg0 });
+            return IExecute<bool>("verify", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#sign()"/>
@@ -175,7 +175,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.SignatureException"/>
         public byte[] Sign()
         {
-            return IExecuteWithSignatureArray<byte>("sign", "()[B");
+            return IExecuteArray<byte>("sign");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#sign(byte[],int,int)"/>
@@ -206,7 +206,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public void InitSign(Java.Security.PrivateKey arg0)
         {
-            IExecuteWithSignature("initSign", "(Ljava/security/PrivateKey;)V", arg0);
+            IExecute("initSign", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#initVerify(java.security.cert.Certificate)"/>
@@ -215,7 +215,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public void InitVerify(Java.Security.Cert.Certificate arg0)
         {
-            IExecuteWithSignature("initVerify", "(Ljava/security/cert/Certificate;)V", arg0);
+            IExecute("initVerify", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#initVerify(java.security.PublicKey)"/>
@@ -224,7 +224,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public void InitVerify(Java.Security.PublicKey arg0)
         {
-            IExecuteWithSignature("initVerify", "(Ljava/security/PublicKey;)V", arg0);
+            IExecute("initVerify", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#setParameter(java.security.spec.AlgorithmParameterSpec)"/>
@@ -233,7 +233,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void SetParameter(Java.Security.Spec.AlgorithmParameterSpec arg0)
         {
-            IExecuteWithSignature("setParameter", "(Ljava/security/spec/AlgorithmParameterSpec;)V", arg0);
+            IExecute("setParameter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#update(byte)"/>
@@ -242,7 +242,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.SignatureException"/>
         public void Update(byte arg0)
         {
-            IExecuteWithSignature("update", "(B)V", arg0);
+            IExecute("update", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#update(byte[],int,int)"/>
@@ -262,7 +262,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.SignatureException"/>
         public void Update(byte[] arg0)
         {
-            IExecuteWithSignature("update", "([B)V", new object[] { arg0 });
+            IExecute("update", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#update(java.nio.ByteBuffer)"/>
@@ -271,7 +271,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.SignatureException"/>
         public void Update(Java.Nio.ByteBuffer arg0)
         {
-            IExecuteWithSignature("update", "(Ljava/nio/ByteBuffer;)V", arg0);
+            IExecute("update", arg0);
         }
 
         #endregion

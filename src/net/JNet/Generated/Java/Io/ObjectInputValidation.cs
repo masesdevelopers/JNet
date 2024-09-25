@@ -121,7 +121,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.InvalidObjectException"/>
         public void ValidateObject()
         {
-            IExecuteWithSignature("validateObject", "()V");
+            IExecute("validateObject");
         }
 
         #endregion

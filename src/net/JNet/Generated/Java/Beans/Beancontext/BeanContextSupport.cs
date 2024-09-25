@@ -145,14 +145,14 @@ namespace Java.Beans.Beancontext
         /// </summary>
         public Java.Beans.Beancontext.BeanContext BeanContextPeer
         {
-            get { return IExecuteWithSignature<Java.Beans.Beancontext.BeanContext>("getBeanContextPeer", "()Ljava/beans/beancontext/BeanContext;"); }
+            get { return IExecute<Java.Beans.Beancontext.BeanContext>("getBeanContextPeer"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getLocale()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#setLocale(java.util.Locale)"/>
         /// </summary>
         public Java.Util.Locale Locale
         {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); } set { IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", value); }
+            get { return IExecute<Java.Util.Locale>("getLocale"); } set { IExecute("setLocale", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#add(java.lang.Object)"/>
@@ -161,7 +161,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool Add(object arg0)
         {
-            return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#addAll(java.util.Collection)"/>
@@ -170,7 +170,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool AddAll(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("addAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#avoidingGui()"/>
@@ -178,7 +178,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool AvoidingGui()
         {
-            return IExecuteWithSignature<bool>("avoidingGui", "()Z");
+            return IExecute<bool>("avoidingGui");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#contains(java.lang.Object)"/>
@@ -187,7 +187,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool Contains(object arg0)
         {
-            return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("contains", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#containsAll(java.util.Collection)"/>
@@ -196,7 +196,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool ContainsAll(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("containsAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#containsKey(java.lang.Object)"/>
@@ -205,7 +205,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(object arg0)
         {
-            return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#isEmpty()"/>
@@ -213,7 +213,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#isSerializing()"/>
@@ -221,7 +221,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool IsSerializing()
         {
-            return IExecuteWithSignature<bool>("isSerializing", "()Z");
+            return IExecute<bool>("isSerializing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#remove(java.lang.Object)"/>
@@ -230,7 +230,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0)
         {
-            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("remove", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#removeAll(java.util.Collection)"/>
@@ -239,7 +239,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAll(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("removeAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#retainAll(java.util.Collection)"/>
@@ -248,7 +248,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool RetainAll(Java.Util.Collection arg0)
         {
-            return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
+            return IExecute<bool>("retainAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#readChildren(java.io.ObjectInputStream)"/>
@@ -258,7 +258,7 @@ namespace Java.Beans.Beancontext
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public void ReadChildren(Java.Io.ObjectInputStream arg0)
         {
-            IExecuteWithSignature("readChildren", "(Ljava/io/ObjectInputStream;)V", arg0);
+            IExecute("readChildren", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#writeChildren(java.io.ObjectOutputStream)"/>
@@ -267,7 +267,7 @@ namespace Java.Beans.Beancontext
         /// <exception cref="Java.Io.IOException"/>
         public void WriteChildren(Java.Io.ObjectOutputStream arg0)
         {
-            IExecuteWithSignature("writeChildren", "(Ljava/io/ObjectOutputStream;)V", arg0);
+            IExecute("writeChildren", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#size()"/>
@@ -275,7 +275,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getResourceAsStream(java.lang.String,java.beans.beancontext.BeanContextChild)"/>
@@ -296,7 +296,7 @@ namespace Java.Beans.Beancontext
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public object InstantiateChild(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("instantiateChild", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("instantiateChild", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#toArray()"/>
@@ -304,7 +304,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
-            return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
+            return IExecuteArray<object>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#toArray(java.lang.Object[])"/>
@@ -313,7 +313,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="object"/></returns>
         public object[] ToArray(object[] arg0)
         {
-            return IExecuteWithSignatureArray<object>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
+            return IExecuteArray<object>("toArray", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getResource(java.lang.String,java.beans.beancontext.BeanContextChild)"/>
@@ -331,7 +331,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<object> Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<object>>("iterator", "()Ljava/util/Iterator;");
+            return IExecute<Java.Util.Iterator<object>>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#isDesignTime()"/>
@@ -339,7 +339,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool IsDesignTime()
         {
-            return IExecuteWithSignature<bool>("isDesignTime", "()Z");
+            return IExecute<bool>("isDesignTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#needsGui()"/>
@@ -347,21 +347,21 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool NeedsGui()
         {
-            return IExecuteWithSignature<bool>("needsGui", "()Z");
+            return IExecute<bool>("needsGui");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#dontUseGui()"/>
         /// </summary>
         public void DontUseGui()
         {
-            IExecuteWithSignature("dontUseGui", "()V");
+            IExecute("dontUseGui");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#okToUseGui()"/>
         /// </summary>
         public void OkToUseGui()
         {
-            IExecuteWithSignature("okToUseGui", "()V");
+            IExecute("okToUseGui");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#setDesignTime(boolean)"/>
@@ -369,7 +369,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDesignTime(bool arg0)
         {
-            IExecuteWithSignature("setDesignTime", "(Z)V", arg0);
+            IExecute("setDesignTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#addBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)"/>
@@ -377,14 +377,14 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipListener"/></param>
         public void AddBeanContextMembershipListener(Java.Beans.Beancontext.BeanContextMembershipListener arg0)
         {
-            IExecuteWithSignature("addBeanContextMembershipListener", "(Ljava/beans/beancontext/BeanContextMembershipListener;)V", arg0);
+            IExecute("addBeanContextMembershipListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#clear()"/>
         /// </summary>
         public void Clear()
         {
-            IExecuteWithSignature("clear", "()V");
+            IExecute("clear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#propertyChange(java.beans.PropertyChangeEvent)"/>
@@ -392,7 +392,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
-            IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
+            IExecute("propertyChange", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#removeBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)"/>
@@ -400,7 +400,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipListener"/></param>
         public void RemoveBeanContextMembershipListener(Java.Beans.Beancontext.BeanContextMembershipListener arg0)
         {
-            IExecuteWithSignature("removeBeanContextMembershipListener", "(Ljava/beans/beancontext/BeanContextMembershipListener;)V", arg0);
+            IExecute("removeBeanContextMembershipListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#vetoableChange(java.beans.PropertyChangeEvent)"/>
@@ -409,7 +409,7 @@ namespace Java.Beans.Beancontext
         /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void VetoableChange(Java.Beans.PropertyChangeEvent arg0)
         {
-            IExecuteWithSignature("vetoableChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
+            IExecute("vetoableChange", arg0);
         }
 
         #endregion

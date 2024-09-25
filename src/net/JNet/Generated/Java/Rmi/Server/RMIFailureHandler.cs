@@ -123,7 +123,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="bool"/></returns>
         public bool Failure(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
-            return IExecuteWithSignature<bool>("failure", "(Ljava/lang/Exception;)Z", arg0);
+            return IExecute<bool>("failure", arg0);
         }
 
         #endregion

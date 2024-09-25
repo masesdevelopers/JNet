@@ -147,14 +147,14 @@ namespace Java.Net
         /// </summary>
         public Java.Util.List<Java.Net.HttpCookie> Cookies
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Net.HttpCookie>>("getCookies", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Java.Net.HttpCookie>>("getCookies"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getURIs()"/> 
         /// </summary>
         public Java.Util.List<Java.Net.URI> URIs
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Net.URI>>("getURIs", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Java.Net.URI>>("getURIs"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#remove(java.net.URI,java.net.HttpCookie)"/>
@@ -172,7 +172,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAll()
         {
-            return IExecuteWithSignature<bool>("removeAll", "()Z");
+            return IExecute<bool>("removeAll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#get(java.net.URI)"/>
@@ -181,7 +181,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Net.HttpCookie> Get(Java.Net.URI arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Net.HttpCookie>>("get", "(Ljava/net/URI;)Ljava/util/List;", arg0);
+            return IExecute<Java.Util.List<Java.Net.HttpCookie>>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#add(java.net.URI,java.net.HttpCookie)"/>

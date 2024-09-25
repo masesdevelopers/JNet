@@ -101,7 +101,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.Time"/></returns>
         public static Java.Sql.Time ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Sql.Time>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/Time;", arg0);
+            return SExecute<Java.Sql.Time>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Time.html#valueOf(java.time.LocalTime)"/>
@@ -110,7 +110,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.Time"/></returns>
         public static Java.Sql.Time ValueOf(Java.Time.LocalTime arg0)
         {
-            return SExecuteWithSignature<Java.Sql.Time>(LocalBridgeClazz, "valueOf", "(Ljava/time/LocalTime;)Ljava/sql/Time;", arg0);
+            return SExecute<Java.Sql.Time>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion
@@ -122,7 +122,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime ToLocalTime()
         {
-            return IExecuteWithSignature<Java.Time.LocalTime>("toLocalTime", "()Ljava/time/LocalTime;");
+            return IExecute<Java.Time.LocalTime>("toLocalTime");
         }
 
         #endregion

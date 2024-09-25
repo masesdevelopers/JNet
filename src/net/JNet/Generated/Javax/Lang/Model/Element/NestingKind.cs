@@ -117,7 +117,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="Javax.Lang.Model.Element.NestingKind"/></returns>
         public static Javax.Lang.Model.Element.NestingKind ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/element/NestingKind;", arg0);
+            return SExecute<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#values()"/>
@@ -125,7 +125,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="Javax.Lang.Model.Element.NestingKind"/></returns>
         public static Javax.Lang.Model.Element.NestingKind[] Values()
         {
-            return SExecuteWithSignatureArray<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/element/NestingKind;");
+            return SExecuteArray<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "values");
         }
 
         #endregion
@@ -137,7 +137,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="bool"/></returns>
         public bool IsNested()
         {
-            return IExecuteWithSignature<bool>("isNested", "()Z");
+            return IExecute<bool>("isNested");
         }
 
         #endregion

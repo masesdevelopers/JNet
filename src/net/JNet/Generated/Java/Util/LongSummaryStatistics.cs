@@ -115,35 +115,35 @@ namespace Java.Util
         /// </summary>
         public double Average
         {
-            get { return IExecuteWithSignature<double>("getAverage", "()D"); }
+            get { return IExecute<double>("getAverage"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getCount()"/> 
         /// </summary>
         public long Count
         {
-            get { return IExecuteWithSignature<long>("getCount", "()J"); }
+            get { return IExecute<long>("getCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getMax()"/> 
         /// </summary>
         public long Max
         {
-            get { return IExecuteWithSignature<long>("getMax", "()J"); }
+            get { return IExecute<long>("getMax"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getMin()"/> 
         /// </summary>
         public long Min
         {
-            get { return IExecuteWithSignature<long>("getMin", "()J"); }
+            get { return IExecute<long>("getMin"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getSum()"/> 
         /// </summary>
         public long Sum
         {
-            get { return IExecuteWithSignature<long>("getSum", "()J"); }
+            get { return IExecute<long>("getSum"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#accept(int)"/>
@@ -151,7 +151,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public void Accept(int arg0)
         {
-            IExecuteWithSignature("accept", "(I)V", arg0);
+            IExecute("accept", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#accept(long)"/>
@@ -159,7 +159,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="long"/></param>
         public void Accept(long arg0)
         {
-            IExecuteWithSignature("accept", "(J)V", arg0);
+            IExecute("accept", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#combine(java.util.LongSummaryStatistics)"/>
@@ -167,7 +167,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.LongSummaryStatistics"/></param>
         public void Combine(Java.Util.LongSummaryStatistics arg0)
         {
-            IExecuteWithSignature("combine", "(Ljava/util/LongSummaryStatistics;)V", arg0);
+            IExecute("combine", arg0);
         }
 
         #endregion

@@ -147,7 +147,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Add(object arg0)
         {
-            return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#offer(java.lang.Object)"/>
@@ -156,7 +156,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Offer(object arg0)
         {
-            return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("offer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/>
@@ -164,7 +164,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Element()
         {
-            return IExecuteWithSignature("element", "()Ljava/lang/Object;");
+            return IExecute("element");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/>
@@ -172,7 +172,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Peek()
         {
-            return IExecuteWithSignature("peek", "()Ljava/lang/Object;");
+            return IExecute("peek");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/>
@@ -180,7 +180,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Poll()
         {
-            return IExecuteWithSignature("poll", "()Ljava/lang/Object;");
+            return IExecute("poll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/>
@@ -188,7 +188,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Remove()
         {
-            return IExecuteWithSignature("remove", "()Ljava/lang/Object;");
+            return IExecute("remove");
         }
 
         #endregion
@@ -282,7 +282,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Add(E arg0)
         {
-            return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("add", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#offer(java.lang.Object)"/>
@@ -291,7 +291,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Offer(E arg0)
         {
-            return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("offer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/>
@@ -299,7 +299,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
         {
-            return IExecuteWithSignature<E>("element", "()Ljava/lang/Object;");
+            return IExecute<E>("element");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/>
@@ -307,7 +307,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
         {
-            return IExecuteWithSignature<E>("peek", "()Ljava/lang/Object;");
+            return IExecute<E>("peek");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/>
@@ -315,7 +315,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Poll()
         {
-            return IExecuteWithSignature<E>("poll", "()Ljava/lang/Object;");
+            return IExecute<E>("poll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/>
@@ -323,7 +323,7 @@ namespace Java.Util
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()
         {
-            return IExecuteWithSignature<E>("remove", "()Ljava/lang/Object;");
+            return IExecute<E>("remove");
         }
 
         #endregion

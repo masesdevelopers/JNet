@@ -104,14 +104,14 @@ namespace Javax.Management.Relation
         /// </summary>
         public Javax.Management.Relation.RoleList Roles
         {
-            get { return IExecuteWithSignature<Javax.Management.Relation.RoleList>("getRoles", "()Ljavax/management/relation/RoleList;"); } set { IExecuteWithSignature("setRoles", "(Ljavax/management/relation/RoleList;)V", value); }
+            get { return IExecute<Javax.Management.Relation.RoleList>("getRoles"); } set { IExecute("setRoles", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleResult.html#getRolesUnresolved()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleResult.html#setRolesUnresolved(javax.management.relation.RoleUnresolvedList)"/>
         /// </summary>
         public Javax.Management.Relation.RoleUnresolvedList RolesUnresolved
         {
-            get { return IExecuteWithSignature<Javax.Management.Relation.RoleUnresolvedList>("getRolesUnresolved", "()Ljavax/management/relation/RoleUnresolvedList;"); } set { IExecuteWithSignature("setRolesUnresolved", "(Ljavax/management/relation/RoleUnresolvedList;)V", value); }
+            get { return IExecute<Javax.Management.Relation.RoleUnresolvedList>("getRolesUnresolved"); } set { IExecute("setRolesUnresolved", value); }
         }
 
         #endregion

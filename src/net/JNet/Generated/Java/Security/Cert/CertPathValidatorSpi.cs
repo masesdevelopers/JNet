@@ -110,7 +110,7 @@ namespace Java.Security.Cert
         /// <returns><see cref="Java.Security.Cert.CertPathChecker"/></returns>
         public Java.Security.Cert.CertPathChecker EngineGetRevocationChecker()
         {
-            return IExecuteWithSignature<Java.Security.Cert.CertPathChecker>("engineGetRevocationChecker", "()Ljava/security/cert/CertPathChecker;");
+            return IExecute<Java.Security.Cert.CertPathChecker>("engineGetRevocationChecker");
         }
 
         #endregion

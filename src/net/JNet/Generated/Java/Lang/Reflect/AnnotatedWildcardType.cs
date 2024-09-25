@@ -127,21 +127,21 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType[] AnnotatedLowerBounds
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedLowerBounds", "()[Ljava/lang/reflect/AnnotatedType;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedLowerBounds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html#getAnnotatedOwnerType()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType AnnotatedOwnerType
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.AnnotatedType>("getAnnotatedOwnerType", "()Ljava/lang/reflect/AnnotatedType;"); }
+            get { return IExecute<Java.Lang.Reflect.AnnotatedType>("getAnnotatedOwnerType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html#getAnnotatedUpperBounds()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType[] AnnotatedUpperBounds
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedUpperBounds", "()[Ljava/lang/reflect/AnnotatedType;"); }
+            get { return IExecuteArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedUpperBounds"); }
         }
 
         #endregion

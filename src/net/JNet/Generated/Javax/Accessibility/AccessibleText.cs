@@ -192,35 +192,35 @@ namespace Javax.Accessibility
         /// </summary>
         public int CaretPosition
         {
-            get { return IExecuteWithSignature<int>("getCaretPosition", "()I"); }
+            get { return IExecute<int>("getCaretPosition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getCharCount()"/> 
         /// </summary>
         public int CharCount
         {
-            get { return IExecuteWithSignature<int>("getCharCount", "()I"); }
+            get { return IExecute<int>("getCharCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getSelectedText()"/> 
         /// </summary>
         public Java.Lang.String SelectedText
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSelectedText", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getSelectedText"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getSelectionEnd()"/> 
         /// </summary>
         public int SelectionEnd
         {
-            get { return IExecuteWithSignature<int>("getSelectionEnd", "()I"); }
+            get { return IExecute<int>("getSelectionEnd"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getSelectionStart()"/> 
         /// </summary>
         public int SelectionStart
         {
-            get { return IExecuteWithSignature<int>("getSelectionStart", "()I"); }
+            get { return IExecute<int>("getSelectionStart"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getIndexAtPoint(java.awt.Point)"/>
@@ -229,7 +229,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="int"/></returns>
         public int GetIndexAtPoint(Java.Awt.Point arg0)
         {
-            return IExecuteWithSignature<int>("getIndexAtPoint", "(Ljava/awt/Point;)I", arg0);
+            return IExecute<int>("getIndexAtPoint", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getCharacterBounds(int)"/>
@@ -238,7 +238,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetCharacterBounds(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.Rectangle>("getCharacterBounds", "(I)Ljava/awt/Rectangle;", arg0);
+            return IExecute<Java.Awt.Rectangle>("getCharacterBounds", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getAfterIndex(int,int)"/>
@@ -277,7 +277,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet GetCharacterAttribute(int arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getCharacterAttribute", "(I)Ljavax/swing/text/AttributeSet;", arg0);
+            return IExecute<Javax.Swing.Text.AttributeSet>("getCharacterAttribute", arg0);
         }
 
         #endregion

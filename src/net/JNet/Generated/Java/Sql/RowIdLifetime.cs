@@ -123,7 +123,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.RowIdLifetime"/></returns>
         public static Java.Sql.RowIdLifetime ValueOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/RowIdLifetime;", arg0);
+            return SExecute<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#values()"/>
@@ -131,7 +131,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.RowIdLifetime"/></returns>
         public static Java.Sql.RowIdLifetime[] Values()
         {
-            return SExecuteWithSignatureArray<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "values", "()[Ljava/sql/RowIdLifetime;");
+            return SExecuteArray<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "values");
         }
 
         #endregion

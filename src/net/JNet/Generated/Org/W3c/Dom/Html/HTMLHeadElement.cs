@@ -119,7 +119,7 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Profile
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProfile", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setProfile", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getProfile"); } set { IExecute("setProfile", value); }
         }
 
         #endregion

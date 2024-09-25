@@ -226,7 +226,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiPredicate AndDefault(Java.Util.Function.BiPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicate>("andDefault", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
+            return IExecute<Java.Util.Function.BiPredicate>("andDefault", arg0);
         }
 
         /// <summary>
@@ -261,7 +261,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiPredicate NegateDefault()
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicate>("negateDefault", "()Ljava/util/function/BiPredicate;");
+            return IExecute<Java.Util.Function.BiPredicate>("negateDefault");
         }
 
         /// <summary>
@@ -296,7 +296,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiPredicate OrDefault(Java.Util.Function.BiPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicate>("orDefault", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
+            return IExecute<Java.Util.Function.BiPredicate>("orDefault", arg0);
         }
 
         /// <summary>
@@ -372,7 +372,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public override Java.Util.Function.BiPredicate And(Java.Util.Function.BiPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect, Java.Util.Function.BiPredicate>("and", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
+            return IExecute<Java.Util.Function.BiPredicateDirect, Java.Util.Function.BiPredicate>("and", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
@@ -380,7 +380,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public override Java.Util.Function.BiPredicate Negate()
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect, Java.Util.Function.BiPredicate>("negate", "()Ljava/util/function/BiPredicate;");
+            return IExecute<Java.Util.Function.BiPredicateDirect, Java.Util.Function.BiPredicate>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
@@ -389,7 +389,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public override Java.Util.Function.BiPredicate Or(Java.Util.Function.BiPredicate arg0)
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect, Java.Util.Function.BiPredicate>("or", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
+            return IExecute<Java.Util.Function.BiPredicateDirect, Java.Util.Function.BiPredicate>("or", arg0);
         }
 
         #endregion
@@ -515,7 +515,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicate<T, U>>("andDefault", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
+            return IExecute<Java.Util.Function.BiPredicate<T, U>>("andDefault", arg0);
         }
 
         /// <summary>
@@ -552,7 +552,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiPredicate<T, U> NegateDefault()
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicate<T, U>>("negateDefault", "()Ljava/util/function/BiPredicate;");
+            return IExecute<Java.Util.Function.BiPredicate<T, U>>("negateDefault");
         }
 
         /// <summary>
@@ -589,7 +589,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicate<T, U>>("orDefault", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
+            return IExecute<Java.Util.Function.BiPredicate<T, U>>("orDefault", arg0);
         }
 
         /// <summary>
@@ -669,7 +669,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public override Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("and", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
+            return IExecute<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("and", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
@@ -677,7 +677,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public override Java.Util.Function.BiPredicate<T, U> Negate()
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("negate", "()Ljava/util/function/BiPredicate;");
+            return IExecute<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
@@ -688,7 +688,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public override Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("or", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
+            return IExecute<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("or", arg0);
         }
 
         #endregion

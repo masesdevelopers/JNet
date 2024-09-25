@@ -113,7 +113,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Date"/></returns>
         public static Java.Util.Date From(Java.Time.Instant arg0)
         {
-            return SExecuteWithSignature<Java.Util.Date>(LocalBridgeClazz, "from", "(Ljava/time/Instant;)Ljava/util/Date;", arg0);
+            return SExecute<Java.Util.Date>(LocalBridgeClazz, "from", arg0);
         }
 
         #endregion
@@ -124,7 +124,7 @@ namespace Java.Util
         /// </summary>
         public long Time
         {
-            get { return IExecuteWithSignature<long>("getTime", "()J"); } set { IExecuteWithSignature("setTime", "(J)V", value); }
+            get { return IExecute<long>("getTime"); } set { IExecute("setTime", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#after(java.util.Date)"/>
@@ -133,7 +133,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool After(Java.Util.Date arg0)
         {
-            return IExecuteWithSignature<bool>("after", "(Ljava/util/Date;)Z", arg0);
+            return IExecute<bool>("after", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#before(java.util.Date)"/>
@@ -142,7 +142,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Before(Java.Util.Date arg0)
         {
-            return IExecuteWithSignature<bool>("before", "(Ljava/util/Date;)Z", arg0);
+            return IExecute<bool>("before", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#compareTo(java.lang.Object)"/>
@@ -151,7 +151,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#compareTo(java.util.Date)"/>
@@ -160,7 +160,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Util.Date arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/util/Date;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#toInstant()"/>
@@ -168,7 +168,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant ToInstant()
         {
-            return IExecuteWithSignature<Java.Time.Instant>("toInstant", "()Ljava/time/Instant;");
+            return IExecute<Java.Time.Instant>("toInstant");
         }
 
         #endregion

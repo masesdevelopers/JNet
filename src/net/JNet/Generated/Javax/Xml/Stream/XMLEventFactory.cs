@@ -94,7 +94,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="Javax.Xml.Stream.XMLEventFactory"/></returns>
         public static Javax.Xml.Stream.XMLEventFactory NewDefaultFactory()
         {
-            return SExecuteWithSignature<Javax.Xml.Stream.XMLEventFactory>(LocalBridgeClazz, "newDefaultFactory", "()Ljavax/xml/stream/XMLEventFactory;");
+            return SExecute<Javax.Xml.Stream.XMLEventFactory>(LocalBridgeClazz, "newDefaultFactory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#newFactory()"/>
@@ -103,7 +103,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLEventFactory NewFactory()
         {
-            return SExecuteWithSignature<Javax.Xml.Stream.XMLEventFactory>(LocalBridgeClazz, "newFactory", "()Ljavax/xml/stream/XMLEventFactory;");
+            return SExecute<Javax.Xml.Stream.XMLEventFactory>(LocalBridgeClazz, "newFactory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#newFactory(java.lang.String,java.lang.ClassLoader)"/>
@@ -123,7 +123,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLEventFactory NewInstance()
         {
-            return SExecuteWithSignature<Javax.Xml.Stream.XMLEventFactory>(LocalBridgeClazz, "newInstance", "()Ljavax/xml/stream/XMLEventFactory;");
+            return SExecute<Javax.Xml.Stream.XMLEventFactory>(LocalBridgeClazz, "newInstance");
         }
 
         #endregion
@@ -168,7 +168,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="Javax.Xml.Stream.Events.Characters"/></returns>
         public Javax.Xml.Stream.Events.Characters CreateCData(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.Characters>("createCData", "(Ljava/lang/String;)Ljavax/xml/stream/events/Characters;", arg0);
+            return IExecute<Javax.Xml.Stream.Events.Characters>("createCData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createCharacters(java.lang.String)"/>
@@ -177,7 +177,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="Javax.Xml.Stream.Events.Characters"/></returns>
         public Javax.Xml.Stream.Events.Characters CreateCharacters(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.Characters>("createCharacters", "(Ljava/lang/String;)Ljavax/xml/stream/events/Characters;", arg0);
+            return IExecute<Javax.Xml.Stream.Events.Characters>("createCharacters", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createIgnorableSpace(java.lang.String)"/>
@@ -186,7 +186,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="Javax.Xml.Stream.Events.Characters"/></returns>
         public Javax.Xml.Stream.Events.Characters CreateIgnorableSpace(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.Characters>("createIgnorableSpace", "(Ljava/lang/String;)Ljavax/xml/stream/events/Characters;", arg0);
+            return IExecute<Javax.Xml.Stream.Events.Characters>("createIgnorableSpace", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createSpace(java.lang.String)"/>
@@ -195,7 +195,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="Javax.Xml.Stream.Events.Characters"/></returns>
         public Javax.Xml.Stream.Events.Characters CreateSpace(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.Characters>("createSpace", "(Ljava/lang/String;)Ljavax/xml/stream/events/Characters;", arg0);
+            return IExecute<Javax.Xml.Stream.Events.Characters>("createSpace", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createComment(java.lang.String)"/>
@@ -204,7 +204,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="Javax.Xml.Stream.Events.Comment"/></returns>
         public Javax.Xml.Stream.Events.Comment CreateComment(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.Comment>("createComment", "(Ljava/lang/String;)Ljavax/xml/stream/events/Comment;", arg0);
+            return IExecute<Javax.Xml.Stream.Events.Comment>("createComment", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createDTD(java.lang.String)"/>
@@ -213,7 +213,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="Javax.Xml.Stream.Events.DTD"/></returns>
         public Javax.Xml.Stream.Events.DTD CreateDTD(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.DTD>("createDTD", "(Ljava/lang/String;)Ljavax/xml/stream/events/DTD;", arg0);
+            return IExecute<Javax.Xml.Stream.Events.DTD>("createDTD", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createEndDocument()"/>
@@ -221,7 +221,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="Javax.Xml.Stream.Events.EndDocument"/></returns>
         public Javax.Xml.Stream.Events.EndDocument CreateEndDocument()
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.EndDocument>("createEndDocument", "()Ljavax/xml/stream/events/EndDocument;");
+            return IExecute<Javax.Xml.Stream.Events.EndDocument>("createEndDocument");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createEndElement(java.lang.String,java.lang.String,java.lang.String,java.util.Iterator)"/>
@@ -285,7 +285,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="Javax.Xml.Stream.Events.Namespace"/></returns>
         public Javax.Xml.Stream.Events.Namespace CreateNamespace(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.Namespace>("createNamespace", "(Ljava/lang/String;)Ljavax/xml/stream/events/Namespace;", arg0);
+            return IExecute<Javax.Xml.Stream.Events.Namespace>("createNamespace", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createProcessingInstruction(java.lang.String,java.lang.String)"/>
@@ -303,7 +303,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="Javax.Xml.Stream.Events.StartDocument"/></returns>
         public Javax.Xml.Stream.Events.StartDocument CreateStartDocument()
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.StartDocument>("createStartDocument", "()Ljavax/xml/stream/events/StartDocument;");
+            return IExecute<Javax.Xml.Stream.Events.StartDocument>("createStartDocument");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createStartDocument(java.lang.String,java.lang.String,boolean)"/>
@@ -333,7 +333,7 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="Javax.Xml.Stream.Events.StartDocument"/></returns>
         public Javax.Xml.Stream.Events.StartDocument CreateStartDocument(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Xml.Stream.Events.StartDocument>("createStartDocument", "(Ljava/lang/String;)Ljavax/xml/stream/events/StartDocument;", arg0);
+            return IExecute<Javax.Xml.Stream.Events.StartDocument>("createStartDocument", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createStartElement(java.lang.String,java.lang.String,java.lang.String,java.util.Iterator,java.util.Iterator,javax.xml.namespace.NamespaceContext)"/>
@@ -396,7 +396,7 @@ namespace Javax.Xml.Stream
         /// <param name="arg0"><see cref="Javax.Xml.Stream.Location"/></param>
         public void SetLocation(Javax.Xml.Stream.Location arg0)
         {
-            IExecuteWithSignature("setLocation", "(Ljavax/xml/stream/Location;)V", arg0);
+            IExecute("setLocation", arg0);
         }
 
         #endregion

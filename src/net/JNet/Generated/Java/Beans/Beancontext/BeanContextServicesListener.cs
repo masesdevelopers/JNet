@@ -242,7 +242,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceAvailableEvent"/></param>
         public override void ServiceAvailable(Java.Beans.Beancontext.BeanContextServiceAvailableEvent arg0)
         {
-            IExecuteWithSignature("serviceAvailable", "(Ljava/beans/beancontext/BeanContextServiceAvailableEvent;)V", arg0);
+            IExecute("serviceAvailable", arg0);
         }
 
         #endregion

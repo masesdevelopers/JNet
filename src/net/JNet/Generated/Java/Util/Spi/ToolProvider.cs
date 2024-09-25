@@ -134,7 +134,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Util.Optional"/></returns>
         public static Java.Util.Optional<Java.Util.Spi.ToolProvider> FindFirst(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.Optional<Java.Util.Spi.ToolProvider>>(LocalBridgeClazz, "findFirst", "(Ljava/lang/String;)Ljava/util/Optional;", arg0);
+            return SExecute<Java.Util.Optional<Java.Util.Spi.ToolProvider>>(LocalBridgeClazz, "findFirst", arg0);
         }
 
         #endregion
@@ -157,7 +157,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintStream,java.io.PrintStream,java.lang.String[])"/>

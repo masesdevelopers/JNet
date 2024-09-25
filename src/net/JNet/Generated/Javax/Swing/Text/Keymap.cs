@@ -174,35 +174,35 @@ namespace Javax.Swing.Text
         /// </summary>
         public Javax.Swing.Action[] BoundActions
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.Action>("getBoundActions", "()[Ljavax/swing/Action;"); }
+            get { return IExecuteArray<Javax.Swing.Action>("getBoundActions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getBoundKeyStrokes()"/> 
         /// </summary>
         public Javax.Swing.KeyStroke[] BoundKeyStrokes
         {
-            get { return IExecuteWithSignatureArray<Javax.Swing.KeyStroke>("getBoundKeyStrokes", "()[Ljavax/swing/KeyStroke;"); }
+            get { return IExecuteArray<Javax.Swing.KeyStroke>("getBoundKeyStrokes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getDefaultAction()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#setDefaultAction(javax.swing.Action)"/>
         /// </summary>
         public Javax.Swing.Action DefaultAction
         {
-            get { return IExecuteWithSignature<Javax.Swing.Action>("getDefaultAction", "()Ljavax/swing/Action;"); } set { IExecuteWithSignature("setDefaultAction", "(Ljavax/swing/Action;)V", value); }
+            get { return IExecute<Javax.Swing.Action>("getDefaultAction"); } set { IExecute("setDefaultAction", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getResolveParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#setResolveParent(javax.swing.text.Keymap)"/>
         /// </summary>
         public Javax.Swing.Text.Keymap ResolveParent
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.Keymap>("getResolveParent", "()Ljavax/swing/text/Keymap;"); } set { IExecuteWithSignature("setResolveParent", "(Ljavax/swing/text/Keymap;)V", value); }
+            get { return IExecute<Javax.Swing.Text.Keymap>("getResolveParent"); } set { IExecute("setResolveParent", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#isLocallyDefined(javax.swing.KeyStroke)"/>
@@ -211,7 +211,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsLocallyDefined(Javax.Swing.KeyStroke arg0)
         {
-            return IExecuteWithSignature<bool>("isLocallyDefined", "(Ljavax/swing/KeyStroke;)Z", arg0);
+            return IExecute<bool>("isLocallyDefined", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getAction(javax.swing.KeyStroke)"/>
@@ -220,7 +220,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Action"/></returns>
         public Javax.Swing.Action GetAction(Javax.Swing.KeyStroke arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Action>("getAction", "(Ljavax/swing/KeyStroke;)Ljavax/swing/Action;", arg0);
+            return IExecute<Javax.Swing.Action>("getAction", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getAction(javax.swing.KeyStroke)"/>
@@ -229,7 +229,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Action"/></returns>
         public Javax.Swing.Action GetActionDirect(Javax.Swing.KeyStroke arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.ActionDirect, Javax.Swing.Action>("getAction", "(Ljavax/swing/KeyStroke;)Ljavax/swing/Action;", arg0);
+            return IExecute<Javax.Swing.ActionDirect, Javax.Swing.Action>("getAction", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getKeyStrokesForAction(javax.swing.Action)"/>
@@ -238,7 +238,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public Javax.Swing.KeyStroke[] GetKeyStrokesForAction(Javax.Swing.Action arg0)
         {
-            return IExecuteWithSignatureArray<Javax.Swing.KeyStroke>("getKeyStrokesForAction", "(Ljavax/swing/Action;)[Ljavax/swing/KeyStroke;", arg0);
+            return IExecuteArray<Javax.Swing.KeyStroke>("getKeyStrokesForAction", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#addActionForKeyStroke(javax.swing.KeyStroke,javax.swing.Action)"/>
@@ -254,7 +254,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public void RemoveBindings()
         {
-            IExecuteWithSignature("removeBindings", "()V");
+            IExecute("removeBindings");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#removeKeyStrokeBinding(javax.swing.KeyStroke)"/>
@@ -262,7 +262,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
         public void RemoveKeyStrokeBinding(Javax.Swing.KeyStroke arg0)
         {
-            IExecuteWithSignature("removeKeyStrokeBinding", "(Ljavax/swing/KeyStroke;)V", arg0);
+            IExecute("removeKeyStrokeBinding", arg0);
         }
 
         #endregion

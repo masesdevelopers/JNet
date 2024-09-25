@@ -140,7 +140,7 @@ namespace Javax.Security.Auth.Login
         /// </summary>
         public static Javax.Security.Auth.Login.Configuration GetConfiguration
         {
-            get { return SExecuteWithSignature<Javax.Security.Auth.Login.Configuration>(LocalBridgeClazz, "getConfiguration", "()Ljavax/security/auth/login/Configuration;"); }
+            get { return SExecute<Javax.Security.Auth.Login.Configuration>(LocalBridgeClazz, "getConfiguration"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration.Parameters,java.lang.String)"/>
@@ -184,7 +184,7 @@ namespace Javax.Security.Auth.Login
         /// <param name="arg0"><see cref="Javax.Security.Auth.Login.Configuration"/></param>
         public static void SetConfiguration(Javax.Security.Auth.Login.Configuration arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "setConfiguration", "(Ljavax/security/auth/login/Configuration;)V", arg0);
+            SExecute(LocalBridgeClazz, "setConfiguration", arg0);
         }
 
         #endregion
@@ -195,21 +195,21 @@ namespace Javax.Security.Auth.Login
         /// </summary>
         public Javax.Security.Auth.Login.Configuration.Parameters GetParameters
         {
-            get { return IExecuteWithSignature<Javax.Security.Auth.Login.Configuration.Parameters>("getParameters", "()Ljavax/security/auth/login/Configuration$Parameters;"); }
+            get { return IExecute<Javax.Security.Auth.Login.Configuration.Parameters>("getParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getAppConfigurationEntry(java.lang.String)"/>
@@ -218,14 +218,14 @@ namespace Javax.Security.Auth.Login
         /// <returns><see cref="Javax.Security.Auth.Login.AppConfigurationEntry"/></returns>
         public Javax.Security.Auth.Login.AppConfigurationEntry[] GetAppConfigurationEntry(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<Javax.Security.Auth.Login.AppConfigurationEntry>("getAppConfigurationEntry", "(Ljava/lang/String;)[Ljavax/security/auth/login/AppConfigurationEntry;", arg0);
+            return IExecuteArray<Javax.Security.Auth.Login.AppConfigurationEntry>("getAppConfigurationEntry", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#refresh()"/>
         /// </summary>
         public void Refresh()
         {
-            IExecuteWithSignature("refresh", "()V");
+            IExecute("refresh");
         }
 
         #endregion

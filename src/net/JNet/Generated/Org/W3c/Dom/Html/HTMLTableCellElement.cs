@@ -175,105 +175,105 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         public Java.Lang.String Abbr
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAbbr", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAbbr", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAbbr"); } set { IExecute("setAbbr", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setAlign(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Align
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAlign", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAlign"); } set { IExecute("setAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getAxis()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setAxis(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Axis
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAxis", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAxis", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getAxis"); } set { IExecute("setAxis", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getBgColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setBgColor(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String BgColor
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBgColor", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setBgColor", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getBgColor"); } set { IExecute("setBgColor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getCellIndex()"/> 
         /// </summary>
         public int CellIndex
         {
-            get { return IExecuteWithSignature<int>("getCellIndex", "()I"); }
+            get { return IExecute<int>("getCellIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getCh()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setCh(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Ch
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCh", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCh", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getCh"); } set { IExecute("setCh", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getChOff()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setChOff(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String ChOff
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getChOff", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setChOff", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getChOff"); } set { IExecute("setChOff", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getColSpan()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setColSpan(int)"/>
         /// </summary>
         public int ColSpan
         {
-            get { return IExecuteWithSignature<int>("getColSpan", "()I"); } set { IExecuteWithSignature("setColSpan", "(I)V", value); }
+            get { return IExecute<int>("getColSpan"); } set { IExecute("setColSpan", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getHeaders()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setHeaders(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Headers
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHeaders", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHeaders", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getHeaders"); } set { IExecute("setHeaders", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setHeight(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Height
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHeight", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setHeight", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getHeight"); } set { IExecute("setHeight", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getNoWrap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setNoWrap(boolean)"/>
         /// </summary>
         public bool NoWrap
         {
-            get { return IExecuteWithSignature<bool>("getNoWrap", "()Z"); } set { IExecuteWithSignature("setNoWrap", "(Z)V", value); }
+            get { return IExecute<bool>("getNoWrap"); } set { IExecute("setNoWrap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getRowSpan()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setRowSpan(int)"/>
         /// </summary>
         public int RowSpan
         {
-            get { return IExecuteWithSignature<int>("getRowSpan", "()I"); } set { IExecuteWithSignature("setRowSpan", "(I)V", value); }
+            get { return IExecute<int>("getRowSpan"); } set { IExecute("setRowSpan", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getScope()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setScope(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Scope
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getScope", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setScope", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getScope"); } set { IExecute("setScope", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getVAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setVAlign(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String VAlign
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVAlign", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setVAlign", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getVAlign"); } set { IExecute("setVAlign", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableCellElement.html#setWidth(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Width
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWidth", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setWidth", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getWidth"); } set { IExecute("setWidth", value); }
         }
 
         #endregion

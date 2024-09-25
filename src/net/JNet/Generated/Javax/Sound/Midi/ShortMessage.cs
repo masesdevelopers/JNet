@@ -235,28 +235,28 @@ namespace Javax.Sound.Midi
         /// </summary>
         public int Channel
         {
-            get { return IExecuteWithSignature<int>("getChannel", "()I"); }
+            get { return IExecute<int>("getChannel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#getCommand()"/> 
         /// </summary>
         public int Command
         {
-            get { return IExecuteWithSignature<int>("getCommand", "()I"); }
+            get { return IExecute<int>("getCommand"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#getData1()"/> 
         /// </summary>
         public int Data1
         {
-            get { return IExecuteWithSignature<int>("getData1", "()I"); }
+            get { return IExecute<int>("getData1"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#getData2()"/> 
         /// </summary>
         public int Data2
         {
-            get { return IExecuteWithSignature<int>("getData2", "()I"); }
+            get { return IExecute<int>("getData2"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#setMessage(int,int,int,int)"/>
@@ -288,7 +288,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public void SetMessage(int arg0)
         {
-            IExecuteWithSignature("setMessage", "(I)V", arg0);
+            IExecute("setMessage", arg0);
         }
 
         #endregion

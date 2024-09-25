@@ -102,7 +102,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstDayOfMonth()
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstDayOfMonth", "()Ljava/time/temporal/TemporalAdjuster;");
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstDayOfMonth");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfNextMonth()"/>
@@ -110,7 +110,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstDayOfNextMonth()
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstDayOfNextMonth", "()Ljava/time/temporal/TemporalAdjuster;");
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstDayOfNextMonth");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfNextYear()"/>
@@ -118,7 +118,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstDayOfNextYear()
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstDayOfNextYear", "()Ljava/time/temporal/TemporalAdjuster;");
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstDayOfNextYear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfYear()"/>
@@ -126,7 +126,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstDayOfYear()
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstDayOfYear", "()Ljava/time/temporal/TemporalAdjuster;");
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstDayOfYear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#firstInMonth(java.time.DayOfWeek)"/>
@@ -135,7 +135,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstInMonth(Java.Time.DayOfWeek arg0)
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstInMonth", "(Ljava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0);
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstInMonth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#lastDayOfMonth()"/>
@@ -143,7 +143,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster LastDayOfMonth()
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "lastDayOfMonth", "()Ljava/time/temporal/TemporalAdjuster;");
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "lastDayOfMonth");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#lastDayOfYear()"/>
@@ -151,7 +151,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster LastDayOfYear()
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "lastDayOfYear", "()Ljava/time/temporal/TemporalAdjuster;");
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "lastDayOfYear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#lastInMonth(java.time.DayOfWeek)"/>
@@ -160,7 +160,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster LastInMonth(Java.Time.DayOfWeek arg0)
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "lastInMonth", "(Ljava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0);
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "lastInMonth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#next(java.time.DayOfWeek)"/>
@@ -169,7 +169,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster Next(Java.Time.DayOfWeek arg0)
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "next", "(Ljava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0);
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "next", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#nextOrSame(java.time.DayOfWeek)"/>
@@ -178,7 +178,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster NextOrSame(Java.Time.DayOfWeek arg0)
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "nextOrSame", "(Ljava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0);
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "nextOrSame", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#ofDateAdjuster(java.util.function.UnaryOperator)"/>
@@ -187,7 +187,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster OfDateAdjuster(Java.Util.Function.UnaryOperator<Java.Time.LocalDate> arg0)
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "ofDateAdjuster", "(Ljava/util/function/UnaryOperator;)Ljava/time/temporal/TemporalAdjuster;", arg0);
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "ofDateAdjuster", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#previous(java.time.DayOfWeek)"/>
@@ -196,7 +196,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster Previous(Java.Time.DayOfWeek arg0)
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "previous", "(Ljava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0);
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "previous", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#previousOrSame(java.time.DayOfWeek)"/>
@@ -205,7 +205,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster PreviousOrSame(Java.Time.DayOfWeek arg0)
         {
-            return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "previousOrSame", "(Ljava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0);
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "previousOrSame", arg0);
         }
 
         #endregion

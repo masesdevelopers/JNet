@@ -234,7 +234,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public override void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
         {
-            IExecuteWithSignature("mouseDragged", "(Ljava/awt/event/MouseEvent;)V", arg0);
+            IExecute("mouseDragged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html#mouseMoved(java.awt.event.MouseEvent)"/>
@@ -242,7 +242,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public override void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
         {
-            IExecuteWithSignature("mouseMoved", "(Ljava/awt/event/MouseEvent;)V", arg0);
+            IExecute("mouseMoved", arg0);
         }
 
         #endregion

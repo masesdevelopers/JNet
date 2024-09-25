@@ -103,7 +103,7 @@ namespace Javax.Swing
         /// </summary>
         public Javax.Swing.JComponent Component
         {
-            get { return IExecuteWithSignature<Javax.Swing.JComponent>("getComponent", "()Ljavax/swing/JComponent;"); }
+            get { return IExecute<Javax.Swing.JComponent>("getComponent"); }
         }
 
         #endregion

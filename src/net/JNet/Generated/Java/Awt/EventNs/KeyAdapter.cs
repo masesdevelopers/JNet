@@ -231,7 +231,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public override void KeyPressed(Java.Awt.EventNs.KeyEvent arg0)
         {
-            IExecuteWithSignature("keyPressed", "(Ljava/awt/event/KeyEvent;)V", arg0);
+            IExecute("keyPressed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyAdapter.html#keyReleased(java.awt.event.KeyEvent)"/>
@@ -239,7 +239,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public override void KeyReleased(Java.Awt.EventNs.KeyEvent arg0)
         {
-            IExecuteWithSignature("keyReleased", "(Ljava/awt/event/KeyEvent;)V", arg0);
+            IExecute("keyReleased", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyAdapter.html#keyTyped(java.awt.event.KeyEvent)"/>
@@ -247,7 +247,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public override void KeyTyped(Java.Awt.EventNs.KeyEvent arg0)
         {
-            IExecuteWithSignature("keyTyped", "(Ljava/awt/event/KeyEvent;)V", arg0);
+            IExecute("keyTyped", arg0);
         }
 
         #endregion

@@ -451,63 +451,63 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public static Javax.Swing.Border.Border GetButtonBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getButtonBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getButtonBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getMenuBarBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetMenuBarBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getMenuBarBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getMenuBarBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getRadioButtonBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetRadioButtonBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getRadioButtonBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getRadioButtonBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getSplitPaneBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetSplitPaneBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getSplitPaneBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getSplitPaneBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getSplitPaneDividerBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetSplitPaneDividerBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getSplitPaneDividerBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getSplitPaneDividerBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getToggleButtonBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border GetToggleButtonBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getToggleButtonBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getToggleButtonBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getInternalFrameBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border InternalFrameBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getInternalFrameBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getInternalFrameBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getProgressBarBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border ProgressBarBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getProgressBarBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getProgressBarBorder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getTextFieldBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border TextFieldBorder
         {
-            get { return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "getTextFieldBorder", "()Ljavax/swing/border/Border;"); }
+            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "getTextFieldBorder"); }
         }
 
         #endregion
@@ -815,7 +815,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <returns><see cref="bool"/></returns>
             public bool IsBorderOpaque()
             {
-                return IExecuteWithSignature<bool>("isBorderOpaque", "()Z");
+                return IExecute<bool>("isBorderOpaque");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#getBorderInsets(java.awt.Component)"/>
@@ -824,7 +824,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <returns><see cref="Java.Awt.Insets"/></returns>
             public Java.Awt.Insets GetBorderInsets(Java.Awt.Component arg0)
             {
-                return IExecuteWithSignature<Java.Awt.Insets>("getBorderInsets", "(Ljava/awt/Component;)Ljava/awt/Insets;", arg0);
+                return IExecute<Java.Awt.Insets>("getBorderInsets", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)"/>

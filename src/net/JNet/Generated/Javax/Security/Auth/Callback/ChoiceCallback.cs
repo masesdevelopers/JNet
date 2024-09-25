@@ -114,28 +114,28 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public Java.Lang.String[] Choices
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getChoices", "()[Ljava/lang/String;"); }
+            get { return IExecuteArray<Java.Lang.String>("getChoices"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#getDefaultChoice()"/> 
         /// </summary>
         public int DefaultChoice
         {
-            get { return IExecuteWithSignature<int>("getDefaultChoice", "()I"); }
+            get { return IExecute<int>("getDefaultChoice"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#getPrompt()"/> 
         /// </summary>
         public Java.Lang.String Prompt
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrompt", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getPrompt"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#getSelectedIndexes()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#setSelectedIndexes(int[])"/>
         /// </summary>
         public int[] SelectedIndexes
         {
-            get { return IExecuteWithSignatureArray<int>("getSelectedIndexes", "()[I"); } set { IExecuteWithSignature("setSelectedIndexes", "([I)V", value); }
+            get { return IExecuteArray<int>("getSelectedIndexes"); } set { IExecute("setSelectedIndexes", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#allowMultipleSelections()"/>
@@ -143,7 +143,7 @@ namespace Javax.Security.Auth.Callback
         /// <returns><see cref="bool"/></returns>
         public bool AllowMultipleSelections()
         {
-            return IExecuteWithSignature<bool>("allowMultipleSelections", "()Z");
+            return IExecute<bool>("allowMultipleSelections");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#setSelectedIndex(int)"/>
@@ -151,7 +151,7 @@ namespace Javax.Security.Auth.Callback
         /// <param name="arg0"><see cref="int"/></param>
         public void SetSelectedIndex(int arg0)
         {
-            IExecuteWithSignature("setSelectedIndex", "(I)V", arg0);
+            IExecute("setSelectedIndex", arg0);
         }
 
         #endregion

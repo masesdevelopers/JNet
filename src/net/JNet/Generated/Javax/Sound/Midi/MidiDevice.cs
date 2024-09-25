@@ -206,56 +206,56 @@ namespace Javax.Sound.Midi
         /// </summary>
         public Javax.Sound.Midi.MidiDevice.Info DeviceInfo
         {
-            get { return IExecuteWithSignature<Javax.Sound.Midi.MidiDevice.Info>("getDeviceInfo", "()Ljavax/sound/midi/MidiDevice$Info;"); }
+            get { return IExecute<Javax.Sound.Midi.MidiDevice.Info>("getDeviceInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getMaxReceivers()"/> 
         /// </summary>
         public int MaxReceivers
         {
-            get { return IExecuteWithSignature<int>("getMaxReceivers", "()I"); }
+            get { return IExecute<int>("getMaxReceivers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getMaxTransmitters()"/> 
         /// </summary>
         public int MaxTransmitters
         {
-            get { return IExecuteWithSignature<int>("getMaxTransmitters", "()I"); }
+            get { return IExecute<int>("getMaxTransmitters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getMicrosecondPosition()"/> 
         /// </summary>
         public long MicrosecondPosition
         {
-            get { return IExecuteWithSignature<long>("getMicrosecondPosition", "()J"); }
+            get { return IExecute<long>("getMicrosecondPosition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getReceiver()"/> 
         /// </summary>
         public Javax.Sound.Midi.Receiver Receiver
         {
-            get { return IExecuteWithSignature<Javax.Sound.Midi.Receiver>("getReceiver", "()Ljavax/sound/midi/Receiver;"); }
+            get { return IExecute<Javax.Sound.Midi.Receiver>("getReceiver"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getReceivers()"/> 
         /// </summary>
         public Java.Util.List<Javax.Sound.Midi.Receiver> Receivers
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Sound.Midi.Receiver>>("getReceivers", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Javax.Sound.Midi.Receiver>>("getReceivers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getTransmitter()"/> 
         /// </summary>
         public Javax.Sound.Midi.Transmitter Transmitter
         {
-            get { return IExecuteWithSignature<Javax.Sound.Midi.Transmitter>("getTransmitter", "()Ljavax/sound/midi/Transmitter;"); }
+            get { return IExecute<Javax.Sound.Midi.Transmitter>("getTransmitter"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getTransmitters()"/> 
         /// </summary>
         public Java.Util.List<Javax.Sound.Midi.Transmitter> Transmitters
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Sound.Midi.Transmitter>>("getTransmitters", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Javax.Sound.Midi.Transmitter>>("getTransmitters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#isOpen()"/>
@@ -263,14 +263,14 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
         {
-            return IExecuteWithSignature<bool>("isOpen", "()Z");
+            return IExecute<bool>("isOpen");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#open()"/>
@@ -278,7 +278,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Javax.Sound.Midi.MidiUnavailableException"/>
         public void Open()
         {
-            IExecuteWithSignature("open", "()V");
+            IExecute("open");
         }
 
         #endregion

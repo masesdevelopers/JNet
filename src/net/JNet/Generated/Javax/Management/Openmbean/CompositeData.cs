@@ -148,7 +148,7 @@ namespace Javax.Management.Openmbean
         /// </summary>
         public Javax.Management.Openmbean.CompositeType CompositeType
         {
-            get { return IExecuteWithSignature<Javax.Management.Openmbean.CompositeType>("getCompositeType", "()Ljavax/management/openmbean/CompositeType;"); }
+            get { return IExecute<Javax.Management.Openmbean.CompositeType>("getCompositeType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#containsKey(java.lang.String)"/>
@@ -157,7 +157,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool ContainsKey(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#containsValue(java.lang.Object)"/>
@@ -166,7 +166,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="bool"/></returns>
         public bool ContainsValue(object arg0)
         {
-            return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
+            return IExecute<bool>("containsValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#get(java.lang.String)"/>
@@ -175,7 +175,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="object"/></returns>
         public object Get(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature("get", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+            return IExecute("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#getAll(java.lang.String[])"/>
@@ -184,7 +184,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="object"/></returns>
         public object[] GetAll(Java.Lang.String[] arg0)
         {
-            return IExecuteWithSignatureArray<object>("getAll", "([Ljava/lang/String;)[Ljava/lang/Object;", new object[] { arg0 });
+            return IExecuteArray<object>("getAll", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#values()"/>
@@ -192,7 +192,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<object> Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection<object>>("values", "()Ljava/util/Collection;");
+            return IExecute<Java.Util.Collection<object>>("values");
         }
 
         #endregion

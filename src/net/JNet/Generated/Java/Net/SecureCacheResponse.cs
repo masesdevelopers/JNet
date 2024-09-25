@@ -97,35 +97,35 @@ namespace Java.Net
         /// </summary>
         public Java.Lang.String CipherSuite
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCipherSuite", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getCipherSuite"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getLocalCertificateChain()"/> 
         /// </summary>
         public Java.Util.List<Java.Security.Cert.Certificate> LocalCertificateChain
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Certificate>>("getLocalCertificateChain", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Java.Security.Cert.Certificate>>("getLocalCertificateChain"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getLocalPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal LocalPrincipal
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getLocalPrincipal", "()Ljava/security/Principal;"); }
+            get { return IExecute<Java.Security.Principal>("getLocalPrincipal"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getPeerPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal PeerPrincipal
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getPeerPrincipal", "()Ljava/security/Principal;"); }
+            get { return IExecute<Java.Security.Principal>("getPeerPrincipal"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getServerCertificateChain()"/> 
         /// </summary>
         public Java.Util.List<Java.Security.Cert.Certificate> ServerCertificateChain
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Certificate>>("getServerCertificateChain", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List<Java.Security.Cert.Certificate>>("getServerCertificateChain"); }
         }
 
         #endregion

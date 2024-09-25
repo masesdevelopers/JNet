@@ -413,21 +413,21 @@ namespace Java.Security
             /// </summary>
             public Java.Security.DrbgParameters.Capability GetCapability
             {
-                get { return IExecuteWithSignature<Java.Security.DrbgParameters.Capability>("getCapability", "()Ljava/security/DrbgParameters$Capability;"); }
+                get { return IExecute<Java.Security.DrbgParameters.Capability>("getCapability"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html#getPersonalizationString()"/> 
             /// </summary>
             public byte[] PersonalizationString
             {
-                get { return IExecuteWithSignatureArray<byte>("getPersonalizationString", "()[B"); }
+                get { return IExecuteArray<byte>("getPersonalizationString"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html#getStrength()"/> 
             /// </summary>
             public int Strength
             {
-                get { return IExecuteWithSignature<int>("getStrength", "()I"); }
+                get { return IExecute<int>("getStrength"); }
             }
 
             #endregion
@@ -465,21 +465,21 @@ namespace Java.Security
             /// </summary>
             public byte[] AdditionalInput
             {
-                get { return IExecuteWithSignatureArray<byte>("getAdditionalInput", "()[B"); }
+                get { return IExecuteArray<byte>("getAdditionalInput"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html#getPredictionResistance()"/> 
             /// </summary>
             public bool PredictionResistance
             {
-                get { return IExecuteWithSignature<bool>("getPredictionResistance", "()Z"); }
+                get { return IExecute<bool>("getPredictionResistance"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html#getStrength()"/> 
             /// </summary>
             public int Strength
             {
-                get { return IExecuteWithSignature<int>("getStrength", "()I"); }
+                get { return IExecute<int>("getStrength"); }
             }
 
             #endregion
@@ -517,14 +517,14 @@ namespace Java.Security
             /// </summary>
             public byte[] AdditionalInput
             {
-                get { return IExecuteWithSignatureArray<byte>("getAdditionalInput", "()[B"); }
+                get { return IExecuteArray<byte>("getAdditionalInput"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html#getPredictionResistance()"/> 
             /// </summary>
             public bool PredictionResistance
             {
-                get { return IExecuteWithSignature<bool>("getPredictionResistance", "()Z"); }
+                get { return IExecute<bool>("getPredictionResistance"); }
             }
 
             #endregion

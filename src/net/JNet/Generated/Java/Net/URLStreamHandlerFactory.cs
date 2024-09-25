@@ -123,7 +123,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.URLStreamHandler"/></returns>
         public Java.Net.URLStreamHandler CreateURLStreamHandler(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Net.URLStreamHandler>("createURLStreamHandler", "(Ljava/lang/String;)Ljava/net/URLStreamHandler;", arg0);
+            return IExecute<Java.Net.URLStreamHandler>("createURLStreamHandler", arg0);
         }
 
         #endregion

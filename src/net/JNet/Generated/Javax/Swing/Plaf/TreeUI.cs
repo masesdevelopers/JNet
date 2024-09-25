@@ -99,7 +99,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="bool"/></returns>
         public bool IsEditing(Javax.Swing.JTree arg0)
         {
-            return IExecuteWithSignature<bool>("isEditing", "(Ljavax/swing/JTree;)Z", arg0);
+            return IExecute<bool>("isEditing", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#stopEditing(javax.swing.JTree)"/>
@@ -108,7 +108,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="bool"/></returns>
         public bool StopEditing(Javax.Swing.JTree arg0)
         {
-            return IExecuteWithSignature<bool>("stopEditing", "(Ljavax/swing/JTree;)Z", arg0);
+            return IExecute<bool>("stopEditing", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getRowCount(javax.swing.JTree)"/>
@@ -117,7 +117,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="int"/></returns>
         public int GetRowCount(Javax.Swing.JTree arg0)
         {
-            return IExecuteWithSignature<int>("getRowCount", "(Ljavax/swing/JTree;)I", arg0);
+            return IExecute<int>("getRowCount", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getRowForPath(javax.swing.JTree,javax.swing.tree.TreePath)"/>
@@ -157,7 +157,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetEditingPath(Javax.Swing.JTree arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getEditingPath", "(Ljavax/swing/JTree;)Ljavax/swing/tree/TreePath;", arg0);
+            return IExecute<Javax.Swing.Tree.TreePath>("getEditingPath", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getPathForRow(javax.swing.JTree,int)"/>
@@ -175,7 +175,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
         public void CancelEditing(Javax.Swing.JTree arg0)
         {
-            IExecuteWithSignature("cancelEditing", "(Ljavax/swing/JTree;)V", arg0);
+            IExecute("cancelEditing", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#startEditingAtPath(javax.swing.JTree,javax.swing.tree.TreePath)"/>

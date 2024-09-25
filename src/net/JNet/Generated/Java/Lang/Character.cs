@@ -656,7 +656,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsAlphabetic(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isAlphabetic", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isAlphabetic", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isBmpCodePoint(int)"/>
@@ -665,7 +665,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsBmpCodePoint(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isBmpCodePoint", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isBmpCodePoint", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isDefined(char)"/>
@@ -674,7 +674,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsDefined(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDefined", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isDefined", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isDefined(int)"/>
@@ -683,7 +683,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsDefined(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDefined", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isDefined", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isDigit(char)"/>
@@ -692,7 +692,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsDigit(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDigit", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isDigit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isDigit(int)"/>
@@ -701,7 +701,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsDigit(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDigit", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isDigit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isHighSurrogate(char)"/>
@@ -710,7 +710,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsHighSurrogate(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isHighSurrogate", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isHighSurrogate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isIdentifierIgnorable(char)"/>
@@ -719,7 +719,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsIdentifierIgnorable(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isIdentifierIgnorable", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isIdentifierIgnorable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isIdentifierIgnorable(int)"/>
@@ -728,7 +728,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsIdentifierIgnorable(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isIdentifierIgnorable", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isIdentifierIgnorable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isIdeographic(int)"/>
@@ -737,7 +737,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsIdeographic(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isIdeographic", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isIdeographic", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isISOControl(char)"/>
@@ -746,7 +746,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsISOControl(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isISOControl", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isISOControl", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isISOControl(int)"/>
@@ -755,7 +755,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsISOControl(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isISOControl", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isISOControl", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isJavaIdentifierPart(char)"/>
@@ -764,7 +764,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsJavaIdentifierPart(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaIdentifierPart", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isJavaIdentifierPart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isJavaIdentifierPart(int)"/>
@@ -773,7 +773,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsJavaIdentifierPart(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaIdentifierPart", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isJavaIdentifierPart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isJavaIdentifierStart(char)"/>
@@ -782,7 +782,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsJavaIdentifierStart(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaIdentifierStart", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isJavaIdentifierStart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isJavaIdentifierStart(int)"/>
@@ -791,7 +791,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsJavaIdentifierStart(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaIdentifierStart", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isJavaIdentifierStart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLetter(char)"/>
@@ -800,7 +800,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsLetter(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLetter", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isLetter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLetter(int)"/>
@@ -809,7 +809,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsLetter(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLetter", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isLetter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLetterOrDigit(char)"/>
@@ -818,7 +818,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsLetterOrDigit(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLetterOrDigit", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isLetterOrDigit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLetterOrDigit(int)"/>
@@ -827,7 +827,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsLetterOrDigit(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLetterOrDigit", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isLetterOrDigit", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLowerCase(char)"/>
@@ -836,7 +836,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsLowerCase(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLowerCase", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isLowerCase", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLowerCase(int)"/>
@@ -845,7 +845,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsLowerCase(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLowerCase", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isLowerCase", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isLowSurrogate(char)"/>
@@ -854,7 +854,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsLowSurrogate(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLowSurrogate", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isLowSurrogate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isMirrored(char)"/>
@@ -863,7 +863,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsMirrored(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isMirrored", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isMirrored", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isMirrored(int)"/>
@@ -872,7 +872,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsMirrored(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isMirrored", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isMirrored", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isSpaceChar(char)"/>
@@ -881,7 +881,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsSpaceChar(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSpaceChar", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isSpaceChar", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isSpaceChar(int)"/>
@@ -890,7 +890,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsSpaceChar(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSpaceChar", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isSpaceChar", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isSupplementaryCodePoint(int)"/>
@@ -899,7 +899,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsSupplementaryCodePoint(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSupplementaryCodePoint", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isSupplementaryCodePoint", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isSurrogate(char)"/>
@@ -908,7 +908,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsSurrogate(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSurrogate", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isSurrogate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isSurrogatePair(char,char)"/>
@@ -927,7 +927,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsTitleCase(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isTitleCase", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isTitleCase", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isTitleCase(int)"/>
@@ -936,7 +936,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsTitleCase(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isTitleCase", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isTitleCase", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isUnicodeIdentifierPart(char)"/>
@@ -945,7 +945,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsUnicodeIdentifierPart(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isUnicodeIdentifierPart", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isUnicodeIdentifierPart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isUnicodeIdentifierPart(int)"/>
@@ -954,7 +954,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsUnicodeIdentifierPart(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isUnicodeIdentifierPart", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isUnicodeIdentifierPart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isUnicodeIdentifierStart(char)"/>
@@ -963,7 +963,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsUnicodeIdentifierStart(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isUnicodeIdentifierStart", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isUnicodeIdentifierStart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isUnicodeIdentifierStart(int)"/>
@@ -972,7 +972,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsUnicodeIdentifierStart(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isUnicodeIdentifierStart", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isUnicodeIdentifierStart", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isUpperCase(char)"/>
@@ -981,7 +981,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsUpperCase(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isUpperCase", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isUpperCase", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isUpperCase(int)"/>
@@ -990,7 +990,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsUpperCase(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isUpperCase", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isUpperCase", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isValidCodePoint(int)"/>
@@ -999,7 +999,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsValidCodePoint(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isValidCodePoint", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isValidCodePoint", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isWhitespace(char)"/>
@@ -1008,7 +1008,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsWhitespace(char arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isWhitespace", "(C)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isWhitespace", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isWhitespace(int)"/>
@@ -1017,7 +1017,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsWhitespace(int arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isWhitespace", "(I)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isWhitespace", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getDirectionality(char)"/>
@@ -1026,7 +1026,7 @@ namespace Java.Lang
         /// <returns><see cref="byte"/></returns>
         public static byte GetDirectionality(char arg0)
         {
-            return SExecuteWithSignature<byte>(LocalBridgeClazz, "getDirectionality", "(C)B", arg0);
+            return SExecute<byte>(LocalBridgeClazz, "getDirectionality", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getDirectionality(int)"/>
@@ -1035,7 +1035,7 @@ namespace Java.Lang
         /// <returns><see cref="byte"/></returns>
         public static byte GetDirectionality(int arg0)
         {
-            return SExecuteWithSignature<byte>(LocalBridgeClazz, "getDirectionality", "(I)B", arg0);
+            return SExecute<byte>(LocalBridgeClazz, "getDirectionality", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#forDigit(int,int)"/>
@@ -1054,7 +1054,7 @@ namespace Java.Lang
         /// <returns><see cref="char"/></returns>
         public static char HighSurrogate(int arg0)
         {
-            return SExecuteWithSignature<char>(LocalBridgeClazz, "highSurrogate", "(I)C", arg0);
+            return SExecute<char>(LocalBridgeClazz, "highSurrogate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#lowSurrogate(int)"/>
@@ -1063,7 +1063,7 @@ namespace Java.Lang
         /// <returns><see cref="char"/></returns>
         public static char LowSurrogate(int arg0)
         {
-            return SExecuteWithSignature<char>(LocalBridgeClazz, "lowSurrogate", "(I)C", arg0);
+            return SExecute<char>(LocalBridgeClazz, "lowSurrogate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#reverseBytes(char)"/>
@@ -1072,7 +1072,7 @@ namespace Java.Lang
         /// <returns><see cref="char"/></returns>
         public static char ReverseBytes(char arg0)
         {
-            return SExecuteWithSignature<char>(LocalBridgeClazz, "reverseBytes", "(C)C", arg0);
+            return SExecute<char>(LocalBridgeClazz, "reverseBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toLowerCase(char)"/>
@@ -1081,7 +1081,7 @@ namespace Java.Lang
         /// <returns><see cref="char"/></returns>
         public static char ToLowerCase(char arg0)
         {
-            return SExecuteWithSignature<char>(LocalBridgeClazz, "toLowerCase", "(C)C", arg0);
+            return SExecute<char>(LocalBridgeClazz, "toLowerCase", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toTitleCase(char)"/>
@@ -1090,7 +1090,7 @@ namespace Java.Lang
         /// <returns><see cref="char"/></returns>
         public static char ToTitleCase(char arg0)
         {
-            return SExecuteWithSignature<char>(LocalBridgeClazz, "toTitleCase", "(C)C", arg0);
+            return SExecute<char>(LocalBridgeClazz, "toTitleCase", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toUpperCase(char)"/>
@@ -1099,7 +1099,7 @@ namespace Java.Lang
         /// <returns><see cref="char"/></returns>
         public static char ToUpperCase(char arg0)
         {
-            return SExecuteWithSignature<char>(LocalBridgeClazz, "toUpperCase", "(C)C", arg0);
+            return SExecute<char>(LocalBridgeClazz, "toUpperCase", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toChars(int)"/>
@@ -1108,7 +1108,7 @@ namespace Java.Lang
         /// <returns><see cref="char"/></returns>
         public static char[] ToChars(int arg0)
         {
-            return SExecuteWithSignatureArray<char>(LocalBridgeClazz, "toChars", "(I)[C", arg0);
+            return SExecuteArray<char>(LocalBridgeClazz, "toChars", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#charCount(int)"/>
@@ -1117,7 +1117,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CharCount(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "charCount", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "charCount", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#codePointAt(char[],int,int)"/>
@@ -1210,7 +1210,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointOf(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointOf", "(Ljava/lang/String;)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "codePointOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#compare(char,char)"/>
@@ -1249,7 +1249,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int GetNumericValue(char arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "getNumericValue", "(C)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "getNumericValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getNumericValue(int)"/>
@@ -1258,7 +1258,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int GetNumericValue(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "getNumericValue", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "getNumericValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getType(char)"/>
@@ -1267,7 +1267,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int GetType(char arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "getType", "(C)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "getType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getType(int)"/>
@@ -1276,7 +1276,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int GetType(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "getType", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "getType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#hashCode(char)"/>
@@ -1285,7 +1285,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int HashCode(char arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(C)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "hashCode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#offsetByCodePoints(char[],int,int,int,int)"/>
@@ -1339,7 +1339,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int ToLowerCase(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "toLowerCase", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "toLowerCase", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toTitleCase(int)"/>
@@ -1348,7 +1348,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int ToTitleCase(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "toTitleCase", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "toTitleCase", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toUpperCase(int)"/>
@@ -1357,7 +1357,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int ToUpperCase(int arg0)
         {
-            return SExecuteWithSignature<int>(LocalBridgeClazz, "toUpperCase", "(I)I", arg0);
+            return SExecute<int>(LocalBridgeClazz, "toUpperCase", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#valueOf(char)"/>
@@ -1366,7 +1366,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Character"/></returns>
         public static Java.Lang.Character ValueOf(char arg0)
         {
-            return SExecuteWithSignature<Java.Lang.Character>(LocalBridgeClazz, "valueOf", "(C)Ljava/lang/Character;", arg0);
+            return SExecute<Java.Lang.Character>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getName(int)"/>
@@ -1375,7 +1375,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetName(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getName", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toString(char)"/>
@@ -1384,7 +1384,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(char arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(C)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toString(int)"/>
@@ -1393,7 +1393,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(int arg0)
         {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(I)Ljava/lang/String;", arg0);
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0);
         }
 
         #endregion
@@ -1405,7 +1405,7 @@ namespace Java.Lang
         /// <returns><see cref="char"/></returns>
         public char CharValue()
         {
-            return IExecuteWithSignature<char>("charValue", "()C");
+            return IExecute<char>("charValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#compareTo(java.lang.Character)"/>
@@ -1414,7 +1414,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Java.Lang.Character arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Character;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#compareTo(java.lang.Object)"/>
@@ -1423,7 +1423,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
 
         #endregion
@@ -3163,7 +3163,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.Character.UnicodeBlock"/></returns>
             public static Java.Lang.Character.UnicodeBlock ForName(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "forName", "(Ljava/lang/String;)Ljava/lang/Character$UnicodeBlock;", arg0);
+                return SExecute<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "forName", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#of(char)"/>
@@ -3172,7 +3172,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.Character.UnicodeBlock"/></returns>
             public static Java.Lang.Character.UnicodeBlock Of(char arg0)
             {
-                return SExecuteWithSignature<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "of", "(C)Ljava/lang/Character$UnicodeBlock;", arg0);
+                return SExecute<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "of", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeBlock.html#of(int)"/>
@@ -3181,7 +3181,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.Character.UnicodeBlock"/></returns>
             public static Java.Lang.Character.UnicodeBlock Of(int arg0)
             {
-                return SExecuteWithSignature<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "of", "(I)Ljava/lang/Character$UnicodeBlock;", arg0);
+                return SExecute<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "of", arg0);
             }
 
             #endregion
@@ -4073,7 +4073,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.Character.UnicodeScript"/></returns>
             public static Java.Lang.Character.UnicodeScript ForName(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "forName", "(Ljava/lang/String;)Ljava/lang/Character$UnicodeScript;", arg0);
+                return SExecute<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "forName", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#of(int)"/>
@@ -4082,7 +4082,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.Character.UnicodeScript"/></returns>
             public static Java.Lang.Character.UnicodeScript Of(int arg0)
             {
-                return SExecuteWithSignature<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "of", "(I)Ljava/lang/Character$UnicodeScript;", arg0);
+                return SExecute<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "of", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#valueOf(java.lang.String)"/>
@@ -4091,7 +4091,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.Character.UnicodeScript"/></returns>
             public static Java.Lang.Character.UnicodeScript ValueOf(Java.Lang.String arg0)
             {
-                return SExecuteWithSignature<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Character$UnicodeScript;", arg0);
+                return SExecute<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "valueOf", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#values()"/>
@@ -4099,7 +4099,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.Character.UnicodeScript"/></returns>
             public static Java.Lang.Character.UnicodeScript[] Values()
             {
-                return SExecuteWithSignatureArray<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "values", "()[Ljava/lang/Character$UnicodeScript;");
+                return SExecuteArray<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "values");
             }
 
             #endregion

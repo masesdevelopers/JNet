@@ -103,14 +103,14 @@ namespace Java.Security.Spec
         /// </summary>
         public int FieldSize
         {
-            get { return IExecuteWithSignature<int>("getFieldSize", "()I"); }
+            get { return IExecute<int>("getFieldSize"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldFp.html#getP()"/> 
         /// </summary>
         public Java.Math.BigInteger P
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getP", "()Ljava/math/BigInteger;"); }
+            get { return IExecute<Java.Math.BigInteger>("getP"); }
         }
 
         #endregion

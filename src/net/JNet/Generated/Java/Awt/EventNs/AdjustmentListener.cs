@@ -204,7 +204,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentEvent"/></param>
         public override void AdjustmentValueChanged(Java.Awt.EventNs.AdjustmentEvent arg0)
         {
-            IExecuteWithSignature("adjustmentValueChanged", "(Ljava/awt/event/AdjustmentEvent;)V", arg0);
+            IExecute("adjustmentValueChanged", arg0);
         }
 
         #endregion

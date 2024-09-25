@@ -99,77 +99,77 @@ namespace Javax.Swing.Tree
         /// </summary>
         public Java.Awt.Color BackgroundNonSelectionColor
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getBackgroundNonSelectionColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setBackgroundNonSelectionColor", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getBackgroundNonSelectionColor"); } set { IExecute("setBackgroundNonSelectionColor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getBackgroundSelectionColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setBackgroundSelectionColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color BackgroundSelectionColor
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getBackgroundSelectionColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setBackgroundSelectionColor", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getBackgroundSelectionColor"); } set { IExecute("setBackgroundSelectionColor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getBorderSelectionColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setBorderSelectionColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color BorderSelectionColor
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getBorderSelectionColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setBorderSelectionColor", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getBorderSelectionColor"); } set { IExecute("setBorderSelectionColor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getClosedIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setClosedIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon ClosedIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getClosedIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setClosedIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getClosedIcon"); } set { IExecute("setClosedIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultClosedIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon DefaultClosedIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getDefaultClosedIcon", "()Ljavax/swing/Icon;"); }
+            get { return IExecute<Javax.Swing.Icon>("getDefaultClosedIcon"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultLeafIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon DefaultLeafIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getDefaultLeafIcon", "()Ljavax/swing/Icon;"); }
+            get { return IExecute<Javax.Swing.Icon>("getDefaultLeafIcon"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultOpenIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon DefaultOpenIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getDefaultOpenIcon", "()Ljavax/swing/Icon;"); }
+            get { return IExecute<Javax.Swing.Icon>("getDefaultOpenIcon"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getLeafIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setLeafIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon LeafIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getLeafIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setLeafIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getLeafIcon"); } set { IExecute("setLeafIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getOpenIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setOpenIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon OpenIcon
         {
-            get { return IExecuteWithSignature<Javax.Swing.Icon>("getOpenIcon", "()Ljavax/swing/Icon;"); } set { IExecuteWithSignature("setOpenIcon", "(Ljavax/swing/Icon;)V", value); }
+            get { return IExecute<Javax.Swing.Icon>("getOpenIcon"); } set { IExecute("setOpenIcon", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getTextNonSelectionColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setTextNonSelectionColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color TextNonSelectionColor
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getTextNonSelectionColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setTextNonSelectionColor", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getTextNonSelectionColor"); } set { IExecute("setTextNonSelectionColor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getTextSelectionColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setTextSelectionColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color TextSelectionColor
         {
-            get { return IExecuteWithSignature<Java.Awt.Color>("getTextSelectionColor", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setTextSelectionColor", "(Ljava/awt/Color;)V", value); }
+            get { return IExecute<Java.Awt.Color>("getTextSelectionColor"); } set { IExecute("setTextSelectionColor", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getTreeCellRendererComponent(javax.swing.JTree,java.lang.Object,boolean,boolean,boolean,int,boolean)"/>

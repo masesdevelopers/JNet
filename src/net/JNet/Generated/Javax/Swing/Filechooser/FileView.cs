@@ -99,7 +99,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Java.Lang.Boolean"/></returns>
         public Java.Lang.Boolean IsTraversable(Java.Io.File arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Boolean>("isTraversable", "(Ljava/io/File;)Ljava/lang/Boolean;", arg0);
+            return IExecute<Java.Lang.Boolean>("isTraversable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getDescription(java.io.File)"/>
@@ -108,7 +108,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDescription(Java.Io.File arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDescription", "(Ljava/io/File;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getDescription", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getName(java.io.File)"/>
@@ -117,7 +117,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName(Java.Io.File arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getName", "(Ljava/io/File;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getTypeDescription(java.io.File)"/>
@@ -126,7 +126,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetTypeDescription(Java.Io.File arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("getTypeDescription", "(Ljava/io/File;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("getTypeDescription", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getIcon(java.io.File)"/>
@@ -135,7 +135,7 @@ namespace Javax.Swing.Filechooser
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetIcon(Java.Io.File arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Icon>("getIcon", "(Ljava/io/File;)Ljavax/swing/Icon;", arg0);
+            return IExecute<Javax.Swing.Icon>("getIcon", arg0);
         }
 
         #endregion

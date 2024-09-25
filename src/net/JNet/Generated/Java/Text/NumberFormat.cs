@@ -150,42 +150,42 @@ namespace Java.Text
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
+            get { return SExecuteArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getCurrencyInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat CurrencyInstance
         {
-            get { return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getCurrencyInstance", "()Ljava/text/NumberFormat;"); }
+            get { return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getCurrencyInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat Instance
         {
-            get { return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getInstance", "()Ljava/text/NumberFormat;"); }
+            get { return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getIntegerInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat IntegerInstance
         {
-            get { return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getIntegerInstance", "()Ljava/text/NumberFormat;"); }
+            get { return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getIntegerInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getNumberInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat NumberInstance
         {
-            get { return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getNumberInstance", "()Ljava/text/NumberFormat;"); }
+            get { return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getNumberInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getPercentInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat PercentInstance
         {
-            get { return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getPercentInstance", "()Ljava/text/NumberFormat;"); }
+            get { return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getPercentInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getCurrencyInstance(java.util.Locale)"/>
@@ -194,7 +194,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetCurrencyInstance(Java.Util.Locale arg0)
         {
-            return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getCurrencyInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
+            return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getCurrencyInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getInstance(java.util.Locale)"/>
@@ -203,7 +203,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetInstance(Java.Util.Locale arg0)
         {
-            return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
+            return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getIntegerInstance(java.util.Locale)"/>
@@ -212,7 +212,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetIntegerInstance(Java.Util.Locale arg0)
         {
-            return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getIntegerInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
+            return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getIntegerInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getNumberInstance(java.util.Locale)"/>
@@ -221,7 +221,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetNumberInstance(Java.Util.Locale arg0)
         {
-            return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getNumberInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
+            return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getNumberInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getPercentInstance(java.util.Locale)"/>
@@ -230,7 +230,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetPercentInstance(Java.Util.Locale arg0)
         {
-            return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getPercentInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
+            return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getPercentInstance", arg0);
         }
 
         #endregion
@@ -241,42 +241,42 @@ namespace Java.Text
         /// </summary>
         public Java.Util.Currency Currency
         {
-            get { return IExecuteWithSignature<Java.Util.Currency>("getCurrency", "()Ljava/util/Currency;"); } set { IExecuteWithSignature("setCurrency", "(Ljava/util/Currency;)V", value); }
+            get { return IExecute<Java.Util.Currency>("getCurrency"); } set { IExecute("setCurrency", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMaximumFractionDigits()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMaximumFractionDigits(int)"/>
         /// </summary>
         public int MaximumFractionDigits
         {
-            get { return IExecuteWithSignature<int>("getMaximumFractionDigits", "()I"); } set { IExecuteWithSignature("setMaximumFractionDigits", "(I)V", value); }
+            get { return IExecute<int>("getMaximumFractionDigits"); } set { IExecute("setMaximumFractionDigits", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMaximumIntegerDigits()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMaximumIntegerDigits(int)"/>
         /// </summary>
         public int MaximumIntegerDigits
         {
-            get { return IExecuteWithSignature<int>("getMaximumIntegerDigits", "()I"); } set { IExecuteWithSignature("setMaximumIntegerDigits", "(I)V", value); }
+            get { return IExecute<int>("getMaximumIntegerDigits"); } set { IExecute("setMaximumIntegerDigits", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMinimumFractionDigits()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMinimumFractionDigits(int)"/>
         /// </summary>
         public int MinimumFractionDigits
         {
-            get { return IExecuteWithSignature<int>("getMinimumFractionDigits", "()I"); } set { IExecuteWithSignature("setMinimumFractionDigits", "(I)V", value); }
+            get { return IExecute<int>("getMinimumFractionDigits"); } set { IExecute("setMinimumFractionDigits", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMinimumIntegerDigits()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMinimumIntegerDigits(int)"/>
         /// </summary>
         public int MinimumIntegerDigits
         {
-            get { return IExecuteWithSignature<int>("getMinimumIntegerDigits", "()I"); } set { IExecuteWithSignature("setMinimumIntegerDigits", "(I)V", value); }
+            get { return IExecute<int>("getMinimumIntegerDigits"); } set { IExecute("setMinimumIntegerDigits", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getRoundingMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setRoundingMode(java.math.RoundingMode)"/>
         /// </summary>
         public Java.Math.RoundingMode RoundingMode
         {
-            get { return IExecuteWithSignature<Java.Math.RoundingMode>("getRoundingMode", "()Ljava/math/RoundingMode;"); } set { IExecuteWithSignature("setRoundingMode", "(Ljava/math/RoundingMode;)V", value); }
+            get { return IExecute<Java.Math.RoundingMode>("getRoundingMode"); } set { IExecute("setRoundingMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
@@ -316,7 +316,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsGroupingUsed()
         {
-            return IExecuteWithSignature<bool>("isGroupingUsed", "()Z");
+            return IExecute<bool>("isGroupingUsed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isParseIntegerOnly()"/>
@@ -324,7 +324,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public bool IsParseIntegerOnly()
         {
-            return IExecuteWithSignature<bool>("isParseIntegerOnly", "()Z");
+            return IExecute<bool>("isParseIntegerOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(double)"/>
@@ -333,7 +333,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Format(double arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("format", "(D)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("format", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(long)"/>
@@ -342,7 +342,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Format(long arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("format", "(J)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("format", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#parse(java.lang.String)"/>
@@ -352,7 +352,7 @@ namespace Java.Text
         /// <exception cref="Java.Text.ParseException"/>
         public Java.Lang.Number Parse(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.Number>("parse", "(Ljava/lang/String;)Ljava/lang/Number;", arg0);
+            return IExecute<Java.Lang.Number>("parse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setGroupingUsed(boolean)"/>
@@ -360,7 +360,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetGroupingUsed(bool arg0)
         {
-            IExecuteWithSignature("setGroupingUsed", "(Z)V", arg0);
+            IExecute("setGroupingUsed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setParseIntegerOnly(boolean)"/>
@@ -368,7 +368,7 @@ namespace Java.Text
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetParseIntegerOnly(bool arg0)
         {
-            IExecuteWithSignature("setParseIntegerOnly", "(Z)V", arg0);
+            IExecute("setParseIntegerOnly", arg0);
         }
 
         #endregion

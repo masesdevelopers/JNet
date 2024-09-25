@@ -157,56 +157,56 @@ namespace Java.Time.Zone
         /// </summary>
         public int DayOfMonthIndicator
         {
-            get { return IExecuteWithSignature<int>("getDayOfMonthIndicator", "()I"); }
+            get { return IExecute<int>("getDayOfMonthIndicator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getDayOfWeek()"/> 
         /// </summary>
         public Java.Time.DayOfWeek DayOfWeek
         {
-            get { return IExecuteWithSignature<Java.Time.DayOfWeek>("getDayOfWeek", "()Ljava/time/DayOfWeek;"); }
+            get { return IExecute<Java.Time.DayOfWeek>("getDayOfWeek"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getTimeDefinition()"/> 
         /// </summary>
         public Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition GetTimeDefinition
         {
-            get { return IExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("getTimeDefinition", "()Ljava/time/zone/ZoneOffsetTransitionRule$TimeDefinition;"); }
+            get { return IExecute<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("getTimeDefinition"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getLocalTime()"/> 
         /// </summary>
         public Java.Time.LocalTime LocalTime
         {
-            get { return IExecuteWithSignature<Java.Time.LocalTime>("getLocalTime", "()Ljava/time/LocalTime;"); }
+            get { return IExecute<Java.Time.LocalTime>("getLocalTime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getMonth()"/> 
         /// </summary>
         public Java.Time.Month Month
         {
-            get { return IExecuteWithSignature<Java.Time.Month>("getMonth", "()Ljava/time/Month;"); }
+            get { return IExecute<Java.Time.Month>("getMonth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getOffsetAfter()"/> 
         /// </summary>
         public Java.Time.ZoneOffset OffsetAfter
         {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffsetAfter", "()Ljava/time/ZoneOffset;"); }
+            get { return IExecute<Java.Time.ZoneOffset>("getOffsetAfter"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getOffsetBefore()"/> 
         /// </summary>
         public Java.Time.ZoneOffset OffsetBefore
         {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffsetBefore", "()Ljava/time/ZoneOffset;"); }
+            get { return IExecute<Java.Time.ZoneOffset>("getOffsetBefore"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getStandardOffset()"/> 
         /// </summary>
         public Java.Time.ZoneOffset StandardOffset
         {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getStandardOffset", "()Ljava/time/ZoneOffset;"); }
+            get { return IExecute<Java.Time.ZoneOffset>("getStandardOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#isMidnightEndOfDay()"/>
@@ -214,7 +214,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="bool"/></returns>
         public bool IsMidnightEndOfDay()
         {
-            return IExecuteWithSignature<bool>("isMidnightEndOfDay", "()Z");
+            return IExecute<bool>("isMidnightEndOfDay");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#createTransition(int)"/>
@@ -223,7 +223,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransition"/></returns>
         public Java.Time.Zone.ZoneOffsetTransition CreateTransition(int arg0)
         {
-            return IExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransition>("createTransition", "(I)Ljava/time/zone/ZoneOffsetTransition;", arg0);
+            return IExecute<Java.Time.Zone.ZoneOffsetTransition>("createTransition", arg0);
         }
 
         #endregion

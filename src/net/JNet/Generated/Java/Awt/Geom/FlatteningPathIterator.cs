@@ -114,21 +114,21 @@ namespace Java.Awt.Geom
         /// </summary>
         public double Flatness
         {
-            get { return IExecuteWithSignature<double>("getFlatness", "()D"); }
+            get { return IExecute<double>("getFlatness"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#getRecursionLimit()"/> 
         /// </summary>
         public int RecursionLimit
         {
-            get { return IExecuteWithSignature<int>("getRecursionLimit", "()I"); }
+            get { return IExecute<int>("getRecursionLimit"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#getWindingRule()"/> 
         /// </summary>
         public int WindingRule
         {
-            get { return IExecuteWithSignature<int>("getWindingRule", "()I"); }
+            get { return IExecute<int>("getWindingRule"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#isDone()"/>
@@ -136,7 +136,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
         {
-            return IExecuteWithSignature<bool>("isDone", "()Z");
+            return IExecute<bool>("isDone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#currentSegment(double[])"/>
@@ -145,7 +145,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public int CurrentSegment(double[] arg0)
         {
-            return IExecuteWithSignature<int>("currentSegment", "([D)I", new object[] { arg0 });
+            return IExecute<int>("currentSegment", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#currentSegment(float[])"/>
@@ -154,14 +154,14 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public int CurrentSegment(float[] arg0)
         {
-            return IExecuteWithSignature<int>("currentSegment", "([F)I", new object[] { arg0 });
+            return IExecute<int>("currentSegment", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#next()"/>
         /// </summary>
         public void Next()
         {
-            IExecuteWithSignature("next", "()V");
+            IExecute("next");
         }
 
         #endregion

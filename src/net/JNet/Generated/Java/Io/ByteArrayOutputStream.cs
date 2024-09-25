@@ -104,7 +104,7 @@ namespace Java.Io
         /// <returns><see cref="byte"/></returns>
         public byte[] ToByteArray()
         {
-            return IExecuteWithSignatureArray<byte>("toByteArray", "()[B");
+            return IExecuteArray<byte>("toByteArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#size()"/>
@@ -112,7 +112,7 @@ namespace Java.Io
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
-            return IExecuteWithSignature<int>("size", "()I");
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#toString(java.lang.String)"/>
@@ -122,7 +122,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
         public Java.Lang.String ToString(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("toString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#toString(java.nio.charset.Charset)"/>
@@ -131,14 +131,14 @@ namespace Java.Io
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToString(Java.Nio.Charset.Charset arg0)
         {
-            return IExecuteWithSignature<Java.Lang.String>("toString", "(Ljava/nio/charset/Charset;)Ljava/lang/String;", arg0);
+            return IExecute<Java.Lang.String>("toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#writeTo(java.io.OutputStream)"/>
@@ -147,7 +147,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteTo(Java.Io.OutputStream arg0)
         {
-            IExecuteWithSignature("writeTo", "(Ljava/io/OutputStream;)V", arg0);
+            IExecute("writeTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayOutputStream.html#writeBytes(byte[])"/>
@@ -155,7 +155,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="byte"/></param>
         public void WriteBytes(byte[] arg0)
         {
-            IExecuteWithSignature("writeBytes", "([B)V", new object[] { arg0 });
+            IExecute("writeBytes", new object[] { arg0 });
         }
 
         #endregion

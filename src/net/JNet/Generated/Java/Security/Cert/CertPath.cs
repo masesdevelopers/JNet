@@ -97,28 +97,28 @@ namespace Java.Security.Cert
         /// </summary>
         public Java.Util.List Certificates
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getCertificates", "()Ljava/util/List;"); }
+            get { return IExecute<Java.Util.List>("getCertificates"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getEncodings()"/> 
         /// </summary>
         public Java.Util.Iterator<Java.Lang.String> Encodings
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getEncodings", "()Ljava/util/Iterator;"); }
+            get { return IExecute<Java.Util.Iterator<Java.Lang.String>>("getEncodings"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getType()"/> 
         /// </summary>
         public Java.Lang.String Type
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getEncoded(java.lang.String)"/>
@@ -128,7 +128,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateEncodingException"/>
         public byte[] GetEncoded(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<byte>("getEncoded", "(Ljava/lang/String;)[B", arg0);
+            return IExecuteArray<byte>("getEncoded", arg0);
         }
 
         #endregion

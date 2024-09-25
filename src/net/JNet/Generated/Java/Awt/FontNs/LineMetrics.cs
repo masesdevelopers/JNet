@@ -97,77 +97,77 @@ namespace Java.Awt.FontNs
         /// </summary>
         public float Ascent
         {
-            get { return IExecuteWithSignature<float>("getAscent", "()F"); }
+            get { return IExecute<float>("getAscent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getBaselineIndex()"/> 
         /// </summary>
         public int BaselineIndex
         {
-            get { return IExecuteWithSignature<int>("getBaselineIndex", "()I"); }
+            get { return IExecute<int>("getBaselineIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getBaselineOffsets()"/> 
         /// </summary>
         public float[] BaselineOffsets
         {
-            get { return IExecuteWithSignatureArray<float>("getBaselineOffsets", "()[F"); }
+            get { return IExecuteArray<float>("getBaselineOffsets"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getDescent()"/> 
         /// </summary>
         public float Descent
         {
-            get { return IExecuteWithSignature<float>("getDescent", "()F"); }
+            get { return IExecute<float>("getDescent"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getHeight()"/> 
         /// </summary>
         public float Height
         {
-            get { return IExecuteWithSignature<float>("getHeight", "()F"); }
+            get { return IExecute<float>("getHeight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getLeading()"/> 
         /// </summary>
         public float Leading
         {
-            get { return IExecuteWithSignature<float>("getLeading", "()F"); }
+            get { return IExecute<float>("getLeading"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getNumChars()"/> 
         /// </summary>
         public int NumChars
         {
-            get { return IExecuteWithSignature<int>("getNumChars", "()I"); }
+            get { return IExecute<int>("getNumChars"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getStrikethroughOffset()"/> 
         /// </summary>
         public float StrikethroughOffset
         {
-            get { return IExecuteWithSignature<float>("getStrikethroughOffset", "()F"); }
+            get { return IExecute<float>("getStrikethroughOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getStrikethroughThickness()"/> 
         /// </summary>
         public float StrikethroughThickness
         {
-            get { return IExecuteWithSignature<float>("getStrikethroughThickness", "()F"); }
+            get { return IExecute<float>("getStrikethroughThickness"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getUnderlineOffset()"/> 
         /// </summary>
         public float UnderlineOffset
         {
-            get { return IExecuteWithSignature<float>("getUnderlineOffset", "()F"); }
+            get { return IExecute<float>("getUnderlineOffset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getUnderlineThickness()"/> 
         /// </summary>
         public float UnderlineThickness
         {
-            get { return IExecuteWithSignature<float>("getUnderlineThickness", "()F"); }
+            get { return IExecute<float>("getUnderlineThickness"); }
         }
 
         #endregion

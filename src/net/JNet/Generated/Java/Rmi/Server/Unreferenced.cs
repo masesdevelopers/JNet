@@ -119,7 +119,7 @@ namespace Java.Rmi.Server
         /// </summary>
         public void UnreferencedMethod()
         {
-            IExecuteWithSignature("unreferenced", "()V");
+            IExecute("unreferenced");
         }
 
         #endregion

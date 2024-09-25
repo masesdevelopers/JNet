@@ -203,7 +203,7 @@ namespace Java.Util.Function
         /// </summary>
         public double AsDouble
         {
-            get { return IExecuteWithSignature<double>("getAsDouble", "()D"); }
+            get { return IExecute<double>("getAsDouble"); }
         }
 
         #endregion

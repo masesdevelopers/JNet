@@ -218,7 +218,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer Accumulator()
         {
-            return IExecuteWithSignature<Java.Util.Function.BiConsumer>("accumulator", "()Ljava/util/function/BiConsumer;");
+            return IExecute<Java.Util.Function.BiConsumer>("accumulator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/>
@@ -226,7 +226,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer AccumulatorDirect()
         {
-            return IExecuteWithSignature<Java.Util.Function.BiConsumerDirect, Java.Util.Function.BiConsumer>("accumulator", "()Ljava/util/function/BiConsumer;");
+            return IExecute<Java.Util.Function.BiConsumerDirect, Java.Util.Function.BiConsumer>("accumulator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
@@ -234,7 +234,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator Combiner()
         {
-            return IExecuteWithSignature<Java.Util.Function.BinaryOperator>("combiner", "()Ljava/util/function/BinaryOperator;");
+            return IExecute<Java.Util.Function.BinaryOperator>("combiner");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
@@ -242,7 +242,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator CombinerDirect()
         {
-            return IExecuteWithSignature<Java.Util.Function.BinaryOperatorDirect, Java.Util.Function.BinaryOperator>("combiner", "()Ljava/util/function/BinaryOperator;");
+            return IExecute<Java.Util.Function.BinaryOperatorDirect, Java.Util.Function.BinaryOperator>("combiner");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
@@ -250,7 +250,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public Java.Util.Function.Function Finisher()
         {
-            return IExecuteWithSignature<Java.Util.Function.Function>("finisher", "()Ljava/util/function/Function;");
+            return IExecute<Java.Util.Function.Function>("finisher");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
@@ -258,7 +258,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public Java.Util.Function.Function FinisherDirect()
         {
-            return IExecuteWithSignature<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("finisher", "()Ljava/util/function/Function;");
+            return IExecute<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("finisher");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
@@ -266,7 +266,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier Supplier()
         {
-            return IExecuteWithSignature<Java.Util.Function.Supplier>("supplier", "()Ljava/util/function/Supplier;");
+            return IExecute<Java.Util.Function.Supplier>("supplier");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
@@ -274,7 +274,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier SupplierDirect()
         {
-            return IExecuteWithSignature<Java.Util.Function.SupplierDirect, Java.Util.Function.Supplier>("supplier", "()Ljava/util/function/Supplier;");
+            return IExecute<Java.Util.Function.SupplierDirect, Java.Util.Function.Supplier>("supplier");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()"/>
@@ -282,7 +282,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set CharacteristicsMethod()
         {
-            return IExecuteWithSignature<Java.Util.Set>("characteristics", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set>("characteristics");
         }
 
         #endregion
@@ -479,7 +479,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer<A, T> Accumulator()
         {
-            return IExecuteWithSignature<Java.Util.Function.BiConsumer<A, T>>("accumulator", "()Ljava/util/function/BiConsumer;");
+            return IExecute<Java.Util.Function.BiConsumer<A, T>>("accumulator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/>
@@ -487,7 +487,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer<A, T> AccumulatorDirect()
         {
-            return IExecuteWithSignature<Java.Util.Function.BiConsumerDirect<A, T>, Java.Util.Function.BiConsumer<A, T>>("accumulator", "()Ljava/util/function/BiConsumer;");
+            return IExecute<Java.Util.Function.BiConsumerDirect<A, T>, Java.Util.Function.BiConsumer<A, T>>("accumulator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
@@ -495,7 +495,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator<A> Combiner()
         {
-            return IExecuteWithSignature<Java.Util.Function.BinaryOperator<A>>("combiner", "()Ljava/util/function/BinaryOperator;");
+            return IExecute<Java.Util.Function.BinaryOperator<A>>("combiner");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
@@ -503,7 +503,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator<A> CombinerDirect()
         {
-            return IExecuteWithSignature<Java.Util.Function.BinaryOperatorDirect<A>, Java.Util.Function.BinaryOperator<A>>("combiner", "()Ljava/util/function/BinaryOperator;");
+            return IExecute<Java.Util.Function.BinaryOperatorDirect<A>, Java.Util.Function.BinaryOperator<A>>("combiner");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
@@ -511,7 +511,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public Java.Util.Function.Function<A, R> Finisher()
         {
-            return IExecuteWithSignature<Java.Util.Function.Function<A, R>>("finisher", "()Ljava/util/function/Function;");
+            return IExecute<Java.Util.Function.Function<A, R>>("finisher");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
@@ -519,7 +519,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public Java.Util.Function.Function<A, R> FinisherDirect()
         {
-            return IExecuteWithSignature<Java.Util.Function.FunctionDirect<A, R>, Java.Util.Function.Function<A, R>>("finisher", "()Ljava/util/function/Function;");
+            return IExecute<Java.Util.Function.FunctionDirect<A, R>, Java.Util.Function.Function<A, R>>("finisher");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
@@ -527,7 +527,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier<A> Supplier()
         {
-            return IExecuteWithSignature<Java.Util.Function.Supplier<A>>("supplier", "()Ljava/util/function/Supplier;");
+            return IExecute<Java.Util.Function.Supplier<A>>("supplier");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
@@ -535,7 +535,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier<A> SupplierDirect()
         {
-            return IExecuteWithSignature<Java.Util.Function.SupplierDirect<A>, Java.Util.Function.Supplier<A>>("supplier", "()Ljava/util/function/Supplier;");
+            return IExecute<Java.Util.Function.SupplierDirect<A>, Java.Util.Function.Supplier<A>>("supplier");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()"/>
@@ -543,7 +543,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Stream.Collector.Characteristics> CharacteristicsMethod()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Util.Stream.Collector.Characteristics>>("characteristics", "()Ljava/util/Set;");
+            return IExecute<Java.Util.Set<Java.Util.Stream.Collector.Characteristics>>("characteristics");
         }
 
         #endregion

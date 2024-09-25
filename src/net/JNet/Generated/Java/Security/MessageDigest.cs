@@ -129,7 +129,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.MessageDigest GetInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/MessageDigest;", arg0);
+            return SExecute<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -140,21 +140,21 @@ namespace Java.Security
         /// </summary>
         public Java.Lang.String Algorithm
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getAlgorithm"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#getDigestLength()"/> 
         /// </summary>
         public int DigestLength
         {
-            get { return IExecuteWithSignature<int>("getDigestLength", "()I"); }
+            get { return IExecute<int>("getDigestLength"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#digest()"/>
@@ -162,7 +162,7 @@ namespace Java.Security
         /// <returns><see cref="byte"/></returns>
         public byte[] Digest()
         {
-            return IExecuteWithSignatureArray<byte>("digest", "()[B");
+            return IExecuteArray<byte>("digest");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#digest(byte[])"/>
@@ -171,7 +171,7 @@ namespace Java.Security
         /// <returns><see cref="byte"/></returns>
         public byte[] Digest(byte[] arg0)
         {
-            return IExecuteWithSignatureArray<byte>("digest", "([B)[B", new object[] { arg0 });
+            return IExecuteArray<byte>("digest", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#update(java.nio.ByteBuffer)"/>
@@ -179,7 +179,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void Update(Java.Nio.ByteBuffer arg0)
         {
-            IExecuteWithSignature("update", "(Ljava/nio/ByteBuffer;)V", arg0);
+            IExecute("update", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#digest(byte[],int,int)"/>
@@ -198,7 +198,7 @@ namespace Java.Security
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#update(byte)"/>
@@ -206,7 +206,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="byte"/></param>
         public void Update(byte arg0)
         {
-            IExecuteWithSignature("update", "(B)V", arg0);
+            IExecute("update", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#update(byte[],int,int)"/>
@@ -224,7 +224,7 @@ namespace Java.Security
         /// <param name="arg0"><see cref="byte"/></param>
         public void Update(byte[] arg0)
         {
-            IExecuteWithSignature("update", "([B)V", new object[] { arg0 });
+            IExecute("update", new object[] { arg0 });
         }
 
         #endregion

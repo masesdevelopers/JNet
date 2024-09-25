@@ -119,14 +119,14 @@ namespace Java.Net
         /// </summary>
         public Java.Net.NetworkInterface ScopedInterface
         {
-            get { return IExecuteWithSignature<Java.Net.NetworkInterface>("getScopedInterface", "()Ljava/net/NetworkInterface;"); }
+            get { return IExecute<Java.Net.NetworkInterface>("getScopedInterface"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#getScopeId()"/> 
         /// </summary>
         public int ScopeId
         {
-            get { return IExecuteWithSignature<int>("getScopeId", "()I"); }
+            get { return IExecute<int>("getScopeId"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#isIPv4CompatibleAddress()"/>
@@ -134,7 +134,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool IsIPv4CompatibleAddress()
         {
-            return IExecuteWithSignature<bool>("isIPv4CompatibleAddress", "()Z");
+            return IExecute<bool>("isIPv4CompatibleAddress");
         }
 
         #endregion

@@ -127,21 +127,21 @@ namespace Java.Io
         /// </summary>
         public Java.Nio.Channels.FileChannel Channel
         {
-            get { return IExecuteWithSignature<Java.Nio.Channels.FileChannel>("getChannel", "()Ljava/nio/channels/FileChannel;"); }
+            get { return IExecute<Java.Nio.Channels.FileChannel>("getChannel"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#getFD()"/> 
         /// </summary>
         public Java.Io.FileDescriptor FD
         {
-            get { return IExecuteWithSignature<Java.Io.FileDescriptor>("getFD", "()Ljava/io/FileDescriptor;"); }
+            get { return IExecute<Java.Io.FileDescriptor>("getFD"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#getFilePointer()"/> 
         /// </summary>
         public long FilePointer
         {
-            get { return IExecuteWithSignature<long>("getFilePointer", "()J"); }
+            get { return IExecute<long>("getFilePointer"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readBoolean()"/>
@@ -150,7 +150,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public bool ReadBoolean()
         {
-            return IExecuteWithSignature<bool>("readBoolean", "()Z");
+            return IExecute<bool>("readBoolean");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readByte()"/>
@@ -159,7 +159,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public byte ReadByte()
         {
-            return IExecuteWithSignature<byte>("readByte", "()B");
+            return IExecute<byte>("readByte");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readChar()"/>
@@ -168,7 +168,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public char ReadChar()
         {
-            return IExecuteWithSignature<char>("readChar", "()C");
+            return IExecute<char>("readChar");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readDouble()"/>
@@ -177,7 +177,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public double ReadDouble()
         {
-            return IExecuteWithSignature<double>("readDouble", "()D");
+            return IExecute<double>("readDouble");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readFloat()"/>
@@ -186,7 +186,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public float ReadFloat()
         {
-            return IExecuteWithSignature<float>("readFloat", "()F");
+            return IExecute<float>("readFloat");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readInt()"/>
@@ -195,7 +195,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int ReadInt()
         {
-            return IExecuteWithSignature<int>("readInt", "()I");
+            return IExecute<int>("readInt");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readUnsignedByte()"/>
@@ -204,7 +204,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int ReadUnsignedByte()
         {
-            return IExecuteWithSignature<int>("readUnsignedByte", "()I");
+            return IExecute<int>("readUnsignedByte");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readUnsignedShort()"/>
@@ -213,7 +213,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int ReadUnsignedShort()
         {
-            return IExecuteWithSignature<int>("readUnsignedShort", "()I");
+            return IExecute<int>("readUnsignedShort");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readLine()"/>
@@ -222,7 +222,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String ReadLine()
         {
-            return IExecuteWithSignature<Java.Lang.String>("readLine", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("readLine");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readUTF()"/>
@@ -231,7 +231,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String ReadUTF()
         {
-            return IExecuteWithSignature<Java.Lang.String>("readUTF", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("readUTF");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readLong()"/>
@@ -240,7 +240,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public long ReadLong()
         {
-            return IExecuteWithSignature<long>("readLong", "()J");
+            return IExecute<long>("readLong");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readShort()"/>
@@ -249,7 +249,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public short ReadShort()
         {
-            return IExecuteWithSignature<short>("readShort", "()S");
+            return IExecute<short>("readShort");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readFully(byte[],int,int)"/>
@@ -269,7 +269,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0)
         {
-            IExecuteWithSignature("readFully", "([B)V", new object[] { arg0 });
+            IExecute("readFully", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#writeBoolean(boolean)"/>
@@ -278,7 +278,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteBoolean(bool arg0)
         {
-            IExecuteWithSignature("writeBoolean", "(Z)V", arg0);
+            IExecute("writeBoolean", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#writeByte(int)"/>
@@ -287,7 +287,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteByte(int arg0)
         {
-            IExecuteWithSignature("writeByte", "(I)V", arg0);
+            IExecute("writeByte", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#writeBytes(java.lang.String)"/>
@@ -296,7 +296,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteBytes(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("writeBytes", "(Ljava/lang/String;)V", arg0);
+            IExecute("writeBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#writeChar(int)"/>
@@ -305,7 +305,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteChar(int arg0)
         {
-            IExecuteWithSignature("writeChar", "(I)V", arg0);
+            IExecute("writeChar", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#writeChars(java.lang.String)"/>
@@ -314,7 +314,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteChars(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("writeChars", "(Ljava/lang/String;)V", arg0);
+            IExecute("writeChars", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#writeDouble(double)"/>
@@ -323,7 +323,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteDouble(double arg0)
         {
-            IExecuteWithSignature("writeDouble", "(D)V", arg0);
+            IExecute("writeDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#writeFloat(float)"/>
@@ -332,7 +332,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteFloat(float arg0)
         {
-            IExecuteWithSignature("writeFloat", "(F)V", arg0);
+            IExecute("writeFloat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#writeInt(int)"/>
@@ -341,7 +341,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteInt(int arg0)
         {
-            IExecuteWithSignature("writeInt", "(I)V", arg0);
+            IExecute("writeInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#writeLong(long)"/>
@@ -350,7 +350,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteLong(long arg0)
         {
-            IExecuteWithSignature("writeLong", "(J)V", arg0);
+            IExecute("writeLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#writeShort(int)"/>
@@ -359,7 +359,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteShort(int arg0)
         {
-            IExecuteWithSignature("writeShort", "(I)V", arg0);
+            IExecute("writeShort", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#writeUTF(java.lang.String)"/>
@@ -368,7 +368,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void WriteUTF(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("writeUTF", "(Ljava/lang/String;)V", arg0);
+            IExecute("writeUTF", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#read()"/>
@@ -377,7 +377,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read()
         {
-            return IExecuteWithSignature<int>("read", "()I");
+            return IExecute<int>("read");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#read(byte[],int,int)"/>
@@ -399,7 +399,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read(byte[] arg0)
         {
-            return IExecuteWithSignature<int>("read", "([B)I", new object[] { arg0 });
+            return IExecute<int>("read", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#skipBytes(int)"/>
@@ -409,7 +409,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int SkipBytes(int arg0)
         {
-            return IExecuteWithSignature<int>("skipBytes", "(I)I", arg0);
+            return IExecute<int>("skipBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#length()"/>
@@ -418,7 +418,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public long Length()
         {
-            return IExecuteWithSignature<long>("length", "()J");
+            return IExecute<long>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#setLength(long)"/>
@@ -427,7 +427,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void SetLength(long arg0)
         {
-            IExecuteWithSignature("setLength", "(J)V", arg0);
+            IExecute("setLength", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#close()"/>
@@ -435,7 +435,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#seek(long)"/>
@@ -444,7 +444,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Seek(long arg0)
         {
-            IExecuteWithSignature("seek", "(J)V", arg0);
+            IExecute("seek", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#write(byte[],int,int)"/>
@@ -464,7 +464,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(byte[] arg0)
         {
-            IExecuteWithSignature("write", "([B)V", new object[] { arg0 });
+            IExecute("write", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#write(int)"/>
@@ -473,7 +473,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(int arg0)
         {
-            IExecuteWithSignature("write", "(I)V", arg0);
+            IExecute("write", arg0);
         }
 
         #endregion

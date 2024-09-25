@@ -159,7 +159,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public Java.Awt.Point[] WritableTileIndices
         {
-            get { return IExecuteWithSignatureArray<Java.Awt.Point>("getWritableTileIndices", "()[Ljava/awt/Point;"); }
+            get { return IExecuteArray<Java.Awt.Point>("getWritableTileIndices"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#hasTileWriters()"/>
@@ -167,7 +167,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool HasTileWriters()
         {
-            return IExecuteWithSignature<bool>("hasTileWriters", "()Z");
+            return IExecute<bool>("hasTileWriters");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#isTileWritable(int,int)"/>
@@ -195,7 +195,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.TileObserver"/></param>
         public void AddTileObserver(Java.Awt.ImageNs.TileObserver arg0)
         {
-            IExecuteWithSignature("addTileObserver", "(Ljava/awt/image/TileObserver;)V", arg0);
+            IExecute("addTileObserver", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#releaseWritableTile(int,int)"/>
@@ -212,7 +212,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.TileObserver"/></param>
         public void RemoveTileObserver(Java.Awt.ImageNs.TileObserver arg0)
         {
-            IExecuteWithSignature("removeTileObserver", "(Ljava/awt/image/TileObserver;)V", arg0);
+            IExecute("removeTileObserver", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#setData(java.awt.image.Raster)"/>
@@ -220,7 +220,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
         public void SetData(Java.Awt.ImageNs.Raster arg0)
         {
-            IExecuteWithSignature("setData", "(Ljava/awt/image/Raster;)V", arg0);
+            IExecute("setData", arg0);
         }
 
         #endregion

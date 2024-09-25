@@ -103,21 +103,21 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         public Javax.Swing.Text.AttributeSet Attributes
         {
-            get { return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getAttributes", "()Ljavax/swing/text/AttributeSet;"); }
+            get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#setLabel(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String Label
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLabel", "(Ljava/lang/String;)V", value); }
+            get { return IExecute<Java.Lang.String>("getLabel"); } set { IExecute("setLabel", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#getValue()"/> 
         /// </summary>
         public Java.Lang.String Value
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#isSelected()"/>
@@ -125,7 +125,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="bool"/></returns>
         public bool IsSelected()
         {
-            return IExecuteWithSignature<bool>("isSelected", "()Z");
+            return IExecute<bool>("isSelected");
         }
 
         #endregion

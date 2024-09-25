@@ -124,14 +124,14 @@ namespace Javax.Print.Attribute.Standard
         /// </summary>
         public Java.Lang.Class Category
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getCategory", "()Ljava/lang/Class;"); }
+            get { return IExecute<Java.Lang.Class>("getCategory"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html#add(javax.print.attribute.standard.JobStateReason)"/>
@@ -140,7 +140,7 @@ namespace Javax.Print.Attribute.Standard
         /// <returns><see cref="bool"/></returns>
         public bool Add(Javax.Print.Attribute.Standard.JobStateReason arg0)
         {
-            return IExecuteWithSignature<bool>("add", "(Ljavax/print/attribute/standard/JobStateReason;)Z", arg0);
+            return IExecute<bool>("add", arg0);
         }
 
         #endregion

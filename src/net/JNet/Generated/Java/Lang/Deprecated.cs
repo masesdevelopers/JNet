@@ -126,7 +126,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool ForRemoval()
         {
-            return IExecuteWithSignature<bool>("forRemoval", "()Z");
+            return IExecute<bool>("forRemoval");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/>
@@ -134,7 +134,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Since()
         {
-            return IExecuteWithSignature<Java.Lang.String>("since", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("since");
         }
 
         #endregion

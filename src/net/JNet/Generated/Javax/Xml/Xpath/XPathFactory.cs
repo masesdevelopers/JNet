@@ -106,7 +106,7 @@ namespace Javax.Xml.Xpath
         /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
         public static Javax.Xml.Xpath.XPathFactory NewDefaultInstance()
         {
-            return SExecuteWithSignature<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newDefaultInstance", "()Ljavax/xml/xpath/XPathFactory;");
+            return SExecute<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newDefaultInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance()"/>
@@ -114,7 +114,7 @@ namespace Javax.Xml.Xpath
         /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
         public static Javax.Xml.Xpath.XPathFactory NewInstance()
         {
-            return SExecuteWithSignature<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newInstance", "()Ljavax/xml/xpath/XPathFactory;");
+            return SExecute<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
@@ -136,7 +136,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
         public static Javax.Xml.Xpath.XPathFactory NewInstance(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;)Ljavax/xml/xpath/XPathFactory;", arg0);
+            return SExecute<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newInstance", arg0);
         }
 
         #endregion
@@ -150,7 +150,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
         public bool GetFeature(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("getFeature", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#isObjectModelSupported(java.lang.String)"/>
@@ -159,7 +159,7 @@ namespace Javax.Xml.Xpath
         /// <returns><see cref="bool"/></returns>
         public bool IsObjectModelSupported(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("isObjectModelSupported", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("isObjectModelSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newXPath()"/>
@@ -167,7 +167,7 @@ namespace Javax.Xml.Xpath
         /// <returns><see cref="Javax.Xml.Xpath.XPath"/></returns>
         public Javax.Xml.Xpath.XPath NewXPath()
         {
-            return IExecuteWithSignature<Javax.Xml.Xpath.XPath>("newXPath", "()Ljavax/xml/xpath/XPath;");
+            return IExecute<Javax.Xml.Xpath.XPath>("newXPath");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setFeature(java.lang.String,boolean)"/>
@@ -185,7 +185,7 @@ namespace Javax.Xml.Xpath
         /// <param name="arg0"><see cref="Javax.Xml.Xpath.XPathFunctionResolver"/></param>
         public void SetXPathFunctionResolver(Javax.Xml.Xpath.XPathFunctionResolver arg0)
         {
-            IExecuteWithSignature("setXPathFunctionResolver", "(Ljavax/xml/xpath/XPathFunctionResolver;)V", arg0);
+            IExecute("setXPathFunctionResolver", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver)"/>
@@ -193,7 +193,7 @@ namespace Javax.Xml.Xpath
         /// <param name="arg0"><see cref="Javax.Xml.Xpath.XPathVariableResolver"/></param>
         public void SetXPathVariableResolver(Javax.Xml.Xpath.XPathVariableResolver arg0)
         {
-            IExecuteWithSignature("setXPathVariableResolver", "(Ljavax/xml/xpath/XPathVariableResolver;)V", arg0);
+            IExecute("setXPathVariableResolver", arg0);
         }
 
         #endregion

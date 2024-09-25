@@ -165,7 +165,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.AsynchronousFileChannel Truncate(long arg0)
         {
-            return IExecuteWithSignature<Java.Nio.Channels.AsynchronousFileChannel>("truncate", "(J)Ljava/nio/channels/AsynchronousFileChannel;", arg0);
+            return IExecute<Java.Nio.Channels.AsynchronousFileChannel>("truncate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#tryLock(long,long,boolean)"/>
@@ -217,7 +217,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Size()
         {
-            return IExecuteWithSignature<long>("size", "()J");
+            return IExecute<long>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#force(boolean)"/>
@@ -226,7 +226,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public void Force(bool arg0)
         {
-            IExecuteWithSignature("force", "(Z)V", arg0);
+            IExecute("force", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#lock(java.lang.Object,java.nio.channels.CompletionHandler)"/>
@@ -246,7 +246,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.FileLock TryLock()
         {
-            return IExecuteWithSignature<Java.Nio.Channels.FileLock>("tryLock", "()Ljava/nio/channels/FileLock;");
+            return IExecute<Java.Nio.Channels.FileLock>("tryLock");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#lock()"/>
@@ -254,7 +254,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock> Lock()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock>>("lock", "()Ljava/util/concurrent/Future;");
+            return IExecute<Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock>>("lock");
         }
 
         #endregion

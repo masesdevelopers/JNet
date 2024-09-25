@@ -97,56 +97,56 @@ namespace Javax.Imageio
         /// </summary>
         public Java.Util.Locale[] AvailableLocales
         {
-            get { return IExecuteWithSignatureArray<Java.Util.Locale>("getAvailableLocales", "()[Ljava/util/Locale;"); }
+            get { return IExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getDefaultReadParam()"/> 
         /// </summary>
         public Javax.Imageio.ImageReadParam DefaultReadParam
         {
-            get { return IExecuteWithSignature<Javax.Imageio.ImageReadParam>("getDefaultReadParam", "()Ljavax/imageio/ImageReadParam;"); }
+            get { return IExecute<Javax.Imageio.ImageReadParam>("getDefaultReadParam"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getFormatName()"/> 
         /// </summary>
         public Java.Lang.String FormatName
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFormatName", "()Ljava/lang/String;"); }
+            get { return IExecute<Java.Lang.String>("getFormatName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getInput()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#setInput(java.lang.Object)"/>
         /// </summary>
         public object Input
         {
-            get { return IExecuteWithSignature("getInput", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setInput", "(Ljava/lang/Object;)V", value); }
+            get { return IExecute("getInput"); } set { IExecute("setInput", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getLocale()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#setLocale(java.util.Locale)"/>
         /// </summary>
         public Java.Util.Locale Locale
         {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); } set { IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", value); }
+            get { return IExecute<Java.Util.Locale>("getLocale"); } set { IExecute("setLocale", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getMinIndex()"/> 
         /// </summary>
         public int MinIndex
         {
-            get { return IExecuteWithSignature<int>("getMinIndex", "()I"); }
+            get { return IExecute<int>("getMinIndex"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getOriginatingProvider()"/> 
         /// </summary>
         public Javax.Imageio.Spi.ImageReaderSpi OriginatingProvider
         {
-            get { return IExecuteWithSignature<Javax.Imageio.Spi.ImageReaderSpi>("getOriginatingProvider", "()Ljavax/imageio/spi/ImageReaderSpi;"); }
+            get { return IExecute<Javax.Imageio.Spi.ImageReaderSpi>("getOriginatingProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getStreamMetadata()"/> 
         /// </summary>
         public Javax.Imageio.Metadata.IIOMetadata StreamMetadata
         {
-            get { return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadata>("getStreamMetadata", "()Ljavax/imageio/metadata/IIOMetadata;"); }
+            get { return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getStreamMetadata"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getHeight(int)"/>
@@ -156,7 +156,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public int GetHeight(int arg0)
         {
-            return IExecuteWithSignature<int>("getHeight", "(I)I", arg0);
+            return IExecute<int>("getHeight", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getNumImages(boolean)"/>
@@ -166,7 +166,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public int GetNumImages(bool arg0)
         {
-            return IExecuteWithSignature<int>("getNumImages", "(Z)I", arg0);
+            return IExecute<int>("getNumImages", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getWidth(int)"/>
@@ -176,7 +176,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public int GetWidth(int arg0)
         {
-            return IExecuteWithSignature<int>("getWidth", "(I)I", arg0);
+            return IExecute<int>("getWidth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#read(int,javax.imageio.ImageReadParam)"/>
@@ -197,7 +197,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Iterator<Javax.Imageio.ImageTypeSpecifier> GetImageTypes(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Javax.Imageio.ImageTypeSpecifier>>("getImageTypes", "(I)Ljava/util/Iterator;", arg0);
+            return IExecute<Java.Util.Iterator<Javax.Imageio.ImageTypeSpecifier>>("getImageTypes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getImageMetadata(int)"/>
@@ -207,7 +207,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.Metadata.IIOMetadata GetImageMetadata(int arg0)
         {
-            return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadata>("getImageMetadata", "(I)Ljavax/imageio/metadata/IIOMetadata;", arg0);
+            return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getImageMetadata", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#canReadRaster()"/>
@@ -215,7 +215,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool CanReadRaster()
         {
-            return IExecuteWithSignature<bool>("canReadRaster", "()Z");
+            return IExecute<bool>("canReadRaster");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#hasThumbnails(int)"/>
@@ -225,7 +225,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public bool HasThumbnails(int arg0)
         {
-            return IExecuteWithSignature<bool>("hasThumbnails", "(I)Z", arg0);
+            return IExecute<bool>("hasThumbnails", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isIgnoringMetadata()"/>
@@ -233,7 +233,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool IsIgnoringMetadata()
         {
-            return IExecuteWithSignature<bool>("isIgnoringMetadata", "()Z");
+            return IExecute<bool>("isIgnoringMetadata");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isImageTiled(int)"/>
@@ -243,7 +243,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public bool IsImageTiled(int arg0)
         {
-            return IExecuteWithSignature<bool>("isImageTiled", "(I)Z", arg0);
+            return IExecute<bool>("isImageTiled", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isRandomAccessEasy(int)"/>
@@ -253,7 +253,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public bool IsRandomAccessEasy(int arg0)
         {
-            return IExecuteWithSignature<bool>("isRandomAccessEasy", "(I)Z", arg0);
+            return IExecute<bool>("isRandomAccessEasy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isSeekForwardOnly()"/>
@@ -261,7 +261,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool IsSeekForwardOnly()
         {
-            return IExecuteWithSignature<bool>("isSeekForwardOnly", "()Z");
+            return IExecute<bool>("isSeekForwardOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readerSupportsThumbnails()"/>
@@ -269,7 +269,7 @@ namespace Javax.Imageio
         /// <returns><see cref="bool"/></returns>
         public bool ReaderSupportsThumbnails()
         {
-            return IExecuteWithSignature<bool>("readerSupportsThumbnails", "()Z");
+            return IExecute<bool>("readerSupportsThumbnails");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getAspectRatio(int)"/>
@@ -279,7 +279,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public float GetAspectRatio(int arg0)
         {
-            return IExecuteWithSignature<float>("getAspectRatio", "(I)F", arg0);
+            return IExecute<float>("getAspectRatio", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getNumThumbnails(int)"/>
@@ -289,7 +289,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public int GetNumThumbnails(int arg0)
         {
-            return IExecuteWithSignature<int>("getNumThumbnails", "(I)I", arg0);
+            return IExecute<int>("getNumThumbnails", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getThumbnailHeight(int,int)"/>
@@ -321,7 +321,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public int GetTileGridXOffset(int arg0)
         {
-            return IExecuteWithSignature<int>("getTileGridXOffset", "(I)I", arg0);
+            return IExecute<int>("getTileGridXOffset", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getTileGridYOffset(int)"/>
@@ -331,7 +331,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public int GetTileGridYOffset(int arg0)
         {
-            return IExecuteWithSignature<int>("getTileGridYOffset", "(I)I", arg0);
+            return IExecute<int>("getTileGridYOffset", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getTileHeight(int)"/>
@@ -341,7 +341,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public int GetTileHeight(int arg0)
         {
-            return IExecuteWithSignature<int>("getTileHeight", "(I)I", arg0);
+            return IExecute<int>("getTileHeight", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getTileWidth(int)"/>
@@ -351,7 +351,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public int GetTileWidth(int arg0)
         {
-            return IExecuteWithSignature<int>("getTileWidth", "(I)I", arg0);
+            return IExecute<int>("getTileWidth", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#read(int)"/>
@@ -361,7 +361,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Java.Awt.ImageNs.BufferedImage Read(int arg0)
         {
-            return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("read", "(I)Ljava/awt/image/BufferedImage;", arg0);
+            return IExecute<Java.Awt.ImageNs.BufferedImage>("read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readThumbnail(int,int)"/>
@@ -429,7 +429,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Java.Util.Iterator<Javax.Imageio.IIOImage> ReadAll<Arg0ExtendsJavax_Imageio_ImageReadParam>(Java.Util.Iterator<Arg0ExtendsJavax_Imageio_ImageReadParam> arg0) where Arg0ExtendsJavax_Imageio_ImageReadParam : Javax.Imageio.ImageReadParam
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Javax.Imageio.IIOImage>>("readAll", "(Ljava/util/Iterator;)Ljava/util/Iterator;", arg0);
+            return IExecute<Java.Util.Iterator<Javax.Imageio.IIOImage>>("readAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readAll(int,javax.imageio.ImageReadParam)"/>
@@ -450,7 +450,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageTypeSpecifier GetRawImageType(int arg0)
         {
-            return IExecuteWithSignature<Javax.Imageio.ImageTypeSpecifier>("getRawImageType", "(I)Ljavax/imageio/ImageTypeSpecifier;", arg0);
+            return IExecute<Javax.Imageio.ImageTypeSpecifier>("getRawImageType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getImageMetadata(int,java.lang.String,java.util.Set)"/>
@@ -480,7 +480,7 @@ namespace Javax.Imageio
         /// </summary>
         public void Abort()
         {
-            IExecuteWithSignature("abort", "()V");
+            IExecute("abort");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#addIIOReadProgressListener(javax.imageio.event.IIOReadProgressListener)"/>
@@ -488,7 +488,7 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Javax.Imageio.Event.IIOReadProgressListener"/></param>
         public void AddIIOReadProgressListener(Javax.Imageio.Event.IIOReadProgressListener arg0)
         {
-            IExecuteWithSignature("addIIOReadProgressListener", "(Ljavax/imageio/event/IIOReadProgressListener;)V", arg0);
+            IExecute("addIIOReadProgressListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#addIIOReadUpdateListener(javax.imageio.event.IIOReadUpdateListener)"/>
@@ -496,7 +496,7 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Javax.Imageio.Event.IIOReadUpdateListener"/></param>
         public void AddIIOReadUpdateListener(Javax.Imageio.Event.IIOReadUpdateListener arg0)
         {
-            IExecuteWithSignature("addIIOReadUpdateListener", "(Ljavax/imageio/event/IIOReadUpdateListener;)V", arg0);
+            IExecute("addIIOReadUpdateListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#addIIOReadWarningListener(javax.imageio.event.IIOReadWarningListener)"/>
@@ -504,35 +504,35 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Javax.Imageio.Event.IIOReadWarningListener"/></param>
         public void AddIIOReadWarningListener(Javax.Imageio.Event.IIOReadWarningListener arg0)
         {
-            IExecuteWithSignature("addIIOReadWarningListener", "(Ljavax/imageio/event/IIOReadWarningListener;)V", arg0);
+            IExecute("addIIOReadWarningListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#dispose()"/>
         /// </summary>
         public new void Dispose()
         {
-            IExecuteWithSignature("dispose", "()V");
+            IExecute("dispose");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#removeAllIIOReadProgressListeners()"/>
         /// </summary>
         public void RemoveAllIIOReadProgressListeners()
         {
-            IExecuteWithSignature("removeAllIIOReadProgressListeners", "()V");
+            IExecute("removeAllIIOReadProgressListeners");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#removeAllIIOReadUpdateListeners()"/>
         /// </summary>
         public void RemoveAllIIOReadUpdateListeners()
         {
-            IExecuteWithSignature("removeAllIIOReadUpdateListeners", "()V");
+            IExecute("removeAllIIOReadUpdateListeners");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#removeAllIIOReadWarningListeners()"/>
         /// </summary>
         public void RemoveAllIIOReadWarningListeners()
         {
-            IExecuteWithSignature("removeAllIIOReadWarningListeners", "()V");
+            IExecute("removeAllIIOReadWarningListeners");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#removeIIOReadProgressListener(javax.imageio.event.IIOReadProgressListener)"/>
@@ -540,7 +540,7 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Javax.Imageio.Event.IIOReadProgressListener"/></param>
         public void RemoveIIOReadProgressListener(Javax.Imageio.Event.IIOReadProgressListener arg0)
         {
-            IExecuteWithSignature("removeIIOReadProgressListener", "(Ljavax/imageio/event/IIOReadProgressListener;)V", arg0);
+            IExecute("removeIIOReadProgressListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#removeIIOReadUpdateListener(javax.imageio.event.IIOReadUpdateListener)"/>
@@ -548,7 +548,7 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Javax.Imageio.Event.IIOReadUpdateListener"/></param>
         public void RemoveIIOReadUpdateListener(Javax.Imageio.Event.IIOReadUpdateListener arg0)
         {
-            IExecuteWithSignature("removeIIOReadUpdateListener", "(Ljavax/imageio/event/IIOReadUpdateListener;)V", arg0);
+            IExecute("removeIIOReadUpdateListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#removeIIOReadWarningListener(javax.imageio.event.IIOReadWarningListener)"/>
@@ -556,14 +556,14 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Javax.Imageio.Event.IIOReadWarningListener"/></param>
         public void RemoveIIOReadWarningListener(Javax.Imageio.Event.IIOReadWarningListener arg0)
         {
-            IExecuteWithSignature("removeIIOReadWarningListener", "(Ljavax/imageio/event/IIOReadWarningListener;)V", arg0);
+            IExecute("removeIIOReadWarningListener", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#reset()"/>
         /// </summary>
         public void Reset()
         {
-            IExecuteWithSignature("reset", "()V");
+            IExecute("reset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#setInput(java.lang.Object,boolean,boolean)"/>
